@@ -1,0 +1,28 @@
+name: Publish TopRankTV
+
+# 12h00 et 21h30 heure de Paris = 10h00 et 19h30 UTC (heure d'ete, CEST).
+# A ajuster de 1h en hiver (CET) si besoin.
+on:
+  schedule:
+    - cron: "0 10 * * *"
+    - cron: "30 19 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publier la prochaine video en attente
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        run: python3 scripts/publish_next.py queue-toprank.json toprank.tv1
+
+      - name: Enregistrer la mise a jour de la file d'attente
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add queue-toprank.json
+          git diff --cached --quiet || git commit -m "Mise a jour file d'attente TopRankTV [skip ci]"
+          git push
