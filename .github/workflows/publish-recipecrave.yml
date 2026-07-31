@@ -1,0 +1,32 @@
+name: Publish recipe_crave
+
+# Decale de 15 min par rapport a TopRankTV pour eviter deux publications
+# simultanees sur le meme depot. 12h15 et 21h45 heure de Paris (CEST) =
+# 10h15 et 19h45 UTC. A ajuster de 1h en hiver (CET).
+on:
+  schedule:
+    - cron: "15 10 * * *"
+    - cron: "45 19 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publier la prochaine recette en attente
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        run: python3 scripts/publish_next.py queue-recipecrave.json recipe_crave
+
+      - name: Enregistrer la mise a jour de la file d'attente
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add queue-recipecrave.json
+          git diff --cached --quiet || git commit -m "Mise a jour file d'attente recipe_crave [skip ci]"
+          git push
