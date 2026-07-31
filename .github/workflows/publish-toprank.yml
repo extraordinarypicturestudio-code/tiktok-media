@@ -1,9 +1,10 @@
 name: Publish TopRankTV
 
-# 12h00 et 21h30 heure de Paris = 10h00 et 19h30 UTC (heure d'ete, CEST).
+# 8h00, 12h00 et 21h30 heure de Paris = 6h00, 10h00 et 19h30 UTC (ete, CEST).
 # A ajuster de 1h en hiver (CET) si besoin.
 on:
   schedule:
+    - cron: "0 6 * * *"
     - cron: "0 10 * * *"
     - cron: "30 19 * * *"
   workflow_dispatch: {}
