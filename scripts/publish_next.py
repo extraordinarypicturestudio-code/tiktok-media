@@ -64,6 +64,43 @@ def publier(account_id, url_video, legende):
     return zernio_call("POST", "/posts", payload)
 
 
+def attendre_statut(post_id, delai_max=420, intervalle=20):
+    """Interroge Zernio jusqu'a ce que le post soit confirme publie ou echoue.
+
+    La publication TikTok est asynchrone : l'API accepte la requete tout de
+    suite, mais TikTok peut refuser la video plusieurs minutes plus tard
+    (Zernio "reconcilie" alors le post en 'failed'). Sans cette attente, une
+    video en echec serait notee comme publiee et ne sortirait jamais.
+
+    Renvoie (statut, message_erreur). Statut 'inconnu' si le delai expire :
+    l'appelant ne doit alors PAS remettre la video en file, au risque de la
+    publier deux fois.
+    """
+    limite = time.time() + delai_max
+    dernier = "inconnu"
+    while time.time() < limite:
+        time.sleep(intervalle)
+        try:
+            post = zernio_call("GET", f"/posts/{post_id}").get("post", {})
+        except RuntimeError as e:
+            print(f"  (lecture du statut impossible, nouvel essai : {e})")
+            continue
+
+        dernier = post.get("status", "inconnu")
+        if dernier == "published":
+            return "published", None
+        if dernier == "failed":
+            msg = "cause inconnue"
+            for p in post.get("platforms", []):
+                if p.get("errorMessage"):
+                    msg = p["errorMessage"]
+                    break
+            return "failed", msg
+        print(f"  statut '{dernier}', attente de la confirmation TikTok...")
+
+    return "inconnu", f"delai depasse (dernier statut connu : {dernier})"
+
+
 def main():
     if len(sys.argv) != 3:
         print("Usage: publish_next.py <queue.json> <pseudo_tiktok>")
@@ -92,14 +129,44 @@ def main():
         print(f"ECHEC : {e}")
         sys.exit(1)
 
-    a_publier["status"] = "published"
-    a_publier["publishedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    a_publier["postId"] = reponse.get("post", {}).get("_id") or reponse.get("_id")
+    post_id = reponse.get("post", {}).get("_id") or reponse.get("_id")
+    a_publier["postId"] = post_id
+    a_publier["attempts"] = a_publier.get("attempts", 0) + 1
+
+    statut, erreur = attendre_statut(post_id)
+
+    if statut == "published":
+        a_publier["status"] = "published"
+        a_publier["publishedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        a_publier.pop("error", None)
+        sortie, code = f"Publie avec succes : {a_publier['id']}", 0
+
+    elif statut == "failed":
+        # La video n'est jamais sortie : on peut la remettre en file sans
+        # risque de doublon. Au-dela de 3 tentatives on abandonne pour ne pas
+        # bloquer la file sur une video systematiquement refusee.
+        a_publier["error"] = erreur
+        if a_publier["attempts"] >= 3:
+            a_publier["status"] = "failed"
+            sortie = f"ECHEC definitif apres {a_publier['attempts']} tentatives : {erreur}"
+        else:
+            a_publier["status"] = "pending"
+            sortie = f"Echec TikTok ({erreur}) - remise en file, tentative {a_publier['attempts']}/3"
+        code = 1
+
+    else:
+        # Statut indetermine : la video est peut-etre en ligne. On ne la remet
+        # surtout pas en file (risque de doublon), on la signale pour controle.
+        a_publier["status"] = "unconfirmed"
+        a_publier["error"] = erreur
+        sortie = f"Statut non confirme pour {a_publier['id']} ({erreur}) - a verifier a la main, PAS remise en file"
+        code = 1
 
     with open(chemin_queue, "w", encoding="utf-8") as fh:
         json.dump(queue, fh, indent=2, ensure_ascii=False)
 
-    print(f"Publie avec succes : {a_publier['id']}")
+    print(sortie)
+    sys.exit(code)
 
 
 if __name__ == "__main__":

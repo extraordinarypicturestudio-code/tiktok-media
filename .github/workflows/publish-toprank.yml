@@ -23,10 +23,23 @@ jobs:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
         run: python3 scripts/publish_next.py queue-toprank.json toprank.tv1
 
+      # always() : meme si la publication echoue, l'etat de la file (compteur
+      # de tentatives, statut d'erreur) doit etre sauvegarde.
       - name: Enregistrer la mise a jour de la file d'attente
+        if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add queue-toprank.json
-          git diff --cached --quiet || git commit -m "Mise a jour file d'attente TopRankTV [skip ci]"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise a jour file d'attente TopRankTV [skip ci]"
+          # Les deux workflows publient sur le meme depot et les crons GitHub
+          # peuvent deriver de plus d'une heure : sans rebase, le push du
+          # second workflow est rejete et la file perd sa mise a jour.
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser la mise a jour de la file apres 5 essais"
+          exit 1
