@@ -375,9 +375,11 @@ def main():
         break
 
     ecrire_queue()
-    print("\nAucune publication n'a abouti sur ce creneau.")
+    print("\n::warning::Aucune publication n'a abouti sur ce creneau.")
     ecrire_rapport_echec(pseudo, echecs, rattrape=False)
-    sys.exit(1)
+    # Sortie en 0 volontaire, meme raison que publish_next.py : les videos
+    # sont remises en file et le controle de sante (toutes les 4h) rattrape.
+    # Seul healthcheck.py alerte, et seulement sur un silence reel.
 
 
 if __name__ == "__main__":

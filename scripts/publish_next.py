@@ -408,9 +408,15 @@ def main():
         break
 
     ecrire_queue()
-    print("\nAucune publication n'a abouti sur ce creneau.")
+    print("\n::warning::Aucune publication n'a abouti sur ce creneau.")
     ecrire_rapport_echec(pseudo, echecs, rattrape=False)
-    sys.exit(1)
+    # Sortie en 0 volontaire : un creneau rate n'est PAS une urgence a
+    # notifier. Les videos sont remises en file, le prochain creneau et le
+    # controle de sante (toutes les 4h, avec rattrapage automatique) les
+    # reprendront. Sortir en 1 declencherait un mail "Run failed" de GitHub
+    # a chaque incident passager - le bruit qu'on cherche a eliminer.
+    # L'alerte n'est envoyee QUE par healthcheck.py, et seulement si une
+    # chaine reste reellement muette au-dela de son seuil.
 
 
 if __name__ == "__main__":

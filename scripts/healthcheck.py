@@ -350,7 +350,19 @@ def main():
     if fichiers_modifies:
         with open("fichiers-modifies.txt", "w", encoding="utf-8") as fh:
             fh.write("\n".join(sorted(fichiers_modifies)))
-    sys.exit(1)
+
+    # IMPORTANT : on sort en 0 meme avec des anomalies.
+    #
+    # Le controle tourne toutes les 4h. Sortir en 1 ferait envoyer par GitHub
+    # un mail "Run failed" a CHAQUE passage tant que l'anomalie dure - soit
+    # 6 mails par jour pour un stock bas qui n'a rien d'une panne. C'est
+    # exactement la fatigue d'alerte qu'on cherche a supprimer.
+    #
+    # L'alerte passe donc uniquement par l'issue GitHub (etape suivante du
+    # workflow), qui elle est dedupliquee : une seule issue ouverte a la
+    # fois, pas de nouveau message tant qu'elle n'est pas fermee.
+    print("\n(run marque en succes : l'alerte passe par l'issue GitHub, "
+          "pas par un mail d'echec)")
 
 
 if __name__ == "__main__":
