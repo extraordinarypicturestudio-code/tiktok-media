@@ -20,6 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ffprobe/ffmpeg ne sont pas preinstalles sur le runner : necessaires
+      # pour la verification des specs et la reparation FPS avant envoi.
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Publier la prochaine recette en attente
         env:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}

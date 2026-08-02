@@ -18,6 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ffprobe est utilise pour verifier les specs (FPS, duree) des clips.
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Croiser les files avec l'etat reel cote Zernio
         id: check
         env:
