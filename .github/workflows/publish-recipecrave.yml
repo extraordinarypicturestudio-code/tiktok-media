@@ -1,10 +1,12 @@
 name: Publish recipe_crave
 
-# Decale de 15 min par rapport a TopRankTV pour eviter deux publications
-# simultanees sur le meme depot. 12h15 et 21h45 heure de Paris (CEST) =
-# 10h15 et 19h45 UTC. A ajuster de 1h en hiver (CET).
+# 3 publications/jour, alignees sur TopRankTV avec 15 min de decalage pour
+# eviter deux publications simultanees sur le meme depot :
+# 8h15, 12h15 et 21h45 heure de Paris (CEST) = 6h15, 10h15 et 19h45 UTC.
+# A ajuster de 1h en hiver (CET).
 on:
   schedule:
+    - cron: "15 6 * * *"
     - cron: "15 10 * * *"
     - cron: "45 19 * * *"
   workflow_dispatch: {}
@@ -30,7 +32,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add queue-recipecrave.json
+          # -A capture aussi la suppression du clip local et la mise a jour
+          # du registre de hashs faites par publish_next.py apres succes.
+          git add -A -- queue-recipecrave.json used-clips-hashes.json clips/
           git diff --cached --quiet && exit 0
           git commit -m "Mise a jour file d'attente recipe_crave [skip ci]"
           # Les deux workflows publient sur le meme depot et les crons GitHub

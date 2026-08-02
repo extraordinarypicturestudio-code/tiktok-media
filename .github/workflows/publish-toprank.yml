@@ -30,7 +30,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add queue-toprank.json
+          # -A capture aussi la suppression du clip local et la mise a jour
+          # du registre de hashs faites par publish_next.py apres succes.
+          git add -A -- queue-toprank.json used-clips-hashes.json clips-toprank/
           git diff --cached --quiet && exit 0
           git commit -m "Mise a jour file d'attente TopRankTV [skip ci]"
           # Les deux workflows publient sur le meme depot et les crons GitHub

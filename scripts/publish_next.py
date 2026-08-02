@@ -10,6 +10,7 @@ GitHub), jamais commitee dans le depot.
 Usage : python publish_next.py <queue.json> <pseudo_tiktok>
 """
 
+import hashlib
 import json
 import os
 import socket
@@ -19,6 +20,54 @@ import urllib.request
 import urllib.error
 
 ZERNIO_BASE = "https://zernio.com/api/v1"
+REGISTRE = "used-clips-hashes.json"
+
+
+def chemin_local(url):
+    """Extrait le chemin relatif dans le depot depuis une URL raw.githubusercontent."""
+    marqueur = "/main/"
+    i = url.find(marqueur)
+    return url[i + len(marqueur):] if i != -1 else None
+
+
+def hash_fichier(chemin):
+    h = hashlib.md5()
+    with open(chemin, "rb") as f:
+        for bloc in iter(lambda: f.read(1 << 20), b""):
+            h.update(bloc)
+    return h.hexdigest()
+
+
+def enregistrer_et_supprimer(video, channel):
+    """Apres une publication reussie : garde le hash a jamais, supprime le
+    fichier local. La video est sur TikTok, elle n'a plus besoin d'etre
+    hebergee, et sa suppression evite de la reutiliser par erreur - mais
+    c'est le hash conserve dans le registre qui empeche de re-telecharger
+    la meme source sous un autre nom (le vrai bug du 01/08)."""
+    chemin = chemin_local(video["url"])
+    if chemin is None or not os.path.exists(chemin):
+        print(f"  (fichier introuvable pour {video['id']}, hash non enregistre)")
+        return
+
+    entree = {
+        "hash": hash_fichier(chemin),
+        "id": video["id"],
+        "channel": channel,
+        "file": chemin,
+        "status": "published",
+        "publishedAt": video.get("publishedAt"),
+    }
+
+    registre = []
+    if os.path.exists(REGISTRE):
+        with open(REGISTRE, encoding="utf-8") as fh:
+            registre = json.load(fh)
+    registre.append(entree)
+    with open(REGISTRE, "w", encoding="utf-8") as fh:
+        json.dump(registre, fh, indent=2, ensure_ascii=False)
+
+    os.remove(chemin)
+    print(f"  fichier local supprime, hash enregistre dans {REGISTRE}")
 
 
 class EnvoiIncertain(Exception):
@@ -196,6 +245,7 @@ def main():
 
     if statut == "published":
         a_publier["publishedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        enregistrer_et_supprimer(a_publier, pseudo)
         sauver("published", f"Publie avec succes : {a_publier['id']}", 0)
 
     if statut == "failed":
