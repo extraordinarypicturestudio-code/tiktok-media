@@ -18,6 +18,7 @@ l'alerte GitHub ne se declenche QUE dans ce cas (et pas tous les jours).
 Usage : python healthcheck.py
 """
 
+import calendar
 import json
 import os
 import subprocess
@@ -32,11 +33,43 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 # differente) : chaque chaine doit interroger la BONNE cle, sinon ses posts
 # sont invisibles du controle de sante (comptes Zernio distincts = resultats
 # distincts, une cle ne voit pas les posts de l'autre compte).
+#
+# 'silence_max_h' = duree au-dela de laquelle une chaine est consideree en
+# panne et son creneau RATTRAPE automatiquement. Calibre sur le plus grand
+# ecart normal entre deux creneaux + une marge pour le retard chronique des
+# crons GitHub (jusqu'a ~4h observe) :
+#   - TikTok (3/jour : 06h, 10h, 19h30 UTC) -> ecart max 10h30 + marge = 16h
+#   - Bigfoot (2/jour : 00h30, 16h30 UTC)   -> ecart max 16h + marge = 22h
 CHAINES = [
-    ("queue-toprank.json", "clips-toprank", "toprank.tv1", 3, "ZERNIO_API_KEY"),
-    ("queue-recipecrave.json", "clips", "recipe_crave", 3, "ZERNIO_API_KEY"),
-    ("queue-bigfoot.json", "clips-bigfoot", "extraordinarystudiopicture", 2, "ZERNIO_API_KEY_2"),
+    {"queue": "queue-toprank.json", "dossier": "clips-toprank",
+     "pseudo": "toprank.tv1", "par_jour": 3, "cle": "ZERNIO_API_KEY",
+     "script": "publish_next.py", "silence_max_h": 16},
+    {"queue": "queue-recipecrave.json", "dossier": "clips",
+     "pseudo": "recipe_crave", "par_jour": 3, "cle": "ZERNIO_API_KEY",
+     "script": "publish_next.py", "silence_max_h": 16},
+    {"queue": "queue-bigfoot.json", "dossier": "clips-bigfoot",
+     "pseudo": "extraordinarystudiopicture", "par_jour": 2,
+     "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",
+     "silence_max_h": 22},
 ]
+
+
+def heures_depuis(horodatage):
+    """Nombre d'heures ecoulees depuis un horodatage ISO (UTC), ou None.
+
+    Utilise calendar.timegm et NON time.mktime : mktime interprete le
+    struct_time comme une heure LOCALE alors que Zernio renvoie de l'UTC.
+    Sur un runner GitHub (en UTC) l'erreur est invisible, mais en local
+    (Paris = UTC+2 en ete) le calcul est fausse de 2h - assez pour declencher
+    un rattrapage trop tot ou trop tard.
+    """
+    if not horodatage:
+        return None
+    try:
+        t = calendar.timegm(time.strptime(horodatage[:19], "%Y-%m-%dT%H:%M:%S"))
+        return (time.time() - t) / 3600
+    except Exception:
+        return None
 
 
 def zernio_posts(env_var):
@@ -130,7 +163,8 @@ def main():
     etats = {}
     posts_par_id = {}
     derniere_publication = ""
-    for env_var in {c[4] for c in CHAINES}:
+    rattrapages = []
+    for env_var in {c["cle"] for c in CHAINES}:
         try:
             posts = zernio_posts(env_var)
         except Exception as e:
@@ -148,7 +182,11 @@ def main():
         print("::error::Impossible de joindre Zernio sur aucun des comptes")
         sys.exit(1)
 
-    for fichier, dossier, pseudo, par_jour, _env_var in CHAINES:
+    for chaine in CHAINES:
+        fichier = chaine["queue"]
+        dossier = chaine["dossier"]
+        pseudo = chaine["pseudo"]
+        par_jour = chaine["par_jour"]
         if not os.path.exists(fichier):
             anomalies.append(f"{fichier} introuvable")
             continue
@@ -196,6 +234,31 @@ def main():
             with open(fichier, "w", encoding="utf-8") as fh:
                 json.dump(queue, fh, indent=2, ensure_ascii=False)
 
+        # --- Detection de silence PAR CHAINE + rattrapage automatique -------
+        # Un controle global ne suffit pas : si TikTok publie normalement mais
+        # que Bigfoot ne sort plus rien, la moyenne globale reste bonne et le
+        # probleme passe inapercu. C'est exactement ce qui est arrive le
+        # 02/08 (workflow bigfoot fraichement cree, GitHub a saute sa premiere
+        # occurrence cron : zero publication, zero alerte).
+        derniere_chaine = ""
+        for v in queue:
+            if v.get("status") == "published" and v.get("publishedAt"):
+                derniere_chaine = max(derniere_chaine, v["publishedAt"])
+        h = heures_depuis(derniere_chaine)
+
+        if h is None:
+            infos.append(f"{pseudo} : aucune publication enregistree pour l'instant")
+            if pending:
+                # Chaine jamais partie alors qu'elle a du contenu pret : c'est
+                # le cas d'un workflow tout neuf qui n'a jamais tourne.
+                rattrapages.append((pseudo, chaine, "aucune publication enregistree"))
+        else:
+            infos.append(f"{pseudo} : derniere publication il y a {h:.1f} h")
+            if h > chaine["silence_max_h"] and pending:
+                rattrapages.append(
+                    (pseudo, chaine,
+                     f"silencieuse depuis {h:.0f} h (seuil {chaine['silence_max_h']} h)"))
+
         infos.append(f"{pseudo} : {len(pending)} en attente "
                      f"({len(pending)/par_jour:.1f} jours de contenu)")
 
@@ -237,18 +300,10 @@ def main():
                     f"[{pseudo}] SPEC INVALIDE : '{v['id']}' dure {duree:.0f}s "
                     f"(max {duree_max//60} min)")
 
-    # Pipeline muet depuis plus de 30h = quelque chose ne tourne plus.
-    if derniere_publication:
-        try:
-            t = time.mktime(time.strptime(derniere_publication[:19], "%Y-%m-%dT%H:%M:%S"))
-            heures = (time.time() - t) / 3600
-            infos.append(f"derniere publication reussie il y a {heures:.1f} h")
-            if heures > 30:
-                anomalies.append(
-                    f"PIPELINE MUET : aucune publication reussie depuis "
-                    f"{heures:.0f} heures sur l'ensemble des chaines")
-        except Exception:
-            pass
+    h_globale = heures_depuis(derniere_publication)
+    if h_globale is not None:
+        infos.append(f"(toutes chaines confondues : derniere publication il y a "
+                     f"{h_globale:.1f} h)")
 
     print("=== Etat du pipeline ===")
     for i in infos:
@@ -258,6 +313,22 @@ def main():
         print("\n=== Corrections automatiques appliquees ===")
         for c in corrections_totales:
             print("  - " + c)
+
+    # Rattrapage automatique : on ne se contente pas de signaler qu'une chaine
+    # est muette, on relance nous-memes son workflow de publication. Le
+    # fichier est lu par l'etape suivante du workflow, qui declenche les
+    # `workflow_dispatch` correspondants.
+    if rattrapages:
+        print("\n=== Creneaux rattrapes automatiquement ===")
+        lignes = []
+        for pseudo, ch, raison in rattrapages:
+            print(f"  - [{pseudo}] {raison} -> publication de rattrapage")
+            # Une ligne = une commande a executer par le workflow. On passe
+            # aussi le nom de la variable d'environnement contenant la bonne
+            # cle Zernio (les chaines ne sont pas sur le meme compte).
+            lignes.append(f"{ch['script']}|{ch['queue']}|{ch['pseudo']}|{ch['cle']}")
+        with open("rattrapages.txt", "w", encoding="utf-8") as fh:
+            fh.write("\n".join(lignes))
 
     if not anomalies:
         print("\nTout est conforme : aucune action humaine requise.")

@@ -1,11 +1,16 @@
 name: Controle de sante
 
-# Verifie chaque jour que les publications sortent reellement et que les files
-# sont saines. N'alerte QUE si une action humaine est necessaire : pas de mail
-# quotidien inutile.
+# Verifie que les publications sortent reellement et que les files sont
+# saines, RATTRAPE tout seul un creneau manque, et n'alerte QUE si une action
+# humaine est vraiment necessaire (pas de mail quotidien inutile).
+#
+# Toutes les 4h et non une fois par jour : un creneau manque doit etre
+# rattrape dans la journee, pas le lendemain. Le cout est nul (job de ~1 min)
+# et sans effet de bord : le rattrapage ne se declenche que si la chaine est
+# REELLEMENT silencieuse au-dela de son seuil (voir silence_max_h).
 on:
   schedule:
-    - cron: "0 9 * * *"   # 11h Paris (apres les creneaux du matin)
+    - cron: "0 */4 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -29,6 +34,31 @@ jobs:
           ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
         run: python3 scripts/healthcheck.py
 
+      # Rattrapage : si une chaine est restee silencieuse au-dela de son
+      # seuil (creneau cron saute par GitHub, panne temporaire...), on publie
+      # nous-memes ici. On execute directement le script de publication au
+      # lieu de declencher l'autre workflow : GITHUB_TOKEN n'a pas le droit
+      # de declencher un workflow_dispatch (protection anti-recursion de
+      # GitHub), un tel appel serait accepte mais ne lancerait jamais rien.
+      - name: Rattraper les creneaux manques
+        if: always()
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+        run: |
+          if [ ! -f rattrapages.txt ]; then
+            echo "Aucun creneau a rattraper."
+            exit 0
+          fi
+          while IFS='|' read -r script queue pseudo cle; do
+            [ -z "$script" ] && continue
+            echo "::warning::Rattrapage automatique : $pseudo (via $script)"
+            # La cle Zernio differe selon la chaine : on expose la bonne sous
+            # le nom attendu par les scripts (ZERNIO_API_KEY).
+            ZERNIO_API_KEY="${!cle}" python3 "scripts/$script" "$queue" "$pseudo" || \
+              echo "::warning::Rattrapage de $pseudo sans succes, nouvelle tentative au prochain controle"
+          done < rattrapages.txt
+
       # always() : le controle peut auto-resoudre des videos 'unconfirmed'
       # (voir resoudre_incertains dans healthcheck.py) meme quand il detecte
       # par ailleurs une anomalie reelle ailleurs - les deux ne s'excluent
@@ -36,15 +66,17 @@ jobs:
       - name: Enregistrer les corrections automatiques
         if: always()
         run: |
-          if [ ! -f fichiers-modifies.txt ]; then
-            echo "Aucune correction automatique a enregistrer."
-            exit 0
-          fi
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add -- $(cat fichiers-modifies.txt)
-          git diff --cached --quiet && exit 0
-          git commit -m "Auto-correction du controle de sante [skip ci]"
+          # -A sur les queues et dossiers de clips : capture a la fois les
+          # auto-corrections du healthcheck ET les effets d'un eventuel
+          # rattrapage (file mise a jour, clip publie supprime, registre de
+          # hashs complete).
+          git add -A -- queue-toprank.json queue-recipecrave.json \
+                        queue-bigfoot.json used-clips-hashes.json \
+                        clips/ clips-toprank/ clips-bigfoot/
+          git diff --cached --quiet && echo "Rien a enregistrer." && exit 0
+          git commit -m "Auto-correction / rattrapage du controle de sante [skip ci]"
           for essai in 1 2 3 4 5; do
             git pull --rebase origin main && git push && exit 0
             echo "Push rejete (essai $essai/5), nouvelle tentative..."
