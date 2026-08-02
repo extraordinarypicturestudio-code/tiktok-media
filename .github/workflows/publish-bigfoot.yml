@@ -1,0 +1,47 @@
+name: Publish Bigfoot Content (YouTube Shorts)
+
+# 2 publications/jour, calees sur les pics d'engagement US (audience visee :
+# international / marche americain) : pause dejeuner et soiree.
+# 12h30 EDT et 20h30 EDT = 16h30 UTC et 00h30 UTC.
+# EDT = UTC-4 (heure d'ete US, en vigueur en aout). A ajuster de 1h en hiver
+# (EST = UTC-5) si besoin de rester cale sur ces creneaux locaux.
+on:
+  schedule:
+    - cron: "30 16 * * *"
+    - cron: "30 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publier la prochaine video en attente
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_2 }}
+        run: python3 scripts/publish_next_youtube.py queue-bigfoot.json extraordinarystudiopicture
+
+      # always() : meme si la publication echoue, l'etat de la file (compteur
+      # de tentatives, statut d'erreur) doit etre sauvegarde.
+      - name: Enregistrer la mise a jour de la file d'attente
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A -- queue-bigfoot.json used-clips-hashes.json clips-bigfoot/
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise a jour file d'attente Bigfoot Content [skip ci]"
+          # Plusieurs workflows publient sur le meme depot et les crons GitHub
+          # peuvent deriver de plus d'une heure : sans rebase, le push est
+          # rejete et la file perd sa mise a jour.
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser la mise a jour de la file apres 5 essais"
+          exit 1
