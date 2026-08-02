@@ -28,14 +28,21 @@ import urllib.error
 
 ZERNIO_BASE = "https://zernio.com/api/v1"
 
+# Bigfoot Content tourne sur un 2e compte Zernio (email different, cle
+# differente) : chaque chaine doit interroger la BONNE cle, sinon ses posts
+# sont invisibles du controle de sante (comptes Zernio distincts = resultats
+# distincts, une cle ne voit pas les posts de l'autre compte).
 CHAINES = [
-    ("queue-toprank.json", "clips-toprank", "toprank.tv1", 3),
-    ("queue-recipecrave.json", "clips", "recipe_crave", 3),
+    ("queue-toprank.json", "clips-toprank", "toprank.tv1", 3, "ZERNIO_API_KEY"),
+    ("queue-recipecrave.json", "clips", "recipe_crave", 3, "ZERNIO_API_KEY"),
+    ("queue-bigfoot.json", "clips-bigfoot", "extraordinarystudiopicture", 2, "ZERNIO_API_KEY_2"),
 ]
 
 
-def zernio_posts():
-    cle = os.environ["ZERNIO_API_KEY"]
+def zernio_posts(env_var):
+    cle = os.environ.get(env_var)
+    if not cle:
+        raise RuntimeError(f"variable d'environnement {env_var} absente")
     req = urllib.request.Request(
         ZERNIO_BASE + "/posts",
         headers={"Authorization": f"Bearer {cle}"},
@@ -115,26 +122,33 @@ def main():
     corrections_totales = []
     fichiers_modifies = set()
 
-    try:
-        posts = zernio_posts()
-    except Exception as e:
-        print(f"::error::Impossible de joindre Zernio : {e}")
-        sys.exit(1)
-
     # Une meme URL peut avoir plusieurs posts (un echec puis une reussite) :
-    # la video est en ligne si AU MOINS un post est 'published'.
+    # la video est en ligne si AU MOINS un post est 'published'. On fusionne
+    # les resultats des deux comptes Zernio (cles differentes) dans les memes
+    # dictionnaires : les URLs de media sont uniques au depot, pas de risque
+    # de collision entre comptes.
     etats = {}
     posts_par_id = {}
     derniere_publication = ""
-    for p in posts:
-        posts_par_id[p.get("_id")] = p
-        for m in p.get("mediaItems", []):
-            etats.setdefault(m.get("url"), set()).add(p.get("status"))
-        if p.get("status") == "published":
-            d = p.get("publishedAt") or p.get("createdAt") or ""
-            derniere_publication = max(derniere_publication, d)
+    for env_var in {c[4] for c in CHAINES}:
+        try:
+            posts = zernio_posts(env_var)
+        except Exception as e:
+            anomalies.append(f"Impossible de joindre Zernio avec {env_var} : {e}")
+            continue
+        for p in posts:
+            posts_par_id[p.get("_id")] = p
+            for m in p.get("mediaItems", []):
+                etats.setdefault(m.get("url"), set()).add(p.get("status"))
+            if p.get("status") == "published":
+                d = p.get("publishedAt") or p.get("createdAt") or ""
+                derniere_publication = max(derniere_publication, d)
 
-    for fichier, dossier, pseudo, par_jour in CHAINES:
+    if not posts_par_id and not etats:
+        print("::error::Impossible de joindre Zernio sur aucun des comptes")
+        sys.exit(1)
+
+    for fichier, dossier, pseudo, par_jour, _env_var in CHAINES:
         if not os.path.exists(fichier):
             anomalies.append(f"{fichier} introuvable")
             continue
@@ -190,7 +204,7 @@ def main():
             if v.get("status") == "pending" and "published" in st:
                 anomalies.append(
                     f"[{pseudo}] DOUBLON IMMINENT : '{v['id']}' est marquee en "
-                    "attente mais est deja en ligne sur TikTok")
+                    "attente mais est deja en ligne")
             if (v.get("status") == "published" and st
                     and "published" not in st and "note" not in v):
                 anomalies.append(
@@ -215,12 +229,13 @@ def main():
             if fps and (fps < 23 or fps > 60):
                 anomalies.append(
                     f"[{pseudo}] SPEC INVALIDE : '{v['id']}' est en {fps:.1f} FPS "
-                    "(TikTok exige 23-60) - sera reparee automatiquement au "
+                    "(plage standard 23-60) - sera reparee automatiquement au "
                     "prochain creneau")
-            if duree > 600:
+            duree_max = 900 if "bigfoot" in fichier else 600
+            if duree > duree_max:
                 anomalies.append(
                     f"[{pseudo}] SPEC INVALIDE : '{v['id']}' dure {duree:.0f}s "
-                    "(max 10 min)")
+                    f"(max {duree_max//60} min)")
 
     # Pipeline muet depuis plus de 30h = quelque chose ne tourne plus.
     if derniere_publication:

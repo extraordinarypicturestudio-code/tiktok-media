@@ -21,6 +21,7 @@ import hashlib
 import json
 import os
 import socket
+import subprocess
 import sys
 import time
 import urllib.request
@@ -28,6 +29,81 @@ import urllib.error
 
 ZERNIO_BASE = "https://zernio.com/api/v1"
 REGISTRE = "used-clips-hashes.json"
+
+# Nombre de videos differentes tentees dans un meme creneau avant d'abandonner.
+MAX_CANDIDATS_PAR_RUN = 3
+
+
+def ecrire_rapport_echec(pseudo, echecs, rattrape):
+    if not echecs:
+        return
+    titre = (f"[{pseudo}] Publication rattrapee mais {len(echecs)} clip(s) ecarte(s)"
+             if rattrape else
+             f"[{pseudo}] AUCUNE publication sur ce creneau")
+    corps = [titre, "", "Details :"]
+    corps += [f"  - {e}" for e in echecs]
+    corps += ["", "Que faire : les clips en statut 'failed' ou 'unconfirmed' dans",
+              "la file necessitent une verification. Les clips 'pending' seront",
+              "automatiquement retentes au prochain creneau."]
+    texte = "\n".join(corps)
+    with open(os.environ.get("RAPPORT_ECHEC_FICHIER", "echec-publication.txt"),
+              "w", encoding="utf-8") as fh:
+        fh.write(texte)
+    print("\n" + texte)
+
+
+def specs_video(chemin):
+    def probe(args):
+        r = subprocess.run(["ffprobe", "-v", "error"] + args + [chemin],
+                           capture_output=True, text=True)
+        return r.stdout.strip()
+    fr = probe(["-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
+                "-of", "default=noprint_wrappers=1:nokey=1"])
+    try:
+        num, den = fr.split("/")
+        fps = float(num) / float(den)
+    except Exception:
+        fps = 0.0
+    duree = probe(["-show_entries", "format=duration",
+                   "-of", "default=noprint_wrappers=1:nokey=1"])
+    dims = probe(["-select_streams", "v:0", "-show_entries", "stream=width,height",
+                  "-of", "csv=p=0:s=x"])
+    return {"fps": fps, "duree": float(duree) if duree else 0.0,
+            "dimensions": dims, "taille_mo": os.path.getsize(chemin) / (1024 * 1024)}
+
+
+def verifier_et_reparer(video):
+    """Meme logique que publish_next.py (TikTok) : verifie les specs du clip
+    AVANT l'envoi et repare automatiquement un FPS hors plage standard, pour
+    ne pas laisser YouTube refuser silencieusement une video defectueuse et
+    faire perdre tout le creneau."""
+    chemin = chemin_local(video["url"])
+    if chemin is None or not os.path.exists(chemin):
+        return True, "fichier local absent, verification impossible", False
+
+    s = specs_video(chemin)
+    print(f"  specs : {s['fps']:.1f} fps, {s['duree']:.1f}s, {s['dimensions']}, {s['taille_mo']:.1f} Mo")
+
+    if s["duree"] > 900:
+        return False, f"duree {s['duree']:.0f}s trop longue pour un Short", False
+    if s["taille_mo"] > 500:
+        return False, f"fichier {s['taille_mo']:.0f} Mo trop lourd", False
+
+    if s["fps"] < 23 or s["fps"] > 60:
+        print(f"  FPS {s['fps']:.1f} hors plage standard -> re-encodage en 30 fps")
+        tmp = chemin + ".fix.mp4"
+        r = subprocess.run(
+            ["ffmpeg", "-y", "-i", chemin, "-r", "30",
+             "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+             "-c:a", "aac", "-b:a", "192k", "-loglevel", "error", tmp],
+            capture_output=True, text=True)
+        if r.returncode != 0 or not os.path.exists(tmp):
+            return False, f"FPS {s['fps']:.1f} hors plage et re-encodage impossible", False
+        os.replace(tmp, chemin)
+        print(f"  repare : {chemin} est maintenant en 30 fps")
+        return True, "re-encode en 30 fps", True
+
+    return True, "conforme", False
 
 
 def chemin_local(url):
@@ -201,75 +277,107 @@ def main():
     with open(chemin_queue, encoding="utf-8") as fh:
         queue = json.load(fh)
 
-    a_publier = next((v for v in queue if v.get("status") == "pending"), None)
-    if a_publier is None:
+    def ecrire_queue():
+        with open(chemin_queue, "w", encoding="utf-8") as fh:
+            json.dump(queue, fh, indent=2, ensure_ascii=False)
+
+    en_attente = [v for v in queue if v.get("status") == "pending"]
+    if not en_attente:
         print("File d'attente vide : aucune video en attente.")
         return
 
-    print(f"Publication de : {a_publier['id']}")
     cid = compte_id(pseudo)
-    titre = a_publier.get("title") or a_publier["caption"].split("\n")[0]
-    a_publier["attempts"] = a_publier.get("attempts", 0) + 1
-    avant_envoi = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 120))
+    echecs = []
 
-    def sauver(statut, message, code):
-        a_publier["status"] = statut
+    # Meme principe que TikTok : un clip defectueux ne doit pas faire perdre
+    # tout le creneau. On tente jusqu'a 3 candidats dans le meme run.
+    for a_publier in en_attente[:MAX_CANDIDATS_PAR_RUN]:
+        print(f"\n--- Candidat : {a_publier['id']}")
+
+        ok, detail, repare = verifier_et_reparer(a_publier)
+        if repare:
+            a_publier["note"] = f"Fichier repare automatiquement ({detail})."
+            ecrire_queue()
+        if not ok:
+            print(f"  ecarte avant envoi : {detail}")
+            a_publier["status"] = "failed"
+            a_publier["error"] = f"Non conforme aux specs : {detail}"
+            echecs.append(f"{a_publier['id']} : {detail}")
+            ecrire_queue()
+            continue
+
+        titre = a_publier.get("title") or a_publier["caption"].split("\n")[0]
+        a_publier["attempts"] = a_publier.get("attempts", 0) + 1
+        avant_envoi = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 120))
+
+        try:
+            reponse = publier(cid, a_publier["url"], a_publier["caption"], titre)
+        except RuntimeError as e:
+            statut_suivant = "pending" if a_publier["attempts"] < 3 else "failed"
+            a_publier["status"] = statut_suivant
+            a_publier["error"] = f"ECHEC : {e}"
+            echecs.append(f"{a_publier['id']} : {e}")
+            ecrire_queue()
+            print(f"  {a_publier['error']} -> candidat suivant")
+            continue
+        except EnvoiIncertain as e:
+            print(f"  envoi non confirme ({e}) - verification cote Zernio...")
+            time.sleep(20)
+            trouve = chercher_post_recent(a_publier["url"], avant_envoi)
+            if trouve is None:
+                a_publier["status"] = "unconfirmed"
+                a_publier["error"] = (
+                    f"Envoi non confirme et post introuvable ({e}) - a verifier"
+                    " a la main, PAS remise en file pour eviter un doublon"
+                )
+                echecs.append(f"{a_publier['id']} : envoi non confirme")
+                ecrire_queue()
+                print(f"  {a_publier['error']}")
+                break
+            print(f"  post retrouve : {trouve.get('_id')} - suivi de son statut")
+            reponse = {"post": trouve}
+
+        post_id = reponse.get("post", {}).get("_id") or reponse.get("_id")
+        a_publier["postId"] = post_id
+        ecrire_queue()
+
+        statut, erreur = attendre_statut(post_id)
+
         if statut == "published":
+            a_publier["status"] = "published"
+            a_publier["publishedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             a_publier.pop("error", None)
-        else:
-            a_publier["error"] = message
-        with open(chemin_queue, "w", encoding="utf-8") as fh:
-            json.dump(queue, fh, indent=2, ensure_ascii=False)
-        print(message)
-        sys.exit(code)
+            enregistrer_et_supprimer(a_publier, pseudo)
+            ecrire_queue()
+            print(f"\nPublie avec succes : {a_publier['id']}")
+            if echecs:
+                print("::warning::Candidats ecartes avant succes : " + " | ".join(echecs))
+                ecrire_rapport_echec(pseudo, echecs, rattrape=True)
+            sys.exit(0)
 
-    try:
-        reponse = publier(cid, a_publier["url"], a_publier["caption"], titre)
-    except RuntimeError as e:
-        # Rejet franc du serveur : rien n'a ete cree, on peut reessayer.
-        sauver("pending" if a_publier["attempts"] < 3 else "failed", f"ECHEC : {e}", 1)
-    except EnvoiIncertain as e:
-        # Le post a peut-etre ete cree malgre la coupure : on verifie avant
-        # toute chose, sinon un nouvel essai publierait la video deux fois.
-        print(f"Envoi non confirme ({e}) - verification cote Zernio...")
-        time.sleep(20)
-        trouve = chercher_post_recent(a_publier["url"], avant_envoi)
-        if trouve is None:
-            sauver(
-                "unconfirmed",
-                f"Envoi non confirme et post introuvable ({e}) - a verifier a la"
-                " main, PAS remise en file pour eviter un doublon",
-                1,
-            )
-        print(f"  post retrouve : {trouve.get('_id')} - suivi de son statut")
-        reponse = {"post": trouve}
+        if statut == "failed":
+            if a_publier["attempts"] >= 3:
+                a_publier["status"] = "failed"
+                a_publier["error"] = f"ECHEC definitif apres {a_publier['attempts']} tentatives : {erreur}"
+            else:
+                a_publier["status"] = "pending"
+                a_publier["error"] = f"Echec YouTube ({erreur}), tentative {a_publier['attempts']}/3"
+            echecs.append(f"{a_publier['id']} : {erreur}")
+            ecrire_queue()
+            print(f"  {a_publier['error']} -> candidat suivant")
+            continue
 
-    post_id = reponse.get("post", {}).get("_id") or reponse.get("_id")
-    a_publier["postId"] = post_id
+        a_publier["status"] = "unconfirmed"
+        a_publier["error"] = f"Statut non confirme ({erreur}) - a verifier a la main"
+        echecs.append(f"{a_publier['id']} : statut non confirme")
+        ecrire_queue()
+        print(f"  {a_publier['error']}")
+        break
 
-    statut, erreur = attendre_statut(post_id)
-
-    if statut == "published":
-        a_publier["publishedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-        enregistrer_et_supprimer(a_publier, pseudo)
-        sauver("published", f"Publie avec succes : {a_publier['id']}", 0)
-
-    if statut == "failed":
-        # La video n'est jamais sortie : on peut la remettre en file sans
-        # risque de doublon. Au-dela de 3 tentatives on abandonne pour ne pas
-        # bloquer la file sur une video systematiquement refusee.
-        if a_publier["attempts"] >= 3:
-            sauver("failed", f"ECHEC definitif apres {a_publier['attempts']} tentatives : {erreur}", 1)
-        sauver("pending", f"Echec YouTube ({erreur}) - remise en file, tentative {a_publier['attempts']}/3", 1)
-
-    # Statut indetermine : la video est peut-etre en ligne. On ne la remet
-    # surtout pas en file (risque de doublon), on la signale pour controle.
-    sauver(
-        "unconfirmed",
-        f"Statut non confirme pour {a_publier['id']} ({erreur}) - a verifier a"
-        " la main, PAS remise en file",
-        1,
-    )
+    ecrire_queue()
+    print("\nAucune publication n'a abouti sur ce creneau.")
+    ecrire_rapport_echec(pseudo, echecs, rattrape=False)
+    sys.exit(1)
 
 
 if __name__ == "__main__":

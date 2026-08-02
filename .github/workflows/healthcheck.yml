@@ -26,6 +26,7 @@ jobs:
         id: check
         env:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
         run: python3 scripts/healthcheck.py
 
       # always() : le controle peut auto-resoudre des videos 'unconfirmed'
