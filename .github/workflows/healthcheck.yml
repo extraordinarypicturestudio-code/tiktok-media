@@ -1,0 +1,96 @@
+name: Controle de sante
+
+# Verifie chaque jour que les publications sortent reellement et que les files
+# sont saines. N'alerte QUE si une action humaine est necessaire : pas de mail
+# quotidien inutile.
+on:
+  schedule:
+    - cron: "0 9 * * *"   # 11h Paris (apres les creneaux du matin)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Croiser les files avec l'etat reel cote Zernio
+        id: check
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        run: python3 scripts/healthcheck.py
+
+      # always() : le controle peut auto-resoudre des videos 'unconfirmed'
+      # (voir resoudre_incertains dans healthcheck.py) meme quand il detecte
+      # par ailleurs une anomalie reelle ailleurs - les deux ne s'excluent
+      # pas, donc on committe dans tous les cas.
+      - name: Enregistrer les corrections automatiques
+        if: always()
+        run: |
+          if [ ! -f fichiers-modifies.txt ]; then
+            echo "Aucune correction automatique a enregistrer."
+            exit 0
+          fi
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -- $(cat fichiers-modifies.txt)
+          git diff --cached --quiet && exit 0
+          git commit -m "Auto-correction du controle de sante [skip ci]"
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser les corrections apres 5 essais"
+          exit 1
+
+      # Uniquement si des anomalies reelles ont ete trouvees.
+      - name: Ouvrir une alerte
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let details = 'Voir les logs du run pour le detail.';
+            try {
+              details = fs.readFileSync('healthcheck-anomalies.txt', 'utf8');
+            } catch (e) {}
+
+            const titre = 'Pipeline TikTok : anomalie detectee';
+            const corps = [
+              'Le controle de sante quotidien a trouve des anomalies :',
+              '',
+              details,
+              '',
+              `Run : ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            // Une seule issue ouverte a la fois : on met a jour l'existante
+            // plutot que d'en creer une nouvelle chaque jour.
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'pipeline-alerte',
+            });
+
+            if (ouvertes.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ouvertes.data[0].number,
+                body: corps,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: titre,
+                body: corps,
+                labels: ['pipeline-alerte'],
+              });
+            }
