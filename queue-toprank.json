@@ -89,13 +89,18 @@
     "id": "waterslide-fails-15",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/waterslide-fails-15.mp4",
     "caption": "When the slide wins 💦💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #trending",
-    "status": "pending"
+    "status": "pending",
+    "attempts": 1,
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a6c5e35df17280d930bbabd\",\"platform\":\"tiktok\",\"existingPostId\":\"6a70cfad1a7fb5ba065bf908\"}}"
   },
   {
     "id": "waterslide-fails-16",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/waterslide-fails-16.mp4",
     "caption": "Not the slide you wanted 💀🌊\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #trending",
-    "status": "pending"
+    "status": "published",
+    "attempts": 1,
+    "postId": "6a7119d0fa1f1f8c9d56a83f",
+    "publishedAt": "2026-08-03T22:45:23Z"
   },
   {
     "id": "bike-fails-17",
