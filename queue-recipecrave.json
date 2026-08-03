@@ -53,7 +53,7 @@
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-sandwich-07.mp4",
     "caption": "The ultimate chicken sandwich 🥪\n\n#sandwich #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
     "status": "pending",
-    "attempts": 1,
+    "attempts": 2,
     "postId": "6a6f59097ba10bd65ee4289e",
     "note": "Re-encodee en 30 FPS le 02/08 : TikTok refusait le fichier original (21 FPS, hors de la plage 23-60 FPS supportee).",
     "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a6b5672df17280d93f3150b\",\"platform\":\"tiktok\",\"existingPostId\":\"6a6fc7fe13b9eade344efbac\"}}"
@@ -85,7 +85,10 @@
     "id": "mountain-meat-11",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/mountain-meat-11.mp4",
     "caption": "Cooking dinner on a mountain top 🏔️\n\n#outdoorcooking #recipe #asmr #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "published",
+    "attempts": 1,
+    "postId": "6a70cfa0a0eb0f56aceabb80",
+    "publishedAt": "2026-08-03T17:28:46Z"
   },
   {
     "id": "choc-chip-cookies-12",
