@@ -53,9 +53,10 @@
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-sandwich-07.mp4",
     "caption": "The ultimate chicken sandwich 🥪\n\n#sandwich #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
     "status": "pending",
-    "attempts": 0,
+    "attempts": 1,
     "postId": "6a6f59097ba10bd65ee4289e",
-    "note": "Re-encodee en 30 FPS le 02/08 : TikTok refusait le fichier original (21 FPS, hors de la plage 23-60 FPS supportee)."
+    "note": "Re-encodee en 30 FPS le 02/08 : TikTok refusait le fichier original (21 FPS, hors de la plage 23-60 FPS supportee).",
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a6b5672df17280d93f3150b\",\"platform\":\"tiktok\",\"existingPostId\":\"6a6fc7fe13b9eade344efbac\"}}"
   },
   {
     "id": "stuffed-onion-08",
@@ -75,7 +76,10 @@
     "id": "seafood-roll-10",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/seafood-roll-10.mp4",
     "caption": "Seafood roll, layer by layer 🦪\n\n#seafood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "published",
+    "attempts": 1,
+    "postId": "6a70bbcf49efa22b6133a81d",
+    "publishedAt": "2026-08-03T16:04:25Z"
   },
   {
     "id": "mountain-meat-11",
