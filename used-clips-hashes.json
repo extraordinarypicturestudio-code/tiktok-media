@@ -286,5 +286,13 @@
     "file": "clips-toprank/bike-fails-18.mp4",
     "status": "published",
     "publishedAt": "2026-08-04T12:06:36Z"
+  },
+  {
+    "hash": "5f9348f40485242866c642445507a31c",
+    "id": "smores-pie-13",
+    "channel": "recipe_crave",
+    "file": "clips/smores-pie-13.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-04T12:19:28Z"
   }
 ]
