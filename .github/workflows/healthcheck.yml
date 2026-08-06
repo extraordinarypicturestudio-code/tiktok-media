@@ -72,6 +72,11 @@ jobs:
           # auto-corrections du healthcheck ET les effets d'un eventuel
           # rattrapage (file mise a jour, clip publie supprime, registre de
           # hashs complete).
+          # mkdir -p : si un dossier de clips est vide (tout publie), git ne
+          # le suit pas et "git add -- dossier/" plante avec une erreur
+          # pathspec sur un chemin inexistant - le creer garantit que le
+          # pathspec matche toujours (meme sur un dossier vide).
+          mkdir -p clips clips-toprank clips-bigfoot
           git add -A -- queue-toprank.json queue-recipecrave.json \
                         queue-bigfoot.json used-clips-hashes.json \
                         clips/ clips-toprank/ clips-bigfoot/

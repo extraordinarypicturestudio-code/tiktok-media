@@ -37,6 +37,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          # mkdir -p : dossier vide (tout publie) = non suivi par git, et
+          # "git add -- dossier/" plante sur un pathspec inexistant sinon.
+          mkdir -p clips-bigfoot
           git add -A -- queue-bigfoot.json used-clips-hashes.json clips-bigfoot/
           git diff --cached --quiet && exit 0
           git commit -m "Mise a jour file d'attente Bigfoot Content [skip ci]"
