@@ -91,7 +91,8 @@
     "caption": "When the slide wins 💦💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #trending",
     "status": "failed",
     "attempts": 3,
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a6c5e35df17280d930bbabd\",\"platform\":\"tiktok\",\"existingPostId\":\"6a70cfad1a7fb5ba065bf908\"}}"
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a6c5e35df17280d930bbabd\",\"platform\":\"tiktok\",\"existingPostId\":\"6a70cfad1a7fb5ba065bf908\"}}",
+    "alerte_envoyee": true
   },
   {
     "id": "waterslide-fails-16",
