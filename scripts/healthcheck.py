@@ -38,19 +38,25 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 # panne et son creneau RATTRAPE automatiquement. Calibre sur le plus grand
 # ecart normal entre deux creneaux + une marge pour le retard chronique des
 # crons GitHub (jusqu'a ~4h observe) :
-#   - TikTok (3/jour : 06h, 10h, 19h30 UTC) -> ecart max 10h30 + marge = 16h
-#   - Bigfoot (2/jour : 00h30, 16h30 UTC)   -> ecart max 16h + marge = 22h
+#   - TikTok (4/jour : 12h, 16h, 21h, 01h UTC) -> ecart max 5h + marge = 10h
+#
+# Bigfoot Content EN PAUSE (07/08/2026, demande explicite) : retiree de
+# CHAINES pour que le controle de sante ne la traite plus comme silencieuse
+# et n'essaie plus de la rattraper. Le workflow publish-bigfoot.yml est
+# aussi desactive cote GitHub (gh workflow disable). Pour reprendre :
+# reactiver le workflow (gh workflow enable "Publish Bigfoot Content
+# (YouTube Shorts)") et redecommenter l'entree ci-dessous.
 CHAINES = [
     {"queue": "queue-toprank.json", "dossier": "clips-toprank",
-     "pseudo": "toprank.tv1", "par_jour": 3, "cle": "ZERNIO_API_KEY",
-     "script": "publish_next.py", "silence_max_h": 16},
+     "pseudo": "toprank.tv1", "par_jour": 4, "cle": "ZERNIO_API_KEY",
+     "script": "publish_next.py", "silence_max_h": 10},
     {"queue": "queue-recipecrave.json", "dossier": "clips",
-     "pseudo": "recipe_crave", "par_jour": 3, "cle": "ZERNIO_API_KEY",
-     "script": "publish_next.py", "silence_max_h": 16},
-    {"queue": "queue-bigfoot.json", "dossier": "clips-bigfoot",
-     "pseudo": "extraordinarystudiopicture", "par_jour": 2,
-     "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",
-     "silence_max_h": 22},
+     "pseudo": "recipe_crave", "par_jour": 4, "cle": "ZERNIO_API_KEY",
+     "script": "publish_next.py", "silence_max_h": 10},
+    # {"queue": "queue-bigfoot.json", "dossier": "clips-bigfoot",
+    #  "pseudo": "extraordinarystudiopicture", "par_jour": 2,
+    #  "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",
+    #  "silence_max_h": 22},
 ]
 
 

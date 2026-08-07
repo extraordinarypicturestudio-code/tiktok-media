@@ -1,14 +1,18 @@
 name: Publish recipe_crave
 
-# 3 publications/jour, alignees sur TopRankTV avec 15 min de decalage pour
-# eviter deux publications simultanees sur le meme depot :
-# 8h15, 12h15 et 21h45 heure de Paris (CEST) = 6h15, 10h15 et 19h45 UTC.
-# A ajuster de 1h en hiver (CET).
+# 4 publications/jour, calees sur le marche US (audience visee), alignees
+# sur TopRankTV avec 15 min de decalage pour eviter deux publications
+# simultanees sur le meme depot :
+# 8h15, 12h15, 17h15 et 21h15 EDT = 12h15, 16h15, 21h15 et 01h15 UTC (le
+# lendemain pour le dernier creneau).
+# EDT = UTC-4 (heure d'ete US, en vigueur en aout). A ajuster de 1h en hiver
+# (EST = UTC-5).
 on:
   schedule:
-    - cron: "15 6 * * *"
-    - cron: "15 10 * * *"
-    - cron: "45 19 * * *"
+    - cron: "15 12 * * *"
+    - cron: "15 16 * * *"
+    - cron: "15 21 * * *"
+    - cron: "15 1 * * *"
   workflow_dispatch: {}
 
 permissions:

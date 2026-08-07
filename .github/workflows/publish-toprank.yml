@@ -1,12 +1,16 @@
 name: Publish TopRankTV
 
-# 8h00, 12h00 et 21h30 heure de Paris = 6h00, 10h00 et 19h30 UTC (ete, CEST).
-# A ajuster de 1h en hiver (CET) si besoin.
+# 4 publications/jour, calees sur le marche US (audience visee) au lieu de
+# l'heure de Paris - 8h00, 12h00, 17h00 et 21h00 EDT = 12h00, 16h00, 21h00
+# et 01h00 UTC (le lendemain pour le dernier creneau).
+# EDT = UTC-4 (heure d'ete US, en vigueur en aout). A ajuster de 1h en hiver
+# (EST = UTC-5) si besoin de rester cale sur ces creneaux locaux.
 on:
   schedule:
-    - cron: "0 6 * * *"
-    - cron: "0 10 * * *"
-    - cron: "30 19 * * *"
+    - cron: "0 12 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 21 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch: {}
 
 permissions:
