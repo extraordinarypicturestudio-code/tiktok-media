@@ -470,5 +470,13 @@
     "file": "clips/campfire-meat-23.mp4",
     "status": "published",
     "publishedAt": "2026-08-07T21:00:57Z"
+  },
+  {
+    "hash": "eac0d89ea728f7b74de257560bf1bda1",
+    "id": "campfire-burger-25",
+    "channel": "recipe_crave",
+    "file": "clips/campfire-burger-25.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-07T23:47:24Z"
   }
 ]
