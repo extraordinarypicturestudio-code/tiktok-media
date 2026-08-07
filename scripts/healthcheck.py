@@ -38,8 +38,8 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 # panne et son creneau RATTRAPE automatiquement. Calibre sur le plus grand
 # ecart normal entre deux creneaux + une marge pour le retard chronique des
 # crons GitHub (jusqu'a ~4h observe) :
-#   - TikTok (4/jour : 12h, 17h, 20h, 23h UTC, mix Paris+US) -> ecart max
-#     13h (creneau nuit 23h->12h) + marge = 17h
+#   - TikTok (4/jour : 11h, 16h, 20h, 23h UTC, 2 France+2 US anti-
+#     cannibalisation) -> ecart max 12h (creneau nuit 23h->11h) + marge = 16h
 #
 # Bigfoot Content EN PAUSE (07/08/2026, demande explicite) : retiree de
 # CHAINES pour que le controle de sante ne la traite plus comme silencieuse
@@ -50,10 +50,10 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 CHAINES = [
     {"queue": "queue-toprank.json", "dossier": "clips-toprank",
      "pseudo": "toprank.tv1", "par_jour": 4, "cle": "ZERNIO_API_KEY",
-     "script": "publish_next.py", "silence_max_h": 17},
+     "script": "publish_next.py", "silence_max_h": 16},
     {"queue": "queue-recipecrave.json", "dossier": "clips",
      "pseudo": "recipe_crave", "par_jour": 4, "cle": "ZERNIO_API_KEY",
-     "script": "publish_next.py", "silence_max_h": 17},
+     "script": "publish_next.py", "silence_max_h": 16},
     # {"queue": "queue-bigfoot.json", "dossier": "clips-bigfoot",
     #  "pseudo": "extraordinarystudiopicture", "par_jour": 2,
     #  "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",

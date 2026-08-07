@@ -1,17 +1,19 @@
 name: Publish TopRankTV
 
-# 4 publications/jour, mix Paris + marche US (demande explicite) :
-#   - 12h00 UTC = 08h00 EDT (creneau matin US)
-#   - 17h00 UTC = 19h00 Paris/CEST (creneau soir France)
+# 4 publications/jour, optimise pour eviter toute cannibalisation : chaque
+# public (France / US) a 2 creneaux bien espaces (7-9h d'ecart), jamais 2
+# creneaux consecutifs sur la meme audience.
+#   - 11h00 UTC = 13h00 Paris/CEST (creneau midi France)
+#   - 16h00 UTC = 12h00 EDT       (creneau midi US)
 #   - 20h00 UTC = 22h00 Paris/CEST (creneau soir France)
-#   - 23h00 UTC = 19h00 EDT (creneau soir US, prime time)
+#   - 23h00 UTC = 19h00 EDT       (creneau soir US, prime time - le plus fort des 4)
 # EDT = UTC-4 / CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h
 # chacun en hiver (EST = UTC-5, CET = UTC+1) si besoin de rester cale sur
 # ces creneaux locaux.
 on:
   schedule:
-    - cron: "0 12 * * *"
-    - cron: "0 17 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 16 * * *"
     - cron: "0 20 * * *"
     - cron: "0 23 * * *"
   workflow_dispatch: {}
