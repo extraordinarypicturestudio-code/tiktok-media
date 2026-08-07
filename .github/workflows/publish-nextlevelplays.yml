@@ -4,21 +4,23 @@ name: Publish NextLevelPlays
 # compte Zernio (celui de Bigfoot Content) - le compte principal etait deja
 # plein (2/2 connexions TikTok gratuites avec TopRankTV + recipe_crave).
 #
-# Memes horaires anti-cannibalisation que TopRankTV/recipe_crave (2 France
-# + 2 US bien espaces), decalage de 30 min pour eviter toute collision de
-# push avec les 2 autres workflows TikTok qui tournent aux minutes 00/15 :
-#   - 11h30 UTC = 13h30 Paris/CEST (creneau midi France)
-#   - 16h30 UTC = 12h30 EDT       (creneau midi US)
-#   - 20h30 UTC = 22h30 Paris/CEST (creneau soir France)
-#   - 23h30 UTC = 19h30 EDT       (creneau soir US, prime time)
-# EDT = UTC-4 / CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h
-# chacun en hiver (EST = UTC-5, CET = UTC+1).
+# 3 publications/jour (demande explicite, different des 4/jour de
+# TopRankTV/recipe_crave), calees uniquement sur le marche US (audience
+# internationale visee pour cette chaine, pas de creneau France dedie) et
+# bien espacees dans la journee pour ne jamais se cannibaliser :
+#   - 12h45 UTC = 08h45 EDT (creneau matin US)
+#   - 17h45 UTC = 13h45 EDT (creneau midi US)
+#   - 23h45 UTC = 19h45 EDT (creneau soir US, prime time)
+# Minutes 45 choisies pour ne jamais tomber sur les memes minutes que
+# TopRankTV (minute 00) ou recipe_crave (minute 15), meme quand les heures
+# se recoupent (ex. 23h) - evite toute collision de push simultane.
+# EDT = UTC-4 (heure d'ete US, en vigueur en aout). A ajuster de 1h en
+# hiver (EST = UTC-5).
 on:
   schedule:
-    - cron: "30 11 * * *"
-    - cron: "30 16 * * *"
-    - cron: "30 20 * * *"
-    - cron: "30 23 * * *"
+    - cron: "45 12 * * *"
+    - cron: "45 17 * * *"
+    - cron: "45 23 * * *"
   workflow_dispatch: {}
 
 permissions:
