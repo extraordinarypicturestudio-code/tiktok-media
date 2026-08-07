@@ -10,6 +10,7 @@ GitHub), jamais commitee dans le depot.
 Usage : python publish_next.py <queue.json> <pseudo_tiktok>
 """
 
+import base64
 import hashlib
 import json
 import os
@@ -162,7 +163,118 @@ def compte_id(pseudo_tiktok):
     raise RuntimeError(f"Compte TikTok '{pseudo_tiktok}' introuvable dans Zernio")
 
 
-def publier(account_id, url_video, legende):
+# --- Choix de la vignette -------------------------------------------------
+#
+# La vignette est la premiere (souvent la seule) chose que voit quelqu'un qui
+# tombe sur la page du compte. Avant, elle etait figee a 2000 ms pour toutes
+# les videos, ce qui tombait presque toujours sur des ingredients crus ou un
+# plan d'intro sans interet.
+#
+# Deux approches purement numeriques ont ete testees et ECARTEES le
+# 07/08/2026 : noter les images par saturation/contraste, puis par nettete
+# (filtre edgedetect). Les deux choisissaient des mains sur du bacon cru, une
+# bouillie informe ou un chien de dos - un score de pixels ne sait pas ce
+# qu'est un plat termine. Ne pas re-tenter cette voie.
+#
+# Ce qui marche : faire REGARDER les images par un modele de vision. Gemini
+# (tier gratuit) recoit une planche de contact numerotee et designe la case
+# qui montre le plat fini. Teste sur 3 videos, 3 bons choix.
+
+GEMINI_MODEL = "gemini-flash-lite-latest"
+GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
+              f"{GEMINI_MODEL}:generateContent")
+VIGNETTE_COLONNES = 5
+VIGNETTE_LIGNES = 4
+VIGNETTE_CASES = VIGNETTE_COLONNES * VIGNETTE_LIGNES
+VIGNETTE_DEFAUT_MS = 2000
+
+PROMPT_VIGNETTE = (
+    "Cette image est une planche de contact : {n} images extraites d'une "
+    "video, a intervalles reguliers, numerotees de 1 a {n} de GAUCHE A DROITE "
+    "puis de HAUT EN BAS (case 1 = en haut a gauche, case {n} = en bas a "
+    "droite).\n\n"
+    "Ta tache : choisir LA case qui ferait la MEILLEURE miniature pour "
+    "attirer l'oeil sur TikTok. Criteres par ordre de priorite :\n"
+    "1. Le RESULTAT FINAL est visible et spectaculaire (plat termine et "
+    "appetissant pour une recette ; moment le plus impressionnant pour une "
+    "video de sport ou d'action). Pas d'ingredients crus, pas d'etape "
+    "intermediaire, pas de preparation en cours.\n"
+    "2. L'image est nette et bien exposee.\n"
+    "3. Le sujet occupe une bonne partie du cadre.\n"
+    "4. Pas de visage humain, pas d'animal, pas de main qui cache le sujet.\n\n"
+    "Reponds en JSON strict :\n"
+    '{{"case": <numero entre 1 et {n}>, "raison": "description courte"}}'
+).format(n=VIGNETTE_CASES)
+
+
+def _cle_gemini():
+    return os.environ.get("GEMINI_API_KEY")
+
+
+def _planche_contact(chemin, duree_video, marge_fin=2.5):
+    """Planche de contact du contenu utile (outro exclu). Retourne (jpg, pas)."""
+    fin = max(duree_video - marge_fin, 1.0)
+    pas = fin / VIGNETTE_CASES
+    sortie = chemin + ".planche.jpg"
+    subprocess.run(
+        ["ffmpeg", "-y", "-t", str(fin), "-i", chemin, "-vf",
+         f"fps=1/{pas},scale=200:-1,"
+         f"tile={VIGNETTE_COLONNES}x{VIGNETTE_LIGNES}",
+         "-frames:v", "1", sortie],
+        capture_output=True)
+    return sortie, pas
+
+
+def choisir_vignette_ms(chemin, duree_video):
+    """Timestamp (ms) de l'image de couverture, choisi par Gemini.
+
+    Tout echec (pas de cle, quota, reseau, reponse illisible) retombe sur la
+    valeur par defaut : une vignette imparfaite ne doit JAMAIS empecher une
+    publication de partir.
+    """
+    cle = _cle_gemini()
+    if not cle:
+        print("  (GEMINI_API_KEY absente : vignette par defaut a 2s)")
+        return VIGNETTE_DEFAUT_MS
+
+    planche = None
+    try:
+        planche, pas = _planche_contact(chemin, duree_video)
+        with open(planche, "rb") as f:
+            img_b64 = base64.b64encode(f.read()).decode()
+
+        payload = {
+            "contents": [{"parts": [
+                {"text": PROMPT_VIGNETTE},
+                {"inline_data": {"mime_type": "image/jpeg", "data": img_b64}},
+            ]}],
+            "generationConfig": {"responseMimeType": "application/json"},
+        }
+        req = urllib.request.Request(
+            f"{GEMINI_URL}?key={cle}",
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read())
+        rep = json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
+
+        case = max(1, min(VIGNETTE_CASES, int(rep.get("case", 1))))
+        ms = int((case - 0.5) * pas * 1000)
+        print(f"  Vignette : case {case} -> {ms/1000:.1f}s "
+              f"({rep.get('raison', '')[:80]})")
+        return ms
+    except Exception as e:
+        print(f"  (choix de vignette impossible : {type(e).__name__} - "
+              f"vignette par defaut a 2s)")
+        return VIGNETTE_DEFAUT_MS
+    finally:
+        if planche and os.path.exists(planche):
+            os.unlink(planche)
+
+
+def publier(account_id, url_video, legende, cover_ms=VIGNETTE_DEFAUT_MS):
     payload = {
         "content": legende,
         "publishNow": True,
@@ -173,7 +285,7 @@ def publier(account_id, url_video, legende):
             "allow_comment": True,
             "allow_duet": True,
             "allow_stitch": True,
-            "video_cover_timestamp_ms": 2000,
+            "video_cover_timestamp_ms": cover_ms,
             "content_preview_confirmed": True,
             "express_consent_given": True,
         },
@@ -332,8 +444,16 @@ def main():
         a_publier["attempts"] = a_publier.get("attempts", 0) + 1
         avant_envoi = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 120))
 
+        # Vignette : choisie sur le fichier local, avant l'envoi.
+        cover_ms = VIGNETTE_DEFAUT_MS
+        chemin = chemin_local(a_publier["url"])
+        if chemin and os.path.exists(chemin):
+            s = specs_video(chemin)
+            if s and s.get("duree"):
+                cover_ms = choisir_vignette_ms(chemin, s["duree"])
+
         try:
-            reponse = publier(cid, a_publier["url"], a_publier["caption"])
+            reponse = publier(cid, a_publier["url"], a_publier["caption"], cover_ms)
         except RuntimeError as e:
             # Rejet franc du serveur : rien n'a ete cree, on peut reessayer.
             statut_suivant = "pending" if a_publier["attempts"] < 3 else "failed"

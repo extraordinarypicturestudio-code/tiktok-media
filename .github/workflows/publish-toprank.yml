@@ -35,6 +35,10 @@ jobs:
       - name: Publier la prochaine video en attente
         env:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          # Sert uniquement a choisir la vignette (image de couverture).
+          # Si le secret est absent, la publication part quand meme avec la
+          # vignette par defaut a 2s - jamais bloquante.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/publish_next.py queue-toprank.json toprank.tv1
 
       # always() : meme si la publication echoue, l'etat de la file (compteur
