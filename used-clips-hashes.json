@@ -478,5 +478,13 @@
     "file": "clips/campfire-burger-25.mp4",
     "status": "published",
     "publishedAt": "2026-08-07T23:47:24Z"
+  },
+  {
+    "hash": "242d6cffbfb4a4bbaa64a94a6748dd97",
+    "id": "steak-and-chips-26",
+    "channel": "recipe_crave",
+    "file": "clips/steak-and-chips-26.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-08T11:47:24Z"
   }
 ]
