@@ -542,5 +542,13 @@
     "file": "clips-toprank/mtb-fail-32.mp4",
     "status": "published",
     "publishedAt": "2026-08-09T20:26:07Z"
+  },
+  {
+    "hash": "057851c04a5efd0409bdb607c247f6e1",
+    "id": "tomato-dip-29",
+    "channel": "recipe_crave",
+    "file": "clips/tomato-dip-29.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-09T20:52:47Z"
   }
 ]
