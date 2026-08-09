@@ -278,5 +278,13 @@
     "caption": "Nothing went to plan today 💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #funnyvideos #trending",
     "status": "rejected",
     "note": "Texte incruste 'Baby core.' + mineurs identifiables."
+  },
+  {
+    "id": "funny-clip-39",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/funny-clip-39.mp4",
+    "caption": "You had one job 💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #funnyvideos #trending",
+    "status": "pending",
+    "note": "46.7s : proche du seuil 60s. Passe le controle visuel complet + outro toprank ajoute.",
+    "controle_visuel": true
   }
 ]
