@@ -21,49 +21,49 @@
     "id": "megaramp-09",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/megaramp-09.mp4",
     "caption": "Mega ramp, zero fear 🛹💨\n\n#megaramp #action #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "rejected",
+    "note": "Texte incruste 'Folk Valley Megaramp' sur toutes les images."
   },
   {
     "id": "skatepark-10",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/skatepark-10.mp4",
     "caption": "Skatepark session, full send 🛹🔥\n\n#skate #skateboarding #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "pending",
+    "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro de chaine ajoute."
   },
   {
     "id": "baseball-11",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/baseball-11.mp4",
     "caption": "Baseball from an angle you never see ⚾\n\n#baseball #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "rejected",
+    "note": "Mineurs identifiables."
   },
   {
     "id": "mtb-pov-13",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/mtb-pov-13.mp4",
     "caption": "Full speed downhill, POV 🚴💨\n\n#mtb #downhill #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "pending",
+    "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro de chaine ajoute."
   },
   {
     "id": "archery-12",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/archery-12.mp4",
     "caption": "Winter archery, dead center 🏹\n\n#archery #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "pending",
+    "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro de chaine ajoute."
   },
   {
     "id": "alpine-14",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/alpine-14.mp4",
     "caption": "High altitude, no shortcuts 🏔️\n\n#mountaineering #alpine #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "pending",
+    "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro de chaine ajoute."
   },
   {
     "id": "summit-15",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/summit-15.mp4",
     "caption": "The climb was worth it 🏔️🔥\n\n#hiking #mountain #sports #amateur #viral #fyp #foryou #trending",
-    "status": "on_hold",
-    "note": "GEL EN ATTENTE DE VERIFICATION VISUELLE. L'OCR du pipeline a laisse passer des watermarks et textes incrustes (ex. slide-fail-31 declare 'propre' alors qu'il porte un watermark @MillaChats sur toute l'image). Aucun clip ne repart tant qu'il n'a pas passe le controle visuel Gemini."
+    "status": "pending",
+    "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro de chaine ajoute."
   }
 ]
