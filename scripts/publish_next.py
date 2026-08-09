@@ -27,6 +27,12 @@ REGISTRE = "used-clips-hashes.json"
 # Nombre de videos differentes tentees dans un meme creneau avant d'abandonner.
 MAX_CANDIDATS_PAR_RUN = 3
 
+# Marque laissee par preparer_publication.py dans la note d'une entree validee.
+# Sert de preuve, au moment de publier, que le clip est passe par le controle
+# visuel (watermark, texte incruste, logo de source, cadrage, mineur, audio).
+# Un clip sans cette marque ni le drapeau `controle_visuel: true` est bloque.
+MARQUE_CONTROLE = "Passe le controle visuel complet"
+
 
 def ecrire_rapport_echec(pseudo, echecs, rattrape):
     """Ecrit un resume lisible destine a l'alerte GitHub (issue + email).
@@ -440,6 +446,24 @@ def main():
             echecs.append(f"{a_publier['id']} : {detail}")
             ecrire_queue()
             continue
+
+        # Derniere barriere : le clip a-t-il ete valide par le controle visuel ?
+        # `preparer_publication.py` ecrit cette marque dans la note. Un clip
+        # ajoute a la main, sans passer par lui, n'a pas de marque et ne sort
+        # pas. C'est ce qui manquait le 09/08 : plusieurs clips portant un
+        # watermark ou des sous-titres incrustes sont partis parce que rien
+        # ne verifiait, au moment de publier, qu'ils avaient ete controles.
+        if not a_publier.get("controle_visuel"):
+            note = str(a_publier.get("note", ""))
+            if MARQUE_CONTROLE not in note:
+                detail = ("jamais passe par le controle visuel "
+                          "(controle_publication.py) : publication refusee")
+                print(f"  ecarte avant envoi : {detail}")
+                a_publier["status"] = "on_hold"
+                a_publier["error"] = detail
+                echecs.append(f"{a_publier['id']} : {detail}")
+                ecrire_queue()
+                continue
 
         a_publier["attempts"] = a_publier.get("attempts", 0) + 1
         avant_envoi = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 120))
