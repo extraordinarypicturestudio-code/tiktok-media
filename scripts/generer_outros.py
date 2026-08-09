@@ -44,9 +44,15 @@ def _police(nom_fichier):
 POLICE_GRASSE = _police("arialbd.ttf")
 POLICE_NORMALE = _police("arial.ttf")
 
+# "pseudo" sert a retrouver le compte cote API Zernio (avatar) - c'est le
+# handle technique (@...). "label" est ce qui s'affiche dans l'outro : par
+# defaut identique au pseudo, sauf si le nom d'affichage reel sur TikTok
+# differe du handle (ex: recipe_crave affiche "cuisine_beauty" comme nom de
+# profil, confirme via GET /accounts -> displayName, TikTok limite le
+# changement de displayName a 1x/7 jours donc l'incoherence persiste).
 CHAINES = {
-    "toprank":       {"pseudo": "toprank.tv1",      "env": "zernio.env",  "texte": "Follow for more fails"},
-    "recipecrave":   {"pseudo": "recipe_crave",     "env": "zernio.env",  "texte": "Follow for more recipes"},
+    "toprank":        {"pseudo": "toprank.tv1",      "env": "zernio.env",  "texte": "Follow for more fails"},
+    "recipecrave":    {"pseudo": "recipe_crave",     "env": "zernio.env",  "texte": "Follow for more recipes", "label": "Cuisine_Beauty"},
     "nextlevelplays": {"pseudo": "nextlevelplays88", "env": "zernio2.env", "texte": "Follow for more sports"},
 }
 
@@ -104,6 +110,11 @@ def construire(nom, conf):
     telecharger(url_avatar(conf["pseudo"], conf["env"]), brut)
     rond(brut, cercle)
 
+    # Le label affiche est soit le nom d'affichage reel (label explicite,
+    # pas de @ : ce n'est pas un handle cliquable), soit par defaut le
+    # handle technique avec son @.
+    label = conf.get("label") or f"@{conf['pseudo']}"
+
     y_logo = (H - TAILLE_LOGO) // 2 - 160
     y_texte = y_logo + TAILLE_LOGO + 110
     y_pseudo = y_texte + 90
@@ -123,7 +134,7 @@ def construire(nom, conf):
           f"fontcolor=white:fontsize=64:"
           f"x=(w-text_w)/2:y={y_texte}:"
           f"alpha='if(lt(t,0.6),t/0.6,1)'[v2];"
-          f"[v2]drawtext=fontfile='{POLICE_NORMALE}':text='@{conf['pseudo']}':"
+          f"[v2]drawtext=fontfile='{POLICE_NORMALE}':text='{label}':"
           f"fontcolor=0xBBBBBB:fontsize=46:"
           f"x=(w-text_w)/2:y={y_pseudo}:"
           f"alpha='if(lt(t,0.8),max(0\\,(t-0.2)/0.6),1)',setsar=1[vout]"),
