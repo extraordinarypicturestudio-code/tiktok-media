@@ -206,20 +206,22 @@
     "id": "gym-fails-28",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/gym-fails-28.mp4",
     "caption": "Gym plans vs gym reality 💀\n\n#gymfail #fail #fails #funny #fyp #foryou #viral #comedy #epicfail #gymtok",
-    "status": "pending"
+    "status": "rejected",
+    "note": "Cadrages centres sur les corps, textes incrustes (POV, OMG) et logos de marques visibles (XENDURANCE, Nike). Verification visuelle manuelle."
   },
   {
     "id": "daily-fails-29",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/daily-fails-29.mp4",
     "caption": "One of those days, all at once 💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #funnyvideos #trending",
-    "status": "pending",
-    "note": "66.1s : au-dessus du seuil 60s du Creator Rewards, monetisable."
+    "status": "rejected",
+    "note": "Textes incrustes non detectes par l'OCR (POV/OOTD sur plusieurs plans) + visages nets. Verification visuelle manuelle."
   },
   {
     "id": "waterslide-fails-30",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/waterslide-fails-30.mp4",
     "caption": "Water slides always win 💦💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #waterslide #trending",
-    "status": "pending"
+    "status": "rejected",
+    "note": "Texte incruste ('Telling her there's a jellyfish behind her') et plan bikini centre sur le corps. Verification visuelle manuelle."
   },
   {
     "id": "slide-fail-31",
