@@ -62,13 +62,19 @@ CRITERES_SECURITE = {
     "cadrage_corps": "cadrage centre sur le corps",
     "mineur_visible": "mineur visible",
 }
+# nextlevelplays88 et toprank.tv1 sont des chaines de sport AMATEUR. Les
+# images d'evenements professionnels (ligue, federation, championnat) sont
+# sous droits de diffusion. Deja rencontre trois fois : un but de Bellingham,
+# une competition d'une federation nationale de skate, une manche du WRC.
+CRITERE_PRO = {"evenement_professionnel": "images d'evenement sportif professionnel (droits de diffusion)"}
 CRITERE_VISAGE = {"visage_identifiable": "visage identifiable"}
 
 PROFILS = {
     # recipe_crave : format "mains uniquement, jamais de visage"
     "cuisine": {**CRITERES_COPYRIGHT, **CRITERES_SECURITE, **CRITERE_VISAGE},
-    # toprank.tv1 et nextlevelplays88 : le visage est inherent au contenu
-    "sport": {**CRITERES_COPYRIGHT, **CRITERES_SECURITE},
+    # toprank.tv1 et nextlevelplays88 : le visage est inherent au contenu,
+    # mais l'evenement professionnel est disqualifiant.
+    "sport": {**CRITERES_COPYRIGHT, **CRITERES_SECURITE, **CRITERE_PRO},
 }
 
 
@@ -85,6 +91,7 @@ PROMPT_VISUEL = (
     '{"watermark": true/false, "texte_incruste": true/false, '
     '"logo_marque": true/false, "visage_identifiable": true/false, '
     '"cadrage_corps": true/false, "mineur_visible": true/false, '
+    '"evenement_professionnel": true/false, '
     '"details": "ce que tu as vu, en citant les textes lus", '
     '"verdict": "OK" ou "REJET"}\n\n'
     "watermark = true si un pseudo, un @handle, une URL, un nom de site ou "
@@ -108,6 +115,14 @@ PROMPT_VISUEL = (
     "l'action.\n"
     "mineur_visible = true si un enfant ou un bebe est visible de facon "
     "identifiable.\n"
+    "evenement_professionnel = true si la scene est une competition ou un "
+    "evenement organise de niveau professionnel : vehicule ou maillot aux "
+    "couleurs d'une ecurie ou d'un club, dossard officiel, commissaire de "
+    "course, barrieres et panneaux publicitaires d'epreuve, tribunes, foule "
+    "de spectateurs, stade. Ces images sont sous droits de diffusion. Du "
+    "sport pratique par des amateurs dans un lieu public ou prive ordinaire "
+    "(skatepark, foret, riviere, rue, salle de sport) n'est PAS un evenement "
+    "professionnel.\n"
     "verdict = REJET des qu'UN SEUL de ces champs est true. Dans le doute, "
     "REJET : un faux positif coute un clip, un faux negatif coute la chaine."
 )
