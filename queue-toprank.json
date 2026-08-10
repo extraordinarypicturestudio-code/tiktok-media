@@ -298,8 +298,11 @@
     "id": "funny-clip-39",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/funny-clip-39.mp4",
     "caption": "You had one job 💀\n\n#fail #fails #funny #fyp #foryou #viral #comedy #epicfail #funnyvideos #trending",
-    "status": "pending",
+    "status": "published",
     "note": "46.7s : proche du seuil 60s. Passe le controle visuel complet + outro toprank ajoute.",
-    "controle_visuel": true
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7a364f6243fa0336fddf84",
+    "publishedAt": "2026-08-10T20:36:59Z"
   }
 ]
