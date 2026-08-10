@@ -638,5 +638,13 @@
     "file": "clips/quick-bite-35.mp4",
     "status": "published",
     "publishedAt": "2026-08-10T21:03:21Z"
+  },
+  {
+    "hash": "bf55f19242408b238a670e2e08ca3ef6",
+    "id": "potato-rosti-34",
+    "channel": "recipe_crave",
+    "file": "clips/potato-rosti-34.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-10T23:49:39Z"
   }
 ]
