@@ -630,5 +630,13 @@
     "file": "clips-toprank/funny-clip-39.mp4",
     "status": "published",
     "publishedAt": "2026-08-10T20:36:59Z"
+  },
+  {
+    "hash": "24302519c6e57818b31e002bf7c7465d",
+    "id": "quick-bite-35",
+    "channel": "recipe_crave",
+    "file": "clips/quick-bite-35.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-10T21:03:21Z"
   }
 ]
