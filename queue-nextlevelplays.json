@@ -96,9 +96,12 @@
     "id": "moto-ride-18",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/moto-ride-18.mp4",
     "caption": "Pure ride, no talking 🏍️\n\n#motorcycle #ride #sports #amateur #viral #fyp #foryou #trending",
-    "status": "pending",
+    "status": "unconfirmed",
     "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro nextlevelplays ajoute.",
-    "controle_visuel": true
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7b2c61f3b49fb165ae563e",
+    "error": "Statut non confirme (delai depasse (dernier statut connu : publishing)) - a verifier a la main"
   },
   {
     "id": "cliff-jump-16",
