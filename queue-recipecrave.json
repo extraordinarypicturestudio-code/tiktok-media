@@ -388,8 +388,11 @@
     "id": "chicken-glaze-45",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-glaze-45.mp4",
     "caption": "Sticky glazed chicken, start to finish 🍗\n\n#chicken #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending",
+    "status": "published",
     "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro recipe_crave ajoute.",
-    "controle_visuel": true
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7b8e4c775f2c2b8d820ba5",
+    "publishedAt": "2026-08-11T21:04:56Z"
   }
 ]
