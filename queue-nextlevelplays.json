@@ -139,8 +139,11 @@
     "id": "enduro-21",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/enduro-21.mp4",
     "caption": "Enduro line, first try 🏍️\n\n#enduro #dirtbike #sports #amateur #viral #fyp #foryou #trending",
-    "status": "pending",
+    "status": "published",
     "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro nextlevelplays ajoute.",
-    "controle_visuel": true
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7cbd51c35cbcbe6d4b4ff2",
+    "publishedAt": "2026-08-12T18:37:49Z"
   }
 ]
