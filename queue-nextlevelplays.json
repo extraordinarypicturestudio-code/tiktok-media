@@ -128,9 +128,12 @@
     "id": "motocross-20",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-nextlevelplays/motocross-20.mp4",
     "caption": "Motocross, dirt everywhere 🏍️🔥\n\n#motocross #dirtbike #sports #amateur #viral #fyp #foryou #trending",
-    "status": "pending",
+    "status": "published",
     "note": "Passe le controle visuel complet (watermark/texte/logo/cadrage/mineur/audio) + outro nextlevelplays ajoute.",
-    "controle_visuel": true
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7c7e093333f7b712128b30",
+    "publishedAt": "2026-08-12T14:07:49Z"
   },
   {
     "id": "enduro-21",
