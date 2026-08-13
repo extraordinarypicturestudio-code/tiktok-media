@@ -420,19 +420,22 @@
     "id": "chicken-bake-49",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-bake-49.mp4",
     "caption": "Cheesy chicken lasagna bake 🧀\n\n#chicken #lasagna #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "campfire-chicken-50",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/campfire-chicken-50.mp4",
     "caption": "Chicken cooked over an open campfire 🔥\n\n#chicken #campfire #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "forest-burger-51",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/forest-burger-51.mp4",
     "caption": "A burger built from scratch in the woods 🍔\n\n#burger #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "dirty-chicken-52",
