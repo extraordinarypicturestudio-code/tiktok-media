@@ -399,19 +399,22 @@
     "id": "nyc-steak-46",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/nyc-steak-46.mp4",
     "caption": "NYC's famous steak, ASMR style 🥩\n\n#steak #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "lake-tacos-47",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/lake-tacos-47.mp4",
     "caption": "Steak tacos, cooked lakeside 🌮\n\n#tacos #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "shrimp-cucumber-48",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/shrimp-cucumber-48.mp4",
     "caption": "Shrimp cucumber rolls, low carb 🦐\n\n#shrimp #lowcarb #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending"
+    "status": "on_hold",
+    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
   },
   {
     "id": "chicken-bake-49",
