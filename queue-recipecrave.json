@@ -399,60 +399,63 @@
     "id": "nyc-steak-46",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/nyc-steak-46.mp4",
     "caption": "NYC's famous steak, ASMR style 🥩\n\n#steak #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "lake-tacos-47",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/lake-tacos-47.mp4",
     "caption": "Steak tacos, cooked lakeside 🌮\n\n#tacos #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "shrimp-cucumber-48",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/shrimp-cucumber-48.mp4",
     "caption": "Shrimp cucumber rolls, low carb 🦐\n\n#shrimp #lowcarb #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "chicken-bake-49",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-bake-49.mp4",
     "caption": "Cheesy chicken lasagna bake 🧀\n\n#chicken #lasagna #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "campfire-chicken-50",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/campfire-chicken-50.mp4",
     "caption": "Chicken cooked over an open campfire 🔥\n\n#chicken #campfire #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "forest-burger-51",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/forest-burger-51.mp4",
     "caption": "A burger built from scratch in the woods 🍔\n\n#burger #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "on_hold",
-    "error": "jamais passe par le controle visuel (controle_publication.py) : publication refusee"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "dirty-chicken-52",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dirty-chicken-52.mp4",
     "caption": "Dirty chicken, done right 🍗\n\n#chicken #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "best-steak-53",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/best-steak-53.mp4",
     "caption": "Best steak ever, cooked in the wild 🔥\n\n#steak #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending"
+    "status": "pending",
+    "controle_visuel": true
   },
   {
     "id": "steak-chips-54",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/steak-chips-54.mp4",
     "caption": "Perfect steak and chips, start to finish 🧱\n\n#steak #chips #outdoorcooking #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending"
+    "status": "pending",
+    "controle_visuel": true
   }
 ]
