@@ -718,5 +718,13 @@
     "file": "clips/nyc-steak-46.mp4",
     "status": "published",
     "publishedAt": "2026-08-14T12:01:38Z"
+  },
+  {
+    "hash": "d889769cb633ce11dccdc34a64b65dad",
+    "id": "lake-tacos-47",
+    "channel": "recipe_crave",
+    "file": "clips/lake-tacos-47.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-14T17:11:51Z"
   }
 ]
