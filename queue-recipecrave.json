@@ -429,8 +429,11 @@
     "id": "chicken-bake-49",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-bake-49.mp4",
     "caption": "Cheesy chicken lasagna bake 🧀\n\n#chicken #lasagna #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral #cookingvideo",
-    "status": "pending",
-    "controle_visuel": true
+    "status": "published",
+    "controle_visuel": true,
+    "attempts": 1,
+    "postId": "6a7fa61b339413a61d9fb8ac",
+    "publishedAt": "2026-08-14T23:35:34Z"
   },
   {
     "id": "campfire-chicken-50",
