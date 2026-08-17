@@ -1,19 +1,17 @@
 name: Publish esprit_libre
 
-# 4 publications/jour, meme logique que recipe_crave, decalee de 30 min pour
-# ne jamais tomber sur le meme creneau (evite deux workflows qui poussent sur
-# le meme depot en meme temps) :
-#   - 06h30 UTC = 08h30 Paris/CEST (matin)
-#   - 12h30 UTC = 14h30 Paris/CEST (apres-midi)
-#   - 17h30 UTC = 19h30 Paris/CEST (soir)
-#   - 21h30 UTC = 23h30 Paris/CEST (fin de soiree)
+# 3 publications/jour, decalee de 30 min des autres workflows pour ne jamais
+# tomber sur le meme creneau (evite deux workflows qui poussent sur le meme
+# depot en meme temps) :
+#   - 08h30 UTC = 10h30 Paris/CEST (matin)
+#   - 14h30 UTC = 16h30 Paris/CEST (apres-midi)
+#   - 19h30 UTC = 21h30 Paris/CEST (soir)
 # CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h en hiver (CET = UTC+1).
 on:
   schedule:
-    - cron: "30 6 * * *"
-    - cron: "30 12 * * *"
-    - cron: "30 17 * * *"
-    - cron: "30 21 * * *"
+    - cron: "30 8 * * *"
+    - cron: "30 14 * * *"
+    - cron: "30 19 * * *"
   workflow_dispatch: {}
 
 permissions:
