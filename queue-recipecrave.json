@@ -489,9 +489,11 @@
     "id": "beef-taquitos-cheese",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/beef-taquitos-cheese.mp4",
     "caption": "Crispy cheesy beef taquitos 🌮🧀\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a8372a9b7f77ec38742192b",
+    "publishedAt": "2026-08-17T20:45:11Z"
   },
   {
     "id": "chopped-salad-viral",
