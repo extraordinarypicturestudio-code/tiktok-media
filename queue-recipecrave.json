@@ -499,9 +499,11 @@
     "id": "chopped-salad-viral",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chopped-salad-viral.mp4",
     "caption": "This chopped salad goes viral every single time 🥗\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a839aa079df60dae56782cb",
+    "publishedAt": "2026-08-17T23:35:42Z"
   },
   {
     "id": "burger-bun-bake",
