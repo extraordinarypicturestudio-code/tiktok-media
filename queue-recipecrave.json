@@ -529,9 +529,11 @@
     "id": "creamy-recipe-idea",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/creamy-recipe-idea.mp4",
     "caption": "Creamy recipe idea worth saving 🍽️\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a84c45ef99aea70b42cff2c",
+    "publishedAt": "2026-08-18T20:46:03Z"
   },
   {
     "id": "dessert-idea-01",
