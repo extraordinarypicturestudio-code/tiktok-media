@@ -814,5 +814,13 @@
     "file": "clips/burger-bun-bake.mp4",
     "status": "published",
     "publishedAt": "2026-08-18T11:45:17Z"
+  },
+  {
+    "hash": "73f9f4e02f869b649ee261e8d2f3d5e1",
+    "id": "espritlibre_claraluciani_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_claraluciani_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-18T15:06:00Z"
   }
 ]
