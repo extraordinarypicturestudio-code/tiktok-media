@@ -798,5 +798,13 @@
     "file": "clips/chopped-salad-viral.mp4",
     "status": "published",
     "publishedAt": "2026-08-17T23:35:42Z"
+  },
+  {
+    "hash": "221a6831ddd3bd7ea3120ad66f7e0342",
+    "id": "espritlibre_arnoldschwarzenegger_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_arnoldschwarzenegger_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-18T09:02:25Z"
   }
 ]
