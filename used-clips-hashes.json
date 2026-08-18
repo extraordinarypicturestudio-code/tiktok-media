@@ -830,5 +830,13 @@
     "file": "clips/butter-hand-technique.mp4",
     "status": "published",
     "publishedAt": "2026-08-18T17:06:32Z"
+  },
+  {
+    "hash": "41a766495c38ac4e93d0ad497a2b348d",
+    "id": "espritlibre_davidgoggins_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_davidgoggins_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-18T19:52:31Z"
   }
 ]
