@@ -509,9 +509,11 @@
     "id": "burger-bun-bake",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/burger-bun-bake.mp4",
     "caption": "One-pan burger bun bake 🍔\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a8445a108e9de3fc4327b43",
+    "publishedAt": "2026-08-18T11:45:17Z"
   },
   {
     "id": "butter-hand-technique",
