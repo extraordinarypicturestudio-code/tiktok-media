@@ -846,5 +846,13 @@
     "file": "clips/creamy-recipe-idea.mp4",
     "status": "published",
     "publishedAt": "2026-08-18T20:46:03Z"
+  },
+  {
+    "hash": "935a4df6e39d5214df409e1a718557cb",
+    "id": "dessert-idea-01",
+    "channel": "recipe_crave",
+    "file": "clips/dessert-idea-01.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-18T23:35:29Z"
   }
 ]

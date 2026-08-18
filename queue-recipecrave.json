@@ -539,9 +539,11 @@
     "id": "dessert-idea-01",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dessert-idea-01.mp4",
     "caption": "Dessert idea you'll want to try 🍰\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a84ec16680ec587b75005ac",
+    "publishedAt": "2026-08-18T23:35:29Z"
   },
   {
     "id": "dessert-idea-02",
