@@ -822,5 +822,13 @@
     "file": "clips-espritlibre/espritlibre_claraluciani_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-18T15:06:00Z"
+  },
+  {
+    "hash": "49873917e6e22a2676e4d3cf21c4e4a6",
+    "id": "butter-hand-technique",
+    "channel": "recipe_crave",
+    "file": "clips/butter-hand-technique.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-18T17:06:32Z"
   }
 ]
