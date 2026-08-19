@@ -717,5 +717,93 @@
     "controle_visuel": true,
     "attempts": 0,
     "note": "Ecarte le 2026-08-19 : duree < 40 s (exigence utilisateur), bande son d'origine conservee (musique du createur = risque de signalement, un clip publie a deja ete signale) et legende generique non verifiee contre le contenu reel ('Drink recipe' sur un plat de riz). A refaire avec channels/recipe_crave/montage_recipe.py."
+  },
+  {
+    "id": "salade-chou-rouge-sauce-ail",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/salade-chou-rouge-sauce-ail.mp4",
+    "caption": "Red cabbage, carrot, cherry tomato and cucumber salad with garlic sauce 🥗\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c36458d2e95f45f476da1305638cca976e50195ea08b81eabe889e64edfe01c4",
+      "date": "2026-08-19T21:07:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 56.8s, 37.4 Mo",
+        "audio": "volume moyen -14.7 dB ; bibliotheque : t3-after-hours-jazz.mp3 1.00 (2e 0.61)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et melange d'une salade de chou rouge, carottes, tomates cerises et concombre avec une sauce. | aliments : ['chou rouge', 'carotte', 'tomate cerise', 'concombre', 'salade', \"sauce à l'ail\"] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c36458d2e95f45f4"
+      }
+    }
+  },
+  {
+    "id": "caprese-huile-herbes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/caprese-huile-herbes.mp4",
+    "caption": "Caprese salad with homemade herb oil, cherry tomatoes and mozzarella 🍅🧀\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3bbbe07c532c9e12767ce04e9be1aae489e1f2c9299a66d73cc81e7c68ed70df",
+      "date": "2026-08-19T21:07:38Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 56.6s, 42.5 Mo",
+        "audio": "volume moyen -15.8 dB ; bibliotheque : t10-sensual-fitness-upbeat.mp3 1.00 (2e 0.61)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une huile aux herbes maison, decoupe de tomates cerises, melange avec des mozzarellas en salade caprese. | aliments : ['huile', 'herbes', 'tomates cerises', 'mozzarella'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3bbbe07c532c9e12"
+      }
+    }
+  },
+  {
+    "id": "pates-tomates-ail-maison",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/pates-tomates-ail-maison.mp4",
+    "caption": "Handmade pasta with fresh tomatoes, garlic and onion 🍝🍅\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "30091e89ccf7659a99428db87a3bb8829b8e49407acff0355ea181153cf58930",
+      "date": "2026-08-19T21:12:08Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 50.8s, 23.8 Mo",
+        "audio": "volume moyen -13.4 dB ; bibliotheque : t4-suspense-dramatic.mp3 0.97 (2e 0.62)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de pates fraiches avec des tomates, de l'ail et des oignons. | aliments : ['tomates', 'ail', 'oignon', 'pates'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 30091e89ccf7659a"
+      }
+    }
+  },
+  {
+    "id": "poulet-riz-legumes-marche",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/poulet-riz-legumes-marche.mp4",
+    "caption": "Chicken, rice and vegetables cooked from scratch, straight from the market 🍗🍚\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bc8a9ff8cf325432ecb67d58502b24ed409ecb0d2228b1a2e7a22cd19f765b60",
+      "date": "2026-08-19T21:12:28Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.7s, 32.3 Mo",
+        "audio": "volume moyen -16.0 dB ; bibliotheque : t10-sensual-fitness-upbeat.mp3 1.00 (2e 0.61)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Un homme fait ses courses au marche puis prepare du poulet, du riz et des legumes de zero. | aliments : ['poulet', 'riz', 'carottes', 'oignons', 'pommes de terre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bc8a9ff8cf325432"
+      }
+    }
   }
 ]
