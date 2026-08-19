@@ -854,5 +854,13 @@
     "file": "clips/dessert-idea-01.mp4",
     "status": "published",
     "publishedAt": "2026-08-18T23:35:29Z"
+  },
+  {
+    "hash": "167dafe27456395e5f9fa1f46c2f5b8e",
+    "id": "dessert-idea-02",
+    "channel": "recipe_crave",
+    "file": "clips/dessert-idea-02.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-19T11:45:31Z"
   }
 ]
