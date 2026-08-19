@@ -45,7 +45,21 @@
     "caption": "Dwayne Johnson sur le travail qui paie 💪\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c271a5fb631b8b83aa89ccaa486ab02b50ecc6a24b7016576a22561da44f6841",
+      "date": "2026-08-19T21:02:58Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 33.7s, 11.4 Mo",
+        "audio": "volume moyen -18.3 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Dwayne Johnson parle de motivation, d'entraînement et d'authenticité dans une interview. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 c271a5fb631b8b83"
+      }
+    }
   },
   {
     "id": "espritlibre_edouardbaer_v1",
@@ -53,7 +67,21 @@
     "caption": "Édouard Baer sur l'authenticité 🎭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e56c3bb344f7a6aa485fcb8d88720f0bfc9dd112d1febaf79d5aa901a57bcb6b",
+      "date": "2026-08-19T21:03:03Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 26.3s, 6.6 Mo",
+        "audio": "volume moyen -17.2 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme parle lors d'une interview ou d'un entretien avec des sous-titres en anglais sur le développement personnel. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 e56c3bb344f7a6aa"
+      }
+    }
   },
   {
     "id": "espritlibre_emmawatson_v1",
@@ -61,7 +89,21 @@
     "caption": "Emma Watson sur la confiance en soi ✨\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9589f4fe58407b1254de4987d12c1a41d847aeb7e270b88bf90f5a54697ebada",
+      "date": "2026-08-19T21:03:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 28.2s, 7.4 Mo",
+        "audio": "volume moyen -19.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Emma Watson s'exprime sur la confiance en soi et le dépassement des doutes lors d'un discours inspirant. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 9589f4fe58407b12"
+      }
+    }
   },
   {
     "id": "espritlibre_jameldebbouze_v1",
@@ -69,7 +111,21 @@
     "caption": "Jamel Debbouze sur dépasser les obstacles 🔥\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "dd518562fbba417a072e9da6dad87d4555a0fcc5efa18672117de0b46391711f",
+      "date": "2026-08-19T21:03:12Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 34.2s, 11.1 Mo",
+        "audio": "volume moyen -18.5 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme s'exprime sur scène avec des sous-titres en anglais sur le fait de rêver. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 dd518562fbba417a"
+      }
+    }
   },
   {
     "id": "espritlibre_jimcarrey_v1",
@@ -77,15 +133,30 @@
     "caption": "Jim Carrey sur la peur et la créativité 🎬\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "44cf0ecbaf84b3dd11248a9b9c4c525a0e4f6a5482e40b175b03d1444769c96c",
+      "date": "2026-08-19T21:03:16Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 30.0s, 10.8 Mo",
+        "audio": "volume moyen -19.3 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Jim Carrey prononce un discours de motivation sur le choix, l'échec et le succès. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 44cf0ecbaf84b3dd"
+      }
+    }
   },
   {
     "id": "espritlibre_keanureeves_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_keanureeves_v1.mp4",
     "caption": "Keanu Reeves sur l'humilité 🙏\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "rejected",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "note": "Rejete au rattrapage : [specs] duree 13.2s < minimum 15s ; [contenu] la legende ne correspond pas au contenu : La legende parle d'humilite alors que la video montre une citation sur la mort."
   },
   {
     "id": "espritlibre_matthewhussey2_v1",
@@ -93,7 +164,21 @@
     "caption": "Matthew Hussey sur la confiance en amour 💭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f046301a469e23a8b6d2e1185d72fff783261b52bf5c6db5cf7f3f434c75dd81",
+      "date": "2026-08-19T21:03:22Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 38.6s, 16.0 Mo",
+        "audio": "volume moyen -17.8 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme parle de confiance en amour sur un canapé avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 f046301a469e23a8"
+      }
+    }
   },
   {
     "id": "espritlibre_matthewhussey_v1",
@@ -101,7 +186,21 @@
     "caption": "Matthew Hussey sur se respecter soi-même 💭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a6a2d9129d9277965d47a56aa5e749b87b5b8934ded58d97cba332be15070b07",
+      "date": "2026-08-19T21:03:27Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 40.8s, 15.7 Mo",
+        "audio": "volume moyen -18.9 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme parle de chagrin d'amour et de deuil dans une vidéo de motivation. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 a6a2d9129d927796"
+      }
+    }
   },
   {
     "id": "espritlibre_michelleobama_v3",
@@ -109,7 +208,21 @@
     "caption": "Michelle Obama sur la résilience 🙏\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "aa7ac1a9bc3c5b75dc0b0d2812b9a9611bb8f84edd7d3bd2b4b50faf848d9641",
+      "date": "2026-08-19T21:03:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 30.2s, 8.5 Mo",
+        "audio": "volume moyen -19.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Michelle Obama parle de résilience et de la manière dont elle affronte la peur et les critiques. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 aa7ac1a9bc3c5b75"
+      }
+    }
   },
   {
     "id": "espritlibre_oprahwinfrey_v1",
@@ -117,7 +230,21 @@
     "caption": "Oprah Winfrey sur trouver son but ✨\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8d4759c259378f44c5fd4544b631f0d92f0bee3992eaad55ac2a0def6d1fa3b9",
+      "date": "2026-08-19T21:03:34Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 15.4s, 3.9 Mo",
+        "audio": "volume moyen -19.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Oprah Winfrey assise en studio parlant de motivation avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 8d4759c259378f44"
+      }
+    }
   },
   {
     "id": "espritlibre_steveharvey_v1",
@@ -125,7 +252,21 @@
     "caption": "Steve Harvey sur oser sauter 🔥\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "5317c0c9ffe645f733adca8d9e58d3ece627c048aa273f6310b29df0524ad50b",
+      "date": "2026-08-19T21:03:38Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 28.1s, 12.6 Mo",
+        "audio": "volume moyen -20.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Steve Harvey sur scene en train de faire un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 5317c0c9ffe645f7"
+      }
+    }
   },
   {
     "id": "espritlibre_tomhanks_v1",
@@ -133,7 +274,21 @@
     "caption": "Tom Hanks sur la gentillesse 🙏\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e7223a8bca02e10da5b3885429493be1878d858aa3cf7e550980f32be0008a92",
+      "date": "2026-08-19T21:03:42Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 43.5s, 17.5 Mo",
+        "audio": "volume moyen -20.3 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Tom Hanks donnant un discours lors d'une remise de diplômes avec des citations sur la vie. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 e7223a8bca02e10d"
+      }
+    }
   },
   {
     "id": "espritlibre_yannicknoah_v1",
@@ -141,7 +296,21 @@
     "caption": "Yannick Noah sur vivre sa passion 🎾\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "26c97daa42524813effdfb09cfdaf25ca8494c87f9f0046b1967fd6772004f7e",
+      "date": "2026-08-19T21:03:45Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 38.9s, 12.7 Mo",
+        "audio": "volume moyen -18.7 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Yannick Noah parle de bonheur et de moments en mer dans une interview. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 3/64",
+        "doublon": "sha256 26c97daa42524813"
+      }
+    }
   },
   {
     "id": "espritlibre_mcraven-litfait_v1",
@@ -149,7 +318,21 @@
     "caption": "Amiral McRaven : tout commence par faire son lit 🛏️\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1d45228066727db8ef48d3c23109d09da5e83dd006fc225aaf66863b98515425",
+      "date": "2026-08-19T21:03:48Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 55.6s, 16.4 Mo",
+        "audio": "volume moyen -19.3 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un amiral en uniforme donne un discours sur l'importance de faire son lit le matin. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 1d45228066727db8"
+      }
+    }
   },
   {
     "id": "espritlibre_portman-fauxidoles_v1",
@@ -157,7 +340,21 @@
     "caption": "Natalie Portman sur les faux idoles ✨\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "0e6c4bb8350564c901786b5c1cb67bb1fc2613b4f530ce49e623194819248824",
+      "date": "2026-08-19T21:03:51Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 55.6s, 15.3 Mo",
+        "audio": "volume moyen -19.0 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Discours de Natalie Portman devant un public avec des sous-titres sur les idoles. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 0e6c4bb8350564c9"
+      }
+    }
   },
   {
     "id": "espritlibre_mcraven-dixpersonnes_v1",
@@ -165,7 +362,21 @@
     "caption": "Amiral McRaven : et si tu changeais 10 vies ? 🌍\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "766fbad5a2756d21d9787c2eea9b465c7d0704a7d03e193e27a2e4b8579be149",
+      "date": "2026-08-19T21:03:54Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 55.6s, 16.2 Mo",
+        "audio": "volume moyen -18.6 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 766fbad5a2756d21"
+      }
+    }
   },
   {
     "id": "espritlibre_portman-serieux_v1",
@@ -173,7 +384,21 @@
     "caption": "Natalie Portman : faire quelque chose qui a du sens 🎓\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8f717b4780127e9a72036b26682fe812ad4cf29fbf137c58a00fd22da78b40c8",
+      "date": "2026-08-19T21:03:57Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 53.6s, 17.5 Mo",
+        "audio": "volume moyen -19.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Natalie Portman prononçant un discours de motivation devant un public | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 8f717b4780127e9a"
+      }
+    }
   },
   {
     "id": "espritlibre_mcraven-unevoix_v1",
@@ -181,7 +406,21 @@
     "caption": "Amiral McRaven : une seule voix dans la nuit 🌙\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "53e72c625e901457b0005852d05bef6dbf4e6487d910e859ba64904032f18b7f",
+      "date": "2026-08-19T21:04:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 56.6s, 15.6 Mo",
+        "audio": "volume moyen -18.8 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 53e72c625e901457"
+      }
+    }
   },
   {
     "id": "espritlibre_portman-ignorance_v1",
@@ -189,6 +428,20 @@
     "caption": "Natalie Portman : la force de ne pas savoir 💡\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "96157fd5c5e833c0cda411068e77ba90f5f0fa2208854c8a003c83eb47c20077",
+      "date": "2026-08-19T21:04:03Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 54.6s, 17.6 Mo",
+        "audio": "volume moyen -18.6 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Natalie Portman donnant un discours motivationnel sur l'ignorance et l'inexpérience. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 96157fd5c5e833c0"
+      }
+    }
   }
 ]

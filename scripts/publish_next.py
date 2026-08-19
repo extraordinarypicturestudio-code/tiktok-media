@@ -62,6 +62,39 @@ def ecrire_rapport_echec(pseudo, echecs, rattrape):
     print("\n" + texte)
 
 
+def verifier_tampon(video):
+    """Renvoie None si le tampon de verification est valide, sinon le motif.
+
+    Le tampon est ecrit par verification_publication.py (poste de travail) et
+    contient le sha256 du fichier au moment du controle. On le recalcule ici :
+    un tampon recopie d'une autre entree, ou un fichier remplace apres coup,
+    ne passe pas.
+    """
+    tampon = video.get("verification")
+    if not isinstance(tampon, dict):
+        return ("aucun tampon de verification : passer par "
+                "verification_publication.py avant la mise en file")
+    if tampon.get("verdict") != "OK":
+        return f"tampon de verification en {tampon.get('verdict')!r}"
+
+    chemin = chemin_local(video["url"])
+    if chemin is None or not os.path.exists(chemin):
+        # Sans le fichier on ne peut rien recalculer ; les specs plus haut ont
+        # deja laisse passer ce cas, on reste coherent.
+        return None
+
+    h = hashlib.sha256()
+    with open(chemin, "rb") as f:
+        for bloc in iter(lambda: f.read(1 << 20), b""):
+            h.update(bloc)
+    reel = h.hexdigest()
+    if tampon.get("sha256") != reel:
+        return (f"le fichier ne correspond pas au tampon "
+                f"(tampon {str(tampon.get('sha256'))[:12]}, "
+                f"fichier {reel[:12]}) : re-verifier avant publication")
+    return None
+
+
 def chemin_local(url):
     """Extrait le chemin relatif dans le depot depuis une URL raw.githubusercontent."""
     marqueur = "/main/"
@@ -464,6 +497,27 @@ def main():
                 echecs.append(f"{a_publier['id']} : {detail}")
                 ecrire_queue()
                 continue
+
+        # Barriere suivante : le TAMPON DE VERIFICATION.
+        #
+        # `controle_visuel: true` ci-dessus est un simple booleen ecrit a la
+        # main dans la file : il se declare, il ne se prouve pas. C'est par la
+        # que le lot du 19/08/2026 est passe (legendes ne correspondant pas
+        # aux videos, clips de 16 s alors que le minimum est 40 s, aucune
+        # etape de preparation).
+        #
+        # Le tampon, lui, porte le sha256 DU FICHIER controle. Si le fichier
+        # a change depuis, ou si le tampon a ete recopie d'une autre entree,
+        # les empreintes divergent et la publication est refusee. Il est
+        # ecrit par verification_publication.py, jamais a la main.
+        detail = verifier_tampon(a_publier)
+        if detail:
+            print(f"  ecarte avant envoi : {detail}")
+            a_publier["status"] = "on_hold"
+            a_publier["error"] = detail
+            echecs.append(f"{a_publier['id']} : {detail}")
+            ecrire_queue()
+            continue
 
         a_publier["attempts"] = a_publier.get("attempts", 0) + 1
         avant_envoi = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 120))
