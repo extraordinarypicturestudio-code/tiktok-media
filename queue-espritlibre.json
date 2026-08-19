@@ -443,5 +443,137 @@
         "doublon": "sha256 96157fd5c5e833c0"
       }
     }
+  },
+  {
+    "id": "espritlibre_rowling-echec_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_rowling-echec_v1.mp4",
+    "caption": "J.K. Rowling sur l'échec qui l'a reconstruite 📚\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9b356e44075ba04c1f75285304e545815fe98f00d3ef325f10907172b06c4dc6",
+      "date": "2026-08-19T21:15:40Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 56.6s, 12.2 Mo",
+        "audio": "volume moyen -19.2 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : J.K. Rowling donne un discours sur la scène avec des sous-titres abordant le thème de l'échec. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 9b356e44075ba04c"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_rowling-imagination_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_rowling-imagination_v1.mp4",
+    "caption": "J.K. Rowling sur le pouvoir de l'imagination 💭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9f0f6451de9683b139d814afee1a096d52e316d24bb79ac955f871f8017e83b0",
+      "date": "2026-08-19T21:15:49Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 53.6s, 11.1 Mo",
+        "audio": "volume moyen -18.7 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : J.K. Rowling donne un discours sur l'imagination, le pouvoir de la creation et ses experiences de vie. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 9f0f6451de9683b1"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_rowling-vivre_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_rowling-vivre_v1.mp4",
+    "caption": "J.K. Rowling : impossible de vivre sans échouer un jour 📚\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4acde5b22052989871faec2f175302486fe06e842b0056b6fa52242463153021",
+      "date": "2026-08-19T21:16:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 55.6s, 12.1 Mo",
+        "audio": "volume moyen -19.1 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Discours de J.K. Rowling sur l'échec et le succès devant un public. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 4acde5b220529898"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_cook-question_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_cook-question_v1.mp4",
+    "caption": "Tim Cook : la question qui lui a pris 15 ans à résoudre 🍎\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "09e500121417368c71ce293f283f7655a4c4171c3b5d6b2e81760add5dd898ee",
+      "date": "2026-08-19T21:16:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 77.6s, 17.0 Mo",
+        "audio": "volume moyen -18.9 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Tim Cook en toge universitaire donnant un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 09e500121417368c"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_cook-sens_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_cook-sens_v1.mp4",
+    "caption": "Tim Cook sur le sens qu'on trouve en visant plus grand que soi 🎯\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "842296f9e860bc5dd4f935a06c8fea0897ac0ba2dc63c3629cdf8bdaf797cd17",
+      "date": "2026-08-19T21:16:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.6s, 15.3 Mo",
+        "audio": "volume moyen -18.6 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Tim Cook en toge faisant un discours sur le sens et l'humanité. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 842296f9e860bc5d"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_cook-regard_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_cook-regard_v1.mp4",
+    "caption": "Tim Cook : ma vie a grandi quand j'ai arrêté de me soucier du regard des autres 🔥\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8c2119a43aac5f37c024f2d431beadffab9d99efd2ffb746a83d4987fc7d26c6",
+      "date": "2026-08-19T21:16:26Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 67.6s, 13.6 Mo",
+        "audio": "volume moyen -18.6 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Discours de Tim Cook devant un public avec des sous-titres sur la motivation. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 1/64",
+        "doublon": "sha256 8c2119a43aac5f37"
+      }
+    }
   }
 ]
