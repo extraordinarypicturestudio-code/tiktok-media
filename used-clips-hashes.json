@@ -870,5 +870,13 @@
     "file": "clips-espritlibre/espritlibre_denzelwashington_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-19T15:16:23Z"
+  },
+  {
+    "hash": "90ce237c680828a6a0be63df8ecd4092",
+    "id": "drink-recipe-idea",
+    "channel": "recipe_crave",
+    "file": "clips/drink-recipe-idea.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-19T16:48:14Z"
   }
 ]

@@ -559,9 +559,11 @@
     "id": "drink-recipe-idea",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/drink-recipe-idea.mp4",
     "caption": "Drink recipe idea for your next craving 🥤\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a85de228a28fdeb25d67cb3",
+    "publishedAt": "2026-08-19T16:48:14Z"
   },
   {
     "id": "fried-rice-veggie",
