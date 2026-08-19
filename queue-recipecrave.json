@@ -805,5 +805,27 @@
         "doublon": "sha256 bc8a9ff8cf325432"
       }
     }
+  },
+  {
+    "id": "crevettes-beurre-ail",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crevettes-beurre-ail.mp4",
+    "caption": "Garlic butter shrimp, straight from the pan 🍤🧄\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f35df0e99b589651da4b8df0225717322aead3aa28c20dcf1394575749ca45b6",
+      "date": "2026-08-19T21:19:11Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 59.5s, 28.5 Mo",
+        "audio": "volume moyen -17.6 dB ; bibliotheque : t1-warm-storytelling.mp3 0.97 (2e 0.55)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de crevettes au beurre et a l'ail dans une poele. | aliments : ['crevettes', 'beurre', 'ail'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f35df0e99b589651"
+      }
+    }
   }
 ]

@@ -575,5 +575,71 @@
         "doublon": "sha256 8c2119a43aac5f37"
       }
     }
+  },
+  {
+    "id": "espritlibre_jobs-points_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_jobs-points_v1.mp4",
+    "caption": "Steve Jobs : on ne relie les points qu'en regardant en arrière 🍎\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "ecd58e991af4a0b93a4226678cf0b6a5328d49f840753fc058ede9c361e9a45f",
+      "date": "2026-08-19T21:21:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 57.6s, 13.5 Mo",
+        "audio": "volume moyen -18.7 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Extrait du discours de Steve Jobs à Stanford parlant de relier les points en regardant en arrière. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 ecd58e991af4a0b9"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_jobs-vire_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_jobs-vire_v1.mp4",
+    "caption": "Steve Jobs : se faire virer d'Apple, la meilleure chose qui lui soit arrivée 🔥\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e9bc3c2d3afb220aa9d544a22283313ad65e224e48a2f5dc014d4dfa74f9bf9a",
+      "date": "2026-08-19T21:21:19Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 73.6s, 17.2 Mo",
+        "audio": "volume moyen -19.3 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Steve Jobs lors de son discours de Stanford racontant son licenciement d'Apple. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 e9bc3c2d3afb220a"
+      }
+    }
+  },
+  {
+    "id": "espritlibre_jobs-mort_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_jobs-mort_v1.mp4",
+    "caption": "Steve Jobs : se souvenir qu'on est mortel, son meilleur outil de décision ⏳\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "db0ed0acce9d36814643760a9e186a15ab61699cdc345f553f019566bf4f7b47",
+      "date": "2026-08-19T21:21:39Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 57.6s, 14.9 Mo",
+        "audio": "volume moyen -17.9 dB",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Discours de Steve Jobs sur la mortalité et la vie lors d'une remise de diplômes. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 db0ed0acce9d3681"
+      }
+    }
   }
 ]
