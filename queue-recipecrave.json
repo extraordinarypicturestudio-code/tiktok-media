@@ -569,9 +569,11 @@
     "id": "fried-rice-veggie",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/fried-rice-veggie.mp4",
     "caption": "Veggie packed fried rice 🍚\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0
+    "attempts": 1,
+    "postId": "6a8616adbfb031ac3224acd7",
+    "publishedAt": "2026-08-19T20:49:29Z"
   },
   {
     "id": "cucumber-tomato-salad",

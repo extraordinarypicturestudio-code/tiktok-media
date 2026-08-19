@@ -878,5 +878,13 @@
     "file": "clips/drink-recipe-idea.mp4",
     "status": "published",
     "publishedAt": "2026-08-19T16:48:14Z"
+  },
+  {
+    "hash": "9117982813dd85f38b885f7a0e15cecf",
+    "id": "fried-rice-veggie",
+    "channel": "recipe_crave",
+    "file": "clips/fried-rice-veggie.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-19T20:49:29Z"
   }
 ]
