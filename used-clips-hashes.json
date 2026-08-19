@@ -862,5 +862,13 @@
     "file": "clips/dessert-idea-02.mp4",
     "status": "published",
     "publishedAt": "2026-08-19T11:45:31Z"
+  },
+  {
+    "hash": "9fdd621fd108fa72aea2d4073555e4ee",
+    "id": "espritlibre_denzelwashington_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_denzelwashington_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-19T15:16:23Z"
   }
 ]
