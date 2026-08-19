@@ -47,16 +47,25 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 # aussi desactive cote GitHub (gh workflow disable). Pour reprendre :
 # reactiver le workflow (gh workflow enable "Publish Bigfoot Content
 # (YouTube Shorts)") et redecommenter l'entree ci-dessous.
+#
+# TopRankTV et NextLevelPlays EN PAUSE (18/08/2026, demande explicite : "on
+# va laisser tomber pour l'instant les deux autres chaines, on se concentre
+# que sur recipe crave et esprit libre"). Leurs files sont vides ; les
+# laisser ici faisait remonter un STOCK BAS permanent, et cette alerte
+# ouverte en permanence empechait toute NOUVELLE alerte de partir (une seule
+# issue 'pipeline-alerte' ouverte a la fois) - donc masquait les pannes des
+# deux chaines encore actives. Pour reprendre : recharger la file,
+# redecommenter l'entree, et reactiver le workflow.
 CHAINES = [
-    {"queue": "queue-toprank.json", "dossier": "clips-toprank",
-     "pseudo": "toprank.tv1", "par_jour": 4, "cle": "ZERNIO_API_KEY",
-     "script": "publish_next.py", "silence_max_h": 16},
+    # {"queue": "queue-toprank.json", "dossier": "clips-toprank",
+    #  "pseudo": "toprank.tv1", "par_jour": 4, "cle": "ZERNIO_API_KEY",
+    #  "script": "publish_next.py", "silence_max_h": 16},
     {"queue": "queue-recipecrave.json", "dossier": "clips",
      "pseudo": "recipe_crave", "par_jour": 4, "cle": "ZERNIO_API_KEY",
      "script": "publish_next.py", "silence_max_h": 16},
-    {"queue": "queue-nextlevelplays.json", "dossier": "clips-nextlevelplays",
-     "pseudo": "nextlevelplays88", "par_jour": 3, "cle": "ZERNIO_API_KEY_2",
-     "script": "publish_next.py", "silence_max_h": 17},
+    # {"queue": "queue-nextlevelplays.json", "dossier": "clips-nextlevelplays",
+    #  "pseudo": "nextlevelplays88", "par_jour": 3, "cle": "ZERNIO_API_KEY_2",
+    #  "script": "publish_next.py", "silence_max_h": 17},
     # esprit_libre : 3/jour, creneaux 08h30/14h30/19h30 UTC -> plus grand
     # ecart = nuit 19h30->08h30 (13h) + marge retard cron = 17h.
     {"queue": "queue-espritlibre.json", "dossier": "clips-espritlibre",
