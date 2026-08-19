@@ -886,5 +886,13 @@
     "file": "clips/fried-rice-veggie.mp4",
     "status": "published",
     "publishedAt": "2026-08-19T20:49:29Z"
+  },
+  {
+    "hash": "b77464e55fec2f6cb29284d0aa517377",
+    "id": "salade-chou-rouge-sauce-ail",
+    "channel": "recipe_crave",
+    "file": "clips/salade-chou-rouge-sauce-ail.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-19T23:37:07Z"
   }
 ]
