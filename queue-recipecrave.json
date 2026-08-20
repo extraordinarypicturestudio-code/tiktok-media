@@ -873,5 +873,49 @@
         "doublon": "sha256 f0416dd11facc56d"
       }
     }
+  },
+  {
+    "id": "porridge-banane-chocolat",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/porridge-banane-chocolat.mp4",
+    "caption": "Banana oat porridge with milk and chocolate 🍌🍫\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4166c524f01bd6811b3c90abc27dad4ffc8936facd1cebe4bdd0a8678c5dcd4a",
+      "date": "2026-08-20T06:54:11Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.3s, 24.1 Mo",
+        "audio": "volume moyen -14.9 dB ; bibliotheque : t2-sexy-lounge.mp3 0.99 (2e 0.26)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un porridge a l'avoine et banane avec du lait et du chocolat. | aliments : ['banane', \"flocons d'avoine\", 'lait', 'chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4166c524f01bd681"
+      }
+    }
+  },
+  {
+    "id": "poulet-pane-sauce-creme",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/poulet-pane-sauce-creme.mp4",
+    "caption": "Breaded chicken fillet pan-fried in butter with a creamy chive sauce 🍗🧈\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "66bb74d4177e8133dbeae08f17fc028f2aeb137cc4bc5f7cbbe84d474ae9b05c",
+      "date": "2026-08-20T06:54:24Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 220.8s, 90.5 Mo",
+        "audio": "volume moyen -17.0 dB ; bibliotheque : t1-warm-storytelling.mp3 0.97 (2e 0.55)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'un filet de poulet avec une sauce a la creme et ciboulette. | aliments : ['poulet', 'beurre', 'creme', 'ciboulette'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 66bb74d4177e8133"
+      }
+    }
   }
 ]
