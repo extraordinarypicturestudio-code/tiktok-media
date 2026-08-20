@@ -942,5 +942,13 @@
     "file": "clips/poulet-sauce-creme-herbes.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T20:49:24Z"
+  },
+  {
+    "hash": "ee58a0afa6f2ae08aa7af1d484efb36b",
+    "id": "crevettes-beurre-poele",
+    "channel": "recipe_crave",
+    "file": "clips/crevettes-beurre-poele.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-20T23:38:55Z"
   }
 ]

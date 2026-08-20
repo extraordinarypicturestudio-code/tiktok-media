@@ -1002,9 +1002,9 @@
     "id": "crevettes-beurre-poele",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crevettes-beurre-poele.mp4",
     "caption": "Garlic butter shrimp in one pan 🍤\n\n#shrimp #garlicbutter #seafood #shrimprecipe #buttershrimp #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "28299fed04f612181cb27e619b8cadfea649abd5a1873261fa745be1dffdb944",
@@ -1018,7 +1018,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 28299fed04f61218"
       }
-    }
+    },
+    "postId": "6a878fe1e4aca4d2cf36299f",
+    "publishedAt": "2026-08-20T23:38:55Z"
   },
   {
     "id": "pates-sauce-tomate-basilic",
