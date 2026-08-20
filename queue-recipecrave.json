@@ -954,9 +954,9 @@
     "id": "porridge-banane",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/porridge-banane.mp4",
     "caption": "Creamy banana porridge, start to finish 🍌🥣\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c8019ce1d4fc86cd1553e2648477a6b13d603f649861f98ba872552b337d782a",
@@ -970,7 +970,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c8019ce1d4fc86cd"
       }
-    }
+    },
+    "postId": "6a8730b00a0d59f61a2e47e2",
+    "publishedAt": "2026-08-20T16:52:45Z"
   },
   {
     "id": "poulet-sauce-creme-herbes",

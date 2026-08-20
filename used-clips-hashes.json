@@ -918,5 +918,13 @@
     "file": "clips-espritlibre/espritlibre_edouardbaer_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T15:08:07Z"
+  },
+  {
+    "hash": "c6ab238dc3182eefb08c417077919a40",
+    "id": "porridge-banane",
+    "channel": "recipe_crave",
+    "file": "clips/porridge-banane.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-20T16:52:45Z"
   }
 ]
