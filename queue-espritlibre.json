@@ -67,9 +67,9 @@
     "id": "espritlibre_edouardbaer_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_edouardbaer_v1.mp4",
     "caption": "Édouard Baer sur l'authenticité 🎭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "e56c3bb344f7a6aa485fcb8d88720f0bfc9dd112d1febaf79d5aa901a57bcb6b",
@@ -83,7 +83,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 e56c3bb344f7a6aa"
       }
-    }
+    },
+    "postId": "6a87182c1c5734cc96c9202b",
+    "publishedAt": "2026-08-20T15:08:07Z"
   },
   {
     "id": "espritlibre_emmawatson_v1",

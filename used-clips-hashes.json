@@ -910,5 +910,13 @@
     "file": "clips/caprese-huile-verte.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T11:47:23Z"
+  },
+  {
+    "hash": "14fdc8e995818360d3251416aed08ee4",
+    "id": "espritlibre_edouardbaer_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_edouardbaer_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-20T15:08:07Z"
   }
 ]
