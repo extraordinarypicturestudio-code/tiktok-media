@@ -930,9 +930,9 @@
     "id": "caprese-huile-verte",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/caprese-huile-verte.mp4",
     "caption": "Cherry tomato and mozzarella salad with a fresh green oil 🍅🧀\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "f32e154e040f0b6e89ef0b0164e51c493c4aa05818c95eaf093bb48537a80f48",
@@ -946,7 +946,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 f32e154e040f0b6e"
       }
-    }
+    },
+    "postId": "6a86e91e9f2a9693a50a1e60",
+    "publishedAt": "2026-08-20T11:47:23Z"
   },
   {
     "id": "porridge-banane",
