@@ -926,5 +926,13 @@
     "file": "clips/porridge-banane.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T16:52:45Z"
+  },
+  {
+    "hash": "8d2c1742625b88fd3451a74360eb31ab",
+    "id": "espritlibre_emmawatson_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_emmawatson_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-20T19:59:13Z"
   }
 ]

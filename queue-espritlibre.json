@@ -91,9 +91,9 @@
     "id": "espritlibre_emmawatson_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_emmawatson_v1.mp4",
     "caption": "Emma Watson sur la confiance en soi ✨\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "9589f4fe58407b1254de4987d12c1a41d847aeb7e270b88bf90f5a54697ebada",
@@ -107,7 +107,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 9589f4fe58407b12"
       }
-    }
+    },
+    "postId": "6a875c643d67263f4cc1d888",
+    "publishedAt": "2026-08-20T19:59:13Z"
   },
   {
     "id": "espritlibre_jameldebbouze_v1",
