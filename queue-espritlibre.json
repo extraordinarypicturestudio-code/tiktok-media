@@ -43,9 +43,9 @@
     "id": "espritlibre_dwaynejohnson_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_dwaynejohnson_v1.mp4",
     "caption": "Dwayne Johnson sur le travail qui paie 💪\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c271a5fb631b8b83aa89ccaa486ab02b50ecc6a24b7016576a22561da44f6841",
@@ -59,7 +59,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 c271a5fb631b8b83"
       }
-    }
+    },
+    "postId": "6a86c31af1dc02f2743a1e00",
+    "publishedAt": "2026-08-20T09:05:10Z"
   },
   {
     "id": "espritlibre_edouardbaer_v1",
