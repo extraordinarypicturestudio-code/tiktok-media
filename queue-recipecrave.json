@@ -829,5 +829,49 @@
         "doublon": "sha256 f35df0e99b589651"
       }
     }
+  },
+  {
+    "id": "dal-lentilles-jaunes-epices",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dal-lentilles-jaunes-epices.mp4",
+    "caption": "Yellow lentil dal with greens, chillies and spices 🌿🍲\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "524ed4ccc83ec2ca2fdad3bbfea6f1ff72a4897dd3d8a434cc3ff0408c92ec23",
+      "date": "2026-08-20T06:43:11Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 57.3s, 46.7 Mo",
+        "audio": "volume moyen -16.1 dB ; bibliotheque : t5-suspense-buildup.mp3 0.99 (2e 0.54)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un dal de lentilles jaunes avec des legumes verts et des piments. | aliments : ['lentilles jaunes', 'legumes verts', 'piments verts', 'eau'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 524ed4ccc83ec2ca"
+      }
+    }
+  },
+  {
+    "id": "pate-crepes-oeufs-farine",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/pate-crepes-oeufs-farine.mp4",
+    "caption": "Pancake batter from scratch: eggs, milk, sugar and flour 🥞\n\n#recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f0416dd11facc56d89137c2a4d834de1edbe4d33ca093a484851de9b29c654c0",
+      "date": "2026-08-20T06:43:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 71.7s, 32.4 Mo",
+        "audio": "volume moyen -17.1 dB ; bibliotheque : t9-soft-piano-drama.mp3 1.00 (2e 0.28)",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et melange des ingredients pour une pate a pancake dans un bol. | aliments : ['œufs', 'lait', 'sucre', 'farine', 'pete a pancake'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f0416dd11facc56d"
+      }
+    }
   }
 ]
