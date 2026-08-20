@@ -978,9 +978,9 @@
     "id": "poulet-sauce-creme-herbes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/poulet-sauce-creme-herbes.mp4",
     "caption": "Chicken in cream sauce, done right 🍗\n\n#chicken #creamsauce #chickenrecipe #dinner #comfortfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "513005347646353d37d4e9a00c69f029012121f7869d2c13e3cf57961c25185e",
@@ -994,7 +994,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 513005347646353d"
       }
-    }
+    },
+    "postId": "6a876825384e835790445c6d",
+    "publishedAt": "2026-08-20T20:49:24Z"
   },
   {
     "id": "crevettes-beurre-poele",

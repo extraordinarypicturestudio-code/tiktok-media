@@ -934,5 +934,13 @@
     "file": "clips-espritlibre/espritlibre_emmawatson_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T19:59:13Z"
+  },
+  {
+    "hash": "8196753f9a6f7aa2017e15066e759158",
+    "id": "poulet-sauce-creme-herbes",
+    "channel": "recipe_crave",
+    "file": "clips/poulet-sauce-creme-herbes.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-20T20:49:24Z"
   }
 ]
