@@ -1050,9 +1050,9 @@
     "id": "lentilles-legumes-cocotte",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/lentilles-legumes-cocotte.mp4",
     "caption": "One pot, lentils, nothing else 🍲\n\n#lentils #onepot #vegetarian #stew #comfortfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "ab7642f92ce00617839556714ac5ad4560fbe6a25a992bada99391664e775f00",
@@ -1066,6 +1066,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 ab7642f92ce00617"
       }
-    }
+    },
+    "postId": "6a88822667e80347a641934d",
+    "publishedAt": "2026-08-21T16:52:54Z"
   }
 ]
