@@ -172,9 +172,9 @@
     "id": "espritlibre_matthewhussey2_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_matthewhussey2_v1.mp4",
     "caption": "Matthew Hussey sur la confiance en amour 💭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "f046301a469e23a8b6d2e1185d72fff783261b52bf5c6db5cf7f3f434c75dd81",
@@ -188,7 +188,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 f046301a469e23a8"
       }
-    }
+    },
+    "postId": "6a88abdbf8bace079ced754b",
+    "publishedAt": "2026-08-21T19:50:31Z"
   },
   {
     "id": "espritlibre_matthewhussey_v1",
