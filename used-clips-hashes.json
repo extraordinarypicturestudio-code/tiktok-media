@@ -950,5 +950,13 @@
     "file": "clips/crevettes-beurre-poele.mp4",
     "status": "published",
     "publishedAt": "2026-08-20T23:38:55Z"
+  },
+  {
+    "hash": "e8e5bdec29fd6e890115c4556d8e36c6",
+    "id": "espritlibre_jameldebbouze_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_jameldebbouze_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-21T09:06:49Z"
   }
 ]

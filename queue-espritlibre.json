@@ -115,9 +115,9 @@
     "id": "espritlibre_jameldebbouze_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_jameldebbouze_v1.mp4",
     "caption": "Jamel Debbouze sur dépasser les obstacles 🔥\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "dd518562fbba417a072e9da6dad87d4555a0fcc5efa18672117de0b46391711f",
@@ -131,7 +131,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 dd518562fbba417a"
       }
-    }
+    },
+    "postId": "6a8814fd5aac0f2dd0215a87",
+    "publishedAt": "2026-08-21T09:06:49Z"
   },
   {
     "id": "espritlibre_jimcarrey_v1",
