@@ -966,5 +966,13 @@
     "file": "clips/pates-sauce-tomate-basilic.mp4",
     "status": "published",
     "publishedAt": "2026-08-21T11:46:59Z"
+  },
+  {
+    "hash": "f8e558d8fe47d1b93d90a8085a0fa307",
+    "id": "espritlibre_jimcarrey_v1",
+    "channel": "esprit.libre18",
+    "file": "clips-espritlibre/espritlibre_jimcarrey_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-21T15:06:26Z"
   }
 ]

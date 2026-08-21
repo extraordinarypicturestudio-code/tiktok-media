@@ -139,9 +139,9 @@
     "id": "espritlibre_jimcarrey_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_jimcarrey_v1.mp4",
     "caption": "Jim Carrey sur la peur et la créativité 🎬\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "44cf0ecbaf84b3dd11248a9b9c4c525a0e4f6a5482e40b175b03d1444769c96c",
@@ -155,7 +155,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 44cf0ecbaf84b3dd"
       }
-    }
+    },
+    "postId": "6a886946d3d1f44abb62bd53",
+    "publishedAt": "2026-08-21T15:06:26Z"
   },
   {
     "id": "espritlibre_keanureeves_v1",
