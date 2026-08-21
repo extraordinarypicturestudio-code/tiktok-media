@@ -1026,9 +1026,9 @@
     "id": "pates-sauce-tomate-basilic",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/pates-sauce-tomate-basilic.mp4",
     "caption": "Real tomato sauce, from the tomato 🍅\n\n#pasta #tomatosauce #basil #italianfood #pastarecipe #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "52a2dce4459e62cac01e6fef6124014576b6e1a033ae44f2bb1798e0140ce292",
@@ -1042,7 +1042,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 52a2dce4459e62ca"
       }
-    }
+    },
+    "postId": "6a883a868454ace5feda877e",
+    "publishedAt": "2026-08-21T11:46:59Z"
   },
   {
     "id": "lentilles-legumes-cocotte",

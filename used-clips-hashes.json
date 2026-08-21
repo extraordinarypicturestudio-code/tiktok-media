@@ -958,5 +958,13 @@
     "file": "clips-espritlibre/espritlibre_jameldebbouze_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-21T09:06:49Z"
+  },
+  {
+    "hash": "52467ba092b08089860526bd5cde5b10",
+    "id": "pates-sauce-tomate-basilic",
+    "channel": "recipe_crave",
+    "file": "clips/pates-sauce-tomate-basilic.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-21T11:46:59Z"
   }
 ]
