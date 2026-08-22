@@ -1022,5 +1022,13 @@
     "file": "clips/matcha-warabi-mochi.mp4",
     "status": "published",
     "publishedAt": "2026-08-22T20:41:24Z"
+  },
+  {
+    "hash": "836c4cbdf97958981ec766885f5e08c4",
+    "id": "mango-fruit-salad",
+    "channel": "recipe_crave",
+    "file": "clips/mango-fruit-salad.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-22T23:35:32Z"
   }
 ]

@@ -1146,9 +1146,9 @@
     "id": "mango-fruit-salad",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/mango-fruit-salad.mp4",
     "caption": "Mango bowl with ice cream on top 🥭\n\n#mango #fruitsalad #dessert #summerfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "5e272400dfd317df3f3b88caa6321cb2cd9459c78218c7a237808cb5287ccb9d",
@@ -1162,7 +1162,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 5e272400dfd3 ; empreinte visuelle : plus proche 0.359"
       }
-    }
+    },
+    "postId": "6a8a31ef62696f4a610a8b90",
+    "publishedAt": "2026-08-22T23:35:32Z"
   },
   {
     "id": "wagyu-cheese-bread",
