@@ -1,16 +1,19 @@
-name: Publish esprit_libre
+name: Publish Mindshift
 
-# 3 publications/jour, decalee de 30 min des autres workflows pour ne jamais
-# tomber sur le meme creneau (evite deux workflows qui poussent sur le meme
-# depot en meme temps) :
-#   - 08h30 UTC = 10h30 Paris/CEST (matin)
-#   - 14h30 UTC = 16h30 Paris/CEST (apres-midi)
-#   - 19h30 UTC = 21h30 Paris/CEST (soir)
-# CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h en hiver (CET = UTC+1).
+# Mindshift remplace esprit_libre depuis le 2026-08-22. Horaires demandes :
+#   - 08h00 Paris/CEST = 06h00 UTC (matin)
+#   - 19h00 Paris/CEST = 17h00 UTC (soir)
+#   - 21h30 Paris/CEST = 19h30 UTC (nuit)
+# CEST = UTC+2 (ete). A decaler d'une heure en hiver (CET = UTC+1).
+#
+# Aucun de ces creneaux ne tombe sur un autre workflow du depot :
+# recipecrave publie a :15, toprank a :00, nextlevelplays a :45 (12h/17h/23h)
+# et bigfoot a 16h30 et 00h30. Deux workflows au meme creneau se disputent
+# le push de la file.
 on:
   schedule:
-    - cron: "30 8 * * *"
-    - cron: "30 14 * * *"
+    - cron: "0 6 * * *"
+    - cron: "0 17 * * *"
     - cron: "30 19 * * *"
   workflow_dispatch: {}
 
@@ -30,12 +33,15 @@ jobs:
 
       - name: Publier la prochaine video en attente
         env:
-          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_3 }}
+          # mindshift716 est connecte sur la DEUXIEME cle Zernio, avec
+          # love_kitchen97 - et non sur la troisieme, qui portait
+          # esprit.libre18.
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_2 }}
           # Sert uniquement a choisir la vignette (image de couverture).
           # Si le secret est absent, la publication part quand meme avec la
           # vignette par defaut a 2s - jamais bloquante.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 scripts/publish_next.py queue-espritlibre.json esprit.libre18
+        run: python3 scripts/publish_next.py queue-mindshift.json mindshift716
 
       # always() : meme si la publication echoue, l'etat de la file (compteur
       # de tentatives, statut d'erreur) doit etre sauvegarde.
@@ -48,10 +54,10 @@ jobs:
           # du registre de hashs faites par publish_next.py apres succes.
           # mkdir -p : dossier vide (tout publie) = non suivi par git, et
           # "git add -- dossier/" plante sur un pathspec inexistant sinon.
-          mkdir -p clips-espritlibre
-          git add -A -- queue-espritlibre.json used-clips-hashes.json clips-espritlibre/
+          mkdir -p clips-mindshift
+          git add -A -- queue-mindshift.json used-clips-hashes.json clips-mindshift/
           git diff --cached --quiet && exit 0
-          git commit -m "Mise a jour file d'attente esprit_libre [skip ci]"
+          git commit -m "Mise a jour file d'attente mindshift [skip ci]"
           # Plusieurs workflows publient sur le meme depot et les crons GitHub
           # peuvent deriver de plus d'une heure : sans rebase, le push du
           # second workflow est rejete et la file perd sa mise a jour.

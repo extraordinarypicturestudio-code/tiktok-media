@@ -66,11 +66,14 @@ CHAINES = [
     # {"queue": "queue-nextlevelplays.json", "dossier": "clips-nextlevelplays",
     #  "pseudo": "nextlevelplays88", "par_jour": 3, "cle": "ZERNIO_API_KEY_2",
     #  "script": "publish_next.py", "silence_max_h": 17},
-    # esprit_libre : 3/jour, creneaux 08h30/14h30/19h30 UTC -> plus grand
-    # ecart = nuit 19h30->08h30 (13h) + marge retard cron = 17h.
-    {"queue": "queue-espritlibre.json", "dossier": "clips-espritlibre",
-     "pseudo": "esprit.libre18", "par_jour": 3, "cle": "ZERNIO_API_KEY_3",
-     "script": "publish_next.py", "silence_max_h": 17},
+    # mindshift REMPLACE esprit_libre depuis le 2026-08-22 : la chaine
+    # TikTok esprit.libre18 a ete supprimee, son workflow retire et sa file
+    # archivee. 3/jour, creneaux 06h00/17h00/19h30 UTC -> plus grand ecart =
+    # nuit 19h30->06h00 (10h30) + marge retard cron = 15h.
+    # Le compte est sur la DEUXIEME cle Zernio, pas la troisieme.
+    {"queue": "queue-mindshift.json", "dossier": "clips-mindshift",
+     "pseudo": "mindshift716", "par_jour": 3, "cle": "ZERNIO_API_KEY_2",
+     "script": "publish_next.py", "silence_max_h": 15},
     # {"queue": "queue-bigfoot.json", "dossier": "clips-bigfoot",
     #  "pseudo": "extraordinarystudiopicture", "par_jour": 2,
     #  "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",

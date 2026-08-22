@@ -78,13 +78,13 @@ jobs:
           # le suit pas et "git add -- dossier/" plante avec une erreur
           # pathspec sur un chemin inexistant - le creer garantit que le
           # pathspec matche toujours (meme sur un dossier vide).
-          mkdir -p clips clips-toprank clips-bigfoot clips-nextlevelplays clips-espritlibre
+          mkdir -p clips clips-toprank clips-bigfoot clips-nextlevelplays clips-mindshift
           git add -A -- queue-toprank.json queue-recipecrave.json \
                         queue-bigfoot.json queue-nextlevelplays.json \
-                        queue-espritlibre.json \
+                        queue-mindshift.json \
                         used-clips-hashes.json \
                         clips/ clips-toprank/ clips-bigfoot/ clips-nextlevelplays/ \
-                        clips-espritlibre/
+                        clips-mindshift/
           git diff --cached --quiet && echo "Rien a enregistrer." && exit 0
           git commit -m "Auto-correction / rattrapage du controle de sante [skip ci]"
           for essai in 1 2 3 4 5; do
