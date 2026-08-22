@@ -1,77 +1,5 @@
 [
   {
-    "id": "mindshift_arnoldschwarzenegger_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
-    "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "b49e109faa499c1fea6a03f85659bb17e68233dfa01ed7bd4744389261c72481",
-      "date": "2026-08-22T14:33:53Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 20.2s, 4.4 Mo",
-        "audio": "volume moyen -19.0 dB ; contenu sonore : Un homme parle en anglais de ne pas avoir peur.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Arnold Schwarzenegger en toge de diplômé s'exprimant lors d'un discours de motivation. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 b49e109faa49 ; empreinte visuelle : plus proche 0.319"
-      }
-    },
-    "postId": "6a89dc38684f9ed20a69074d",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
-  },
-  {
-    "id": "mindshift_davidgoggins_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_davidgoggins_v1.mp4",
-    "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "6165a0aceca1031ee7414d741aee6a7ad429556344461bcf6352f3a723503994",
-      "date": "2026-08-22T14:33:59Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 17.4s, 2.9 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de courage et d'honneur dans une védios.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en costume parle a un micro sur une scene avec des sous-titres en francais. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 6165a0aceca1 ; empreinte visuelle : plus proche 0.362"
-      }
-    },
-    "postId": "6a89dc50b1d3646a8ebffd7a",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
-  },
-  {
-    "id": "mindshift_denzelwashington_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denzelwashington_v1.mp4",
-    "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "be90fb7aa7293ab2b8305fa33d36218c58851803a6f1fba5ed0a86dd14853cce",
-      "date": "2026-08-22T14:34:06Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 26.7s, 4.9 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de prise de risques et de succès.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en toque et robe de diplômé fait un discours motivationnel devant un public. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 be90fb7aa729 ; empreinte visuelle : plus proche 0.126 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    },
-    "postId": "6a89dc6aa2a16cf3e313ed22",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
-  },
-  {
     "id": "mindshift_dwaynejohnson_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
     "caption": "PERSONNE NE VOIT LES ANNÉES DE TRAVAIL — The Rock\n\n#therock #mindshift #motivation #mindset #fyp",
@@ -774,5 +702,77 @@
         "doublon": "sha256 9cd7006efc26 ; empreinte visuelle : plus proche 0.001 (espritlibre_yannicknoah_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
       }
     }
+  },
+  {
+    "id": "mindshift_arnoldschwarzenegger_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
+    "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 2,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "b49e109faa499c1fea6a03f85659bb17e68233dfa01ed7bd4744389261c72481",
+      "date": "2026-08-22T14:33:53Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 20.2s, 4.4 Mo",
+        "audio": "volume moyen -19.0 dB ; contenu sonore : Un homme parle en anglais de ne pas avoir peur.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Arnold Schwarzenegger en toge de diplômé s'exprimant lors d'un discours de motivation. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 b49e109faa49 ; empreinte visuelle : plus proche 0.319"
+      }
+    },
+    "postId": "6a89dc38684f9ed20a69074d",
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
+  },
+  {
+    "id": "mindshift_davidgoggins_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_davidgoggins_v1.mp4",
+    "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 2,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "6165a0aceca1031ee7414d741aee6a7ad429556344461bcf6352f3a723503994",
+      "date": "2026-08-22T14:33:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 17.4s, 2.9 Mo",
+        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de courage et d'honneur dans une védios.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme en costume parle a un micro sur une scene avec des sous-titres en francais. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 6165a0aceca1 ; empreinte visuelle : plus proche 0.362"
+      }
+    },
+    "postId": "6a89dc50b1d3646a8ebffd7a",
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
+  },
+  {
+    "id": "mindshift_denzelwashington_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denzelwashington_v1.mp4",
+    "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 2,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "be90fb7aa7293ab2b8305fa33d36218c58851803a6f1fba5ed0a86dd14853cce",
+      "date": "2026-08-22T14:34:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 26.7s, 4.9 Mo",
+        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de prise de risques et de succès.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme en toque et robe de diplômé fait un discours motivationnel devant un public. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 be90fb7aa729 ; empreinte visuelle : plus proche 0.126 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+      }
+    },
+    "postId": "6a89dc6aa2a16cf3e313ed22",
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
   }
 ]
