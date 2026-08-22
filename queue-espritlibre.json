@@ -196,9 +196,9 @@
     "id": "espritlibre_matthewhussey_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-espritlibre/espritlibre_matthewhussey_v1.mp4",
     "caption": "Matthew Hussey sur se respecter soi-même 💭\n\n#motivation #mindset #espritlibre #citation #inspiration #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "a6a2d9129d9277965d47a56aa5e749b87b5b8934ded58d97cba332be15070b07",
@@ -212,7 +212,9 @@
         "outro": "ecart d'empreinte avec l'outro 3/64",
         "doublon": "sha256 a6a2d9129d927796"
       }
-    }
+    },
+    "postId": "6a8963ecfdcb24c3a76f76f8",
+    "publishedAt": "2026-08-22T08:55:52Z"
   },
   {
     "id": "espritlibre_michelleobama_v3",
