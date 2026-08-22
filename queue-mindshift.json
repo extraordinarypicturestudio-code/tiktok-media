@@ -5,7 +5,7 @@
     "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 1,
+    "attempts": 2,
     "verification": {
       "verdict": "OK",
       "sha256": "b49e109faa499c1fea6a03f85659bb17e68233dfa01ed7bd4744389261c72481",
@@ -21,7 +21,7 @@
       }
     },
     "postId": "6a89dc38684f9ed20a69074d",
-    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
   },
   {
     "id": "mindshift_davidgoggins_v1",
@@ -29,7 +29,7 @@
     "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 1,
+    "attempts": 2,
     "verification": {
       "verdict": "OK",
       "sha256": "6165a0aceca1031ee7414d741aee6a7ad429556344461bcf6352f3a723503994",
@@ -45,7 +45,7 @@
       }
     },
     "postId": "6a89dc50b1d3646a8ebffd7a",
-    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
   },
   {
     "id": "mindshift_denzelwashington_v1",
@@ -53,7 +53,7 @@
     "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 1,
+    "attempts": 2,
     "verification": {
       "verdict": "OK",
       "sha256": "be90fb7aa7293ab2b8305fa33d36218c58851803a6f1fba5ed0a86dd14853cce",
@@ -69,7 +69,7 @@
       }
     },
     "postId": "6a89dc6aa2a16cf3e313ed22",
-    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
+    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
   },
   {
     "id": "mindshift_dwaynejohnson_v1",
