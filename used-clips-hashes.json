@@ -998,5 +998,13 @@
     "file": "clips-espritlibre/espritlibre_matthewhussey_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-22T08:55:52Z"
+  },
+  {
+    "hash": "bae734babefc804d94bdbb4c2f50250d",
+    "id": "dubai-chocolate-bar",
+    "channel": "recipe_crave",
+    "file": "clips/dubai-chocolate-bar.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-22T16:26:04Z"
   }
 ]

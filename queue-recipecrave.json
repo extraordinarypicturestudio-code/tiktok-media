@@ -1074,9 +1074,9 @@
     "id": "dubai-chocolate-bar",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dubai-chocolate-bar.mp4",
     "caption": "The Dubai chocolate bar, made at home 🍫\n\n#dubaichocolate #kataifi #pistachio #chocolatebar #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "07efb6ebc5a4801070d462c34274b61816836479f33d8a15b01cae13f73da520",
@@ -1090,7 +1090,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 07efb6ebc5a4 ; empreinte visuelle : plus proche 0.396"
       }
-    }
+    },
+    "postId": "6a89cd6f7c4ddff6078b0f97",
+    "publishedAt": "2026-08-22T16:26:04Z"
   },
   {
     "id": "matcha-basque-cheesecake",
