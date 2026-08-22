@@ -1069,5 +1069,401 @@
     },
     "postId": "6a88822667e80347a641934d",
     "publishedAt": "2026-08-21T16:52:54Z"
+  },
+  {
+    "id": "dubai-chocolate-bar",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dubai-chocolate-bar.mp4",
+    "caption": "The Dubai chocolate bar, made at home 🍫\n\n#dubaichocolate #kataifi #pistachio #chocolatebar #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "07efb6ebc5a4801070d462c34274b61816836479f33d8a15b01cae13f73da520",
+      "date": "2026-08-21T10:16:24Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.0s, 46.3 Mo",
+        "audio": "volume moyen -23.7 dB ; bibliotheque : t6-energetic-upbeat.mp3 0.63 (2e 0.31) ; contenu sonore : Des bruits de cuisine rythmés et dynamiques sont audibles.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Fabrication maison d'une barre de chocolat style Dubai avec des biscuits, des pistaches et des cheveux d'ange. | aliments : ['chocolat', 'biscuits', 'pistaches', \"cheveux d'ange\", 'lait concentré', 'sucre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 07efb6ebc5a4 ; empreinte visuelle : plus proche 0.396"
+      }
+    }
+  },
+  {
+    "id": "matcha-basque-cheesecake",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/matcha-basque-cheesecake.mp4",
+    "caption": "Burnt matcha cheesecake, the good kind 🍵\n\n#matcha #basquecheesecake #cheesecake #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "998f2eafb9409b8a25ecb2c6c5acbde5ba5808a4717556d05ec32c36b182206c",
+      "date": "2026-08-21T10:16:37Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 73.3s, 55.2 Mo",
+        "audio": "volume moyen -15.6 dB ; bibliotheque : t7-fun-energetic.mp3 1.00 (2e 0.20) ; contenu sonore : Cette courte bande son instrumental est rythmée et dynamique.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'un cheesecake au matcha brule. | aliments : ['matcha', 'chocolat blanc', 'creme', 'œufs', 'chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 998f2eafb940 ; empreinte visuelle : plus proche 0.379"
+      }
+    }
+  },
+  {
+    "id": "matcha-warabi-mochi",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/matcha-warabi-mochi.mp4",
+    "caption": "Matcha warabi mochi, wobbly and cold 🍵\n\n#warabimochi #matcha #mochi #japanesedessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "5ef2f5e828d268e7dcb73b4bcce103e4e64994094fe7529a669647cf2ed83bb8",
+      "date": "2026-08-21T10:16:49Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.3s, 42.0 Mo",
+        "audio": "volume moyen -24.3 dB ; bibliotheque : t7-fun-energetic.mp3 0.64 (2e 0.25) ; contenu sonore : On entend de la musique et des bruits de cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et decoupe de warabi mochi au matcha avec ajout de sirop | aliments : ['matcha', 'sucre', 'chocolat blanc', 'warabi mochi', 'sirop'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 5ef2f5e828d2 ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "mango-fruit-salad",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/mango-fruit-salad.mp4",
+    "caption": "Mango bowl with ice cream on top 🥭\n\n#mango #fruitsalad #dessert #summerfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "5e272400dfd317df3f3b88caa6321cb2cd9459c78218c7a237808cb5287ccb9d",
+      "date": "2026-08-21T10:17:36Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.3s, 41.4 Mo",
+        "audio": "volume moyen -23.2 dB ; bibliotheque : t3-after-hours-jazz.mp3 0.59 (2e 0.42) ; contenu sonore : bruits de cuisine avec manipulation d'aliments et de ustensiles",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un dessert a base de mangue, noix de coco, glace et fruits | aliments : ['mangue', 'glace a la vanille', 'noix de coco', 'melon', 'lait', 'fruits secs', 'amandes', 'cajou', 'raisins secs', 'grenade'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 5e272400dfd3 ; empreinte visuelle : plus proche 0.359"
+      }
+    }
+  },
+  {
+    "id": "wagyu-cheese-bread",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/wagyu-cheese-bread.mp4",
+    "caption": "Wagyu and cheese stuffed bread 🥩\n\n#wagyu #cheese #beef #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "efd5c8535d8927ccf425ab8d813a9e09d88b7f4cd36b92fe8fdea5dea6ed4986",
+      "date": "2026-08-21T10:18:35Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 38.6 Mo",
+        "audio": "volume moyen -22.5 dB ; bibliotheque : t6-energetic-upbeat.mp3 0.50 (2e 0.26) ; contenu sonore : Cette vidéo montre une personne en train de cuisiner.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un pain garni de bœuf Wagyu et de fromage fondu, avec cuisson de la viande et assemblage. | aliments : ['bœuf Wagyu', 'viande hachée', 'fromage', 'pain de mie'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 efd5c8535d89 ; empreinte visuelle : plus proche 0.376"
+      }
+    }
+  },
+  {
+    "id": "warabi-mochi-kinako",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/warabi-mochi-kinako.mp4",
+    "caption": "Warabi mochi dusted in kinako 🍡\n\n#warabimochi #kinako #mochi #japanesedessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c7b6770b22f651411fb749db82d9319f57f50efb3881100c3246aafe0d6f37b4",
+      "date": "2026-08-21T10:18:48Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.6s, 55.2 Mo",
+        "audio": "volume moyen -24.6 dB ; bibliotheque : t7-fun-energetic.mp3 0.61 (2e 0.26) ; contenu sonore : bruits de cuisine et de la musique rythmée en fond",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et decoupe de warabi mochi enrobes de kinako et de matcha | aliments : ['warabi mochi', 'kinako', 'matcha', 'sucre', 'oeufs'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c7b6770b22f6 ; empreinte visuelle : plus proche 0.414"
+      }
+    }
+  },
+  {
+    "id": "berry-cream-cake",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/berry-cream-cake.mp4",
+    "caption": "Berry cream cake, layer by layer 🍰\n\n#cake #berries #baking #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8ecd6bea5bc8f841c2b53c9d32720bd2a7a06ba74e0836b99700cff38712f086",
+      "date": "2026-08-21T10:19:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.0s, 40.6 Mo",
+        "audio": "volume moyen -24.8 dB ; bibliotheque : t6-energetic-upbeat.mp3 0.58 (2e 0.35) ; contenu sonore : Musique entraînante et sons de manipulation d'aliments en cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un gateau aux fruits rouges et creme, avec melange des ingredients et etapes de montage. | aliments : ['oeufs', 'farine', 'chocolat blanc', 'lait', 'bananes', 'myrtilles', 'fraises', 'amandes', 'miel', 'beurre', 'creme'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 8ecd6bea5bc8 ; empreinte visuelle : plus proche 0.354"
+      }
+    }
+  },
+  {
+    "id": "takoyaki-maison",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/takoyaki-maison.mp4",
+    "caption": "Takoyaki flipped one by one 🐙\n\n#takoyaki #octopus #japanesefood #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "058cbb80a96a5e3311c687e2f17ea80860a0fa098b6d5081799a4ccd7e66e742",
+      "date": "2026-08-21T10:19:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.2s, 60.8 Mo",
+        "audio": "volume moyen -21.9 dB ; bibliotheque : t3-after-hours-jazz.mp3 0.57 (2e 0.39) ; contenu sonore : Cette ambiance musicale accompagne des bruits de découpage d'aliments.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de takoyaki a l'encre de seiche et poulpe dans une plaque speciale. | aliments : ['poulpe', 'algue nori', 'pate noire', 'sauce', 'epices'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 058cbb80a96a ; empreinte visuelle : plus proche 0.430"
+      }
+    }
+  },
+  {
+    "id": "pulled-pork-quesadilla",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/pulled-pork-quesadilla.mp4",
+    "caption": "Pulled pork quesadilla, cheese pull 🌮\n\n#quesadilla #pulledpork #cheesepull #mexicanfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7f075ba47bdd718ab62a1ed373565d24b40a9b1e2d5ee123233755d2903411a9",
+      "date": "2026-08-21T10:19:26Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 73.6s, 48.7 Mo",
+        "audio": "volume moyen -16.8 dB ; bibliotheque : t6-energetic-upbeat.mp3 1.00 (2e 0.29) ; contenu sonore : un fond musical dynamique sans voix ni bruits de cuisine",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'une quesadilla au porc effiloche avec fromage et guacamole. | aliments : ['porc', 'fromage', 'tortilla', 'oignon', 'citron vert', 'avocat', 'coriandre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7f075ba47bdd ; empreinte visuelle : plus proche 0.342"
+      }
+    }
+  },
+  {
+    "id": "salmon-avocado-bowl",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/salmon-avocado-bowl.mp4",
+    "caption": "Salmon, avocado and pork belly bowl 🐟\n\n#salmon #avocado #porkbelly #ricebowl #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7c19a2cd4530b1bf263b1578b0a9aa8aea374d05728b440cd72b00826dee9b27",
+      "date": "2026-08-21T10:19:49Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.3s, 40.6 Mo",
+        "audio": "volume moyen -22.4 dB ; bibliotheque : t7-fun-energetic.mp3 0.59 (2e 0.24) ; contenu sonore : Un enregistrement audio de cuisine avec de la musique en fond.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de porc, saumon, avocat et fromage en plat cuisine | aliments : ['pork belly', 'salmon', 'avocado', 'cheese', 'onion', 'tomato', 'herbs'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7c19a2cd4530 ; empreinte visuelle : plus proche 0.359"
+      }
+    }
+  },
+  {
+    "id": "dubai-chocolate-toast",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dubai-chocolate-toast.mp4",
+    "caption": "Dubai chocolate toast, crunch included 🍫\n\n#dubaichocolate #pistachio #toast #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9f6960a392b083792d5e1252e0094f963e2d4d3a53ce145a92e8a51488e2cee7",
+      "date": "2026-08-21T10:30:42Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.1s, 40.4 Mo",
+        "audio": "volume moyen -23.6 dB ; ressemblance avec la source 0.67 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vido de cuisine contient divers bruits de preparation culinaire) ; contenu sonore : Bruits de cuisine divers avec des sons de coupe et de manipulation.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un pain brioche creuse rempli de pistaches, fraises et chocolat fondu style Dubai. | aliments : ['pain', 'fraises', 'chocolat blanc', 'pistaches', 'kataifi', 'chocolat au lait'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 9f6960a392b0 ; empreinte visuelle : plus proche 0.344"
+      }
+    }
+  },
+  {
+    "id": "cheeseburger-sliders",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/cheeseburger-sliders.mp4",
+    "caption": "Cheeseburger sliders pulled apart 🍔\n\n#sliders #cheeseburger #burger #partyfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8164db31d8b676ce89514fbeb405f6a033b68702f2011bd2d2d6cee1a645c16d",
+      "date": "2026-08-21T10:30:54Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.5s, 39.4 Mo",
+        "audio": "volume moyen -22.7 dB ; ressemblance avec la source 0.63 (son d'origine conserve) ; source : bruits de cuisine seuls (bruits de cuisine, craquements, frottements, découpe et cuisson.) ; contenu sonore : Une douce musique accompagne la préparation culinaire et la découpe.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et assemblage de sliders de cheeseburger avec viande hachee, oignons, champignons et fromage. | aliments : ['viande hachee', 'oignons', 'champignons', 'pain a burger', 'fromage', 'beurre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 8164db31d8b6 ; empreinte visuelle : plus proche 0.340"
+      }
+    }
+  },
+  {
+    "id": "watermelon-strawberry-shake",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/watermelon-strawberry-shake.mp4",
+    "caption": "Watermelon strawberry shake, no sugar 🍉\n\n#watermelon #strawberry #smoothie #summerdrink #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "db7827bb63f96e179af08938a7eb1fde219001e0e4072342fc00f59d012ff269",
+      "date": "2026-08-21T10:31:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.5s, 38.4 Mo",
+        "audio": "volume moyen -23.4 dB ; ressemblance avec la source 0.65 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés avec de l'eau et du papier) ; contenu sonore : Musique entraînante et sons de cuisine, cassage d'œufs et mélange.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : La video montre la preparation de smoothies et de boissons aux fruits avec des ingredients varies comme des fraises et de la pastèque. | aliments : ['glace', 'myrtilles', 'mandarines', 'banane', 'noix de pecan', 'amandes', 'miel', 'lait', 'fraises', 'pasteque', 'citron'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 db7827bb63f9 ; empreinte visuelle : plus proche 0.375"
+      }
+    }
+  },
+  {
+    "id": "abalone-cheese-rice",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/abalone-cheese-rice.mp4",
+    "caption": "Abalone rice bowl with melted cheese 🐚\n\n#abalone #ricebowl #seafood #koreanfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "57c2e173c551217a886fb4e57e93ce3c14a6580b20a0aa4c1744c8f2474ea0c0",
+      "date": "2026-08-21T10:31:19Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 67.0s, 36.9 Mo",
+        "audio": "volume moyen -20.4 dB ; ressemblance avec la source 0.75 (son d'origine conserve) ; source : bruits de cuisine seuls (un homme cuisine dans sa cuisine en coupant des legumes) ; contenu sonore : Cette vidéo montre quelqu'un qui cuisine en coupant des légumes.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et dressage d'un bol de riz aux abalones et au fromage fondu. | aliments : ['abalone', 'riz', 'fromage', 'igname', 'citron', 'coriandre', 'oeuf'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 57c2e173c551 ; empreinte visuelle : plus proche 0.288"
+      }
+    }
+  },
+  {
+    "id": "berry-cookie-shake",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/berry-cookie-shake.mp4",
+    "caption": "Berry cookie shake, thick and cold 🍓\n\n#milkshake #berries #cookies #dessertdrink #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "53d06a0e0d83f1b3d22d5b03f35785abb4fb84642949b533947a846d1cac2c4c",
+      "date": "2026-08-21T10:31:33Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.1s, 51.8 Mo",
+        "audio": "volume moyen -21.3 dB ; ressemblance avec la source 0.66 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés, incluant manipulations d'objets et frottements divers.) ; contenu sonore : Une musique rythmée accompagne des sons de cuisine et ustensiles.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un milkshake aux fruits et cookies avec du lait, de la glace et du chocolat. | aliments : ['glacons', 'fruits rouges', 'banane', 'mandarine', 'noix', 'lait', 'marshmallow', 'biscuits', 'lait concentre', 'cacao', 'vanille', 'chocolat', 'm&ms'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 53d06a0e0d83 ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "strawberry-watermelon-jelly",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/strawberry-watermelon-jelly.mp4",
+    "caption": "Strawberry watermelon jelly, sliced clean 🍉\n\n#jelly #strawberry #watermelon #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "2a40a4bf2be6e98f3b3d6cd1d55686718809faa7f1eb1611e0d2f7a41fae57a8",
+      "date": "2026-08-21T10:32:08Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.9s, 37.8 Mo",
+        "audio": "volume moyen -21.2 dB ; ressemblance avec la source 0.77 (son d'origine conserve) ; source : bruits de cuisine seuls (Préparation culinaire avec des bruits de manipulation et de découpe.) ; contenu sonore : bruits de manipulation d'aliments et d'objets de cuisine",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et decoupe de gelee a la fraise, de fruits et de kefir pour un dessert. | aliments : ['fraise', 'pasteque', 'gelee', 'kefir', 'graines'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 2a40a4bf2be6 ; empreinte visuelle : plus proche 0.279"
+      }
+    }
+  },
+  {
+    "id": "chicken-samosa",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-samosa.mp4",
+    "caption": "Chicken samosas folded and fried 🥟\n\n#samosa #chicken #streetfood #fried #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "dd2d194317919368017b8056c82526e8041d0fb8ebf2c400d86053399ce1f90d",
+      "date": "2026-08-21T10:32:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.7s, 43.6 Mo",
+        "audio": "volume moyen -20.6 dB ; ressemblance avec la source 0.71 (son d'origine conserve) ; source : bruits de cuisine seuls (On entend hacher, couper, tapoter, cuisiner, un bruit métallique.) ; contenu sonore : bruits de cuisine avec de la musique de fond",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et friture de samosas au poulet avec etapes de decoupe, melange et pliage. | aliments : ['poulet', 'epices', 'farine', 'oignons', 'samosas', 'mandarines'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 dd2d19431791 ; empreinte visuelle : plus proche 0.328"
+      }
+    }
+  },
+  {
+    "id": "wagyu-cheese-pocket",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/wagyu-cheese-pocket.mp4",
+    "caption": "Wagyu cheese pocket wrapped in seaweed 🥩\n\n#wagyu #cheese #seaweed #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7d9eac4df290ab254655ab24bd32c7cbbe1c10076fabab0b1bac6b9b07fd80f2",
+      "date": "2026-08-21T10:32:33Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.7s, 42.6 Mo",
+        "audio": "volume moyen -23.5 dB ; ressemblance avec la source 0.74 (son d'origine conserve) ; source : bruits de cuisine seuls (L'extrait audio contient divers bruits de cuisine, sans musique ni parole.) ; contenu sonore : Cette musique de cuisine est accompagnée de sons de cuisine",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d un snack a base de bœuf wagyu, fromage et algue nori | aliments : ['papaye', 'citrouille', 'fromage', 'bœuf wagyu', 'algue nori', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7d9eac4df290 ; empreinte visuelle : plus proche 0.385"
+      }
+    }
   }
 ]
