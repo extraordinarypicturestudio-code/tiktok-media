@@ -1122,9 +1122,9 @@
     "id": "matcha-warabi-mochi",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/matcha-warabi-mochi.mp4",
     "caption": "Matcha warabi mochi, wobbly and cold 🍵\n\n#warabimochi #matcha #mochi #japanesedessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "5ef2f5e828d268e7dcb73b4bcce103e4e64994094fe7529a669647cf2ed83bb8",
@@ -1138,7 +1138,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 5ef2f5e828d2 ; empreinte visuelle : plus proche 0.409"
       }
-    }
+    },
+    "postId": "6a8a09451d381afff0a47803",
+    "publishedAt": "2026-08-22T20:41:24Z"
   },
   {
     "id": "mango-fruit-salad",
