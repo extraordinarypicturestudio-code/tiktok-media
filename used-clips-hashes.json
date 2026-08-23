@@ -1070,5 +1070,13 @@
     "file": "clips-mindshift/mindshift_goattalk_v3.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T19:49:58Z"
+  },
+  {
+    "hash": "74fbd0feddc57d11a975150d4125a827",
+    "id": "berry-cream-cake",
+    "channel": "recipe_crave",
+    "file": "clips/berry-cream-cake.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T20:41:01Z"
   }
 ]

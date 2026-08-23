@@ -1218,9 +1218,9 @@
     "id": "berry-cream-cake",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/berry-cream-cake.mp4",
     "caption": "Berry cream cake, layer by layer 🍰\n\n#cake #berries #baking #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "8ecd6bea5bc8f841c2b53c9d32720bd2a7a06ba74e0836b99700cff38712f086",
@@ -1234,7 +1234,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 8ecd6bea5bc8 ; empreinte visuelle : plus proche 0.354"
       }
-    }
+    },
+    "postId": "6a8b5ab03b103c3fc97a76ea",
+    "publishedAt": "2026-08-23T20:41:01Z"
   },
   {
     "id": "takoyaki-maison",
