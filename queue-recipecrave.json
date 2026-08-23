@@ -1242,9 +1242,9 @@
     "id": "takoyaki-maison",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/takoyaki-maison.mp4",
     "caption": "Takoyaki flipped one by one 🐙\n\n#takoyaki #octopus #japanesefood #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "058cbb80a96a5e3311c687e2f17ea80860a0fa098b6d5081799a4ccd7e66e742",
@@ -1258,7 +1258,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 058cbb80a96a ; empreinte visuelle : plus proche 0.430"
       }
-    }
+    },
+    "postId": "6a8b83c03a1322306618f3f4",
+    "publishedAt": "2026-08-23T23:36:13Z"
   },
   {
     "id": "pulled-pork-quesadilla",

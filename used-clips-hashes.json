@@ -1078,5 +1078,13 @@
     "file": "clips/berry-cream-cake.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T20:41:01Z"
+  },
+  {
+    "hash": "cf9283b452cb355fbc178db9e5fe1017",
+    "id": "takoyaki-maison",
+    "channel": "recipe_crave",
+    "file": "clips/takoyaki-maison.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T23:36:13Z"
   }
 ]
