@@ -193,6 +193,41 @@ def chercher_post_recent(url_video, depuis):
     return None
 
 
+def purger_posts_bloquants(url_video):
+    """Supprime les posts EN ECHEC qui portent cette video.
+
+    Zernio refuse de recreer un post dont le contenu est deja connu, meme si
+    le post en question a echoue et n'a jamais atteint TikTok (erreur 409
+    "already scheduled, publishing, or was posted"). Tant qu'il traine, la
+    video est increposable : chaque reprise rebondit sur le 409 et consomme
+    une tentative. Constate sur mindshift le 2026-08-22, trois videos a deux
+    tentatives sur trois.
+
+    On ne supprime QUE les posts en echec : un post publie ou en cours de
+    publication n'est jamais touche.
+    """
+    try:
+        data = zernio_call("GET", "/posts")
+    except (RuntimeError, EnvoiIncertain) as e:
+        print(f"  (impossible de relire les posts : {e})")
+        return 0
+
+    posts = data.get("posts", data) if isinstance(data, dict) else data
+    n = 0
+    for post in posts or []:
+        if post.get("status") != "failed":
+            continue
+        if not any(m.get("url") == url_video for m in post.get("mediaItems", [])):
+            continue
+        try:
+            zernio_call("DELETE", f"/posts/{post['_id']}")
+            n += 1
+            print(f"  post residuel supprime : {post['_id']}")
+        except (RuntimeError, EnvoiIncertain) as e:
+            print(f"  (suppression impossible de {post['_id']} : {e})")
+    return n
+
+
 def compte_id(pseudo_tiktok):
     data = zernio_call("GET", "/accounts")
     items = data.get("accounts", data) if isinstance(data, dict) else data
@@ -533,6 +568,45 @@ def main():
         try:
             reponse = publier(cid, a_publier["url"], a_publier["caption"], cover_ms)
         except RuntimeError as e:
+            texte = str(e)
+
+            # PANNE GLOBALE : ne compte pas contre la video, et on ne tente
+            # aucun autre candidat.
+            #
+            # Le 2026-08-22 sur mindshift, TikTok a repondu "direct posting is
+            # at capacity". Le script est passe au candidat suivant, qui a
+            # echoue pour la meme raison, puis au troisieme : une panne qui ne
+            # devait rien aux videos a consomme trois tentatives en deux
+            # minutes. Pire, les trois posts en echec restaient cote Zernio et
+            # bloquaient ensuite toute reprise par un 409 "contenu deja
+            # publie" - les videos ont failli mourir a 3 tentatives.
+            if any(m in texte.lower() for m in
+                   ("at capacity", "rate limit", "too many requests",
+                    "503", "502", "504", "try again in a few hours")):
+                a_publier["attempts"] = max(0, a_publier.get("attempts", 1) - 1)
+                a_publier["status"] = "pending"
+                a_publier["error"] = f"Panne passagere cote plateforme : {texte[:200]}"
+                ecrire_queue()
+                print(f"  {a_publier['error']}")
+                print("  -> panne GLOBALE : arret du run, aucun autre candidat "
+                      "tente. Le prochain creneau reprendra cette video.")
+                ecrire_rapport_echec(pseudo, [f"{a_publier['id']} : panne plateforme"],
+                                     rattrape=False)
+                sys.exit(0)
+
+            # CONTENU DEJA CONNU DE ZERNIO (409) : un post d'un run precedent
+            # traine encore et bloque. On le supprime pour degager la voie,
+            # puis on retente cette meme video au creneau suivant.
+            if "409" in texte or "already scheduled" in texte.lower():
+                supprimes = purger_posts_bloquants(a_publier["url"])
+                a_publier["attempts"] = max(0, a_publier.get("attempts", 1) - 1)
+                a_publier["status"] = "pending"
+                a_publier["error"] = (f"Post residuel bloquant supprime "
+                                      f"({supprimes}) - a retenter")
+                ecrire_queue()
+                print(f"  {a_publier['error']}")
+                sys.exit(0)
+
             # Rejet franc du serveur : rien n'a ete cree, on peut reessayer.
             statut_suivant = "pending" if a_publier["attempts"] < 3 else "failed"
             a_publier["status"] = statut_suivant
