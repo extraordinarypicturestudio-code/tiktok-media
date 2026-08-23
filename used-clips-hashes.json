@@ -1046,5 +1046,13 @@
     "file": "clips/wagyu-cheese-bread.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T11:40:49Z"
+  },
+  {
+    "hash": "51ef0696a2d6dfe5293f9a95e09bce64",
+    "id": "warabi-mochi-kinako",
+    "channel": "recipe_crave",
+    "file": "clips/warabi-mochi-kinako.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T16:44:44Z"
   }
 ]

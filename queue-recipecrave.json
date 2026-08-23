@@ -1194,9 +1194,9 @@
     "id": "warabi-mochi-kinako",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/warabi-mochi-kinako.mp4",
     "caption": "Warabi mochi dusted in kinako 🍡\n\n#warabimochi #kinako #mochi #japanesedessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c7b6770b22f651411fb749db82d9319f57f50efb3881100c3246aafe0d6f37b4",
@@ -1210,7 +1210,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c7b6770b22f6 ; empreinte visuelle : plus proche 0.414"
       }
-    }
+    },
+    "postId": "6a8b234f531bf00fc51d1a08",
+    "publishedAt": "2026-08-23T16:44:44Z"
   },
   {
     "id": "berry-cream-cake",
