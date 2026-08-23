@@ -1038,5 +1038,13 @@
     "file": "clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T06:34:38Z"
+  },
+  {
+    "hash": "5a627fd4be091be5a7e4a586099a0c56",
+    "id": "wagyu-cheese-bread",
+    "channel": "recipe_crave",
+    "file": "clips/wagyu-cheese-bread.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T11:40:49Z"
   }
 ]

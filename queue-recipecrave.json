@@ -1170,9 +1170,9 @@
     "id": "wagyu-cheese-bread",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/wagyu-cheese-bread.mp4",
     "caption": "Wagyu and cheese stuffed bread 🥩\n\n#wagyu #cheese #beef #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "efd5c8535d8927ccf425ab8d813a9e09d88b7f4cd36b92fe8fdea5dea6ed4986",
@@ -1186,7 +1186,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 efd5c8535d89 ; empreinte visuelle : plus proche 0.376"
       }
-    }
+    },
+    "postId": "6a8adc149dcc072931ba8a28",
+    "publishedAt": "2026-08-23T11:40:49Z"
   },
   {
     "id": "warabi-mochi-kinako",
