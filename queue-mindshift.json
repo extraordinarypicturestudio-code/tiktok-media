@@ -3,9 +3,9 @@
     "id": "mindshift_dwaynejohnson_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
     "caption": "PERSONNE NE VOIT LES ANNÉES DE TRAVAIL — The Rock\n\n#therock #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "d632cb1d8818efcc0ea857eab368382fc65e82a5103b5ea2025df5d4a4976e24",
@@ -19,7 +19,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 d632cb1d8818 ; empreinte visuelle : plus proche 0.190"
       }
-    }
+    },
+    "postId": "6a8a945101f959a1dc91f9c7",
+    "publishedAt": "2026-08-23T06:34:38Z"
   },
   {
     "id": "mindshift_edouardbaer_v1",

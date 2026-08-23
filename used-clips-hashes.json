@@ -1030,5 +1030,13 @@
     "file": "clips/mango-fruit-salad.mp4",
     "status": "published",
     "publishedAt": "2026-08-22T23:35:32Z"
+  },
+  {
+    "hash": "329153e638f62c89f9b30c1d8aaae1e5",
+    "id": "mindshift_dwaynejohnson_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T06:34:38Z"
   }
 ]
