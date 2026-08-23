@@ -51,9 +51,9 @@
     "id": "mindshift_goattalk_v3",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_goattalk_v3.mp4",
     "caption": "CULTIVE-LE TOI-MÊME, PUIS PARTAGE-LE\n\n#developpementpersonnel #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "965b5203ce978782165f8899e16efc86b6eb5a493cd24683b08d17a9a51750ea",
@@ -67,7 +67,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 965b5203ce97 ; empreinte visuelle : plus proche 0.387"
       }
-    }
+    },
+    "postId": "6a8b4ebb496682077a43bcc8",
+    "publishedAt": "2026-08-23T19:49:58Z"
   },
   {
     "id": "mindshift_kobebryant_v1",

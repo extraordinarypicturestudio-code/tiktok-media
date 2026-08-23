@@ -1062,5 +1062,13 @@
     "file": "clips-mindshift/mindshift_edouardbaer_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T17:27:47Z"
+  },
+  {
+    "hash": "6b06854300fefaab61b8b5f9853a614e",
+    "id": "mindshift_goattalk_v3",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_goattalk_v3.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T19:49:58Z"
   }
 ]
