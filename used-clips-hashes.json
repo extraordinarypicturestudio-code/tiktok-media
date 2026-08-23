@@ -1054,5 +1054,13 @@
     "file": "clips/warabi-mochi-kinako.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T16:44:44Z"
+  },
+  {
+    "hash": "bcec84d4f9751acfec07168a171f7f55",
+    "id": "mindshift_edouardbaer_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_edouardbaer_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-23T17:27:47Z"
   }
 ]

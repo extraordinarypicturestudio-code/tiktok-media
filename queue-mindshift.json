@@ -27,9 +27,9 @@
     "id": "mindshift_edouardbaer_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_edouardbaer_v1.mp4",
     "caption": "ARRÊTE DE JOUER UN RÔLE — Édouard Baer\n\n#edouardbaer #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c6676256a609444996fedb0cc00f986444f94ea99047d7b7a4c3adf2bac251e1",
@@ -43,7 +43,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c6676256a609 ; empreinte visuelle : plus proche 0.352"
       }
-    }
+    },
+    "postId": "6a8b2d672e409ca6558cdf4f",
+    "publishedAt": "2026-08-23T17:27:47Z"
   },
   {
     "id": "mindshift_goattalk_v3",
