@@ -1266,9 +1266,9 @@
     "id": "pulled-pork-quesadilla",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/pulled-pork-quesadilla.mp4",
     "caption": "Pulled pork quesadilla, cheese pull 🌮\n\n#quesadilla #pulledpork #cheesepull #mexicanfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "7f075ba47bdd718ab62a1ed373565d24b40a9b1e2d5ee123233755d2903411a9",
@@ -1282,7 +1282,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7f075ba47bdd ; empreinte visuelle : plus proche 0.342"
       }
-    }
+    },
+    "postId": "6a8c2f51fe518f7f33bfbd8a",
+    "publishedAt": "2026-08-24T11:48:56Z"
   },
   {
     "id": "salmon-avocado-bowl",

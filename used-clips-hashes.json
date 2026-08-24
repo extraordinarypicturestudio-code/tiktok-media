@@ -1094,5 +1094,13 @@
     "file": "clips-mindshift/mindshift_kobebryant_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T06:48:59Z"
+  },
+  {
+    "hash": "0cbcb66b464cd9d8a174bdd56fd2c752",
+    "id": "pulled-pork-quesadilla",
+    "channel": "recipe_crave",
+    "file": "clips/pulled-pork-quesadilla.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T11:48:56Z"
   }
 ]
