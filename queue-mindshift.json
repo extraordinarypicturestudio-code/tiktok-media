@@ -1,786 +1,1003 @@
 [
-  {
-    "id": "mindshift_dwaynejohnson_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
-    "caption": "PERSONNE NE VOIT LES ANNÉES DE TRAVAIL — The Rock\n\n#therock #mindshift #motivation #mindset #fyp",
-    "status": "published",
-    "controle_visuel": true,
-    "attempts": 1,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "d632cb1d8818efcc0ea857eab368382fc65e82a5103b5ea2025df5d4a4976e24",
-      "date": "2026-08-22T14:34:13Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 33.8s, 9.0 Mo",
-        "audio": "volume moyen -17.5 dB ; contenu sonore : Un homme parle de sa philosophie de vie et du leadership.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Dwayne Johnson parle de motivation, d'entraînement et de persévérance lors d'une interview. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 d632cb1d8818 ; empreinte visuelle : plus proche 0.190"
-      }
-    },
-    "postId": "6a8a945101f959a1dc91f9c7",
-    "publishedAt": "2026-08-23T06:34:38Z"
+ {
+  "id": "mindshift_dwaynejohnson_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_dwaynejohnson_v1.mp4",
+  "caption": "PERSONNE NE VOIT LES ANNÉES DE TRAVAIL — The Rock\n\n#therock #mindshift #motivation #mindset #fyp",
+  "status": "published",
+  "controle_visuel": true,
+  "attempts": 1,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "d632cb1d8818efcc0ea857eab368382fc65e82a5103b5ea2025df5d4a4976e24",
+   "date": "2026-08-22T14:34:13Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 33.8s, 9.0 Mo",
+    "audio": "volume moyen -17.5 dB ; contenu sonore : Un homme parle de sa philosophie de vie et du leadership.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Dwayne Johnson parle de motivation, d'entraînement et de persévérance lors d'une interview. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 d632cb1d8818 ; empreinte visuelle : plus proche 0.190"
+   }
   },
-  {
-    "id": "mindshift_edouardbaer_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_edouardbaer_v1.mp4",
-    "caption": "ARRÊTE DE JOUER UN RÔLE — Édouard Baer\n\n#edouardbaer #mindshift #motivation #mindset #fyp",
-    "status": "published",
-    "controle_visuel": true,
-    "attempts": 1,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "c6676256a609444996fedb0cc00f986444f94ea99047d7b7a4c3adf2bac251e1",
-      "date": "2026-08-22T14:34:20Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 26.3s, 5.1 Mo",
-        "audio": "volume moyen -17.9 dB ; contenu sonore : un homme parle de briller, rayonner et de talents",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Extrait d'interview avec Edouard Baer parlant de développement personnel et de talent. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 c6676256a609 ; empreinte visuelle : plus proche 0.352"
-      }
-    },
-    "postId": "6a8b2d672e409ca6558cdf4f",
-    "publishedAt": "2026-08-23T17:27:47Z"
+  "postId": "6a8a945101f959a1dc91f9c7",
+  "publishedAt": "2026-08-23T06:34:38Z"
+ },
+ {
+  "id": "mindshift_edouardbaer_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_edouardbaer_v1.mp4",
+  "caption": "ARRÊTE DE JOUER UN RÔLE — Édouard Baer\n\n#edouardbaer #mindshift #motivation #mindset #fyp",
+  "status": "published",
+  "controle_visuel": true,
+  "attempts": 1,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "c6676256a609444996fedb0cc00f986444f94ea99047d7b7a4c3adf2bac251e1",
+   "date": "2026-08-22T14:34:20Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 26.3s, 5.1 Mo",
+    "audio": "volume moyen -17.9 dB ; contenu sonore : un homme parle de briller, rayonner et de talents",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Extrait d'interview avec Edouard Baer parlant de développement personnel et de talent. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 c6676256a609 ; empreinte visuelle : plus proche 0.352"
+   }
   },
-  {
-    "id": "mindshift_goattalk_v3",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_goattalk_v3.mp4",
-    "caption": "CULTIVE-LE TOI-MÊME, PUIS PARTAGE-LE\n\n#developpementpersonnel #mindshift #motivation #mindset #fyp",
-    "status": "published",
-    "controle_visuel": true,
-    "attempts": 1,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "965b5203ce978782165f8899e16efc86b6eb5a493cd24683b08d17a9a51750ea",
-      "date": "2026-08-22T14:36:21Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 23.7s, 4.1 Mo",
-        "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de bonhheur et de partage avec philosophie.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Will Smith s'exprime lors d'une interview sur le bonheur et le développement personnel. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 965b5203ce97 ; empreinte visuelle : plus proche 0.387"
-      }
-    },
-    "postId": "6a8b4ebb496682077a43bcc8",
-    "publishedAt": "2026-08-23T19:49:58Z"
+  "postId": "6a8b2d672e409ca6558cdf4f",
+  "publishedAt": "2026-08-23T17:27:47Z"
+ },
+ {
+  "id": "mindshift_goattalk_v3",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_goattalk_v3.mp4",
+  "caption": "CULTIVE-LE TOI-MÊME, PUIS PARTAGE-LE\n\n#developpementpersonnel #mindshift #motivation #mindset #fyp",
+  "status": "published",
+  "controle_visuel": true,
+  "attempts": 1,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "965b5203ce978782165f8899e16efc86b6eb5a493cd24683b08d17a9a51750ea",
+   "date": "2026-08-22T14:36:21Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 23.7s, 4.1 Mo",
+    "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de bonhheur et de partage avec philosophie.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Will Smith s'exprime lors d'une interview sur le bonheur et le développement personnel. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 965b5203ce97 ; empreinte visuelle : plus proche 0.387"
+   }
   },
-  {
-    "id": "mindshift_kobebryant_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_kobebryant_v1.mp4",
-    "caption": "EUX S'ENTRAÎNENT DEUX FOIS PAR SEMAINE — Kobe\n\n#kobebryant #mindshift #motivation #mindset #fyp",
-    "status": "published",
-    "controle_visuel": true,
-    "attempts": 1,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "068987eef38ad8211da98b82dce9c746b7b425a63446c910c51e4a61c69ed749",
-      "date": "2026-08-22T14:36:27Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 26.9s, 7.9 Mo",
-        "audio": "volume moyen -18.1 dB ; contenu sonore : Un homme parle de basket-ball et d'entraînement intensif quotidiennement.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Interview de Kobe Bryant parlant de motivation et d'entrainement intensif. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 068987eef38a ; empreinte visuelle : plus proche 0.206"
-      }
-    },
-    "postId": "6a8be92f139b1004b04ebe50",
-    "publishedAt": "2026-08-24T06:48:59Z"
+  "postId": "6a8b4ebb496682077a43bcc8",
+  "publishedAt": "2026-08-23T19:49:58Z"
+ },
+ {
+  "id": "mindshift_kobebryant_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_kobebryant_v1.mp4",
+  "caption": "EUX S'ENTRAÎNENT DEUX FOIS PAR SEMAINE — Kobe\n\n#kobebryant #mindshift #motivation #mindset #fyp",
+  "status": "published",
+  "controle_visuel": true,
+  "attempts": 1,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "068987eef38ad8211da98b82dce9c746b7b425a63446c910c51e4a61c69ed749",
+   "date": "2026-08-22T14:36:27Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 26.9s, 7.9 Mo",
+    "audio": "volume moyen -18.1 dB ; contenu sonore : Un homme parle de basket-ball et d'entraînement intensif quotidiennement.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Interview de Kobe Bryant parlant de motivation et d'entrainement intensif. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 068987eef38a ; empreinte visuelle : plus proche 0.206"
+   }
   },
-  {
-    "id": "mindshift_zendaya_v2",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_zendaya_v2.mp4",
-    "caption": "RIEN N'EST IMPOSSIBLE, RIEN N'EST FACILE — Zendaya\n\n#zendaya #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "4c2f6b13d31edaa10dbe0b7cd4f2feccd6682d01ab77bbd83bb8cc23f52814b3",
-      "date": "2026-08-22T14:36:34Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 15.8s, 6.2 Mo",
-        "audio": "volume moyen -17.7 dB ; contenu sonore : Une femme parle de motivation et de passion en cuisine.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Zendaya parle de motivation, de travail et de persévérance dans une vidéo interview axée sur le mindset. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 4c2f6b13d31e ; empreinte visuelle : plus proche 0.357"
-      }
-    }
-  },
-  {
-    "id": "mindshift_lancearmstrong_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_lancearmstrong_v1.mp4",
-    "caption": "SEPT TOURS, UNE SEULE RÉPONSE : OUI — Armstrong\n\n#lancearmstrong #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "e45fc1b3cfa4968c9dcbf7f3a69565312843302069b1d6640bbcab67498352b3",
-      "date": "2026-08-22T14:39:01Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 46.0s, 11.2 Mo",
-        "audio": "volume moyen -18.5 dB ; contenu sonore : Conversation sur le dopage sportif et les substances interdites.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Extrait d'interview de Lance Armstrong par Oprah Winfrey sur le dopage | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 e45fc1b3cfa4 ; empreinte visuelle : plus proche 0.349"
-      }
-    }
-  },
-  {
-    "id": "mindshift_whitneyhouston_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_whitneyhouston_v1.mp4",
-    "caption": "JE GAGNE TROP POUR FUMER DU CRACK — Whitney\n\n#whitneyhouston #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "dde500f8aeb587637e7e6f58aabef78d2d8d5b21c8fa0133bb7256032b6b2129",
-      "date": "2026-08-22T14:39:09Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 32.0s, 14.0 Mo",
-        "audio": "volume moyen -18.1 dB ; contenu sonore : Une femme parle de ses habitudes alimentaires et de crack.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Interview de Whitney Houston parlant de sa richesse et niant consommer du crack. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 dde500f8aeb5 ; empreinte visuelle : plus proche 0.242"
-      }
-    }
-  },
-  {
-    "id": "mindshift_cook-question_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-question_v1.mp4",
-    "caption": "15 ANS POUR UNE RÉPONSE — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "694cf82a2f0c151b5ef30e61f5688d5159fa074124648b02d08e0cde307519f0",
-      "date": "2026-08-22T14:36:41Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 77.6s, 18.1 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : un homme parle seul dans un discours de motivation.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Tim Cook en toge faisant un discours avec des sous-titres sur son parcours de vie. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 694cf82a2f0c ; empreinte visuelle : plus proche 0.010 (espritlibre_cook-question_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_cook-regard_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-regard_v1.mp4",
-    "caption": "ARRÊTE DE TE SOUCIER DU REGARD — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "9869c61906c270d98639038933d5f2d79d84807b16e9291b1f6741d1ba379b27",
-      "date": "2026-08-22T14:36:49Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 67.6s, 14.6 Mo",
-        "audio": "volume moyen -18.6 dB ; contenu sonore : Discours de motivation sur le service et l'importance des autres.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Tim Cook prononçant un discours de motivation sur scène. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 9869c61906c2 ; empreinte visuelle : plus proche 0.005 (espritlibre_cook-regard_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_cook-sens_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-sens_v1.mp4",
-    "caption": "PLUS GRAND QUE TOI — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "3f2e1e892d85cb917b797aec0e6eb52cd3cbca643f13d798e55d5b5790d52f07",
-      "date": "2026-08-22T14:37:22Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 70.6s, 16.3 Mo",
-        "audio": "volume moyen -18.6 dB ; contenu sonore : Discours inspirant d'un homme parlant de sens et humanité.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Tim Cook s'exprimant lors d'un discours officiel devant un public avec des sous-titres. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 3f2e1e892d85 ; empreinte visuelle : plus proche 0.010 (espritlibre_cook-sens_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_emmawatson_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_emmawatson_v1.mp4",
-    "caption": "SI CE N'EST PAS MOI, QUI ? — Emma Watson\n\n#emmawatson #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "d6d3e9f36dddb6146ebcab1a192334b11bd54e100d6ccbb4eb201d331a637aa7",
-      "date": "2026-08-22T14:33:23Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 28.2s, 6.7 Mo",
-        "audio": "volume moyen -19.3 dB ; contenu sonore : Une femme parle avec une voix douce et inspirante.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Emma Watson faisant un discours de motivation sur le doute et les opportunites. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 d6d3e9f36ddd ; empreinte visuelle : plus proche 0.022 (espritlibre_emmawatson_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_jameldebbouze_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jameldebbouze_v1.mp4",
-    "caption": "ILS ONT DIT NON, J'AI CONTINUÉ — Jamel\n\n#jameldebbouze #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "10813039ae300e61ada4f03db6650d0410fd22ba388aff0f76fee38f97c7eedf",
-      "date": "2026-08-22T14:40:09Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 34.2s, 10.2 Mo",
-        "audio": "volume moyen -18.5 dB ; contenu sonore : un homme parle de ses rêves et de sa culture.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Jamel Debbouze sur scène parle de l'importance de rêver et de faire rêver les autres. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 10813039ae30 ; empreinte visuelle : plus proche 0.008 (espritlibre_jameldebbouze_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_jimcarrey_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jimcarrey_v1.mp4",
-    "caption": "ON PEUT ÉCHOUER À CE QU'ON N'AIME PAS — Carrey\n\n#jimcarrey #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "fab9bf4715a935ed32ac3c2c65655618aa91c8ac56eb87da548b5c33ca4b22d6",
-      "date": "2026-08-22T14:35:25Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 30.0s, 10.0 Mo",
-        "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de sa famille et de ses choix de vie.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Discours de motivation de Jim Carrey sur le choix de sa carriere et l'echec. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 fab9bf4715a9 ; empreinte visuelle : plus proche 0.017 (espritlibre_jimcarrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_jobs-mort_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-mort_v1.mp4",
-    "caption": "SOUVIENS-TOI QUE TU VAS MOURIR — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "3b83b581beb406060bc18675a01d5236b566dd6a36e15e50ff171f5b8ae7f622",
-      "date": "2026-08-22T14:37:31Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 57.6s, 15.9 Mo",
-        "audio": "volume moyen -17.9 dB ; contenu sonore : un homme parle de sa vie et de son diagnostic",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Steve Jobs lors de son discours de remise de diplomes a Stanford parlant de la mort et du cancer. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 3b83b581beb4 ; empreinte visuelle : plus proche 0.008 (espritlibre_jobs-mort_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_jobs-points_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-points_v1.mp4",
-    "caption": "LES POINTS SE RELIENT APRÈS — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "7d8056991b231d882f6e334c5ee25bf15146455d288eb6450cff7447b42ac346",
-      "date": "2026-08-22T14:37:38Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 57.6s, 14.4 Mo",
-        "audio": "volume moyen -18.7 dB ; contenu sonore : Un homme parle en public sur scene avec des applaudissements.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Discours de Steve Jobs lors d'une remise de diplômes, parlant de relier les points. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 7d8056991b23 ; empreinte visuelle : plus proche 0.005 (espritlibre_jobs-points_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_jobs-vire_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-vire_v1.mp4",
-    "caption": "SE FAIRE VIRER L'A SAUVÉ — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "4556bc5654afa4cfc270b65b43132ec0d3d0d9cd9f0b30a937e92237f3f47141",
-      "date": "2026-08-22T14:37:45Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 73.6s, 18.4 Mo",
-        "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme raconte son parcours professionnel sur un fond neutre.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Steve Jobs lors de son discours de remise des diplomes a l'universite de Stanford. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 4556bc5654af ; empreinte visuelle : plus proche 0.009 (espritlibre_jobs-vire_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_matthewhussey_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_matthewhussey_v1.mp4",
-    "caption": "CE QUE TU ACCEPTES, TU L'ENSEIGNES — Hussey\n\n#matthewhussey #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "5af75940b9f1f7eeb6af4b92455823aa694ac658f6383442774534419032732c",
-      "date": "2026-08-22T14:35:33Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 40.8s, 14.3 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : un homme parle de chagrin d'amour avec une voix grave",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme parle de rupture amoureuse et de chagrin d'amour dans une video de motivation. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 5af75940b9f1 ; empreinte visuelle : plus proche 0.008 (espritlibre_matthewhussey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_matthewhussey2_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_matthewhussey2_v1.mp4",
-    "caption": "N'IMPLORE JAMAIS QU'ON TE CHOISISSE — Hussey\n\n#matthewhussey #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "5e5311b1418a842d6c9c5cd4fe5c70395938a57f95c8d6ac805fddd11557e983",
-      "date": "2026-08-22T14:35:40Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 38.6s, 14.5 Mo",
-        "audio": "volume moyen -17.8 dB ; contenu sonore : Un homme parle calmement de confiance et de soutien personnel.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme assis sur un canape parle de confiance en soi et de relations de maniere motivante. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 5e5311b1418a ; empreinte visuelle : plus proche 0.000 (espritlibre_matthewhussey2_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_mcraven-dixpersonnes_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-dixpersonnes_v1.mp4",
-    "caption": "ET SI TU CHANGEAIS DIX VIES ? — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "1351acd8373d1d1f8acd548d22364640d897d3c35990de37fffc76298cd6d27e",
-      "date": "2026-08-22T14:38:23Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 55.6s, 17.3 Mo",
-        "audio": "volume moyen -18.6 dB ; contenu sonore : Un homme parle en public dans une grande salle.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation sur l'impact de changer des vies. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 1351acd8373d ; empreinte visuelle : plus proche 0.014 (espritlibre_mcraven-dixpersonnes_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_mcraven-litfait_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-litfait_v1.mp4",
-    "caption": "TOUT COMMENCE PAR FAIRE SON LIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "6a88387bb991187ab8f7759ec622f7902eb4d8ab0be5e5800c36506458974914",
-      "date": "2026-08-22T14:38:16Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 55.6s, 17.5 Mo",
-        "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de faire son lit chaque matin rigoureusement.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en uniforme militaire prononce un discours en public avec des sous-titres. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 6a88387bb991 ; empreinte visuelle : plus proche 0.005 (espritlibre_mcraven-litfait_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_mcraven-unevoix_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-unevoix_v1.mp4",
-    "caption": "UNE SEULE VOIX DANS LA NUIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "4cbd46295bee61f444c1e402a17dbb9f5ca0899192c432c1f1d619835824d6e4",
-      "date": "2026-08-22T14:38:31Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 56.6s, 16.6 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme raconte une anecdote sur une classe qui chantait.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 4cbd46295bee ; empreinte visuelle : plus proche 0.003 (espritlibre_mcraven-unevoix_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_michelleobama_v3",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_michelleobama_v3.mp4",
-    "caption": "QUAND ILS TOMBENT BAS, ON VISE HAUT — M. Obama\n\n#michelleobama #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "503464159335aaf7a0e9d801e65c82a66e103d4480e5a292c48ada5484704a9e",
-      "date": "2026-08-22T14:35:47Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 30.2s, 7.8 Mo",
-        "audio": "volume moyen -19.2 dB ; contenu sonore : Une femme parle de sa vie d'une manière sérieuse.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Michelle Obama s'exprime dans une video de motivation surmontant les epreuves et la peur. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 503464159335 ; empreinte visuelle : plus proche 0.014 (espritlibre_michelleobama_v3.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_oprahwinfrey_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_oprahwinfrey_v1.mp4",
-    "caption": "TA VOCATION T'APPELLE DÉJÀ — Oprah\n\n#oprah #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "d45c6dbaa004a6434a3aab6d0637ade477274315bf8b3a40f31b33e611824120",
-      "date": "2026-08-22T14:35:52Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 15.4s, 3.5 Mo",
-        "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle de la loi de cause à effet.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : une femme en costume blanc parle dans un studio avec des sous-titres sur la motivation | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 d45c6dbaa004 ; empreinte visuelle : plus proche 0.029 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_portman-fauxidoles_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-fauxidoles_v1.mp4",
-    "caption": "MÉFIE-TOI DES FAUSSES IDOLES — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "22cdfb9f06119fe20ffd136a8965f2fd0221747da9866d56c4157e3cefc17437",
-      "date": "2026-08-22T14:38:39Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 55.6s, 16.3 Mo",
-        "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle longuement d'une voix sérieuse et posée.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Discours de motivation avec Natalie Portman devant un public avec des sous-titres en français. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 22cdfb9f0611 ; empreinte visuelle : plus proche 0.003 (espritlibre_portman-fauxidoles_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_portman-ignorance_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-ignorance_v1.mp4",
-    "caption": "LA FORCE DE NE PAS SAVOIR — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "eb20619ecb7c76e50804198de11e0f91daaa326e7285082cca17aac75b1c5242",
-      "date": "2026-08-22T14:38:46Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 54.6s, 19.1 Mo",
-        "audio": "volume moyen -18.6 dB ; contenu sonore : Une femme parle d'expériences et d'apprentissages avec confiance.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Natalie Portman donnant un discours de motivation sur l'ignorance et l'inexpérience. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 eb20619ecb7c ; empreinte visuelle : plus proche 0.003 (espritlibre_portman-ignorance_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_portman-serieux_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-serieux_v1.mp4",
-    "caption": "FAIRE QUELQUE CHOSE QUI A DU SENS — Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "10ba9c2ea70de11d824c224c57409187447fc8d8212762b53c7b1401200e484c",
-      "date": "2026-08-22T14:38:54Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 53.6s, 18.8 Mo",
-        "audio": "volume moyen -19.2 dB ; contenu sonore : Une jeune femme s'exprime lors d'une presentation publique.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Natalie Portman prononçant un discours de motivation sur scène devant un public. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 10ba9c2ea70d ; empreinte visuelle : plus proche 0.001 (espritlibre_portman-serieux_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_rowling-echec_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-echec_v1.mp4",
-    "caption": "ÉCHOUER N'EST PAS FACULTATIF — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "2cb3cb51aa1816ef2a3771710ec72616cdfe7f2f05bc62bd6be7e1cef5d36613",
-      "date": "2026-08-22T14:37:52Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 56.6s, 13.0 Mo",
-        "audio": "volume moyen -19.2 dB ; contenu sonore : Une femme parle de sa vie et de son mariage.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Discours de J.K. Rowling sur l'échec et la réussite. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 2cb3cb51aa18 ; empreinte visuelle : plus proche 0.001 (espritlibre_rowling-echec_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_rowling-imagination_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-imagination_v1.mp4",
-    "caption": "IMAGINER CE QUI N'EXISTE PAS — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "7f9697a56ca1e92b57be27a42bedab70e0d6732717d3de0156ab012e66754330",
-      "date": "2026-08-22T14:38:00Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 53.6s, 11.9 Mo",
-        "audio": "volume moyen -18.7 dB ; contenu sonore : Une femme prononce un discours sur l'importance de l'imagination.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Discours de J.K. Rowling sur l'imagination et son parcours personnel. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 7f9697a56ca1 ; empreinte visuelle : plus proche 0.003 (espritlibre_rowling-imagination_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_rowling-vivre_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-vivre_v1.mp4",
-    "caption": "VIVRE SANS JAMAIS ÉCHOUER ? — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "97e0d0f6479e3c4424ac9793d04acc51f359acd2d8f96f57c4ef536d9438a9c2",
-      "date": "2026-08-22T14:38:07Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 55.6s, 13.0 Mo",
-        "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle sur l'echec et la volonte d'apprendre.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : J.K. Rowling donne un discours motivationnel sur l'echec. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 97e0d0f6479e ; empreinte visuelle : plus proche 0.000 (espritlibre_rowling-vivre_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_steveharvey_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_steveharvey_v1.mp4",
-    "caption": "IL FAUT SAUTER POUR QUE ÇA COMMENCE — Harvey\n\n#steveharvey #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "28ff19f1f5e868c8e49ed58d9207a1d85af4ee3bc6c769c6bbd6cf5944b71ba1",
-      "date": "2026-08-22T14:35:59Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 28.1s, 11.3 Mo",
-        "audio": "volume moyen -20.1 dB ; contenu sonore : Discours motivationnel avec musique de fond et voix d'homme.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Steve Harvey donne une allocution de motivation sur la prise de risques avec des sous-titres en francais. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 28ff19f1f5e8 ; empreinte visuelle : plus proche 0.029 (espritlibre_steveharvey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_tomhanks_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_tomhanks_v1.mp4",
-    "caption": "LA GENTILLESSE NE COÛTE RIEN — Tom Hanks\n\n#tomhanks #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "04ac5566dbf0f2868a1bed2064883dc02a3bfab86de5fd1eeebe6af8d0b39e89",
-      "date": "2026-08-22T14:36:06Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 43.5s, 16.2 Mo",
-        "audio": "volume moyen -20.4 dB ; contenu sonore : Un discours dramatique prononcé par un homme seul.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Tom Hanks fait un discours de motivation lors d'une remise de diplômes universitaire. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 04ac5566dbf0 ; empreinte visuelle : plus proche 0.000 (espritlibre_tomhanks_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_yannicknoah_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_yannicknoah_v1.mp4",
-    "caption": "FAIS CE QUI TE REND VIVANT — Yannick Noah\n\n#yannicknoah #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "9cd7006efc26f55315fb01bb300eaaf419fb72d3a609a124b84bd78241862077",
-      "date": "2026-08-22T14:36:14Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 38.9s, 11.6 Mo",
-        "audio": "volume moyen -18.7 dB ; contenu sonore : Un homme parle de bonhèur et d'instants passés en mer.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Yannick Noah parle dans une interview avec des sous-titres en anglais sur le bonheur et la mer. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 9cd7006efc26 ; empreinte visuelle : plus proche 0.001 (espritlibre_yannicknoah_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    }
-  },
-  {
-    "id": "mindshift_arnoldschwarzenegger_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
-    "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "b49e109faa499c1fea6a03f85659bb17e68233dfa01ed7bd4744389261c72481",
-      "date": "2026-08-22T14:33:53Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 20.2s, 4.4 Mo",
-        "audio": "volume moyen -19.0 dB ; contenu sonore : Un homme parle en anglais de ne pas avoir peur.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Arnold Schwarzenegger en toge de diplômé s'exprimant lors d'un discours de motivation. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 b49e109faa49 ; empreinte visuelle : plus proche 0.319"
-      }
-    },
-    "postId": "6a89dc38684f9ed20a69074d",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
-  },
-  {
-    "id": "mindshift_davidgoggins_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_davidgoggins_v1.mp4",
-    "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "6165a0aceca1031ee7414d741aee6a7ad429556344461bcf6352f3a723503994",
-      "date": "2026-08-22T14:33:59Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 17.4s, 2.9 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de courage et d'honneur dans une védios.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en costume parle a un micro sur une scene avec des sous-titres en francais. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 6165a0aceca1 ; empreinte visuelle : plus proche 0.362"
-      }
-    },
-    "postId": "6a89dc50b1d3646a8ebffd7a",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
-  },
-  {
-    "id": "mindshift_denzelwashington_v1",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denzelwashington_v1.mp4",
-    "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 2,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "be90fb7aa7293ab2b8305fa33d36218c58851803a6f1fba5ed0a86dd14853cce",
-      "date": "2026-08-22T14:34:06Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 26.7s, 4.9 Mo",
-        "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de prise de risques et de succès.",
-        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
-        "contenu": "contenu vu : Un homme en toque et robe de diplômé fait un discours motivationnel devant un public. | aliments : [] | preparation : False",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 be90fb7aa729 ; empreinte visuelle : plus proche 0.126 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
-      }
-    },
-    "postId": "6a89dc6aa2a16cf3e313ed22",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
+  "postId": "6a8be92f139b1004b04ebe50",
+  "publishedAt": "2026-08-24T06:48:59Z"
+ },
+ {
+  "id": "mindshift_zendaya_v2",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_zendaya_v2.mp4",
+  "caption": "RIEN N'EST IMPOSSIBLE, RIEN N'EST FACILE — Zendaya\n\n#zendaya #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "ef8c69848d32fab8bf61201f175081b22d5b69380f9b22d1015e19b8c4faabcf",
+   "date": "2026-08-22T14:36:34Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 15.9s, 5.1 Mo",
+    "audio": "volume moyen -17.7 dB ; contenu sonore : Une femme parle de motivation et de passion en cuisine.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Zendaya parle de motivation, de travail et de persévérance dans une vidéo interview axée sur le mindset. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 4c2f6b13d31e ; empreinte visuelle : plus proche 0.357"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
   }
+ },
+ {
+  "id": "mindshift_lancearmstrong_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_lancearmstrong_v1.mp4",
+  "caption": "SEPT TOURS, UNE SEULE RÉPONSE : OUI — Armstrong\n\n#lancearmstrong #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "ff218613ceec9404e5f7ae7b327899be771281633b5d2ba5009730660e317e04",
+   "date": "2026-08-22T14:39:01Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 46.0s, 8.1 Mo",
+    "audio": "volume moyen -18.5 dB ; contenu sonore : Conversation sur le dopage sportif et les substances interdites.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Extrait d'interview de Lance Armstrong par Oprah Winfrey sur le dopage | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 e45fc1b3cfa4 ; empreinte visuelle : plus proche 0.349"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_whitneyhouston_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_whitneyhouston_v1.mp4",
+  "caption": "JE GAGNE TROP POUR FUMER DU CRACK — Whitney\n\n#whitneyhouston #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "2c3c5f7660db9d766029cdd312e96b5f1d086f459b72c13e605d04ada3e21941",
+   "date": "2026-08-22T14:39:09Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 32.1s, 11.4 Mo",
+    "audio": "volume moyen -18.1 dB ; contenu sonore : Une femme parle de ses habitudes alimentaires et de crack.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Interview de Whitney Houston parlant de sa richesse et niant consommer du crack. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 dde500f8aeb5 ; empreinte visuelle : plus proche 0.242"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_cook-question_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-question_v1.mp4",
+  "caption": "15 ANS POUR UNE RÉPONSE — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "c6dd33037e8795b252a18371d0c0ce82fc9e512866ccb38a94453436dbc25a5e",
+   "date": "2026-08-22T14:36:41Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 77.7s, 14.0 Mo",
+    "audio": "volume moyen -18.9 dB ; contenu sonore : un homme parle seul dans un discours de motivation.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Tim Cook en toge faisant un discours avec des sous-titres sur son parcours de vie. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 694cf82a2f0c ; empreinte visuelle : plus proche 0.010 (espritlibre_cook-question_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_cook-regard_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-regard_v1.mp4",
+  "caption": "ARRÊTE DE TE SOUCIER DU REGARD — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "5123ac943687a9f0d8ffe09cdc1b1d65e2e46be391cebf7543c6a43b77c8a636",
+   "date": "2026-08-22T14:36:49Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 67.7s, 10.8 Mo",
+    "audio": "volume moyen -18.6 dB ; contenu sonore : Discours de motivation sur le service et l'importance des autres.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Tim Cook prononçant un discours de motivation sur scène. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 9869c61906c2 ; empreinte visuelle : plus proche 0.005 (espritlibre_cook-regard_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_cook-sens_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-sens_v1.mp4",
+  "caption": "PLUS GRAND QUE TOI — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "5f71def76b17cf9d86db82c0f30ee50dc47fdd4109c8e79efc795ee9e5f576d4",
+   "date": "2026-08-22T14:37:22Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 70.7s, 12.4 Mo",
+    "audio": "volume moyen -18.6 dB ; contenu sonore : Discours inspirant d'un homme parlant de sens et humanité.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Tim Cook s'exprimant lors d'un discours officiel devant un public avec des sous-titres. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 3f2e1e892d85 ; empreinte visuelle : plus proche 0.010 (espritlibre_cook-sens_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_emmawatson_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_emmawatson_v1.mp4",
+  "caption": "SI CE N'EST PAS MOI, QUI ? — Emma Watson\n\n#emmawatson #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "ffc199f015886980bf10cc258fdcf70bd3d3225747b114f215a3e3d1dd1667a3",
+   "date": "2026-08-22T14:33:23Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 28.3s, 4.8 Mo",
+    "audio": "volume moyen -19.3 dB ; contenu sonore : Une femme parle avec une voix douce et inspirante.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Emma Watson faisant un discours de motivation sur le doute et les opportunites. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 d6d3e9f36ddd ; empreinte visuelle : plus proche 0.022 (espritlibre_emmawatson_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_jameldebbouze_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jameldebbouze_v1.mp4",
+  "caption": "ILS ONT DIT NON, J'AI CONTINUÉ — Jamel\n\n#jameldebbouze #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "d7f8810ab82686438c7c7128097b98e84eada149422fc66a92571ca50df4b6b2",
+   "date": "2026-08-22T14:40:09Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 34.3s, 7.4 Mo",
+    "audio": "volume moyen -18.5 dB ; contenu sonore : un homme parle de ses rêves et de sa culture.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Jamel Debbouze sur scène parle de l'importance de rêver et de faire rêver les autres. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 10813039ae30 ; empreinte visuelle : plus proche 0.008 (espritlibre_jameldebbouze_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_jimcarrey_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jimcarrey_v1.mp4",
+  "caption": "ON PEUT ÉCHOUER À CE QU'ON N'AIME PAS — Carrey\n\n#jimcarrey #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "534acc6dbaa9175afb4d9227770519635c24931d30687e69380f89b7a5c1891e",
+   "date": "2026-08-22T14:35:25Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 30.1s, 7.3 Mo",
+    "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de sa famille et de ses choix de vie.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Discours de motivation de Jim Carrey sur le choix de sa carriere et l'echec. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 fab9bf4715a9 ; empreinte visuelle : plus proche 0.017 (espritlibre_jimcarrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_jobs-mort_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-mort_v1.mp4",
+  "caption": "SOUVIENS-TOI QUE TU VAS MOURIR — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "7289cf9716a54d74612b73ef49358c671d03819f9310e6f30a7a907e0d8acc7e",
+   "date": "2026-08-22T14:37:31Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 57.7s, 12.6 Mo",
+    "audio": "volume moyen -17.9 dB ; contenu sonore : un homme parle de sa vie et de son diagnostic",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Steve Jobs lors de son discours de remise de diplomes a Stanford parlant de la mort et du cancer. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 3b83b581beb4 ; empreinte visuelle : plus proche 0.008 (espritlibre_jobs-mort_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_jobs-points_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-points_v1.mp4",
+  "caption": "LES POINTS SE RELIENT APRÈS — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "55e7b82ff5efc76350b4f6c22a1e80667929ce273150d914c430f0a017f46b92",
+   "date": "2026-08-22T14:37:38Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 57.7s, 11.4 Mo",
+    "audio": "volume moyen -18.7 dB ; contenu sonore : Un homme parle en public sur scene avec des applaudissements.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Discours de Steve Jobs lors d'une remise de diplômes, parlant de relier les points. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 7d8056991b23 ; empreinte visuelle : plus proche 0.005 (espritlibre_jobs-points_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_jobs-vire_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-vire_v1.mp4",
+  "caption": "SE FAIRE VIRER L'A SAUVÉ — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "a5d3aaaf2beed2c5806fb680509a92f497a97a86f8b1489c8af3066588fca091",
+   "date": "2026-08-22T14:37:45Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 73.7s, 14.3 Mo",
+    "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme raconte son parcours professionnel sur un fond neutre.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Steve Jobs lors de son discours de remise des diplomes a l'universite de Stanford. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 4556bc5654af ; empreinte visuelle : plus proche 0.009 (espritlibre_jobs-vire_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_matthewhussey_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_matthewhussey_v1.mp4",
+  "caption": "CE QUE TU ACCEPTES, TU L'ENSEIGNES — Hussey\n\n#matthewhussey #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "7c50b4c48412ae1a2240186caf56db43b5e1443509bbe9875af969dbd38fbfe4",
+   "date": "2026-08-22T14:35:33Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 40.9s, 10.6 Mo",
+    "audio": "volume moyen -18.9 dB ; contenu sonore : un homme parle de chagrin d'amour avec une voix grave",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme parle de rupture amoureuse et de chagrin d'amour dans une video de motivation. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 5af75940b9f1 ; empreinte visuelle : plus proche 0.008 (espritlibre_matthewhussey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_matthewhussey2_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_matthewhussey2_v1.mp4",
+  "caption": "N'IMPLORE JAMAIS QU'ON TE CHOISISSE — Hussey\n\n#matthewhussey #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "b3997e29aa2bb6fbb9bb3587eb1c343732b72efadd8b9ef6051f30f93d8c548e",
+   "date": "2026-08-22T14:35:40Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 38.7s, 10.7 Mo",
+    "audio": "volume moyen -17.8 dB ; contenu sonore : Un homme parle calmement de confiance et de soutien personnel.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme assis sur un canape parle de confiance en soi et de relations de maniere motivante. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 5e5311b1418a ; empreinte visuelle : plus proche 0.000 (espritlibre_matthewhussey2_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_mcraven-dixpersonnes_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-dixpersonnes_v1.mp4",
+  "caption": "ET SI TU CHANGEAIS DIX VIES ? — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "5aaefd77bfe7b86d4d38ad0641c203b83b0d67fbfcec9bb1aa2f37a171ad2162",
+   "date": "2026-08-22T14:38:23Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 55.7s, 13.9 Mo",
+    "audio": "volume moyen -18.6 dB ; contenu sonore : Un homme parle en public dans une grande salle.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation sur l'impact de changer des vies. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 1351acd8373d ; empreinte visuelle : plus proche 0.014 (espritlibre_mcraven-dixpersonnes_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_mcraven-litfait_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-litfait_v1.mp4",
+  "caption": "TOUT COMMENCE PAR FAIRE SON LIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "3db4a4eb34f360ce43f2648c7ab430cb4f14608249476171aa4c781e482b1dfb",
+   "date": "2026-08-22T14:38:16Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 55.7s, 14.1 Mo",
+    "audio": "volume moyen -19.3 dB ; contenu sonore : Un homme parle de faire son lit chaque matin rigoureusement.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme en uniforme militaire prononce un discours en public avec des sous-titres. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 6a88387bb991 ; empreinte visuelle : plus proche 0.005 (espritlibre_mcraven-litfait_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_mcraven-unevoix_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-unevoix_v1.mp4",
+  "caption": "UNE SEULE VOIX DANS LA NUIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "b0d6ceb82ed06a4d07d9d93a55a97730774ac52a6f51ebfef0e6fd5b61495ba4",
+   "date": "2026-08-22T14:38:31Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 56.7s, 13.1 Mo",
+    "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme raconte une anecdote sur une classe qui chantait.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme en uniforme militaire fait un discours de motivation avec des sous-titres. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 4cbd46295bee ; empreinte visuelle : plus proche 0.003 (espritlibre_mcraven-unevoix_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_michelleobama_v3",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_michelleobama_v3.mp4",
+  "caption": "QUAND ILS TOMBENT BAS, ON VISE HAUT — M. Obama\n\n#michelleobama #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "b8e1adf2b6205afd03d5c15ec19d9ab6df50faad19a7c8c0d167b737db84ca5a",
+   "date": "2026-08-22T14:35:47Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 30.3s, 5.4 Mo",
+    "audio": "volume moyen -19.2 dB ; contenu sonore : Une femme parle de sa vie d'une manière sérieuse.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Michelle Obama s'exprime dans une video de motivation surmontant les epreuves et la peur. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 503464159335 ; empreinte visuelle : plus proche 0.014 (espritlibre_michelleobama_v3.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_oprahwinfrey_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_oprahwinfrey_v1.mp4",
+  "caption": "TA VOCATION T'APPELLE DÉJÀ — Oprah\n\n#oprah #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "a745455ee3e36c50e64a1e9e69962dd6f1cf8cdcd2408dd3e7bfef0a71e3c94e",
+   "date": "2026-08-22T14:35:52Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 15.5s, 2.5 Mo",
+    "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle de la loi de cause à effet.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : une femme en costume blanc parle dans un studio avec des sous-titres sur la motivation | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 d45c6dbaa004 ; empreinte visuelle : plus proche 0.029 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_portman-fauxidoles_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-fauxidoles_v1.mp4",
+  "caption": "MÉFIE-TOI DES FAUSSES IDOLES — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "ec73747db4a3440ac03650a9ab3793a594b3b2a0b2c352b37ffe9e95bc09e42a",
+   "date": "2026-08-22T14:38:39Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 55.7s, 11.5 Mo",
+    "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle longuement d'une voix sérieuse et posée.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Discours de motivation avec Natalie Portman devant un public avec des sous-titres en français. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 22cdfb9f0611 ; empreinte visuelle : plus proche 0.003 (espritlibre_portman-fauxidoles_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_portman-ignorance_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-ignorance_v1.mp4",
+  "caption": "LA FORCE DE NE PAS SAVOIR — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "1b934fee7a9169b883f86532f23f8879f89e78c4db05569bbd32e40cb3ee6f90",
+   "date": "2026-08-22T14:38:46Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 54.7s, 15.1 Mo",
+    "audio": "volume moyen -18.6 dB ; contenu sonore : Une femme parle d'expériences et d'apprentissages avec confiance.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Natalie Portman donnant un discours de motivation sur l'ignorance et l'inexpérience. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 eb20619ecb7c ; empreinte visuelle : plus proche 0.003 (espritlibre_portman-ignorance_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_portman-serieux_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-serieux_v1.mp4",
+  "caption": "FAIRE QUELQUE CHOSE QUI A DU SENS — Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "c86634cec4f6696fe2bd6a2dc84b5b9417e9638900eb0b83ebb6a8bb9c9807bf",
+   "date": "2026-08-22T14:38:54Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 53.7s, 14.9 Mo",
+    "audio": "volume moyen -19.2 dB ; contenu sonore : Une jeune femme s'exprime lors d'une presentation publique.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Natalie Portman prononçant un discours de motivation sur scène devant un public. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 10ba9c2ea70d ; empreinte visuelle : plus proche 0.001 (espritlibre_portman-serieux_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_rowling-echec_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-echec_v1.mp4",
+  "caption": "ÉCHOUER N'EST PAS FACULTATIF — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "0cd5a7f106939dc017b9dff379c7ee573365b3cf0a5f536582cdedb772004d2b",
+   "date": "2026-08-22T14:37:52Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 56.7s, 10.1 Mo",
+    "audio": "volume moyen -19.2 dB ; contenu sonore : Une femme parle de sa vie et de son mariage.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Discours de J.K. Rowling sur l'échec et la réussite. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 2cb3cb51aa18 ; empreinte visuelle : plus proche 0.001 (espritlibre_rowling-echec_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_rowling-imagination_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-imagination_v1.mp4",
+  "caption": "IMAGINER CE QUI N'EXISTE PAS — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "d9311fe553699b66dc74584e486a185e99a843c684d8f69219d188a27c66063c",
+   "date": "2026-08-22T14:38:00Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 53.7s, 8.9 Mo",
+    "audio": "volume moyen -18.7 dB ; contenu sonore : Une femme prononce un discours sur l'importance de l'imagination.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Discours de J.K. Rowling sur l'imagination et son parcours personnel. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 7f9697a56ca1 ; empreinte visuelle : plus proche 0.003 (espritlibre_rowling-imagination_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_rowling-vivre_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_rowling-vivre_v1.mp4",
+  "caption": "VIVRE SANS JAMAIS ÉCHOUER ? — J.K. Rowling\n\n#jkrowling #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "3c7b8d469a4cec2e8f03d739b3c4884678eb9ab78faa60ddfed0f8af7845f7c2",
+   "date": "2026-08-22T14:38:07Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 55.7s, 9.8 Mo",
+    "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme parle sur l'echec et la volonte d'apprendre.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : J.K. Rowling donne un discours motivationnel sur l'echec. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 97e0d0f6479e ; empreinte visuelle : plus proche 0.000 (espritlibre_rowling-vivre_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_steveharvey_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_steveharvey_v1.mp4",
+  "caption": "IL FAUT SAUTER POUR QUE ÇA COMMENCE — Harvey\n\n#steveharvey #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "3629ccf9061cf9b95a07beba595c6b9d37d9b9d161835c4366380c57979ba1f0",
+   "date": "2026-08-22T14:35:59Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 28.2s, 7.9 Mo",
+    "audio": "volume moyen -20.1 dB ; contenu sonore : Discours motivationnel avec musique de fond et voix d'homme.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Steve Harvey donne une allocution de motivation sur la prise de risques avec des sous-titres en francais. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 28ff19f1f5e8 ; empreinte visuelle : plus proche 0.029 (espritlibre_steveharvey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_tomhanks_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_tomhanks_v1.mp4",
+  "caption": "LA GENTILLESSE NE COÛTE RIEN — Tom Hanks\n\n#tomhanks #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "ddf63a364dadcd249c4904a6d26bf6ce67c1de8d81b80f1c77d38401552788a6",
+   "date": "2026-08-22T14:36:06Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 43.6s, 11.7 Mo",
+    "audio": "volume moyen -20.4 dB ; contenu sonore : Un discours dramatique prononcé par un homme seul.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Tom Hanks fait un discours de motivation lors d'une remise de diplômes universitaire. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 04ac5566dbf0 ; empreinte visuelle : plus proche 0.000 (espritlibre_tomhanks_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_yannicknoah_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_yannicknoah_v1.mp4",
+  "caption": "FAIS CE QUI TE REND VIVANT — Yannick Noah\n\n#yannicknoah #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 0,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "59cac57f0ce883b6002fbafb30dfdcc179f186cb5b476a2a2e99c70fa3c99b54",
+   "date": "2026-08-22T14:36:14Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 39.0s, 8.0 Mo",
+    "audio": "volume moyen -18.7 dB ; contenu sonore : Un homme parle de bonhèur et d'instants passés en mer.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Yannick Noah parle dans une interview avec des sous-titres en anglais sur le bonheur et la mer. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 9cd7006efc26 ; empreinte visuelle : plus proche 0.001 (espritlibre_yannicknoah_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  }
+ },
+ {
+  "id": "mindshift_arnoldschwarzenegger_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
+  "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 2,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "370dc26cdbf607b4195bb6e40913f959f3dd657b74c810b016c00d4d0bcd8e96",
+   "date": "2026-08-22T14:33:53Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 20.2s, 3.4 Mo",
+    "audio": "volume moyen -19.0 dB ; contenu sonore : Un homme parle en anglais de ne pas avoir peur.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Arnold Schwarzenegger en toge de diplômé s'exprimant lors d'un discours de motivation. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 b49e109faa49 ; empreinte visuelle : plus proche 0.319"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  },
+  "postId": "6a89dc38684f9ed20a69074d",
+  "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
+ },
+ {
+  "id": "mindshift_davidgoggins_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_davidgoggins_v1.mp4",
+  "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 2,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "b5579316bdecae8c22a1cef069dbaca879277aadd3f77e3258e28551d05ef494",
+   "date": "2026-08-22T14:33:59Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 17.4s, 2.2 Mo",
+    "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de courage et d'honneur dans une védios.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme en costume parle a un micro sur une scene avec des sous-titres en francais. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 6165a0aceca1 ; empreinte visuelle : plus proche 0.362"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  },
+  "postId": "6a89dc50b1d3646a8ebffd7a",
+  "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
+ },
+ {
+  "id": "mindshift_denzelwashington_v1",
+  "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denzelwashington_v1.mp4",
+  "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
+  "status": "pending",
+  "controle_visuel": true,
+  "attempts": 2,
+  "verification": {
+   "verdict": "OK",
+   "sha256": "7837bb70f6821cce81d300697a6c4126585b38e97b0fbaf1d414f2df28dc89d0",
+   "date": "2026-08-22T14:34:06Z",
+   "outil": "verification_publication.py",
+   "preuves": {
+    "specs": "1080x1920, 30 fps, 26.7s, 3.4 Mo",
+    "audio": "volume moyen -18.9 dB ; contenu sonore : Un homme parle de prise de risques et de succès.",
+    "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+    "contenu": "contenu vu : Un homme en toque et robe de diplômé fait un discours motivationnel devant un public. | aliments : [] | preparation : False",
+    "outro": "ecart d'empreinte avec l'outro 0/64",
+    "doublon": "sha256 be90fb7aa729 ; empreinte visuelle : plus proche 0.126 (espritlibre_oprahwinfrey_v1.mp4) | republication autorisee : migration esprit.libre18 -> mindshift716 du 2026-08-22"
+   },
+   "retampon": {
+    "date": "2026-08-24T17:34:00Z",
+    "motif": "echange d'outro (nouveau logo) le 2026-08-24 : fichier reencode, le sha256 du tampon d'origine ne correspondait plus et publish_next.py aurait refuse l'entree.",
+    "rejoue": "specs + outro (controles locaux) : outro conforme, ecart d'empreinte 0/64",
+    "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
+    "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
+   }
+  },
+  "postId": "6a89dc6aa2a16cf3e313ed22",
+  "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
+ }
 ]
