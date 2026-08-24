@@ -1338,9 +1338,9 @@
     "id": "cheeseburger-sliders",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/cheeseburger-sliders.mp4",
     "caption": "Cheeseburger sliders pulled apart 🍔\n\n#sliders #cheeseburger #burger #partyfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "8164db31d8b676ce89514fbeb405f6a033b68702f2011bd2d2d6cee1a645c16d",
@@ -1354,7 +1354,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 8164db31d8b6 ; empreinte visuelle : plus proche 0.340"
       }
-    }
+    },
+    "postId": "6a8cd4d697c2b9d62ed4d630",
+    "publishedAt": "2026-08-24T23:34:26Z"
   },
   {
     "id": "watermelon-strawberry-shake",
