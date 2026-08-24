@@ -1102,5 +1102,13 @@
     "file": "clips/pulled-pork-quesadilla.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T11:48:56Z"
+  },
+  {
+    "hash": "79bd2454dd7399fa7fcd17663a16872b",
+    "id": "salmon-avocado-bowl",
+    "channel": "recipe_crave",
+    "file": "clips/salmon-avocado-bowl.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T16:58:07Z"
   }
 ]

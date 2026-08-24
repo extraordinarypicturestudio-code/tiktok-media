@@ -1290,9 +1290,9 @@
     "id": "salmon-avocado-bowl",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/salmon-avocado-bowl.mp4",
     "caption": "Salmon, avocado and pork belly bowl 🐟\n\n#salmon #avocado #porkbelly #ricebowl #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "7c19a2cd4530b1bf263b1578b0a9aa8aea374d05728b440cd72b00826dee9b27",
@@ -1306,7 +1306,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7c19a2cd4530 ; empreinte visuelle : plus proche 0.359"
       }
-    }
+    },
+    "postId": "6a8c77f1cdd11d18e1a26ecf",
+    "publishedAt": "2026-08-24T16:58:07Z"
   },
   {
     "id": "dubai-chocolate-toast",
