@@ -130,9 +130,9 @@
     "id": "mindshift_lancearmstrong_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_lancearmstrong_v1.mp4",
     "caption": "SEPT TOURS, UNE SEULE RÉPONSE : OUI — Armstrong\n\n#lancearmstrong #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "ff218613ceec9404e5f7ae7b327899be771281633b5d2ba5009730660e317e04",
@@ -153,7 +153,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a8ca302a41c307f827840f0",
+    "publishedAt": "2026-08-24T20:01:50Z"
   },
   {
     "id": "mindshift_whitneyhouston_v1",

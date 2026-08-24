@@ -1118,5 +1118,13 @@
     "file": "clips-mindshift/mindshift_zendaya_v2.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T17:38:49Z"
+  },
+  {
+    "hash": "3293e0a98e6f4c02c432c8afae73ad5a",
+    "id": "mindshift_lancearmstrong_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_lancearmstrong_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T20:01:50Z"
   }
 ]
