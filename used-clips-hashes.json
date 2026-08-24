@@ -1126,5 +1126,13 @@
     "file": "clips-mindshift/mindshift_lancearmstrong_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T20:01:50Z"
+  },
+  {
+    "hash": "9457cce352a00591634b6ae0a1bc49f1",
+    "id": "dubai-chocolate-toast",
+    "channel": "recipe_crave",
+    "file": "clips/dubai-chocolate-toast.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T20:49:46Z"
   }
 ]

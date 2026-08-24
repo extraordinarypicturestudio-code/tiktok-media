@@ -1314,9 +1314,9 @@
     "id": "dubai-chocolate-toast",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/dubai-chocolate-toast.mp4",
     "caption": "Dubai chocolate toast, crunch included 🍫\n\n#dubaichocolate #pistachio #toast #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "9f6960a392b083792d5e1252e0094f963e2d4d3a53ce145a92e8a51488e2cee7",
@@ -1330,7 +1330,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 9f6960a392b0 ; empreinte visuelle : plus proche 0.344"
       }
-    }
+    },
+    "postId": "6a8cae3c0036772847023d17",
+    "publishedAt": "2026-08-24T20:49:46Z"
   },
   {
     "id": "cheeseburger-sliders",
