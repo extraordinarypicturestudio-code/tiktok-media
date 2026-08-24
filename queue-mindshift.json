@@ -75,9 +75,9 @@
     "id": "mindshift_kobebryant_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_kobebryant_v1.mp4",
     "caption": "EUX S'ENTRAÎNENT DEUX FOIS PAR SEMAINE — Kobe\n\n#kobebryant #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "068987eef38ad8211da98b82dce9c746b7b425a63446c910c51e4a61c69ed749",
@@ -91,7 +91,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 068987eef38a ; empreinte visuelle : plus proche 0.206"
       }
-    }
+    },
+    "postId": "6a8be92f139b1004b04ebe50",
+    "publishedAt": "2026-08-24T06:48:59Z"
   },
   {
     "id": "mindshift_zendaya_v2",

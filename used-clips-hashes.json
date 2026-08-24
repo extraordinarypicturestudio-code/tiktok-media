@@ -1086,5 +1086,13 @@
     "file": "clips/takoyaki-maison.mp4",
     "status": "published",
     "publishedAt": "2026-08-23T23:36:13Z"
+  },
+  {
+    "hash": "8586342f83ff7cfa2d35cd1e6867f6dc",
+    "id": "mindshift_kobebryant_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_kobebryant_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T06:48:59Z"
   }
 ]
