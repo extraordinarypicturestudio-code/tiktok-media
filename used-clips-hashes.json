@@ -1110,5 +1110,13 @@
     "file": "clips/salmon-avocado-bowl.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T16:58:07Z"
+  },
+  {
+    "hash": "9a7280a1278946c790621b92b6f8c886",
+    "id": "mindshift_zendaya_v2",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_zendaya_v2.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-24T17:38:49Z"
   }
 ]
