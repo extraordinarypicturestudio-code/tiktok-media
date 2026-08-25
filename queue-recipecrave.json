@@ -1493,5 +1493,269 @@
         "doublon": "sha256 7d9eac4df290 ; empreinte visuelle : plus proche 0.385"
       }
     }
+  },
+  {
+    "id": "crispy-potato-skillet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crispy-potato-skillet.mp4",
+    "caption": "Crispy potato skillet, one pan only 🥔\n\n#potatoskillet #potatoes #onepan #comfortfood #recipe #asmr #foodtiktok #satisfying",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "218f1ca965a9b7fc5f9cc9ef892f7cf9b85073da7622f033f044be2655fe0192",
+      "date": "2026-08-25T17:14:55Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 42.2 Mo",
+        "audio": "volume moyen -15.9 dB ; ressemblance avec la source 0.13 ; bibliotheque : t7-fun-energetic.mp3 1.00 (2e 0.20) ; contenu sonore : Un extrait audio de musique rythmée, sans paroles ni bruits de cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de pommes de terre sautees a la poele avec une sauce blanche | aliments : ['pommes de terre', 'romarin', 'ail', 'epices', 'yaourt ou creme', 'citron'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 218f1ca965a9 ; empreinte visuelle : plus proche 0.401"
+      }
+    }
+  },
+  {
+    "id": "cheesy-baked-zucchini",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/cheesy-baked-zucchini.mp4",
+    "caption": "Cheesy baked zucchini, golden on top 🧀\n\n#bakedzucchini #zucchini #cheesy #gratin #recipe #asmr #foodtiktok #satisfying",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4b48ca30c176d0c13aac84cf45c9f6087e27156b33aa18dfaeca0817f57fba53",
+      "date": "2026-08-25T17:15:09Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.2s, 46.9 Mo",
+        "audio": "volume moyen -17.0 dB ; ressemblance avec la source 0.13 ; bibliotheque : t6-energetic-upbeat.mp3 1.00 (2e 0.29) ; contenu sonore : Un fond musical de style funk et reggae avec des cuivres.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un gratin de courgettes farcies au fromage et tomates cerises | aliments : ['courgettes', 'tomates cerises', 'ail', 'herbes', 'fromage', 'oignon rouge', 'sauce tomate'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4b48ca30c176 ; empreinte visuelle : plus proche 0.417"
+      }
+    }
+  },
+  {
+    "id": "salmon-rice-asparagus",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/salmon-rice-asparagus.mp4",
+    "caption": "Pan-seared salmon over rice with asparagus 🐟\n\n#salmon #salmonrice #asparagus #seafood #recipe #asmr #foodtiktok #healthydinner",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "65e26d815fe26cf3ff016a8106bdadc83f5abe30dc0bf2a73330c37991fc1da1",
+      "date": "2026-08-25T17:15:23Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.6s, 53.0 Mo",
+        "audio": "volume moyen -17.1 dB ; ressemblance avec la source 0.16 ; bibliotheque : t6-energetic-upbeat.mp3 1.00 (2e 0.29) ; contenu sonore : un morceau de musique électronique dynamique avec un rythme rapide",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de saumon poele, asperges et riz avec sauce epicee et salade d'avocat. | aliments : ['saumon', 'asperges', 'riz', 'avocat', 'tomate', 'citron', 'ail', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 65e26d815fe2 ; empreinte visuelle : plus proche 0.428"
+      }
+    }
+  },
+  {
+    "id": "creamy-one-pot-pasta",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/creamy-one-pot-pasta.mp4",
+    "caption": "One-pot pasta, creamy without the cream 🍝\n\n#onepotpasta #pasta #creamypasta #easydinner #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a0608e46c43bbdeef12043187ee0b1bbdb1f238f59880e334281813405d8b32c",
+      "date": "2026-08-25T17:15:37Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.8s, 54.9 Mo",
+        "audio": "volume moyen -14.7 dB ; ressemblance avec la source 0.22 ; bibliotheque : t3-after-hours-jazz.mp3 1.00 (2e 0.61) ; contenu sonore : Cette musique douce et instrumentale évoque la cuisine en arrière-plan.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un plat de pates avec de la viande hachee, des tomates, des epices et des epinards dans une poele. | aliments : ['pates', 'viande hachee', 'tomates cerises', 'sauce tomate', 'epinards', 'fromage', 'basilic'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 a0608e46c43b ; empreinte visuelle : plus proche 0.401"
+      }
+    }
+  },
+  {
+    "id": "stuffed-bell-peppers",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/stuffed-bell-peppers.mp4",
+    "caption": "Two ways with bell peppers 🫑\n\n#bellpeppers #stuffedpeppers #peppers #healthyrecipe #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a6fb7c71899623ffc837416184e79859635888d0d9ae3d59f55d33bf170784b2",
+      "date": "2026-08-25T17:15:54Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.2s, 46.8 Mo",
+        "audio": "volume moyen -22.7 dB ; ressemblance avec la source 0.68 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés, incluant des coups et des craquements.) ; contenu sonore : Bruits de manipulation d'ustensiles de cuisine dans une ambiance calme.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de deux recettes differentes a base de poivrons rouges, incluant une sauce mixee et des pates. | aliments : ['poivrons', 'ail', 'herbes', 'noix', 'tomates', 'huile', 'pates'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 a6fb7c718996 ; empreinte visuelle : plus proche 0.410"
+      }
+    }
+  },
+  {
+    "id": "chicken-rice-skillet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-rice-skillet.mp4",
+    "caption": "Chicken and rice, all in one skillet 🍚\n\n#chickenandrice #skilletdinner #onepan #chicken #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3f05fa44194b78fff92763ac976f861d6471ed0f08d7715ecca12f3c991d06d6",
+      "date": "2026-08-25T17:16:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.0s, 49.6 Mo",
+        "audio": "volume moyen -17.1 dB ; ressemblance avec la source 0.18 ; bibliotheque : t6-energetic-upbeat.mp3 1.00 (2e 0.29) ; contenu sonore : un morceau de musique rythmée avec une ambiance très disco",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un plat de poulet saute aux legumes, champignons et noix de cajou servi sur du riz. | aliments : ['poulet', 'oignons', 'champignons', 'carottes', 'poivrons', 'ail', 'oignons verts', 'noix de cajou', 'riz', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3f05fa44194b ; empreinte visuelle : plus proche 0.439"
+      }
+    }
+  },
+  {
+    "id": "high-protein-bowl",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/high-protein-bowl.mp4",
+    "caption": "High-protein bowl that actually fills you up 💪\n\n#highprotein #proteinbowl #mealprep #healthyrecipe #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c7c2f978c9248a8f4098f8a8599ca1f28b08e5321190501e875a64f111a365e3",
+      "date": "2026-08-25T17:16:41Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.1s, 47.8 Mo",
+        "audio": "volume moyen -14.7 dB ; ressemblance avec la source 0.31 ; bibliotheque : t3-after-hours-jazz.mp3 1.00 (2e 0.61) ; contenu sonore : Cette douce mélodie de piano calme invite à la détente",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un bowl riche en proteines avec poulet, salade, avocats, tomates et patate douce. | aliments : ['poulet', 'salade', 'avocat', 'tomates cerises', 'patate douce', 'riz ou quinoa', 'sauce yaourt'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c7c2f978c924 ; empreinte visuelle : plus proche 0.413"
+      }
+    }
+  },
+  {
+    "id": "chicken-orzo",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-orzo.mp4",
+    "caption": "Creamy chicken orzo, no cream at all 🍲\n\n#orzo #chickenorzo #orzopasta #onepot #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c0bdd5f5269464ff9eafe0135a7da019ffe4c09c85957ab9be3849852f4c1eab",
+      "date": "2026-08-25T17:16:53Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.2s, 50.9 Mo",
+        "audio": "volume moyen -17.1 dB ; ressemblance avec la source 0.21 ; bibliotheque : t6-energetic-upbeat.mp3 1.00 (2e 0.29) ; contenu sonore : un morceau de musique électronique dynamique avec un rythme entraînant",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un plat de pates orzo au poulet, tomates cerises, olives, basilic et burrata. | aliments : ['poulet', 'pates orzo', 'tomates cerises', 'oignons', 'olives', 'basilic', 'citron', 'burrata', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c0bdd5f52694 ; empreinte visuelle : plus proche 0.402"
+      }
+    }
+  },
+  {
+    "id": "protein-chicken-skillet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/protein-chicken-skillet.mp4",
+    "caption": "High-protein chicken skillet 🍗\n\n#chickenskillet #highprotein #chicken #mealprep #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "432b073ed9a29a371dbf55328dd2c272b70abc64ff815d9d70a9b3b63f6b325b",
+      "date": "2026-08-25T17:17:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.8s, 50.3 Mo",
+        "audio": "volume moyen -14.7 dB ; ressemblance avec la source 0.19 ; bibliotheque : t3-after-hours-jazz.mp3 1.00 (2e 0.61) ; contenu sonore : Cette douce musique est idéale pour accompagner un moment de détente.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un plat de poulet saute avec des legumes et du riz. | aliments : ['poulet', 'legumes', 'brocoli', 'carottes', 'poivrons', 'riz'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 432b073ed9a2 ; empreinte visuelle : plus proche 0.408"
+      }
+    }
+  },
+  {
+    "id": "healthy-chicken-pasta",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/healthy-chicken-pasta.mp4",
+    "caption": "Healthy chicken pasta, no heavy sauce 🌿\n\n#chickenpasta #healthypasta #pasta #lightdinner #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "83a3e33e2c56c9544496a3b811d383399a01e59362dda943f005abbe53b5f7a7",
+      "date": "2026-08-25T17:17:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.6s, 59.3 Mo",
+        "audio": "volume moyen -14.7 dB ; ressemblance avec la source 0.26 ; bibliotheque : t3-after-hours-jazz.mp3 1.00 (2e 0.61) ; contenu sonore : Musique de fond instrumentale douce pour accompagner la cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de pates au poulet, champignons, tomates cerises et basilic | aliments : ['poulet', 'champignons', 'tomates cerises', 'basilic', 'pates farfalle'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 83a3e33e2c56 ; empreinte visuelle : plus proche 0.406"
+      }
+    }
+  },
+  {
+    "id": "crunchy-summer-salad",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crunchy-summer-salad.mp4",
+    "caption": "Crunchy summer salad, five minutes flat 🥗\n\n#summersalad #salad #freshsalad #healthylunch #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c147640b2607094c0bb614157697fad48745a28becceff645f0c58dfd804765e",
+      "date": "2026-08-25T17:18:40Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.9s, 49.8 Mo",
+        "audio": "volume moyen -15.9 dB ; ressemblance avec la source 0.14 ; bibliotheque : t7-fun-energetic.mp3 1.00 (2e 0.20) ; contenu sonore : Cette musique électronique entraînante crée une ambiance de fête nocturne.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade fraiche composee de legumes croquants, chou-fleur, pois chiches et sauce blanche. | aliments : ['salade', 'tomates cerises', 'concombre', 'oignon rouge', 'chou-fleur', 'pois chiches', 'ciboulette', 'ail', 'yaourt ou sauce blanche'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c147640b2607 ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "creamy-chicken-pasta",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/creamy-chicken-pasta.mp4",
+    "caption": "Creamy chicken pasta in twenty minutes 🍝\n\n#chickenpasta #creamypasta #pasta #easydinner #recipe #asmr #foodtiktok",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "dd057ced615a8d53d7e30091a8fc2be932df9992fac00468bea3daa5a5baf76e",
+      "date": "2026-08-25T17:18:52Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.7s, 53.2 Mo",
+        "audio": "volume moyen -15.9 dB ; ressemblance avec la source 0.12 ; bibliotheque : t7-fun-energetic.mp3 1.00 (2e 0.20) ; contenu sonore : Cette courte bande son instrumental est rythmée et moderne.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de pates creuses en sauce avec des legumes et du poulet. | aliments : ['poulet', 'oignons', 'poivrons', 'tomates cerises', 'pates', 'sauce', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 dd057ced615a ; empreinte visuelle : plus proche 0.397"
+      }
+    }
   }
 ]
