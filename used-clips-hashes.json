@@ -1182,5 +1182,13 @@
     "file": "clips/berry-cookie-shake.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T20:49:45Z"
+  },
+  {
+    "hash": "d5c812a41576765e83e0ab738a5a4bc7",
+    "id": "strawberry-watermelon-jelly",
+    "channel": "recipe_crave",
+    "file": "clips/strawberry-watermelon-jelly.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T23:38:39Z"
   }
 ]

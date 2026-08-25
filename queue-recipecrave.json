@@ -1434,9 +1434,9 @@
     "id": "strawberry-watermelon-jelly",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/strawberry-watermelon-jelly.mp4",
     "caption": "Strawberry watermelon jelly, sliced clean 🍉\n\n#jelly #strawberry #watermelon #dessert #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "2a40a4bf2be6e98f3b3d6cd1d55686718809faa7f1eb1611e0d2f7a41fae57a8",
@@ -1450,7 +1450,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 2a40a4bf2be6 ; empreinte visuelle : plus proche 0.279"
       }
-    }
+    },
+    "postId": "6a8e275210b606d73251207b",
+    "publishedAt": "2026-08-25T23:38:39Z"
   },
   {
     "id": "chicken-samosa",
