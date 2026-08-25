@@ -1166,5 +1166,13 @@
     "file": "clips/abalone-cheese-rice.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T16:56:17Z"
+  },
+  {
+    "hash": "d7c027045a6358d7904e51a3070a60c6",
+    "id": "mindshift_cook-regard_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_cook-regard_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T20:00:39Z"
   }
 ]
