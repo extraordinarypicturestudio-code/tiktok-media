@@ -192,9 +192,9 @@
     "id": "mindshift_cook-question_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-question_v1.mp4",
     "caption": "15 ANS POUR UNE RÉPONSE — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "unconfirmed",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c6dd33037e8795b252a18371d0c0ce82fc9e512866ccb38a94453436dbc25a5e",
@@ -215,7 +215,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a8dd4997bbd0590b87ccf7f",
+    "error": "Statut non confirme (delai depasse (dernier statut connu : publishing)) - a verifier a la main"
   },
   {
     "id": "mindshift_cook-regard_v1",
