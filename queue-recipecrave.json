@@ -1362,9 +1362,9 @@
     "id": "watermelon-strawberry-shake",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/watermelon-strawberry-shake.mp4",
     "caption": "Watermelon strawberry shake, no sugar 🍉\n\n#watermelon #strawberry #smoothie #summerdrink #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "db7827bb63f96e179af08938a7eb1fde219001e0e4072342fc00f59d012ff269",
@@ -1378,7 +1378,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 db7827bb63f9 ; empreinte visuelle : plus proche 0.375"
       }
-    }
+    },
+    "postId": "6a8d81128bd0f479c6360c99",
+    "publishedAt": "2026-08-25T11:49:19Z"
   },
   {
     "id": "abalone-cheese-rice",

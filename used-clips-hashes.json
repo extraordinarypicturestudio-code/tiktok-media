@@ -1150,5 +1150,13 @@
     "file": "clips-mindshift/mindshift_whitneyhouston_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T06:40:05Z"
+  },
+  {
+    "hash": "7efe8f18fe7beb06320ea0df9c232e70",
+    "id": "watermelon-strawberry-shake",
+    "channel": "recipe_crave",
+    "file": "clips/watermelon-strawberry-shake.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T11:49:19Z"
   }
 ]
