@@ -1386,9 +1386,9 @@
     "id": "abalone-cheese-rice",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/abalone-cheese-rice.mp4",
     "caption": "Abalone rice bowl with melted cheese 🐚\n\n#abalone #ricebowl #seafood #koreanfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "57c2e173c551217a886fb4e57e93ce3c14a6580b20a0aa4c1744c8f2474ea0c0",
@@ -1402,7 +1402,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 57c2e173c551 ; empreinte visuelle : plus proche 0.288"
       }
-    }
+    },
+    "postId": "6a8dc9048ad78100437a92fe",
+    "publishedAt": "2026-08-25T16:56:17Z"
   },
   {
     "id": "berry-cookie-shake",

@@ -1158,5 +1158,13 @@
     "file": "clips/watermelon-strawberry-shake.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T11:49:19Z"
+  },
+  {
+    "hash": "3e41edfe3677869b5d4b8ff32c2f9e1e",
+    "id": "abalone-cheese-rice",
+    "channel": "recipe_crave",
+    "file": "clips/abalone-cheese-rice.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T16:56:17Z"
   }
 ]
