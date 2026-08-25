@@ -1174,5 +1174,13 @@
     "file": "clips-mindshift/mindshift_cook-regard_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T20:00:39Z"
+  },
+  {
+    "hash": "86afd8bc6c5eb8a580dd5f19237127a2",
+    "id": "berry-cookie-shake",
+    "channel": "recipe_crave",
+    "file": "clips/berry-cookie-shake.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T20:49:45Z"
   }
 ]

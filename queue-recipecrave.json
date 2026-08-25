@@ -1410,9 +1410,9 @@
     "id": "berry-cookie-shake",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/berry-cookie-shake.mp4",
     "caption": "Berry cookie shake, thick and cold 🍓\n\n#milkshake #berries #cookies #dessertdrink #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "53d06a0e0d83f1b3d22d5b03f35785abb4fb84642949b533947a846d1cac2c4c",
@@ -1426,7 +1426,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 53d06a0e0d83 ; empreinte visuelle : plus proche 0.409"
       }
-    }
+    },
+    "postId": "6a8dffbc0232fe1ee2f9accb",
+    "publishedAt": "2026-08-25T20:49:45Z"
   },
   {
     "id": "strawberry-watermelon-jelly",
