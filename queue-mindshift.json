@@ -161,9 +161,9 @@
     "id": "mindshift_whitneyhouston_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_whitneyhouston_v1.mp4",
     "caption": "JE GAGNE TROP POUR FUMER DU CRACK — Whitney\n\n#whitneyhouston #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "2c3c5f7660db9d766029cdd312e96b5f1d086f459b72c13e605d04ada3e21941",
@@ -184,7 +184,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a8d38995ae2a0f70f814f28",
+    "publishedAt": "2026-08-25T06:40:05Z"
   },
   {
     "id": "mindshift_cook-question_v1",

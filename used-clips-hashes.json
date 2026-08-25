@@ -1142,5 +1142,13 @@
     "file": "clips/cheeseburger-sliders.mp4",
     "status": "published",
     "publishedAt": "2026-08-24T23:34:26Z"
+  },
+  {
+    "hash": "8c9959ea679b41fe1bf07a50982d0ade",
+    "id": "mindshift_whitneyhouston_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_whitneyhouston_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T06:40:05Z"
   }
 ]
