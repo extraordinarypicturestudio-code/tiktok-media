@@ -1458,9 +1458,9 @@
     "id": "chicken-samosa",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-samosa.mp4",
     "caption": "Chicken samosas folded and fried 🥟\n\n#samosa #chicken #streetfood #fried #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "dd2d194317919368017b8056c82526e8041d0fb8ebf2c400d86053399ce1f90d",
@@ -1474,7 +1474,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 dd2d19431791 ; empreinte visuelle : plus proche 0.328"
       }
-    }
+    },
+    "postId": "6a8ed340daca55f16c840abf",
+    "publishedAt": "2026-08-26T11:52:55Z"
   },
   {
     "id": "wagyu-cheese-pocket",

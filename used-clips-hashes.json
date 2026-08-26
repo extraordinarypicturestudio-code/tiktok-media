@@ -1198,5 +1198,13 @@
     "file": "clips-mindshift/mindshift_cook-sens_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-26T06:42:33Z"
+  },
+  {
+    "hash": "638b613db0924f2fe558b2b7963b767e",
+    "id": "chicken-samosa",
+    "channel": "recipe_crave",
+    "file": "clips/chicken-samosa.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-26T11:52:55Z"
   }
 ]
