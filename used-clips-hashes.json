@@ -1222,5 +1222,13 @@
     "file": "clips-mindshift/mindshift_emmawatson_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-26T19:12:12Z"
+  },
+  {
+    "hash": "75f768cf278f6a9a5c42df47d5161306",
+    "id": "mindshift_jameldebbouze_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_jameldebbouze_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-26T22:28:29Z"
   }
 ]
