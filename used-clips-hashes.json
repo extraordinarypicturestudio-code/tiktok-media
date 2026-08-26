@@ -1190,5 +1190,13 @@
     "file": "clips/strawberry-watermelon-jelly.mp4",
     "status": "published",
     "publishedAt": "2026-08-25T23:38:39Z"
+  },
+  {
+    "hash": "d78bce1c07b24a85e617eff5c264d6b5",
+    "id": "mindshift_cook-sens_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_cook-sens_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-26T06:42:33Z"
   }
 ]
