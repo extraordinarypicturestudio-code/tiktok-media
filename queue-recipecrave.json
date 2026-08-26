@@ -1482,9 +1482,9 @@
     "id": "wagyu-cheese-pocket",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/wagyu-cheese-pocket.mp4",
     "caption": "Wagyu cheese pocket wrapped in seaweed 🥩\n\n#wagyu #cheese #seaweed #streetfood #recipe #asmr #foodtiktok #satisfying #fyp #foryou #viral",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "7d9eac4df290ab254655ab24bd32c7cbbe1c10076fabab0b1bac6b9b07fd80f2",
@@ -1498,7 +1498,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7d9eac4df290 ; empreinte visuelle : plus proche 0.385"
       }
-    }
+    },
+    "postId": "6a8f1b80a50d919b62c7261a",
+    "publishedAt": "2026-08-26T17:00:44Z"
   },
   {
     "id": "crispy-potato-skillet",
