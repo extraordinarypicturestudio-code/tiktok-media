@@ -1506,9 +1506,9 @@
     "id": "crispy-potato-skillet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crispy-potato-skillet.mp4",
     "caption": "Crispy potato skillet, one pan only 🥔\n\n#potatoskillet #potatoes #onepan #comfortfood #recipe #asmr #foodtiktok #satisfying",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "218f1ca965a9b7fc5f9cc9ef892f7cf9b85073da7622f033f044be2655fe0192",
@@ -1522,7 +1522,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 218f1ca965a9 ; empreinte visuelle : plus proche 0.401"
       }
-    }
+    },
+    "postId": "6a8f77de52068b5412d060c3",
+    "publishedAt": "2026-08-26T23:34:36Z"
   },
   {
     "id": "cheesy-baked-zucchini",

@@ -1230,5 +1230,13 @@
     "file": "clips-mindshift/mindshift_jameldebbouze_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-26T22:28:29Z"
+  },
+  {
+    "hash": "490dab3f8c3a645056e6c31982fe2286",
+    "id": "crispy-potato-skillet",
+    "channel": "recipe_crave",
+    "file": "clips/crispy-potato-skillet.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-26T23:34:36Z"
   }
 ]
