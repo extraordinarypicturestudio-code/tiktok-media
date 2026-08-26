@@ -75,6 +75,34 @@ PROFILS = {
     # toprank.tv1 et nextlevelplays88 : le visage est inherent au contenu,
     # mais l'evenement professionnel est disqualifiant.
     "sport": {**CRITERES_COPYRIGHT, **CRITERES_SECURITE, **CRITERE_PRO},
+    # esprit.libre18 : clips de citations/interviews (visage inherent au
+    # format, sujet libre). Ni la regle "evenement professionnel" (pensee
+    # pour distinguer sport amateur/pro, hors-sujet ici : une conference,
+    # un discours ou une interview officielle sont le format normal) ni le
+    # blocage de visage (format cuisine) ne s'appliquent. IMPORTANT : ce
+    # profil doit etre utilise sur la video AVANT l'ajout des sous-titres
+    # traduits (comme l'outro sur les autres chaines) - sinon
+    # texte_incruste flingue nos propres sous-titres au lieu de ne chercher
+    # que les signatures tierces (watermark/logo source).
+    "citations": {**CRITERES_COPYRIGHT, **CRITERES_SECURITE},
+    # love_kitchen97 : intro d'une femme + cuisine en vue subjective, avec
+    # NOS sous-titres mot a mot et NOTRE outro. Le profil "cuisine" y refusait
+    # 19 videos sur 26 le 2026-08-26, et trois de ses quatre motifs etaient
+    # notre propre format :
+    #   - "watermark"      -> notre outro "Follow for more love_kitchen97"
+    #   - "texte_incruste" -> nos sous-titres, qui SONT le format
+    #   - "visage"         -> l'intro montre une femme, c'est le principe
+    # Ne restent donc que les criteres qui protegent vraiment :
+    #   - mineur_visible : une fillette est partie en publication le
+    #     2026-08-26 dans 11_glaceoreo (plan de degustation de la source
+    #     nona.foodstory, a 56.5s). C'est CE controle qui manquait.
+    #   - logo_marque : une marque tierce reste disqualifiante.
+    # cadrage_corps est volontairement ABSENT : l'utilisateur a tranche le
+    # 2026-08-26 en connaissance de cause (voir CLAUDE.md). Le rendre
+    # bloquant refuserait 6 des 9 videos programmees.
+    # A UTILISER SUR LA VIDEO AVANT L'OUTRO, comme le profil "citations".
+    "lovekitchen": {"logo_marque": "logo de marque commerciale",
+                    "mineur_visible": "mineur visible"},
 }
 
 
@@ -239,10 +267,23 @@ def controler(video, profil="cuisine"):
         if v.get(champ) is True:
             motifs.append(libelle)
 
-    # Un visage sur une chaine sport ne bloque pas, mais reste signale :
-    # c'est une information utile pour un arbitrage humain.
-    if profil == "sport" and v.get("visage_identifiable") is True:
+    # Un visage sur une chaine ou il n'est pas bloquant (sport, citations)
+    # ne rejette pas le clip, mais reste signale : information utile pour
+    # un arbitrage humain.
+    if profil in ("sport", "citations") and v.get("visage_identifiable") is True:
         rapport["avertissements"] = ["visage identifiable (non bloquant sur cette chaine)"]
+
+    # love_kitchen : ces deux criteres ne bloquent pas (format assume ou
+    # decision de l'utilisateur) mais restent REMONTES, pour qu'un ecart
+    # se voie sans arreter la production.
+    if profil == "lovekitchen":
+        av = []
+        if v.get("cadrage_corps") is True:
+            av.append("cadrage centre sur le corps (non bloquant : decision du 2026-08-26)")
+        if v.get("watermark") is True:
+            av.append("watermark detecte - verifier que c'est bien NOTRE outro")
+        if av:
+            rapport["avertissements"] = av
 
     rapport["motifs_refus"] = motifs
     rapport["verdict"] = "OK" if not motifs else "REJET"
@@ -257,7 +298,9 @@ def main():
     p.add_argument("--json", action="store_true", help="sortie JSON brute")
     p.add_argument("--profil", choices=sorted(PROFILS), default="cuisine",
                    help="cuisine = recipe_crave (visage bloquant) ; "
-                        "sport = toprank.tv1 / nextlevelplays88")
+                        "sport = toprank.tv1 / nextlevelplays88 ; "
+                        "citations = esprit.libre18 (a utiliser AVANT "
+                        "l'ajout des sous-titres traduits)")
     a = p.parse_args()
 
     videos = list(a.videos)
