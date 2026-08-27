@@ -1246,5 +1246,13 @@
     "file": "clips/cheesy-baked-zucchini.mp4",
     "status": "published",
     "publishedAt": "2026-08-27T04:32:08Z"
+  },
+  {
+    "hash": "b3f81716cde8949627dacc04bd509bd5",
+    "id": "mindshift_jimcarrey_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_jimcarrey_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-27T17:16:45Z"
   }
 ]

@@ -347,9 +347,9 @@
     "id": "mindshift_jimcarrey_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jimcarrey_v1.mp4",
     "caption": "ON PEUT ÉCHOUER À CE QU'ON N'AIME PAS — Carrey\n\n#jimcarrey #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "534acc6dbaa9175afb4d9227770519635c24931d30687e69380f89b7a5c1891e",
@@ -370,7 +370,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a9070d14aab08be6b30e2cc",
+    "publishedAt": "2026-08-27T17:16:45Z"
   },
   {
     "id": "mindshift_jobs-mort_v1",
