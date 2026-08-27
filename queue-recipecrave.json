@@ -1530,9 +1530,9 @@
     "id": "cheesy-baked-zucchini",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/cheesy-baked-zucchini.mp4",
     "caption": "Cheesy baked zucchini, golden on top 🧀\n\n#bakedzucchini #zucchini #cheesy #gratin #recipe #asmr #foodtiktok #satisfying",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "4b48ca30c176d0c13aac84cf45c9f6087e27156b33aa18dfaeca0817f57fba53",
@@ -1546,7 +1546,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4b48ca30c176 ; empreinte visuelle : plus proche 0.417"
       }
-    }
+    },
+    "postId": "6a8fbd9bb945dc7bc8d499a7",
+    "publishedAt": "2026-08-27T04:32:08Z"
   },
   {
     "id": "salmon-rice-asparagus",
