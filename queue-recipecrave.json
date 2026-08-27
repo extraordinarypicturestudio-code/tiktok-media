@@ -1554,9 +1554,9 @@
     "id": "salmon-rice-asparagus",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/salmon-rice-asparagus.mp4",
     "caption": "Pan-seared salmon over rice with asparagus 🐟\n\n#salmon #salmonrice #asparagus #seafood #recipe #asmr #foodtiktok #healthydinner",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "65e26d815fe26cf3ff016a8106bdadc83f5abe30dc0bf2a73330c37991fc1da1",
@@ -1570,7 +1570,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 65e26d815fe2 ; empreinte visuelle : plus proche 0.428"
       }
-    }
+    },
+    "postId": "6a90a6df55712815487d1775",
+    "publishedAt": "2026-08-27T21:07:25Z"
   },
   {
     "id": "creamy-one-pot-pasta",

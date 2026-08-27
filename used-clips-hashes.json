@@ -1254,5 +1254,13 @@
     "file": "clips-mindshift/mindshift_jimcarrey_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-27T17:16:45Z"
+  },
+  {
+    "hash": "ce2df2c63f798fca2613bdcfeeef2f9e",
+    "id": "salmon-rice-asparagus",
+    "channel": "recipe_crave",
+    "file": "clips/salmon-rice-asparagus.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-27T21:07:25Z"
   }
 ]
