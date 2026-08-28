@@ -1286,5 +1286,13 @@
     "file": "clips-mindshift/mindshift_jobs-points_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T03:42:21Z"
+  },
+  {
+    "hash": "d706145bd9cb72318fd55cc13ab1f6cf",
+    "id": "stuffed-bell-peppers",
+    "channel": "recipe_crave",
+    "file": "clips/stuffed-bell-peppers.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T04:24:34Z"
   }
 ]

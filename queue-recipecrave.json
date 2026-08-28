@@ -1602,9 +1602,9 @@
     "id": "stuffed-bell-peppers",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/stuffed-bell-peppers.mp4",
     "caption": "Two ways with bell peppers 🫑\n\n#bellpeppers #stuffedpeppers #peppers #healthyrecipe #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "a6fb7c71899623ffc837416184e79859635888d0d9ae3d59f55d33bf170784b2",
@@ -1618,7 +1618,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 a6fb7c718996 ; empreinte visuelle : plus proche 0.410"
       }
-    }
+    },
+    "postId": "6a910d5407ae5a36b2295d04",
+    "publishedAt": "2026-08-28T04:24:34Z"
   },
   {
     "id": "chicken-rice-skillet",
