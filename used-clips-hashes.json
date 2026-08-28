@@ -1270,5 +1270,13 @@
     "file": "clips/creamy-one-pot-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T00:56:43Z"
+  },
+  {
+    "hash": "a0aa2911a95b8cfae52bd2c5af85322e",
+    "id": "mindshift_jobs-mort_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_jobs-mort_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T01:26:10Z"
   }
 ]
