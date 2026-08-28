@@ -1278,5 +1278,13 @@
     "file": "clips-mindshift/mindshift_jobs-mort_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T01:26:10Z"
+  },
+  {
+    "hash": "bd292404048749a935d2d97d15e5b080",
+    "id": "mindshift_jobs-points_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_jobs-points_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T03:42:21Z"
   }
 ]
