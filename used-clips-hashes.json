@@ -1262,5 +1262,13 @@
     "file": "clips/salmon-rice-asparagus.mp4",
     "status": "published",
     "publishedAt": "2026-08-27T21:07:25Z"
+  },
+  {
+    "hash": "1ffe1c174597c46ef1c4c19eec601a92",
+    "id": "creamy-one-pot-pasta",
+    "channel": "recipe_crave",
+    "file": "clips/creamy-one-pot-pasta.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T00:56:43Z"
   }
 ]
