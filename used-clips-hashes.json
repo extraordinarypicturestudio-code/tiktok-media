@@ -1310,5 +1310,13 @@
     "file": "clips-mindshift/mindshift_jobs-vire_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T18:11:21Z"
+  },
+  {
+    "hash": "dffba870236dcfeffc66d27c2e50033a",
+    "id": "high-protein-bowl",
+    "channel": "recipe_crave",
+    "file": "clips/high-protein-bowl.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T21:29:47Z"
   }
 ]

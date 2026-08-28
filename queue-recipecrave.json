@@ -1650,9 +1650,9 @@
     "id": "high-protein-bowl",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/high-protein-bowl.mp4",
     "caption": "High-protein bowl that actually fills you up 💪\n\n#highprotein #proteinbowl #mealprep #healthyrecipe #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c7c2f978c9248a8f4098f8a8599ca1f28b08e5321190501e875a64f111a365e3",
@@ -1666,7 +1666,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c7c2f978c924 ; empreinte visuelle : plus proche 0.413"
       }
-    }
+    },
+    "postId": "6a91fd893c0718ad0f2b82a8",
+    "publishedAt": "2026-08-28T21:29:47Z"
   },
   {
     "id": "chicken-orzo",
