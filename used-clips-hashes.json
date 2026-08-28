@@ -1294,5 +1294,13 @@
     "file": "clips/stuffed-bell-peppers.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T04:24:34Z"
+  },
+  {
+    "hash": "f01c738499ca9c35338a7e31621669e0",
+    "id": "chicken-rice-skillet",
+    "channel": "recipe_crave",
+    "file": "clips/chicken-rice-skillet.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T06:56:59Z"
   }
 ]

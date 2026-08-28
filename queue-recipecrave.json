@@ -1626,9 +1626,9 @@
     "id": "chicken-rice-skillet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-rice-skillet.mp4",
     "caption": "Chicken and rice, all in one skillet 🍚\n\n#chickenandrice #skilletdinner #onepan #chicken #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "3f05fa44194b78fff92763ac976f861d6471ed0f08d7715ecca12f3c991d06d6",
@@ -1642,7 +1642,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 3f05fa44194b ; empreinte visuelle : plus proche 0.439"
       }
-    }
+    },
+    "postId": "6a91310e47343967916e6dc8",
+    "publishedAt": "2026-08-28T06:56:59Z"
   },
   {
     "id": "high-protein-bowl",
