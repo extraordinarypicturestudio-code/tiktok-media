@@ -440,9 +440,9 @@
     "id": "mindshift_jobs-vire_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_jobs-vire_v1.mp4",
     "caption": "SE FAIRE VIRER L'A SAUVÉ — Steve Jobs\n\n#stevejobs #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "a5d3aaaf2beed2c5806fb680509a92f497a97a86f8b1489c8af3066588fca091",
@@ -463,7 +463,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a91cf1de371e42cc8a380f8",
+    "publishedAt": "2026-08-28T18:11:21Z"
   },
   {
     "id": "mindshift_matthewhussey_v1",

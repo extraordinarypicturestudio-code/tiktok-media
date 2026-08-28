@@ -1302,5 +1302,13 @@
     "file": "clips/chicken-rice-skillet.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T06:56:59Z"
+  },
+  {
+    "hash": "23b88a04494f0071983527c9c0026607",
+    "id": "mindshift_jobs-vire_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_jobs-vire_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-28T18:11:21Z"
   }
 ]
