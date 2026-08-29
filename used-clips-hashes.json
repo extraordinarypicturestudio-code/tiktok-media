@@ -1326,5 +1326,13 @@
     "file": "clips/chicken-orzo.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T00:36:00Z"
+  },
+  {
+    "hash": "accec12646d036a4ee2dfb04f2f75020",
+    "id": "mindshift_matthewhussey_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_matthewhussey_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T00:57:13Z"
   }
 ]
