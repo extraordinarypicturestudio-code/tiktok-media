@@ -1722,9 +1722,9 @@
     "id": "healthy-chicken-pasta",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/healthy-chicken-pasta.mp4",
     "caption": "Healthy chicken pasta, no heavy sauce 🌿\n\n#chickenpasta #healthypasta #pasta #lightdinner #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "83a3e33e2c56c9544496a3b811d383399a01e59362dda943f005abbe53b5f7a7",
@@ -1738,7 +1738,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 83a3e33e2c56 ; empreinte visuelle : plus proche 0.406"
       }
-    }
+    },
+    "postId": "6a925b909e4d72b41c9964b2",
+    "publishedAt": "2026-08-29T04:10:38Z"
   },
   {
     "id": "crunchy-summer-salad",

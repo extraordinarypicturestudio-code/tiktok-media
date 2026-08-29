@@ -1350,5 +1350,13 @@
     "file": "clips/protein-chicken-skillet.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T02:51:43Z"
+  },
+  {
+    "hash": "faf6957946f020302bd229c5679fe21c",
+    "id": "healthy-chicken-pasta",
+    "channel": "recipe_crave",
+    "file": "clips/healthy-chicken-pasta.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T04:10:38Z"
   }
 ]
