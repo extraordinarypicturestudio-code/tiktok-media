@@ -1334,5 +1334,13 @@
     "file": "clips-mindshift/mindshift_matthewhussey_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T00:57:13Z"
+  },
+  {
+    "hash": "bc23e81c8295efd32df006a462618458",
+    "id": "mindshift_matthewhussey2_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_matthewhussey2_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T02:27:04Z"
   }
 ]
