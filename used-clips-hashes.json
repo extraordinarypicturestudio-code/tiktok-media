@@ -1318,5 +1318,13 @@
     "file": "clips/high-protein-bowl.mp4",
     "status": "published",
     "publishedAt": "2026-08-28T21:29:47Z"
+  },
+  {
+    "hash": "cea3714b3222ac5e1afdde66012401fc",
+    "id": "chicken-orzo",
+    "channel": "recipe_crave",
+    "file": "clips/chicken-orzo.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T00:36:00Z"
   }
 ]

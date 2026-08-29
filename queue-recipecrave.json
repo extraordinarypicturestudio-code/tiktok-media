@@ -1674,9 +1674,9 @@
     "id": "chicken-orzo",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/chicken-orzo.mp4",
     "caption": "Creamy chicken orzo, no cream at all 🍲\n\n#orzo #chickenorzo #orzopasta #onepot #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c0bdd5f5269464ff9eafe0135a7da019ffe4c09c85957ab9be3849852f4c1eab",
@@ -1690,7 +1690,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c0bdd5f52694 ; empreinte visuelle : plus proche 0.402"
       }
-    }
+    },
+    "postId": "6a922942f939b7a3ffee99fc",
+    "publishedAt": "2026-08-29T00:36:00Z"
   },
   {
     "id": "protein-chicken-skillet",
