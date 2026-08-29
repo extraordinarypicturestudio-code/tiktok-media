@@ -1358,5 +1358,13 @@
     "file": "clips/healthy-chicken-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T04:10:38Z"
+  },
+  {
+    "hash": "c3aefd38be16a5d2975d526b202737be",
+    "id": "mindshift_mcraven-dixpersonnes_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_mcraven-dixpersonnes_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T12:13:00Z"
   }
 ]
