@@ -564,9 +564,9 @@
     "id": "mindshift_mcraven-litfait_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-litfait_v1.mp4",
     "caption": "TOUT COMMENCE PAR FAIRE SON LIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "3db4a4eb34f360ce43f2648c7ab430cb4f14608249476171aa4c781e482b1dfb",
@@ -587,7 +587,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a9335f24b39a1b651c8bada",
+    "publishedAt": "2026-08-29T19:42:22Z"
   },
   {
     "id": "mindshift_mcraven-unevoix_v1",

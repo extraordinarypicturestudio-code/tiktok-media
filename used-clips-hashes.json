@@ -1382,5 +1382,13 @@
     "file": "clips/creamy-chicken-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T19:26:10Z"
+  },
+  {
+    "hash": "21b0226074a48b57fec27faef6cace70",
+    "id": "mindshift_mcraven-litfait_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_mcraven-litfait_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T19:42:22Z"
   }
 ]
