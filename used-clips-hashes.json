@@ -1374,5 +1374,13 @@
     "file": "clips/crunchy-summer-salad.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T15:41:41Z"
+  },
+  {
+    "hash": "1efae575eece460ddfe945aece71514b",
+    "id": "creamy-chicken-pasta",
+    "channel": "recipe_crave",
+    "file": "clips/creamy-chicken-pasta.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T19:26:10Z"
   }
 ]
