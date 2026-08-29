@@ -1342,5 +1342,13 @@
     "file": "clips-mindshift/mindshift_matthewhussey2_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T02:27:04Z"
+  },
+  {
+    "hash": "313303e7a3a620ae2e3e7adf017a9798",
+    "id": "protein-chicken-skillet",
+    "channel": "recipe_crave",
+    "file": "clips/protein-chicken-skillet.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T02:51:43Z"
   }
 ]

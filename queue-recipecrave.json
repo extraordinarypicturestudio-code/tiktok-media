@@ -1698,9 +1698,9 @@
     "id": "protein-chicken-skillet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/protein-chicken-skillet.mp4",
     "caption": "High-protein chicken skillet 🍗\n\n#chickenskillet #highprotein #chicken #mealprep #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "432b073ed9a29a371dbf55328dd2c272b70abc64ff815d9d70a9b3b63f6b325b",
@@ -1714,7 +1714,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 432b073ed9a2 ; empreinte visuelle : plus proche 0.408"
       }
-    }
+    },
+    "postId": "6a9248fe026ae069363e7c19",
+    "publishedAt": "2026-08-29T02:51:43Z"
   },
   {
     "id": "healthy-chicken-pasta",
