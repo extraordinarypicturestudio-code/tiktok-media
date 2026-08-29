@@ -595,9 +595,9 @@
     "id": "mindshift_mcraven-unevoix_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_mcraven-unevoix_v1.mp4",
     "caption": "UNE SEULE VOIX DANS LA NUIT — McRaven\n\n#mcraven #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "b0d6ceb82ed06a4d07d9d93a55a97730774ac52a6f51ebfef0e6fd5b61495ba4",
@@ -618,7 +618,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a93556965a636a2ec5bc3e3",
+    "publishedAt": "2026-08-29T21:56:37Z"
   },
   {
     "id": "mindshift_michelleobama_v3",
