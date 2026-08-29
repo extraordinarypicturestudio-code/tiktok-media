@@ -1366,5 +1366,13 @@
     "file": "clips-mindshift/mindshift_mcraven-dixpersonnes_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T12:13:00Z"
+  },
+  {
+    "hash": "8f02a25fe6cc0852666430f5633122bc",
+    "id": "crunchy-summer-salad",
+    "channel": "recipe_crave",
+    "file": "clips/crunchy-summer-salad.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T15:41:41Z"
   }
 ]

@@ -1746,9 +1746,9 @@
     "id": "crunchy-summer-salad",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crunchy-summer-salad.mp4",
     "caption": "Crunchy summer salad, five minutes flat 🥗\n\n#summersalad #salad #freshsalad #healthylunch #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "c147640b2607094c0bb614157697fad48745a28becceff645f0c58dfd804765e",
@@ -1762,7 +1762,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c147640b2607 ; empreinte visuelle : plus proche 0.409"
       }
-    }
+    },
+    "postId": "6a92fd88cd9f25f6434f2ba2",
+    "publishedAt": "2026-08-29T15:41:41Z"
   },
   {
     "id": "creamy-chicken-pasta",
