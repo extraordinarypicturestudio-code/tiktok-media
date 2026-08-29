@@ -1794,9 +1794,9 @@
     "id": "crispy-schnitzel-asparagus",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/crispy-schnitzel-asparagus.mp4",
     "caption": "Crispy schnitzel with asparagus 🍗\n\n#schnitzel #crispychicken #asparagus #comfortfood #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "6d0b24e5c87c37e579e3f2e8a5a83466f1a76f46ba7ab1f37a9950885d2db6f2",
@@ -1810,7 +1810,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 6d0b24e5c87c ; empreinte visuelle : plus proche 0.342"
       }
-    }
+    },
+    "postId": "6a936007cd4df6e46eeb0b75",
+    "publishedAt": "2026-08-29T22:41:57Z"
   },
   {
     "id": "potato-meatball-wrap",

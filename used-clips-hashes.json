@@ -1398,5 +1398,13 @@
     "file": "clips-mindshift/mindshift_mcraven-unevoix_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-29T21:56:37Z"
+  },
+  {
+    "hash": "f6910b2a7c7380a03e893e59ba58708e",
+    "id": "crispy-schnitzel-asparagus",
+    "channel": "recipe_crave",
+    "file": "clips/crispy-schnitzel-asparagus.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-29T22:41:57Z"
   }
 ]
