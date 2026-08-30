@@ -1866,9 +1866,9 @@
     "id": "shrimp-asparagus-pasta",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/shrimp-asparagus-pasta.mp4",
     "caption": "Shrimp and asparagus pasta, no cream 🍤\n\n#shrimppasta #shrimp #asparagus #seafoodpasta #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "05e2863f204786e5e514e7934aa07f387c9a0dc75a0f44def032b5f647d86a5c",
@@ -1882,7 +1882,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 05e2863f2047 ; empreinte visuelle : plus proche 0.393"
       }
-    }
+    },
+    "postId": "6a94825af3c3ee1ac1b2b064",
+    "publishedAt": "2026-08-30T19:20:40Z"
   },
   {
     "id": "protein-stuffed-peppers",

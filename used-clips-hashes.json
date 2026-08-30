@@ -1430,5 +1430,13 @@
     "file": "clips/steak-mashed-potatoes.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T15:23:50Z"
+  },
+  {
+    "hash": "4aa11a1828385669023716badb8252e1",
+    "id": "shrimp-asparagus-pasta",
+    "channel": "recipe_crave",
+    "file": "clips/shrimp-asparagus-pasta.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T19:20:40Z"
   }
 ]
