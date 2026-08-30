@@ -1446,5 +1446,13 @@
     "file": "clips-mindshift/mindshift_oprahwinfrey_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T19:44:09Z"
+  },
+  {
+    "hash": "4aea82365f0cef4d72192e0fdaa02b4f",
+    "id": "mindshift_portman-fauxidoles_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_portman-fauxidoles_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T22:02:08Z"
   }
 ]

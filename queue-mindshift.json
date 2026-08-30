@@ -688,9 +688,9 @@
     "id": "mindshift_portman-fauxidoles_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-fauxidoles_v1.mp4",
     "caption": "MÉFIE-TOI DES FAUSSES IDOLES — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "ec73747db4a3440ac03650a9ab3793a594b3b2a0b2c352b37ffe9e95bc09e42a",
@@ -711,7 +711,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a94a832c88c0107283ab7c7",
+    "publishedAt": "2026-08-30T22:02:08Z"
   },
   {
     "id": "mindshift_portman-ignorance_v1",
