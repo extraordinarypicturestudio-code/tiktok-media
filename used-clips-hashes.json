@@ -1454,5 +1454,13 @@
     "file": "clips-mindshift/mindshift_portman-fauxidoles_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T22:02:08Z"
+  },
+  {
+    "hash": "50d8d8b79ce6f4ad231c179a954c2ea3",
+    "id": "protein-stuffed-peppers",
+    "channel": "recipe_crave",
+    "file": "clips/protein-stuffed-peppers.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T22:45:55Z"
   }
 ]
