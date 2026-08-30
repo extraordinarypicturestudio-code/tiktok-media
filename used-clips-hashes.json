@@ -1422,5 +1422,13 @@
     "file": "clips-mindshift/mindshift_michelleobama_v3.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T11:08:10Z"
+  },
+  {
+    "hash": "3b3905d8f89c2df0707dc60dc2ecb8f6",
+    "id": "steak-mashed-potatoes",
+    "channel": "recipe_crave",
+    "file": "clips/steak-mashed-potatoes.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T15:23:50Z"
   }
 ]

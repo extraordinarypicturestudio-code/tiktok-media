@@ -1842,9 +1842,9 @@
     "id": "steak-mashed-potatoes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/steak-mashed-potatoes.mp4",
     "caption": "Steak with mashed potatoes and cream sauce 🥩\n\n#steak #mashedpotatoes #creamysauce #dinner #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "3f3c6f9c3dd4f93b2427c9e48fd911f1b268e87b54ab6b4712bbdaffb3484817",
@@ -1858,7 +1858,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 3f3c6f9c3dd4 ; empreinte visuelle : plus proche 0.395"
       }
-    }
+    },
+    "postId": "6a944ad8646db96c0e9cdc10",
+    "publishedAt": "2026-08-30T15:23:50Z"
   },
   {
     "id": "shrimp-asparagus-pasta",
