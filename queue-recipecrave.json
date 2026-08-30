@@ -1818,9 +1818,9 @@
     "id": "potato-meatball-wrap",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/potato-meatball-wrap.mp4",
     "caption": "Potato and meatball wrap, the ultimate one 🌯\n\n#meatballs #wrap #potato #streetfood #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "b55f37d682c1009e03044dd5ac2ef48c5f6d94e2948663327428290e923c053d",
@@ -1834,7 +1834,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 b55f37d682c1 ; empreinte visuelle : plus proche 0.447"
       }
-    }
+    },
+    "postId": "6a938451fe80b904f1b2b804",
+    "publishedAt": "2026-08-30T01:16:48Z"
   },
   {
     "id": "steak-mashed-potatoes",
