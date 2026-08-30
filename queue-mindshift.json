@@ -657,9 +657,9 @@
     "id": "mindshift_oprahwinfrey_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_oprahwinfrey_v1.mp4",
     "caption": "TA VOCATION T'APPELLE DÉJÀ — Oprah\n\n#oprah #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "a745455ee3e36c50e64a1e9e69962dd6f1cf8cdcd2408dd3e7bfef0a71e3c94e",
@@ -680,7 +680,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a9487dc0ac472de20fef332",
+    "publishedAt": "2026-08-30T19:44:09Z"
   },
   {
     "id": "mindshift_portman-fauxidoles_v1",

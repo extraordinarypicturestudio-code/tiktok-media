@@ -1438,5 +1438,13 @@
     "file": "clips/shrimp-asparagus-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T19:20:40Z"
+  },
+  {
+    "hash": "5740889acd5750d33420a8adc8508e36",
+    "id": "mindshift_oprahwinfrey_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_oprahwinfrey_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T19:44:09Z"
   }
 ]
