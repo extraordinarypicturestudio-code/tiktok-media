@@ -1414,5 +1414,13 @@
     "file": "clips/potato-meatball-wrap.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T01:16:48Z"
+  },
+  {
+    "hash": "5db3d8d721423febb2172d10cc341e8e",
+    "id": "mindshift_michelleobama_v3",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_michelleobama_v3.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-30T11:08:10Z"
   }
 ]

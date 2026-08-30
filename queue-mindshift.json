@@ -626,9 +626,9 @@
     "id": "mindshift_michelleobama_v3",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_michelleobama_v3.mp4",
     "caption": "QUAND ILS TOMBENT BAS, ON VISE HAUT — M. Obama\n\n#michelleobama #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "b8e1adf2b6205afd03d5c15ec19d9ab6df50faad19a7c8c0d167b737db84ca5a",
@@ -649,7 +649,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a940eedb38426fd3bc2a309",
+    "publishedAt": "2026-08-30T11:08:10Z"
   },
   {
     "id": "mindshift_oprahwinfrey_v1",
