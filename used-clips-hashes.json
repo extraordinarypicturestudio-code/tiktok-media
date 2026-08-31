@@ -1502,5 +1502,13 @@
     "file": "clips-mindshift/mindshift_steveharvey_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T21:53:36Z"
+  },
+  {
+    "hash": "5ca6b528d86bfa3479d37b827e5d2511",
+    "id": "mindshift_tomhanks_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_tomhanks_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T23:21:29Z"
   }
 ]
