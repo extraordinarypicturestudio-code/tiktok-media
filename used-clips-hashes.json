@@ -1470,5 +1470,13 @@
     "file": "clips/quick-pan-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T01:23:31Z"
+  },
+  {
+    "hash": "a57cfb78b4e2e001b4e3ec39ba69f34e",
+    "id": "mindshift_portman-ignorance_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_portman-ignorance_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T12:32:00Z"
   }
 ]

@@ -719,9 +719,9 @@
     "id": "mindshift_portman-ignorance_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_portman-ignorance_v1.mp4",
     "caption": "LA FORCE DE NE PAS SAVOIR — Natalie Portman\n\n#natalieportman #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "1b934fee7a9169b883f86532f23f8879f89e78c4db05569bbd32e40cb3ee6f90",
@@ -742,7 +742,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a95741111abd089ca800fd2",
+    "publishedAt": "2026-08-31T12:32:00Z"
   },
   {
     "id": "mindshift_portman-serieux_v1",
