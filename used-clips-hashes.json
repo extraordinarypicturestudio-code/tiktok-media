@@ -1510,5 +1510,13 @@
     "file": "clips-mindshift/mindshift_tomhanks_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T23:21:29Z"
+  },
+  {
+    "hash": "5a0d6a7bdd7e23c1022fe1ca6213e039",
+    "id": "roasted-veg-spread",
+    "channel": "recipe_crave",
+    "file": "clips/roasted-veg-spread.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T23:52:36Z"
   }
 ]

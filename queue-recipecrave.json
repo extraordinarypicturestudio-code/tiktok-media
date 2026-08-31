@@ -1986,9 +1986,9 @@
     "id": "roasted-veg-spread",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/roasted-veg-spread.mp4",
     "caption": "Roasted vegetable spread for bread 🍆\n\n#roastedvegetables #spread #eggplant #dip #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "ee7d8d60bdc787239faf4afc0c3875117df2cf9242a20a5039a04b0436770529",
@@ -2002,7 +2002,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 ee7d8d60bdc7 ; empreinte visuelle : plus proche 0.387"
       }
-    }
+    },
+    "postId": "6a961397c1813c51bc4cd5d5",
+    "publishedAt": "2026-08-31T23:52:36Z"
   },
   {
     "id": "high-protein-noodles",
