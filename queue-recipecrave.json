@@ -1938,9 +1938,9 @@
     "id": "bulgur-salad",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/bulgur-salad.mp4",
     "caption": "Fresh bulgur salad in ten minutes 🥗\n\n#bulgursalad #bulgur #healthysalad #mealprep #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "f8e17225b494374744432cb9d197fdad41f63276d0904897d55ee8161f6536cb",
@@ -1954,7 +1954,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 f8e17225b494 ; empreinte visuelle : plus proche 0.400"
       }
-    }
+    },
+    "postId": "6a95c2060af7129bd0b6e6b5",
+    "publishedAt": "2026-08-31T18:04:50Z"
   },
   {
     "id": "lemon-chicken-pasta",

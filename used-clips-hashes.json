@@ -1478,5 +1478,13 @@
     "file": "clips-mindshift/mindshift_portman-ignorance_v1.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T12:32:00Z"
+  },
+  {
+    "hash": "c101ed8094c21e8a673912f6f17260b4",
+    "id": "bulgur-salad",
+    "channel": "recipe_crave",
+    "file": "clips/bulgur-salad.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T18:04:50Z"
   }
 ]
