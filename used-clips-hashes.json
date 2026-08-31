@@ -1494,5 +1494,13 @@
     "file": "clips/lemon-chicken-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T21:29:57Z"
+  },
+  {
+    "hash": "977445b55ab86518f9a982cbad424ce7",
+    "id": "mindshift_steveharvey_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_steveharvey_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T21:53:36Z"
   }
 ]
