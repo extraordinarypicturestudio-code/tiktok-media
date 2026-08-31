@@ -1462,5 +1462,13 @@
     "file": "clips/protein-stuffed-peppers.mp4",
     "status": "published",
     "publishedAt": "2026-08-30T22:45:55Z"
+  },
+  {
+    "hash": "94372b59dd085a48d4ff567706e19f49",
+    "id": "quick-pan-pasta",
+    "channel": "recipe_crave",
+    "file": "clips/quick-pan-pasta.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-31T01:23:31Z"
   }
 ]

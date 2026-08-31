@@ -1914,9 +1914,9 @@
     "id": "quick-pan-pasta",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/quick-pan-pasta.mp4",
     "caption": "Quick pan pasta, one skillet only 🍝\n\n#panpasta #onepan #quickdinner #pasta #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "60b38c83ee187f2487c5877ef04a6729a98b65bd56c0a96e7b7dfda1e253ce23",
@@ -1930,7 +1930,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 60b38c83ee18 ; empreinte visuelle : plus proche 0.382"
       }
-    }
+    },
+    "postId": "6a94d766de364de548d4af22",
+    "publishedAt": "2026-08-31T01:23:31Z"
   },
   {
     "id": "bulgur-salad",
