@@ -1518,5 +1518,13 @@
     "file": "clips/roasted-veg-spread.mp4",
     "status": "published",
     "publishedAt": "2026-08-31T23:52:36Z"
+  },
+  {
+    "hash": "5790420c2215096bd31bac0002e22706",
+    "id": "high-protein-noodles",
+    "channel": "recipe_crave",
+    "file": "clips/high-protein-noodles.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-01T01:49:49Z"
   }
 ]

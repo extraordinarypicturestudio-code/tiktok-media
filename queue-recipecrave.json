@@ -2010,9 +2010,9 @@
     "id": "high-protein-noodles",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/high-protein-noodles.mp4",
     "caption": "High-protein noodles that actually fill you 🍜\n\n#highprotein #noodles #proteinmeal #mealprep #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "bdc45e50a1f19a6e7814782eb36a315ad4febd06e610d67a0a8096f663d993e1",
@@ -2026,7 +2026,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 bdc45e50a1f1 ; empreinte visuelle : plus proche 0.419"
       }
-    }
+    },
+    "postId": "6a962f10ef6236ab47bd2eed",
+    "publishedAt": "2026-09-01T01:49:49Z"
   },
   {
     "id": "super-creamy-one-pot",
