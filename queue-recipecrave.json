@@ -2058,9 +2058,9 @@
     "id": "quick-chicken-pasta",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/quick-chicken-pasta.mp4",
     "caption": "Really quick chicken pasta 🍝\n\n#chickenpasta #quickdinner #pasta #easyrecipe #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "b00c0d0a07babc1febd379cdf57df419ca9333ba8b394893d31aae07856f81ed",
@@ -2074,6 +2074,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 b00c0d0a07ba ; empreinte visuelle : plus proche 0.384"
       }
-    }
+    },
+    "postId": "6a97269a993a1198c992b57d",
+    "publishedAt": "2026-09-01T19:26:03Z"
   }
 ]
