@@ -932,9 +932,9 @@
     "id": "mindshift_yannicknoah_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_yannicknoah_v1.mp4",
     "caption": "FAIS CE QUI TE REND VIVANT — Yannick Noah\n\n#yannicknoah #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "59cac57f0ce883b6002fbafb30dfdcc179f186cb5b476a2a2e99c70fa3c99b54",
@@ -955,7 +955,9 @@
         "conserve": "verdicts visuel, audio et contenu du tampon du 2026-08-22 : ils portent sur le CORPS de la video, identique image pour image (la verification ampute l'outro avant ces controles).",
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
-    }
+    },
+    "postId": "6a96b0458a475205d6542f88",
+    "publishedAt": "2026-09-01T11:01:10Z"
   },
   {
     "id": "mindshift_arnoldschwarzenegger_v1",

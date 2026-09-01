@@ -1526,5 +1526,13 @@
     "file": "clips/high-protein-noodles.mp4",
     "status": "published",
     "publishedAt": "2026-09-01T01:49:49Z"
+  },
+  {
+    "hash": "9a21eaeb40e6d4f8da3ee16faffe4d3e",
+    "id": "mindshift_yannicknoah_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_yannicknoah_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-01T11:01:10Z"
   }
 ]
