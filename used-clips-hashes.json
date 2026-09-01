@@ -1558,5 +1558,13 @@
     "file": "clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
     "status": "published",
     "publishedAt": "2026-09-01T19:51:03Z"
+  },
+  {
+    "hash": "2714ffb5de7866ac4d547dd32690378f",
+    "id": "mindshift_davidgoggins_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_davidgoggins_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-01T21:58:09Z"
   }
 ]

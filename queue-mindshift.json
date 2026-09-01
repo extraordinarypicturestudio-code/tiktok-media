@@ -994,9 +994,9 @@
     "id": "mindshift_davidgoggins_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_davidgoggins_v1.mp4",
     "caption": "TON MENTAL LÂCHE AVANT TON CORPS — Goggins\n\n#davidgoggins #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 2,
+    "attempts": 3,
     "verification": {
       "verdict": "OK",
       "sha256": "b5579316bdecae8c22a1cef069dbaca879277aadd3f77e3258e28551d05ef494",
@@ -1018,8 +1018,8 @@
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
     },
-    "postId": "6a89dc50b1d3646a8ebffd7a",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc50b1d3646a8ebffd7a\"}}"
+    "postId": "6a974a45b1fe2e5d08378615",
+    "publishedAt": "2026-09-01T21:58:09Z"
   },
   {
     "id": "mindshift_denzelwashington_v1",
