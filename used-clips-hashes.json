@@ -1550,5 +1550,13 @@
     "file": "clips/quick-chicken-pasta.mp4",
     "status": "published",
     "publishedAt": "2026-09-01T19:26:03Z"
+  },
+  {
+    "hash": "7a2aa68167efbc0d8afd8be46cbbf987",
+    "id": "mindshift_arnoldschwarzenegger_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-01T19:51:03Z"
   }
 ]

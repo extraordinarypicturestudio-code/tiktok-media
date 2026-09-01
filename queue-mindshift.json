@@ -963,9 +963,9 @@
     "id": "mindshift_arnoldschwarzenegger_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_arnoldschwarzenegger_v1.mp4",
     "caption": "LA DISCIPLINE BAT LA MOTIVATION — Schwarzenegger\n\n#schwarzenegger #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 2,
+    "attempts": 3,
     "verification": {
       "verdict": "OK",
       "sha256": "370dc26cdbf607b4195bb6e40913f959f3dd657b74c810b016c00d4d0bcd8e96",
@@ -987,8 +987,8 @@
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
     },
-    "postId": "6a89dc38684f9ed20a69074d",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc38684f9ed20a69074d\"}}"
+    "postId": "6a972c7baefc9ac8fadefca9",
+    "publishedAt": "2026-09-01T19:51:03Z"
   },
   {
     "id": "mindshift_davidgoggins_v1",
