@@ -2034,9 +2034,9 @@
     "id": "super-creamy-one-pot",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/super-creamy-one-pot.mp4",
     "caption": "Super creamy one-pot pasta 🫕\n\n#onepotpasta #creamypasta #pasta #comfortfood #recipe #asmr #foodtiktok",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "f7a87ea23f695f65a678b6443e5ddf01b89d6f6cf57522a3b3cc285fdf9c3c44",
@@ -2050,7 +2050,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 f7a87ea23f69 ; empreinte visuelle : plus proche 0.405"
       }
-    }
+    },
+    "postId": "6a96ef919767071f55bb5307",
+    "publishedAt": "2026-09-01T15:31:54Z"
   },
   {
     "id": "quick-chicken-pasta",
