@@ -1566,5 +1566,13 @@
     "file": "clips-mindshift/mindshift_davidgoggins_v1.mp4",
     "status": "published",
     "publishedAt": "2026-09-01T21:58:09Z"
+  },
+  {
+    "hash": "9a2fd85048878fb88091f47a35744c2f",
+    "id": "mindshift_denzelwashington_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_denzelwashington_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-02T10:29:24Z"
   }
 ]

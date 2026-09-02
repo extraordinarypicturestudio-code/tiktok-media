@@ -1025,9 +1025,9 @@
     "id": "mindshift_denzelwashington_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denzelwashington_v1.mp4",
     "caption": "TOMBE SEPT FOIS, RELÈVE-TOI HUIT — Denzel\n\n#denzelwashington #mindshift #motivation #mindset #fyp",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 2,
+    "attempts": 3,
     "verification": {
       "verdict": "OK",
       "sha256": "7837bb70f6821cce81d300697a6c4126585b38e97b0fbaf1d414f2df28dc89d0",
@@ -1049,7 +1049,7 @@
         "pourquoi_pas_de_reverification_complete": "simulation du 2026-08-24 : 26 rejets sur 35 pour 'doublon' contre les versions espritlibre_* du meme catalogue, repris volontairement lors du remplacement de chaine, plus un depassement de quota Gemini en cours de lot."
       }
     },
-    "postId": "6a89dc6aa2a16cf3e313ed22",
-    "error": "ECHEC : Zernio 409 : {\"error\":\"This exact content is already scheduled, publishing, or was posted to this account within the last 24 hours.\",\"details\":{\"accountId\":\"6a89a92177555aae015c93ec\",\"platform\":\"tiktok\",\"existingPostId\":\"6a89dc6aa2a16cf3e313ed22\"}}"
+    "postId": "6a97fa57310bd36cb0f76953",
+    "publishedAt": "2026-09-02T10:29:24Z"
   }
 ]
