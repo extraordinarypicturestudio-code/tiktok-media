@@ -1,2 +1,11 @@
 __pycache__/
 *.pyc
+
+# CLES API — ne doivent JAMAIS entrer dans le depot, meme temporairement.
+# Le 2026-09-04 les quatre fichiers ont ete copies ici pour tester un script
+# en local et sont apparus en "untracked" : un `git add .` les aurait publies
+# sur un depot dont l'historique est public. Elles vivent dans le dossier de
+# travail local, et sur GitHub uniquement comme secrets d'Actions.
+zernio*.env
+gemini.env
+*.env

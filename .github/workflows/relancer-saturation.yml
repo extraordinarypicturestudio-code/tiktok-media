@@ -1,0 +1,55 @@
+name: Relancer les publications saturees
+
+# TikTok refuse regulierement les publications d'applications tierces quand sa
+# capacite est pleine ("TikTok direct posting is at capacity"). Le quota est
+# partage entre TOUS les utilisateurs de Zernio, donc rien n'y prepare : une
+# video programmee et confirmee `scheduled` peut basculer en `failed` a son
+# declenchement, sans qu'aucun signal ne remonte.
+#
+# Deux sorties argile ont ete perdues comme ca les 31/08 et 02/09 2026. Ce
+# workflow les rattrape tout seul.
+#
+# Toutes les 30 minutes : c'est le compromis entre rattraper vite (une video du
+# soir doit sortir le soir) et ne pas marteler l'API. Une video ratee est donc
+# reprise au pire 30 min plus tard, puis 45 min apres chaque nouvel echec.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Deux executions simultanees se marcheraient dessus sur le registre de
+# relances et pourraient reprogrammer deux fois la meme video.
+concurrency:
+  group: relancer-saturation
+  cancel-in-progress: false
+
+jobs:
+  relancer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Relancer les publications refusees pour saturation
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_3: ${{ secrets.ZERNIO_API_KEY_3 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+        run: python scripts/relancer_saturation.py
+
+      # Le compteur de relances doit survivre d'une execution a l'autre :
+      # sans lui, chaque passage repartirait de zero et relancerait la meme
+      # video indefiniment au lieu de basculer en brouillon puis d'abandonner.
+      - name: Conserver le compteur de relances
+        run: |
+          if [ -n "$(git status --porcelain relances_saturation.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add relances_saturation.json
+            git commit -m "relances saturation : mise a jour du compteur"
+            git pull --rebase --autostash
+            git push
+          fi
