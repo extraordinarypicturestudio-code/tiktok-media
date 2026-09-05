@@ -9,11 +9,20 @@ name: Publish recipe_crave
 #   - 23h15 UTC = 19h15 EDT       (creneau soir US, prime time)
 # EDT = UTC-4 / CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h
 # chacun en hiver (EST = UTC-5, CET = UTC+1).
+# FENETRE DE SATURATION TIKTOK — mesure du 2026-09-05 sur 5 comptes et
+# une centaine de publications : les HUIT refus "TikTok direct posting is
+# at capacity" de tout l'historique tombent entre 17h et 20h UTC (19h-22h
+# Paris). Aucune autre heure n'en compte un seul.
+#
+# La capacite par API est partagee entre tous les utilisateurs de Zernio et
+# s'epuise au pic du soir europeen. Aucune relance ne cree de la capacite :
+# la seule correction qui tienne est de ne pas publier dans cette fenetre.
+# NE PAS y replacer un creneau.
 on:
   schedule:
     - cron: "15 11 * * *"
     - cron: "15 16 * * *"
-    - cron: "15 20 * * *"
+    - cron: "25 22 * * *"
     - cron: "15 23 * * *"
   workflow_dispatch: {}
 

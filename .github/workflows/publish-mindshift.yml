@@ -10,11 +10,20 @@ name: Publish Mindshift
 # recipecrave publie a :15, toprank a :00, nextlevelplays a :45 (12h/17h/23h)
 # et bigfoot a 16h30 et 00h30. Deux workflows au meme creneau se disputent
 # le push de la file.
+# FENETRE DE SATURATION TIKTOK — mesure du 2026-09-05 sur 5 comptes et
+# une centaine de publications : les HUIT refus "TikTok direct posting is
+# at capacity" de tout l'historique tombent entre 17h et 20h UTC (19h-22h
+# Paris). Aucune autre heure n'en compte un seul.
+#
+# La capacite par API est partagee entre tous les utilisateurs de Zernio et
+# s'epuise au pic du soir europeen. Aucune relance ne cree de la capacite :
+# la seule correction qui tienne est de ne pas publier dans cette fenetre.
+# NE PAS y replacer un creneau.
 on:
   schedule:
     - cron: "0 6 * * *"
-    - cron: "0 17 * * *"
-    - cron: "30 19 * * *"
+    - cron: "0 15 * * *"
+    - cron: "30 22 * * *"
   workflow_dispatch: {}
 
 permissions:

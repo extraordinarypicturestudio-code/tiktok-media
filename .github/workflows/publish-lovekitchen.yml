@@ -28,11 +28,20 @@ name: Publish love_kitchen
 # TikTok s'epuise aux memes moments. Quelques minutes de decalage suffisent a
 # sortir du pic, et separent aussi les chaines entre elles pour qu'elles ne
 # poussent jamais sur le depot en meme temps.
+# FENETRE DE SATURATION TIKTOK — mesure du 2026-09-05 sur 5 comptes et
+# une centaine de publications : les HUIT refus "TikTok direct posting is
+# at capacity" de tout l'historique tombent entre 17h et 20h UTC (19h-22h
+# Paris). Aucune autre heure n'en compte un seul.
+#
+# La capacite par API est partagee entre tous les utilisateurs de Zernio et
+# s'epuise au pic du soir europeen. Aucune relance ne cree de la capacite :
+# la seule correction qui tienne est de ne pas publier dans cette fenetre.
+# NE PAS y replacer un creneau.
 on:
   schedule:
     - cron: "7 10 * * *"
-    - cron: "7 18 * * *"
-    - cron: "37 20 * * *"
+    - cron: "7 16 * * *"
+    - cron: "37 21 * * *"
   workflow_dispatch: {}
 
 permissions:
