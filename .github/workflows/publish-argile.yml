@@ -1,8 +1,12 @@
 name: Publish Argile & Histoires
 
-# 2 publications/jour : 09h00 et 14h00 Paris (CEST = UTC+2 en ete).
-#   - 07h00 UTC = 09h00 Paris
-#   - 12h00 UTC = 14h00 Paris
+# 2 publications/jour : 23h00 et 01h00 Paris (CEST = UTC+2 en ete), demande
+# par l'utilisateur le 2026-09-05.
+#   - 21h13 UTC = 23h13 Paris
+#   - 23h41 UTC = 01h41 Paris (le lendemain)
+# Ces heures tardives ont un avantage mesure : les deux videos du 04/09 sont
+# passees a 23h37 et 04h18 UTC alors que TOUS les creneaux de 16h et 20h UTC
+# ont ete refuses pour saturation. La capacite TikTok est libre la nuit.
 # A decaler d'une heure en hiver (CET = UTC+1) pour rester cale sur ces heures
 # locales. Aucun de ces creneaux ne recoupe love_kitchen (12h, 20h, 22h30),
 # toprank (13h, 18h30, 21h) ni mindshift (08h, 19h, 21h30).
@@ -40,8 +44,8 @@ name: Publish Argile & Histoires
 # poussent jamais sur le depot en meme temps.
 on:
   schedule:
-    - cron: "13 7 * * *"
-    - cron: "13 12 * * *"
+    - cron: "13 21 * * *"
+    - cron: "41 23 * * *"
   workflow_dispatch: {}
 
 permissions:
