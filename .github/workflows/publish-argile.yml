@@ -1,0 +1,77 @@
+name: Publish Argile & Histoires
+
+# 2 publications/jour : 18h00 et 22h00 Paris (CEST = UTC+2 en ete).
+#   - 16h00 UTC = 18h00 Paris
+#   - 20h00 UTC = 22h00 Paris
+# A decaler d'une heure en hiver (CET = UTC+1) pour rester cale sur ces heures
+# locales. Aucun de ces creneaux ne recoupe love_kitchen (12h, 20h, 22h30),
+# toprank (13h, 18h30, 21h) ni mindshift (08h, 19h, 21h30).
+#
+# POURQUOI CE WORKFLOW EXISTE
+# ---------------------------
+# Jusqu'au 2026-09-05 argile ne publiait pas comme les autres chaines : ses
+# videos etaient programmees directement sur Zernio, des heures a l'avance, une
+# par creneau. Quand TikTok refusait au declenchement pour saturation
+# ("TikTok direct posting is at capacity"), le creneau etait perdu SEC : pas de
+# file, pas de remplacant, rien ne sortait.
+#
+# Les chaines qui fonctionnent (recipe_crave, toprank, mindshift) ne programment
+# rien a l'avance. Leurs videos attendent en `pending` dans une file ; le cron
+# prend la suivante et demande a Zernio de publier IMMEDIATEMENT. Si TikTok
+# refuse, la video retourne en `pending` et le script enchaine sur le candidat
+# suivant DANS LE MEME RUN : le creneau est sauve et la video refusee repartira
+# plus tard. Trois tentatives avant abandon definitif.
+#
+# argile utilise desormais exactement ce mecanisme.
+on:
+  schedule:
+    - cron: "0 16 * * *"
+    - cron: "0 20 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # ffprobe/ffmpeg ne sont pas preinstalles sur le runner : necessaires
+      # pour la verification des specs et la reparation FPS avant envoi.
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Publier la prochaine video en attente
+        env:
+          # argile.histoires est sur la QUATRIEME cle Zernio, avec
+          # darkness3038. Se tromper de cle donne "compte introuvable".
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_4 }}
+          # Sert uniquement a choisir la vignette. Absent = vignette par
+          # defaut a 2s, jamais bloquant.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/publish_next.py queue-argile.json argile.histoires
+
+      # always() : meme si la publication echoue, l'etat de la file (compteur
+      # de tentatives, statut d'erreur) doit etre sauvegarde. C'est lui qui
+      # permet de reprendre la video au creneau suivant.
+      - name: Enregistrer la mise a jour de la file d'attente
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          mkdir -p clips-argile
+          git add -A -- queue-argile.json used-clips-hashes.json clips-argile/
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise a jour file d'attente argile [skip ci]"
+          # Plusieurs workflows poussent sur le meme depot et les crons GitHub
+          # peuvent deriver de plus d'une heure : sans rebase, le push du
+          # second est rejete et la file perd sa mise a jour.
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser la mise a jour de la file apres 5 essais"
+          exit 1
