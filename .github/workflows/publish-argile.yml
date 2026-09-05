@@ -32,10 +32,16 @@ name: Publish Argile & Histoires
 # La capacite de publication par API est partagee entre tous les utilisateurs
 # de Zernio : elle s'epuise aux heures de forte demande. Choisir des creneaux
 # moins disputes vaut mieux que rattraper des echecs.
+# DECALAGE EN MINUTES, decide le 2026-09-05. Les crons a l'heure ronde sont
+# les plus encombres : GitHub met ses declenchements en file d'attente et peut
+# les retarder de plusieurs dizaines de minutes, et la capacite de publication
+# TikTok s'epuise aux memes moments. Quelques minutes de decalage suffisent a
+# sortir du pic, et separent aussi les chaines entre elles pour qu'elles ne
+# poussent jamais sur le depot en meme temps.
 on:
   schedule:
-    - cron: "0 7 * * *"
-    - cron: "0 12 * * *"
+    - cron: "13 7 * * *"
+    - cron: "13 12 * * *"
   workflow_dispatch: {}
 
 permissions:
