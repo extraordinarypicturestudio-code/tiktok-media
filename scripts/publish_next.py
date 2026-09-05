@@ -658,6 +658,31 @@ def main():
             sys.exit(0)
 
         if statut == "failed":
+            # UNE SATURATION TIKTOK N'EST PAS UN DEFAUT DE LA VIDEO.
+            #
+            # "TikTok direct posting is at capacity right now" veut dire que le
+            # quota de publication par API, partage entre tous les utilisateurs
+            # de Zernio, est momentanement epuise. La video est parfaitement
+            # valable et repassera telle quelle une heure plus tard.
+            #
+            # La compter comme une tentative la condamne pour une raison qui ne
+            # la concerne pas : le 2026-09-05, argile et love_kitchen ont chacune
+            # brule une tentative sur trois en une soiree de saturation, sans
+            # qu'aucune des deux videos n'ait le moindre probleme.
+            #
+            # On rend donc la tentative dans ce cas precis. Les vrais refus —
+            # contenu, legende, compte deconnecte — continuent de compter et
+            # d'aboutir a un echec definitif.
+            if "at capacity" in (erreur or ""):
+                a_publier["attempts"] = max(0, a_publier.get("attempts", 1) - 1)
+                a_publier["status"] = "pending"
+                a_publier["error"] = (f"Saturation TikTok, tentative non comptee "
+                                      f"({a_publier['attempts']}/3) : {erreur}")
+                echecs.append(f"{a_publier['id']} : saturation TikTok")
+                ecrire_queue()
+                print(f"  {a_publier['error']} -> candidat suivant")
+                continue
+
             if a_publier["attempts"] >= 3:
                 a_publier["status"] = "failed"
                 a_publier["error"] = f"ECHEC definitif apres {a_publier['attempts']} tentatives : {erreur}"

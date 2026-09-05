@@ -5,7 +5,7 @@
     "caption": "Il allait commander, il a reposé son téléphone 🍗🔥\n\n#poulet #tenders #panure #recette #cuisine #friture #recettefacile #pourtoi",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 1,
+    "attempts": 0,
     "verification": {
       "verdict": "OK",
       "sha256": "4e08a52f3c6ff8d24a04a642b4a724d8c6d1753583a8244e19e7e41ff293cbe0",
@@ -19,8 +19,28 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
       }
-    },
-    "postId": "6a9c6de99ec116c6007606d4",
-    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
+    }
+  },
+  {
+    "id": "42-tortillasgratinees",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/42-tortillasgratinees.mp4",
+    "caption": "Il a ramené un collègue à dîner sans prévenir 🌯🧀\n\n#tortillas #poulet #gratin #recette #cuisine #dinerrapide #recettefacile #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "6a75facc76e47376c5d81123aa05dc26a3a0fdd35bb17180b35a3e2ac87e7acf",
+      "date": "2026-09-05T19:31:32Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.7s, 45.2 Mo",
+        "audio": "volume moyen -17.8 dB ; contenu sonore : Une femme parle de tortillas et de cuisine avec humour.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un plat cuisine avec des tortillas et du poulet. | aliments : ['tortillas', 'poulet', 'poivron', 'oignon', 'fromage', 'tomate'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 6a75facc76e4 ; empreinte visuelle : plus proche 0.353"
+      }
+    }
   }
 ]
