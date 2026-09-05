@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "a13-piece-ratee",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a13-piece-ratee.mp4",
+    "caption": "Il a vu mon vase s'effondrer sous mes mains 🏺💧\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #ceramique #tournage #atelier #storytime #couple #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "b8edfb6cd23fe1ee289d6b91b6d51f0f3faf1b8cc456735c3a063b80669533fa",
+      "date": "2026-09-05T09:16:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.2s, 17.0 Mo",
+        "audio": "volume moyen -18.1 dB ; contenu sonore : Une femme parle de rater une pièce en poterie.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme fait de la poterie au tour en racontant une histoire avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 b8edfb6cd23f ; empreinte visuelle : plus proche 0.333"
+      }
+    }
+  }
+]
