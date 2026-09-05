@@ -27,7 +27,7 @@
     "id": "42-tortillasgratinees",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/42-tortillasgratinees.mp4",
     "caption": "Il a ramené un collègue à dîner sans prévenir 🌯🧀\n\n#tortillas #poulet #gratin #recette #cuisine #dinerrapide #recettefacile #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -45,6 +45,8 @@
       }
     },
     "postId": "6a9c70e85082166dda7d89bb",
-    "error": "Post residuel bloquant supprime (0) - a retenter"
+    "error": "Post residuel bloquant supprime (0) - a retenter",
+    "publishedAt": "2026-09-05T20:00:15Z",
+    "note": "publiee A LA MAIN par l'utilisateur dans TikTok Studio le 2026-09-05 : l'API refusait pour saturation depuis 19h30 UTC. Marquee ici pour que le cron ne la republie pas en doublon."
   }
 ]
