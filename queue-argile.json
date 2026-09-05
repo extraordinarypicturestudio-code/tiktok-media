@@ -5,7 +5,7 @@
     "caption": "Il a vu mon vase s'effondrer sous mes mains 🏺💧\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #ceramique #tournage #atelier #storytime #couple #asmr #pourtoi",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "b8edfb6cd23fe1ee289d6b91b6d51f0f3faf1b8cc456735c3a063b80669533fa",
@@ -19,6 +19,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 b8edfb6cd23f ; empreinte visuelle : plus proche 0.333"
       }
-    }
+    },
+    "postId": "6a9c56ed47c5b38b73577bf2",
+    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
   }
 ]
