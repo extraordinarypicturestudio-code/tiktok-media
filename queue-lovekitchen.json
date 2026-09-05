@@ -19,7 +19,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
       }
-    }
+    },
+    "postId": "6a9c70d3e44233ee83250c5c",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "42-tortillasgratinees",
@@ -41,6 +43,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 6a75facc76e4 ; empreinte visuelle : plus proche 0.353"
       }
-    }
+    },
+    "postId": "6a9c70e85082166dda7d89bb",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   }
 ]
