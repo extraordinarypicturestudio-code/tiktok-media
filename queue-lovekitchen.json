@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "40-tenderspoulet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/40-tenderspoulet.mp4",
+    "caption": "Il allait commander, il a reposé son téléphone 🍗🔥\n\n#poulet #tenders #panure #recette #cuisine #friture #recettefacile #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4e08a52f3c6ff8d24a04a642b4a724d8c6d1753583a8244e19e7e41ff293cbe0",
+      "date": "2026-09-05T19:28:12Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.3s, 41.1 Mo",
+        "audio": "volume moyen -17.4 dB ; contenu sonore : Une femme parle de la recette de poulet pane.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne prépare une recette de tenders de poulet panés avec une sauce maison. | aliments : ['poulet', 'œufs', 'farine', 'huile', 'cornichons', 'aneth', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
+      }
+    }
+  }
+]
