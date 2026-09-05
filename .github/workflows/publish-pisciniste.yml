@@ -1,4 +1,4 @@
-name: Publish Argile & Histoires
+name: Publish Le Pisciniste
 
 # 2 publications/jour : 09h00 et 14h00 Paris (CEST = UTC+2 en ete).
 #   - 07h00 UTC = 09h00 Paris
@@ -34,8 +34,8 @@ name: Publish Argile & Histoires
 # moins disputes vaut mieux que rattraper des echecs.
 on:
   schedule:
-    - cron: "0 7 * * *"
-    - cron: "0 12 * * *"
+    - cron: "0 8 * * *"
+    - cron: "0 14 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -56,11 +56,11 @@ jobs:
         env:
           # argile.histoires est sur la QUATRIEME cle Zernio, avec
           # darkness3038. Se tromper de cle donne "compte introuvable".
-          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_5 }}
           # Sert uniquement a choisir la vignette. Absent = vignette par
           # defaut a 2s, jamais bloquant.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 scripts/publish_next.py queue-argile.json argile.histoires
+        run: python3 scripts/publish_next.py queue-pisciniste.json le.pisciniste7
 
       # always() : meme si la publication echoue, l'etat de la file (compteur
       # de tentatives, statut d'erreur) doit etre sauvegarde. C'est lui qui
@@ -70,10 +70,10 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          mkdir -p clips-argile
-          git add -A -- queue-argile.json used-clips-hashes.json clips-argile/
+          mkdir -p clips-pisciniste
+          git add -A -- queue-pisciniste.json used-clips-hashes.json clips-pisciniste/
           git diff --cached --quiet && exit 0
-          git commit -m "Mise a jour file d'attente argile [skip ci]"
+          git commit -m "Mise a jour file d attente pisciniste [skip ci]"
           # Plusieurs workflows poussent sur le meme depot et les crons GitHub
           # peuvent deriver de plus d'une heure : sans rebase, le push du
           # second est rejete et la file perd sa mise a jour.
