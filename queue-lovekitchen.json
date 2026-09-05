@@ -48,5 +48,27 @@
     "error": "Post residuel bloquant supprime (0) - a retenter",
     "publishedAt": "2026-09-05T20:00:15Z",
     "note": "publiee A LA MAIN par l'utilisateur dans TikTok Studio le 2026-09-05 : l'API refusait pour saturation depuis 19h30 UTC. Marquee ici pour que le cron ne la republie pas en doublon."
+  },
+  {
+    "id": "43-gateausanscuisson",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/43-gateausanscuisson.mp4",
+    "caption": "Ma sœur disait qu'un gâteau sans cuisson ne tient jamais 🍫🫐\n\n#gateau #sanscuisson #chocolat #dessert #recette #cuisine #recettefacile #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1090782ed9111187a63345eaf7a0c75e34fc45ae005488db88398533244e886e",
+      "date": "2026-09-05T20:02:09Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.6s, 33.8 Mo",
+        "audio": "volume moyen -18.0 dB ; contenu sonore : Une femme parle de sa recette de gâteau sans cuisson.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un gateau sans cuisson a base de biscuits, mascarpone, chocolat et myrtilles. | aliments : ['gateau', 'biscuits', 'mascarpone', 'chocolat', 'myrtilles', 'lait concentre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1090782ed911 ; empreinte visuelle : plus proche 0.391"
+      }
+    }
   }
 ]
