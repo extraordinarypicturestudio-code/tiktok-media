@@ -20,7 +20,7 @@
         "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
       }
     },
-    "postId": "6a9c74578ab83dd67433c567",
+    "postId": "6a9ca295c5de49a34698eb32",
     "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
@@ -69,7 +69,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 1090782ed911 ; empreinte visuelle : plus proche 0.391"
       }
-    }
+    },
+    "postId": "6a9ca2b1c5de49a34698ecdb",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "41-ailespoulettomate",
@@ -91,6 +93,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 1ccc36c22ad8 ; empreinte visuelle : plus proche 0.385"
       }
-    }
+    },
+    "postId": "6a9ca2cc94a194e69f17e873",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   }
 ]
