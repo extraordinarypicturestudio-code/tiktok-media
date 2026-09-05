@@ -78,6 +78,18 @@ CHAINES = [
     #  "pseudo": "extraordinarystudiopicture", "par_jour": 2,
     #  "cle": "ZERNIO_API_KEY_2", "script": "publish_next_youtube.py",
     #  "silence_max_h": 22},
+    # argile : 2/jour a 16h00 et 20h00 UTC -> plus grand ecart = nuit
+    # 20h00->16h00 (20h) + marge de retard du cron GitHub.
+    {"queue": "queue-argile.json", "dossier": "clips-argile",
+     "pseudo": "argile.histoires", "par_jour": 2, "cle": "ZERNIO_API_KEY_4",
+     "script": "publish_next.py", "silence_max_h": 24},
+    # Le Pisciniste. DESACTIVE tant que le compte TikTok n'est pas connecte a
+    # Zernio : sans pseudo reel, la surveillance signalerait un "compte
+    # introuvable" a chaque passage et noierait les vraies alertes.
+    # Decommenter en remplacant PSEUDO_PISCINISTE.
+    # {"queue": "queue-pisciniste.json", "dossier": "clips-pisciniste",
+    #  "pseudo": "PSEUDO_PISCINISTE", "par_jour": 2, "cle": "ZERNIO_API_KEY_3",
+    #  "script": "publish_next.py", "silence_max_h": 24},
 ]
 
 

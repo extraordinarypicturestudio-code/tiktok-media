@@ -33,6 +33,9 @@ jobs:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
           ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
           ZERNIO_API_KEY_3: ${{ secrets.ZERNIO_API_KEY_3 }}
+          # argile est sur la 4e cle. Sans elle, la surveillance de
+          # cette chaine ne peut pas lire ses publications.
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
         run: python3 scripts/healthcheck.py
 
       # Rattrapage : si une chaine est restee silencieuse au-dela de son
@@ -47,6 +50,9 @@ jobs:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
           ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
           ZERNIO_API_KEY_3: ${{ secrets.ZERNIO_API_KEY_3 }}
+          # argile est sur la 4e cle. Sans elle, la surveillance de
+          # cette chaine ne peut pas lire ses publications.
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
         run: |
           if [ ! -f rattrapages.txt ]; then
             echo "Aucun creneau a rattraper."
