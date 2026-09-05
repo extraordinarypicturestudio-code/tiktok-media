@@ -70,5 +70,27 @@
         "doublon": "sha256 1090782ed911 ; empreinte visuelle : plus proche 0.391"
       }
     }
+  },
+  {
+    "id": "41-ailespoulettomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/41-ailespoulettomate.mp4",
+    "caption": "Ma belle-mère disait que c'était un plat de bar 🍗🍅\n\n#ailesdepoulet #poulet #recette #cuisine #four #recettefacile #pourtoi #bellemere",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1ccc36c22ad850761c703f4953cd5772ea649c7bfd72b87c6108ec14e3914ca5",
+      "date": "2026-09-05T20:04:22Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.5s, 37.2 Mo",
+        "audio": "volume moyen -18.0 dB ; contenu sonore : Une femme parle de sa recette de cuisine de poulet.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation et cuisson au four d'ailes de poulet marinees avec sauce tomate et epices. | aliments : ['ailes de poulet', 'sauce tomate', 'lait', 'citron vert', 'epices'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1ccc36c22ad8 ; empreinte visuelle : plus proche 0.385"
+      }
+    }
   }
 ]
