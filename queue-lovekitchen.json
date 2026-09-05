@@ -5,7 +5,7 @@
     "caption": "Il allait commander, il a reposé son téléphone 🍗🔥\n\n#poulet #tenders #panure #recette #cuisine #friture #recettefacile #pourtoi",
     "status": "pending",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "4e08a52f3c6ff8d24a04a642b4a724d8c6d1753583a8244e19e7e41ff293cbe0",
@@ -19,6 +19,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
       }
-    }
+    },
+    "postId": "6a9c6de99ec116c6007606d4",
+    "error": "Echec TikTok (TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.), tentative 1/3"
   }
 ]
