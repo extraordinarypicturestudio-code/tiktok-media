@@ -1,0 +1,66 @@
+name: Publish love_kitchen
+
+# 3 publications/jour : 12h00, 20h00 et 22h30 Paris (CEST = UTC+2 en ete).
+#   - 10h00 UTC = 12h00 Paris
+#   - 18h00 UTC = 20h00 Paris
+#   - 20h30 UTC = 22h30 Paris
+# A decaler d'une heure en hiver (CET = UTC+1). Aucun de ces creneaux ne
+# recoupe toprank (11h/16h30/19h UTC), mindshift (06h/17h/19h30 UTC),
+# argile (16h/20h UTC) ni recipe_crave.
+#
+# POURQUOI CE WORKFLOW EXISTE
+# ---------------------------
+# love_kitchen est de tres loin la meilleure chaine du projet — mediane 5 199
+# vues contre ~300 pour les autres, un pic a 249 655 — et c'etait la SEULE a
+# ne pas publier toute seule. Sa file vivait hors du depot
+# (channels/love_kitchen/file_production.json) et sa publication passait par
+# une commande lancee a la main.
+#
+# Consequence directe : entre le 2026-09-01 et le 2026-09-05, elle n'a rien
+# publie pendant QUATRE JOURS. Sa file etait vide, la production est passee
+# sur d'autres chaines, et aucun mecanisme ne l'a signale ni rattrape. Les
+# chaines a cron, elles, ont continue sans interruption sur la meme periode.
+#
+# Une chaine qui depend de quelqu'un pour publier finit par s'arreter.
+on:
+  schedule:
+    - cron: "0 10 * * *"
+    - cron: "0 18 * * *"
+    - cron: "30 20 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Publier la prochaine video en attente
+        env:
+          # love_kitchen97 est sur la DEUXIEME cle Zernio, avec mindshift716.
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY_2 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/publish_next.py queue-lovekitchen.json love_kitchen97
+
+      - name: Enregistrer la mise a jour de la file d'attente
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          mkdir -p clips-lovekitchen
+          git add -A -- queue-lovekitchen.json used-clips-hashes.json clips-lovekitchen/
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise a jour file d'attente love_kitchen [skip ci]"
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser la mise a jour de la file apres 5 essais"
+          exit 1
