@@ -31,8 +31,9 @@ Garde-fous
   invalide ou un compte deconnecte doivent rester VISIBLES, pas etre relances en
   boucle : le script les affiche et passe son chemin.
 - Au-dela de RELANCES_MAX tentatives, bascule en BROUILLON (Creator Inbox).
-  Insister davantage ne sert a rien : la capacite TikTok est partagee entre tous
-  les utilisateurs de Zernio et peut manquer plusieurs heures d'affilee.
+  ATTENTION : le brouillon n'est PAS une publication. La video attend dans
+  l'application TikTok que l'utilisateur appuie dessus. C'est un dernier recours,
+  et le reglage doit donc laisser plusieurs heures d'insistance avant d'y venir.
 - Au-dela de AGE_MAX_H, abandon. Republier une video prevue il y a deux jours
   desorganise le calendrier plus qu'elle ne le rattrape.
 - Le compteur de relances vit dans `relances_saturation.json`, commite par le
@@ -54,9 +55,25 @@ TZ = "Europe/Paris"
 ICI = pathlib.Path(__file__).resolve().parent.parent
 REGISTRE = ICI / "relances_saturation.json"
 
-RELANCES_MAX = 3        # au-dela : mode brouillon
+# Le mode brouillon N'EST PAS une reussite : la video atterrit dans le Creator
+# Inbox et n'est PAS publiee tant que l'utilisateur n'appuie pas dessus dans
+# l'application. C'est donc un dernier recours, pas une porte de sortie
+# confortable.
+#
+# Premier reglage (2026-09-04) : 3 tentatives toutes les 45 min, soit 1h30
+# d'essais avant de basculer. Beaucoup trop court. Les deux sorties argile du
+# 04/09 (18h et 22h) ont epuise leurs tentatives dans la soiree et sont parties
+# en brouillon a 01h37 et 06h18 : rien n'est sorti publiquement, et
+# l'utilisateur a du decouvrir le lendemain que deux videos l'attendaient dans
+# son telephone. L'automatisation avait abandonne au moment ou il fallait
+# insister.
+#
+# Nouveau reglage : 20 minutes entre deux essais et 12 tentatives, soit environ
+# 4 HEURES d'insistance avant le brouillon. La saturation TikTok se resorbe
+# generalement en quelques heures ; il faut couvrir cette fenetre.
+RELANCES_MAX = 12       # ~4h d'essais avant de basculer en brouillon
 AGE_MAX_H = 36.0        # au-dela : abandon
-DELAI_MIN = 45          # minutes avant la nouvelle tentative
+DELAI_MIN = 20          # minutes avant la nouvelle tentative
 
 MOTIF = "at capacity"   # signature du refus de saturation
 
