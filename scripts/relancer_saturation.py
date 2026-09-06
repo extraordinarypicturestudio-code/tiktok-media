@@ -49,9 +49,11 @@ import urllib.error
 import urllib.request
 import uuid
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 API = "https://zernio.com/api/v1"
 TZ = "Europe/Paris"
+FUSEAU = ZoneInfo(TZ)      # voir _quand() : le champ scheduledFor est LU dans ce fuseau
 ICI = pathlib.Path(__file__).resolve().parent.parent
 REGISTRE = ICI / "relances_saturation.json"
 
@@ -71,6 +73,13 @@ REGISTRE = ICI / "relances_saturation.json"
 # Nouveau reglage : 20 minutes entre deux essais et 12 tentatives, soit environ
 # 4 HEURES d'insistance avant le brouillon. La saturation TikTok se resorbe
 # generalement en quelques heures ; il faut couvrir cette fenetre.
+# Une seule reprogrammation par execution, TOUTES CLES CONFONDUES. Le cron
+# tourne toutes les 30 minutes : ca suffit a rattraper une file en retard sans
+# jamais deposer deux videos coup sur coup sur le meme compte. Le 2026-09-06,
+# trois relances love_kitchen sont parties dans la meme minute — la cause
+# premiere etait le fuseau (voir `_quand`), mais rien n'empechait la rafale.
+PAR_EXECUTION_MAX = 1
+
 RELANCES_MAX = 12       # ~4h d'essais avant de basculer en brouillon
 AGE_MAX_H = 36.0        # au-dela : abandon
 DELAI_MIN = 20          # minutes avant la nouvelle tentative
@@ -81,6 +90,24 @@ for _s in (sys.stdout, sys.stderr):
     if hasattr(_s, "reconfigure"):
         _s.reconfigure(encoding="utf-8", errors="replace")
 
+
+
+def _quand(maintenant_utc):
+    """Horodatage de la nouvelle tentative, EXPRIME DANS `TZ`.
+
+    Le champ `scheduledFor` part sans decalage (`%Y-%m-%dT%H:%M:%S`) et Zernio
+    le lit dans le fuseau donne par `timezone`. Ecrire une heure UTC en la
+    declarant "Europe/Paris" la recule donc de deux heures en ete : la
+    reprogrammation tombe DANS LE PASSE et Zernio publie immediatement.
+
+    Constate le 2026-09-06 sur love_kitchen : trois relances creees a 11h18 UTC
+    portaient toutes `scheduledFor 09:37:57` et sont sorties dans la meme
+    minute, au lieu d'etre etalees de 20 minutes. Trois jours de stock brules
+    d'un coup sur la meilleure chaine du projet, et un rythme de publication
+    que TikTok lit comme du spam.
+    """
+    return (maintenant_utc.astimezone(FUSEAU)
+            + timedelta(minutes=DELAI_MIN)).strftime("%Y-%m-%dT%H:%M:%S")
 
 def cles():
     """Cles Zernio disponibles : variables d'environnement, sinon fichiers locaux."""
@@ -130,6 +157,8 @@ def main():
     repris = abandonnes = brouillons = ignores = 0
 
     for nom, cle in cles():
+        if repris + brouillons >= PAR_EXECUTION_MAX:
+            break
         try:
             d = appel("GET", API + "/posts?limit=100", cle)
         except Exception as e:
@@ -137,6 +166,8 @@ def main():
             continue
 
         for p in d.get("posts", d.get("data", [])) or []:
+            if repris + brouillons >= PAR_EXECUTION_MAX:
+                break
             if p.get("status") != "failed":
                 continue
             pfs = p.get("platforms") or []
@@ -174,7 +205,7 @@ def main():
                 continue
 
             brouillon = etat["relances"] >= RELANCES_MAX
-            quand = (now + timedelta(minutes=DELAI_MIN)).strftime("%Y-%m-%dT%H:%M:%S")
+            quand = _quand(now)
 
             corps = {
                 "content": p.get("content", ""),
