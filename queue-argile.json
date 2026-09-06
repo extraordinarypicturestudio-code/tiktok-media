@@ -22,5 +22,115 @@
     },
     "postId": "6a9cbfd7ffb38eb3532a63ed",
     "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+  },
+  {
+    "id": "a14_tasse_soeur",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a14_tasse_soeur.mp4",
+    "caption": "Ma sœur trouvait que je perdais mon temps avec la terre 🏺\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #soeurs #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "fe8ba6180265690fd253f8ca13e08b676082cfacc37f3e62710fe96fa45f424e",
+      "date": "2026-09-06T08:50:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.2s, 26.4 Mo",
+        "audio": "volume moyen -18.8 dB ; contenu sonore : Une femme raconte une anecdote personnelle en parlant de terre.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une jeune femme fait de la poterie et de la céramique dans son atelier en racontant une anecdote. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 fe8ba6180265 ; empreinte visuelle : plus proche 0.336"
+      }
+    }
+  },
+  {
+    "id": "a15_client_du_jeudi",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a15_client_du_jeudi.mp4",
+    "caption": "Neuf jeudis de suite il a commandé le même bol 🏺☕\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #rencontre #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "67ed187f6c6461ce5a51c45fb6aadac0115c1bc2b0fc0066653bbdc97160ecb5",
+      "date": "2026-09-06T08:54:40Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.7s, 17.4 Mo",
+        "audio": "volume moyen -17.4 dB ; contenu sonore : Une personne raconte une histoire avec une voix calme et posée.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une jeune femme tourne de l'argile sur un tour de potier dans un atelier rempli de céramiques. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 67ed187f6c64 ; empreinte visuelle : plus proche 0.391"
+      }
+    }
+  },
+  {
+    "id": "a16_lorage",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a16_lorage.mp4",
+    "caption": "Le courant a sauté et il est resté pousser le tour à pied ⚡🏺\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #orage #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "590f85469a43828324815f4f831114fd8dacc0aa24a3befea834c6ec21ae2e1e",
+      "date": "2026-09-06T09:01:36Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.5s, 22.0 Mo",
+        "audio": "volume moyen -18.3 dB ; contenu sonore : Récit narratif d'une voisine sur fond musical.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une potière travaille la terre sur un tour dans son atelier, illustrant une anecdote en voix off. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 590f85469a43 ; empreinte visuelle : plus proche 0.298"
+      }
+    }
+  },
+  {
+    "id": "a17_commande_mariage",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a17_commande_mariage.mp4",
+    "caption": "Il pensait qu'on pouvait acheter les cent assiettes en magasin 🏺💍\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #mariage #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "95b092aa49473b6d66c3a0ff49ab65c2d8bf8548a553aaaf769868031297c669",
+      "date": "2026-09-06T09:03:02Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.5s, 17.8 Mo",
+        "audio": "volume moyen -19.0 dB ; contenu sonore : Une femme raconte l'histoire amusante d'une assiette cassée.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une artisane tourne de la ceramique sur un tour dans un atelier tout en racontant une histoire. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 95b092aa4947 ; empreinte visuelle : plus proche 0.309"
+      }
+    }
+  },
+  {
+    "id": "a19_client_regulier",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a19_client_regulier.mp4",
+    "caption": "Il est revenu tous les jeudis pendant deux mois pour le même bol 🏺\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #tournage #ceramique #atelier #storytime #fidelite #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "2765a573e2b946125555902873214194ab3682773907fe53d9a383d89bf614b0",
+      "date": "2026-09-06T09:04:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.5s, 25.2 Mo",
+        "audio": "volume moyen -18.1 dB ; contenu sonore : Une personne raconte une histoire émouvante avec de la musique.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une femme tourne et prepare un bol en ceramique dans son atelier de poterie | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 2765a573e2b9 ; empreinte visuelle : plus proche 0.423"
+      }
+    }
   }
 ]
