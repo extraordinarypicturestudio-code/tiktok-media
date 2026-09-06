@@ -19,7 +19,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 66d35871bd43 ; empreinte visuelle : plus proche 0.426"
       }
-    }
+    },
+    "postId": "6a9d9f3a21aff4d24bedb565",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "04-le-mardi-quatorze-heures",
@@ -41,7 +43,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 248839fe743c ; empreinte visuelle : plus proche 0.424"
       }
-    }
+    },
+    "postId": "6a9d9f6ee2cf39580096fb11",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "05-le-prix",
@@ -63,7 +67,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 94056c3064a8 ; empreinte visuelle : plus proche 0.376"
       }
-    }
+    },
+    "postId": "6a9d9f8e39ae19dd39237c32",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "07-la-carte-bleue",
