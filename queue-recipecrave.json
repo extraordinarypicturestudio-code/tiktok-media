@@ -2082,7 +2082,7 @@
     "id": "rc_brownie_cheesecake_44",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brownie_cheesecake_44.mp4",
     "caption": "Brownie fourré au fromage frais. Le cœur reste coulant.\n\n#brownie #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2099,9 +2099,6 @@
         "doublon": "sha256 45ec77b0982a ; empreinte visuelle : plus proche 0.355"
       }
     },
-    "postId": "6a9dc28664d352b38b139435",
-    "scheduledForUtc": "2026-09-06T21:00:00.000Z",
-    "scheduledFor": "2026-09-06T23:00:00",
     "vignette_auto": true
   },
   {
