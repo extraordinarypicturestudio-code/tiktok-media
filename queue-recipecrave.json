@@ -2077,5 +2077,445 @@
     },
     "postId": "6a97269a993a1198c992b57d",
     "publishedAt": "2026-09-01T19:26:03Z"
+  },
+  {
+    "id": "rc_brownie_cheesecake_44",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brownie_cheesecake_44.mp4",
+    "caption": "Brownie fourré au fromage frais. Le cœur reste coulant.\n\n#brownie #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "45ec77b0982a8211c10f93c183b5660a285f12e16281ebd0eaf7a03b93d9f9c2",
+      "date": "2026-09-06T08:08:08Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 64.6s, 50.2 Mo",
+        "audio": "volume moyen -40.0 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de manipulation d'ustensiles de cuisine et d'aliments.) ; contenu sonore : un œuf cassé dans un bol et un mixeur",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'un brownie fourre au fromage frais avec des etapes detaillees de melange et de dressage. | aliments : ['oeufs', 'sucre', 'chocolat', 'pate a brownie', 'fromage frais', 'pepites de chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 45ec77b0982a ; empreinte visuelle : plus proche 0.355"
+      }
+    }
+  },
+  {
+    "id": "rc_salade_brocoli_grenade_45",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_brocoli_grenade_45.mp4",
+    "caption": "Brocoli, poulet, grenade et noix. La salade qui tient au corps.\n\n#salade #brocoli #grenade #poulet #noix #recette #healthy #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "5c663a90706848ff7daf483855db2617c7844911817866796ac5fe211ee4694c",
+      "date": "2026-09-06T08:08:29Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.9s, 59.1 Mo",
+        "audio": "volume moyen -43.6 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un couteau découpe des légumes sur une planche en bois) ; contenu sonore : un couteau découpe des ingrédients sur une planche à découper",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade composee de brocoli, poulet, grenade, noix et haricots blancs avec une sauce. | aliments : ['brocoli', 'poulet', 'grenade', 'noix', 'haricots blancs', 'herbes', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 5c663a907068 ; empreinte visuelle : plus proche 0.379"
+      }
+    }
+  },
+  {
+    "id": "rc_gateau_choco_cheesecake_46",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_gateau_choco_cheesecake_46.mp4",
+    "caption": "Un gâteau au chocolat avec une couche de cheesecake cachée dedans.\n\n#gateauchocolat #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c9d32eab5dd99a11151fb1bdb7672fa1b39bdf3e33a4417c16a9b5887243c391",
+      "date": "2026-09-06T08:17:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.9s, 65.2 Mo",
+        "audio": "volume moyen -30.3 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un homme cuisine dans sa cuisine en coupant des legumes) ; contenu sonore : Des bruits de cuisine incluent des actions de manipulation d'aliments.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'un gateau au chocolat avec une couche de cheesecake interieure. | aliments : ['fromage frais', 'oeufs', 'sucre', 'lait', 'farine', 'chocolat', 'gateau', 'cheesecake'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c9d32eab5dd9 ; empreinte visuelle : plus proche 0.344"
+      }
+    }
+  },
+  {
+    "id": "rc_salade_avocat_poischiches_47",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_avocat_poischiches_47.mp4",
+    "caption": "Avocat, pois chiches, feta et tomate. Prête en dix minutes.\n\n#salade #avocat #poischiches #feta #tomate #recette #healthy #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bf36164da1ecce6049fded2e8771d37b037fb4f83943a60060e3d187a185d404",
+      "date": "2026-09-06T08:18:02Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.6s, 62.3 Mo",
+        "audio": "volume moyen -41.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un homme coupe des aliments avec un grand couteau) ; contenu sonore : un œuf cassé dans un bol et battu rapidement",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade composee avec de la salade verte, des tomates, de l'avocat, de l'oignon rouge, de la feta et des pois chiches. | aliments : ['salade', 'tomate', 'avocat', 'oignon', 'feta', 'pois chiches', 'citron', 'huile'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bf36164da1ec ; empreinte visuelle : plus proche 0.424"
+      }
+    }
+  },
+  {
+    "id": "rc_chausson_viande_fromage_48",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_chausson_viande_fromage_48.mp4",
+    "caption": "Un chausson de viande hachée farci au fromage et à la tomate, pané et cuit au four.\n\n#viandehachee #fromage #panure #four #recette #platchaud #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "46b6e6907a01794ce50390be653418f0d13eecc5ebd694645d2e96430232f97d",
+      "date": "2026-09-06T08:19:41Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.6s, 55.7 Mo",
+        "audio": "volume moyen -35.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de manipulation d'ustensiles de cuisine avec des chocs.) ; contenu sonore : On entend de la musique et des bruits de cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson au four d'un chausson de viande hachee farci au fromage, tomate et pane. | aliments : ['viande hachée', 'fromage frais', 'tomate', 'fromage', 'oeuf', 'panure'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 46b6e6907a01 ; empreinte visuelle : plus proche 0.398"
+      }
+    }
+  },
+  {
+    "id": "rc_pates_onepot_cremeuses_50",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_onepot_cremeuses_50.mp4",
+    "caption": "Tout dans la poêle, même les pâtes crues. Une seule casserole à laver.\n\n#pates #onepot #champignons #epinards #cremeux #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "5ecaf7c2e6da933e2af90a75610a3892b937083c0b1e31912193c729b7b68952",
+      "date": "2026-09-06T08:22:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.8s, 50.7 Mo",
+        "audio": "volume moyen -45.0 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés, incluant le déballage et la préparation d'aliments.) ; contenu sonore : Bruits de cuisine pour la preparation d'un plat.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une recette de pates one-pot avec legumes dans une seule poele. | aliments : ['pates', 'tomates cerises', 'champignons', 'oignon', 'epinards', 'sauce tomate', 'fromage frais', 'creme'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 5ecaf7c2e6da ; empreinte visuelle : plus proche 0.406"
+      }
+    }
+  },
+  {
+    "id": "rc_pizza_plaque_fromage_51",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pizza_plaque_fromage_51.mp4",
+    "caption": "Une pâte versée à la louche, garnie, et au four. La pizza de plaque du dimanche soir.\n\n#pizza #fromage #olives #cornichons #recette #four #apero #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "afbe30beed20ab994f06441ea19f60723d88a7628f6605005fab6e2f5dde5cb7",
+      "date": "2026-09-06T08:23:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 64.6s, 56.3 Mo",
+        "audio": "volume moyen -25.1 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vido prsente divers bruits de cuisine prpars.) ; contenu sonore : Divers bruits de cuisine incluant des objets en bois.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'une pizza sur plaque avec pate versee, jambon, tomates, cornichons, olives et fromage. | aliments : ['pate', 'lait', 'jambon', 'tomates cerises', 'cornichons', 'olives', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 afbe30beed20 ; empreinte visuelle : plus proche 0.344"
+      }
+    }
+  },
+  {
+    "id": "rc_gateau_fruits_crumble_53",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_gateau_fruits_crumble_53.mp4",
+    "caption": "Une pâte liquide, des fruits jetés dessus, et un crumble par-dessus. Rien à étaler.\n\n#gateau #fruits #crumble #myrtilles #fraises #recette #dessert #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a0dcbcc19387aa7c2ba0f1979888208e59b6ccae512dfbc1d9674f7cf198c651",
+      "date": "2026-09-06T08:25:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.8s, 54.6 Mo",
+        "audio": "volume moyen -46.4 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (On entend divers bruits de cuisine de manipulation d'ustensiles.) ; contenu sonore : un extrait audio avec de la musique et des bruits",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson d'un gateau aux fruits avec une pate liquide et un crumble. | aliments : ['œufs', 'sucre', 'lait', 'farine', 'fraises', 'myrtilles', 'beurre', 'crumble', 'gateau'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 a0dcbcc19387 ; empreinte visuelle : plus proche 0.340"
+      }
+    }
+  },
+  {
+    "id": "rc_napoleon_feuillete_54",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_napoleon_feuillete_54.mp4",
+    "caption": "Trente carrés de pâte feuilletée, une crème pâtissière, et un mille-feuille monté à la main.\n\n#millefeuille #napoleon #patefeuilletee #cremepatissiere #patisserie #recette #dessert #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "dc7b7db775292ce851e179c59cfaefd98c2b7aa70e492a747fd1456f7256a7f8",
+      "date": "2026-09-06T08:26:20Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 66.5s, 63.8 Mo",
+        "audio": "volume moyen -47.3 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vido de cuisine prsente des sons de prparation.) ; contenu sonore : un homme cuisine dans sa cuisine en coupant des legumes",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et montage d'un gateau type mille-feuille ou napoleon avec de la pate feuilletee et une creme patissiere. | aliments : ['pate feuilletee', 'creme patissiere', 'lait', 'oeufs', 'beurre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 dc7b7db77529 ; empreinte visuelle : plus proche 0.337"
+      }
+    }
+  },
+  {
+    "id": "rc_spaghetti_bolognaise_55",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_spaghetti_bolognaise_55.mp4",
+    "caption": "Des tomates entières pelées écrasées à la spatule. La bolognaise sans boîte de concentré.\n\n#spaghetti #bolognaise #tomates #viandehachee #pates #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bb722432ef6d893230bd38a2835e5c595edb8d0f45853fa577138e8d8c0cabf9",
+      "date": "2026-09-06T08:31:38Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 68.5s, 82.2 Mo",
+        "audio": "volume moyen -43.7 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vido de cuisine prsente la prparation d'un plat.) ; contenu sonore : un oeuf est casse dans une poele pour cuire",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de spaghetti bolognaise maison avec des tomates entieres, de la viande hachee et des epices. | aliments : ['tomates', 'oignons', 'viande hachee', 'pates', 'fromage', 'epices'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bb722432ef6d ; empreinte visuelle : plus proche 0.383"
+      }
+    }
+  },
+  {
+    "id": "rc_charlotte_fraises_56",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_charlotte_fraises_56.mp4",
+    "caption": "Un saladier tapissé de fraises, et la charlotte se démoule toute seule. Sans cuisson.\n\n#charlotte #fraises #boudoirs #mascarpone #sanscuisson #recette #dessert #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "0da2fe69eb3c2347a61c50b729adb1ede799f8820be353df827b127fcf26a16c",
+      "date": "2026-09-06T08:32:05Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 77.0s, 70.3 Mo",
+        "audio": "volume moyen -41.7 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un cuisinier prepare un repas en utilisant divers ustensiles) ; contenu sonore : Bruits de cuisine divers avec des sons de manipulation d'ustensiles.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et demoulage d'une charlotte aux fraises et boudoirs dans un saladier | aliments : ['fraises', 'creme', 'boudoirs', 'mascarpone'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 0da2fe69eb3c ; empreinte visuelle : plus proche 0.374"
+      }
+    }
+  },
+  {
+    "id": "rc_burger_feuillete_57",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_burger_feuillete_57.mp4",
+    "caption": "Le burger monté dans de la pâte feuilletée et passé au four. Le pain se fait tout seul.\n\n#burger #patefeuilletee #viandehachee #cheddar #four #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7fa2b9539c17f083c6a201901743e9ec01b78bf7dd34138d717e9c8b7ec2fb04",
+      "date": "2026-09-06T08:33:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 67.8s, 61.0 Mo",
+        "audio": "volume moyen -44.3 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Un récipient est frappé par un instrument pour faire de la cuisine.) ; contenu sonore : Cette vido montre la prparation d'un plat dans la cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une recette de petits pains farcis a la viande hachee, fromage et legumes, cuits au four. | aliments : ['pate feuilletee', 'viande hachee', 'cheddar', 'sauce', 'oignon rouge', 'cornichon', 'tomate', 'pain'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7fa2b9539c17 ; empreinte visuelle : plus proche 0.376"
+      }
+    }
+  },
+  {
+    "id": "rc_salade_concombre_grenade_58",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_concombre_grenade_58.mp4",
+    "caption": "Le concombre taillé en rubans à l'économe. Avocat, grenade et noix par-dessus.\n\n#salade #concombre #avocat #grenade #noix #recette #healthy #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8d00657a038d49e3be2da94521281fe88ce7ce81ceeaab505d350fa848393441",
+      "date": "2026-09-06T08:33:39Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 57.0 Mo",
+        "audio": "volume moyen -40.2 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vido de cuisine contiens des bruits de coupures.) ; contenu sonore : un homme cuisine dans sa cuisine en silence et activement",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade saine avec concombre en rubans, avocat, oignon rouge, noix, grenade, herbes et jus de citron. | aliments : ['concombre', 'oignon rouge', 'avocat', 'noix', 'herbes', 'grenade', 'citron'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 8d00657a038d ; empreinte visuelle : plus proche 0.421"
+      }
+    }
+  },
+  {
+    "id": "rc_brochettes_poulet_pommesdeterre_59",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brochettes_poulet_pommesdeterre_59.mp4",
+    "caption": "Les brochettes posées sur le lit de pommes de terre. Tout cuit dans le même plat.\n\n#brochettes #poulet #pommesdeterre #four #platunique #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "da9a3d36b90cbf171ac2922b68cd7c272ffa1448598e1b10e0f09b14bcc1ef95",
+      "date": "2026-09-06T08:34:57Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 65.2s, 64.0 Mo",
+        "audio": "volume moyen -39.4 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Cette vidéo montre la préparation de plats avec de la nourriture.) ; contenu sonore : un œuf est cassé dans un bol pour cuisiner",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de brochettes de poulet marines disposees sur un lit de pommes de terre en plat unique cuit au four | aliments : ['pommes de terre', 'oignon', 'poulet', 'sauce', 'concentre de tomate', 'poivron', 'tomates cerises', 'pain plat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 da9a3d36b90c ; empreinte visuelle : plus proche 0.387"
+      }
+    }
+  },
+  {
+    "id": "rc_muffins_banane_fraise_60",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_banane_fraise_60.mp4",
+    "caption": "Deux bananes écrasées à la place du beurre. Des muffins chocolat-fraise, sans balance.\n\n#muffins #banane #chocolat #fraises #sansbeurre #recette #gouter #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4871be8779be37149b2634d89768588c50fc7ca43687890443b96fdca5bdf9a9",
+      "date": "2026-09-06T08:36:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.3s, 53.6 Mo",
+        "audio": "volume moyen -46.4 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un cuisinier utilise des ustensiles pour préparer un plat) ; contenu sonore : bruits de manipulation d'ustensiles de cuisine en bois",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de muffins au chocolat et aux fraises avec des bananes ecrasees | aliments : ['banane', 'oeuf', 'cacao', 'yaourt', 'farine', 'fraise', 'pepites de chocolat', 'muffins'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4871be8779be ; empreinte visuelle : plus proche 0.441"
+      }
+    }
+  },
+  {
+    "id": "rc_salade_mais_grille_62",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_mais_grille_62.mp4",
+    "caption": "Le maïs passé à l'air fryer avant d'aller dans la salade. Ça change tout.\n\n#salade #mais #airfryer #concombre #sauce #recette #healthy #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "21426e3cee0ca6f3dbf79a66611a41a185b83f98652195d46bd88f2f2017cef8",
+      "date": "2026-09-06T08:38:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 64.4s, 65.3 Mo",
+        "audio": "volume moyen -37.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Des bruits de cuisine de coupe et de préparation.) ; contenu sonore : Cette vido prsente des bruits de coupe et de mlange.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade composee avec legumes frais et mais cuit a l'air fryer. | aliments : ['salade', 'concombre', 'tomates cerises', 'oignon rouge', 'herbes', 'mayonnaise', 'huile', 'fromage', 'citron', 'mais'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 21426e3cee0c ; empreinte visuelle : plus proche 0.371"
+      }
+    }
+  },
+  {
+    "id": "rc_roule_poulet_courgettes_64",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_roule_poulet_courgettes_64.mp4",
+    "caption": "Une base de poulet haché étalée à plat, gratinée, puis roulée comme un wrap.\n\n#poulet #courgettes #fromage #roule #lowcarb #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f5aee6f89fe9b8682f4f0c55f916f99f86690816d41337bda41b0f4f3cd30c08",
+      "date": "2026-09-06T08:39:44Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 36.9 Mo",
+        "audio": "volume moyen -47.0 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (On entend le bruit de l'eau et d'aliments.) ; contenu sonore : un son de découpe de nourriture et un bruit d'emballage plastique",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un wrap a base de poulet hache, courgettes, fromage, tomates et avocat, puis cuisson au four | aliments : ['poulet hache', 'courgettes', 'fromage', 'tomates', 'avocat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f5aee6f89fe9 ; empreinte visuelle : plus proche 0.345"
+      }
+    }
+  },
+  {
+    "id": "rc_muffins_fraise_chocolatblanc_65",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_fraise_chocolatblanc_65.mp4",
+    "caption": "Fraises fraîches et pépites de chocolat blanc. Des muffins qui restent moelleux.\n\n#muffins #fraises #chocolatblanc #patisserie #recette #gouter #dessert #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "b60f7b0ba1c44a8127e3213c6bac45277d8a3cdaef09d9af48d1277703b18e46",
+      "date": "2026-09-06T08:40:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.8s, 35.3 Mo",
+        "audio": "volume moyen -48.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de manipulation d'ustensiles de cuisine et d'aliments croustillants.) ; contenu sonore : un mixeur broie des aliments dans un bol en plastique",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de muffins aux fraises fraiches et pepites de chocolat blanc. | aliments : ['œufs', 'sucre', 'lait', 'farine', 'levure', 'fraises', 'chocolat blanc', 'muffins'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 b60f7b0ba1c4 ; empreinte visuelle : plus proche 0.353"
+      }
+    }
+  },
+  {
+    "id": "rc_courgettes_farcies_69",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_farcies_69.mp4",
+    "caption": "Les courgettes évidées à l'emporte-pièce, farcies viande et riz, gratinées.\n\n#courgettes #farcies #viandehachee #riz #gratine #recette #diner #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a1b00c0dc2593105289d219e6e18df7a2420b3dced83dd3b721feb921eae9334",
+      "date": "2026-09-06T08:47:27Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 63.7s, 50.6 Mo",
+        "audio": "volume moyen -31.6 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un brossage de quelque chose en bois avec des bruits) ; contenu sonore : un homme coupe des aliments avec un couteau en bois",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de courgettes evidees, farcies de viande et de riz, sauce tomate et gratinage au fromage au four. | aliments : ['courgettes', 'viande hachee', 'riz', 'oignon', 'herbes', 'sauce tomate', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 a1b00c0dc259 ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "rc_legumes_rotis_sauce_70",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_legumes_rotis_sauce_70.mp4",
+    "caption": "Courgettes, champignons et poivrons rôtis, puis noyés dans une sauce à l'ail et coriandre.\n\n#legumes #courgettes #champignons #poivrons #four #recette #vegetarien #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "01e3b5164ffcc71be7579fe959cd7549d2de6251b0ada2ceaac67b4f10d6c6aa",
+      "date": "2026-09-06T08:53:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 60 fps, 64.6s, 55.4 Mo",
+        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés avec manipulation d'aliments et d'ustensiles.) ; contenu sonore : coupage, hachage, manipulation d'ustensiles de cuisine, bruits de préparation",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson au four de courgettes, champignons et poivrons, melanges ensuite a une sauce blanche et herbes. | aliments : ['courgettes', 'champignons', 'poivrons', 'ail', 'herbes', 'sauce yaourt'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 01e3b5164ffc ; empreinte visuelle : plus proche 0.358"
+      }
+    }
   }
 ]
