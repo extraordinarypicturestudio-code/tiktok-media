@@ -121,7 +121,10 @@ def _quand(maintenant_utc):
 def cles():
     """Cles Zernio disponibles : variables d'environnement, sinon fichiers locaux."""
     trouvees = []
-    noms = ("ZERNIO_API_KEY", "ZERNIO_API_KEY_2", "ZERNIO_API_KEY_3", "ZERNIO_API_KEY_4")
+    # La cle 5 (le.pisciniste7) manquait : la chaine est en service depuis le
+    # 2026-09-06 et ses refus de saturation n'etaient repris par personne.
+    noms = ("ZERNIO_API_KEY", "ZERNIO_API_KEY_2", "ZERNIO_API_KEY_3",
+            "ZERNIO_API_KEY_4", "ZERNIO_API_KEY_5")
     for i, nom in enumerate(noms, start=1):
         v = os.environ.get(nom)
         if not v:
@@ -160,10 +163,35 @@ def sature(pf):
     return MOTIF in (pf.get("errorMessage") or pf.get("error") or "")
 
 
+def deja_traitees():
+    """URL des videos deja programmees ou publiees, d'apres les files.
+
+    Depuis que les sorties sont deposees a l'avance, un post en echec ne veut
+    plus dire que la video attend : elle a tres bien pu etre reprogrammee
+    ailleurs entre-temps. Relancer ce post republierait la meme video une
+    seconde fois. Le 2026-09-06 au soir, 34 posts en echec portaient une video
+    desormais programmee - de quoi doubler une bonne partie de la grille.
+
+    On supprime ces posts au passage : ils ne servent plus a rien et Zernio les
+    oppose ensuite en 409 "already scheduled" a toute reprogrammation.
+    """
+    urls = set()
+    for f in ICI.glob("queue-*.json"):
+        try:
+            for v in json.loads(f.read_text(encoding="utf-8")):
+                if v.get("status") in ("scheduled", "published") and v.get("url"):
+                    urls.add(v["url"])
+        except ValueError:
+            continue
+    return urls
+
+
 def main():
     reg = charger()
     now = datetime.now(timezone.utc)
     repris = abandonnes = brouillons = ignores = 0
+    traitees = deja_traitees()
+    perimes = 0
 
     for nom, cle in cles():
         if repris + brouillons >= PAR_EXECUTION_MAX:
@@ -189,6 +217,16 @@ def main():
                 continue
 
             pid = p["_id"]
+
+            # La video est-elle deja programmee ou en ligne par ailleurs ?
+            if any(m.get("url") in traitees for m in (p.get("mediaItems") or [])):
+                try:
+                    appel("DELETE", API + "/posts/" + pid, cle)
+                    perimes += 1
+                except Exception as e:
+                    print("  (suppression impossible de %s : %s)" % (pid, str(e)[:80]))
+                continue
+
             try:
                 t0 = datetime.fromisoformat((p.get("scheduledFor") or "").replace("Z", "+00:00"))
             except ValueError:
@@ -259,8 +297,9 @@ def main():
                       % (pid, npid, quand, etat["relances"], RELANCES_MAX))
 
     REGISTRE.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("\n%d relancee(s), %d en brouillon, %d abandonnee(s), %d ignoree(s)"
-          % (repris, brouillons, abandonnes, ignores))
+    print("\n%d relancee(s), %d en brouillon, %d abandonnee(s), "
+          "%d ignoree(s), %d echec(s) perime(s) supprime(s)"
+          % (repris, brouillons, abandonnes, ignores, perimes))
 
 
 if __name__ == "__main__":

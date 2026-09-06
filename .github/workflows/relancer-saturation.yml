@@ -38,6 +38,9 @@ jobs:
           ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
           ZERNIO_API_KEY_3: ${{ secrets.ZERNIO_API_KEY_3 }}
           ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          # le.pisciniste7. Manquait depuis la mise en service de la chaine :
+          # ses refus de saturation n'etaient repris par personne.
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
         run: python scripts/relancer_saturation.py
 
       # Le compteur de relances doit survivre d'une execution a l'autre :
