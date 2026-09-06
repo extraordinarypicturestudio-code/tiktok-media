@@ -2254,7 +2254,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 afbe30beed20 ; empreinte visuelle : plus proche 0.344"
       }
-    }
+    },
+    "postId": "6a9de2f6bb37e39780539fea",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "rc_gateau_fruits_crumble_53",
