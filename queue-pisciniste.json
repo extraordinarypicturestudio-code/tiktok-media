@@ -1,1 +1,178 @@
-[]
+[
+  {
+    "id": "03-la-maison-vide",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/03-la-maison-vide.mp4",
+    "caption": "Huit mois que j'entretiens la piscine de quelqu'un que je n'ai jamais vu 🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #mystere #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "66d35871bd432da29fe013c41569e684d4940f0126ad2e3652e2e457b7a21412",
+      "date": "2026-09-06T07:19:27Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 77.8s, 72.7 Mo",
+        "audio": "volume moyen -18.0 dB ; contenu sonore : un homme parle d'une piscine avec un ton d'exaspération",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Un pisciniste raconte son experience d'entretien d'une piscine dont il n'a jamais vu le proprietaire. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 66d35871bd43 ; empreinte visuelle : plus proche 0.426"
+      }
+    }
+  },
+  {
+    "id": "04-le-mardi-quatorze-heures",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/04-le-mardi-quatorze-heures.mp4",
+    "caption": "Elle me payait le double pour venir toujours à la même heure 🏊‍♂️⏰\n#pisciniste #piscine #histoire #storytime #etatsunis #client #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "248839fe743c857743737584dc39ac8909769de4e8fa23f2fe48f20b83ed4b77",
+      "date": "2026-09-06T07:22:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 83.3s, 73.7 Mo",
+        "audio": "volume moyen -19.8 dB ; contenu sonore : Une personne parle d'une cliente payant double le mois.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Un pisciniste nettoie une piscine couverte d'algues vertes en raclant le fond tout en racontant une histoire en sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 248839fe743c ; empreinte visuelle : plus proche 0.424"
+      }
+    }
+  },
+  {
+    "id": "05-le-prix",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/05-le-prix.mp4",
+    "caption": "Combien gagne vraiment un pisciniste aux États-Unis 💵🏊‍♂️\n#pisciniste #piscine #salaire #metier #etatsunis #argent #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "94056c3064a8a93c42077d211cb938f5de6e5ffb6ddb72bc2609535cea7c16cd",
+      "date": "2026-09-06T07:25:10Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 82.0s, 75.9 Mo",
+        "audio": "volume moyen -18.5 dB ; contenu sonore : Un homme parle du coût de l'entretien des piscines.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Un pisciniste nettoie une piscine sale au Kärcher et parle de ses revenus aux États-Unis. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 94056c3064a8 ; empreinte visuelle : plus proche 0.376"
+      }
+    }
+  },
+  {
+    "id": "07-la-carte-bleue",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/07-la-carte-bleue.mp4",
+    "caption": "Il m'a donné sa carte bancaire et son code le premier jour 💳🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #confiance #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "26c4d48a4c1e0717106cb894ef61a8df8927dcbe56d2b248d3d81299d34b6e82",
+      "date": "2026-09-06T07:27:44Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.6s, 65.0 Mo",
+        "audio": "volume moyen -18.8 dB ; contenu sonore : Un homme parle de sa discussion avec un client fortuné.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Nettoyage d'une piscine très sale par un pisciniste avec des sous-titres incrustés. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 26c4d48a4c1e ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "08-la-piscine-jamais-utilisee",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/08-la-piscine-jamais-utilisee.mp4",
+    "caption": "Il me payait pour laisser des feuilles dans sa piscine 🍂🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #couple #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "54d90ee8c2c7ccb8b9add124f80e1a06b2eb9c4d434810ca427a2220678bb53b",
+      "date": "2026-09-06T07:29:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.3s, 62.3 Mo",
+        "audio": "volume moyen -19.5 dB ; contenu sonore : Un homme raconte une anecdote surprenante sur son client.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Un homme nettoie et rénove une piscine très sale et envahie par la végétation. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 54d90ee8c2c7 ; empreinte visuelle : plus proche 0.441"
+      }
+    }
+  },
+  {
+    "id": "01-pourboire-enveloppe",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/01-pourboire-enveloppe.mp4",
+    "caption": "600 $ de pourboire pour 20 minutes. J'ai compris pourquoi le lendemain 💵🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #pourtoi #satisfaisant #anecdote",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "076967643b1d6f3b38ecd331a22427efc1e88a5702611ead0913d53809422da0",
+      "date": "2026-09-06T07:38:45Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.0s, 52.5 Mo",
+        "audio": "volume moyen -18.4 dB ; contenu sonore : Un homme raconte une anecdote sur les pourboires d'un client.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Nettoyage d'une piscine par un pisciniste avec narration d'une anecdote sur un gros pourboire | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 076967643b1d ; empreinte visuelle : plus proche 0.389"
+      }
+    }
+  },
+  {
+    "id": "02-le-radin",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/02-le-radin.mp4",
+    "caption": "Six chambres, deux allemandes dans l'allée, et un chèque en bois 🏊‍♂️💸\n#pisciniste #piscine #histoire #storytime #etatsunis #client #pourtoi #satisfaisant",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "fa9210a6a1aefdaf3aff1415bdbee163fe5e72207245d16d3c83c8b98713a668",
+      "date": "2026-09-06T07:41:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.6s, 61.6 Mo",
+        "audio": "volume moyen -17.6 dB ; contenu sonore : Un homme parle d'une piscine avec de l'eau verte",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Un pisciniste nettoie une piscine sale et vide au karcher, montrant son travail de rénovation extérieure. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 fa9210a6a1ae ; empreinte visuelle : plus proche 0.370"
+      }
+    }
+  },
+  {
+    "id": "06-la-bague",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/06-la-bague.mp4",
+    "caption": "J'ai remonté une alliance du fond du bassin. J'ai perdu le client 💍🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #pourtoi #satisfaisant #anecdote",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3522d8fa23956a15060fcd42c3323305f66411879fafa950cd3e02e15eb0ddb1",
+      "date": "2026-09-06T07:45:06Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 78.2s, 73.9 Mo",
+        "audio": "volume moyen -19.6 dB ; contenu sonore : Récit d'une découverte inattendue au fond d'une piscine.",
+        "visuel": "profil pisciniste : OK",
+        "contenu": "contenu vu : Nettoyage du fond d'une piscine sale avec un balai aspirateur, illustrant une narration en voix off sur une anecdote. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3522d8fa2395 ; empreinte visuelle : plus proche 0.414"
+      }
+    }
+  }
+]
