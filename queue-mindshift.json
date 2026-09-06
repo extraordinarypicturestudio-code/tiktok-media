@@ -1075,7 +1075,8 @@
     },
     "postId": "6a9dc2c85292f8ee1ac604f9",
     "scheduledFor": "2026-09-07T03:00:00",
-    "scheduledForUtc": "2026-09-07T01:00:00Z"
+    "scheduledForUtc": "2026-09-07T01:00:00Z",
+    "vignette_auto": true
   },
   {
     "id": "mindshift_uclacomm_v1",
@@ -1100,7 +1101,8 @@
     },
     "postId": "6a9dc2febdf0a107468c279e",
     "scheduledFor": "2026-09-07T09:40:00",
-    "scheduledForUtc": "2026-09-07T07:40:00Z"
+    "scheduledForUtc": "2026-09-07T07:40:00Z",
+    "vignette_auto": true
   },
   {
     "id": "mindshift_timminchin_v1",
@@ -1125,7 +1127,8 @@
     },
     "postId": "6a9dc333bb7e97f501d12e3b",
     "scheduledFor": "2026-09-07T16:20:00",
-    "scheduledForUtc": "2026-09-07T14:20:00Z"
+    "scheduledForUtc": "2026-09-07T14:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "mindshift_denisechong_v1",
@@ -1172,7 +1175,8 @@
     },
     "postId": "6a9dc396aa7f666e22139079",
     "scheduledFor": "2026-09-08T05:40:00",
-    "scheduledForUtc": "2026-09-08T03:40:00Z"
+    "scheduledForUtc": "2026-09-08T03:40:00Z",
+    "vignette_auto": true
   },
   {
     "id": "mindshift_martinsheen_v1",
@@ -1197,6 +1201,7 @@
     },
     "postId": "6a9dc3c020900e1b07919e18",
     "scheduledFor": "2026-09-08T11:00:00",
-    "scheduledForUtc": "2026-09-08T09:00:00Z"
+    "scheduledForUtc": "2026-09-08T09:00:00Z",
+    "vignette_auto": true
   }
 ]

@@ -22,7 +22,8 @@
     },
     "postId": "6a9dc2e1db182598e81f9871",
     "scheduledFor": "2026-09-07T05:40:00",
-    "scheduledForUtc": "2026-09-07T03:40:00Z"
+    "scheduledForUtc": "2026-09-07T03:40:00Z",
+    "vignette_auto": true
   },
   {
     "id": "04-le-mardi-quatorze-heures",
@@ -47,7 +48,8 @@
     },
     "postId": "6a9dc316db182598e81fa5a4",
     "scheduledFor": "2026-09-07T12:20:00",
-    "scheduledForUtc": "2026-09-07T10:20:00Z"
+    "scheduledForUtc": "2026-09-07T10:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "05-le-prix",
@@ -72,7 +74,8 @@
     },
     "postId": "6a9dc3797e027ab676abd378",
     "scheduledFor": "2026-09-08T01:40:00",
-    "scheduledForUtc": "2026-09-07T23:40:00Z"
+    "scheduledForUtc": "2026-09-07T23:40:00Z",
+    "vignette_auto": true
   },
   {
     "id": "07-la-carte-bleue",
@@ -97,7 +100,8 @@
     },
     "postId": "6a9dc3aeaa7f666e221395d9",
     "scheduledFor": "2026-09-08T08:20:00",
-    "scheduledForUtc": "2026-09-08T06:20:00Z"
+    "scheduledForUtc": "2026-09-08T06:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "08-la-piscine-jamais-utilisee",
@@ -166,7 +170,8 @@
     },
     "postId": "6a9dc412028d8b81124c173a",
     "scheduledFor": "2026-09-09T00:20:00",
-    "scheduledForUtc": "2026-09-08T22:20:00Z"
+    "scheduledForUtc": "2026-09-08T22:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "06-la-bague",
@@ -191,6 +196,7 @@
     },
     "postId": "6a9dc424f5713e33013626e1",
     "scheduledFor": "2026-09-09T03:00:00",
-    "scheduledForUtc": "2026-09-09T01:00:00Z"
+    "scheduledForUtc": "2026-09-09T01:00:00Z",
+    "vignette_auto": false
   }
 ]

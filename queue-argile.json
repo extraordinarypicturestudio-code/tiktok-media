@@ -46,7 +46,8 @@
     },
     "postId": "6a9dc2d400013ab5b73a821f",
     "scheduledFor": "2026-09-07T04:20:00",
-    "scheduledForUtc": "2026-09-07T02:20:00Z"
+    "scheduledForUtc": "2026-09-07T02:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "a15_client_du_jeudi",
@@ -71,7 +72,8 @@
     },
     "postId": "6a9dc30adab9ead712ca9116",
     "scheduledFor": "2026-09-07T11:00:00",
-    "scheduledForUtc": "2026-09-07T09:00:00Z"
+    "scheduledForUtc": "2026-09-07T09:00:00Z",
+    "vignette_auto": true
   },
   {
     "id": "a16_lorage",
@@ -96,7 +98,8 @@
     },
     "postId": "6a9dc36d7e027ab676abd1cc",
     "scheduledFor": "2026-09-08T00:20:00",
-    "scheduledForUtc": "2026-09-07T22:20:00Z"
+    "scheduledForUtc": "2026-09-07T22:20:00Z",
+    "vignette_auto": true
   },
   {
     "id": "a17_commande_mariage",
@@ -121,7 +124,8 @@
     },
     "postId": "6a9dc3a2aa7f666e221393c1",
     "scheduledFor": "2026-09-08T07:00:00",
-    "scheduledForUtc": "2026-09-08T05:00:00Z"
+    "scheduledForUtc": "2026-09-08T05:00:00Z",
+    "vignette_auto": true
   },
   {
     "id": "a19_client_regulier",

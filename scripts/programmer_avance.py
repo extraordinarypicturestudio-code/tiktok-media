@@ -218,6 +218,16 @@ def eligible(v, ecrire):
 
 
 def deposer(v, cid, quand_paris):
+    """Cree le post programme. Renvoie (identifiant, vignette_choisie).
+
+    `vignette_choisie` est faux quand le choix automatique n'a pas abouti - le
+    plus souvent parce que le quota Gemini du jour est epuise. La video part
+    alors avec la vignette par defaut a 2 s, c'est-a-dire un plan d'intro. On
+    le NOTE dans la file : `corriger_vignettes.py` repassera le lendemain, quota
+    reinitialise, refaire la couverture avant la date de sortie. Sans cette
+    trace l'information serait perdue - Zernio ne renvoie pas `tiktokSettings`
+    dans ses reponses, la vignette d'un post depose est illisible apres coup.
+    """
     chemin = pn.chemin_local(v["url"])
     cover = pn.VIGNETTE_DEFAUT_MS
     if chemin and os.path.exists(chemin):
@@ -241,7 +251,7 @@ def deposer(v, cid, quand_paris):
         },
     }
     r = pn.zernio_call("POST", "/posts", payload)
-    return (r.get("post") or r).get("_id")
+    return (r.get("post") or r).get("_id"), cover != pn.VIGNETTE_DEFAUT_MS
 
 
 def main():
@@ -362,7 +372,7 @@ def main():
         if choisie not in cids:
             cids[choisie] = pn.compte_id(pseudo)
         try:
-            pid = deposer(v, cids[choisie], quand)
+            pid, vignette = deposer(v, cids[choisie], quand)
         except Exception as e:
             # 409 : un post en ECHEC portant la meme video traine encore chez
             # Zernio et rend la video indeposable. C'est le cas normal apres
@@ -370,7 +380,7 @@ def main():
             if "409" in str(e) or "already scheduled" in str(e).lower():
                 pn.purger_posts_bloquants(v["url"])
                 try:
-                    pid = deposer(v, cids[choisie], quand)
+                    pid, vignette = deposer(v, cids[choisie], quand)
                 except Exception as e2:
                     print("  %-12s %-28s ECHEC APRES PURGE : %s"
                           % (choisie, v["id"], str(e2)[:110]))
@@ -382,6 +392,7 @@ def main():
                 break
         v["status"] = "scheduled"
         v["postId"] = pid
+        v["vignette_auto"] = vignette
         v["scheduledFor"] = quand.strftime(FORMAT)
         v["scheduledForUtc"] = quand_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
         v.pop("error", None)

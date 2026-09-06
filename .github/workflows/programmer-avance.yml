@@ -62,6 +62,21 @@ jobs:
           ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
         run: python3 scripts/reconcilier_programmes.py
 
+      # Un gros depot epuise le quota Gemini (500 requetes/jour) et les
+      # dernieres videos partent avec la vignette par defaut a 2 s, soit un
+      # plan d'intro. Comme les sorties sont deposees plusieurs jours a
+      # l'avance, on refait ces couvertures le lendemain, quota reinitialise,
+      # AVANT la date de sortie. Passe en premier : c'est du rattrapage sur des
+      # videos deja programmees, donc prioritaire sur de nouveaux depots.
+      - name: Refaire les vignettes restees par defaut
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/corriger_vignettes.py
+
       - name: Deposer les prochaines sorties
         env:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}

@@ -2101,7 +2101,8 @@
     },
     "postId": "6a9dc28664d352b38b139435",
     "scheduledForUtc": "2026-09-06T21:00:00.000Z",
-    "scheduledFor": "2026-09-06T23:00:00"
+    "scheduledFor": "2026-09-06T23:00:00",
+    "vignette_auto": true
   },
   {
     "id": "rc_salade_brocoli_grenade_45",
@@ -2126,7 +2127,8 @@
     },
     "postId": "6a9dc2af069e98edde38a141",
     "scheduledForUtc": "2026-09-06T22:20:00.000Z",
-    "scheduledFor": "2026-09-07T00:20:00"
+    "scheduledFor": "2026-09-07T00:20:00",
+    "vignette_auto": true
   },
   {
     "id": "rc_gateau_choco_cheesecake_46",
@@ -2151,7 +2153,8 @@
     },
     "postId": "6a9dc43d3a1008b9949ae934",
     "scheduledForUtc": "2026-09-09T05:00:00.000Z",
-    "scheduledFor": "2026-09-09T07:00:00"
+    "scheduledFor": "2026-09-09T07:00:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_salade_avocat_poischiches_47",
@@ -2176,7 +2179,8 @@
     },
     "postId": "6a9dc44a1bebab3c7f59b546",
     "scheduledForUtc": "2026-09-09T06:20:00.000Z",
-    "scheduledFor": "2026-09-09T08:20:00"
+    "scheduledFor": "2026-09-09T08:20:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_chausson_viande_fromage_48",
@@ -2201,7 +2205,8 @@
     },
     "postId": "6a9dc457bfadaf800fe54b32",
     "scheduledForUtc": "2026-09-09T07:40:00.000Z",
-    "scheduledFor": "2026-09-09T09:40:00"
+    "scheduledFor": "2026-09-09T09:40:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_pates_onepot_cremeuses_50",
@@ -2226,7 +2231,8 @@
     },
     "postId": "6a9dc463bfadaf800fe54ec3",
     "scheduledForUtc": "2026-09-09T09:00:00.000Z",
-    "scheduledFor": "2026-09-09T11:00:00"
+    "scheduledFor": "2026-09-09T11:00:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_pizza_plaque_fromage_51",
@@ -2449,7 +2455,8 @@
     },
     "postId": "6a9dc4e02d86051291317f66",
     "scheduledForUtc": "2026-09-09T22:20:00.000Z",
-    "scheduledFor": "2026-09-10T00:20:00"
+    "scheduledFor": "2026-09-10T00:20:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_roule_poulet_courgettes_64",
@@ -2474,7 +2481,8 @@
     },
     "postId": "6a9dc4ecf54867e66227ea97",
     "scheduledForUtc": "2026-09-09T23:40:00.000Z",
-    "scheduledFor": "2026-09-10T01:40:00"
+    "scheduledFor": "2026-09-10T01:40:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_muffins_fraise_chocolatblanc_65",
@@ -2499,7 +2507,8 @@
     },
     "postId": "6a9dc4f7e915546bbf0a0f52",
     "scheduledForUtc": "2026-09-10T01:00:00.000Z",
-    "scheduledFor": "2026-09-10T03:00:00"
+    "scheduledFor": "2026-09-10T03:00:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_courgettes_farcies_69",
@@ -2524,7 +2533,8 @@
     },
     "postId": "6a9dc5042d860512913180b9",
     "scheduledForUtc": "2026-09-10T02:20:00.000Z",
-    "scheduledFor": "2026-09-10T04:20:00"
+    "scheduledFor": "2026-09-10T04:20:00",
+    "vignette_auto": false
   },
   {
     "id": "rc_legumes_rotis_sauce_70",

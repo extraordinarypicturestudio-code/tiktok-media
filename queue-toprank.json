@@ -328,7 +328,8 @@
     },
     "postId": "6a9dc2bb00013ab5b73a7919",
     "scheduledForUtc": "2026-09-06T23:40:00.000Z",
-    "scheduledFor": "2026-09-07T01:40:00"
+    "scheduledFor": "2026-09-07T01:40:00",
+    "vignette_auto": true
   },
   {
     "id": "tr_20260907_1830",
@@ -353,7 +354,8 @@
     },
     "postId": "6a9dc2f2db182598e81f9d5a",
     "scheduledForUtc": "2026-09-07T06:20:00.000Z",
-    "scheduledFor": "2026-09-07T08:20:00"
+    "scheduledFor": "2026-09-07T08:20:00",
+    "vignette_auto": true
   },
   {
     "id": "tr_20260908_1300",
@@ -378,7 +380,8 @@
     },
     "postId": "6a9dc327dab9ead712ca98b8",
     "scheduledForUtc": "2026-09-07T13:00:00.000Z",
-    "scheduledFor": "2026-09-07T15:00:00"
+    "scheduledFor": "2026-09-07T15:00:00",
+    "vignette_auto": true
   },
   {
     "id": "tr_20260908_1830",
@@ -403,7 +406,8 @@
     },
     "postId": "6a9dc344bb7e97f501d13218",
     "scheduledForUtc": "2026-09-07T17:00:00.000Z",
-    "scheduledFor": "2026-09-07T19:00:00"
+    "scheduledFor": "2026-09-07T19:00:00",
+    "vignette_auto": true
   },
   {
     "id": "tr_20260908_2100",
@@ -450,6 +454,7 @@
     },
     "postId": "6a9dc38baa7f666e22138ccd",
     "scheduledForUtc": "2026-09-08T02:20:00.000Z",
-    "scheduledFor": "2026-09-08T04:20:00"
+    "scheduledFor": "2026-09-08T04:20:00",
+    "vignette_auto": true
   }
 ]
