@@ -304,5 +304,137 @@
     "attempts": 1,
     "postId": "6a7a364f6243fa0336fddf84",
     "publishedAt": "2026-08-10T20:36:59Z"
+  },
+  {
+    "id": "tr_20260907_1300",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1300.mp4",
+    "caption": "Held together right up to the end 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #heldtogether",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "d625ff9e22d3139573cc738ab28ace10e076b007cb1967a6bd47656d8facd5f9",
+      "date": "2026-09-06T07:47:34Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.5s, 45.4 Mo",
+        "audio": "volume moyen -19.8 dB ; contenu sonore : Musique entraîneuse et bruits de cuisine de cuisson d'aliments",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes et d'incidents drôles variés. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 d625ff9e22d3 ; empreinte visuelle : plus proche 0.419"
+      }
+    }
+  },
+  {
+    "id": "tr_20260907_1830",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1830.mp4",
+    "caption": "The plan was solid, apparently 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #theplan",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "67e49ec6a61e296960cc718de51b97899073335d160814d62fe6182582cfcd48",
+      "date": "2026-09-06T07:55:44Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.4s, 41.7 Mo",
+        "audio": "volume moyen -20.4 dB ; contenu sonore : Cette courte bande son présente une musique rythmée et entraînante.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de diverses scenes de fails et d'accidents insolites | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 67e49ec6a61e ; empreinte visuelle : plus proche 0.388"
+      }
+    }
+  },
+  {
+    "id": "tr_20260908_1300",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1300.mp4",
+    "caption": "He was so sure about this 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #soconfident",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "b6154b40e9da6d0b140d7890d6c9387f6ae7cf0c6b79416b57372a417ab031a7",
+      "date": "2026-09-06T08:10:19Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.0s, 33.1 Mo",
+        "audio": "volume moyen -15.8 dB ; contenu sonore : Cette ambiance sonore inclut une musique entraînante et des sons de cuisine.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes et d'incidents comiques de personnes manquant de confiance en elles | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 b6154b40e9da ; empreinte visuelle : plus proche 0.443"
+      }
+    }
+  },
+  {
+    "id": "tr_20260908_1830",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1830.mp4",
+    "caption": "The landing was the hard part 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #landing",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "2b864f3c542db3d2298d3f8201e69256e27125e392b57d57750672c3e2fcc952",
+      "date": "2026-09-06T08:17:58Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.3s, 45.7 Mo",
+        "audio": "volume moyen -22.0 dB ; contenu sonore : Une douce musique de fond accompagne des rires.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes, ratages et moments comiques divers impliquant des personnes. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 2b864f3c542d ; empreinte visuelle : plus proche 0.388"
+      }
+    }
+  },
+  {
+    "id": "tr_20260908_2100",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_2100.mp4",
+    "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1763d775e83c163a68b321dfc25719cbdccdb4882dd1084f97d3e10eb18e13a8",
+      "date": "2026-09-06T08:26:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.6s, 45.4 Mo",
+        "audio": "volume moyen -21.8 dB ; contenu sonore : Musique entraînante et joyeuse avec des instruments à vent.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes et ratages divers et comiques. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1763d775e83c ; empreinte visuelle : plus proche 0.418"
+      }
+    }
+  },
+  {
+    "id": "tr_20260909_1300",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260909_1300.mp4",
+    "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7c5f394626e17746995e16b17952b2710a4c0b9d2e9337df49c0ba5d370254f3",
+      "date": "2026-09-06T08:39:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.2s, 38.0 Mo",
+        "audio": "volume moyen -21.1 dB ; contenu sonore : Musique de fond joyeuse et bruits de casseroles et vaisselle",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de fails et de ratages divers avec des situations comiques et des accidents. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7c5f394626e1 ; empreinte visuelle : plus proche 0.448"
+      }
+    }
   }
 ]
