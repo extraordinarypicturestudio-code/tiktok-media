@@ -48,6 +48,7 @@ script ne cree pas un second chemin de publication moins surveille.
 """
 
 import argparse
+import collections
 import json
 import os
 import pathlib
@@ -281,10 +282,26 @@ def main():
     occupes = set()
     for q in files.values():
         for v in q:
-            if v.get("status") == "scheduled" and v.get("scheduledFor"):
+            if v.get("status") != "scheduled":
+                continue
+            if v.get("scheduledFor"):
                 occupes.add(v["scheduledFor"])
+            elif v.get("scheduledForUtc"):
+                # Entree ecrite par le reconciliateur avant qu'il ne note aussi
+                # l'heure locale : on la reconstitue, sans quoi le creneau
+                # passerait pour libre et recevrait une deuxieme video.
+                occupes.add(datetime
+                            .fromisoformat(v["scheduledForUtc"].replace("Z", "+00:00"))
+                            .astimezone(FUSEAU).strftime(FORMAT))
 
     ordre = rotation()
+    pris = collections.defaultdict(int)
+    # Ce qui est deja depose compte dans le quota du jour : sans ca, une
+    # deuxieme execution rajouterait un quota complet par-dessus le premier.
+    for nom, q in files.items():
+        for v in q:
+            if v.get("status") == "scheduled" and v.get("scheduledFor"):
+                pris[(datetime.strptime(v["scheduledFor"], FORMAT).date(), nom)] += 1
     deposes, i = 0, 0
     cids = {}
 
@@ -297,20 +314,36 @@ def main():
         if quand.strftime(FORMAT) in occupes:
             continue
         # Chaine du creneau : on avance dans la rotation jusqu'a en trouver une
-        # qui a encore du stock.
+        # qui ait encore du stock ET qui n'ait pas atteint son quota du jour.
+        #
+        # Le quota journalier n'est pas decoratif. Sans lui, des que les autres
+        # chaines sont a sec la derniere prend TOUS les creneaux restants : le
+        # premier depot a place 14 recipe_crave d'affilee sur la meme journee,
+        # soit une publication toutes les 80 minutes pendant 19 heures sur un
+        # seul compte. C'est un rythme que TikTok lit comme du spam, et ca vide
+        # en deux jours un stock prevu pour cinq.
+        jour = quand.date()
         choisie = None
         for _ in range(len(ordre)):
             cand = ordre[i % len(ordre)]
             i += 1
             if a.chaine and cand != a.chaine:
                 continue
-            if restes.get(cand):
-                choisie = cand
-                break
-        if choisie is None:
+            if not restes.get(cand):
+                continue
+            if pris[(jour, cand)] >= conf[cand][4]:
+                continue
+            choisie = cand
             break
+        if choisie is None:
+            # Aucune chaine eligible a cette heure-ci : le creneau reste vide,
+            # on ne force pas. S'il ne reste plus de stock nulle part, on sort.
+            if not any(restes.values()):
+                break
+            continue
 
         v = restes[choisie].pop(0)
+        pris[(jour, choisie)] += 1
         _, fichier, pseudo, numero, _ = conf[choisie]
         motif = eligible(v, ecrivains[choisie])
         if motif:

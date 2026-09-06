@@ -148,7 +148,14 @@ def main():
                         v["status"] = "scheduled"
                         v["postId"] = post.get("_id")
                         if prevu:
+                            # Les deux formes : l'UTC est ce que renvoie Zernio,
+                            # l'heure de Paris est la seule lisible dans la file
+                            # et celle sur laquelle `programmer_avance` reconnait
+                            # un creneau deja occupe.
                             v["scheduledForUtc"] = prevu
+                            v["scheduledFor"] = (
+                                datetime.fromisoformat(prevu.replace("Z", "+00:00"))
+                                .astimezone(pa.FUSEAU).strftime(pa.FORMAT))
                         v.pop("error", None)
                         change = True
 

@@ -103,7 +103,7 @@
     "id": "08-la-piscine-jamais-utilisee",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/08-la-piscine-jamais-utilisee.mp4",
     "caption": "Il me payait pour laisser des feuilles dans sa piscine 🍂🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #couple #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -119,16 +119,13 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 54d90ee8c2c7 ; empreinte visuelle : plus proche 0.441"
       }
-    },
-    "postId": "6a9dc3e3028d8b81124c0aa1",
-    "scheduledFor": "2026-09-08T16:20:00",
-    "scheduledForUtc": "2026-09-08T14:20:00Z"
+    }
   },
   {
     "id": "01-pourboire-enveloppe",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/01-pourboire-enveloppe.mp4",
     "caption": "600 $ de pourboire pour 20 minutes. J'ai compris pourquoi le lendemain 💵🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #pourtoi #satisfaisant #anecdote",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -144,10 +141,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 076967643b1d ; empreinte visuelle : plus proche 0.389"
       }
-    },
-    "postId": "6a9dc3f5dc85dae82d1cf164",
-    "scheduledFor": "2026-09-08T19:00:00",
-    "scheduledForUtc": "2026-09-08T17:00:00Z"
+    }
   },
   {
     "id": "02-le-radin",

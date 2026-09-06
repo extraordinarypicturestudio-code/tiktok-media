@@ -1131,7 +1131,7 @@
     "id": "mindshift_denisechong_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denisechong_v1.mp4",
     "caption": "Elle a rendu son nom à sa grand-mère, effacée de l'histoire familiale.\n\n#mindshift #motivation #inspiration #pourtoi #discours #histoire #famille #memoire",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1147,10 +1147,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 57f39f305daa ; empreinte visuelle : plus proche 0.286"
       }
-    },
-    "postId": "6a9dc3617e027ab676abcf66",
-    "scheduledFor": "2026-09-07T23:00:00",
-    "scheduledForUtc": "2026-09-07T21:00:00Z"
+    }
   },
   {
     "id": "mindshift_nyudiscours_v1",
