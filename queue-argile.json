@@ -131,9 +131,9 @@
     "id": "a19_client_regulier",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a19_client_regulier.mp4",
     "caption": "Il est revenu tous les jeudis pendant deux mois pour le même bol 🏺\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #tournage #ceramique #atelier #storytime #fidelite #asmr #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "2765a573e2b946125555902873214194ab3682773907fe53d9a383d89bf614b0",
@@ -147,6 +147,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 2765a573e2b9 ; empreinte visuelle : plus proche 0.423"
       }
-    }
+    },
+    "postId": "6a9defb787d90981ce0c0e41",
+    "publishedAt": "2026-09-06T22:57:59Z"
   }
 ]

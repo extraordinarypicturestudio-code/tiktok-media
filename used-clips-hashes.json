@@ -1614,5 +1614,13 @@
     "file": "clips-argile/a13-piece-ratee.mp4",
     "status": "published",
     "publishedAt": "2026-09-06T06:28:15.188Z"
+  },
+  {
+    "hash": "1330e0be64224019ea4daa2cd9d10758",
+    "id": "a19_client_regulier",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a19_client_regulier.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-06T22:57:59Z"
   }
 ]
