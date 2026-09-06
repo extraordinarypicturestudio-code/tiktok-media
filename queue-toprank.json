@@ -325,7 +325,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 d625ff9e22d3 ; empreinte visuelle : plus proche 0.419"
       }
-    }
+    },
+    "postId": "6a9da8d6dc51c39ffefb0f6a",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "tr_20260907_1830",
@@ -347,7 +349,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 67e49ec6a61e ; empreinte visuelle : plus proche 0.388"
       }
-    }
+    },
+    "postId": "6a9da8f086cad1ad49fc45d0",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "tr_20260908_1300",
@@ -369,7 +373,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 b6154b40e9da ; empreinte visuelle : plus proche 0.443"
       }
-    }
+    },
+    "postId": "6a9da909254586cc6c0db023",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "tr_20260908_1830",
