@@ -1,3 +1,11 @@
+# CHAINE EN PAUSE depuis le 2026-09-06, sur consigne de l'utilisateur.
+# Le workflow est DESACTIVE cote GitHub (disabled_manually) : le reactiver
+# ferait sortir immediatement une des huit videos en file, qui portent toutes
+# la voix Charon - une voix que l'utilisateur n'a pas validee. La chaine n'a
+# encore jamais publie ; sa premiere video fixera son identite sonore.
+# A reactiver une fois la voix choisie et les videos refaites, en remettant
+# aussi le quota de la chaine a 2 dans scripts/programmer_avance.py.
+#
 name: Publish Le Pisciniste
 
 # 2 publications/jour : 09h00 et 14h00 Paris (CEST = UTC+2 en ete).

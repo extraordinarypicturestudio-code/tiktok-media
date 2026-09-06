@@ -3,7 +3,7 @@
     "id": "03-la-maison-vide",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/03-la-maison-vide.mp4",
     "caption": "Huit mois que j'entretiens la piscine de quelqu'un que je n'ai jamais vu 🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #mystere #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -20,16 +20,13 @@
         "doublon": "sha256 66d35871bd43 ; empreinte visuelle : plus proche 0.426"
       }
     },
-    "postId": "6a9dc2e1db182598e81f9871",
-    "scheduledFor": "2026-09-07T05:40:00",
-    "scheduledForUtc": "2026-09-07T03:40:00Z",
     "vignette_auto": true
   },
   {
     "id": "04-le-mardi-quatorze-heures",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/04-le-mardi-quatorze-heures.mp4",
     "caption": "Elle me payait le double pour venir toujours à la même heure 🏊‍♂️⏰\n#pisciniste #piscine #histoire #storytime #etatsunis #client #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -46,16 +43,13 @@
         "doublon": "sha256 248839fe743c ; empreinte visuelle : plus proche 0.424"
       }
     },
-    "postId": "6a9dc316db182598e81fa5a4",
-    "scheduledFor": "2026-09-07T12:20:00",
-    "scheduledForUtc": "2026-09-07T10:20:00Z",
     "vignette_auto": true
   },
   {
     "id": "05-le-prix",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/05-le-prix.mp4",
     "caption": "Combien gagne vraiment un pisciniste aux États-Unis 💵🏊‍♂️\n#pisciniste #piscine #salaire #metier #etatsunis #argent #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -72,16 +66,13 @@
         "doublon": "sha256 94056c3064a8 ; empreinte visuelle : plus proche 0.376"
       }
     },
-    "postId": "6a9dc3797e027ab676abd378",
-    "scheduledFor": "2026-09-08T01:40:00",
-    "scheduledForUtc": "2026-09-07T23:40:00Z",
     "vignette_auto": true
   },
   {
     "id": "07-la-carte-bleue",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/07-la-carte-bleue.mp4",
     "caption": "Il m'a donné sa carte bancaire et son code le premier jour 💳🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #confiance #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -98,9 +89,6 @@
         "doublon": "sha256 26c4d48a4c1e ; empreinte visuelle : plus proche 0.409"
       }
     },
-    "postId": "6a9dc3aeaa7f666e221395d9",
-    "scheduledFor": "2026-09-08T08:20:00",
-    "scheduledForUtc": "2026-09-08T06:20:00Z",
     "vignette_auto": true
   },
   {
@@ -151,7 +139,7 @@
     "id": "02-le-radin",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/02-le-radin.mp4",
     "caption": "Six chambres, deux allemandes dans l'allée, et un chèque en bois 🏊‍♂️💸\n#pisciniste #piscine #histoire #storytime #etatsunis #client #pourtoi #satisfaisant",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -168,16 +156,13 @@
         "doublon": "sha256 fa9210a6a1ae ; empreinte visuelle : plus proche 0.370"
       }
     },
-    "postId": "6a9dc412028d8b81124c173a",
-    "scheduledFor": "2026-09-09T00:20:00",
-    "scheduledForUtc": "2026-09-08T22:20:00Z",
     "vignette_auto": true
   },
   {
     "id": "06-la-bague",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-pisciniste/06-la-bague.mp4",
     "caption": "J'ai remonté une alliance du fond du bassin. J'ai perdu le client 💍🏊‍♂️\n#pisciniste #piscine #histoire #storytime #etatsunis #pourtoi #satisfaisant #anecdote",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -194,9 +179,6 @@
         "doublon": "sha256 3522d8fa2395 ; empreinte visuelle : plus proche 0.414"
       }
     },
-    "postId": "6a9dc424f5713e33013626e1",
-    "scheduledFor": "2026-09-09T03:00:00",
-    "scheduledForUtc": "2026-09-09T01:00:00Z",
     "vignette_auto": false
   }
 ]

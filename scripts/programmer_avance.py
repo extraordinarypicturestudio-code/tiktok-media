@@ -87,7 +87,13 @@ CHAINES = [
     ("toprank", "queue-toprank.json", "toprank.tv1", 1, 4),
     ("mindshift", "queue-mindshift.json", "mindshift716", 2, 3),
     ("argile", "queue-argile.json", "argile.histoires", 4, 2),
-    ("pisciniste", "queue-pisciniste.json", "le.pisciniste7", 5, 2),
+    # EN PAUSE depuis le 2026-09-06, sur consigne : les huit videos en file
+    # portent la voix Charon, que l'utilisateur n'a pas validee. La chaine n'a
+    # encore jamais publie ; sortir avec la mauvaise voix fixerait son identite
+    # sonore des la premiere video. Quota a 0 = aucun creneau ne lui est
+    # attribue, et `degrouper_depots.py` retire ce qui avait deja ete depose.
+    # Remettre a 2 une fois la voix choisie et les videos refaites.
+    ("pisciniste", "queue-pisciniste.json", "le.pisciniste7", 5, 0),
 ]
 
 
