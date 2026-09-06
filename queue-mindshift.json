@@ -1051,5 +1051,137 @@
     },
     "postId": "6a97fa57310bd36cb0f76953",
     "publishedAt": "2026-09-02T10:29:24Z"
+  },
+  {
+    "id": "mindshift_uclaenglish_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclaenglish_v1.mp4",
+    "caption": "Raconter une histoire, c'est décider où va l'argent.\n\n#mindshift #motivation #inspiration #pourtoi #discours #storytelling #philanthropie",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "488348312b474f312b23885a85c314665a6e743fdcb6bdd8e1f63f8b0656f33a",
+      "date": "2026-09-06T07:59:55Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 71.6s, 15.6 Mo",
+        "audio": "volume moyen -19.8 dB ; contenu sonore : Une femme parle de la narration et de ses clients.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Une femme prononce un discours sur le storytelling et la philanthropie avec des sous-titres. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 488348312b47 ; empreinte visuelle : plus proche 0.150"
+      }
+    }
+  },
+  {
+    "id": "mindshift_uclacomm_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclacomm_v1.mp4",
+    "caption": "Avocat. Puis stagiaire au courrier. Il a tout repris à zéro.\n\n#mindshift #motivation #inspiration #pourtoi #discours #reconversion #carriere",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "42c80f9e4889ba5da38872e46c4d689c65a41ff6fac7d95ee2f2344b97510963",
+      "date": "2026-09-06T08:00:24Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 90.6s, 18.9 Mo",
+        "audio": "volume moyen -19.6 dB ; contenu sonore : Un homme parle de sa carrière et de ses choix professionnels.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Un homme en toge s'exprime sur son parcours professionnel et ses débuts au service du courrier. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 42c80f9e4889 ; empreinte visuelle : plus proche 0.260"
+      }
+    }
+  },
+  {
+    "id": "mindshift_timminchin_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_timminchin_v1.mp4",
+    "caption": "Regarde comment il parle au serveur. Tu sauras qui il est.\n\n#mindshift #motivation #inspiration #pourtoi #discours #timminchin #respect",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "2be9cc03d58bac2caa7c694ff115702cbe7402b37dabe09b11ad7d6a1faf6e12",
+      "date": "2026-09-06T08:00:31Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 57.6s, 16.0 Mo",
+        "audio": "volume moyen -19.7 dB ; contenu sonore : Un homme parle et donne des lecons sur le respect.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Tim Minchin donne un discours sur le respect et le comportement envers autrui. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 2be9cc03d58b ; empreinte visuelle : plus proche 0.276"
+      }
+    }
+  },
+  {
+    "id": "mindshift_denisechong_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denisechong_v1.mp4",
+    "caption": "Elle a rendu son nom à sa grand-mère, effacée de l'histoire familiale.\n\n#mindshift #motivation #inspiration #pourtoi #discours #histoire #famille #memoire",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "57f39f305daa31cd92208e43bf49a2f49c4ad426ec3d713402b850d7ee6be7a1",
+      "date": "2026-09-06T08:01:02Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 58.6s, 13.1 Mo",
+        "audio": "volume moyen -19.1 dB ; contenu sonore : Une femme raconte une histoire triste liée à sa famille.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : une femme en toge de remise de diplome raconte une histoire de famille avec des sous-titres | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 57f39f305daa ; empreinte visuelle : plus proche 0.286"
+      }
+    }
+  },
+  {
+    "id": "mindshift_nyudiscours_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_nyudiscours_v1.mp4",
+    "caption": "Un diagnostic à 20 ans. Puis toute une promo qui se demande à quoi sert une vie.\n\n#mindshift #motivation #inspiration #pourtoi #discours #etudiants #sens",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "57f0c800a7e9aec806002af59fc9f4b8e64ef0483f34b9f046ddb24861701288",
+      "date": "2026-09-06T08:01:10Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 79.6s, 27.1 Mo",
+        "audio": "volume moyen -18.7 dB ; contenu sonore : Une jeune femme partage son experience personnelle avec les troubles alimentaires.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Discours de remise de diplome par une jeune femme évoquant des epreuves personnelles et la crise sanitaire. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 57f0c800a7e9 ; empreinte visuelle : plus proche 0.329"
+      }
+    }
+  },
+  {
+    "id": "mindshift_martinsheen_v1",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_martinsheen_v1.mp4",
+    "caption": "Il est retourné à l'université à 66 ans. Il raconte.\n\n#mindshift #motivation #inspiration #pourtoi #discours #martinsheen #apprendre",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "99ec4fdea8f15ade437ae59eaaa9e5d5e21ab027ffa3a70e913240e093835d65",
+      "date": "2026-09-06T08:03:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 92.6s, 49.2 Mo",
+        "audio": "volume moyen -17.3 dB ; contenu sonore : Un homme parle en public dans une salle de spectacle.",
+        "visuel": "controle visuel fait au montage (avant incrustation de nos sous-titres) : non rejouable ici",
+        "contenu": "contenu vu : Martin Sheen en toque universitaire raconte qu'il est retourné étudier à l'université à l'âge de 66 ans. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 99ec4fdea8f1 ; empreinte visuelle : plus proche 0.177"
+      }
+    }
   }
 ]
