@@ -192,7 +192,7 @@
     "id": "mindshift_cook-question_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_cook-question_v1.mp4",
     "caption": "15 ANS POUR UNE RÉPONSE — Tim Cook\n\n#timcook #mindshift #motivation #mindset #fyp",
-    "status": "unconfirmed",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 1,
     "verification": {
@@ -217,7 +217,7 @@
       }
     },
     "postId": "6a8dd4997bbd0590b87ccf7f",
-    "error": "Statut non confirme (delai depasse (dernier statut connu : publishing)) - a verifier a la main"
+    "publishedAt": "2026-08-25T17:55:43.539Z"
   },
   {
     "id": "mindshift_cook-regard_v1",
@@ -1056,7 +1056,7 @@
     "id": "mindshift_uclaenglish_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclaenglish_v1.mp4",
     "caption": "Raconter une histoire, c'est décider où va l'argent.\n\n#mindshift #motivation #inspiration #pourtoi #discours #storytelling #philanthropie",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1073,14 +1073,15 @@
         "doublon": "sha256 488348312b47 ; empreinte visuelle : plus proche 0.150"
       }
     },
-    "postId": "6a9dabff612f43438f4302ff",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc2c85292f8ee1ac604f9",
+    "scheduledFor": "2026-09-07T03:00:00",
+    "scheduledForUtc": "2026-09-07T01:00:00Z"
   },
   {
     "id": "mindshift_uclacomm_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclacomm_v1.mp4",
     "caption": "Avocat. Puis stagiaire au courrier. Il a tout repris à zéro.\n\n#mindshift #motivation #inspiration #pourtoi #discours #reconversion #carriere",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1097,14 +1098,15 @@
         "doublon": "sha256 42c80f9e4889 ; empreinte visuelle : plus proche 0.260"
       }
     },
-    "postId": "6a9dac155ec2750ae0d9f6ab",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc2febdf0a107468c279e",
+    "scheduledFor": "2026-09-07T09:40:00",
+    "scheduledForUtc": "2026-09-07T07:40:00Z"
   },
   {
     "id": "mindshift_timminchin_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_timminchin_v1.mp4",
     "caption": "Regarde comment il parle au serveur. Tu sauras qui il est.\n\n#mindshift #motivation #inspiration #pourtoi #discours #timminchin #respect",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1121,14 +1123,15 @@
         "doublon": "sha256 2be9cc03d58b ; empreinte visuelle : plus proche 0.276"
       }
     },
-    "postId": "6a9dac2b612f43438f430cca",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc333bb7e97f501d12e3b",
+    "scheduledFor": "2026-09-07T16:20:00",
+    "scheduledForUtc": "2026-09-07T14:20:00Z"
   },
   {
     "id": "mindshift_denisechong_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denisechong_v1.mp4",
     "caption": "Elle a rendu son nom à sa grand-mère, effacée de l'histoire familiale.\n\n#mindshift #motivation #inspiration #pourtoi #discours #histoire #famille #memoire",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1144,13 +1147,16 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 57f39f305daa ; empreinte visuelle : plus proche 0.286"
       }
-    }
+    },
+    "postId": "6a9dc3617e027ab676abcf66",
+    "scheduledFor": "2026-09-07T23:00:00",
+    "scheduledForUtc": "2026-09-07T21:00:00Z"
   },
   {
     "id": "mindshift_nyudiscours_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_nyudiscours_v1.mp4",
     "caption": "Un diagnostic à 20 ans. Puis toute une promo qui se demande à quoi sert une vie.\n\n#mindshift #motivation #inspiration #pourtoi #discours #etudiants #sens",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1166,13 +1172,16 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 57f0c800a7e9 ; empreinte visuelle : plus proche 0.329"
       }
-    }
+    },
+    "postId": "6a9dc396aa7f666e22139079",
+    "scheduledFor": "2026-09-08T05:40:00",
+    "scheduledForUtc": "2026-09-08T03:40:00Z"
   },
   {
     "id": "mindshift_martinsheen_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_martinsheen_v1.mp4",
     "caption": "Il est retourné à l'université à 66 ans. Il raconte.\n\n#mindshift #motivation #inspiration #pourtoi #discours #martinsheen #apprendre",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1188,6 +1197,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 99ec4fdea8f1 ; empreinte visuelle : plus proche 0.177"
       }
-    }
+    },
+    "postId": "6a9dc3c020900e1b07919e18",
+    "scheduledFor": "2026-09-08T11:00:00",
+    "scheduledForUtc": "2026-09-08T09:00:00Z"
   }
 ]

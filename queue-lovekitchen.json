@@ -3,7 +3,7 @@
     "id": "40-tenderspoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/40-tenderspoulet.mp4",
     "caption": "Il allait commander, il a reposé son téléphone 🍗🔥\n\n#poulet #tenders #panure #recette #cuisine #friture #recettefacile #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -20,8 +20,8 @@
         "doublon": "sha256 4e08a52f3c6f ; empreinte visuelle : plus proche 0.393"
       }
     },
-    "postId": "6a9ca295c5de49a34698eb32",
-    "error": "Post residuel bloquant supprime (0) - a retenter"
+    "postId": "6a9d4bf18da12cad26470d9d",
+    "publishedAt": "2026-09-06T11:18:41.680Z"
   },
   {
     "id": "42-tortillasgratinees",
@@ -53,7 +53,7 @@
     "id": "43-gateausanscuisson",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/43-gateausanscuisson.mp4",
     "caption": "Ma sœur disait qu'un gâteau sans cuisson ne tient jamais 🍫🫐\n\n#gateau #sanscuisson #chocolat #dessert #recette #cuisine #recettefacile #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -70,14 +70,14 @@
         "doublon": "sha256 1090782ed911 ; empreinte visuelle : plus proche 0.391"
       }
     },
-    "postId": "6a9ca2b1c5de49a34698ecdb",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9d4becbf90d70541974b53",
+    "publishedAt": "2026-09-06T11:18:40.401Z"
   },
   {
     "id": "41-ailespoulettomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/41-ailespoulettomate.mp4",
     "caption": "Ma belle-mère disait que c'était un plat de bar 🍗🍅\n\n#ailesdepoulet #poulet #recette #cuisine #four #recettefacile #pourtoi #bellemere",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -94,7 +94,7 @@
         "doublon": "sha256 1ccc36c22ad8 ; empreinte visuelle : plus proche 0.385"
       }
     },
-    "postId": "6a9ca2cc94a194e69f17e873",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9d4be7bf90d705419748f3",
+    "publishedAt": "2026-09-06T11:18:35.426Z"
   }
 ]

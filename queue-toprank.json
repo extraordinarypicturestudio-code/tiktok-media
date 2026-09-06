@@ -309,7 +309,7 @@
     "id": "tr_20260907_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1300.mp4",
     "caption": "Held together right up to the end 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #heldtogether",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -326,14 +326,14 @@
         "doublon": "sha256 d625ff9e22d3 ; empreinte visuelle : plus proche 0.419"
       }
     },
-    "postId": "6a9da8d6dc51c39ffefb0f6a",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc2bb00013ab5b73a7919",
+    "scheduledForUtc": "2026-09-06T23:40:00.000Z"
   },
   {
     "id": "tr_20260907_1830",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1830.mp4",
     "caption": "The plan was solid, apparently 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #theplan",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -350,14 +350,14 @@
         "doublon": "sha256 67e49ec6a61e ; empreinte visuelle : plus proche 0.388"
       }
     },
-    "postId": "6a9da8f086cad1ad49fc45d0",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc2f2db182598e81f9d5a",
+    "scheduledForUtc": "2026-09-07T06:20:00.000Z"
   },
   {
     "id": "tr_20260908_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1300.mp4",
     "caption": "He was so sure about this 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #soconfident",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -374,14 +374,14 @@
         "doublon": "sha256 b6154b40e9da ; empreinte visuelle : plus proche 0.443"
       }
     },
-    "postId": "6a9da909254586cc6c0db023",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9dc327dab9ead712ca98b8",
+    "scheduledForUtc": "2026-09-07T13:00:00.000Z"
   },
   {
     "id": "tr_20260908_1830",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1830.mp4",
     "caption": "The landing was the hard part 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #landing",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -397,13 +397,15 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 2b864f3c542d ; empreinte visuelle : plus proche 0.388"
       }
-    }
+    },
+    "postId": "6a9dc344bb7e97f501d13218",
+    "scheduledForUtc": "2026-09-07T17:00:00.000Z"
   },
   {
     "id": "tr_20260908_2100",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_2100.mp4",
     "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -419,13 +421,15 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 1763d775e83c ; empreinte visuelle : plus proche 0.418"
       }
-    }
+    },
+    "postId": "6a9dc3557e027ab676abcb34",
+    "scheduledForUtc": "2026-09-07T19:40:00.000Z"
   },
   {
     "id": "tr_20260909_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260909_1300.mp4",
     "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -441,6 +445,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7c5f394626e1 ; empreinte visuelle : plus proche 0.448"
       }
-    }
+    },
+    "postId": "6a9dc38baa7f666e22138ccd",
+    "scheduledForUtc": "2026-09-08T02:20:00.000Z"
   }
 ]

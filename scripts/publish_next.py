@@ -25,7 +25,20 @@ ZERNIO_BASE = "https://zernio.com/api/v1"
 REGISTRE = "used-clips-hashes.json"
 
 # Nombre de videos differentes tentees dans un meme creneau avant d'abandonner.
-MAX_CANDIDATS_PAR_RUN = 3
+#
+# Ramene de 3 a 1 le 2026-09-06. Sur les 300 dernieres tentatives, celles qui
+# n'avaient AUCUNE autre tentative de notre part dans les 30 minutes precedentes
+# reussissent a 98 % (210/215), et a 90-100 % A CHAQUE HEURE DU JOUR ; toutes
+# tentatives confondues on tombe a 87 %, et a 48 % sur la tranche de 17h UTC.
+# Autrement dit, les refus "at capacity" sont provoques par nos propres envois
+# rapprochees, et enchainer trois candidats dans la meme minute est le plus sur
+# moyen de perdre les trois - ce qui est arrive 25 fois d'affilee ce jour-la.
+#
+# La raison d'etre du reglage a 3 (ne pas perdre un creneau a cause d'un seul
+# clip defectueux) est couverte autrement depuis que les sorties sont deposees
+# a l'avance : `programmer_avance.py` rejoue toutes les barrieres au moment du
+# depot, donc un clip defectueux est ecarte avant d'occuper un creneau.
+MAX_CANDIDATS_PAR_RUN = 1
 
 # Marque laissee par preparer_publication.py dans la note d'une entree validee.
 # Sert de preuve, au moment de publier, que le clip est passe par le controle

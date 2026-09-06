@@ -1,0 +1,94 @@
+name: Programmer les sorties a l'avance
+
+# POURQUOI CE WORKFLOW REMPLACE LA PUBLICATION IMMEDIATE
+# ------------------------------------------------------
+# Les workflows publish-*.yml appelaient publish_next.py, qui publie DANS LA
+# MINUTE (`publishNow: true`) et tente jusqu'a trois candidats d'affilee en cas
+# de refus. Six chaines faisaient donc, plusieurs fois par jour, des paquets de
+# tentatives rapprochees - auxquels s'ajoutaient les relances du rattrapage.
+#
+# Mesure du 2026-09-06 sur les 300 dernieres tentatives, en ne retenant que
+# celles sans AUCUNE autre tentative de notre part dans les 30 minutes
+# precedentes :
+#
+#     tentatives ISOLEES : 210 / 215 reussies  (98 %), et 90 a 100 % A CHAQUE
+#                          HEURE DU JOUR, minuit comme 19h
+#     toutes tentatives  : 260 / 300 reussies  (87 %), 48 % a 17h UTC
+#
+# Ce n'est donc pas l'heure qui fait refuser une publication - c'est d'en
+# tenter plusieurs coup sur coup. Ce workflow depose les videos a l'avance chez
+# Zernio, sur une grille commune espacee de 80 minutes : plus aucune rafale
+# possible, et un creneau GitHub manque (les evenements `schedule` sont
+# massivement retardes ou perdus) ne coute plus une sortie puisque le post est
+# deja depose.
+on:
+  schedule:
+    # Une fois par jour, a une heure ronde evitee par la grille de depot.
+    - cron: "40 4 * * *"
+  workflow_dispatch:
+    inputs:
+      jours:
+        description: "Horizon de programmation, en jours"
+        default: "14"
+      essai:
+        description: "true = n'envoie rien, affiche seulement la grille"
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  # Deux executions simultanees deposeraient deux videos sur le meme creneau.
+  group: programmation
+  cancel-in-progress: false
+
+jobs:
+  programmer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      # Aligner les files AVANT de deposer : une video deja en ligne mais
+      # restee "pending" se ferait refuser par un 409 "already posted to this
+      # account within the last 24 hours", et occuperait un creneau pour rien.
+      - name: Aligner les files sur Zernio
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+        run: python3 scripts/reconcilier_programmes.py
+
+      - name: Deposer les prochaines sorties
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+          # Sert uniquement au choix de la vignette. Absente = vignette par
+          # defaut a 2s, jamais bloquant.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 scripts/programmer_avance.py \
+            --jours "${{ github.event.inputs.jours || '14' }}" \
+            ${{ github.event.inputs.essai == 'true' && '--essai' || '' }}
+
+      - name: Enregistrer les files
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A -- queue-*.json used-clips-hashes.json clips/ clips-argile/ \
+            clips-lovekitchen/ clips-mindshift/ clips-pisciniste/ clips-toprank/
+          git diff --cached --quiet && exit 0
+          git commit -m "Programmation des sorties a l'avance [skip ci]"
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser les files apres 5 essais"
+          exit 1

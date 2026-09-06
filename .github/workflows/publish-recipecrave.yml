@@ -9,15 +9,24 @@ name: Publish recipe_crave
 #   - 23h15 UTC = 19h15 EDT       (creneau soir US, prime time)
 # EDT = UTC-4 / CEST = UTC+2 (ete, en vigueur en aout). A ajuster de 1h
 # chacun en hiver (EST = UTC-5, CET = UTC+1).
-# FENETRE DE SATURATION TIKTOK — mesure du 2026-09-05 sur 5 comptes et
-# une centaine de publications : les HUIT refus "TikTok direct posting is
-# at capacity" de tout l'historique tombent entre 17h et 20h UTC (19h-22h
-# Paris). Aucune autre heure n'en compte un seul.
+# SATURATION TIKTOK — CE BLOC DISAIT LE CONTRAIRE JUSQU'AU 2026-09-06.
 #
-# La capacite par API est partagee entre tous les utilisateurs de Zernio et
-# s'epuise au pic du soir europeen. Aucune relance ne cree de la capacite :
-# la seule correction qui tienne est de ne pas publier dans cette fenetre.
-# NE PAS y replacer un creneau.
+# Il affirmait que les refus "TikTok direct posting is at capacity" tombaient
+# tous entre 17h et 20h UTC, et concluait "NE PAS y replacer un creneau".
+# C'etait une correlation lue a l'envers : c'est aussi la tranche ou nos six
+# workflows et le rattrapage envoyaient le plus, et le plus vite.
+#
+# Mesure sur les 300 dernieres tentatives, en separant celles qui n'avaient
+# AUCUNE autre tentative de notre part dans les 30 minutes precedentes :
+#
+#     ISOLEES : 210 / 215 reussies (98 %), et 90 a 100 % A CHAQUE HEURE
+#     TOUTES  : 260 / 300 reussies (87 %), 48 % sur la tranche de 17h UTC
+#
+# Une tentative isolee passe a toute heure, minuit comme 19h. Ce qui fait
+# echouer, c'est la rafale. Les sorties sont donc deposees a l'avance sur une
+# grille espacee de 80 minutes (programmer-avance.yml) et ce workflow-ci ne
+# sert plus que de filet : il ne trouve du "pending" que si une video est
+# revenue en file.
 on:
   schedule:
     - cron: "15 11 * * *"

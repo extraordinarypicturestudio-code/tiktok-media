@@ -80,9 +80,18 @@ REGISTRE = ICI / "relances_saturation.json"
 # premiere etait le fuseau (voir `_quand`), mais rien n'empechait la rafale.
 PAR_EXECUTION_MAX = 1
 
-RELANCES_MAX = 12       # ~4h d'essais avant de basculer en brouillon
+RELANCES_MAX = 12       # ~8h d'essais avant de basculer en brouillon
 AGE_MAX_H = 36.0        # au-dela : abandon
-DELAI_MIN = 20          # minutes avant la nouvelle tentative
+
+# 40 minutes, et non 20, depuis le 2026-09-06. Les sorties sont desormais
+# deposees a l'avance sur une grille espacee de 80 minutes
+# (`programmer_avance.py`), parce que la mesure montre qu'une tentative isolee
+# de plus de 30 minutes reussit a 98 % alors qu'une tentative rapprochee echoue
+# souvent. Une relance a +20 min retombait a 20 minutes de l'envoi qu'elle
+# rattrape : elle reproduisait exactement la rafale qu'on cherche a supprimer.
+# A +40 min elle tombe au MILIEU de l'intervalle, a 40 minutes de l'essai
+# precedent comme du creneau suivant.
+DELAI_MIN = 40          # minutes avant la nouvelle tentative
 
 MOTIF = "at capacity"   # signature du refus de saturation
 

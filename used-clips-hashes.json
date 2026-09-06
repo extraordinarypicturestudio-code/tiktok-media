@@ -1574,5 +1574,45 @@
     "file": "clips-mindshift/mindshift_denzelwashington_v1.mp4",
     "status": "published",
     "publishedAt": "2026-09-02T10:29:24Z"
+  },
+  {
+    "hash": "597d8a672ffc2b6238834ea2bad91d6a",
+    "id": "40-tenderspoulet",
+    "channel": "love_kitchen97",
+    "file": "clips-lovekitchen/40-tenderspoulet.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-06T11:18:41.680Z"
+  },
+  {
+    "hash": "be72e103a81f985134f2746edca62ae3",
+    "id": "43-gateausanscuisson",
+    "channel": "love_kitchen97",
+    "file": "clips-lovekitchen/43-gateausanscuisson.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-06T11:18:40.401Z"
+  },
+  {
+    "hash": "d9d0f0ddf70ba5c64b6eb4d812d08baf",
+    "id": "41-ailespoulettomate",
+    "channel": "love_kitchen97",
+    "file": "clips-lovekitchen/41-ailespoulettomate.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-06T11:18:35.426Z"
+  },
+  {
+    "hash": "e578943d9b71f16d4236e62bb436e42f",
+    "id": "mindshift_cook-question_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_cook-question_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-08-25T17:55:43.539Z"
+  },
+  {
+    "hash": "ae9679d74e39041099f35d527e5f7012",
+    "id": "a13-piece-ratee",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a13-piece-ratee.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-06T06:28:15.188Z"
   }
 ]

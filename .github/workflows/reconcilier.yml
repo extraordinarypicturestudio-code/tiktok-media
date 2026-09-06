@@ -1,0 +1,57 @@
+name: Aligner les files sur Zernio
+
+# Depuis que les videos sont deposees a l'avance, la publication n'a plus lieu
+# pendant le run qui la declenche : Zernio garde le post et sollicite TikTok des
+# heures plus tard. Personne ne repasse ensuite ecrire le resultat dans la file.
+#
+# Sans ce workflow, une video sortie hier resterait "scheduled" pour toujours,
+# son fichier resterait dans le depot, et son empreinte ne serait jamais
+# enregistree - donc la meme source pourrait etre retelechargee sous un autre
+# nom. Le cas s'est deja produit AVANT la programmation a l'avance : le
+# 2026-09-06, trois love_kitchen publiees a 11h18 par le rattrapage etaient
+# encore "pending" dans la file le soir meme.
+on:
+  schedule:
+    # Toutes les deux heures, decale de l'heure ronde et des creneaux de depot.
+    # Heures enumerees plutot que "1/2" : GitHub n'accepte que la syntaxe cron
+    # POSIX, ou le pas s'ecrit "*/2" et ne peut pas partir d'une heure impaire.
+    - cron: "50 1,3,5,7,9,11,13,15,17,19,21,23 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: programmation
+  cancel-in-progress: false
+
+jobs:
+  aligner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Aligner les files sur Zernio
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+        run: python3 scripts/reconcilier_programmes.py
+
+      - name: Enregistrer les files
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A -- queue-*.json used-clips-hashes.json clips/ clips-argile/ \
+            clips-lovekitchen/ clips-mindshift/ clips-pisciniste/ clips-toprank/
+          git diff --cached --quiet && exit 0
+          git commit -m "Alignement des files sur Zernio [skip ci]"
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser les files apres 5 essais"
+          exit 1
