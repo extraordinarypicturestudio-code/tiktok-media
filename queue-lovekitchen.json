@@ -21,7 +21,7 @@
       }
     },
     "postId": "6a9ca295c5de49a34698eb32",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "error": "Post residuel bloquant supprime (6) - a retenter"
   },
   {
     "id": "42-tortillasgratinees",
