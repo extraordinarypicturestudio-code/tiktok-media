@@ -429,7 +429,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 1763d775e83c ; empreinte visuelle : plus proche 0.418"
       }
-    }
+    },
+    "postId": "6a9df4cc0c399e3fd1c3857b",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "tr_20260909_1300",
