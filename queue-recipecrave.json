@@ -2107,7 +2107,7 @@
     "id": "rc_salade_brocoli_grenade_45",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_brocoli_grenade_45.mp4",
     "caption": "Brocoli, poulet, grenade et noix. La salade qui tient au corps.\n\n#salade #brocoli #grenade #poulet #noix #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2126,8 +2126,7 @@
     },
     "vignette_auto": true,
     "postId": "6a9e88112315d43d63ad7b88",
-    "scheduledFor": "2026-09-07T12:20:00",
-    "scheduledForUtc": "2026-09-07T10:20:00Z"
+    "publishedAt": "2026-09-07T10:21:22.612Z"
   },
   {
     "id": "rc_gateau_choco_cheesecake_46",

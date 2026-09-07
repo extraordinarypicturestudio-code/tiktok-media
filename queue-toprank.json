@@ -309,7 +309,7 @@
     "id": "tr_20260907_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1300.mp4",
     "caption": "Held together right up to the end 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #heldtogether",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -328,8 +328,7 @@
     },
     "vignette_auto": true,
     "postId": "6a9e882117563eda36377f04",
-    "scheduledFor": "2026-09-07T13:40:00",
-    "scheduledForUtc": "2026-09-07T11:40:00Z"
+    "publishedAt": "2026-09-07T11:41:16.440Z"
   },
   {
     "id": "tr_20260907_1830",
@@ -360,7 +359,7 @@
     "id": "tr_20260908_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1300.mp4",
     "caption": "He was so sure about this 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #soconfident",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -378,9 +377,8 @@
       }
     },
     "postId": "6a9dc327dab9ead712ca98b8",
-    "scheduledForUtc": "2026-09-07T13:00:00.000Z",
-    "scheduledFor": "2026-09-07T15:00:00",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T13:03:07.485Z"
   },
   {
     "id": "tr_20260908_1830",

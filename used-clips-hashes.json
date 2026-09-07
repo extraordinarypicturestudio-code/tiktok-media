@@ -1686,5 +1686,37 @@
     "file": "clips-argile/a15_client_du_jeudi.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T09:01:11.090Z"
+  },
+  {
+    "hash": "688479f3f5c0b63431f30aba0e50e84d",
+    "id": "rc_salade_brocoli_grenade_45",
+    "channel": "recipe_crave",
+    "file": "clips/rc_salade_brocoli_grenade_45.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T10:21:22.612Z"
+  },
+  {
+    "hash": "5394c1ff2d7e16221a0373bdecb61174",
+    "id": "tr_20260907_1300",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260907_1300.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T11:41:16.440Z"
+  },
+  {
+    "hash": "91e57a0ef3576ba97799d036b61a19c1",
+    "id": "tr_20260908_1300",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260908_1300.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T13:03:07.485Z"
+  },
+  {
+    "hash": "8ef04c03ebe7305f1ced276378353a0c",
+    "id": "mindshift_denisechong_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_denisechong_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T10:22:23.207Z"
   }
 ]
