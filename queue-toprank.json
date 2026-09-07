@@ -413,9 +413,9 @@
     "id": "tr_20260908_2100",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_2100.mp4",
     "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "1763d775e83c163a68b321dfc25719cbdccdb4882dd1084f97d3e10eb18e13a8",
@@ -430,8 +430,8 @@
         "doublon": "sha256 1763d775e83c ; empreinte visuelle : plus proche 0.418"
       }
     },
-    "postId": "6a9df4cc0c399e3fd1c3857b",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9e0ab6e0fe5d6686efab8d",
+    "publishedAt": "2026-09-07T00:52:50Z"
   },
   {
     "id": "tr_20260909_1300",
