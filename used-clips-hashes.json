@@ -1646,5 +1646,29 @@
     "file": "clips-mindshift/mindshift_uclaenglish_v1.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T01:02:49.803Z"
+  },
+  {
+    "hash": "3ca4860c4a739b8ba876524d0906284b",
+    "id": "rc_pizza_plaque_fromage_51",
+    "channel": "recipe_crave",
+    "file": "clips/rc_pizza_plaque_fromage_51.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T05:00:26.546Z"
+  },
+  {
+    "hash": "d2682eb1b929afe936b048cef13e3d18",
+    "id": "tr_20260907_1830",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260907_1830.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T06:21:18.759Z"
+  },
+  {
+    "hash": "1315a1dd2f371e8d191060018a0b0b9b",
+    "id": "a14_tasse_soeur",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a14_tasse_soeur.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T02:21:35.412Z"
   }
 ]

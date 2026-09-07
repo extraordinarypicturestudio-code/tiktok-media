@@ -27,7 +27,7 @@
     "id": "a14_tasse_soeur",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a14_tasse_soeur.mp4",
     "caption": "Ma sœur trouvait que je perdais mon temps avec la terre 🏺\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #soeurs #asmr #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -45,9 +45,8 @@
       }
     },
     "postId": "6a9dc2d400013ab5b73a821f",
-    "scheduledFor": "2026-09-07T04:20:00",
-    "scheduledForUtc": "2026-09-07T02:20:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T02:21:35.412Z"
   },
   {
     "id": "a15_client_du_jeudi",

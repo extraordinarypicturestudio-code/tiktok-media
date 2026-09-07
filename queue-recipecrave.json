@@ -2107,7 +2107,7 @@
     "id": "rc_salade_brocoli_grenade_45",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_brocoli_grenade_45.mp4",
     "caption": "Brocoli, poulet, grenade et noix. La salade qui tient au corps.\n\n#salade #brocoli #grenade #poulet #noix #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2124,9 +2124,6 @@
         "doublon": "sha256 5c663a907068 ; empreinte visuelle : plus proche 0.379"
       }
     },
-    "postId": "6a9dc2af069e98edde38a141",
-    "scheduledForUtc": "2026-09-06T22:20:00.000Z",
-    "scheduledFor": "2026-09-07T00:20:00",
     "vignette_auto": true
   },
   {
@@ -2237,7 +2234,7 @@
     "id": "rc_pizza_plaque_fromage_51",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pizza_plaque_fromage_51.mp4",
     "caption": "Une pâte versée à la louche, garnie, et au four. La pizza de plaque du dimanche soir.\n\n#pizza #fromage #olives #cornichons #recette #four #apero #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2254,8 +2251,8 @@
         "doublon": "sha256 afbe30beed20 ; empreinte visuelle : plus proche 0.344"
       }
     },
-    "postId": "6a9de2f6bb37e39780539fea",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9e3b3e1a2529bf66355d3c",
+    "publishedAt": "2026-09-07T05:00:26.546Z"
   },
   {
     "id": "rc_gateau_fruits_crumble_53",

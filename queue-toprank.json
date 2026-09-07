@@ -332,7 +332,7 @@
     "id": "tr_20260907_1830",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1830.mp4",
     "caption": "The plan was solid, apparently 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #theplan",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -350,9 +350,8 @@
       }
     },
     "postId": "6a9dc2f2db182598e81f9d5a",
-    "scheduledForUtc": "2026-09-07T06:20:00.000Z",
-    "scheduledFor": "2026-09-07T08:20:00",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T06:21:18.759Z"
   },
   {
     "id": "tr_20260908_1300",
