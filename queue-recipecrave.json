@@ -2099,7 +2099,9 @@
         "doublon": "sha256 45ec77b0982a ; empreinte visuelle : plus proche 0.355"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6a9dfff8de4bb2b7dc9d6d95",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "rc_salade_brocoli_grenade_45",
