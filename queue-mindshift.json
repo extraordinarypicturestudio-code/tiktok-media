@@ -1150,7 +1150,9 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 57f39f305daa ; empreinte visuelle : plus proche 0.286"
       }
-    }
+    },
+    "postId": "6a9e01cf7e8dcd1cb4994275",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "mindshift_nyudiscours_v1",
