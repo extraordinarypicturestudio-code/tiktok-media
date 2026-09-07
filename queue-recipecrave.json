@@ -2082,9 +2082,9 @@
     "id": "rc_brownie_cheesecake_44",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brownie_cheesecake_44.mp4",
     "caption": "Brownie fourré au fromage frais. Le cœur reste coulant.\n\n#brownie #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
-    "attempts": 0,
+    "attempts": 1,
     "verification": {
       "verdict": "OK",
       "sha256": "45ec77b0982a8211c10f93c183b5660a285f12e16281ebd0eaf7a03b93d9f9c2",
@@ -2100,8 +2100,8 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6a9dfff8de4bb2b7dc9d6d95",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9e0cd75ab85791c20bcb97",
+    "publishedAt": "2026-09-07T01:01:57Z"
   },
   {
     "id": "rc_salade_brocoli_grenade_45",
