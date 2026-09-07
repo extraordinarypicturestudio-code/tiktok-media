@@ -1638,5 +1638,13 @@
     "file": "clips/rc_brownie_cheesecake_44.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T01:01:57Z"
+  },
+  {
+    "hash": "11fea238f64885d66eb134b55d3c59d1",
+    "id": "mindshift_uclaenglish_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_uclaenglish_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T01:02:49.803Z"
   }
 ]

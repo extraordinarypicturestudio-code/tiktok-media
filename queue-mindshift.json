@@ -1056,7 +1056,7 @@
     "id": "mindshift_uclaenglish_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclaenglish_v1.mp4",
     "caption": "Raconter une histoire, c'est décider où va l'argent.\n\n#mindshift #motivation #inspiration #pourtoi #discours #storytelling #philanthropie",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1074,9 +1074,8 @@
       }
     },
     "postId": "6a9dc2c85292f8ee1ac604f9",
-    "scheduledFor": "2026-09-07T03:00:00",
-    "scheduledForUtc": "2026-09-07T01:00:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T01:02:49.803Z"
   },
   {
     "id": "mindshift_uclacomm_v1",
