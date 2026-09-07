@@ -384,7 +384,7 @@
     "id": "tr_20260908_1830",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260908_1830.mp4",
     "caption": "The landing was the hard part 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #landing",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -402,9 +402,8 @@
       }
     },
     "postId": "6a9dc344bb7e97f501d13218",
-    "scheduledForUtc": "2026-09-07T17:00:00.000Z",
-    "scheduledFor": "2026-09-07T19:00:00",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T17:02:00.866Z"
   },
   {
     "id": "tr_20260908_2100",

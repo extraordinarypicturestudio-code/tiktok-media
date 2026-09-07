@@ -2260,7 +2260,7 @@
     "id": "rc_gateau_fruits_crumble_53",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_gateau_fruits_crumble_53.mp4",
     "caption": "Une pâte liquide, des fruits jetés dessus, et un crumble par-dessus. Rien à étaler.\n\n#gateau #fruits #crumble #myrtilles #fraises #recette #dessert #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2279,14 +2279,13 @@
     },
     "postId": "6a9e8834640aff1cda4ed8fd",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-07T17:40:00",
-    "scheduledForUtc": "2026-09-07T15:40:00Z"
+    "publishedAt": "2026-09-07T15:41:22.211Z"
   },
   {
     "id": "rc_napoleon_feuillete_54",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_napoleon_feuillete_54.mp4",
     "caption": "Trente carrés de pâte feuilletée, une crème pâtissière, et un mille-feuille monté à la main.\n\n#millefeuille #napoleon #patefeuilletee #cremepatissiere #patisserie #recette #dessert #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2305,8 +2304,7 @@
     },
     "postId": "6a9e884723e3b2b4fe13d5f6",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-07T20:20:00",
-    "scheduledForUtc": "2026-09-07T18:20:00Z"
+    "publishedAt": "2026-09-07T18:23:21.446Z"
   },
   {
     "id": "rc_spaghetti_bolognaise_55",

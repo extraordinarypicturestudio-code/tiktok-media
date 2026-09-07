@@ -1106,7 +1106,7 @@
     "id": "mindshift_timminchin_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_timminchin_v1.mp4",
     "caption": "Regarde comment il parle au serveur. Tu sauras qui il est.\n\n#mindshift #motivation #inspiration #pourtoi #discours #timminchin #respect",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1124,9 +1124,8 @@
       }
     },
     "postId": "6a9dc333bb7e97f501d12e3b",
-    "scheduledFor": "2026-09-07T16:20:00",
-    "scheduledForUtc": "2026-09-07T14:20:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T14:22:11.667Z"
   },
   {
     "id": "mindshift_denisechong_v1",

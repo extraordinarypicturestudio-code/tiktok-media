@@ -1718,5 +1718,37 @@
     "file": "clips-mindshift/mindshift_denisechong_v1.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T10:22:23.207Z"
+  },
+  {
+    "hash": "dc7a19d681f397d88244de6ab77b63b9",
+    "id": "rc_gateau_fruits_crumble_53",
+    "channel": "recipe_crave",
+    "file": "clips/rc_gateau_fruits_crumble_53.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T15:41:22.211Z"
+  },
+  {
+    "hash": "2849369004e6024962e12f0170ecb6f6",
+    "id": "rc_napoleon_feuillete_54",
+    "channel": "recipe_crave",
+    "file": "clips/rc_napoleon_feuillete_54.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T18:23:21.446Z"
+  },
+  {
+    "hash": "934b24836cf7337ccdbb76e2a61acd62",
+    "id": "tr_20260908_1830",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260908_1830.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T17:02:00.866Z"
+  },
+  {
+    "hash": "462fd54594fb6419bef20cfd8acb47f8",
+    "id": "mindshift_timminchin_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_timminchin_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T14:22:11.667Z"
   }
 ]
