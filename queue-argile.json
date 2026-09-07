@@ -52,7 +52,7 @@
     "id": "a15_client_du_jeudi",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a15_client_du_jeudi.mp4",
     "caption": "Neuf jeudis de suite il a commandé le même bol 🏺☕\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #rencontre #asmr #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -70,9 +70,8 @@
       }
     },
     "postId": "6a9dc30adab9ead712ca9116",
-    "scheduledFor": "2026-09-07T11:00:00",
-    "scheduledForUtc": "2026-09-07T09:00:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T09:01:11.090Z"
   },
   {
     "id": "a16_lorage",

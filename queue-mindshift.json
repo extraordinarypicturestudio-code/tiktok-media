@@ -1081,7 +1081,7 @@
     "id": "mindshift_uclacomm_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_uclacomm_v1.mp4",
     "caption": "Avocat. Puis stagiaire au courrier. Il a tout repris à zéro.\n\n#mindshift #motivation #inspiration #pourtoi #discours #reconversion #carriere",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1099,9 +1099,8 @@
       }
     },
     "postId": "6a9dc2febdf0a107468c279e",
-    "scheduledFor": "2026-09-07T09:40:00",
-    "scheduledForUtc": "2026-09-07T07:40:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T07:42:31.223Z"
   },
   {
     "id": "mindshift_timminchin_v1",
@@ -1133,7 +1132,7 @@
     "id": "mindshift_denisechong_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_denisechong_v1.mp4",
     "caption": "Elle a rendu son nom à sa grand-mère, effacée de l'histoire familiale.\n\n#mindshift #motivation #inspiration #pourtoi #discours #histoire #famille #memoire",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1150,8 +1149,9 @@
         "doublon": "sha256 57f39f305daa ; empreinte visuelle : plus proche 0.286"
       }
     },
-    "postId": "6a9e01cf7e8dcd1cb4994275",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6a9e869fd832312691c82c6a",
+    "scheduledForUtc": "2026-09-07T10:20:45.000Z",
+    "scheduledFor": "2026-09-07T12:20:45"
   },
   {
     "id": "mindshift_nyudiscours_v1",

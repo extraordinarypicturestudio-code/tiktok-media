@@ -1670,5 +1670,21 @@
     "file": "clips-argile/a14_tasse_soeur.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T02:21:35.412Z"
+  },
+  {
+    "hash": "f53eab12cb194a58e064072d55bcd182",
+    "id": "mindshift_uclacomm_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_uclacomm_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T07:42:31.223Z"
+  },
+  {
+    "hash": "6d90d8119c9a398b460133cce650521c",
+    "id": "a15_client_du_jeudi",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a15_client_du_jeudi.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T09:01:11.090Z"
   }
 ]

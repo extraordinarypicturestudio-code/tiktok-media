@@ -309,7 +309,7 @@
     "id": "tr_20260907_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260907_1300.mp4",
     "caption": "Held together right up to the end 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #heldtogether",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -326,7 +326,10 @@
         "doublon": "sha256 d625ff9e22d3 ; empreinte visuelle : plus proche 0.419"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6a9e882117563eda36377f04",
+    "scheduledFor": "2026-09-07T13:40:00",
+    "scheduledForUtc": "2026-09-07T11:40:00Z"
   },
   {
     "id": "tr_20260907_1830",
