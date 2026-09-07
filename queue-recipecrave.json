@@ -2310,7 +2310,7 @@
     "id": "rc_spaghetti_bolognaise_55",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_spaghetti_bolognaise_55.mp4",
     "caption": "Des tomates entières pelées écrasées à la spatule. La bolognaise sans boîte de concentré.\n\n#spaghetti #bolognaise #tomates #viandehachee #pates #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2329,8 +2329,7 @@
     },
     "postId": "6a9e885cc8ed68baa1b111bd",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-07T21:40:00",
-    "scheduledForUtc": "2026-09-07T19:40:00Z"
+    "publishedAt": "2026-09-07T19:41:17.430Z"
   },
   {
     "id": "rc_charlotte_fraises_56",
