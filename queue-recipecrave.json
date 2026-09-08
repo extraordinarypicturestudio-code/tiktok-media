@@ -2385,7 +2385,7 @@
     "id": "rc_salade_concombre_grenade_58",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_concombre_grenade_58.mp4",
     "caption": "Le concombre taillé en rubans à l'économe. Avocat, grenade et noix par-dessus.\n\n#salade #concombre #avocat #grenade #noix #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2404,8 +2404,7 @@
     },
     "postId": "6a9e88954511c9e8bbfbe800",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-08T08:20:00",
-    "scheduledForUtc": "2026-09-08T06:20:00Z"
+    "publishedAt": "2026-09-08T06:21:04.236Z"
   },
   {
     "id": "rc_brochettes_poulet_pommesdeterre_59",

@@ -1155,7 +1155,7 @@
     "id": "mindshift_nyudiscours_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_nyudiscours_v1.mp4",
     "caption": "Un diagnostic à 20 ans. Puis toute une promo qui se demande à quoi sert une vie.\n\n#mindshift #motivation #inspiration #pourtoi #discours #etudiants #sens",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1173,9 +1173,8 @@
       }
     },
     "postId": "6a9dc396aa7f666e22139079",
-    "scheduledFor": "2026-09-08T05:40:00",
-    "scheduledForUtc": "2026-09-08T03:40:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-08T03:41:39.951Z"
   },
   {
     "id": "mindshift_martinsheen_v1",

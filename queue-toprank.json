@@ -433,7 +433,7 @@
     "id": "tr_20260909_1300",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260909_1300.mp4",
     "caption": "They really thought it would work 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #badidea",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -451,8 +451,7 @@
       }
     },
     "postId": "6a9dc38baa7f666e22138ccd",
-    "scheduledForUtc": "2026-09-08T02:20:00.000Z",
-    "scheduledFor": "2026-09-08T04:20:00",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-08T02:22:06.015Z"
   }
 ]

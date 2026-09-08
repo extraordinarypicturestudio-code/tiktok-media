@@ -102,7 +102,7 @@
     "id": "a17_commande_mariage",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a17_commande_mariage.mp4",
     "caption": "Il pensait qu'on pouvait acheter les cent assiettes en magasin 🏺💍\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #mariage #asmr #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -120,9 +120,8 @@
       }
     },
     "postId": "6a9dc3a2aa7f666e221393c1",
-    "scheduledFor": "2026-09-08T07:00:00",
-    "scheduledForUtc": "2026-09-08T05:00:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-08T05:01:15.210Z"
   },
   {
     "id": "a19_client_regulier",

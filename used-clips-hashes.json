@@ -1782,5 +1782,37 @@
     "file": "clips-argile/a16_lorage.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T22:21:34.821Z"
+  },
+  {
+    "hash": "caa3ecef5e0f4dbf05b68cd763cb253e",
+    "id": "rc_salade_concombre_grenade_58",
+    "channel": "recipe_crave",
+    "file": "clips/rc_salade_concombre_grenade_58.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T06:21:04.236Z"
+  },
+  {
+    "hash": "43e2c7cd0faa7baceced4090b459953f",
+    "id": "tr_20260909_1300",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260909_1300.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T02:22:06.015Z"
+  },
+  {
+    "hash": "1399c4f7ca408b04ad0dfbefe516b185",
+    "id": "mindshift_nyudiscours_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_nyudiscours_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T03:41:39.951Z"
+  },
+  {
+    "hash": "a0c008ca0a23501876dc0497bfdd3df5",
+    "id": "a17_commande_mariage",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a17_commande_mariage.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T05:01:15.210Z"
   }
 ]
