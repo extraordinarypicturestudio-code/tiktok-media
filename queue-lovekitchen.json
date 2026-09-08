@@ -122,5 +122,49 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-08T23:30:00",
     "scheduledForUtc": "2026-09-08T21:30:00Z"
+  },
+  {
+    "id": "53-pouletfrit",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/53-pouletfrit.mp4",
+    "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\r\n\r\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "449443bec0d923b7b0011c93f81728cb76f8b03e52b5fca94cb1e06280b5c46a",
+      "date": "2026-09-08T19:57:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.9s, 50.2 Mo",
+        "audio": "volume moyen -20.7 dB ; ressemblance avec la source 0.23 ; contenu sonore : Une femme parle de son mari dans sa cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une femme prepare du poulet frit croustillant fait maison avec une sauce | aliments : ['poulet', 'œufs', 'farine', 'épices', 'cornichons', 'herbes', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 449443bec0d9 ; empreinte visuelle : plus proche 0.400"
+      }
+    }
+  },
+  {
+    "id": "52-tartepeches",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
+    "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\r\n\r\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "401d984fc64268c2aca360424fed0790eec8c806351b4d9923dec6192472630e",
+      "date": "2026-09-08T19:57:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 67.6s, 46.8 Mo",
+        "audio": "volume moyen -19.7 dB ; ressemblance avec la source 0.31 ; contenu sonore : Une femme parle de son mari et de cuisine en francais.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation d'une tarte aux pêches en cuisine avec des sous-titres sur une histoire de couple. | aliments : ['farine', 'beurre', 'œufs', 'pêches'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 401d984fc642 ; empreinte visuelle : plus proche 0.344"
+      }
+    }
   }
 ]
