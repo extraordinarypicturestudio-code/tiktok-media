@@ -48,7 +48,6 @@ script ne cree pas un second chemin de publication moins surveille.
 """
 
 import argparse
-import collections
 import json
 import os
 import pathlib
@@ -70,17 +69,53 @@ FUSEAU = ZoneInfo(TZ)
 # sorti trois love_kitchen dans la meme minute le 2026-09-06.
 FORMAT = "%Y-%m-%dT%H:%M:%S"
 
-# Ecart entre deux creneaux, toutes chaines confondues. La mesure ci-dessus
-# porte sur une fenetre de 30 minutes ; 80 minutes laissent en plus de la place
-# aux relances du rattrapage, qui sollicitent le meme quota.
-ESPACEMENT_MIN = 80
+# HORAIRE FIXE, heure de Paris. Une grille anonyme toutes les 80 minutes
+# publiait a 01h40 ou 03h00 du matin : techniquement espace, editorialement
+# absurde. Chaque chaine a maintenant SES heures.
+#
+# love_kitchen : 19h00, 21h30, 23h30 — consigne de l'utilisateur du 2026-09-08.
+#
+# Contrainte conservee : au moins ECART_MIN minutes entre DEUX ENVOIS QUELCONQUES,
+# toutes chaines confondues. C'est la seule chose qui evite les refus "at
+# capacity" (tentative isolee = 98 % de reussite, rafale = 48 %). Le controle
+# `verifier_horaire()` echoue au demarrage si un creneau ajoute casse cette
+# regle : impossible d'inserer une heure sans s'en apercevoir.
+ECART_MIN = 40
 
-# Premier creneau du jour, heure de Paris.
-DEBUT = (0, 20)
+HORAIRE = [
+    ("00:20", "toprank"),
+    ("01:10", "recipecrave"),
+    ("02:00", "argile"),
+    ("08:00", "mindshift"),
+    ("12:00", "recipecrave"),
+    ("12:50", "toprank"),
+    ("13:40", "mindshift"),
+    ("15:00", "mindshift"),
+    ("17:00", "toprank"),
+    ("17:50", "argile"),
+    ("19:00", "lovekitchen"),
+    ("19:50", "recipecrave"),
+    ("20:40", "toprank"),
+    ("21:30", "lovekitchen"),
+    ("22:20", "recipecrave"),
+    ("23:30", "lovekitchen"),
+]
 
-# Chaines servies, dans l'ordre de rotation.
-# (nom, fichier de file, pseudo TikTok, numero de cle Zernio, creneaux par jour)
-# love_kitchen passe en tete : consigne permanente de l'utilisateur.
+
+def verifier_horaire():
+    """Aucun couple de creneaux a moins de ECART_MIN, bouclage de minuit inclus."""
+    m = sorted(int(h[:2]) * 60 + int(h[3:]) for h, _ in HORAIRE)
+    for a, b in zip(m, m[1:] + [m[0] + 1440]):
+        if b - a < ECART_MIN:
+            raise SystemExit(
+                "HORAIRE invalide : %02d:%02d et %02d:%02d ne sont separes que de "
+                "%d min (minimum %d). Deux envois rapproches se font refuser."
+                % (a // 60, a % 60, (b % 1440) // 60, b % 60, b - a, ECART_MIN))
+
+# Chaines servies. Le 5e champ (creneaux par jour) ne sert plus qu'a mettre
+# une chaine EN PAUSE avec un 0 : c'est HORAIRE qui decide desormais du
+# nombre et de l'heure des sorties, chaine par chaine.
+# (nom, fichier de file, pseudo TikTok, numero de cle Zernio, actif)
 CHAINES = [
     ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 3),
     ("recipecrave", "queue-recipecrave.json", "recipe_crave", 1, 4),
@@ -161,41 +196,28 @@ def precharger_cles():
 
 
 def grille(depart, jours):
-    """Creneaux successifs, en heure de Paris, espaces de ESPACEMENT_MIN.
+    """Creneaux a venir, en heure de Paris : (moment, chaine).
 
-    24 h font exactement 18 pas de 80 minutes : la grille se repete donc a
-    l'identique chaque jour, et deux executions successives ne peuvent pas se
-    decaler l'une par rapport a l'autre.
+    Deroule HORAIRE jour apres jour. Chaque creneau porte SA chaine : ce n'est
+    plus une grille anonyme ou l'on case la premiere chaine qui a du stock,
+    mais un calendrier ou love_kitchen sort a 19h00, 21h30 et 23h30 comme
+    convenu, tous les jours.
+
+    Une chaine sans stock laisse simplement son creneau vide - on ne le donne
+    pas a une autre, sinon les heures ne veulent plus rien dire.
 
     L'addition d'un timedelta a une heure locale est une arithmetique de
-    pendule : au passage a l'heure d'hiver (dernier dimanche d'octobre) un
-    creneau peut glisser d'une heure. Sans consequence ici - l'horizon est de
-    14 jours et les creneaux ne visent aucune heure precise - mais a savoir si
-    la grille devient un jour un calendrier editorial.
+    pendule : au passage a l'heure d'hiver, un creneau garde donc bien son
+    heure affichee, ce qui est exactement ce qu'on veut ici.
     """
-    t = depart.replace(hour=DEBUT[0], minute=DEBUT[1], second=0, microsecond=0)
-    fin = depart + timedelta(days=jours)
-    while t < fin:
-        if t > depart:
-            yield t
-        t += timedelta(minutes=ESPACEMENT_MIN)
-
-
-def rotation():
-    """Ordre de passage des chaines, une entree par creneau et par jour.
-
-    On intercale les chaines au lieu de les grouper : deux videos de la meme
-    chaine ne doivent jamais se suivre, ni pour TikTok qui lit la cadence, ni
-    pour l'abonne qui voit le compte.
-    """
-    restant = {c[0]: c[4] for c in CHAINES}
-    ordre = []
-    while any(restant.values()):
-        for nom, _, _, _, _ in CHAINES:
-            if restant[nom]:
-                ordre.append(nom)
-                restant[nom] -= 1
-    return ordre
+    jour = depart.date()
+    for _ in range(jours + 1):
+        for hhmm, chaine in HORAIRE:
+            h, m = int(hhmm[:2]), int(hhmm[3:])
+            t = datetime(jour.year, jour.month, jour.day, h, m, tzinfo=FUSEAU)
+            if t > depart:
+                yield t, chaine
+        jour += timedelta(days=1)
 
 
 def eligible(v, ecrire):
@@ -310,56 +332,29 @@ def main():
                             .fromisoformat(v["scheduledForUtc"].replace("Z", "+00:00"))
                             .astimezone(FUSEAU).strftime(FORMAT))
 
-    ordre = rotation()
-    pris = collections.defaultdict(int)
-    # Ce qui est deja depose compte dans le quota du jour : sans ca, une
-    # deuxieme execution rajouterait un quota complet par-dessus le premier.
-    for nom, q in files.items():
-        for v in q:
-            if v.get("status") == "scheduled" and v.get("scheduledFor"):
-                pris[(datetime.strptime(v["scheduledFor"], FORMAT).date(), nom)] += 1
-    deposes, i = 0, 0
+    verifier_horaire()
+    deposes = 0
     cids = {}
 
-    print("Grille : 1 creneau / %d min a partir de %s (%s)\n"
-          % (ESPACEMENT_MIN, maintenant.strftime("%d/%m %H:%M"), TZ))
+    print("Horaire fixe, %s. Prochain creneau apres %s.\n"
+          % (TZ, maintenant.strftime("%d/%m %H:%M")))
 
-    for quand in grille(maintenant, a.jours):
+    for quand, choisie in grille(maintenant, a.jours):
         if a.max and deposes >= a.max:
             break
         if quand.strftime(FORMAT) in occupes:
             continue
-        # Chaine du creneau : on avance dans la rotation jusqu'a en trouver une
-        # qui ait encore du stock ET qui n'ait pas atteint son quota du jour.
-        #
-        # Le quota journalier n'est pas decoratif. Sans lui, des que les autres
-        # chaines sont a sec la derniere prend TOUS les creneaux restants : le
-        # premier depot a place 14 recipe_crave d'affilee sur la meme journee,
-        # soit une publication toutes les 80 minutes pendant 19 heures sur un
-        # seul compte. C'est un rythme que TikTok lit comme du spam, et ca vide
-        # en deux jours un stock prevu pour cinq.
-        jour = quand.date()
-        choisie = None
-        for _ in range(len(ordre)):
-            cand = ordre[i % len(ordre)]
-            i += 1
-            if a.chaine and cand != a.chaine:
-                continue
-            if not restes.get(cand):
-                continue
-            if pris[(jour, cand)] >= conf[cand][4]:
-                continue
-            choisie = cand
-            break
-        if choisie is None:
-            # Aucune chaine eligible a cette heure-ci : le creneau reste vide,
-            # on ne force pas. S'il ne reste plus de stock nulle part, on sort.
-            if not any(restes.values()):
-                break
+        if a.chaine and choisie != a.chaine:
             continue
+        if not restes.get(choisie):
+            # Chaine a sec : son creneau reste vide. Le donner a une autre
+            # ferait sortir recipe_crave a l'heure de love_kitchen, et
+            # l'horaire ne voudrait plus rien dire.
+            continue
+        if conf[choisie][4] == 0:
+            continue          # chaine en pause (quota 0)
 
         v = restes[choisie].pop(0)
-        pris[(jour, choisie)] += 1
         _, fichier, pseudo, numero, _ = conf[choisie]
         motif = eligible(v, ecrivains[choisie])
         if motif:
