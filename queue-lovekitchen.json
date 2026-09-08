@@ -127,7 +127,7 @@
     "id": "53-pouletfrit",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/53-pouletfrit.mp4",
     "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\r\n\r\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -143,13 +143,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 449443bec0d9 ; empreinte visuelle : plus proche 0.400"
       }
-    }
+    },
+    "postId": "6aa068d486baed19caf6f744",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-09T19:00:00",
+    "scheduledForUtc": "2026-09-09T17:00:00Z"
   },
   {
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
     "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\r\n\r\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -165,6 +169,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 401d984fc642 ; empreinte visuelle : plus proche 0.344"
       }
-    }
+    },
+    "postId": "6aa068de4559e26ff3d472f7",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-09T21:30:00",
+    "scheduledForUtc": "2026-09-09T19:30:00Z"
   }
 ]
