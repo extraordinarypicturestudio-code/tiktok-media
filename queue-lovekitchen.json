@@ -96,5 +96,27 @@
     },
     "postId": "6a9d4be7bf90d705419748f3",
     "publishedAt": "2026-09-06T11:18:35.426Z"
+  },
+  {
+    "id": "50-gateauchocobiscuits",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/50-gateauchocobiscuits.mp4",
+    "caption": "Mon mari m'avait dit qu'un gâteau sans four ça ne tenait jamais 🍫🥛\n\n#gateausanscuisson #gateauchocolat #dessertfacile #sanscuisson #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "ff5d7865633b0f35977cfe0f80602e8bcab1e5dd543f6cb7597e266f9eaa64b8",
+      "date": "2026-09-08T19:41:17Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.2s, 40.0 Mo",
+        "audio": "volume moyen -20.8 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme raconte une anecdote concernant son mari en train de cuisiner.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne prepare un gateau au chocolat sans cuisson en superposant des couches de biscuits et de creme. | aliments : ['biscuits', 'lait', 'creme', 'chocolat', 'myrtilles'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 ff5d7865633b ; empreinte visuelle : plus proche 0.391"
+      }
+    }
   }
 ]
