@@ -2410,7 +2410,7 @@
     "id": "rc_brochettes_poulet_pommesdeterre_59",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brochettes_poulet_pommesdeterre_59.mp4",
     "caption": "Les brochettes posées sur le lit de pommes de terre. Tout cuit dans le même plat.\n\n#brochettes #poulet #pommesdeterre #four #platunique #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2429,8 +2429,7 @@
     },
     "postId": "6a9e88a818127e2063e6885f",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-08T09:40:00",
-    "scheduledForUtc": "2026-09-08T07:40:00Z"
+    "publishedAt": "2026-09-08T07:41:44.433Z"
   },
   {
     "id": "rc_muffins_banane_fraise_60",

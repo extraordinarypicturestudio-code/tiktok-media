@@ -1180,7 +1180,7 @@
     "id": "mindshift_martinsheen_v1",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-mindshift/mindshift_martinsheen_v1.mp4",
     "caption": "Il est retourné à l'université à 66 ans. Il raconte.\n\n#mindshift #motivation #inspiration #pourtoi #discours #martinsheen #apprendre",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -1198,8 +1198,7 @@
       }
     },
     "postId": "6a9dc3c020900e1b07919e18",
-    "scheduledFor": "2026-09-08T11:00:00",
-    "scheduledForUtc": "2026-09-08T09:00:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-08T09:03:16.698Z"
   }
 ]

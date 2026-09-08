@@ -1814,5 +1814,21 @@
     "file": "clips-argile/a17_commande_mariage.mp4",
     "status": "published",
     "publishedAt": "2026-09-08T05:01:15.210Z"
+  },
+  {
+    "hash": "e944bd19dd2af04d74e5178846140701",
+    "id": "rc_brochettes_poulet_pommesdeterre_59",
+    "channel": "recipe_crave",
+    "file": "clips/rc_brochettes_poulet_pommesdeterre_59.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T07:41:44.433Z"
+  },
+  {
+    "hash": "15031e5be88caf8a785dde3942683c9a",
+    "id": "mindshift_martinsheen_v1",
+    "channel": "mindshift716",
+    "file": "clips-mindshift/mindshift_martinsheen_v1.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T09:03:16.698Z"
   }
 ]
