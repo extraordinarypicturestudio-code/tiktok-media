@@ -77,7 +77,7 @@
     "id": "a16_lorage",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a16_lorage.mp4",
     "caption": "Le courant a sauté et il est resté pousser le tour à pied ⚡🏺\r\n\r\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\r\n\r\n#poterie #tournage #ceramique #atelier #storytime #orage #asmr #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -95,9 +95,8 @@
       }
     },
     "postId": "6a9dc36d7e027ab676abd1cc",
-    "scheduledFor": "2026-09-08T00:20:00",
-    "scheduledForUtc": "2026-09-07T22:20:00Z",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "publishedAt": "2026-09-07T22:21:34.821Z"
   },
   {
     "id": "a17_commande_mariage",

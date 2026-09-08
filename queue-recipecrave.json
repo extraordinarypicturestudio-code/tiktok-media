@@ -2335,7 +2335,7 @@
     "id": "rc_charlotte_fraises_56",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_charlotte_fraises_56.mp4",
     "caption": "Un saladier tapissé de fraises, et la charlotte se démoule toute seule. Sans cuisson.\n\n#charlotte #fraises #boudoirs #mascarpone #sanscuisson #recette #dessert #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2354,14 +2354,13 @@
     },
     "postId": "6a9e887023e3b2b4fe13dc9b",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-08T01:40:00",
-    "scheduledForUtc": "2026-09-07T23:40:00Z"
+    "publishedAt": "2026-09-07T23:41:30.451Z"
   },
   {
     "id": "rc_burger_feuillete_57",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_burger_feuillete_57.mp4",
     "caption": "Le burger monté dans de la pâte feuilletée et passé au four. Le pain se fait tout seul.\n\n#burger #patefeuilletee #viandehachee #cheddar #four #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2380,8 +2379,7 @@
     },
     "postId": "6a9e888453c9c8caa367c363",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-08T03:00:00",
-    "scheduledForUtc": "2026-09-08T01:00:00Z"
+    "publishedAt": "2026-09-08T01:01:41.894Z"
   },
   {
     "id": "rc_salade_concombre_grenade_58",

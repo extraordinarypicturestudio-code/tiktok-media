@@ -1758,5 +1758,29 @@
     "file": "clips/rc_spaghetti_bolognaise_55.mp4",
     "status": "published",
     "publishedAt": "2026-09-07T19:41:17.430Z"
+  },
+  {
+    "hash": "b350b6a0559a20f60f04a503f2521ce9",
+    "id": "rc_charlotte_fraises_56",
+    "channel": "recipe_crave",
+    "file": "clips/rc_charlotte_fraises_56.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T23:41:30.451Z"
+  },
+  {
+    "hash": "3974e82b3bca9d3e9a8b184d80a2931e",
+    "id": "rc_burger_feuillete_57",
+    "channel": "recipe_crave",
+    "file": "clips/rc_burger_feuillete_57.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-08T01:01:41.894Z"
+  },
+  {
+    "hash": "08117bccf084c09ff10c2e1c32bfffc2",
+    "id": "a16_lorage",
+    "channel": "argile.histoires",
+    "file": "clips-argile/a16_lorage.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-07T22:21:34.821Z"
   }
 ]
