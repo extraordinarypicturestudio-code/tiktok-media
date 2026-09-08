@@ -101,7 +101,7 @@
     "id": "50-gateauchocobiscuits",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/50-gateauchocobiscuits.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau sans four ça ne tenait jamais 🍫🥛\n\n#gateausanscuisson #gateauchocolat #dessertfacile #sanscuisson #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -117,6 +117,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 ff5d7865633b ; empreinte visuelle : plus proche 0.391"
       }
-    }
+    },
+    "postId": "6aa06501cc33c8541778faae",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-08T23:30:00",
+    "scheduledForUtc": "2026-09-08T21:30:00Z"
   }
 ]
