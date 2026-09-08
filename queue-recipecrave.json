@@ -2132,7 +2132,7 @@
     "id": "rc_gateau_choco_cheesecake_46",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_gateau_choco_cheesecake_46.mp4",
     "caption": "Un gâteau au chocolat avec une couche de cheesecake cachée dedans.\n\n#gateauchocolat #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2149,16 +2149,13 @@
         "doublon": "sha256 c9d32eab5dd9 ; empreinte visuelle : plus proche 0.344"
       }
     },
-    "postId": "6a9e874d86f6dd2f859ef795",
-    "scheduledForUtc": "2026-09-09T05:00:00.000Z",
-    "scheduledFor": "2026-09-09T07:00:00",
     "vignette_auto": true
   },
   {
     "id": "rc_salade_avocat_poischiches_47",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_avocat_poischiches_47.mp4",
     "caption": "Avocat, pois chiches, feta et tomate. Prête en dix minutes.\n\n#salade #avocat #poischiches #feta #tomate #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2175,16 +2172,13 @@
         "doublon": "sha256 bf36164da1ec ; empreinte visuelle : plus proche 0.424"
       }
     },
-    "postId": "6a9e876b3b484f4f04022909",
-    "scheduledForUtc": "2026-09-09T06:20:00.000Z",
-    "scheduledFor": "2026-09-09T08:20:00",
     "vignette_auto": true
   },
   {
     "id": "rc_chausson_viande_fromage_48",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_chausson_viande_fromage_48.mp4",
     "caption": "Un chausson de viande hachée farci au fromage et à la tomate, pané et cuit au four.\n\n#viandehachee #fromage #panure #four #recette #platchaud #diner #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2201,16 +2195,13 @@
         "doublon": "sha256 46b6e6907a01 ; empreinte visuelle : plus proche 0.398"
       }
     },
-    "postId": "6a9e8785e73c52977393992c",
-    "scheduledForUtc": "2026-09-09T07:40:00.000Z",
-    "scheduledFor": "2026-09-09T09:40:00",
     "vignette_auto": true
   },
   {
     "id": "rc_pates_onepot_cremeuses_50",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_onepot_cremeuses_50.mp4",
     "caption": "Tout dans la poêle, même les pâtes crues. Une seule casserole à laver.\n\n#pates #onepot #champignons #epinards #cremeux #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2227,9 +2218,6 @@
         "doublon": "sha256 5ecaf7c2e6da ; empreinte visuelle : plus proche 0.406"
       }
     },
-    "postId": "6a9e879f2315d43d63ad58f0",
-    "scheduledForUtc": "2026-09-09T09:00:00.000Z",
-    "scheduledFor": "2026-09-09T11:00:00",
     "vignette_auto": true
   },
   {
@@ -2436,7 +2424,7 @@
     "id": "rc_muffins_banane_fraise_60",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_banane_fraise_60.mp4",
     "caption": "Deux bananes écrasées à la place du beurre. Des muffins chocolat-fraise, sans balance.\n\n#muffins #banane #chocolat #fraises #sansbeurre #recette #gouter #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2453,16 +2441,13 @@
         "doublon": "sha256 4871be8779be ; empreinte visuelle : plus proche 0.441"
       }
     },
-    "postId": "6a9e88b918127e2063e68efe",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-11T00:20:00",
-    "scheduledForUtc": "2026-09-10T22:20:00Z"
+    "vignette_auto": true
   },
   {
     "id": "rc_salade_mais_grille_62",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_mais_grille_62.mp4",
     "caption": "Le maïs passé à l'air fryer avant d'aller dans la salade. Ça change tout.\n\n#salade #mais #airfryer #concombre #sauce #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2479,16 +2464,13 @@
         "doublon": "sha256 21426e3cee0c ; empreinte visuelle : plus proche 0.371"
       }
     },
-    "postId": "6a9e87bae73c52977393a39c",
-    "scheduledForUtc": "2026-09-09T22:20:00.000Z",
-    "scheduledFor": "2026-09-10T00:20:00",
     "vignette_auto": true
   },
   {
     "id": "rc_roule_poulet_courgettes_64",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_roule_poulet_courgettes_64.mp4",
     "caption": "Une base de poulet haché étalée à plat, gratinée, puis roulée comme un wrap.\n\n#poulet #courgettes #fromage #roule #lowcarb #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2505,16 +2487,13 @@
         "doublon": "sha256 f5aee6f89fe9 ; empreinte visuelle : plus proche 0.345"
       }
     },
-    "postId": "6a9e87cf2315d43d63ad6caf",
-    "scheduledForUtc": "2026-09-09T23:40:00.000Z",
-    "scheduledFor": "2026-09-10T01:40:00",
     "vignette_auto": true
   },
   {
     "id": "rc_muffins_fraise_chocolatblanc_65",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_fraise_chocolatblanc_65.mp4",
     "caption": "Fraises fraîches et pépites de chocolat blanc. Des muffins qui restent moelleux.\n\n#muffins #fraises #chocolatblanc #patisserie #recette #gouter #dessert #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2531,16 +2510,13 @@
         "doublon": "sha256 b60f7b0ba1c4 ; empreinte visuelle : plus proche 0.353"
       }
     },
-    "postId": "6a9e87e4f2dd438ca433d5c2",
-    "scheduledForUtc": "2026-09-10T01:00:00.000Z",
-    "scheduledFor": "2026-09-10T03:00:00",
     "vignette_auto": true
   },
   {
     "id": "rc_courgettes_farcies_69",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_farcies_69.mp4",
     "caption": "Les courgettes évidées à l'emporte-pièce, farcies viande et riz, gratinées.\n\n#courgettes #farcies #viandehachee #riz #gratine #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2557,16 +2533,13 @@
         "doublon": "sha256 a1b00c0dc259 ; empreinte visuelle : plus proche 0.409"
       }
     },
-    "postId": "6a9e87fef7f2841042fd5bab",
-    "scheduledForUtc": "2026-09-10T02:20:00.000Z",
-    "scheduledFor": "2026-09-10T04:20:00",
     "vignette_auto": true
   },
   {
     "id": "rc_legumes_rotis_sauce_70",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_legumes_rotis_sauce_70.mp4",
     "caption": "Courgettes, champignons et poivrons rôtis, puis noyés dans une sauce à l'ail et coriandre.\n\n#legumes #courgettes #champignons #poivrons #four #recette #vegetarien #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2583,9 +2556,6 @@
         "doublon": "sha256 01e3b5164ffc ; empreinte visuelle : plus proche 0.358"
       }
     },
-    "postId": "6a9e88cc4dca8fd4637fae46",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-11T01:40:00",
-    "scheduledForUtc": "2026-09-10T23:40:00Z"
+    "vignette_auto": true
   }
 ]
