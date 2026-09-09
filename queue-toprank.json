@@ -475,7 +475,8 @@
         "doublon": "sha256 59740f95324b ; empreinte visuelle : plus proche 0.396"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "Post residuel bloquant supprime (0) - a retenter"
   },
   {
     "id": "tr_20260911_2040",
