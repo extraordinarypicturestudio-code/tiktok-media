@@ -73,12 +73,21 @@ REGISTRE = ICI / "relances_saturation.json"
 # Nouveau reglage : 20 minutes entre deux essais et 12 tentatives, soit environ
 # 4 HEURES d'insistance avant le brouillon. La saturation TikTok se resorbe
 # generalement en quelques heures ; il faut couvrir cette fenetre.
-# Une seule reprogrammation par execution, TOUTES CLES CONFONDUES. Le cron
-# tourne toutes les 30 minutes : ca suffit a rattraper une file en retard sans
-# jamais deposer deux videos coup sur coup sur le meme compte. Le 2026-09-06,
-# trois relances love_kitchen sont parties dans la meme minute — la cause
-# premiere etait le fuseau (voir `_quand`), mais rien n'empechait la rafale.
-PAR_EXECUTION_MAX = 1
+# Une seule reprogrammation PAR CLE. Le 2026-09-06, trois relances
+# love_kitchen sont parties dans la meme minute — la cause premiere etait le
+# fuseau (voir `_quand`), mais rien n'empechait la rafale. Le plafond protege
+# donc chaque COMPTE, ce qui est le bon perimetre : la rafale se mesure par
+# compte TikTok.
+#
+# Il valait "toutes cles confondues" jusqu'au 2026-09-09, ce qui partait du
+# principe d'un passage toutes les 30 minutes. Or le cron `*/30` n'etait
+# honore que 5 a 6 fois par jour (voir `veilleur.yml`) : la premiere cle
+# consommait le seul jeton et les quatre autres n'etaient jamais servies. La
+# sortie love_kitchen du 2026-09-09 19h00, refusee pour saturation, est restee
+# `failed` toute la soiree pendant qu'une video d'une autre chaine prenait la
+# place. Le decalage ci-dessous (voir `_quand`) evite que deux comptes
+# retentent a la meme seconde.
+PAR_CLE_MAX = 1
 
 RELANCES_MAX = 12       # ~8h d'essais avant de basculer en brouillon
 AGE_MAX_H = 36.0        # au-dela : abandon
@@ -101,7 +110,7 @@ for _s in (sys.stdout, sys.stderr):
 
 
 
-def _quand(maintenant_utc):
+def _quand(maintenant_utc, rang=0):
     """Horodatage de la nouvelle tentative, EXPRIME DANS `TZ`.
 
     Le champ `scheduledFor` part sans decalage (`%Y-%m-%dT%H:%M:%S`) et Zernio
@@ -114,9 +123,16 @@ def _quand(maintenant_utc):
     minute, au lieu d'etre etalees de 20 minutes. Trois jours de stock brules
     d'un coup sur la meilleure chaine du projet, et un rythme de publication
     que TikTok lit comme du spam.
+
+    `rang` decale la tentative de 15 minutes par relance deja programmee dans
+    la meme execution. Sans lui, relancer deux comptes dans la meme seconde
+    leur donnerait le meme `scheduledFor` : les deux solliciteraient TikTok
+    en meme temps, ce qui est exactement la rafale que la mesure du 2026-09-06
+    designe comme cause des refus.
     """
     return (maintenant_utc.astimezone(FUSEAU)
-            + timedelta(minutes=DELAI_MIN)).strftime("%Y-%m-%dT%H:%M:%S")
+            + timedelta(minutes=DELAI_MIN + 15 * rang)).strftime("%Y-%m-%dT%H:%M:%S")
+
 
 def cles():
     """Cles Zernio disponibles : variables d'environnement, sinon fichiers locaux."""
@@ -197,8 +213,9 @@ def main():
     perimes = 0
 
     for nom, cle in cles():
-        if repris + brouillons >= PAR_EXECUTION_MAX:
-            break
+        # Le plafond se compte PAR CLE : une chaine saturee ne doit pas priver
+        # les quatre autres de leur rattrapage.
+        sur_cette_cle = 0
         try:
             d = appel("GET", API + "/posts?limit=100", cle)
         except Exception as e:
@@ -206,7 +223,7 @@ def main():
             continue
 
         for p in d.get("posts", d.get("data", [])) or []:
-            if repris + brouillons >= PAR_EXECUTION_MAX:
+            if sur_cette_cle >= PAR_CLE_MAX:
                 break
             if p.get("status") != "failed":
                 continue
@@ -263,7 +280,7 @@ def main():
                 continue
 
             brouillon = etat["relances"] >= RELANCES_MAX
-            quand = _quand(now)
+            quand = _quand(now, repris + brouillons)
 
             corps = {
                 "content": p.get("content", ""),
@@ -298,6 +315,7 @@ def main():
             etat["relances"] += 1
             reg.pop(pid, None)
             reg[npid] = etat
+            sur_cette_cle += 1
             if brouillon:
                 brouillons += 1
                 print("  BROUILLON %s -> %s pour %s (tentative %d, Creator Inbox)"
