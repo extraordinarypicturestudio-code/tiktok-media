@@ -479,5 +479,27 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-09T12:50:00",
     "scheduledForUtc": "2026-09-09T10:50:00Z"
+  },
+  {
+    "id": "tr_20260911_2040",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260911_2040.mp4",
+    "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3439b48e700460eaa4a22ba0a8d0f5e0a2bad2241986c6d993ba043f66308103",
+      "date": "2026-09-09T10:47:39Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.1s, 28.9 Mo",
+        "audio": "volume moyen -23.3 dB ; contenu sonore : Cette vidéo de cuisine présente une musique rythmée.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes, ratages et accidents divers captures en video. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3439b48e7004 ; empreinte visuelle : plus proche 0.422"
+      }
+    }
   }
 ]
