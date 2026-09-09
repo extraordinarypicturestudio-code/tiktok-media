@@ -121,7 +121,12 @@ def verifier_horaire():
 # (nom, fichier de file, pseudo TikTok, numero de cle Zernio, actif)
 CHAINES = [
     ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 3),
-    ("recipecrave", "queue-recipecrave.json", "recipe_crave", 1, 4),
+    # EN PAUSE depuis le 2026-09-09, sur consigne de prudence copyright.
+    # Les 8 videos restantes portent la bande son D'ORIGINE de la source
+    # (ressemblance 1.00), soit le profil exact des quatre qui viennent de
+    # tomber a 3, 8, 20 et 25 vues. Remettre a 4 une fois la bande son
+    # remplacee ou l'origine du bridage etablie.
+    ("recipecrave", "queue-recipecrave.json", "recipe_crave", 1, 0),
     ("toprank", "queue-toprank.json", "toprank.tv1", 1, 4),
     ("mindshift", "queue-mindshift.json", "mindshift716", 2, 3),
     ("argile", "queue-argile.json", "argile.histoires", 4, 2),
