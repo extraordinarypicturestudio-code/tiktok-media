@@ -96,8 +96,18 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add -A -- queue-*.json used-clips-hashes.json clips/ clips-argile/ \
-            clips-lovekitchen/ clips-mindshift/ clips-pisciniste/ clips-toprank/
+          # `git add -- <chemin>` sort en 128 si le chemin n'existe pas, et
+          # l'etape tourne sous `bash -e` : le job echoue AVANT le commit, donc
+          # le travail du script est perdu. Arrive des que clips-argile/ a ete
+          # vide de ses clips publies - alignement et depot ont echoue quatre
+          # fois de suite sans que rien ne le signale, et les files sur
+          # origin/main ont cesse de refleter la realite. On n'ajoute donc
+          # que les dossiers qui existent au moment du run.
+          chemins="queue-*.json used-clips-hashes.json"
+          for d in clips clips-argile clips-lovekitchen clips-mindshift clips-pisciniste clips-toprank; do
+            [ -d "$d" ] && chemins="$chemins $d"
+          done
+          git add -A -- $chemins
           git diff --cached --quiet && exit 0
           git commit -m "Programmation des sorties a l'avance [skip ci]"
           for essai in 1 2 3 4 5; do

@@ -164,26 +164,29 @@ def sature(pf):
 
 
 def deja_traitees():
-    """URL des videos deja programmees ou publiees, d'apres les files.
+    """URL des videos traitees ailleurs -> identifiant du post qui les porte.
 
     Depuis que les sorties sont deposees a l'avance, un post en echec ne veut
-    plus dire que la video attend : elle a tres bien pu etre reprogrammee
-    ailleurs entre-temps. Relancer ce post republierait la meme video une
-    seconde fois. Le 2026-09-06 au soir, 34 posts en echec portaient une video
-    desormais programmee - de quoi doubler une bonne partie de la grille.
+    plus dire que la video attend : elle a pu etre reprogrammee ailleurs
+    entre-temps. Relancer ce post republierait la meme video une seconde fois.
 
-    On supprime ces posts au passage : ils ne servent plus a rien et Zernio les
-    oppose ensuite en 409 "already scheduled" a toute reprogrammation.
+    MAIS il faut comparer les IDENTIFIANTS, pas seulement les URL. Une video
+    qui echoue A SON PROPRE CRENEAU garde dans la file le statut `scheduled`
+    et l'identifiant de ce post-la : la comparaison sur la seule URL faisait
+    donc supprimer le post qu'il fallait relancer. Le 2026-09-08, la sortie
+    love_kitchen de 23h30 a disparu sans laisser de trace ni d'echec, et la
+    file la donnait encore programmee.
     """
-    urls = set()
+    m = {}
     for f in ICI.glob("queue-*.json"):
         try:
-            for v in json.loads(f.read_text(encoding="utf-8")):
-                if v.get("status") in ("scheduled", "published") and v.get("url"):
-                    urls.add(v["url"])
+            entrees = json.loads(f.read_text(encoding="utf-8"))
         except ValueError:
             continue
-    return urls
+        for v in entrees:
+            if v.get("status") in ("scheduled", "published") and v.get("url"):
+                m[v["url"]] = v.get("postId")
+    return m
 
 
 def main():
@@ -218,11 +221,19 @@ def main():
 
             pid = p["_id"]
 
-            # La video est-elle deja programmee ou en ligne par ailleurs ?
-            if any(m.get("url") in traitees for m in (p.get("mediaItems") or [])):
+            # La video est-elle traitee par un AUTRE post ? Si la file pointe
+            # sur CE post, il n'est pas perime : c'est lui qui a echoue, et
+            # c'est lui qu'il faut relancer.
+            ailleurs = [m.get("url") for m in (p.get("mediaItems") or [])
+                        if m.get("url") in traitees
+                        and traitees[m.get("url")] not in (None, pid)]
+            if ailleurs:
+                nom_clip = ailleurs[0].rsplit("/", 1)[-1]
                 try:
                     appel("DELETE", API + "/posts/" + pid, cle)
                     perimes += 1
+                    print("  PERIME %s (%s) : la file pointe sur %s, supprime"
+                          % (pid, nom_clip, traitees[ailleurs[0]]))
                 except Exception as e:
                     print("  (suppression impossible de %s : %s)" % (pid, str(e)[:80]))
                 continue
