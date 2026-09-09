@@ -1854,5 +1854,13 @@
     "file": "clips/rc_chausson_viande_fromage_48.mp4",
     "status": "published",
     "publishedAt": "2026-09-09T10:01:10.428Z"
+  },
+  {
+    "hash": "317a5657624dc08eea76c4c04f220cb2",
+    "id": "rc_pates_onepot_cremeuses_50",
+    "channel": "recipe_crave",
+    "file": "clips/rc_pates_onepot_cremeuses_50.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-09T17:51:38.017Z"
   }
 ]

@@ -2207,7 +2207,7 @@
     "id": "rc_pates_onepot_cremeuses_50",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_onepot_cremeuses_50.mp4",
     "caption": "Tout dans la poêle, même les pâtes crues. Une seule casserole à laver.\n\n#pates #onepot #champignons #epinards #cremeux #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2226,8 +2226,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa1169cd43c85478a156d11",
-    "scheduledFor": "2026-09-09T19:50:00",
-    "scheduledForUtc": "2026-09-09T17:50:00Z"
+    "publishedAt": "2026-09-09T17:51:38.017Z"
   },
   {
     "id": "rc_pizza_plaque_fromage_51",
