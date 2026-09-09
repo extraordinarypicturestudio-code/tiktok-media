@@ -179,7 +179,7 @@
     "id": "51-roulesfraise",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/51-roulesfraise.mp4",
     "caption": "Mon mari m'avait dit que les viennoiseries maison ne valaient jamais la boulangerie 🍓🥐\r\n\r\n#roulesalafraise #brioche #fraises #patisseriemaison #dessertfacile #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -195,6 +195,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 eeb8a0d18041 ; empreinte visuelle : plus proche 0.366"
       }
-    }
+    },
+    "postId": "6aa107a17e31f9b8ae2a483e",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-10T19:00:00",
+    "scheduledForUtc": "2026-09-10T17:00:00Z"
   }
 ]
