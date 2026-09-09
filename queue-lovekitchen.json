@@ -205,7 +205,7 @@
     "id": "54-pizzathon",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/54-pizzathon.mp4",
     "caption": "Mon mari m'avait dit que le thon en boîte c'était de la nourriture de dépannage 🍕🧀\r\n\r\n#pizzamaison #pizzathon #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -223,7 +223,8 @@
       }
     },
     "vignette_auto": true,
-    "note": "doublon de registre : le thon en boite a deja servi de premisse les 30 et 31/08. Legende a reecrire avant depot."
+    "publishedAt": "2026-09-09T20:02:37Z",
+    "note": "publiee A LA MAIN par l utilisateur le 2026-09-09, depot Zernio supprime pour eviter le doublon"
   },
   {
     "id": "55-ailespoulet",
@@ -255,7 +256,7 @@
     "id": "56-onepotpates",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/56-onepotpates.mp4",
     "caption": "Mon mari m'avait dit qu'on ne fait pas cuire des pâtes dans la sauce 🍝🍅\r\n\r\n#onepotpasta #pates #recettefacile #mardisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "published",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -272,8 +273,6 @@
         "doublon": "sha256 e77d66ef609e ; empreinte visuelle : plus proche 0.411"
       }
     },
-    "vignette_auto": true,
-    "publishedAt": "2026-09-09T20:05:32Z",
-    "note": "publiee A LA MAIN par l utilisateur le 2026-09-09, depot Zernio supprime pour eviter le doublon"
+    "vignette_auto": true
   }
 ]
