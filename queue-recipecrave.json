@@ -2182,7 +2182,7 @@
     "id": "rc_chausson_viande_fromage_48",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_chausson_viande_fromage_48.mp4",
     "caption": "Un chausson de viande hachée farci au fromage et à la tomate, pané et cuit au four.\n\n#viandehachee #fromage #panure #four #recette #platchaud #diner #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2199,13 +2199,16 @@
         "doublon": "sha256 deb5c7696670 ; empreinte visuelle : plus proche 0.398"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa1169197bb8c0ad154705c",
+    "scheduledFor": "2026-09-09T12:00:00",
+    "scheduledForUtc": "2026-09-09T10:00:00Z"
   },
   {
     "id": "rc_pates_onepot_cremeuses_50",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_onepot_cremeuses_50.mp4",
     "caption": "Tout dans la poêle, même les pâtes crues. Une seule casserole à laver.\n\n#pates #onepot #champignons #epinards #cremeux #recette #diner #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2222,7 +2225,10 @@
         "doublon": "sha256 9082e4b7c018 ; empreinte visuelle : plus proche 0.406"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa1169cd43c85478a156d11",
+    "scheduledFor": "2026-09-09T19:50:00",
+    "scheduledForUtc": "2026-09-09T17:50:00Z"
   },
   {
     "id": "rc_pizza_plaque_fromage_51",
@@ -2427,7 +2433,7 @@
     "id": "rc_muffins_banane_fraise_60",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_banane_fraise_60.mp4",
     "caption": "Deux bananes écrasées à la place du beurre. Des muffins chocolat-fraise, sans balance.\n\n#muffins #banane #chocolat #fraises #sansbeurre #recette #gouter #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2444,13 +2450,16 @@
         "doublon": "sha256 549cbee4aea9 ; empreinte visuelle : plus proche 0.441"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116a4adf3106cb6b0f314",
+    "scheduledFor": "2026-09-09T22:20:00",
+    "scheduledForUtc": "2026-09-09T20:20:00Z"
   },
   {
     "id": "rc_salade_mais_grille_62",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_mais_grille_62.mp4",
     "caption": "Le maïs passé à l'air fryer avant d'aller dans la salade. Ça change tout.\n\n#salade #mais #airfryer #concombre #sauce #recette #healthy #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2467,13 +2476,16 @@
         "doublon": "sha256 f59f793b397a ; empreinte visuelle : plus proche 0.371"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116ad4fa3b11148201bcd",
+    "scheduledFor": "2026-09-10T01:10:00",
+    "scheduledForUtc": "2026-09-09T23:10:00Z"
   },
   {
     "id": "rc_roule_poulet_courgettes_64",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_roule_poulet_courgettes_64.mp4",
     "caption": "Une base de poulet haché étalée à plat, gratinée, puis roulée comme un wrap.\n\n#poulet #courgettes #fromage #roule #lowcarb #recette #diner #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2490,13 +2502,16 @@
         "doublon": "sha256 c409a2db63b0 ; empreinte visuelle : plus proche 0.345"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116b5141449b57ffa7bb1",
+    "scheduledFor": "2026-09-10T12:00:00",
+    "scheduledForUtc": "2026-09-10T10:00:00Z"
   },
   {
     "id": "rc_muffins_fraise_chocolatblanc_65",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_fraise_chocolatblanc_65.mp4",
     "caption": "Fraises fraîches et pépites de chocolat blanc. Des muffins qui restent moelleux.\n\n#muffins #fraises #chocolatblanc #patisserie #recette #gouter #dessert #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2513,13 +2528,16 @@
         "doublon": "sha256 96d7ae1302fa ; empreinte visuelle : plus proche 0.353"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116bde07781658b4b2324",
+    "scheduledFor": "2026-09-10T19:50:00",
+    "scheduledForUtc": "2026-09-10T17:50:00Z"
   },
   {
     "id": "rc_courgettes_farcies_69",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_farcies_69.mp4",
     "caption": "Les courgettes évidées à l'emporte-pièce, farcies viande et riz, gratinées.\n\n#courgettes #farcies #viandehachee #riz #gratine #recette #diner #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2536,13 +2554,16 @@
         "doublon": "sha256 535d09a951a6 ; empreinte visuelle : plus proche 0.409"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116f3233a5d987b9e5c17",
+    "scheduledFor": "2026-09-10T22:20:00",
+    "scheduledForUtc": "2026-09-10T20:20:00Z"
   },
   {
     "id": "rc_legumes_rotis_sauce_70",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_legumes_rotis_sauce_70.mp4",
     "caption": "Courgettes, champignons et poivrons rôtis, puis noyés dans une sauce à l'ail et coriandre.\n\n#legumes #courgettes #champignons #poivrons #four #recette #vegetarien #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2559,6 +2580,9 @@
         "doublon": "sha256 07fcf74dc65e ; empreinte visuelle : plus proche 0.358"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa116fc233a5d987b9e5fa0",
+    "scheduledFor": "2026-09-11T01:10:00",
+    "scheduledForUtc": "2026-09-10T23:10:00Z"
   }
 ]
