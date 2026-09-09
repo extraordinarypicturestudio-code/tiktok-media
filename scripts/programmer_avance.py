@@ -82,8 +82,12 @@ FORMAT = "%Y-%m-%dT%H:%M:%S"
 # regle : impossible d'inserer une heure sans s'en apercevoir.
 ECART_MIN = 40
 
+# toprank passe de 4 a 2 creneaux le 2026-09-09, sur decision de
+# l'utilisateur. Releve du 2026-08-26 : mediane 300 vues et EN BAISSE (-36),
+# contre 5 199 pour love_kitchen. Ses deux creneaux liberes ne sont pas
+# redistribues : moins de creneaux, c'est moins de tentatives, donc moins de
+# pression sur le quota de publication partage.
 HORAIRE = [
-    ("00:20", "toprank"),
     ("01:10", "recipecrave"),
     ("02:00", "argile"),
     ("08:00", "mindshift"),
@@ -91,7 +95,6 @@ HORAIRE = [
     ("12:50", "toprank"),
     ("13:40", "mindshift"),
     ("15:00", "mindshift"),
-    ("17:00", "toprank"),
     ("17:50", "argile"),
     ("19:00", "lovekitchen"),
     ("19:50", "recipecrave"),
