@@ -458,7 +458,7 @@
     "id": "tr_20260910_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260910_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -476,8 +476,9 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa175cc3356bbd11d07e449",
-    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
+    "postId": "6aa18f90b1a8f4fc6e26d8f5",
+    "scheduledForUtc": "2026-09-09T17:35:43.000Z",
+    "scheduledFor": "2026-09-09T19:35:43"
   },
   {
     "id": "tr_20260911_2040",
