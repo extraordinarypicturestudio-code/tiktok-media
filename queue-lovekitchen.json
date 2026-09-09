@@ -106,16 +106,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "ff5d7865633b0f35977cfe0f80602e8bcab1e5dd543f6cb7597e266f9eaa64b8",
-      "date": "2026-09-08T19:41:17Z",
+      "sha256": "c4b5bee83bc7d73490aa0ecdd3f75bbca4a3909ec96c68d7172a01c56d3d99a0",
+      "date": "2026-09-09T07:14:02Z",
       "outil": "verification_publication.py",
       "preuves": {
         "specs": "1080x1920, 30 fps, 65.2s, 40.0 Mo",
-        "audio": "volume moyen -20.8 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme raconte une anecdote concernant son mari en train de cuisiner.",
+        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de biscuits au chocolat et de son mari.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Une personne prepare un gateau au chocolat sans cuisson en superposant des couches de biscuits et de creme. | aliments : ['biscuits', 'lait', 'creme', 'chocolat', 'myrtilles'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un gateau sans cuisson a base de biscuits, creme et chocolat avec une anecdote personnelle en sous-titres. | aliments : ['biscuits', 'creme', 'lait', 'chocolat', 'myrtilles'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 ff5d7865633b ; empreinte visuelle : plus proche 0.391"
+        "doublon": "sha256 c4b5bee83bc7 ; empreinte visuelle : plus proche 0.391"
       }
     },
     "vignette_auto": true,
@@ -126,22 +126,22 @@
   {
     "id": "53-pouletfrit",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/53-pouletfrit.mp4",
-    "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\r\n\r\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\n\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "449443bec0d923b7b0011c93f81728cb76f8b03e52b5fca94cb1e06280b5c46a",
-      "date": "2026-09-08T19:57:07Z",
+      "sha256": "45bd5d22410cac9f04d9be3ae6c7f2a3871755b898682f10b7e615e622d6fce8",
+      "date": "2026-09-09T07:14:28Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 63.9s, 50.2 Mo",
-        "audio": "volume moyen -20.7 dB ; ressemblance avec la source 0.23 ; contenu sonore : Une femme parle de son mari dans sa cuisine.",
+        "specs": "1080x1920, 30 fps, 63.9s, 50.1 Mo",
+        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote cocasse concernant son mari.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : une femme prepare du poulet frit croustillant fait maison avec une sauce | aliments : ['poulet', 'œufs', 'farine', 'épices', 'cornichons', 'herbes', 'sauce'] | preparation : True",
+        "contenu": "contenu vu : Une personne prépare du poulet frit croustillant fait maison avec une sauce. | aliments : ['poulet', 'œufs', 'farine', 'cornichons', 'herbes'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 449443bec0d9 ; empreinte visuelle : plus proche 0.400"
+        "doublon": "sha256 45bd5d22410c ; empreinte visuelle : plus proche 0.398"
       }
     },
     "postId": "6aa068d486baed19caf6f744",
@@ -152,27 +152,49 @@
   {
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
-    "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\r\n\r\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
+    "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "401d984fc64268c2aca360424fed0790eec8c806351b4d9923dec6192472630e",
-      "date": "2026-09-08T19:57:18Z",
+      "sha256": "0a00cdbb545bea2db6ca202f31a90fa14bc052ad640023f7425063e10f23b6e8",
+      "date": "2026-09-09T07:14:14Z",
       "outil": "verification_publication.py",
       "preuves": {
         "specs": "1080x1920, 30 fps, 67.6s, 46.8 Mo",
-        "audio": "volume moyen -19.7 dB ; ressemblance avec la source 0.31 ; contenu sonore : Une femme parle de son mari et de cuisine en francais.",
+        "audio": "volume moyen -18.9 dB ; ressemblance avec la source 0.26 ; contenu sonore : Une femme parle de son mari et de cuisine en francais.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation d'une tarte aux pêches en cuisine avec des sous-titres sur une histoire de couple. | aliments : ['farine', 'beurre', 'œufs', 'pêches'] | preparation : True",
+        "contenu": "contenu vu : Une femme prepare une tarte aux peches en racontant une anecdote sur son mari | aliments : ['farine', 'beurre', 'œufs', 'peches', 'creme', 'tarte'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 401d984fc642 ; empreinte visuelle : plus proche 0.344"
+        "doublon": "sha256 0a00cdbb545b ; empreinte visuelle : plus proche 0.344"
       }
     },
     "postId": "6aa068de4559e26ff3d472f7",
     "vignette_auto": true,
     "scheduledFor": "2026-09-09T21:30:00",
     "scheduledForUtc": "2026-09-09T19:30:00Z"
+  },
+  {
+    "id": "51-roulesfraise",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/51-roulesfraise.mp4",
+    "caption": "Mon mari m'avait dit que les viennoiseries maison ne valaient jamais la boulangerie 🍓🥐\r\n\r\n#roulesalafraise #brioche #fraises #patisseriemaison #dessertfacile #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "eeb8a0d18041db08fe17e7f27af1e553a4c6aa38f50d88dac8ef17b10432628d",
+      "date": "2026-09-09T07:13:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.2s, 59.9 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme parle de sa recette de brioche faite maison.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une personne prepare des roules a la fraise maison en cuisine | aliments : ['viennoiseries', 'brioche', 'fraises', 'beurre', 'lait', 'oeufs', 'farine'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 eeb8a0d18041 ; empreinte visuelle : plus proche 0.366"
+      }
+    }
   }
 ]
