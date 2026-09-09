@@ -210,16 +210,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "f239c30f54d4043195ed1fa183ec568a8b2d7c362018c335290f604a4271e021",
-      "date": "2026-09-09T07:53:52Z",
+      "sha256": "dfc3b81d5333a27fb570616b658ed4600337e2d43892a541b268bf1017aa8ff9",
+      "date": "2026-09-09T09:36:53Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 66.2s, 48.8 Mo",
-        "audio": "volume moyen -18.6 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme parle de son mari dans sa cuisine.",
+        "specs": "1080x1920, 30 fps, 66.0s, 48.8 Mo",
+        "audio": "volume moyen -18.9 dB ; ressemblance avec la source 0.21 ; contenu sonore : Une femme raconte une anecdote culinaire concernant son mari.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Une femme prépare une pizza maison avec de la pâte, des légumes, du thon en boîte et du fromage râpé. | aliments : ['œufs', 'lait', 'farine', 'oignon', 'poivrons', 'thon en boîte', 'olives', 'fromage râpé'] | preparation : True",
+        "contenu": "contenu vu : Une femme prepare une pizza maison avec de la pate, des legumes, du thon en boite et du fromage. | aliments : ['œufs', 'lait', 'farine', 'oignon', 'poivron rouge', 'poivron jaune', 'poivron vert', 'thon en boîte', 'olives', 'fromage'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 f239c30f54d4 ; empreinte visuelle : plus proche 0.322"
+        "doublon": "sha256 dfc3b81d5333 ; empreinte visuelle : plus proche 0.318"
       }
     },
     "postId": "6aa110d3720508ef3ccea61f",
