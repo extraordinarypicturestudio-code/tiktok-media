@@ -13,8 +13,10 @@ name: Relancer les publications saturees
 # soir doit sortir le soir) et ne pas marteler l'API. Une video ratee est donc
 # reprise au pire 30 min plus tard, puis 45 min apres chaque nouvel echec.
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+  # Cron retire le 2026-09-09 : GitHub n'honorait que 5 a 6 des 48
+  # declenchements quotidiens declares ici. La veille continue est
+  # assuree par `veilleur.yml`, qui boucle a l'interieur d'un job.
+  # Ce workflow reste lancable a la main.
   workflow_dispatch: {}
 
 permissions:

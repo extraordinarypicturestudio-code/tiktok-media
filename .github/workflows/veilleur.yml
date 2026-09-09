@@ -1,0 +1,106 @@
+name: Veilleur (rattrapage continu)
+
+# POURQUOI CE WORKFLOW EXISTE — mesure du 2026-09-09
+# ---------------------------------------------------
+# `relancer-saturation.yml` et `filet-sortie.yml` declaraient `cron: */30`,
+# soit 48 declenchements par jour. Releve reel sur les 30 derniers runs :
+#
+#   16h51, 12h16, 06h33, 01h09  (le 09/09)
+#   22h31, 19h33, 16h29, 11h41, 06h28, 01h05  (le 08/09)
+#
+# Cinq a six par jour, avec des trous de 2h40 a 5h20. GitHub n'honore pas les
+# crons rapides sur un depot qui en declare douze : il les regroupe et en jette.
+# Le "filet de securite toutes les 30 minutes" n'existait donc que sur le
+# papier. Le 2026-09-09, la sortie love_kitchen de 19h00 a ete refusee par
+# TikTok ("direct posting is at capacity") a 17h00 UTC — la relance precedente
+# datait de 16h51 et la suivante n'est jamais venue de la soiree. La video
+# n'est pas sortie, et c'est exactement le scenario que l'utilisateur signale
+# depuis deux semaines.
+#
+# LA PARADE : ne plus compter sur la CADENCE du cron, mais sur la DUREE du job.
+# Un job Actions peut tourner jusqu'a 6 heures. Celui-ci boucle pendant 2h45 en
+# repassant toutes les 10 minutes, et le cron ne sert plus qu'a le (re)lancer
+# toutes les 3 heures. Une passe manquee coute 10 minutes, plus 5 heures.
+# Le depot est PUBLIC : les minutes Actions y sont gratuites et illimitees.
+
+on:
+  schedule:
+    # Frequence basse, donc reellement honoree. Decalee de l'heure ronde pour
+    # ne pas concourir avec les workflows de publication.
+    - cron: "7 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Deux veilleurs simultanes relanceraient deux fois la meme video. Le second
+# attend la fin du premier, ce qui enchaine les fenetres sans trou.
+concurrency:
+  group: veilleur
+  cancel-in-progress: false
+
+jobs:
+  veiller:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Boucler sur le rattrapage
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_3: ${{ secrets.ZERNIO_API_KEY_3 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+        run: |
+          # Pas de `set -e` : une passe qui echoue ne doit pas tuer la veille.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          FIN=$(( $(date +%s) + 165 * 60 ))
+          passe=0
+          while [ "$(date +%s)" -lt "$FIN" ]; do
+            passe=$((passe + 1))
+            echo "===== passe $passe — $(date -u +%H:%M:%S) UTC"
+
+            # 1. Rendre a la file ce que Zernio a publie ou perdu. Une file qui
+            #    ment fait refuser la programmation suivante par un 409.
+            #    Une fois par heure : c'est une lecture complete des 5 cles.
+            if [ $(( (passe - 1) % 6 )) -eq 0 ]; then
+              python3 scripts/reconcilier_programmes.py
+            fi
+
+            # 2. Reprendre les publications refusees pour saturation TikTok.
+            python3 scripts/relancer_saturation.py
+
+            # 3. Signaler les creneaux passes sans que rien ne sorte.
+            python3 scripts/filet_sortie.py
+
+            chemins="queue-*.json used-clips-hashes.json relances_saturation.json creneaux_manques.txt"
+            for d in clips clips-argile clips-lovekitchen clips-mindshift clips-pisciniste clips-toprank; do
+              [ -d "$d" ] && chemins="$chemins $d"
+            done
+            git add -A -- $chemins
+            if ! git diff --cached --quiet; then
+              git commit -m "Veilleur : rattrapage (passe $passe) [skip ci]"
+              for essai in 1 2 3; do
+                git pull --rebase origin main && git push && break
+                conflits=$(git diff --name-only --diff-filter=U)
+                if [ -n "$conflits" ]; then
+                  # Notre version vient d'etre recalculee sur l'etat reel des
+                  # comptes ; celle du depot est plus ancienne. En rebase,
+                  # "theirs" designe le commit rejoue, donc le notre.
+                  git checkout --theirs -- $conflits || true
+                  git add -- $conflits
+                  GIT_EDITOR=true git rebase --continue || git rebase --abort || true
+                else
+                  git rebase --abort 2>/dev/null || true
+                fi
+                sleep 10
+              done
+            fi
+
+            sleep 600
+          done
+          echo "Fenetre de veille terminee apres $passe passes."
