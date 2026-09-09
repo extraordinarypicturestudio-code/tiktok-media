@@ -2187,16 +2187,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "46b6e6907a01794ce50390be653418f0d13eecc5ebd694645d2e96430232f97d",
-      "date": "2026-09-06T08:19:41Z",
+      "sha256": "deb5c769667049e7411b914c7107f1f3f137dc7358531ec552810f6279da3b64",
+      "date": "2026-09-09T08:15:13Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 60 fps, 63.6s, 55.7 Mo",
-        "audio": "volume moyen -35.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de manipulation d'ustensiles de cuisine avec des chocs.) ; contenu sonore : On entend de la musique et des bruits de cuisine.",
+        "specs": "1080x1920, 60 fps, 63.6s, 55.8 Mo",
+        "audio": "volume moyen -15.3 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : cheery-monday-kevinmacleod-cc-by.mp3 1.00 (2e 0.39) ; contenu sonore : Cette musique entraînante évoque la cuisine et la gastronomie.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation et cuisson au four d'un chausson de viande hachee farci au fromage, tomate et pane. | aliments : ['viande hachée', 'fromage frais', 'tomate', 'fromage', 'oeuf', 'panure'] | preparation : True",
+        "contenu": "contenu vu : Preparation et cuisson au four d'un chausson de viande hachee farci au fromage, epinards et tomates, puis pane. | aliments : ['viande hachée', 'fromage frais', 'épinards', 'tomate', 'fromage à râper', 'œuf', 'chapelure'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 46b6e6907a01 ; empreinte visuelle : plus proche 0.398"
+        "doublon": "sha256 deb5c7696670 ; empreinte visuelle : plus proche 0.398"
       }
     },
     "vignette_auto": true
@@ -2210,16 +2210,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "5ecaf7c2e6da933e2af90a75610a3892b937083c0b1e31912193c729b7b68952",
-      "date": "2026-09-06T08:22:00Z",
+      "sha256": "9082e4b7c0186f3d55b5b7253da0ac2ba2f5b3c37ea3a59046792bbac615dc4c",
+      "date": "2026-09-09T08:15:28Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 60 fps, 63.8s, 50.7 Mo",
-        "audio": "volume moyen -45.0 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés, incluant le déballage et la préparation d'aliments.) ; contenu sonore : Bruits de cuisine pour la preparation d'un plat.",
+        "specs": "1080x1920, 60 fps, 63.8s, 50.8 Mo",
+        "audio": "volume moyen -15.6 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 1.00 (2e 0.41) ; contenu sonore : Cette musique joyeuse et rythmée accompagne une vidéo.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation d'une recette de pates one-pot avec legumes dans une seule poele. | aliments : ['pates', 'tomates cerises', 'champignons', 'oignon', 'epinards', 'sauce tomate', 'fromage frais', 'creme'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'une recette de pates one pot dans une seule poele avec des ingredients frais et de la creme. | aliments : ['pates', 'tomates cerises', 'champignons', 'oignon', 'epinards', 'sauce tomate', 'fromage frais', 'creme'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 5ecaf7c2e6da ; empreinte visuelle : plus proche 0.406"
+        "doublon": "sha256 9082e4b7c018 ; empreinte visuelle : plus proche 0.406"
       }
     },
     "vignette_auto": true
@@ -2432,16 +2432,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "4871be8779be37149b2634d89768588c50fc7ca43687890443b96fdca5bdf9a9",
-      "date": "2026-09-06T08:36:06Z",
+      "sha256": "549cbee4aea9cbc3f5a07e11b2d4853e0b0a51e655297eb559aefbb16a02c787",
+      "date": "2026-09-09T08:15:42Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 64.3s, 53.6 Mo",
-        "audio": "volume moyen -46.4 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un cuisinier utilise des ustensiles pour préparer un plat) ; contenu sonore : bruits de manipulation d'ustensiles de cuisine en bois",
+        "specs": "1080x1920, 30 fps, 64.3s, 53.7 Mo",
+        "audio": "volume moyen -14.1 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : wallpaper-kevinmacleod-cc-by.mp3 1.00 (2e 0.17) ; contenu sonore : Cette musique électronique entraînante rappelle l'ambiance des jeux vidéo rétro.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation de muffins au chocolat et aux fraises avec des bananes ecrasees | aliments : ['banane', 'oeuf', 'cacao', 'yaourt', 'farine', 'fraise', 'pepites de chocolat', 'muffins'] | preparation : True",
+        "contenu": "contenu vu : Préparation et cuisson de muffins au chocolat et aux fraises avec des bananes écrasées. | aliments : ['banane', 'œuf', 'cacao', 'yaourt', 'farine', 'fraise', 'pépites de chocolat'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 4871be8779be ; empreinte visuelle : plus proche 0.441"
+        "doublon": "sha256 549cbee4aea9 ; empreinte visuelle : plus proche 0.441"
       }
     },
     "vignette_auto": true
@@ -2455,16 +2455,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "21426e3cee0ca6f3dbf79a66611a41a185b83f98652195d46bd88f2f2017cef8",
-      "date": "2026-09-06T08:38:00Z",
+      "sha256": "f59f793b397a2884d64d4d7d159acecc9e54a27dbfe8c9b0c4b61fe074696731",
+      "date": "2026-09-09T08:16:03Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 60 fps, 64.4s, 65.3 Mo",
-        "audio": "volume moyen -37.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Des bruits de cuisine de coupe et de préparation.) ; contenu sonore : Cette vido prsente des bruits de coupe et de mlange.",
+        "specs": "1080x1920, 60 fps, 64.4s, 65.4 Mo",
+        "audio": "volume moyen -15.6 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 1.00 (2e 0.41) ; contenu sonore : Musique douce et rythmée avec des instruments acoustiques divers.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation d'une salade composee avec legumes frais et mais cuit a l'air fryer. | aliments : ['salade', 'concombre', 'tomates cerises', 'oignon rouge', 'herbes', 'mayonnaise', 'huile', 'fromage', 'citron', 'mais'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'une salade composee avec des legumes frais et du mais cuit a l'air fryer. | aliments : ['salade', 'concombre', 'tomates cerises', 'oignon rouge', 'persil', 'mayonnaise', 'huile', 'fromage', 'citron', 'mais'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 21426e3cee0c ; empreinte visuelle : plus proche 0.371"
+        "doublon": "sha256 f59f793b397a ; empreinte visuelle : plus proche 0.371"
       }
     },
     "vignette_auto": true
@@ -2478,16 +2478,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "f5aee6f89fe9b8682f4f0c55f916f99f86690816d41337bda41b0f4f3cd30c08",
-      "date": "2026-09-06T08:39:44Z",
+      "sha256": "c409a2db63b03f93e78258b58ae4f4076486d7072978865e133f5e1db331a57e",
+      "date": "2026-09-09T08:16:18Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 63.7s, 36.9 Mo",
-        "audio": "volume moyen -47.0 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (On entend le bruit de l'eau et d'aliments.) ; contenu sonore : un son de découpe de nourriture et un bruit d'emballage plastique",
+        "specs": "1080x1920, 30 fps, 63.7s, 37.1 Mo",
+        "audio": "volume moyen -16.7 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : carefree-kevinmacleod-cc-by.mp3 1.00 (2e 0.19) ; contenu sonore : Musique douce et rythmée jouée par des percussions",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation d'un wrap a base de poulet hache, courgettes, fromage, tomates et avocat, puis cuisson au four | aliments : ['poulet hache', 'courgettes', 'fromage', 'tomates', 'avocat'] | preparation : True",
+        "contenu": "contenu vu : Preparation d un roule de poulet hache garni de courgettes, fromage, tomates et avocat, puis cuit au four. | aliments : ['poulet hache', 'epices', 'courgettes', 'fromage', 'tomates', 'avocat', 'salade'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 f5aee6f89fe9 ; empreinte visuelle : plus proche 0.345"
+        "doublon": "sha256 c409a2db63b0 ; empreinte visuelle : plus proche 0.345"
       }
     },
     "vignette_auto": true
@@ -2501,16 +2501,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "b60f7b0ba1c44a8127e3213c6bac45277d8a3cdaef09d9af48d1277703b18e46",
-      "date": "2026-09-06T08:40:30Z",
+      "sha256": "96d7ae1302fa106bdf61cb95cb1db35c7884b31eaf0ab34c8a1bb5377f167961",
+      "date": "2026-09-09T08:16:29Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 63.8s, 35.3 Mo",
-        "audio": "volume moyen -48.5 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de manipulation d'ustensiles de cuisine et d'aliments croustillants.) ; contenu sonore : un mixeur broie des aliments dans un bol en plastique",
+        "specs": "1080x1920, 30 fps, 63.8s, 35.5 Mo",
+        "audio": "volume moyen -15.3 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : cheery-monday-kevinmacleod-cc-by.mp3 1.00 (2e 0.39) ; contenu sonore : Cette musique entraînante évoque la préparation de délicieux plats.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation et cuisson de muffins aux fraises fraiches et pepites de chocolat blanc. | aliments : ['œufs', 'sucre', 'lait', 'farine', 'levure', 'fraises', 'chocolat blanc', 'muffins'] | preparation : True",
+        "contenu": "contenu vu : Preparation et cuisson de muffins aux fraises fraiches et pepites de chocolat blanc. | aliments : ['œufs', 'sucre', 'lait', 'farine', 'fraises', 'chocolat blanc', 'muffins'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 b60f7b0ba1c4 ; empreinte visuelle : plus proche 0.353"
+        "doublon": "sha256 96d7ae1302fa ; empreinte visuelle : plus proche 0.353"
       }
     },
     "vignette_auto": true
@@ -2524,16 +2524,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "a1b00c0dc2593105289d219e6e18df7a2420b3dced83dd3b721feb921eae9334",
-      "date": "2026-09-06T08:47:27Z",
+      "sha256": "535d09a951a65d8bf7152c6229b110d9ec3920cd75df46bbf4c195d0c0d5b59c",
+      "date": "2026-09-09T08:16:42Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 60 fps, 63.7s, 50.6 Mo",
-        "audio": "volume moyen -31.6 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (un brossage de quelque chose en bois avec des bruits) ; contenu sonore : un homme coupe des aliments avec un couteau en bois",
+        "specs": "1080x1920, 60 fps, 63.7s, 50.7 Mo",
+        "audio": "volume moyen -15.6 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 1.00 (2e 0.41) ; contenu sonore : Cette courte bande sonore présente une musique de fond agréable.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation de courgettes evidees, farcies de viande et de riz, sauce tomate et gratinage au fromage au four. | aliments : ['courgettes', 'viande hachee', 'riz', 'oignon', 'herbes', 'sauce tomate', 'fromage'] | preparation : True",
+        "contenu": "contenu vu : Préparation de courgettes évidées, farcies de viande et de riz, nappées de sauce tomate et gratinées au four. | aliments : ['courgettes', 'viande hachée', 'riz', 'oignon', 'herbes', 'sauce tomate', 'fromage'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 a1b00c0dc259 ; empreinte visuelle : plus proche 0.409"
+        "doublon": "sha256 535d09a951a6 ; empreinte visuelle : plus proche 0.409"
       }
     },
     "vignette_auto": true
@@ -2547,16 +2547,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "01e3b5164ffcc71be7579fe959cd7549d2de6251b0ada2ceaac67b4f10d6c6aa",
-      "date": "2026-09-06T08:53:21Z",
+      "sha256": "07fcf74dc65e09387991b8fa2f7acae220195efcab798a5d4d6261335f13131f",
+      "date": "2026-09-09T08:17:19Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 60 fps, 64.6s, 55.4 Mo",
-        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 1.00 (son d'origine conserve) ; source : bruits de cuisine seuls (Bruits de cuisine variés avec manipulation d'aliments et d'ustensiles.) ; contenu sonore : coupage, hachage, manipulation d'ustensiles de cuisine, bruits de préparation",
+        "specs": "1080x1920, 60 fps, 64.6s, 55.5 Mo",
+        "audio": "volume moyen -16.7 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : carefree-kevinmacleod-cc-by.mp3 1.00 (2e 0.19) ; contenu sonore : Cette courte bande son instrumentale est animée et joyeuse.",
         "visuel": "profil cuisine : OK",
-        "contenu": "contenu vu : Preparation et cuisson au four de courgettes, champignons et poivrons, melanges ensuite a une sauce blanche et herbes. | aliments : ['courgettes', 'champignons', 'poivrons', 'ail', 'herbes', 'sauce yaourt'] | preparation : True",
+        "contenu": "contenu vu : Préparation, cuisson au four et mélange en salade de courgettes, champignons et poivrons avec une sauce. | aliments : ['courgettes', 'champignons', 'poivrons', 'ail', 'coriandre'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 01e3b5164ffc ; empreinte visuelle : plus proche 0.358"
+        "doublon": "sha256 07fcf74dc65e ; empreinte visuelle : plus proche 0.358"
       }
     },
     "vignette_auto": true
