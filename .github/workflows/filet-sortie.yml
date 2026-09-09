@@ -1,0 +1,129 @@
+name: Filet de sortie
+
+# POURQUOI CE WORKFLOW
+# --------------------
+# Une video deposee chez Zernio peut ne jamais sortir sans laisser de trace :
+# le post echoue au declenchement, ou il disparait purement et simplement.
+# C'est arrive le 2026-09-08 a la sortie love_kitchen de 23h30, et personne ne
+# l'a su avant le lendemain matin.
+#
+# Ce workflow repasse derriere chaque creneau : il verifie que la sortie a bien
+# eu lieu, remet en file ce qui a echoue, laisse `programmer_avance.py` la
+# replacer sur le prochain creneau libre, et OUVRE UNE ALERTE quand un creneau
+# est passe sans rien produire.
+#
+# Il ne sort JAMAIS en echec quand une sortie manque : l'alerte passe par une
+# issue, pas par un mail "run failed". Six mails de ce type en deux jours -
+# tous dus a un `git add` sur un dossier vide - ont fini par etre ignores, et
+# c'est precisement ce qui a masque la vraie panne.
+on:
+  schedule:
+    # Toutes les 30 minutes : chaque creneau est donc verifie dans la
+    # demi-heure qui suit, quel que soit le retard de declenchement GitHub.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: programmation
+  cancel-in-progress: false
+
+jobs:
+  filet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Verifier les creneaux echus
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+        run: python3 scripts/filet_sortie.py
+
+      # Ce que le filet a remis en file repart immediatement sur le prochain
+      # creneau libre de sa chaine, au lieu d'attendre le depot du lendemain.
+      - name: Replacer ce qui est revenu en file
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_API_KEY_2: ${{ secrets.ZERNIO_API_KEY_2 }}
+          ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
+          ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/programmer_avance.py --jours 3
+
+      - name: Enregistrer les files
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          chemins="queue-*.json used-clips-hashes.json"
+          for d in clips clips-argile clips-lovekitchen clips-mindshift clips-pisciniste clips-toprank; do
+            [ -d "$d" ] && chemins="$chemins $d"
+          done
+          git add -A -- $chemins
+          git diff --cached --quiet && exit 0
+          git commit -m "Filet de sortie : files mises a jour [skip ci]"
+          for essai in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push rejete (essai $essai/5), nouvelle tentative..."
+            sleep 10
+          done
+          echo "::error::Impossible de pousser les files apres 5 essais"
+          exit 1
+
+      - name: Alerter si un creneau est passe sans sortie
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('creneaux_manques.txt')) {
+              core.info('Tous les creneaux echus ont produit une sortie.');
+              return;
+            }
+            const lignes = fs.readFileSync('creneaux_manques.txt', 'utf8')
+              .split('\n').filter(l => l.trim());
+            if (!lignes.length) return;
+
+            const corps = [
+              'Un ou plusieurs creneaux sont passes sans produire de publication.',
+              '',
+              '| chaine | video | creneau prevu | ce qui s\'est passe |',
+              '|---|---|---|---|',
+              ...lignes.map(l => '| ' + l.split('|').join(' | ') + ' |'),
+              '',
+              'Les videos concernees ont ete remises en file et redeposees sur le',
+              'prochain creneau libre de leur chaine. Cette issue se ferme a la main',
+              'une fois la sortie constatee.',
+              '',
+              `Run : ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            // Une seule issue ouverte a la fois : re-notifier a chaque tour de
+            // 30 minutes noierait l'alerte sous ses propres rappels.
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'creneau-manque',
+            });
+            if (ouvertes.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: ouvertes.data[0].number, body: corps,
+              });
+              core.warning(`Creneau manque ajoute a l'issue #${ouvertes.data[0].number}`);
+              return;
+            }
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title: 'Creneau passe sans publication',
+              body: corps, labels: ['creneau-manque'],
+            });
+            core.warning(`Alerte ouverte : issue #${issue.data.number}`);
