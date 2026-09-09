@@ -1862,5 +1862,13 @@
     "file": "clips/rc_pates_onepot_cremeuses_50.mp4",
     "status": "published",
     "publishedAt": "2026-09-09T17:51:38.017Z"
+  },
+  {
+    "hash": "054918ba04bc89dbb1dc7f270fb9cd52",
+    "id": "rc_muffins_banane_fraise_60",
+    "channel": "recipe_crave",
+    "file": "clips/rc_muffins_banane_fraise_60.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-09T20:54:23.866Z"
   }
 ]

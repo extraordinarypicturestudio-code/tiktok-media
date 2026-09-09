@@ -2431,7 +2431,7 @@
     "id": "rc_muffins_banane_fraise_60",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_banane_fraise_60.mp4",
     "caption": "Deux bananes écrasées à la place du beurre. Des muffins chocolat-fraise, sans balance.\n\n#muffins #banane #chocolat #fraises #sansbeurre #recette #gouter #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2450,8 +2450,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa116a4adf3106cb6b0f314",
-    "scheduledFor": "2026-09-09T22:20:00",
-    "scheduledForUtc": "2026-09-09T20:20:00Z"
+    "publishedAt": "2026-09-09T20:54:23.866Z"
   },
   {
     "id": "rc_salade_mais_grille_62",
