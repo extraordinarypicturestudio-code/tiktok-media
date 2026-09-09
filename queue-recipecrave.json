@@ -2182,7 +2182,7 @@
     "id": "rc_chausson_viande_fromage_48",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_chausson_viande_fromage_48.mp4",
     "caption": "Un chausson de viande hachée farci au fromage et à la tomate, pané et cuit au four.\n\n#viandehachee #fromage #panure #four #recette #platchaud #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2201,8 +2201,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa1169197bb8c0ad154705c",
-    "scheduledFor": "2026-09-09T12:00:00",
-    "scheduledForUtc": "2026-09-09T10:00:00Z"
+    "publishedAt": "2026-09-09T10:01:10.428Z"
   },
   {
     "id": "rc_pates_onepot_cremeuses_50",

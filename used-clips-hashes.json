@@ -1846,5 +1846,13 @@
     "file": "clips/rc_salade_avocat_poischiches_47.mp4",
     "status": "published",
     "publishedAt": "2026-09-08T23:11:02.341Z"
+  },
+  {
+    "hash": "358015c20f6a28a2fab94b440296327f",
+    "id": "rc_chausson_viande_fromage_48",
+    "channel": "recipe_crave",
+    "file": "clips/rc_chausson_viande_fromage_48.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-09T10:01:10.428Z"
   }
 ]
