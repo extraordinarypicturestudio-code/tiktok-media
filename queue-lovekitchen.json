@@ -170,7 +170,8 @@
         "doublon": "sha256 0a00cdbb545b ; empreinte visuelle : plus proche 0.344"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "Post residuel bloquant supprime (0) - a retenter"
   },
   {
     "id": "51-roulesfraise",
