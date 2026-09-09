@@ -60,6 +60,19 @@ CHAINES = [
     # {"queue": "queue-toprank.json", "dossier": "clips-toprank",
     #  "pseudo": "toprank.tv1", "par_jour": 4, "cle": "ZERNIO_API_KEY",
     #  "script": "publish_next.py", "silence_max_h": 16},
+    # love_kitchen97. ABSENTE DE CETTE LISTE JUSQU'AU 2026-09-09 : ni active,
+    # ni commentee, simplement oubliee. C'est la chaine la plus performante du
+    # projet (17x la mediane des autres) et la SEULE sans surveillance de
+    # silence - d'ou deux semaines de pannes que personne ne voyait passer.
+    # 3/jour a 19h00, 21h30, 23h30 Paris : plus grand ecart = nuit
+    # 23h30 -> 19h00 (19h30) + marge de retard du cron.
+    # `rattrapage: False` : ne JAMAIS publier en urgence sur cette chaine. Les
+    # sorties sont deposees a l'avance sur un horaire fixe ; une publication
+    # immediate tomberait a une heure quelconque et casserait l'espacement qui
+    # evite les refus "at capacity".
+    {"queue": "queue-lovekitchen.json", "dossier": "clips-lovekitchen",
+     "pseudo": "love_kitchen97", "par_jour": 3, "cle": "ZERNIO_API_KEY_2",
+     "script": "publish_next.py", "silence_max_h": 26, "rattrapage": False},
     {"queue": "queue-recipecrave.json", "dossier": "clips",
      "pseudo": "recipe_crave", "par_jour": 4, "cle": "ZERNIO_API_KEY",
      "script": "publish_next.py", "silence_max_h": 16},
@@ -246,6 +259,13 @@ def main():
             corrections_totales.extend(f"[{pseudo}] {c}" for c in corrections)
 
         pending = [v for v in queue if v.get("status") == "pending"]
+        # Le STOCK, c'est ce qui reste a sortir : les videos en attente PLUS
+        # celles deja deposees chez Zernio pour un creneau futur. Ne compter
+        # que `pending` faisait remonter "STOCK BAS : 0 video" sur les quatre
+        # chaines alors que treize sorties etaient programmees - une alerte qui
+        # se declenche tous les jours sans raison est une alerte que plus
+        # personne ne lit, et c'est comme ca qu'une vraie panne passe.
+        stock = pending + [v for v in queue if v.get("status") == "scheduled"]
         # 'failed' = un candidat que TikTok a definitivement refuse (contenu,
         # moderation...) : le pipeline passe deja au suivant tout seul
         # (publish_next.py), donc ca ne bloque jamais rien. On le signale une
@@ -287,19 +307,20 @@ def main():
 
         if h is None:
             infos.append(f"{pseudo} : aucune publication enregistree pour l'instant")
-            if pending:
+            if pending and chaine.get("rattrapage", True):
                 # Chaine jamais partie alors qu'elle a du contenu pret : c'est
                 # le cas d'un workflow tout neuf qui n'a jamais tourne.
                 rattrapages.append((pseudo, chaine, "aucune publication enregistree"))
         else:
             infos.append(f"{pseudo} : derniere publication il y a {h:.1f} h")
-            if h > chaine["silence_max_h"] and pending:
+            if h > chaine["silence_max_h"] and pending and chaine.get("rattrapage", True):
                 rattrapages.append(
                     (pseudo, chaine,
                      f"silencieuse depuis {h:.0f} h (seuil {chaine['silence_max_h']} h)"))
 
-        infos.append(f"{pseudo} : {len(pending)} en attente "
-                     f"({len(pending)/par_jour:.1f} jours de contenu)")
+        infos.append(f"{pseudo} : {len(stock)} en stock dont "
+                     f"{len(stock) - len(pending)} deja deposee(s) "
+                     f"({len(stock)/par_jour:.1f} jours de contenu)")
 
         for v in queue:
             st = etats.get(v["url"], set())
@@ -307,16 +328,26 @@ def main():
                 anomalies.append(
                     f"[{pseudo}] DOUBLON IMMINENT : '{v['id']}' est marquee en "
                     "attente mais est deja en ligne")
+            # Une sortie DEPOSEE dont le post n'existe plus chez Zernio : ni
+            # publiee, ni en echec, juste effacee. C'est ce qui est arrive a la
+            # sortie love_kitchen du 2026-09-08 a 23h30, et rien ne l'a
+            # signale : le realignement la remettait en file en silence.
+            if v.get("status") == "scheduled" and not st:
+                anomalies.append(
+                    f"[{pseudo}] DEPOT DISPARU : '{v['id']}' etait programmee "
+                    f"pour {v.get('scheduledFor', '?')} et son post n'existe "
+                    "plus chez Zernio")
             if (v.get("status") == "published" and st
                     and "published" not in st and "note" not in v):
                 anomalies.append(
                     f"[{pseudo}] PUBLICATION FANTOME : '{v['id']}' est marquee "
                     "publiee mais n'est jamais sortie")
 
-        if len(pending) < par_jour * 2:
+        if len(stock) < par_jour * 2:
             anomalies.append(
-                f"[{pseudo}] STOCK BAS : {len(pending)} video(s) en attente, "
-                f"soit moins de 2 jours a {par_jour}/jour")
+                f"[{pseudo}] STOCK BAS : {len(stock)} video(s) restantes "
+                f"({len(pending)} en attente + {len(stock) - len(pending)} "
+                f"deposees), soit moins de 2 jours a {par_jour}/jour")
 
         # Controle des specs des clips encore en file : mieux vaut le savoir
         # maintenant qu'au moment ou TikTok refuse la video.
