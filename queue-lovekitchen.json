@@ -127,7 +127,7 @@
     "id": "53-pouletfrit",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/53-pouletfrit.mp4",
     "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\n\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -144,7 +144,10 @@
         "doublon": "sha256 45bd5d22410c ; empreinte visuelle : plus proche 0.398"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa1b38eacabf714741303d2",
+    "scheduledForUtc": "2026-09-12T17:00:00.000Z",
+    "scheduledFor": "2026-09-12T19:00:00"
   },
   {
     "id": "52-tartepeches",
