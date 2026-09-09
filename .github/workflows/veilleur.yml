@@ -54,7 +54,9 @@ jobs:
           ZERNIO_API_KEY_4: ${{ secrets.ZERNIO_API_KEY_4 }}
           ZERNIO_API_KEY_5: ${{ secrets.ZERNIO_API_KEY_5 }}
         run: |
-          # Pas de `set -e` : une passe qui echoue ne doit pas tuer la veille.
+          # GitHub lance l'etape avec `bash -e` : la moindre commande en echec
+          # tuerait la veille pour 2h45. Une passe ratee doit juste passer.
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -77,10 +79,17 @@ jobs:
             # 3. Signaler les creneaux passes sans que rien ne sorte.
             python3 scripts/filet_sortie.py
 
-            chemins="queue-*.json used-clips-hashes.json relances_saturation.json creneaux_manques.txt"
-            for d in clips clips-argile clips-lovekitchen clips-mindshift clips-pisciniste clips-toprank; do
-              [ -d "$d" ] && chemins="$chemins $d"
+            # `git add -- <chemin>` sort en 128 si le chemin n'existe pas.
+            # `creneaux_manques.txt` n'est ecrit que quand un creneau est
+            # rate : le nommer en dur a fait echouer la premiere veille du
+            # 2026-09-09 des sa passe 1. On n'ajoute que ce qui existe -- la
+            # meme regle vaut pour les dossiers de clips, vides une fois
+            # leurs videos publiees.
+            chemins=""
+            for c in queue-*.json used-clips-hashes.json relances_saturation.json                      creneaux_manques.txt clips clips-argile clips-lovekitchen                      clips-mindshift clips-pisciniste clips-toprank; do
+              [ -e "$c" ] && chemins="$chemins $c"
             done
+            [ -z "$chemins" ] && chemins="queue-lovekitchen.json"
             git add -A -- $chemins
             if ! git diff --cached --quiet; then
               git commit -m "Veilleur : rattrapage (passe $passe) [skip ci]"
