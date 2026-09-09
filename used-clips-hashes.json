@@ -1870,5 +1870,13 @@
     "file": "clips/rc_muffins_banane_fraise_60.mp4",
     "status": "published",
     "publishedAt": "2026-09-09T20:54:23.866Z"
+  },
+  {
+    "hash": "cc8351f3835011bcaaaf58a67e974335",
+    "id": "rc_salade_mais_grille_62",
+    "channel": "recipe_crave",
+    "file": "clips/rc_salade_mais_grille_62.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-09T23:11:28.296Z"
   }
 ]

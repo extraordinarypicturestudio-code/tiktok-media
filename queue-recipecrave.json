@@ -2456,7 +2456,7 @@
     "id": "rc_salade_mais_grille_62",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_mais_grille_62.mp4",
     "caption": "Le maïs passé à l'air fryer avant d'aller dans la salade. Ça change tout.\n\n#salade #mais #airfryer #concombre #sauce #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2475,8 +2475,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa116ad4fa3b11148201bcd",
-    "scheduledFor": "2026-09-10T01:10:00",
-    "scheduledForUtc": "2026-09-09T23:10:00Z"
+    "publishedAt": "2026-09-09T23:11:28.296Z"
   },
   {
     "id": "rc_roule_poulet_courgettes_64",
