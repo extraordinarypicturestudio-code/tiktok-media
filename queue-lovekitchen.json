@@ -200,5 +200,71 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-10T19:00:00",
     "scheduledForUtc": "2026-09-10T17:00:00Z"
+  },
+  {
+    "id": "54-pizzathon",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/54-pizzathon.mp4",
+    "caption": "Mon mari m'avait dit que le thon en boîte c'était de la nourriture de dépannage 🍕🧀\r\n\r\n#pizzamaison #pizzathon #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f239c30f54d4043195ed1fa183ec568a8b2d7c362018c335290f604a4271e021",
+      "date": "2026-09-09T07:53:52Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.2s, 48.8 Mo",
+        "audio": "volume moyen -18.6 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme parle de son mari dans sa cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme prépare une pizza maison avec de la pâte, des légumes, du thon en boîte et du fromage râpé. | aliments : ['œufs', 'lait', 'farine', 'oignon', 'poivrons', 'thon en boîte', 'olives', 'fromage râpé'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f239c30f54d4 ; empreinte visuelle : plus proche 0.322"
+      }
+    }
+  },
+  {
+    "id": "55-ailespoulet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/55-ailespoulet.mp4",
+    "caption": "Mon mari m'avait dit que les ailes de poulet ça ne se mangeait qu'au bar 🍗🔥\r\n\r\n#ailesdepoulet #pouletmariné #recettefacile #samedisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "aeed6aff5a8a85026760925c70354c4346d3d84d5077aebf8aad8cc823f6a3a6",
+      "date": "2026-09-09T07:54:10Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.0s, 50.2 Mo",
+        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.21 ; contenu sonore : Une femme explique sa recette de cuisine avec les ailes",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'ailes de poulet marinees et cuites au four illustrant une anecdote sur le mari de l'auteur. | aliments : ['ailes de poulet', 'sauce', 'citron', 'epices'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 aeed6aff5a8a ; empreinte visuelle : plus proche 0.391"
+      }
+    }
+  },
+  {
+    "id": "56-onepotpates",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/56-onepotpates.mp4",
+    "caption": "Mon mari m'avait dit qu'on ne fait pas cuire des pâtes dans la sauce 🍝🍅\r\n\r\n#onepotpasta #pates #recettefacile #mardisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e77d66ef609efca0a73d62d3a2e406dec396337fc7b829ecc7955d889177561a",
+      "date": "2026-09-09T07:54:21Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.6s, 55.4 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de sa recette de cuisine avec passion.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne cuisine des pates en faisant tout cuire ensemble dans la poele avec la sauce. | aliments : ['pates', 'viande hachee', 'tomates cerises', 'basilic', 'sauce tomate', 'epinards', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 e77d66ef609e ; empreinte visuelle : plus proche 0.411"
+      }
+    }
   }
 ]
