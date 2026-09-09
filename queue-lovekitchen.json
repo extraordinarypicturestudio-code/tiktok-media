@@ -153,7 +153,7 @@
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
     "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -171,7 +171,9 @@
       }
     },
     "vignette_auto": true,
-    "error": "Post residuel bloquant supprime (0) - a retenter"
+    "postId": "6aa1e807c327cb29b3a202f4",
+    "scheduledForUtc": "2026-09-10T00:08:08.000Z",
+    "scheduledFor": "2026-09-10T02:08:08"
   },
   {
     "id": "51-roulesfraise",

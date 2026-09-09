@@ -458,7 +458,7 @@
     "id": "tr_20260910_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260910_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -476,13 +476,15 @@
       }
     },
     "vignette_auto": true,
-    "error": "Post residuel bloquant supprime (0) - a retenter"
+    "postId": "6aa1e805baabff90118f23d8",
+    "scheduledForUtc": "2026-09-09T23:53:08.000Z",
+    "scheduledFor": "2026-09-10T01:53:08"
   },
   {
     "id": "tr_20260911_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260911_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -499,6 +501,9 @@
         "doublon": "sha256 3439b48e7004 ; empreinte visuelle : plus proche 0.422"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa1ea67b98e8631b833a162",
+    "scheduledForUtc": "2026-09-10T00:03:17.000Z",
+    "scheduledFor": "2026-09-10T02:03:17"
   }
 ]
