@@ -205,7 +205,7 @@
     "id": "54-pizzathon",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/54-pizzathon.mp4",
     "caption": "Mon mari m'avait dit que le thon en boîte c'était de la nourriture de dépannage 🍕🧀\r\n\r\n#pizzamaison #pizzathon #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -222,10 +222,9 @@
         "doublon": "sha256 dfc3b81d5333 ; empreinte visuelle : plus proche 0.318"
       }
     },
-    "postId": "6aa110d3720508ef3ccea61f",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-10T21:30:00",
-    "scheduledForUtc": "2026-09-10T19:30:00Z"
+    "publishedAt": "2026-09-09T20:02:37Z",
+    "note": "publiee A LA MAIN par l utilisateur le 2026-09-09, depot Zernio supprime pour eviter le doublon"
   },
   {
     "id": "55-ailespoulet",
