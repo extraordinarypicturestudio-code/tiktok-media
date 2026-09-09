@@ -2584,5 +2584,181 @@
     "postId": "6aa116fc233a5d987b9e5fa0",
     "scheduledFor": "2026-09-11T01:10:00",
     "scheduledForUtc": "2026-09-10T23:10:00Z"
+  },
+  {
+    "id": "rc_pommesdeterre_fondantes_71",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pommesdeterre_fondantes_71.mp4",
+    "caption": "Faites dorer les pommes de terre avant de les napper de sauce blanche 🍳\r\n\r\n#pommes #terre #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e9623b16dd27a85d9285734227c1f0e187da6c694454a3e605fd9467fbac5124",
+      "date": "2026-09-09T09:58:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 42.3 Mo",
+        "audio": "volume moyen -14.1 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : wallpaper-kevinmacleod-cc-by.mp3 1.00 (2e 0.17) ; contenu sonore : Musique entraînante de fond avec un rythme tropical et moderne.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Cuisson de pommes de terre grenailles et preparation d une sauce blanche au citron et ail, puis dressage. | aliments : ['pommes de terre', 'ail', 'citron', 'sauce blanche', 'epices', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 e9623b16dd27 ; empreinte visuelle : plus proche 0.401"
+      }
+    }
+  },
+  {
+    "id": "rc_courgettes_gratinees_72",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_gratinees_72.mp4",
+    "caption": "Creuser et garnir des courgettes fraiches avec un melange colore et fondant 🍳\r\n\r\n#courgette #recette #legume #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "933015ff0c3964ee918de16272d40227840a4980337f145d849f405d21bca582",
+      "date": "2026-09-09T09:58:44Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.2s, 47.0 Mo",
+        "audio": "volume moyen -15.3 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : cheery-monday-kevinmacleod-cc-by.mp3 1.00 (2e 0.39) ; contenu sonore : Cette musique joyeuse pourrait accompagner une recette de cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de courgettes creusees et garnies de legumes et de fromage. | aliments : ['courgettes', 'tomates cerises', 'ail', 'oignon', 'fromage', 'herbes', 'sauce tomate'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 933015ff0c39 ; empreinte visuelle : plus proche 0.417"
+      }
+    }
+  },
+  {
+    "id": "rc_poulet_saute_legumes_73",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_poulet_saute_legumes_73.mp4",
+    "caption": "Incorporer les morceaux de poulet dores directement au cur des legumes sautes 🍳\r\n\r\n#poulet #legumes #saute #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7b569b85f5eac36ebfd90e07131f8834dfaac31cd476e0d3c73e205ffb0ec9b1",
+      "date": "2026-09-09T09:59:30Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.8s, 50.4 Mo",
+        "audio": "volume moyen -14.1 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : wallpaper-kevinmacleod-cc-by.mp3 1.00 (2e 0.17) ; contenu sonore : Cette courte introduction musicale est probablement extraite d'une vidéo.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un saute de poulet et legumes avec du riz | aliments : ['poulet', 'legumes', 'brocoli', 'carottes', 'poivrons', 'riz'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7b569b85f5ea ; empreinte visuelle : plus proche 0.408"
+      }
+    }
+  },
+  {
+    "id": "rc_pates_crevettes_75",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_crevettes_75.mp4",
+    "caption": "Faites sauter des crevettes epicees avec des legumes frais et des pates 🍳\r\n\r\n#pates #crevettes #italien #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "638517c958298b8de437424467b3e13c7a77c82a4fbe84324e636b5c49d015b9",
+      "date": "2026-09-09T10:00:58Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.9s, 55.0 Mo",
+        "audio": "volume moyen -15.7 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 1.00 (2e 0.41) ; contenu sonore : Cette courte bande sonore présente une musique de style pop.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation de pates sautees aux crevettes, tomates cerises, courgettes et citron. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'ail', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 638517c95829 ; empreinte visuelle : plus proche 0.413"
+      }
+    }
+  },
+  {
+    "id": "rc_boeuf_legumes_sauce_76",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_boeuf_legumes_sauce_76.mp4",
+    "caption": "Saisir la viande parfaitement avant de napper le tout de sauce onctueuse 🍳\r\n\r\n#boeuf #recette #cuisine #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e7f24d8b64cd3135377f7959759ce577c91e5552e7c9f320ce8bf9aada1758f6",
+      "date": "2026-09-09T10:02:09Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.5s, 50.0 Mo",
+        "audio": "volume moyen -16.7 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : carefree-kevinmacleod-cc-by.mp3 1.00 (2e 0.19) ; contenu sonore : Une musique joyeuse joue avec un ukulélé, entraînante et légère.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Cuisson de viande et preparation de legumes et d'une sauce aux champignons pour accompagner un plat. | aliments : ['viande', 'beurre', 'herbes', 'poivrons', 'pommes de terre', 'haricots verts', 'oignons', 'champignons', 'creme', 'puree'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 e7f24d8b64cd ; empreinte visuelle : plus proche 0.398"
+      }
+    }
+  },
+  {
+    "id": "rc_saumon_cremeux_tomates_77",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_saumon_cremeux_tomates_77.mp4",
+    "caption": "Saisir les paves de saumon avant de mijoter la sauce onctueuse 🍳\r\n\r\n#saumon #pates #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "78f30e93418df92d71d25a24f97abbc20b37d345fae3ccee6f80febcc97a28fb",
+      "date": "2026-09-09T10:02:22Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.8s, 53.3 Mo",
+        "audio": "volume moyen -14.1 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : wallpaper-kevinmacleod-cc-by.mp3 1.00 (2e 0.17) ; contenu sonore : Cette musique électronique entraînante est parfaite pour une ambiance festive.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Cuisson de pavés de saumon puis préparation d'une sauce crémeuse aux tomates cerises et pâtes. | aliments : ['saumon', 'tomates cerises', 'pates', 'creme', 'ail', 'epices', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 78f30e93418d ; empreinte visuelle : plus proche 0.396"
+      }
+    }
+  },
+  {
+    "id": "rc_orzotto_boeuf_78",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_orzotto_boeuf_78.mp4",
+    "caption": "Incorporer les pâtes perlées directement dans la poêle pour un plat crémeux 🍳\r\n\r\n#orzotto #pates #tomate #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "fb5cbca8ef2c6e4f18e63a7fc22c126746bc7bd9ec224ecac2092b415e4606f6",
+      "date": "2026-09-09T10:02:47Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 57.5 Mo",
+        "audio": "volume moyen -15.6 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 1.00 (2e 0.41) ; contenu sonore : Cette musique joyeuse pourrait accompagner une recette de cuisine.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un orzotto à la poêle avec viande hachée, tomates cerises et pâtes perlées. | aliments : ['viande hachée', 'oignons', 'tomates cerises', 'herbes', 'pâtes perlées', 'sauce tomate', 'fromage', 'citron'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 fb5cbca8ef2c ; empreinte visuelle : plus proche 0.395"
+      }
+    }
+  },
+  {
+    "id": "rc_pates_poulet_champignons_74",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_poulet_champignons_74.mp4",
+    "caption": "Incorporer delicatement les penne cuites dans une saucecremeuse aux tomates et champignons 🍳\r\n\r\n#pates #poulet #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "2b794cee8fca49aa7b49a37a1ad3aa68ffcdbc105d62fbda1e567c57e544ddbf",
+      "date": "2026-09-09T10:03:11Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.5s, 56.7 Mo",
+        "audio": "volume moyen -16.7 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : carefree-kevinmacleod-cc-by.mp3 1.00 (2e 0.19) ; contenu sonore : Une musique joyeuse joue avec un ukulélé et un xylophone.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'un plat de pates avec du poulet, des champignons, des tomates cerises et une sauce cremenee | aliments : ['poulet', 'champignons', 'tomates cerises', 'pates', 'penne', 'epinards', 'creme', 'basilic'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 2b794cee8fca ; empreinte visuelle : plus proche 0.396"
+      }
+    }
   }
 ]

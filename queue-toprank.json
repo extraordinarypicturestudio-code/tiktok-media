@@ -453,5 +453,27 @@
     "postId": "6a9dc38baa7f666e22138ccd",
     "vignette_auto": true,
     "publishedAt": "2026-09-08T02:22:06.015Z"
+  },
+  {
+    "id": "tr_20260910_2040",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260910_2040.mp4",
+    "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "59740f95324b4ac42603956e74b046b560a63500fdbb3bb324a519c6c078887b",
+      "date": "2026-09-09T09:52:42Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.1s, 45.5 Mo",
+        "audio": "volume moyen -20.2 dB ; contenu sonore : Cette musique joyeuse accompagne la préparation culinaire d'un repas.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de fails et ratages divers : accidents de voiture, engins de chantier dans l'eau, chutes d'objets. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 59740f95324b ; empreinte visuelle : plus proche 0.396"
+      }
+    }
   }
 ]
