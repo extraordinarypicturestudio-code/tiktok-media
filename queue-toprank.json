@@ -475,7 +475,9 @@
         "doublon": "sha256 59740f95324b ; empreinte visuelle : plus proche 0.396"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa175cc3356bbd11d07e449",
+    "error": "Saturation TikTok, tentative non comptee (0/3) : TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up."
   },
   {
     "id": "tr_20260911_2040",
