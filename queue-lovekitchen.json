@@ -118,8 +118,8 @@
         "doublon": "sha256 ff5d7865633b ; empreinte visuelle : plus proche 0.391"
       }
     },
-    "vignette_auto": false,
-    "postId": "6aa1035c8e76faec348ab348",
+    "vignette_auto": true,
+    "postId": "6aa1037877bbc66fb7555219",
     "scheduledFor": "2026-09-09T23:30:00",
     "scheduledForUtc": "2026-09-09T21:30:00Z"
   },
