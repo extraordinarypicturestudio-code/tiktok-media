@@ -205,7 +205,7 @@
     "id": "54-pizzathon",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/54-pizzathon.mp4",
     "caption": "Mon mari m'avait dit que le thon en boîte c'était de la nourriture de dépannage 🍕🧀\r\n\r\n#pizzamaison #pizzathon #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -221,13 +221,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 f239c30f54d4 ; empreinte visuelle : plus proche 0.322"
       }
-    }
+    },
+    "postId": "6aa110d3720508ef3ccea61f",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-10T21:30:00",
+    "scheduledForUtc": "2026-09-10T19:30:00Z"
   },
   {
     "id": "55-ailespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/55-ailespoulet.mp4",
     "caption": "Mon mari m'avait dit que les ailes de poulet ça ne se mangeait qu'au bar 🍗🔥\r\n\r\n#ailesdepoulet #pouletmariné #recettefacile #samedisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -243,13 +247,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 aeed6aff5a8a ; empreinte visuelle : plus proche 0.391"
       }
-    }
+    },
+    "postId": "6aa110dc521ce27128f89b6b",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-10T23:30:00",
+    "scheduledForUtc": "2026-09-10T21:30:00Z"
   },
   {
     "id": "56-onepotpates",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/56-onepotpates.mp4",
     "caption": "Mon mari m'avait dit qu'on ne fait pas cuire des pâtes dans la sauce 🍝🍅\r\n\r\n#onepotpasta #pates #recettefacile #mardisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -265,6 +273,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 e77d66ef609e ; empreinte visuelle : plus proche 0.411"
       }
-    }
+    },
+    "postId": "6aa110e5acac9aef0b3cf248",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T19:00:00",
+    "scheduledForUtc": "2026-09-11T17:00:00Z"
   }
 ]
