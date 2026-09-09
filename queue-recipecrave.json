@@ -2132,7 +2132,7 @@
     "id": "rc_gateau_choco_cheesecake_46",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_gateau_choco_cheesecake_46.mp4",
     "caption": "Un gâteau au chocolat avec une couche de cheesecake cachée dedans.\n\n#gateauchocolat #cheesecake #chocolat #patisserie #recette #dessert #gouter #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2151,14 +2151,13 @@
     },
     "vignette_auto": true,
     "postId": "6aa06521225dcdee72023edb",
-    "scheduledFor": "2026-09-08T22:20:00",
-    "scheduledForUtc": "2026-09-08T20:20:00Z"
+    "publishedAt": "2026-09-08T20:21:16.160Z"
   },
   {
     "id": "rc_salade_avocat_poischiches_47",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_avocat_poischiches_47.mp4",
     "caption": "Avocat, pois chiches, feta et tomate. Prête en dix minutes.\n\n#salade #avocat #poischiches #feta #tomate #recette #healthy #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2177,8 +2176,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa0652b8fbbcd7c11d1abfb",
-    "scheduledFor": "2026-09-09T01:10:00",
-    "scheduledForUtc": "2026-09-08T23:10:00Z"
+    "publishedAt": "2026-09-08T23:11:02.341Z"
   },
   {
     "id": "rc_chausson_viande_fromage_48",
