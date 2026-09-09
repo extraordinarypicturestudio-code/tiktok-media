@@ -2589,7 +2589,7 @@
     "id": "rc_pommesdeterre_fondantes_71",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pommesdeterre_fondantes_71.mp4",
     "caption": "Faites dorer les pommes de terre avant de les napper de sauce blanche 🍳\r\n\r\n#pommes #terre #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2605,13 +2605,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 e9623b16dd27 ; empreinte visuelle : plus proche 0.401"
       }
-    }
+    },
+    "postId": "6aa12f34519fcac48f56308c",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T12:00:00",
+    "scheduledForUtc": "2026-09-11T10:00:00Z"
   },
   {
     "id": "rc_courgettes_gratinees_72",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_gratinees_72.mp4",
     "caption": "Creuser et garnir des courgettes fraiches avec un melange colore et fondant 🍳\r\n\r\n#courgette #recette #legume #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2627,13 +2631,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 933015ff0c39 ; empreinte visuelle : plus proche 0.417"
       }
-    }
+    },
+    "postId": "6aa12f3e5f2ee10a23d7cd87",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T19:50:00",
+    "scheduledForUtc": "2026-09-11T17:50:00Z"
   },
   {
     "id": "rc_poulet_saute_legumes_73",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_poulet_saute_legumes_73.mp4",
     "caption": "Incorporer les morceaux de poulet dores directement au cur des legumes sautes 🍳\r\n\r\n#poulet #legumes #saute #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2649,13 +2657,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7b569b85f5ea ; empreinte visuelle : plus proche 0.408"
       }
-    }
+    },
+    "postId": "6aa12f465f2ee10a23d7cfa0",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T22:20:00",
+    "scheduledForUtc": "2026-09-11T20:20:00Z"
   },
   {
     "id": "rc_pates_crevettes_75",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_crevettes_75.mp4",
     "caption": "Faites sauter des crevettes epicees avec des legumes frais et des pates 🍳\r\n\r\n#pates #crevettes #italien #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2671,13 +2683,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 638517c95829 ; empreinte visuelle : plus proche 0.413"
       }
-    }
+    },
+    "postId": "6aa12f595f2ee10a23d7d5d8",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T01:10:00",
+    "scheduledForUtc": "2026-09-11T23:10:00Z"
   },
   {
     "id": "rc_boeuf_legumes_sauce_76",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_boeuf_legumes_sauce_76.mp4",
     "caption": "Saisir la viande parfaitement avant de napper le tout de sauce onctueuse 🍳\r\n\r\n#boeuf #recette #cuisine #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2693,13 +2709,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 e7f24d8b64cd ; empreinte visuelle : plus proche 0.398"
       }
-    }
+    },
+    "postId": "6aa12f719843c9b46acf543b",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T12:00:00",
+    "scheduledForUtc": "2026-09-12T10:00:00Z"
   },
   {
     "id": "rc_saumon_cremeux_tomates_77",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_saumon_cremeux_tomates_77.mp4",
     "caption": "Saisir les paves de saumon avant de mijoter la sauce onctueuse 🍳\r\n\r\n#saumon #pates #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2715,13 +2735,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 78f30e93418d ; empreinte visuelle : plus proche 0.396"
       }
-    }
+    },
+    "postId": "6aa12f7a9843c9b46acf55c1",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T19:50:00",
+    "scheduledForUtc": "2026-09-12T17:50:00Z"
   },
   {
     "id": "rc_orzotto_boeuf_78",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_orzotto_boeuf_78.mp4",
     "caption": "Incorporer les pâtes perlées directement dans la poêle pour un plat crémeux 🍳\r\n\r\n#orzotto #pates #tomate #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2737,13 +2761,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 fb5cbca8ef2c ; empreinte visuelle : plus proche 0.395"
       }
-    }
+    },
+    "postId": "6aa12f91cdcd3538057f6b0e",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T22:20:00",
+    "scheduledForUtc": "2026-09-12T20:20:00Z"
   },
   {
     "id": "rc_pates_poulet_champignons_74",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_poulet_champignons_74.mp4",
     "caption": "Incorporer delicatement les penne cuites dans une saucecremeuse aux tomates et champignons 🍳\r\n\r\n#pates #poulet #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2759,6 +2787,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 2b794cee8fca ; empreinte visuelle : plus proche 0.396"
       }
-    }
+    },
+    "postId": "6aa12fab1a6a4d90975157b8",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T01:10:00",
+    "scheduledForUtc": "2026-09-12T23:10:00Z"
   }
 ]
