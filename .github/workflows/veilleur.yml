@@ -18,9 +18,16 @@ name: Veilleur (rattrapage continu)
 # depuis deux semaines.
 #
 # LA PARADE : ne plus compter sur la CADENCE du cron, mais sur la DUREE du job.
-# Un job Actions peut tourner jusqu'a 6 heures. Celui-ci boucle pendant 2h45 en
+# Un job Actions peut tourner jusqu'a 6 heures. Celui-ci boucle pendant 5h30 en
 # repassant toutes les 10 minutes, et le cron ne sert plus qu'a le (re)lancer
 # toutes les 3 heures. Une passe manquee coute 10 minutes, plus 5 heures.
+#
+# Fenetre portee de 2h45 a 5h30 le 2026-09-10 : a 2h45, un cron saute laissait
+# un trou. Constate le jour meme - la veille lancee a 11h09 s'est terminee a
+# 13h54 et le declenchement de 15h07 n'est pas venu, alors que trois sorties
+# etaient prevues dans la soiree. A 5h30, deux lancements par jour suffisent a
+# couvrir la journee entiere, et le suivant s'enchaine derriere celui en cours
+# grace au groupe de concurrence.
 # Le depot est PUBLIC : les minutes Actions y sont gratuites et illimitees.
 
 on:
@@ -42,7 +49,7 @@ concurrency:
 jobs:
   veiller:
     runs-on: ubuntu-latest
-    timeout-minutes: 200
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
@@ -58,7 +65,7 @@ jobs:
           # tuerait la veille pour 2h45. Une passe ratee doit juste passer.
           set +e
 
-          FIN=$(( $(date +%s) + 165 * 60 ))
+          FIN=$(( $(date +%s) + 330 * 60 ))
           passe=0
           while [ "$(date +%s)" -lt "$FIN" ]; do
             passe=$((passe + 1))
