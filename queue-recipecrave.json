@@ -2506,7 +2506,7 @@
     "id": "rc_muffins_fraise_chocolatblanc_65",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_muffins_fraise_chocolatblanc_65.mp4",
     "caption": "Fraises fraîches et pépites de chocolat blanc. Des muffins qui restent moelleux.\n\n#muffins #fraises #chocolatblanc #patisserie #recette #gouter #dessert #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2525,8 +2525,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa116bde07781658b4b2324",
-    "scheduledFor": "2026-09-10T19:50:00",
-    "scheduledForUtc": "2026-09-10T17:50:00Z"
+    "publishedAt": "2026-09-10T17:51:29.493Z"
   },
   {
     "id": "rc_courgettes_farcies_69",
