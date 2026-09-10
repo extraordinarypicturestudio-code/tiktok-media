@@ -146,5 +146,27 @@
     },
     "postId": "6a9defb787d90981ce0c0e41",
     "publishedAt": "2026-09-06T22:57:59Z"
+  },
+  {
+    "id": "a20-vasetropgrand",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a20-vasetropgrand.mp4",
+    "caption": "Il voulait un vase plus grand que tout ce que j'avais tourné 🏺🌿\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #tournage #ceramique #atelier #vase #storytime #asmr #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "8719a75a761fa4b1935746dd250a1fbc988630fc1ce7f43d686e679e82093b58",
+      "date": "2026-09-10T18:30:14Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.6s, 24.1 Mo",
+        "audio": "volume moyen -18.6 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de poterie sur une musique de fond",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une potiere file de l'argile sur un tour dans son atelier | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 8719a75a761f ; empreinte visuelle : plus proche 0.352"
+      }
+    }
   }
 ]
