@@ -2531,7 +2531,7 @@
     "id": "rc_courgettes_farcies_69",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_farcies_69.mp4",
     "caption": "Les courgettes évidées à l'emporte-pièce, farcies viande et riz, gratinées.\n\n#courgettes #farcies #viandehachee #riz #gratine #recette #diner #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2550,8 +2550,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa116f3233a5d987b9e5c17",
-    "scheduledFor": "2026-09-10T22:20:00",
-    "scheduledForUtc": "2026-09-10T20:20:00Z"
+    "publishedAt": "2026-09-10T20:21:15.706Z"
   },
   {
     "id": "rc_legumes_rotis_sauce_70",

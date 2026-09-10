@@ -1902,5 +1902,13 @@
     "file": "clips/rc_muffins_fraise_chocolatblanc_65.mp4",
     "status": "published",
     "publishedAt": "2026-09-10T17:51:29.493Z"
+  },
+  {
+    "hash": "f3842dcf7f7038744fd6b43ea54ef893",
+    "id": "rc_courgettes_farcies_69",
+    "channel": "recipe_crave",
+    "file": "clips/rc_courgettes_farcies_69.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-10T20:21:15.706Z"
   }
 ]
