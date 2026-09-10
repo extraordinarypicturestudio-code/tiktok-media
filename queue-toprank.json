@@ -483,7 +483,7 @@
     "id": "tr_20260911_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260911_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -500,6 +500,9 @@
         "doublon": "sha256 3439b48e7004 ; empreinte visuelle : plus proche 0.422"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa2b9e0f7f66d0c92a4be72",
+    "scheduledForUtc": "2026-09-10T14:48:31.000Z",
+    "scheduledFor": "2026-09-10T16:48:31"
   }
 ]
