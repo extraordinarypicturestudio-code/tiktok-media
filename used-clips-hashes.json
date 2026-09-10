@@ -1878,5 +1878,13 @@
     "file": "clips/rc_salade_mais_grille_62.mp4",
     "status": "published",
     "publishedAt": "2026-09-09T23:11:28.296Z"
+  },
+  {
+    "hash": "b43406c19ff097c594056aa3582a299b",
+    "id": "tr_20260910_2040",
+    "channel": "toprank.tv1",
+    "file": "clips-toprank/tr_20260910_2040.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-10T07:36:41.801Z"
   }
 ]
