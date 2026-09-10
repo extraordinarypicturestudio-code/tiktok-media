@@ -345,5 +345,27 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-10T19:00:00",
     "scheduledForUtc": "2026-09-10T17:00:00Z"
+  },
+  {
+    "id": "62-poissonbeurrecitron",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
+    "caption": "Mon mari m'avait dit que le poisson, ça n'avait jamais rempli personne 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c276561a48df4e5930e71c1ddbf2772e696bebca165fbc295237a8ab50deef24",
+      "date": "2026-09-10T11:42:47Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.5s, 46.5 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme raconte une recette de poisson avec des légumes.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme cuisine du poisson, des haricots verts et des tomates cerises tout en racontant une anecdote. | aliments : ['poisson', 'haricots verts', 'tomates cerises', 'citron', 'beurre', 'lentilles'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c276561a48df ; empreinte visuelle : plus proche 0.427"
+      }
+    }
   }
 ]
