@@ -458,7 +458,7 @@
     "id": "tr_20260910_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260910_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -475,13 +475,16 @@
         "doublon": "sha256 59740f95324b ; empreinte visuelle : plus proche 0.396"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa2052ac47af3d8840f31ac",
+    "scheduledForUtc": "2026-09-10T01:57:29.000Z",
+    "scheduledFor": "2026-09-10T03:57:29"
   },
   {
     "id": "tr_20260911_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260911_2040.mp4",
     "caption": "It went wrong immediately 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -498,6 +501,9 @@
         "doublon": "sha256 3439b48e7004 ; empreinte visuelle : plus proche 0.422"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa207a5111dd7c63dc5e427",
+    "scheduledForUtc": "2026-09-10T02:08:04.000Z",
+    "scheduledFor": "2026-09-10T04:08:04"
   }
 ]
