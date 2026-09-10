@@ -55,6 +55,7 @@ import pathlib
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 
@@ -87,7 +88,38 @@ GENERIQUES = {
     "food", "asmr", "faitmaison", "gourmandise", "recettes", "tiktokfood",
     "vendredisoir", "mardisoir", "lundisoir", "samedisoir", "dimanchesoir",
     "motivation", "mindset", "inspiration", "fail", "fails", "humour", "drole",
+    # Categories, pas des plats : elles collent a tout le catalogue.
+    "patisserie", "anniversaire", "dessert", "gouter", "diner", "repas",
+    "petitdejeuner", "brunch", "aperitif", "entree", "platprincipal",
+    "healthy", "comfortfood", "foodtok", "recetterapide", "platrapide",
 }
+
+# LEXIQUE DES PLATS. Le corps d'une legende contient surtout du recit ; y
+# prendre "tout mot de plus de trois lettres" faisait entrer `etait`,
+# `reserve`, `patissiers` dans la signature. Le 2026-09-10, le gateau
+# Esterhazy a ete refuse a 0,30 pile contre un CHEESECAKE, sur les seuls mots
+# communs `gateau` et `etait`. Une signature de plat ne se compose que de
+# mots de plat.
+LEXIQUE = set("""
+gratin tarte gateau roule roules brioche brioches cheesecake muffin muffins
+cookie cookies glace pizza tortilla tortillas salade soupe pates spaghetti
+lasagne risotto riz orzotto quiche cake crepe crepes pancake pancakes gaufre
+beignet donut tiramisu millefeuille napoleon feuillete feuilletee chausson
+poulet ailes tenders escalope dinde canard boeuf steak viande hachee bacon
+lardons jambon saucisse thon saumon poisson cabillaud crevette crevettes
+gambas moules oeuf oeufs omelette
+courgette courgettes aubergine aubergines tomate tomates poivron poivrons
+carotte carottes oignon oignons champignon champignons epinard epinards
+pomme pommes patate patates dauphinois puree concombre avocat poischiche
+haricot brocoli chou mais betterave
+fraise fraises framboise myrtille banane citron orange peche peches pomme
+ananas mangue cerise
+chocolat nutella cannelle vanille caramel amande amandes noisette pistache
+praline miel sirop
+fromage mozzarella parmesan feta cheddar ricotta mascarpone creme beurre
+lait yaourt
+pain pate panure friture frit frite sanscuisson onepot etages
+""".split())
 
 # Le squelette narratif du format love_kitchen. Commun a toutes les videos.
 FORMULE = set("""mon mari belle mere soeur avait dit disait croyait jure jamais
@@ -97,8 +129,32 @@ deja encore comme tout tous toute toutes donc mais alors quand parce
 """.split())
 
 
+def _sans_accents(t):
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower())
+                   if unicodedata.category(c) != "Mn")
+
+
 def _texte(x):
     return x if isinstance(x, str) else ""
+
+
+def _singulier(m):
+    """`fraises` et `fraise` doivent etre le meme mot."""
+    return m[:-1] if m.endswith("s") and m[:-1] in LEXIQUE else m
+
+
+def _decomposer(hashtag):
+    """`pouletfrit` -> {poulet, frit}. Sinon le hashtag tel quel.
+
+    Sans ca, `#pouletfrit` et `#poulet` sont deux jetons sans rapport : le
+    2026-09-10, 53-pouletfrit sortait a 0,25 contre le poulet frit du 23/08
+    qu'il rejoue mot pour mot.
+    """
+    trouves = {m for m in LEXIQUE if len(m) > 3 and m in hashtag}
+    # On retire les mots contenus dans un autre mot trouve (pomme dans pommes)
+    trouves = {m for m in trouves
+               if not any(m != a and m in a for a in trouves)}
+    return {_singulier(m) for m in trouves} or {hashtag}
 
 
 def signature_plat(legende):
@@ -107,15 +163,19 @@ def signature_plat(legende):
     hashtags = {h.lower() for h in re.findall(r"#(\w+)", legende)} - GENERIQUES
 
     corps = re.split(r"#", legende, 1)[0].lower()
-    corps = re.sub(r"[^a-zàâäéèêëïîôöùûüç' ]", " ", corps)
+    corps = _sans_accents(corps)
+    corps = re.sub(r"[^a-z' ]", " ", corps)
     mots = set()
     for m in corps.split():
-        # Elision : sans ca, "m'avait" et "qu'un" survivent au filtre de la
-        # formule et gonflent toutes les signatures de la meme facon.
+        # Elision : sans ca, "m'avait" et "qu'un" survivent au filtre.
         m = re.sub(r"^(qu|[ldnscjmt])'", "", m.strip("'"))
-        if len(m) > 3 and m not in FORMULE:
-            mots.add(m)
-    return hashtags | mots
+        # Seuls les mots de plat comptent - voir LEXIQUE.
+        if m in LEXIQUE:
+            mots.add(_singulier(m))
+    s = set(mots)
+    for h in hashtags:
+        s |= _decomposer(_sans_accents(h))
+    return s
 
 
 def recouvrement(neuve, ancienne):
