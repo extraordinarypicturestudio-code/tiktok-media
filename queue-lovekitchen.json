@@ -323,7 +323,7 @@
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "published",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -340,9 +340,8 @@
         "doublon": "sha256 bdcf3f79c9d0 ; empreinte visuelle : plus proche 0.337"
       }
     },
-    "note": "publiee A LA MAIN par l utilisateur le 2026-09-10 apres deux refus TikTok pour saturation (21h15 et 21h22). Depot Zernio supprime.",
-    "vignette_auto": true,
-    "publishedAt": "2026-09-10T19:23:33Z"
+    "note": "texte d ingredients de la source floute le 2026-09-10 sur 6 passages (voir scripts/detecter_texte_incruste.py). Rendue a la file.",
+    "vignette_auto": true
   },
   {
     "id": "62-poissonbeurrecitron",
@@ -452,7 +451,7 @@
     "id": "66-poivronsfarcis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/66-poivronsfarcis.mp4",
     "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🌽\n\n#poivronsfarcis #poivron #poulet #mais #riz #paprika #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -469,9 +468,8 @@
         "doublon": "sha256 425618d30b55 ; empreinte visuelle : plus proche 0.436"
       }
     },
-    "postId": "6aa2ff5aa5702a428f0702c6",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-12T23:30:00",
-    "scheduledForUtc": "2026-09-12T21:30:00Z"
+    "publishedAt": "2026-09-10T19:34:18Z",
+    "note": "publiee A LA MAIN le 2026-09-10. Depot Zernio supprime."
   }
 ]
