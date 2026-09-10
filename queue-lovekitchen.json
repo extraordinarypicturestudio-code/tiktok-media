@@ -325,7 +325,7 @@
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -341,6 +341,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 bdcf3f79c9d0 ; empreinte visuelle : plus proche 0.337"
       }
-    }
+    },
+    "error": "plat deja publie le 2026-08-30 (recouvrement 0.30) : Mon mari trouvait qu'un gâteau c'était toujours trop sucré 🍓🍰 #cheesec"
   }
 ]
