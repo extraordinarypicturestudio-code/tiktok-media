@@ -172,8 +172,8 @@
     },
     "vignette_auto": true,
     "postId": "6aa2748f7744821dcdc46685",
-    "scheduledFor": "2026-09-10T21:30:00",
-    "scheduledForUtc": "2026-09-10T19:30:00Z"
+    "scheduledForUtc": "2026-09-10T19:30:00.000Z",
+    "scheduledFor": "2026-09-10T21:30:00"
   },
   {
     "id": "51-roulesfraise",

@@ -502,7 +502,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa2747d7f733395734072f9",
-    "scheduledFor": "2026-09-10T12:50:00",
-    "scheduledForUtc": "2026-09-10T10:50:00Z"
+    "scheduledForUtc": "2026-09-10T10:50:00.000Z",
+    "scheduledFor": "2026-09-10T12:50:00"
   }
 ]
