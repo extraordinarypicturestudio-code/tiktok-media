@@ -320,7 +320,7 @@
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -338,7 +338,8 @@
       }
     },
     "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "le fichier ne correspond pas au tampon (tampon bdcf3f79c9d0, fichier e11d2e8aa406) : re-verifier avant publication"
   },
   {
     "id": "62-poissonbeurrecitron",
