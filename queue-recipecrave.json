@@ -2556,7 +2556,7 @@
     "id": "rc_legumes_rotis_sauce_70",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_legumes_rotis_sauce_70.mp4",
     "caption": "Courgettes, champignons et poivrons rôtis, puis noyés dans une sauce à l'ail et coriandre.\n\n#legumes #courgettes #champignons #poivrons #four #recette #vegetarien #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2575,8 +2575,7 @@
     },
     "vignette_auto": true,
     "postId": "6aa116fc233a5d987b9e5fa0",
-    "scheduledFor": "2026-09-11T01:10:00",
-    "scheduledForUtc": "2026-09-10T23:10:00Z"
+    "publishedAt": "2026-09-10T23:11:26.208Z"
   },
   {
     "id": "rc_pommesdeterre_fondantes_71",
