@@ -342,9 +342,9 @@
     },
     "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
     "vignette_auto": true,
-    "postId": "6aa2f882d18a3941d8787929",
-    "scheduledForUtc": "2026-09-10T19:15:45.000Z",
-    "scheduledFor": "2026-09-10T21:15:45"
+    "postId": "6aa2ef0b8743977a87ccd1e5",
+    "scheduledForUtc": "2026-09-10T18:35:21.000Z",
+    "scheduledFor": "2026-09-10T20:35:21"
   },
   {
     "id": "62-poissonbeurrecitron",
@@ -423,5 +423,49 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-12T19:00:00",
     "scheduledForUtc": "2026-09-12T17:00:00Z"
+  },
+  {
+    "id": "65-saumonlaque",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/65-saumonlaque.mp4",
+    "caption": "Mon mari m'avait dit qu'il avait mangé assez de saumon pour toute sa vie 🐟🍯\n\n#saumonlaque #saumon #miel #asperges #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "0cf0b66af24c33358280756d4016049996de3a84c8a03b327f24e8f80237c0e7",
+      "date": "2026-09-10T18:44:26Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.3s, 50.9 Mo",
+        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de sa recette de saumon en cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une recette de saumon laque avec asperges, riz et salade d'avocat. | aliments : ['saumon', 'asperges', 'riz', 'citron', 'avocat', 'tomates', 'oignons rouges', 'herbes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 0cf0b66af24c ; empreinte visuelle : plus proche 0.411"
+      }
+    }
+  },
+  {
+    "id": "66-poivronsfarcis",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/66-poivronsfarcis.mp4",
+    "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🧀\n\n#poivronsfarcis #poivrons #gratine #paprika #dinerrapide #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "425618d30b5561c020311cf782c41d861e19bb431c874f49b17cfbecc82a2ed8",
+      "date": "2026-09-10T18:44:45Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.6s, 44.3 Mo",
+        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote culinaire avec des poivrons et du poulet.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation et cuisson de poivrons farcis au poulet, tomates et mais, avec une sauce blanche. | aliments : ['poivrons', 'poulet', 'tomates', 'mais', 'fromage', 'persil'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 425618d30b55 ; empreinte visuelle : plus proche 0.436"
+      }
+    }
   }
 ]
