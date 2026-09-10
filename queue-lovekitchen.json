@@ -341,10 +341,10 @@
       }
     },
     "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
-    "postId": "6aa296981ed04440ead204ec",
+    "postId": "6aa2e337fdadc6bfedb51f7e",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-10T19:00:00",
-    "scheduledForUtc": "2026-09-10T17:00:00Z"
+    "scheduledFor": "2026-09-10T19:44:53",
+    "scheduledForUtc": "2026-09-10T17:44:53.000Z"
   },
   {
     "id": "62-poissonbeurrecitron",
