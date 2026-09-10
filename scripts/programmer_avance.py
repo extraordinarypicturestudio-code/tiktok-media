@@ -57,6 +57,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import controle_repetition as cr
 import publish_next as pn
 
 ICI = pathlib.Path(__file__).resolve().parent.parent
@@ -228,8 +229,29 @@ def grille(depart, jours):
         jour += timedelta(days=1)
 
 
-def eligible(v, ecrire):
+def eligible(v, ecrire, chaine=None, pseudo=None, numero=None):
     """Rejoue les barrieres de publish_next avant de deposer quoi que ce soit."""
+    # Le plat a-t-il DEJA ete publie sur cette chaine ? Le montage compare un
+    # nouveau script aux autres scripts, jamais aux legendes en ligne. C'est
+    # l'utilisateur qui a arrete deux videos a la main le 2026-09-09, et la
+    # mesure du lendemain a montre que le meme gratin de thon etait deja sorti
+    # deux jours de suite les 30 et 31/08 sans que personne ne le voie.
+    if chaine and pseudo and numero:
+        try:
+            publiees = cr.legendes_publiees(pseudo, cle_zernio(numero))
+            motif = cr.verdict(v, publiees, chaine)
+        except Exception as e:
+            # Un controle qui n'a pas pu tourner ne bloque pas le depot : la
+            # chaine est deja protegee par les autres barrieres, et rester a
+            # sec coute plus cher qu'un doublon. Mais on le DIT.
+            print("     (controle de repetition indisponible : %s)" % str(e)[:70])
+            motif = None
+        if motif:
+            v["status"] = "on_hold"
+            v["error"] = motif
+            ecrire()
+            return motif
+
     ok, detail, repare = pn.verifier_et_reparer(v)
     if repare:
         v["note"] = "Fichier repare automatiquement (%s)." % detail
@@ -364,7 +386,7 @@ def main():
 
         v = restes[choisie].pop(0)
         _, fichier, pseudo, numero, _ = conf[choisie]
-        motif = eligible(v, ecrivains[choisie])
+        motif = eligible(v, ecrivains[choisie], choisie, pseudo, numero)
         if motif:
             print("  %-12s %-28s ECARTE : %s" % (choisie, v["id"], motif))
             continue

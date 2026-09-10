@@ -39,6 +39,9 @@ jobs:
           test -x scripts/enregistrer.sh \
             || { echo "::error::scripts/enregistrer.sh n'est pas executable"; exit 1; }
 
+      - name: Temoins de la fusion des files
+        run: python3 scripts/test_fusion.py
+
       - name: Chaque workflow est un YAML valide
         run: |
           python3 - <<'PY'

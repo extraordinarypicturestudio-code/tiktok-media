@@ -103,9 +103,30 @@ for essai in 1 2 3 4 5; do
 
   conflits="$(git diff --name-only --diff-filter=U)"
   if [ -n "$conflits" ]; then
-    echo "enregistrer : conflit sur $conflits, on garde notre version."
-    git checkout --theirs -- $conflits 2>/dev/null || true
-    git add -- $conflits
+    for fichier in $conflits; do
+      # Un conflit sur une file n'est pas un conflit de TEXTE : c'est deux avis
+      # sur l'etat de quelques videos. On fusionne par identifiant en gardant
+      # l'etat le plus avance. Garder aveuglement notre version a efface le
+      # 2026-09-09 le marquage `published` de 56-onepotpates, remise a pending
+      # puis redeposee le lendemain.
+      #
+      # Pendant un rebase : l'etage 2 est la version DU DEPOT (celle sur
+      # laquelle on rejoue), l'etage 3 celle de NOTRE commit.
+      case "$fichier" in
+        queue-*.json)
+          git show ":2:$fichier" > /tmp/leur.json 2>/dev/null
+          git show ":3:$fichier" > /tmp/notre.json 2>/dev/null
+          if python3 scripts/fusionner_file.py "$fichier" \
+                 /tmp/notre.json /tmp/leur.json; then
+            git add -- "$fichier"
+            continue
+          fi
+          echo "enregistrer : fusion impossible sur $fichier, repli sur notre version."
+          ;;
+      esac
+      git checkout --theirs -- "$fichier" 2>/dev/null || true
+      git add -- "$fichier"
+    done
     GIT_EDITOR=true git rebase --continue || git rebase --abort || true
   else
     # Push refuse sans conflit : une autre execution a pousse entre le pull
