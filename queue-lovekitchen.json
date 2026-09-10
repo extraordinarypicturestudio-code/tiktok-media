@@ -323,7 +323,7 @@
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -340,11 +340,9 @@
         "doublon": "sha256 bdcf3f79c9d0 ; empreinte visuelle : plus proche 0.337"
       }
     },
-    "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
+    "note": "publiee A LA MAIN par l utilisateur le 2026-09-10 apres deux refus TikTok pour saturation (21h15 et 21h22). Depot Zernio supprime.",
     "vignette_auto": true,
-    "postId": "6aa2f882d18a3941d8787929",
-    "scheduledForUtc": "2026-09-10T19:15:45.000Z",
-    "scheduledFor": "2026-09-10T21:15:45"
+    "publishedAt": "2026-09-10T19:23:33Z"
   },
   {
     "id": "62-poissonbeurrecitron",
