@@ -57,8 +57,6 @@ jobs:
           # GitHub lance l'etape avec `bash -e` : la moindre commande en echec
           # tuerait la veille pour 2h45. Une passe ratee doit juste passer.
           set +e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           FIN=$(( $(date +%s) + 165 * 60 ))
           passe=0
@@ -79,36 +77,17 @@ jobs:
             # 3. Signaler les creneaux passes sans que rien ne sorte.
             python3 scripts/filet_sortie.py
 
-            # `git add -- <chemin>` sort en 128 si le chemin n'existe pas.
-            # `creneaux_manques.txt` n'est ecrit que quand un creneau est
-            # rate : le nommer en dur a fait echouer la premiere veille du
-            # 2026-09-09 des sa passe 1. On n'ajoute que ce qui existe -- la
-            # meme regle vaut pour les dossiers de clips, vides une fois
-            # leurs videos publiees.
-            chemins=""
-            for c in queue-*.json used-clips-hashes.json relances_saturation.json                      creneaux_manques.txt clips clips-argile clips-lovekitchen                      clips-mindshift clips-pisciniste clips-toprank; do
-              [ -e "$c" ] && chemins="$chemins $c"
-            done
-            [ -z "$chemins" ] && chemins="queue-lovekitchen.json"
-            git add -A -- $chemins
-            if ! git diff --cached --quiet; then
-              git commit -m "Veilleur : rattrapage (passe $passe) [skip ci]"
-              for essai in 1 2 3; do
-                git pull --rebase origin main && git push && break
-                conflits=$(git diff --name-only --diff-filter=U)
-                if [ -n "$conflits" ]; then
-                  # Notre version vient d'etre recalculee sur l'etat reel des
-                  # comptes ; celle du depot est plus ancienne. En rebase,
-                  # "theirs" designe le commit rejoue, donc le notre.
-                  git checkout --theirs -- $conflits || true
-                  git add -- $conflits
-                  GIT_EDITOR=true git rebase --continue || git rebase --abort || true
-                else
-                  git rebase --abort 2>/dev/null || true
-                fi
-                sleep 10
-              done
-            fi
+            # 4. Enregistrer. `enregistrer.sh` est la SEULE implementation
+            #    du commit dans le depot : il ecarte les chemins absents
+            #    (un dossier de clips vide est l'etat NORMAL une fois ses
+            #    videos publiees) et resout un conflit de file en gardant
+            #    notre version. C'est le bloc recopie a la main qui a
+            #    produit les 11 echecs mesures du 24/08 au 10/09.
+            scripts/enregistrer.sh "Veilleur : rattrapage (passe $passe) [skip ci]" \
+                queue-*.json used-clips-hashes.json creneaux_manques.txt \
+                relances_saturation.json clips clips-argile clips-bigfoot \
+                clips-lovekitchen clips-mindshift clips-nextlevelplays \
+                clips-pisciniste clips-toprank
 
             sleep 600
           done

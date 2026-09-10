@@ -1,0 +1,84 @@
+name: Controle des workflows
+
+# Empeche le retour du defaut qui a produit TOUS les echecs mesures entre le
+# 2026-08-24 et le 2026-09-10 : le bloc de commit recopie a la main dans
+# quatorze workflows, en trois variantes divergentes.
+#
+# Le defaut ne revenait pas par malchance, il revenait parce que corriger une
+# copie laissait les treize autres armees. Le 2026-09-09, il a ete reintroduit
+# dans un workflow tout neuf moins de deux heures apres avoir ete corrige
+# ailleurs. Un test qui tourne a chaque poussee est la seule chose qui tient
+# cette regle sans memoire humaine.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/**"
+      - "scripts/enregistrer.sh"
+      - "scripts/verifier_workflows.py"
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  controler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Aucun git a la main dans les workflows
+        run: python3 scripts/verifier_workflows.py
+
+      - name: Le script d enregistrement est valide et executable
+        run: |
+          bash -n scripts/enregistrer.sh
+          test -x scripts/enregistrer.sh \
+            || { echo "::error::scripts/enregistrer.sh n'est pas executable"; exit 1; }
+
+      - name: Chaque workflow est un YAML valide
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys, yaml
+          casse = 0
+          for f in sorted(pathlib.Path(".github/workflows").glob("*.yml")):
+              try:
+                  yaml.safe_load(f.read_text(encoding="utf-8"))
+              except Exception as e:
+                  casse += 1
+                  print("::error file=%s::YAML invalide : %s" % (f, str(e)[:200]))
+          print("%d workflows verifies" % len(list(pathlib.Path(".github/workflows").glob("*.yml"))))
+          sys.exit(1 if casse else 0)
+          PY
+
+      - name: Le shell de chaque etape est syntaxiquement correct
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess, sys, tempfile, yaml
+          mauvais = 0
+          for f in sorted(pathlib.Path(".github/workflows").glob("*.yml")):
+              d = yaml.safe_load(f.read_text(encoding="utf-8"))
+              for nom, job in (d.get("jobs") or {}).items():
+                  for etape in job.get("steps", []):
+                      code = etape.get("run")
+                      # `shell:` autre que bash (python, pwsh) : pas notre affaire.
+                      if not code or etape.get("shell") not in (None, "bash"):
+                          continue
+                      with tempfile.NamedTemporaryFile("w", suffix=".sh",
+                                                       delete=False,
+                                                       encoding="utf-8") as t:
+                          t.write(code)
+                          chemin = t.name
+                      r = subprocess.run(["bash", "-n", chemin],
+                                         capture_output=True, text=True)
+                      if r.returncode:
+                          mauvais += 1
+                          print("::error file=%s::%s / %s : %s"
+                                % (f, nom, etape.get("name", "?"),
+                                   r.stderr.strip()[:200]))
+          print("controle shell termine")
+          sys.exit(1 if mauvais else 0)
+          PY

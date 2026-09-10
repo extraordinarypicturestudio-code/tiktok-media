@@ -74,51 +74,8 @@ jobs:
       - name: Enregistrer les corrections automatiques
         if: always()
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          # -A sur les queues et dossiers de clips : capture a la fois les
-          # auto-corrections du healthcheck ET les effets d'un eventuel
-          # rattrapage (file mise a jour, clip publie supprime, registre de
-          # hashs complete).
-          # mkdir -p : si un dossier de clips est vide (tout publie), git ne
-          # le suit pas et "git add -- dossier/" plante avec une erreur
-          # pathspec sur un chemin inexistant - le creer garantit que le
-          # pathspec matche toujours (meme sur un dossier vide).
-          mkdir -p clips clips-toprank clips-bigfoot clips-nextlevelplays clips-mindshift
-          git add -A -- queue-toprank.json queue-recipecrave.json \
-                        queue-bigfoot.json queue-nextlevelplays.json \
-                        queue-mindshift.json \
-                        used-clips-hashes.json \
-                        clips/ clips-toprank/ clips-bigfoot/ clips-nextlevelplays/ \
-                        clips-mindshift/
-          git diff --cached --quiet && echo "Rien a enregistrer." && exit 0
-          git commit -m "Auto-correction / rattrapage du controle de sante [skip ci]"
-          for essai in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
-            # Une file JSON ne se fusionne pas ligne a ligne : le rebase
-            # s'arrete en conflit, et sans cette sortie les quatre tentatives
-            # suivantes echouent TOUTES sur "Pulling is not possible because
-            # you have unmerged files". C'est ce qui a fait echouer
-            # l'alignement du 2026-09-09 a 12h29, et le travail du script
-            # etait perdu alors qu'il etait juste.
-            # On garde NOTRE version du fichier en conflit : elle vient d'etre
-            # recalculee sur l'etat reel du compte, celle du depot est plus
-            # ancienne. Pendant un rebase, "theirs" designe le commit rejoue,
-            # donc bien le notre.
-            conflits=$(git diff --name-only --diff-filter=U)
-            if [ -n "$conflits" ]; then
-              git checkout --theirs -- $conflits || true
-              git add -- $conflits
-              GIT_EDITOR=true git rebase --continue || git rebase --abort || true
-            else
-              git rebase --abort 2>/dev/null || true
-            fi
-            echo "Push rejete (essai $essai/5), nouvelle tentative..."
-            sleep 10
-          done
-          echo "::error::Impossible de pousser les corrections apres 5 essais"
-          exit 1
-
+          scripts/enregistrer.sh "Auto-correction / rattrapage du controle de sante [skip ci]" \
+              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank
       # Alerte uniquement si le script a ecrit un fichier d'anomalies. Le run
       # lui-meme reste en succes (voir commentaire en fin de healthcheck.py) :
       # on ne veut pas d'un mail "Run failed" toutes les 4h pour un stock bas.

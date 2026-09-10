@@ -50,11 +50,5 @@ jobs:
       # video indefiniment au lieu de basculer en brouillon puis d'abandonner.
       - name: Conserver le compteur de relances
         run: |
-          if [ -n "$(git status --porcelain relances_saturation.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add relances_saturation.json
-            git commit -m "relances saturation : mise a jour du compteur"
-            git pull --rebase --autostash
-            git push
-          fi
+          scripts/enregistrer.sh "relances saturation : mise a jour du compteur" \
+              relances_saturation.json

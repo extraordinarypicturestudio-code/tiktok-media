@@ -82,37 +82,5 @@ jobs:
       - name: Enregistrer la mise a jour de la file d'attente
         if: always()
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          mkdir -p clips-pisciniste
-          git add -A -- queue-pisciniste.json used-clips-hashes.json clips-pisciniste/
-          git diff --cached --quiet && exit 0
-          git commit -m "Mise a jour file d attente pisciniste [skip ci]"
-          # Plusieurs workflows poussent sur le meme depot et les crons GitHub
-          # peuvent deriver de plus d'une heure : sans rebase, le push du
-          # second est rejete et la file perd sa mise a jour.
-          for essai in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
-            # Une file JSON ne se fusionne pas ligne a ligne : le rebase
-            # s'arrete en conflit, et sans cette sortie les quatre tentatives
-            # suivantes echouent TOUTES sur "Pulling is not possible because
-            # you have unmerged files". C'est ce qui a fait echouer
-            # l'alignement du 2026-09-09 a 12h29, et le travail du script
-            # etait perdu alors qu'il etait juste.
-            # On garde NOTRE version du fichier en conflit : elle vient d'etre
-            # recalculee sur l'etat reel du compte, celle du depot est plus
-            # ancienne. Pendant un rebase, "theirs" designe le commit rejoue,
-            # donc bien le notre.
-            conflits=$(git diff --name-only --diff-filter=U)
-            if [ -n "$conflits" ]; then
-              git checkout --theirs -- $conflits || true
-              git add -- $conflits
-              GIT_EDITOR=true git rebase --continue || git rebase --abort || true
-            else
-              git rebase --abort 2>/dev/null || true
-            fi
-            echo "Push rejete (essai $essai/5), nouvelle tentative..."
-            sleep 10
-          done
-          echo "::error::Impossible de pousser la mise a jour de la file apres 5 essais"
-          exit 1
+          scripts/enregistrer.sh "Mise a jour file d attente pisciniste [skip ci]" \
+              queue-pisciniste.json used-clips-hashes.json clips-pisciniste

@@ -42,44 +42,5 @@ jobs:
       - name: Enregistrer les files
         if: always()
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          # `git add -- <chemin>` sort en 128 si le chemin n'existe pas, et
-          # l'etape tourne sous `bash -e` : le job echoue AVANT le commit, donc
-          # le travail du script est perdu. Arrive des que clips-argile/ a ete
-          # vide de ses clips publies - alignement et depot ont echoue quatre
-          # fois de suite sans que rien ne le signale, et les files sur
-          # origin/main ont cesse de refleter la realite. On n'ajoute donc
-          # que les dossiers qui existent au moment du run.
-          chemins="queue-*.json used-clips-hashes.json"
-          for d in clips clips-argile clips-lovekitchen clips-mindshift clips-pisciniste clips-toprank; do
-            [ -d "$d" ] && chemins="$chemins $d"
-          done
-          git add -A -- $chemins
-          git diff --cached --quiet && exit 0
-          git commit -m "Alignement des files sur Zernio [skip ci]"
-          for essai in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
-            # Une file JSON ne se fusionne pas ligne a ligne : le rebase
-            # s'arrete en conflit, et sans cette sortie les quatre tentatives
-            # suivantes echouent TOUTES sur "Pulling is not possible because
-            # you have unmerged files". C'est ce qui a fait echouer
-            # l'alignement du 2026-09-09 a 12h29, et le travail du script
-            # etait perdu alors qu'il etait juste.
-            # On garde NOTRE version du fichier en conflit : elle vient d'etre
-            # recalculee sur l'etat reel du compte, celle du depot est plus
-            # ancienne. Pendant un rebase, "theirs" designe le commit rejoue,
-            # donc bien le notre.
-            conflits=$(git diff --name-only --diff-filter=U)
-            if [ -n "$conflits" ]; then
-              git checkout --theirs -- $conflits || true
-              git add -- $conflits
-              GIT_EDITOR=true git rebase --continue || git rebase --abort || true
-            else
-              git rebase --abort 2>/dev/null || true
-            fi
-            echo "Push rejete (essai $essai/5), nouvelle tentative..."
-            sleep 10
-          done
-          echo "::error::Impossible de pousser les files apres 5 essais"
-          exit 1
+          scripts/enregistrer.sh "Alignement des files sur Zernio [skip ci]" \
+              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank

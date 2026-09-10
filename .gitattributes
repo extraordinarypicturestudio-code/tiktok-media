@@ -1,0 +1,3 @@
+# Un script shell doit arriver en LF sur le runner Linux : en CRLF, bash
+# repond "bad interpreter: No such file or directory" et le job echoue.
+*.sh text eol=lf
