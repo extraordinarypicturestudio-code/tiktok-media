@@ -270,5 +270,49 @@
     "vignette_auto": true,
     "publishedAt": "2026-09-09T21:10:00Z",
     "note": "publiee A LA MAIN par l'utilisateur le 2026-09-09, depot Zernio supprime. Le marquage avait ete efface une premiere fois par une resolution de conflit : voir fusionner_file.py."
+  },
+  {
+    "id": "59-steakcreme",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/59-steakcreme.mp4",
+    "caption": "Mon mari m'avait dit qu'un vrai steak, ça ne se mangeait qu'au restaurant 🥩🍄\n\n#steak #saucecremeuse #champignons #puree #dinerromantique #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "664da907ff389ed63ff5fa9eb00175fd912c10dabc45b0478f3cf78c9cf00288",
+      "date": "2026-09-10T11:10:01Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.0s, 47.2 Mo",
+        "audio": "volume moyen -20.1 dB ; ressemblance avec la source 0.29 ; contenu sonore : Une femme parle de son mari et de cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une personne prepare un plat de steak avec legumes et sauce aux champignons en racontant une histoire | aliments : ['steak', 'champignons', 'legumes', 'puree'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 664da907ff38 ; empreinte visuelle : plus proche 0.409"
+      }
+    }
+  },
+  {
+    "id": "60-patescrevettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
+    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "00d52a601d2bf775ba4e6673620e83ea3d2cd9f67d506226a2d7da40b2f0f380",
+      "date": "2026-09-10T11:10:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.3s, 52.4 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de crevettes et de mauvaises humeurs.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme cuisine des pates aux crevettes, tomates cerises et courgettes en racontant une histoire. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'persil', 'basilic', 'beurre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 00d52a601d2b ; empreinte visuelle : plus proche 0.415"
+      }
+    }
   }
 ]
