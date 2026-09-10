@@ -342,9 +342,9 @@
     },
     "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
     "vignette_auto": true,
-    "postId": "6aa2ef0b8743977a87ccd1e5",
-    "scheduledForUtc": "2026-09-10T18:35:21.000Z",
-    "scheduledFor": "2026-09-10T20:35:21"
+    "postId": "6aa2f882d18a3941d8787929",
+    "scheduledForUtc": "2026-09-10T19:15:45.000Z",
+    "scheduledFor": "2026-09-10T21:15:45"
   },
   {
     "id": "62-poissonbeurrecitron",
@@ -428,7 +428,7 @@
     "id": "65-saumonlaque",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/65-saumonlaque.mp4",
     "caption": "Mon mari m'avait dit qu'il avait mangé assez de saumon pour toute sa vie 🐟🍯\n\n#saumonlaque #saumon #miel #asperges #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -444,13 +444,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 0cf0b66af24c ; empreinte visuelle : plus proche 0.411"
       }
-    }
+    },
+    "postId": "6aa2fc1f565ffe196daa9105",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T21:30:00",
+    "scheduledForUtc": "2026-09-12T19:30:00Z"
   },
   {
     "id": "66-poivronsfarcis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/66-poivronsfarcis.mp4",
     "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🧀\n\n#poivronsfarcis #poivrons #gratine #paprika #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -466,6 +470,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 425618d30b55 ; empreinte visuelle : plus proche 0.436"
       }
-    }
+    },
+    "error": "plat deja publie le 2026-09-05 (recouvrement 0.50) : Il a ramené un collègue à dîner sans prévenir 🌯🧀 #tortillas #pouletair"
   }
 ]
