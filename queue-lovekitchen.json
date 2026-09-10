@@ -454,7 +454,7 @@
     "id": "66-poivronsfarcis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/66-poivronsfarcis.mp4",
     "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🌽\n\n#poivronsfarcis #poivron #poulet #mais #riz #paprika #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -470,6 +470,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 425618d30b55 ; empreinte visuelle : plus proche 0.436"
       }
-    }
+    },
+    "postId": "6aa2ff5aa5702a428f0702c6",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T23:30:00",
+    "scheduledForUtc": "2026-09-12T21:30:00Z"
   }
 ]
