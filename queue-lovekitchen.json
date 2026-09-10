@@ -340,7 +340,7 @@
         "doublon": "sha256 bdcf3f79c9d0 ; empreinte visuelle : plus proche 0.337"
       }
     },
-    "note": "texte d ingredients de la source floute le 2026-09-10 sur 6 passages (voir scripts/detecter_texte_incruste.py). Rendue a la file.",
+    "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
     "vignette_auto": true
   },
   {
