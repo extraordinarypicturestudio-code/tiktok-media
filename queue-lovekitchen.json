@@ -453,24 +453,23 @@
   {
     "id": "66-poivronsfarcis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/66-poivronsfarcis.mp4",
-    "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🧀\n\n#poivronsfarcis #poivrons #gratine #paprika #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
+    "caption": "Mon mari m'avait dit qu'un poivron, ça ne remplissait personne 🫑🌽\n\n#poivronsfarcis #poivron #poulet #mais #riz #paprika #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
       "sha256": "425618d30b5561c020311cf782c41d861e19bb431c874f49b17cfbecc82a2ed8",
-      "date": "2026-09-10T18:44:45Z",
+      "date": "2026-09-10T18:58:24Z",
       "outil": "verification_publication.py",
       "preuves": {
         "specs": "1080x1920, 30 fps, 64.6s, 44.3 Mo",
-        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote culinaire avec des poivrons et du poulet.",
+        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de poivrons et de poulet cuit",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation et cuisson de poivrons farcis au poulet, tomates et mais, avec une sauce blanche. | aliments : ['poivrons', 'poulet', 'tomates', 'mais', 'fromage', 'persil'] | preparation : True",
+        "contenu": "contenu vu : Preparation et cuisson de poivrons farcis au poulet, mais et riz. | aliments : ['poivron', 'poulet', 'tomate', 'mais', 'riz'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 425618d30b55 ; empreinte visuelle : plus proche 0.436"
       }
-    },
-    "error": "plat deja publie le 2026-09-05 (recouvrement 0.50) : Il a ramené un collègue à dîner sans prévenir 🌯🧀 #tortillas #pouletair"
+    }
   }
 ]
