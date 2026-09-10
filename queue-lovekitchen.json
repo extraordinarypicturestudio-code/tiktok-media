@@ -101,7 +101,7 @@
     "id": "50-gateauchocobiscuits",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/50-gateauchocobiscuits.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau sans four ça ne tenait jamais 🍫🥛\n\n#gateausanscuisson #gateauchocolat #dessertfacile #sanscuisson #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -119,15 +119,13 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa1037877bbc66fb7555219",
-    "scheduledFor": "2026-09-09T23:30:00",
-    "scheduledForUtc": "2026-09-09T21:30:00Z"
+    "error": "plat deja publie : gateau sans cuisson deja publie le 24/08 ET le 06/09 (0,50)"
   },
   {
     "id": "53-pouletfrit",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/53-pouletfrit.mp4",
     "caption": "Mon mari m'avait dit que le poulet frit ça se mangeait au restaurant 🍗🔥\n\n#pouletfrit #pouletcroustillant #recettefacile #vendredisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -145,9 +143,7 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa1b38eacabf714741303d2",
-    "scheduledForUtc": "2026-09-12T17:00:00.000Z",
-    "scheduledFor": "2026-09-12T19:00:00"
+    "error": "plat deja publie : poulet frit deja publie le 23/08, tenders de poulet le 06/09 (0,67)"
   },
   {
     "id": "52-tartepeches",
@@ -230,7 +226,7 @@
     "id": "55-ailespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/55-ailespoulet.mp4",
     "caption": "Mon mari m'avait dit que les ailes de poulet ça ne se mangeait qu'au bar 🍗🔥\r\n\r\n#ailesdepoulet #pouletmariné #recettefacile #samedisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -247,10 +243,8 @@
         "doublon": "sha256 aeed6aff5a8a ; empreinte visuelle : plus proche 0.391"
       }
     },
-    "postId": "6aa110dc521ce27128f89b6b",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-10T23:30:00",
-    "scheduledForUtc": "2026-09-10T21:30:00Z"
+    "error": "plat deja publie : ailes de poulet deja publiees le 29/08 ET le 06/09 (recouvrement 1,00)"
   },
   {
     "id": "56-onepotpates",
