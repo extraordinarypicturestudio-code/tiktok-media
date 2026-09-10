@@ -342,9 +342,9 @@
     },
     "note": "rendue a la file : le refus du 10/09 a 0,30 etait un faux positif du controle de repetition, corrige le meme jour (voir scripts/controle_repetition.py). Nouveau score 0,25.",
     "vignette_auto": true,
-    "postId": "6aa2ef0b8743977a87ccd1e5",
-    "scheduledForUtc": "2026-09-10T18:35:21.000Z",
-    "scheduledFor": "2026-09-10T20:35:21"
+    "postId": "6aa2f882d18a3941d8787929",
+    "scheduledForUtc": "2026-09-10T19:15:45.000Z",
+    "scheduledFor": "2026-09-10T21:15:45"
   },
   {
     "id": "62-poissonbeurrecitron",
@@ -376,7 +376,7 @@
     "id": "63-escalopepanee",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/63-escalopepanee.mp4",
     "caption": "Mon mari m'avait dit qu'une escalope panée, ça ne se réussissait qu'à la friteuse 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -392,13 +392,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 20a8fe7e4ea9 ; empreinte visuelle : plus proche 0.370"
       }
-    }
+    },
+    "postId": "6aa2f8a83fc7b534d994e352",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T23:30:00",
+    "scheduledForUtc": "2026-09-11T21:30:00Z"
   },
   {
     "id": "64-wrapboulettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
     "caption": "Mon mari m'avait dit qu'on ne pouvait pas faire un wrap sans galette toute prête 🥙🔥\n \n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -414,6 +418,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4413b2a9b248 ; empreinte visuelle : plus proche 0.397"
       }
-    }
+    },
+    "postId": "6aa2f8ba37d91eafb6457506",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T19:00:00",
+    "scheduledForUtc": "2026-09-12T17:00:00Z"
   }
 ]
