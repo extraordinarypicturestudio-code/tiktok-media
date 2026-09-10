@@ -350,7 +350,7 @@
     "id": "62-poissonbeurrecitron",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
     "caption": "Mon mari m'avait dit que le poisson, ça n'avait jamais rempli personne 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -366,6 +366,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c276561a48df ; empreinte visuelle : plus proche 0.427"
       }
-    }
+    },
+    "postId": "6aa298ddb5552415d416ea84",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-11T21:30:00",
+    "scheduledForUtc": "2026-09-11T19:30:00Z"
   }
 ]
