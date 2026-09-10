@@ -322,5 +322,27 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-11T19:00:00",
     "scheduledForUtc": "2026-09-11T17:00:00Z"
+  },
+  {
+    "id": "61-esterhazy",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
+    "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bdcf3f79c9d0744d32f4108291efc73fc906b2a3c5f5395193ce20000e251ec6",
+      "date": "2026-09-10T11:21:22Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.9s, 55.1 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de la preparation d'un gateau.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Recette de gâteau à étages aux amandes avec une anecdote personnelle en sous-titre. | aliments : ['œufs', 'sucre', \"farine d'amande\", 'beurre', 'amandes effilochées', 'chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bdcf3f79c9d0 ; empreinte visuelle : plus proche 0.337"
+      }
+    }
   }
 ]
