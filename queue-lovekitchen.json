@@ -371,5 +371,49 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-11T21:30:00",
     "scheduledForUtc": "2026-09-11T19:30:00Z"
+  },
+  {
+    "id": "63-escalopepanee",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/63-escalopepanee.mp4",
+    "caption": "Mon mari m'avait dit qu'une escalope panée, ça ne se réussissait qu'à la friteuse 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "20a8fe7e4ea950c3fefce7804f57d539aa2dec4a2e216e8029af67617bd19d79",
+      "date": "2026-09-10T18:24:51Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 74.1s, 49.9 Mo",
+        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de sa recette d'escalopes panees.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne cuisine des escalopes panées avec des asperges et des champignons, en racontant une anecdote sur son mari. | aliments : ['escalopes panées', 'asperges', 'champignons', 'oignons', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 20a8fe7e4ea9 ; empreinte visuelle : plus proche 0.370"
+      }
+    }
+  },
+  {
+    "id": "64-wrapboulettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
+    "caption": "Mon mari m'avait dit qu'on ne pouvait pas faire un wrap sans galette toute prête 🥙🔥\n \n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4413b2a9b2485d138c62739a1237a770353ec0a78db09d4d1ff1e81015402610",
+      "date": "2026-09-10T18:25:03Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.7s, 48.0 Mo",
+        "audio": "volume moyen -18.1 dB ; ressemblance avec la source 0.26 ; contenu sonore : Une femme parle de galettes de sarrasin et viande.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une recette de wrap maison avec une galette de pommes de terre et des boulettes de viande. | aliments : ['viande hachee', 'pommes de terre', 'fromage', 'tomates cerises', 'herbes', 'oignons', 'poivrons', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4413b2a9b248 ; empreinte visuelle : plus proche 0.397"
+      }
+    }
   }
 ]
