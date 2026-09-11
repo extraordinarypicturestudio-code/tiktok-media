@@ -492,7 +492,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 3f36d61859f1 ; empreinte visuelle : plus proche 0.408"
       }
-    }
+    },
+    "error": "Post residuel bloquant supprime (0) - a retenter"
   },
   {
     "id": "68-nouillessautees",
