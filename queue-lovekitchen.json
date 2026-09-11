@@ -362,7 +362,8 @@
         "doublon": "sha256 20a8fe7e4ea9 ; empreinte visuelle : plus proche 0.370"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "Post residuel bloquant supprime (0) - a retenter"
   },
   {
     "id": "64-wrapboulettes",
