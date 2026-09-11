@@ -2656,7 +2656,7 @@
     "id": "rc_pates_crevettes_75",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_crevettes_75.mp4",
     "caption": "Faites sauter des crevettes epicees avec des legumes frais et des pates 🍳\r\n\r\n#pates #crevettes #italien #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2675,8 +2675,7 @@
     },
     "postId": "6aa12f595f2ee10a23d7d5d8",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-12T01:10:00",
-    "scheduledForUtc": "2026-09-11T23:10:00Z"
+    "publishedAt": "2026-09-11T23:11:27.341Z"
   },
   {
     "id": "rc_boeuf_legumes_sauce_76",

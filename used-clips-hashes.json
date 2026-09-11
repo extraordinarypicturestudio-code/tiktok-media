@@ -1966,5 +1966,13 @@
     "file": "clips/rc_poulet_saute_legumes_73.mp4",
     "status": "published",
     "publishedAt": "2026-09-11T20:21:21.881Z"
+  },
+  {
+    "hash": "0c065897d1c05ab34f183028ffc00516",
+    "id": "rc_pates_crevettes_75",
+    "channel": "recipe_crave",
+    "file": "clips/rc_pates_crevettes_75.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-11T23:11:27.341Z"
   }
 ]
