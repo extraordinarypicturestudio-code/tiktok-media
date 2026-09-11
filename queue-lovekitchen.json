@@ -572,5 +572,93 @@
         "doublon": "sha256 e11d2e8aa406 ; empreinte visuelle : plus proche 0.339"
       }
     }
+  },
+  {
+    "id": "71-tacos",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/71-tacos.mp4",
+    "caption": "Mon mari m'avait dit que des tacos, ça s'achetait tout prêts 🌮🔥\n\n#tacos #tacosmaison #boeufhache #haricotsrouges #mais #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9cf10303b7b4b66a8550175acadeb0df04050d07d83fa6a9cb9f528a76c60162",
+      "date": "2026-09-11T14:30:05Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 67.1s, 48.4 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de tacos et de sa recette rapidement.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne cuisine des tacos maison avec de la viande hachée, des haricots rouges, du maïs et des légumes. | aliments : ['salade', 'viande hachée', 'oignon rouge', 'ail', 'tomates cerises', 'poivron', 'haricots rouges', 'maïs', 'épices', 'tacos'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 9cf10303b7b4 ; empreinte visuelle : plus proche 0.405"
+      }
+    }
+  },
+  {
+    "id": "72-roulespoulet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
+    "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7505a141f2819b51579c904b129fba0e9d1cc45584064d45f0c5af4ba9cd302a",
+      "date": "2026-09-11T14:31:16Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 74.1s, 55.0 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme explique la recette de cuisine de son poulet.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation culinaire montrant la realisation de roules de poulet farcis au fromage, epinards et tomates | aliments : ['poulet', 'fromage', 'tomates', 'epinards', 'oeuf'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7505a141f281 ; empreinte visuelle : plus proche 0.411"
+      }
+    }
+  },
+  {
+    "id": "73-bananecacao",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
+    "caption": "Mon mari m'avait dit qu'on ne faisait pas de dessert à la poêle 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c9e602b4706b6bec0c169cb935ee111bc7097cc079f8a0c1353a20ce7daab994",
+      "date": "2026-09-11T14:32:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.8s, 51.0 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.30 ; contenu sonore : Une femme raconte une anecdote pendant la preparation d'un gateau.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : preparation d'un dessert a base de banane et de chocolat dans une poele | aliments : ['banane', 'chocolat', 'pate a tartiner', 'lait', 'pepites de chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c9e602b4706b ; empreinte visuelle : plus proche 0.375"
+      }
+    }
+  },
+  {
+    "id": "74-brochettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
+    "caption": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bd3a5ea06458761f2df27ef90bb7bf03a4451e5cc50e03d5951d7f98d398836c",
+      "date": "2026-09-11T14:33:49Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.0s, 56.4 Mo",
+        "audio": "volume moyen -18.2 dB ; ressemblance avec la source 0.21 ; contenu sonore : Une femme parle de brochettes, de barbecue et de pommes.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : une personne prepare des pommes de terre et des brochettes de poulet en cuisine | aliments : ['pommes de terre', 'oignon', 'poulet', 'marinade', 'pain'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bd3a5ea06458 ; empreinte visuelle : plus proche 0.357"
+      }
+    }
   }
 ]
