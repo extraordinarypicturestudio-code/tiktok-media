@@ -151,7 +151,7 @@
     "id": "a20-vasetropgrand",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-argile/a20-vasetropgrand.mp4",
     "caption": "Il voulait un vase plus grand que tout ce que j'avais tourné 🏺🌿\n\nMusique : Kevin MacLeod (incompetech.com) - CC BY 3.0\n\n#poterie #tournage #ceramique #atelier #vase #storytime #asmr #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -168,9 +168,6 @@
         "doublon": "sha256 8719a75a761f ; empreinte visuelle : plus proche 0.352"
       }
     },
-    "vignette_auto": true,
-    "postId": "6aa353890b5c5dc05685cee6",
-    "scheduledForUtc": "2026-09-11T01:59:05.000Z",
-    "scheduledFor": "2026-09-11T03:59:05"
+    "vignette_auto": true
   }
 ]
