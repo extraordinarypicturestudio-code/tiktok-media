@@ -149,7 +149,7 @@
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
     "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -166,7 +166,10 @@
         "doublon": "sha256 0a00cdbb545b ; empreinte visuelle : plus proche 0.344"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "postId": "6aa351296d2c4fa355612b8c",
+    "scheduledForUtc": "2026-09-11T01:34:00.000Z",
+    "scheduledFor": "2026-09-11T03:34:00"
   },
   {
     "id": "51-roulesfraise",
@@ -270,7 +273,7 @@
     "id": "59-steakcreme",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/59-steakcreme.mp4",
     "caption": "Mon mari m'avait dit qu'un vrai steak, ça ne se mangeait qu'au restaurant 🥩🍄\n\n#steak #saucecremeuse #champignons #puree #dinerromantique #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -286,7 +289,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 664da907ff38 ; empreinte visuelle : plus proche 0.409"
       }
-    }
+    },
+    "postId": "6aa353870b5c5dc05685ce41",
+    "scheduledForUtc": "2026-09-11T01:44:05.000Z",
+    "scheduledFor": "2026-09-11T03:44:05"
   },
   {
     "id": "60-patescrevettes",
