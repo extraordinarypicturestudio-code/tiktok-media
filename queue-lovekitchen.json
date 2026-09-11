@@ -476,7 +476,7 @@
     "id": "67-lasagnes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/67-lasagnes.mp4",
     "caption": "Mon mari m'avait dit que des lasagnes maison, ça prenait toute une journée 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -493,13 +493,16 @@
         "doublon": "sha256 3f36d61859f1 ; empreinte visuelle : plus proche 0.408"
       }
     },
-    "error": "Post residuel bloquant supprime (0) - a retenter"
+    "postId": "6aa40deec4f0b91994f431e5",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T19:00:00",
+    "scheduledForUtc": "2026-09-13T17:00:00Z"
   },
   {
     "id": "68-nouillessautees",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/68-nouillessautees.mp4",
     "caption": "Mon mari m'avait dit qu'il ne mangeait des nouilles sautées qu'au traiteur 🥢🔥\n\n#nouillessautees #wok #brocoli #saucesoja #legumessautes #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -515,13 +518,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 0cf44f9e5784 ; empreinte visuelle : plus proche 0.395"
       }
-    }
+    },
+    "postId": "6aa40e0d5cc972d753aae67f",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T21:30:00",
+    "scheduledForUtc": "2026-09-13T19:30:00Z"
   },
   {
     "id": "69-gnocchis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/69-gnocchis.mp4",
     "caption": "Mon mari m'avait dit que des gnocchis, ça ne pouvait pas être croustillant 🥔✨\n\n#gnocchi #gnocchicroustillants #mais #concombre #sauceyaourt #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -537,13 +544,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 88be43776255 ; empreinte visuelle : plus proche 0.421"
       }
-    }
+    },
+    "postId": "6aa40e589d595660fc3782fd",
+    "vignette_auto": false,
+    "scheduledFor": "2026-09-13T23:30:00",
+    "scheduledForUtc": "2026-09-13T21:30:00Z"
   },
   {
     "id": "70-pouletaigredoux",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/70-pouletaigredoux.mp4",
     "caption": "Mon mari m'avait dit que le poulet aigre-doux, c'était pour les restaurants chinois 🍗🍯\n\n#pouletaigredoux #aigredoux #poismangetout #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -559,6 +570,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 ed50995d462f ; empreinte visuelle : plus proche 0.404"
       }
-    }
+    },
+    "postId": "6aa40e6a9d595660fc3786fd",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T19:00:00",
+    "scheduledForUtc": "2026-09-14T17:00:00Z"
   }
 ]
