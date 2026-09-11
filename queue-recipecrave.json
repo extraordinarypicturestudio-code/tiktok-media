@@ -2581,7 +2581,7 @@
     "id": "rc_pommesdeterre_fondantes_71",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pommesdeterre_fondantes_71.mp4",
     "caption": "Faites dorer les pommes de terre avant de les napper de sauce blanche 🍳\r\n\r\n#pommes #terre #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2600,8 +2600,7 @@
     },
     "postId": "6aa12f34519fcac48f56308c",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-11T12:00:00",
-    "scheduledForUtc": "2026-09-11T10:00:00Z"
+    "publishedAt": "2026-09-11T10:02:49.282Z"
   },
   {
     "id": "rc_courgettes_gratinees_72",
