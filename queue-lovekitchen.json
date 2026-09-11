@@ -321,7 +321,7 @@
     "id": "62-poissonbeurrecitron",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
     "caption": "Mon mari m'avait dit que le poisson, ça n'avait jamais rempli personne 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -338,10 +338,8 @@
         "doublon": "sha256 c276561a48df ; empreinte visuelle : plus proche 0.427"
       }
     },
-    "postId": "6aa298ddb5552415d416ea84",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-11T21:30:00",
-    "scheduledForUtc": "2026-09-11T19:30:00Z"
+    "error": "voix : perd 32 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "63-escalopepanee",
@@ -373,7 +371,7 @@
     "id": "64-wrapboulettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
     "caption": "Mon mari m'avait dit qu'on ne pouvait pas faire un wrap sans galette toute prête 🥙🔥\n \n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -390,10 +388,8 @@
         "doublon": "sha256 4413b2a9b248 ; empreinte visuelle : plus proche 0.397"
       }
     },
-    "postId": "6aa2f8ba37d91eafb6457506",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-12T19:00:00",
-    "scheduledForUtc": "2026-09-12T17:00:00Z"
+    "error": "voix : perd 44 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "65-saumonlaque",
@@ -502,7 +498,7 @@
     "id": "69-gnocchis",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/69-gnocchis.mp4",
     "caption": "Mon mari m'avait dit que des gnocchis, ça ne pouvait pas être croustillant 🥔✨\n\n#gnocchi #gnocchicroustillants #mais #concombre #sauceyaourt #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -519,16 +515,14 @@
         "doublon": "sha256 88be43776255 ; empreinte visuelle : plus proche 0.421"
       }
     },
-    "postId": "6aa412731bf2577869dc1a36",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-13T23:30:00",
-    "scheduledForUtc": "2026-09-13T21:30:00Z"
+    "error": "voix : perd 31 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "70-pouletaigredoux",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/70-pouletaigredoux.mp4",
     "caption": "Mon mari m'avait dit que le poulet aigre-doux, c'était pour les restaurants chinois 🍗🍯\n\n#pouletaigredoux #aigredoux #poismangetout #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -545,16 +539,14 @@
         "doublon": "sha256 ed50995d462f ; empreinte visuelle : plus proche 0.404"
       }
     },
-    "postId": "6aa40e6a9d595660fc3786fd",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-14T19:00:00",
-    "scheduledForUtc": "2026-09-14T17:00:00Z"
+    "error": "voix : perd 54 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -571,10 +563,8 @@
         "doublon": "sha256 e11d2e8aa406 ; empreinte visuelle : plus proche 0.339"
       }
     },
-    "postId": "6aa4128798fe8e5d6746974e",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-14T21:30:00",
-    "scheduledForUtc": "2026-09-14T19:30:00Z"
+    "error": "voix : perd 49 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "71-tacos",
@@ -606,7 +596,7 @@
     "id": "72-roulespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
     "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -623,16 +613,14 @@
         "doublon": "sha256 7505a141f281 ; empreinte visuelle : plus proche 0.411"
       }
     },
-    "postId": "6aa412ace4ad43523d7d01e1",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-15T19:00:00",
-    "scheduledForUtc": "2026-09-15T17:00:00Z"
+    "error": "voix : perd 35 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "73-bananecacao",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
     "caption": "Mon mari m'avait dit qu'on ne faisait pas de dessert à la poêle 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -649,10 +637,8 @@
         "doublon": "sha256 c9e602b4706b ; empreinte visuelle : plus proche 0.375"
       }
     },
-    "postId": "6aa412bee84e1d7947dda1cf",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-15T21:30:00",
-    "scheduledForUtc": "2026-09-15T19:30:00Z"
+    "error": "voix : perd 34 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "74-brochettes",
