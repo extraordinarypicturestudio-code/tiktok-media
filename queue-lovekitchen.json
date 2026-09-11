@@ -520,8 +520,8 @@
         "doublon": "sha256 88be43776255 ; empreinte visuelle : plus proche 0.421"
       }
     },
-    "postId": "6aa40e589d595660fc3782fd",
-    "vignette_auto": false,
+    "postId": "6aa412731bf2577869dc1a36",
+    "vignette_auto": true,
     "scheduledFor": "2026-09-13T23:30:00",
     "scheduledForUtc": "2026-09-13T21:30:00Z"
   },
@@ -555,7 +555,7 @@
     "id": "61-esterhazy",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/61-esterhazy.mp4",
     "caption": "Mon mari m'avait dit qu'un gâteau à étages, c'était réservé aux pâtissiers 🍰🌰\n\n#esterhazy #gateauetages #amandes #anniversaire #patisserie #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -571,13 +571,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 e11d2e8aa406 ; empreinte visuelle : plus proche 0.339"
       }
-    }
+    },
+    "postId": "6aa4128798fe8e5d6746974e",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T21:30:00",
+    "scheduledForUtc": "2026-09-14T19:30:00Z"
   },
   {
     "id": "71-tacos",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/71-tacos.mp4",
     "caption": "Mon mari m'avait dit que des tacos, ça s'achetait tout prêts 🌮🔥\n\n#tacos #tacosmaison #boeufhache #haricotsrouges #mais #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -593,13 +597,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 9cf10303b7b4 ; empreinte visuelle : plus proche 0.405"
       }
-    }
+    },
+    "postId": "6aa4129ae84e1d7947dd9b04",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T23:30:00",
+    "scheduledForUtc": "2026-09-14T21:30:00Z"
   },
   {
     "id": "72-roulespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
     "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -615,13 +623,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 7505a141f281 ; empreinte visuelle : plus proche 0.411"
       }
-    }
+    },
+    "postId": "6aa412ace4ad43523d7d01e1",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-15T19:00:00",
+    "scheduledForUtc": "2026-09-15T17:00:00Z"
   },
   {
     "id": "73-bananecacao",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
     "caption": "Mon mari m'avait dit qu'on ne faisait pas de dessert à la poêle 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -637,13 +649,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 c9e602b4706b ; empreinte visuelle : plus proche 0.375"
       }
-    }
+    },
+    "postId": "6aa412bee84e1d7947dda1cf",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-15T21:30:00",
+    "scheduledForUtc": "2026-09-15T19:30:00Z"
   },
   {
     "id": "74-brochettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
     "caption": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -659,6 +675,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 bd3a5ea06458 ; empreinte visuelle : plus proche 0.357"
       }
-    }
+    },
+    "postId": "6aa412f639b8b76299485387",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-15T23:30:00",
+    "scheduledForUtc": "2026-09-15T21:30:00Z"
   }
 ]
