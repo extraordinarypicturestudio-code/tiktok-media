@@ -570,7 +570,7 @@
     "id": "71-tacos",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/71-tacos.mp4",
     "caption": "Mon mari m'avait dit que des tacos, ça s'achetait tout prêts 🌮🔥\n\n#tacos #tacosmaison #boeufhache #haricotsrouges #mais #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -587,10 +587,9 @@
         "doublon": "sha256 9cf10303b7b4 ; empreinte visuelle : plus proche 0.405"
       }
     },
-    "postId": "6aa4129ae84e1d7947dd9b04",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-14T23:30:00",
-    "scheduledForUtc": "2026-09-14T21:30:00Z"
+    "publishedAt": "2026-09-11T19:59:40Z",
+    "note": "publiee A LA MAIN par l utilisateur le 2026-09-11. Depot Zernio supprime."
   },
   {
     "id": "72-roulespoulet",
