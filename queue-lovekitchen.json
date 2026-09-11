@@ -270,7 +270,7 @@
     "id": "59-steakcreme",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/59-steakcreme.mp4",
     "caption": "Mon mari m'avait dit qu'un vrai steak, ça ne se mangeait qu'au restaurant 🥩🍄\n\n#steak #saucecremeuse #champignons #puree #dinerromantique #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -286,10 +286,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 664da907ff38 ; empreinte visuelle : plus proche 0.409"
       }
-    },
-    "postId": "6aa3a269f652eb1282195a17",
-    "scheduledForUtc": "2026-09-11T07:20:39.000Z",
-    "scheduledFor": "2026-09-11T09:20:39"
+    }
   },
   {
     "id": "60-patescrevettes",
