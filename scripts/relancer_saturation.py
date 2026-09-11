@@ -134,6 +134,48 @@ def _quand(maintenant_utc, rang=0):
             + timedelta(minutes=DELAI_MIN + 15 * rang)).strftime("%Y-%m-%dT%H:%M:%S")
 
 
+# Ecart minimal entre deux tentatives sur un MEME compte. Meme valeur que
+# ECART_MIN de programmer_avance : c'est la mesure du 2026-09-06 (une tentative
+# isolee de 30 min passe a 98 %, une rafale bien moins).
+ECART_COMPTE_MIN = 40
+
+
+def occupes_du_compte(posts, acc_id):
+    """Heures UTC des posts deja programmes sur ce compte."""
+    out = []
+    for p in posts:
+        if p.get("status") != "scheduled":
+            continue
+        for pf in p.get("platforms") or []:
+            a = pf.get("accountId")
+            a = a.get("_id") if isinstance(a, dict) else a
+            if a == acc_id and p.get("scheduledFor"):
+                try:
+                    out.append(datetime.fromisoformat(
+                        p["scheduledFor"].replace("Z", "+00:00")))
+                except ValueError:
+                    pass
+    return out
+
+
+def creneau_libre(quand_paris_txt, occupes_utc):
+    """Recule la relance jusqu'a ce qu'elle soit a ECART_COMPTE_MIN de tout.
+
+    POURQUOI : `_quand` visait "maintenant + 40 min" sans regarder le
+    calendrier du compte. Le 2026-09-11, 60-patescrevettes refusee a 19h a ete
+    relancee a 21h29 - UNE MINUTE avant 62-poissonbeurrecitron, deja deposee a
+    21h30 sur le meme compte. Le relanceur fabriquait lui-meme la rafale que
+    toute l'architecture de depot a l'avance existe pour eviter.
+    """
+    q = datetime.strptime(quand_paris_txt, "%Y-%m-%dT%H:%M:%S").replace(tzinfo=FUSEAU)
+    for _ in range(80):                       # au plus ~6h40 de recul
+        if all(abs((q - o).total_seconds()) >= ECART_COMPTE_MIN * 60
+               for o in occupes_utc):
+            break
+        q += timedelta(minutes=5)
+    return q.strftime("%Y-%m-%dT%H:%M:%S")
+
+
 def cles():
     """Cles Zernio disponibles : variables d'environnement, sinon fichiers locaux."""
     trouvees = []
@@ -222,7 +264,8 @@ def main():
             print("%s : lecture impossible (%s)" % (nom, e))
             continue
 
-        for p in d.get("posts", d.get("data", [])) or []:
+        posts_cle = d.get("posts", d.get("data", [])) or []
+        for p in posts_cle:
             if sur_cette_cle >= PAR_CLE_MAX:
                 break
             if p.get("status") != "failed":
@@ -281,6 +324,7 @@ def main():
 
             brouillon = etat["relances"] >= RELANCES_MAX
             quand = _quand(now, repris + brouillons)
+            quand = creneau_libre(quand, occupes_du_compte(posts_cle, acc_id))
 
             corps = {
                 "content": p.get("content", ""),
