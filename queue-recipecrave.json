@@ -2631,7 +2631,7 @@
     "id": "rc_poulet_saute_legumes_73",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_poulet_saute_legumes_73.mp4",
     "caption": "Incorporer les morceaux de poulet dores directement au cur des legumes sautes 🍳\r\n\r\n#poulet #legumes #saute #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2650,8 +2650,7 @@
     },
     "postId": "6aa12f465f2ee10a23d7cfa0",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-11T22:20:00",
-    "scheduledForUtc": "2026-09-11T20:20:00Z"
+    "publishedAt": "2026-09-11T20:21:21.881Z"
   },
   {
     "id": "rc_pates_crevettes_75",
