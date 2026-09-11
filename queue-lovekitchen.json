@@ -471,5 +471,93 @@
     "vignette_auto": true,
     "publishedAt": "2026-09-10T19:34:18Z",
     "note": "publiee A LA MAIN le 2026-09-10. Depot Zernio supprime."
+  },
+  {
+    "id": "67-lasagnes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/67-lasagnes.mp4",
+    "caption": "Mon mari m'avait dit que des lasagnes maison, ça prenait toute une journée 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3f36d61859f1b9492b3926809563c8c1d87da4f74bc7a6c3f80d01c75c0a9b38",
+      "date": "2026-09-11T14:11:38Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.6s, 55.6 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de lasagnes maison et de cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne montre pas à pas la recette et la préparation de lasagnes maison dans sa cuisine. | aliments : ['viande hachée', 'oignons', 'légumes', 'tomates', 'beurre', 'béchamel', 'pâtes à lasagnes', 'mozzarella', 'fromage râpé', 'basilic'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3f36d61859f1 ; empreinte visuelle : plus proche 0.408"
+      }
+    }
+  },
+  {
+    "id": "68-nouillessautees",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/68-nouillessautees.mp4",
+    "caption": "Mon mari m'avait dit qu'il ne mangeait des nouilles sautées qu'au traiteur 🥢🔥\n\n#nouillessautees #wok #brocoli #saucesoja #legumessautes #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "0cf44f9e5784468e9b02e598bee7a45f0a5248e0dd61af6acf493f9b406335f5",
+      "date": "2026-09-11T14:12:17Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.6s, 51.4 Mo",
+        "audio": "volume moyen -18.6 dB ; ressemblance avec la source 0.26 ; contenu sonore : Une femme parle de la cuisine de son mari.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne cuisine des nouilles sautées au poulet et aux légumes tout en racontant une anecdote. | aliments : ['poulet', 'nouilles', 'poivrons', 'brocoli', 'champignons', 'carottes', 'sauce soja'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 0cf44f9e5784 ; empreinte visuelle : plus proche 0.395"
+      }
+    }
+  },
+  {
+    "id": "69-gnocchis",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/69-gnocchis.mp4",
+    "caption": "Mon mari m'avait dit que des gnocchis, ça ne pouvait pas être croustillant 🥔✨\n\n#gnocchi #gnocchicroustillants #mais #concombre #sauceyaourt #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "88be43776255d87d73d0aee81f905891364de60c156bb8acb7db6c0126e631d8",
+      "date": "2026-09-11T14:12:55Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.0s, 47.9 Mo",
+        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.13 ; contenu sonore : Une femme parle de cuisine et de gnocchis chez elle.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne prepare une salade avec des legumes frais et des gnocchis croustillants. | aliments : ['gnocchis', 'mais', 'salade', 'tomates', 'oignon rouge', 'concombre', 'radis', 'sauce yaourt'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 88be43776255 ; empreinte visuelle : plus proche 0.421"
+      }
+    }
+  },
+  {
+    "id": "70-pouletaigredoux",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/70-pouletaigredoux.mp4",
+    "caption": "Mon mari m'avait dit que le poulet aigre-doux, c'était pour les restaurants chinois 🍗🍯\n\n#pouletaigredoux #aigredoux #poismangetout #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "ed50995d462f8d12b8b6421496e9fb496b254bd4eb354cbb176a7bf608325218",
+      "date": "2026-09-11T14:13:39Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.9s, 54.0 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une personne raconte une anecdote culinaire avec des blancs de poulet.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une personne cuisine du poulet aigre-doux avec du riz et des pois mange-tout, avec une narration en sous-titres. | aliments : ['poulet', 'riz', 'pois mange-tout', 'citron', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 ed50995d462f ; empreinte visuelle : plus proche 0.404"
+      }
+    }
   }
 ]

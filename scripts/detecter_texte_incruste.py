@@ -78,17 +78,38 @@ def signature(chemin_png):
     return int((blanc & proche).sum())
 
 
-def analyser(video, seuil=SEUIL):
+# MODE SOURCE. Sur une video FINIE, on n'examine que la bande au-dessus de
+# nos sous-titres. Sur une SOURCE brute, il n'y a pas encore de sous-titres a
+# nous : on examine toute la hauteur, par tranches de 150 px, et on garde la
+# pire tranche de chaque image. C'est ce qui permet d'ecarter une source AVANT
+# d'ecrire son script et de depenser deux requetes TTS dessus.
+TRANCHES_SOURCE = list(range(100, 1800, 150))
+
+
+def analyser(video, seuil=SEUIL, source=False):
     """[(debut, fin, pic)] des passages portant du texte incruste."""
     travail = pathlib.Path(tempfile.mkdtemp(prefix="txt_"))
     try:
-        subprocess.run(
-            ["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vf",
-             "fps=%d,crop=1080:%d:0:%d" % (FPS, BANDE_H, BANDE_Y),
-             str(travail / "b_%05d.png")], check=True)
+        if source:
+            vf = "fps=%d,scale=1080:1920" % FPS
+        else:
+            vf = "fps=%d,crop=1080:%d:0:%d" % (FPS, BANDE_H, BANDE_Y)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video),
+                        "-vf", vf, str(travail / "b_%05d.png")], check=True)
         mesures = []
         for f in sorted(travail.glob("b_*.png")):
-            mesures.append((int(f.stem.split("_")[1]) / FPS, signature(f)))
+            t = int(f.stem.split("_")[1]) / FPS
+            if not source:
+                mesures.append((t, signature(f)))
+                continue
+            from PIL import Image
+            im = Image.open(f)
+            pire = 0
+            for y in TRANCHES_SOURCE:
+                tr = travail / "_tr.png"
+                im.crop((0, y, 1080, y + BANDE_H)).save(tr)
+                pire = max(pire, signature(tr))
+            mesures.append((t, pire))
     finally:
         shutil.rmtree(travail, ignore_errors=True)
 
@@ -109,6 +130,8 @@ def main():
     ap.add_argument("videos", nargs="*")
     ap.add_argument("--dossier")
     ap.add_argument("--seuil", type=int, default=SEUIL)
+    ap.add_argument("--source", action="store_true",
+                    help="source brute : toute la hauteur, pas seulement la bande")
     a = ap.parse_args()
 
     cibles = [pathlib.Path(v) for v in a.videos]
@@ -119,7 +142,7 @@ def main():
 
     sales = 0
     for v in cibles:
-        passages, mesures = analyser(v, a.seuil)
+        passages, mesures = analyser(v, a.seuil, a.source)
         pire = max((n for _, n in mesures), default=0)
         if passages:
             sales += 1
