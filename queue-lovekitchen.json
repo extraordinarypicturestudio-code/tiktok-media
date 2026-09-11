@@ -297,7 +297,7 @@
     "id": "60-patescrevettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
     "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -313,10 +313,7 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 00d52a601d2b ; empreinte visuelle : plus proche 0.415"
       }
-    },
-    "postId": "6aa2917e0e1f1c351947c606",
-    "scheduledForUtc": "2026-09-11T17:00:00.000Z",
-    "scheduledFor": "2026-09-11T19:00:00"
+    }
   },
   {
     "id": "62-poissonbeurrecitron",
