@@ -148,7 +148,7 @@
   {
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
-    "caption": "Mon mari m'avait dit qu'il n'aimait pas les fruits cuits 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
+    "caption": "Une semaine à répéter qu'il était fatigué de tout. Et puis cette part de tarte 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
@@ -167,7 +167,7 @@
       }
     },
     "vignette_auto": true,
-    "maj": "2026-09-12T16:01:40Z",
+    "maj": "2026-09-12T16:15:02Z",
     "note": "Sortie du 12/09 annulee sur consigne : reportee pour prolonger la reserve jusqu'au retour de l'utilisateur, samedi 19/09.",
     "postId": "6aa5773d0239dccaf98abc09",
     "scheduledFor": "2026-09-12T21:30:00",
@@ -348,7 +348,7 @@
   {
     "id": "63-escalopepanee",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/63-escalopepanee.mp4",
-    "caption": "Mon mari m'avait dit qu'une escalope panée, ça ne se réussissait qu'à la friteuse 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
+    "caption": "Il est rentré vidé, il ne voulait parler à personne. Il a fini par lécher la fourchette 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
@@ -370,7 +370,7 @@
     "postId": "6aa55a4b2710e37e0c23e9cb",
     "scheduledForUtc": "2026-09-13T19:30:00.000Z",
     "scheduledFor": "2026-09-13T21:30:00",
-    "maj": "2026-09-12T16:01:40Z"
+    "maj": "2026-09-12T16:15:02Z"
   },
   {
     "id": "64-wrapboulettes",
@@ -399,7 +399,7 @@
   {
     "id": "65-saumonlaque",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/65-saumonlaque.mp4",
-    "caption": "Mon mari m'avait dit qu'il avait mangé assez de saumon pour toute sa vie 🐟🍯\n\n#saumonlaque #saumon #miel #asperges #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
+    "caption": "Quatre jours de déplacement, aucune faim en arrivant. Il a fini son assiette 🐟🍯\n\n#saumonlaque #saumon #miel #asperges #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
@@ -421,7 +421,7 @@
     "postId": "6aa55a597f67d0f440e48525",
     "scheduledForUtc": "2026-09-14T19:30:00.000Z",
     "scheduledFor": "2026-09-14T21:30:00",
-    "maj": "2026-09-12T16:01:40Z"
+    "maj": "2026-09-12T16:15:02Z"
   },
   {
     "id": "66-poivronsfarcis",
@@ -451,7 +451,7 @@
   {
     "id": "68-nouillessautees",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/68-nouillessautees.mp4",
-    "caption": "Mon mari m'avait dit qu'il ne mangeait des nouilles sautées qu'au traiteur 🥢🔥\n\n#nouillessautees #wok #brocoli #saucesoja #legumessautes #cuisinemaison #storytime #pourtoi",
+    "caption": "Deux réunions jusqu'à vingt heures. Il a mangé debout, directement dans la poêle 🥢🔥\n\n#nouillessautees #wok #brocoli #saucesoja #legumessautes #cuisinemaison #storytime #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
@@ -473,7 +473,7 @@
     "postId": "6aa55a742710e37e0c23f9b3",
     "scheduledForUtc": "2026-09-16T19:30:00.000Z",
     "scheduledFor": "2026-09-16T21:30:00",
-    "maj": "2026-09-12T16:01:40Z"
+    "maj": "2026-09-12T16:15:02Z"
   },
   {
     "id": "69-gnocchis",
@@ -650,8 +650,8 @@
   {
     "id": "67-lasagnes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/67-lasagnes.mp4",
-    "caption": "Mon mari m'avait dit que des lasagnes maison, ça prenait toute une journée 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "caption": "Rentré du foot trempé et de mauvaise humeur, un dimanche soir 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -667,6 +667,11 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 afb151d53aeb ; empreinte visuelle : plus proche 0.408"
       }
-    }
+    },
+    "postId": "6aa579ffa5a8716ead264d02",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-15T21:30:00",
+    "scheduledForUtc": "2026-09-15T19:30:00Z",
+    "maj": "2026-09-12T16:15:02Z"
   }
 ]
