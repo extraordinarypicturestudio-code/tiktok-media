@@ -95,4 +95,4 @@ jobs:
         if: always()
         run: |
           scripts/enregistrer.sh "Programmation des sorties a l'avance [skip ci]" \
-              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank
+              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json echecs_publication.jsonl clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank

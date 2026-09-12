@@ -51,4 +51,4 @@ jobs:
       - name: Conserver le compteur de relances
         run: |
           scripts/enregistrer.sh "relances saturation : mise a jour du compteur" \
-              relances_saturation.json
+              relances_saturation.json echecs_publication.jsonl

@@ -75,7 +75,7 @@ jobs:
         if: always()
         run: |
           scripts/enregistrer.sh "Auto-correction / rattrapage du controle de sante [skip ci]" \
-              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank
+              queue-*.json used-clips-hashes.json creneaux_manques.txt relances_saturation.json echecs_publication.jsonl clips clips-argile clips-bigfoot clips-lovekitchen clips-mindshift clips-nextlevelplays clips-pisciniste clips-toprank
       # Alerte uniquement si le script a ecrit un fichier d'anomalies. Le run
       # lui-meme reste en succes (voir commentaire en fin de healthcheck.py) :
       # on ne veut pas d'un mail "Run failed" toutes les 4h pour un stock bas.

@@ -140,6 +140,47 @@ def _quand(maintenant_utc, rang=0):
 ECART_COMPTE_MIN = 40
 
 
+JOURNAL_ECHECS = ICI / "echecs_publication.jsonl"
+
+
+def archiver_echec(post, cle_nom, remplacant):
+    """Garde la trace d'un echec AVANT de supprimer le post.
+
+    POURQUOI : le mail de Zernio invite a lire le detail par
+    `GET /posts/<id>`. Mais c'est nous qui supprimons ce post juste apres
+    l'avoir recree - le lien est donc toujours mort quand on le suit.
+    L'utilisateur a essaye le 2026-09-12 : 404. On perdait le seul endroit ou
+    le motif exact etait ecrit, et avec lui toute chance de distinguer un
+    `reached_active_user_cap` (plafond de l'application) d'un
+    `spam_risk_too_many_posts` (plafond du compte).
+
+    Une ligne JSON par echec : le fichier se lit avec n'importe quoi et ne
+    provoque jamais de conflit de fusion.
+    """
+    pf = (post.get("platforms") or [{}])[0]
+    ligne = {
+        "quand": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "cle": cle_nom,
+        "post": post.get("_id"),
+        "remplace_par": remplacant,
+        "prevue": post.get("scheduledFor"),
+        "compte": (pf.get("accountId") or {}).get("_id")
+                  if isinstance(pf.get("accountId"), dict) else pf.get("accountId"),
+        "media": [(m.get("url") or "").rsplit("/", 1)[-1]
+                  for m in (post.get("mediaItems") or [])],
+        "statut": post.get("status"),
+        "statut_plateforme": pf.get("status"),
+        "motif": pf.get("errorMessage") or pf.get("error"),
+        "code": pf.get("errorCode") or pf.get("code"),
+        "tentatives": pf.get("publishAttempts"),
+    }
+    try:
+        with JOURNAL_ECHECS.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(ligne, ensure_ascii=False) + chr(10))
+    except OSError as e:
+        print("  (journal des echecs non ecrit : %s)" % str(e)[:60])
+
+
 def occupes_du_compte(posts, acc_id):
     """Heures UTC des posts deja programmes sur ce compte."""
     out = []
@@ -351,6 +392,7 @@ def main():
                 continue
 
             npid = (nouveau.get("post") or nouveau).get("_id")
+            archiver_echec(p, nom, npid)
             try:
                 appel("DELETE", "%s/posts/%s" % (API, pid), cle)
             except Exception:
