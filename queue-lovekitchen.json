@@ -345,7 +345,7 @@
     "id": "63-escalopepanee",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/63-escalopepanee.mp4",
     "caption": "Mon mari m'avait dit qu'une escalope panée, ça ne se réussissait qu'à la friteuse 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -362,10 +362,7 @@
         "doublon": "sha256 20a8fe7e4ea9 ; empreinte visuelle : plus proche 0.370"
       }
     },
-    "vignette_auto": true,
-    "postId": "6aa4f23b45cedb14500d7394",
-    "scheduledForUtc": "2026-09-12T07:13:29.000Z",
-    "scheduledFor": "2026-09-12T09:13:29"
+    "vignette_auto": true
   },
   {
     "id": "64-wrapboulettes",
