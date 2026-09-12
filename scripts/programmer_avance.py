@@ -100,9 +100,12 @@ HORAIRE = [
     ("19:00", "lovekitchen"),
     ("19:50", "recipecrave"),
     ("20:40", "toprank"),
-    ("21:30", "lovekitchen"),
-    ("22:20", "recipecrave"),
-    ("23:30", "lovekitchen"),
+    # love_kitchen passe de TROIS a DEUX sorties le 2026-09-12, a la demande de
+    # l'utilisateur : 19h00 et 22h00. recipe_crave quitte 22h20 pour 22h45,
+    # sinon les deux comptes tomberaient a 20 minutes d'ecart - sous le seuil
+    # qui protege des rafales (mesure du 2026-09-06).
+    ("22:00", "lovekitchen"),
+    ("22:45", "recipecrave"),
 ]
 
 
@@ -121,7 +124,7 @@ def verifier_horaire():
 # nombre et de l'heure des sorties, chaine par chaine.
 # (nom, fichier de file, pseudo TikTok, numero de cle Zernio, actif)
 CHAINES = [
-    ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 3),
+    ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 2),
     # Bande son REMPLACEE le 2026-09-09 : les 8 videos portaient le son
     # d'origine de la source (ressemblance 1,00), profil des quatre tombees a
     # 3-25 vues. Elles portent maintenant une piste Kevin MacLeod seule -
