@@ -607,5 +607,31 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-14T12:50:00",
     "scheduledForUtc": "2026-09-14T10:50:00Z"
+  },
+  {
+    "id": "tr_20260916_1250",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260916_1250.mp4",
+    "caption": "This is why you check twice 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1b520f19c4ce1fa7dcea83e1c6fe5a8117382283f4902cfa2a23035ca6068637",
+      "date": "2026-09-12T18:56:19Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.1s, 32.5 Mo",
+        "audio": "volume moyen -21.3 dB ; contenu sonore : Cette musique joyeuse accompagne des bruits de casseroles et",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes, ratages et moments comiques divers filmés par des caméras. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1b520f19c4ce ; empreinte visuelle : plus proche 0.391"
+      }
+    },
+    "postId": "6aa5a06ebd83f7ee2f2610a2",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T20:40:00",
+    "scheduledForUtc": "2026-09-14T18:40:00Z"
   }
 ]
