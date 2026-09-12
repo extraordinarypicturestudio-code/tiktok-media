@@ -1,0 +1,44 @@
+{
+  "_doc": [
+    "Correspondance identifiant de file -> script et source, pour que le",
+    "montage tourne sans machine locale (GitHub Actions, PC eteint).",
+    "Ecrit le 2026-09-12. Les chemins sont relatifs a channels/love_kitchen/."
+  ],
+  "videos": {
+    "60-patescrevettes": {
+      "script": "scripts/60_patescrevettes.txt",
+      "source": "sources/tg_7679541487436057888.mp4",
+      "caption": "exemples/caption60.txt"
+    },
+    "61-esterhazy": {
+      "script": "scripts/61_esterhazy.txt",
+      "source": "sources/no_7583196503875898638.mp4",
+      "caption": "exemples/caption61.txt"
+    },
+    "62-poissonbeurrecitron": {
+      "script": "scripts/62_poissonbeurrecitron.txt",
+      "source": "sources/tg_7680671430500945184.mp4",
+      "caption": "exemples/caption62.txt"
+    },
+    "64-wrapboulettes": {
+      "script": "scripts/64_wrapboulettes.txt",
+      "source": "sources/tg_7638363479417654561.mp4",
+      "caption": "exemples/caption64.txt"
+    },
+    "69-gnocchis": {
+      "script": "scripts/69_gnocchis.txt",
+      "source": "sources/j3_7623135693933432096.mp4",
+      "caption": "exemples/caption69.txt"
+    },
+    "70-pouletaigredoux": {
+      "script": "scripts/70_pouletaigredoux.txt",
+      "source": "sources/j3_7608280128627445014.mp4",
+      "caption": "exemples/caption70.txt"
+    },
+    "73-bananecacao": {
+      "script": "scripts/73_bananecacao.txt",
+      "source": "sources/k4_7623622487854615822.mp4",
+      "caption": "exemples/caption73.txt"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "_doc": [
+    "Fenetres d'intro VALIDEES A L'OEIL pour @love_kitchen97.",
+    "Regle (utilisateur, 2026-08-21) : on voit la FEMME, puis la BOUFFE ou la",
+    "CUISINE. Rien d'autre - pas de salle de bain, pas de menage, pas de",
+    "repassage, pas de machine a laver.",
+    "",
+    "Ces fichiers viennent de comptes 'clean with me' : chacun montre la femme",
+    "quelques secondes puis enchaine sur du nettoyage. SEULE la fenetre listee",
+    "ici a ete verifiee image par image. Ne jamais elargir une fenetre ni en",
+    "ajouter une sans l'avoir regardee : le 2026-08-21 une intro clip2 a 0s",
+    "(salle de bain + serpillere) est partie en publication programmee.",
+    "",
+    "Pour ajouter une entree : extraire des images A FPS=2 (pas 1/4 : un",
+    "echantillonnage large fait rater le point de bascule exact), les REGARDER,",
+    "puis ecrire la fenetre reellement conforme.",
+    "",
+    "AUCUNE fenetre disponible n'atteint 7s : le montage prend donc",
+    "min(duree_cible, fin - debut). Il manque du materiel d'intro."
+  ],
+  "dossier": "intros",
+  "intros": [
+    {
+      "ref": "cuisine_robe_bleue",
+      "fichier": "cuisine_robe_bleue.mp4",
+      "debut": 0.0,
+      "fin": 5.5,
+      "description": "femme en robe bleue debout dans la cuisine, devant la gaziniere",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE image par image (fps=2) : femme visible jusqu'a 5.5s, le NETTOYEUR VAPEUR apparait des 6.0s. Une premiere version de ce manifeste annoncait 7.5s (extrapolee d'un echantillonnage a 4s) et laissait 1.5s de vapeur dans l'intro.",
+      "personne": "A_brune_robe_bleue"
+    },
+    {
+      "ref": "sophie_cuisine_micro",
+      "fichier": "sophie_cuisine_micro.mp4",
+      "debut": 0.0,
+      "fin": 5.5,
+      "description": "femme en beige devant la gaziniere, cuisine claire et micro-ondes encastre",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=2 : femme jusqu'a 5.5s, EVIER + GANTS ROSES (menage) des 6.0s. 720x1280, sera remis a l'echelle.",
+      "personne": "F_beige_cuisine_creme"
+    },
+    {
+      "ref": "sophie_cuisine_four",
+      "fichier": "sophie_cuisine_four.mp4",
+      "debut": 0.0,
+      "fin": 5.0,
+      "description": "femme en beige penchee vers le four, meme cuisine claire",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=4 : femme jusqu'a 5.0s, ASPIRATEUR des 5.25s. Meme cuisine et meme tenue que sophie_cuisine_micro : ne PAS enchainer les deux.",
+      "personne": "F_beige_cuisine_creme"
+    }
+  ],
+  "_note_criteres": [
+    "Ces deux dernieres fenetres ne se passent PAS dans une cuisine. Elles ont",
+    "d'abord ete rejetees pour cette raison, a tort : la regle posee par",
+    "l'utilisateur est 'on voit la femme, PUIS la bouffe ou la cuisine' — le",
+    "plan de la femme n'a pas a etre en cuisine, c'est le CORPS de la video qui",
+    "apporte la nourriture. Ce qui est proscrit, ce sont les plans de menage",
+    "(serpillere, vapeur, WC, machine a laver), pas le lieu du plan de femme."
+  ],
+  "_note_personnes": [
+    "Le champ 'personne' identifie QUI est filmee, pas le fichier.",
+    "cuisine_haut_blanc et cuisine_tablier = MEME femme, MEME cuisine.",
+    "sophie_cuisine_micro et sophie_cuisine_four = MEME femme, MEME cuisine.",
+    "La rotation de file_production.json alterne sur ce champ : deux videos",
+    "qui se suivent ne montrent jamais la meme personne en intro."
+  ],
+  "retirees": [
+    {
+      "ref": "cuisine_haut_blanc",
+      "fichier": "ssstik.io_1787305427966.mp4",
+      "debut": 0.0,
+      "fin": 6.5,
+      "description": "femme en haut blanc de dos, plan de travail de cuisine, cafetiere",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE image par image (fps=2) : femme visible jusqu'a 6.5s, SALLE DE BAIN des 7.0s, puis machine a laver et bidon de lessive OMO (logo de marque lisible).",
+      "personne": "B_blonde_cuisine_blanche",
+      "retire_le": "2026-08-22",
+      "raison_retrait": "Utilisee dans la video publiee le 2026-08-22 a 12h (thon/mozzarella). L'utilisateur demande de ne plus la reutiliser."
+    },
+    {
+      "ref": "cuisine_tablier",
+      "fichier": "snaptik_7620932899981774111_v3.mp4",
+      "debut": 0.0,
+      "fin": 8.0,
+      "description": "femme en tablier au plan de travail, en train de couper des tomates",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=2 : femme en cuisine jusqu'a 8.0s, LAVABO/SALLE DE BAIN des 8.5s. Seule fenetre qui tient les 7s pleines. C'est aussi la seule ou elle cuisine VRAIMENT (elle coupe des tomates) : a privilegier.",
+      "personne": "B_blonde_cuisine_blanche",
+      "motif_retrait": "fichier absent du dossier source au 2026-08-25 (supprime par l'utilisateur)"
+    }
+  ],
+  "refusees": [
+    {
+      "fichier": "ssstik.io_1787734563066.mp4",
+      "motif": "cadrage centre sur le corps pendant toute la fenetre (cuisine, short rose) - critere bloquant de controle_publication.py sur les deux profils",
+      "examine_le": "2026-08-26"
+    },
+    {
+      "fichier": "ssstik.io_1787734711452.mp4",
+      "motif": "cadrage centre sur le corps 0-5.5s (cuisine, short rose), puis nettoyage de salle de bain",
+      "examine_le": "2026-08-26"
+    },
+    {
+      "fichier": "ssstik.io_1787734752396.mp4",
+      "motif": "cadrage centre sur le corps 0-7s + ecran partage avec une seconde video sans rapport en bas de cadre",
+      "examine_le": "2026-08-26"
+    },
+    {
+      "ref": "cuisine_debardeur_blanc",
+      "fichier": "snaptik_7620932946630806815_v3.mp4",
+      "debut": 0.0,
+      "fin": 6.5,
+      "description": "femme en debardeur blanc au plan de travail, hotte et meubles bois",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=2 : femme en cuisine jusqu'a 6.5s, SALLE DE BAIN des 7.0s, puis machine a laver et lessive OMO.",
+      "personne": "C_blonde_cuisine_bois",
+      "motif_retrait": "RETIREE le 2026-08-30 : signalement TikTok sur la video du 30/08 12h. La fenetre 0.0-6.5s ne montre PAS 'une femme en debardeur blanc au plan de travail' comme le disait cette fiche, mais une femme EN SOUS-VETEMENTS filmee de dos, le cadre centre sur le fessier, pendant les 6,5 secondes entieres. La fiche avait ete ecrite sans regarder la fenetre : la note 'VERIFIE fps=2' portait sur le moment ou la scene bascule en salle de bain (7.0s), pas sur ce que montre la partie gardee. Verifier ce que la fenetre MONTRE, pas seulement ou elle s'arrete."
+    }
+  ],
+  "_note_depot": [
+    "Depuis le 2026-09-12 les fenetres sont PRE-DECOUPEES dans ce dossier :",
+    "le montage tourne sur GitHub Actions, PC eteint, et les sources entieres",
+    "(12 a 33 Mo chacune) n'ont pas a monter dans le depot. Seules les trois",
+    "intros EN CUISINE tournent (mesure des vues), les autres restent locales."
+  ]
+}

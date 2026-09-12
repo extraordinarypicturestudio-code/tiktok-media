@@ -9,3 +9,7 @@ __pycache__/
 zernio*.env
 gemini.env
 *.env
+
+# Rendus intermediaires du montage : seule la video qui passe la barriere
+# entre dans clips-lovekitchen/, le reste n'a rien a faire dans le depot.
+channels/love_kitchen/exemples/

@@ -1,0 +1,90 @@
+name: Monter les videos love_kitchen
+
+# POURQUOI CE WORKFLOW EXISTE
+# ---------------------------
+# Jusqu'au 2026-09-12, la chaine de montage love_kitchen vivait uniquement sur
+# le PC de l'utilisateur : aucune video ne pouvait etre produite pendant son
+# absence. Sept videos refusees par le controle d'intonation attendaient une
+# session locale pour etre revoicees, et la chaine tombait en silence des que
+# les depots deja faits etaient consommes.
+#
+# Demande de l'utilisateur ce jour-la : *utilisation quotidienne en mon
+# absence, PC eteint, avec Gemini et de nouvelles videos*. Le depot etant
+# PUBLIC, les minutes Actions y sont gratuites et illimitees : c'est la seule
+# voie qui tienne, et elle respecte la regle du projet - aucune tache
+# planifiee cote Claude, tout passe par GitHub.
+#
+# CE QUI A DU MONTER DANS LE DEPOT POUR QUE CA MARCHE
+#   pipeline/                     la barriere de mise en file et ses controles
+#   channels/love_kitchen/        le montage, les scripts, les sources
+#   channels/love_kitchen/intros/ les trois intros EN CUISINE, pre-decoupees
+#                                 (5 s chacune, ~1 Mo, au lieu de sources
+#                                 entieres de 12 a 33 Mo)
+#
+# L'HEURE : le quota Gemini gratuit se reinitialise a minuit heure du
+# Pacifique, soit 07h00 UTC en septembre. On passe a 07h30 UTC pour le
+# prendre frais. Le depot chez Zernio (programmer-avance.yml) tourne a 04h40
+# UTC : une video montee aujourd'hui part donc en depot demain, ce qui ne
+# coute rien puisque les sorties sont deposees plusieurs jours a l'avance.
+on:
+  schedule:
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Videos a monter au maximum (quota : ~10 tirages/jour)"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  # Deux montages simultanes se disputeraient le quota TTS et la file.
+  group: montage-lovekitchen
+  cancel-in-progress: false
+
+jobs:
+  monter:
+    runs-on: ubuntu-latest
+    # Un montage fait jusqu'a trois tirages de voix par video, plus les
+    # controles d'image : large, mais tres loin des 6 h autorisees.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # numpy et Pillow servent aux controles d'image et d'empreinte ; librosa
+      # mesure l'INTONATION, le seul controle qui ait attrape la voix qui
+      # s'aplatit (le niveau, lui, est egalise par speechnorm et ne montre
+      # rien). soundfile est sa dependance de lecture.
+      - name: Installer les dependances Python
+        run: pip install --quiet numpy Pillow librosa soundfile
+
+      - name: Monter les videos en attente
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Groq transcrit la voix mot a mot pour les sous-titres
+          # karaoke, qui sont le format de la chaine. Sans cette cle le
+          # montage s'arrete net - et c'est voulu : une video sans ses
+          # sous-titres n'est pas une video love_kitchen.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python3 scripts/monter_lovekitchen.py \
+            --max "${{ github.event.inputs.max || '3' }}"
+
+      # Toujours enregistrer, meme si le montage s'est arrete sur un quota :
+      # ce qui est passe avant l'arret est du vrai travail, et une file qui
+      # n'est pas poussee ment au run suivant.
+      - name: Enregistrer la file et les videos
+        if: always()
+        run: |
+          scripts/enregistrer.sh "Montage love_kitchen automatique [skip ci]" \
+              queue-lovekitchen.json used-clips-hashes.json clips-lovekitchen \
+              channels/love_kitchen/intros_historique.json
