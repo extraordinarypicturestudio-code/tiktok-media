@@ -599,7 +599,7 @@
     "id": "72-roulespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
     "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -617,7 +617,10 @@
       }
     },
     "vignette_auto": true,
-    "error": "voix : perd 35 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
+    "postId": "6aa55aa2fb6f64da3ab0c573",
+    "scheduledFor": "2026-09-17T21:30:00",
+    "scheduledForUtc": "2026-09-17T19:30:00.000Z",
+    "maj": "2026-09-12T15:18:15Z"
   },
   {
     "id": "73-bananecacao",
