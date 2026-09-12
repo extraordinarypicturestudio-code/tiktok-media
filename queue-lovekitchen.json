@@ -291,6 +291,54 @@
     "publishedAt": "2026-09-11T08:12:09.292Z"
   },
   {
+    "id": "60-patescrevettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
+    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
+    "status": "published",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "00d52a601d2bf775ba4e6673620e83ea3d2cd9f67d506226a2d7da40b2f0f380",
+      "date": "2026-09-10T11:10:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 70.3s, 52.4 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de crevettes et de mauvaises humeurs.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme cuisine des pates aux crevettes, tomates cerises et courgettes en racontant une histoire. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'persil', 'basilic', 'beurre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 00d52a601d2b ; empreinte visuelle : plus proche 0.415"
+      }
+    },
+    "publishedAt": "2026-09-11T18:58:54Z",
+    "note": "publiee A LA MAIN le 2026-09-11. Refusee a 19h puis relancee a 21h29, une minute avant 62 : depot supprime."
+  },
+  {
+    "id": "62-poissonbeurrecitron",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
+    "caption": "Mon mari m'avait dit que le poisson, ça n'avait jamais rempli personne 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c276561a48df4e5930e71c1ddbf2772e696bebca165fbc295237a8ab50deef24",
+      "date": "2026-09-10T11:42:47Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.5s, 46.5 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.22 ; contenu sonore : Une femme raconte une recette de poisson avec des légumes.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Une femme cuisine du poisson, des haricots verts et des tomates cerises tout en racontant une anecdote. | aliments : ['poisson', 'haricots verts', 'tomates cerises', 'citron', 'beurre', 'lentilles'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c276561a48df ; empreinte visuelle : plus proche 0.427"
+      }
+    },
+    "vignette_auto": true,
+    "error": "voix : perd 32 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
+  },
+  {
     "id": "63-escalopepanee",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/63-escalopepanee.mp4",
     "caption": "Mon mari m'avait dit qu'une escalope panée, ça ne se réussissait qu'à la friteuse 🍗🌿\n\n#escalopepanee #schnitzel #asperges #jeudisoir #cuisinemaison #storytime #couplegoals #pourtoi",
@@ -313,8 +361,32 @@
     },
     "vignette_auto": true,
     "postId": "6aa50dcbc5fd8dda8c11e983",
-    "scheduledFor": "2026-09-12T19:00:00",
-    "scheduledForUtc": "2026-09-12T17:00:00Z"
+    "scheduledForUtc": "2026-09-12T17:00:00.000Z",
+    "scheduledFor": "2026-09-12T19:00:00"
+  },
+  {
+    "id": "64-wrapboulettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
+    "caption": "Mon mari m'avait dit qu'on ne pouvait pas faire un wrap sans galette toute prête 🥙🔥\n \n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "4413b2a9b2485d138c62739a1237a770353ec0a78db09d4d1ff1e81015402610",
+      "date": "2026-09-10T18:25:03Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.7s, 48.0 Mo",
+        "audio": "volume moyen -18.1 dB ; ressemblance avec la source 0.26 ; contenu sonore : Une femme parle de galettes de sarrasin et viande.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une recette de wrap maison avec une galette de pommes de terre et des boulettes de viande. | aliments : ['viande hachee', 'pommes de terre', 'fromage', 'tomates cerises', 'herbes', 'oignons', 'poivrons', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 4413b2a9b248 ; empreinte visuelle : plus proche 0.397"
+      }
+    },
+    "vignette_auto": true,
+    "error": "voix : perd 44 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "65-saumonlaque",
@@ -435,7 +507,7 @@
       }
     },
     "vignette_auto": true,
-    "error": "refusee par le controle de respiration au second rendu"
+    "error": "voix : perd 31 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "70-pouletaigredoux",
@@ -459,7 +531,7 @@
       }
     },
     "vignette_auto": true,
-    "error": "refusee par le controle d intonation (-30 %)"
+    "error": "voix : perd 54 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "61-esterhazy",
@@ -483,7 +555,7 @@
       }
     },
     "vignette_auto": true,
-    "error": "voix refaite a faire : quota epuise"
+    "error": "voix : perd 49 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "71-tacos",
@@ -532,7 +604,31 @@
       }
     },
     "vignette_auto": true,
-    "error": "refusee par le controle d image a la barriere (regle n.12 : un refus se respecte)"
+    "error": "voix : perd 35 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
+  },
+  {
+    "id": "73-bananecacao",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
+    "caption": "Mon mari m'avait dit qu'on ne faisait pas de dessert à la poêle 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c9e602b4706b6bec0c169cb935ee111bc7097cc079f8a0c1353a20ce7daab994",
+      "date": "2026-09-11T14:32:00Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.8s, 51.0 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.30 ; contenu sonore : Une femme raconte une anecdote pendant la preparation d'un gateau.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : preparation d'un dessert a base de banane et de chocolat dans une poele | aliments : ['banane', 'chocolat', 'pate a tartiner', 'lait', 'pepites de chocolat'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c9e602b4706b ; empreinte visuelle : plus proche 0.375"
+      }
+    },
+    "vignette_auto": true,
+    "error": "voix : perd 34 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
   },
   {
     "id": "74-brochettes",
@@ -558,100 +654,5 @@
     "postId": "6aa50a2f33aec759967543c9",
     "vignette_auto": true,
     "publishedAt": "2026-09-12T08:18:36.211Z"
-  },
-  {
-    "id": "60-patescrevettes",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
-    "caption": "Il est rentré de mauvaise humeur, il ne voulait rien manger 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "faa3420f48198ca162bb7cee130510acce691a61015323327bdf5bf6f08f9b2e",
-      "date": "2026-09-12T08:33:04Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 70.1s, 52.6 Mo",
-        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de crevettes et de son mari jaloux.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un plat de pates aux crevettes, tomates cerises et courgettes dans une cuisine. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'beurre', 'herbes'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 faa3420f4819 ; empreinte visuelle : plus proche 0.387"
-      }
-    },
-    "vignette_auto": true
-  },
-  {
-    "id": "62-poissonbeurrecitron",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
-    "caption": "Il voulait quelque chose de léger, il a fini par saucer l'assiette 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "04d579ee7745fb6c28a484b76733114bddd5e74a3757c1ccc638deb94c0838b9",
-      "date": "2026-09-12T08:33:16Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 64.1s, 45.3 Mo",
-        "audio": "volume moyen -18.6 dB ; ressemblance avec la source 0.24 ; contenu sonore : Une femme parle de cuisine et de poissons en riant.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Une personne cuisine un plat de poisson avec du beurre citronné et des légumes. | aliments : ['poisson', 'haricots verts', 'tomates cerises', 'lentilles', 'citron', 'beurre'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 04d579ee7745 ; empreinte visuelle : plus proche 0.426"
-      }
-    },
-    "postId": "6aa50fa7826062dc3fe5df10",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-14T19:00:00",
-    "scheduledForUtc": "2026-09-14T17:00:00Z"
-  },
-  {
-    "id": "64-wrapboulettes",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
-    "caption": "Ses amis arrivaient pour le match et je n'avais rien commandé 🥙🔥\n\n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "94139e985695e86e4b1596246ce9119b8a05b2557d31c3f07615929a7298f064",
-      "date": "2026-09-12T08:33:28Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 68.5s, 47.1 Mo",
-        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.23 ; contenu sonore : Une femme parle de cuisine et raconte une anecdote personnelle.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Une personne prepare une recette de cuisine pour le soir de match de ses amis. | aliments : ['viande hachée', 'boulettes', 'pommes de terre', 'fromage', 'tomates cerises', 'oignons'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 94139e985695 ; empreinte visuelle : plus proche 0.431"
-      }
-    },
-    "vignette_auto": true
-  },
-  {
-    "id": "73-bananecacao",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
-    "caption": "Vingt-deux heures, une envie de sucré et un four en panne 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "467b3927164d6b57f26bc344d7a3eb2d380f970a17fa8e37de80b4384a18b4ef",
-      "date": "2026-09-12T08:33:40Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 66.9s, 49.8 Mo",
-        "audio": "volume moyen -18.1 dB ; ressemblance avec la source 0.37 ; contenu sonore : Une femme raconte une anecdote culinaire avec gourmandise et nostalgie.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : une personne montre la preparation d'un dessert a base de banane et de cacao dans une poele | aliments : ['banane', 'œufs', 'pete de cacao', 'huile', 'sucre', 'lait', 'pépites de chocolat'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 467b3927164d ; empreinte visuelle : plus proche 0.410"
-      }
-    },
-    "vignette_auto": true
   }
 ]
