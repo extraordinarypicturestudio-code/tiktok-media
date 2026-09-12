@@ -486,6 +486,11 @@ def verifier_et_reparer(video):
     return True, "conforme", False
 
 
+def _maintenant_iso():
+    import datetime as _d
+    return _d.datetime.now(_d.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
+
+
 def main():
     if len(sys.argv) != 3:
         print("Usage: publish_next.py <queue.json> <pseudo_tiktok>")
@@ -503,6 +508,36 @@ def main():
     en_attente = [v for v in queue if v.get("status") == "pending"]
     if not en_attente:
         print("File d'attente vide : aucune video en attente.")
+        return
+
+    # CE WORKFLOW N'EST PLUS QU'UN FILET. Depuis le 2026-09-06 les sorties sont
+    # DEPOSEES A L'AVANCE chez Zernio sur une grille horaire ; publier en plus
+    # ce qui traine en `pending` doublerait les sorties et casserait la grille.
+    #
+    # Le defaut aurait mordu des le 2026-09-13 : le montage automatique de
+    # love_kitchen tourne a 07h30 UTC et remet ses rendus en `pending`, et ce
+    # workflow passe a 10h07 - la video serait sortie a midi au lieu de 21h30,
+    # en plus de celle du soir. Un filet ne se declenche que quand il n'y a
+    # RIEN d'autre pour rattraper.
+    try:
+        # L'API rend {"posts": [...]}, PAS {"data": [...]}. La premiere version
+        # lisait "data", trouvait vide, en concluait "aucun depot" et publiait
+        # quand meme : elle a sorti 52-tartepeches le 2026-09-12 a 19h39, en
+        # plein test, alors que six sorties etaient deposees. Lire la mauvaise
+        # cle ne leve aucune erreur - ca rend juste la garde inoperante.
+        _rep = zernio_call("GET", "/posts?limit=100") or {}
+        _tous = _rep.get("posts") or _rep.get("data") or []
+        deja = [p for p in _tous
+                if p.get("status") == "scheduled"
+                and pseudo in str(p)
+                and str(p.get("scheduledFor") or "") > _maintenant_iso()]
+    except Exception as e:
+        deja = []
+        print(f"(depots a venir illisibles : {str(e)[:70]} - on continue)")
+    if deja:
+        prochain = min(str(p.get("scheduledFor")) for p in deja)
+        print(f"{len(deja)} sortie(s) deja deposee(s) chez Zernio, prochaine le "
+              f"{prochain[:16]} : le filet ne se declenche pas.")
         return
 
     cid = compte_id(pseudo)

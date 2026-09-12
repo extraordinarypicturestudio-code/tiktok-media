@@ -149,7 +149,7 @@
     "id": "52-tartepeches",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/52-tartepeches.mp4",
     "caption": "Une semaine à répéter qu'il était fatigué de tout. Et puis cette part de tarte 🍑🥧\n\n#tarteauxpeches #tarte #peches #dessertfacile #patisseriemaison #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -167,11 +167,9 @@
       }
     },
     "vignette_auto": true,
-    "maj": "2026-09-12T19:36:51Z",
-    "note": "Sortie du 12/09 annulee sur consigne : reportee pour prolonger la reserve jusqu'au retour de l'utilisateur, samedi 19/09.",
-    "postId": "6aa5773d0239dccaf98abc09",
-    "scheduledFor": "2026-09-18T21:30:00",
-    "scheduledForUtc": "2026-09-18T19:30:00.000Z"
+    "maj": "2026-09-12T19:40:50Z",
+    "note": "Publiee par erreur le 2026-09-12 a 21h39 lors d'un test du filet de publication.",
+    "postId": "6aa5773d0239dccaf98abc09"
   },
   {
     "id": "51-roulesfraise",
