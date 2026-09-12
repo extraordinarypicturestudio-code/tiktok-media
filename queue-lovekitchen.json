@@ -572,7 +572,7 @@
     "id": "60-patescrevettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
     "caption": "Il est rentré de mauvaise humeur, il ne voulait rien manger 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -588,13 +588,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 faa3420f4819 ; empreinte visuelle : plus proche 0.387"
       }
-    }
+    },
+    "postId": "6aa50f885da846b8ed8f4c37",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T23:30:00",
+    "scheduledForUtc": "2026-09-13T21:30:00Z"
   },
   {
     "id": "62-poissonbeurrecitron",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
     "caption": "Il voulait quelque chose de léger, il a fini par saucer l'assiette 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -610,13 +614,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 04d579ee7745 ; empreinte visuelle : plus proche 0.426"
       }
-    }
+    },
+    "postId": "6aa50fa7826062dc3fe5df10",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T19:00:00",
+    "scheduledForUtc": "2026-09-14T17:00:00Z"
   },
   {
     "id": "64-wrapboulettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/64-wrapboulettes.mp4",
     "caption": "Ses amis arrivaient pour le match et je n'avais rien commandé 🥙🔥\n\n#wrapmaison #boulettes #galettedepommesdeterre #soirmatch #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -632,13 +640,17 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 94139e985695 ; empreinte visuelle : plus proche 0.431"
       }
-    }
+    },
+    "postId": "6aa50fc85da846b8ed8f67f1",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T21:30:00",
+    "scheduledForUtc": "2026-09-14T19:30:00Z"
   },
   {
     "id": "73-bananecacao",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/73-bananecacao.mp4",
     "caption": "Vingt-deux heures, une envie de sucré et un four en panne 🍌🍫\n\n#bananecacao #dessertalapoele #banane #cacao #pepitesdechocolat #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -654,6 +666,10 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 467b3927164d ; empreinte visuelle : plus proche 0.410"
       }
-    }
+    },
+    "postId": "6aa51005b0cdc12f67130f5a",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T23:30:00",
+    "scheduledForUtc": "2026-09-14T21:30:00Z"
   }
 ]
