@@ -2706,7 +2706,7 @@
     "id": "rc_saumon_cremeux_tomates_77",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_saumon_cremeux_tomates_77.mp4",
     "caption": "Saisir les paves de saumon avant de mijoter la sauce onctueuse 🍳\r\n\r\n#saumon #pates #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2725,8 +2725,8 @@
     },
     "postId": "6aa12f7a9843c9b46acf55c1",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-12T19:50:00",
-    "scheduledForUtc": "2026-09-12T17:50:00Z"
+    "publishedAt": "2026-09-12T17:51:43.388Z",
+    "maj": "2026-09-12T17:55:35Z"
   },
   {
     "id": "rc_orzotto_boeuf_78",
