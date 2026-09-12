@@ -2756,7 +2756,7 @@
     "id": "rc_pates_poulet_champignons_74",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_pates_poulet_champignons_74.mp4",
     "caption": "Incorporer delicatement les penne cuites dans une saucecremeuse aux tomates et champignons 🍳\r\n\r\n#pates #poulet #recette #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2775,8 +2775,8 @@
     },
     "postId": "6aa12fab1a6a4d90975157b8",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-13T01:10:00",
-    "scheduledForUtc": "2026-09-12T23:10:00Z"
+    "publishedAt": "2026-09-12T23:11:42.389Z",
+    "maj": "2026-09-12T23:28:30Z"
   },
   {
     "id": "rc_courgettes_farcies_80",
