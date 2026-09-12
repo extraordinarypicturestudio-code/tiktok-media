@@ -242,6 +242,10 @@ def eligible(v, ecrire, chaine=None, pseudo=None, numero=None):
     if chaine and pseudo and numero:
         try:
             publiees = cr.legendes_publiees(pseudo, cle_zernio(numero))
+            # ... ET les videos deja en file : un plat "pas encore publie"
+            # peut tres bien etre deja programme pour ce soir.
+            publiees += cr.legendes_en_file(
+                "queue-%s.json" % chaine, v.get("id"))
             motif = cr.verdict(v, publiees, chaine)
         except Exception as e:
             # Un controle qui n'a pas pu tourner ne bloque pas le depot : la

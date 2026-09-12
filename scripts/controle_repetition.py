@@ -236,6 +236,32 @@ def deja_publie(legende, publiees):
     return meilleur
 
 
+def legendes_en_file(chemin, sauf_id=None):
+    """[(date, legende)] des videos DEJA EN FILE mais pas encore publiees.
+
+    Ajoute le 2026-09-12. Le controle ne regardait que les legendes EN LIGNE :
+    une source d'escalope panee est passee a 0,25 alors que `63-escalopepanee`
+    etait deja programmee pour le soir meme. Le meme plat serait sorti deux
+    fois a quelques jours d'ecart - exactement le defaut du gratin de thon des
+    30 et 31/08, deplace de "deja publie" vers "deja prevu".
+    """
+    import json as _json
+    try:
+        file = _json.load(open(chemin, encoding="utf-8"))
+    except Exception:
+        return []
+    sortie = []
+    for e in file:
+        if e.get("status") in ("published", "rejected"):
+            continue           # publiee : elle est deja dans le releve Zernio
+        if sauf_id and e.get("id") == sauf_id:
+            continue           # ne pas se comparer a soi-meme
+        leg = e.get("caption") or ""
+        if leg:
+            sortie.append((e.get("scheduledFor", "") or "en file", leg))
+    return sortie
+
+
 def verdict(video, publiees, chaine=None):
     """Motif de refus, ou None. `video` est une entree de file."""
     if chaine is not None and chaine not in CONCERNEES:
