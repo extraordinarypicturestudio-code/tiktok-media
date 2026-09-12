@@ -167,9 +167,11 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa559dc38570dc290b5d9e0",
-    "scheduledForUtc": "2026-09-12T19:30:00.000Z",
-    "scheduledFor": "2026-09-12T21:30:00"
+    "maj": "2026-09-12T16:01:40Z",
+    "note": "Sortie du 12/09 annulee sur consigne : reportee pour prolonger la reserve jusqu'au retour de l'utilisateur, samedi 19/09.",
+    "postId": "6aa5773d0239dccaf98abc09",
+    "scheduledFor": "2026-09-12T21:30:00",
+    "scheduledForUtc": "2026-09-18T19:30:00.000Z"
   },
   {
     "id": "51-roulesfraise",
@@ -367,7 +369,8 @@
     "vignette_auto": true,
     "postId": "6aa55a4b2710e37e0c23e9cb",
     "scheduledForUtc": "2026-09-13T19:30:00.000Z",
-    "scheduledFor": "2026-09-13T21:30:00"
+    "scheduledFor": "2026-09-13T21:30:00",
+    "maj": "2026-09-12T16:01:40Z"
   },
   {
     "id": "64-wrapboulettes",
@@ -417,7 +420,8 @@
     "vignette_auto": true,
     "postId": "6aa55a597f67d0f440e48525",
     "scheduledForUtc": "2026-09-14T19:30:00.000Z",
-    "scheduledFor": "2026-09-14T21:30:00"
+    "scheduledFor": "2026-09-14T21:30:00",
+    "maj": "2026-09-12T16:01:40Z"
   },
   {
     "id": "66-poivronsfarcis",
@@ -467,10 +471,10 @@
     },
     "vignette_auto": true,
     "note": "postId mort : le post Zernio n'existe plus, a redeposer.",
-    "maj": "2026-09-12T13:04:09Z",
+    "maj": "2026-09-12T16:01:40Z",
     "postId": "6aa55a667f67d0f440e488d8",
     "scheduledFor": "2026-09-15T21:30:00",
-    "scheduledForUtc": "2026-09-15T19:30:00Z"
+    "scheduledForUtc": "2026-09-15T19:30:00.000Z"
   },
   {
     "id": "68-nouillessautees",
@@ -496,7 +500,8 @@
     "vignette_auto": true,
     "postId": "6aa55a742710e37e0c23f9b3",
     "scheduledForUtc": "2026-09-16T19:30:00.000Z",
-    "scheduledFor": "2026-09-16T21:30:00"
+    "scheduledFor": "2026-09-16T21:30:00",
+    "maj": "2026-09-12T16:01:40Z"
   },
   {
     "id": "69-gnocchis",
@@ -620,7 +625,7 @@
     "postId": "6aa55aa2fb6f64da3ab0c573",
     "scheduledFor": "2026-09-17T21:30:00",
     "scheduledForUtc": "2026-09-17T19:30:00.000Z",
-    "maj": "2026-09-12T15:18:15Z"
+    "maj": "2026-09-12T16:01:40Z"
   },
   {
     "id": "73-bananecacao",
