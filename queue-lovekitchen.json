@@ -520,30 +520,6 @@
     "note": "publiee A LA MAIN par l utilisateur le 2026-09-11. Depot Zernio supprime."
   },
   {
-    "id": "72-roulespoulet",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
-    "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "7505a141f2819b51579c904b129fba0e9d1cc45584064d45f0c5af4ba9cd302a",
-      "date": "2026-09-11T14:31:16Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 74.1s, 55.0 Mo",
-        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme explique la recette de cuisine de son poulet.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation culinaire montrant la realisation de roules de poulet farcis au fromage, epinards et tomates | aliments : ['poulet', 'fromage', 'tomates', 'epinards', 'oeuf'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 7505a141f281 ; empreinte visuelle : plus proche 0.411"
-      }
-    },
-    "vignette_auto": true,
-    "error": "refusee par le controle d image a la barriere (regle n.12 : un refus se respecte)"
-  },
-  {
     "id": "74-brochettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
     "caption": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
@@ -663,5 +639,27 @@
     },
     "vignette_auto": true,
     "error": "voix : perd 34 % de son intonation entre le debut et la fin (temoins 756K/256K/145K : -4/+34/-17 %). A revoicer."
+  },
+  {
+    "id": "72-roulespoulet",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
+    "caption": "Il rentrait d'un rendez-vous raté et ne voulait parler à personne 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "d8cfaa94eb4348224c6650c97823bd2cfe394a5c80cfc3d2752d0159ebea45c6",
+      "date": "2026-09-12T09:43:31Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.6s, 50.3 Mo",
+        "audio": "volume moyen -18.2 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote culinaire avec des blancs de poulet.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation de roules de poulet farcis au fromage, tomates et epinards, panes et cuits au four. | aliments : ['poulet hache', 'fromage', 'tomate', 'epinards', 'chapelure'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 d8cfaa94eb43 ; empreinte visuelle : plus proche 0.404"
+      }
+    }
   }
 ]
