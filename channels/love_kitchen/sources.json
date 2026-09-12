@@ -39,6 +39,10 @@
       "script": "scripts/73_bananecacao.txt",
       "source": "sources/k4_7623622487854615822.mp4",
       "caption": "exemples/caption73.txt"
+    },
+    "67-lasagnes": {
+      "script": "scripts/67_lasagnes.txt",
+      "source": "sources/j3_7603479550353313046.mp4"
     }
   }
 }
