@@ -171,7 +171,25 @@ def finaliser(ident, video, legende, conf):
         l = l.strip()
         if l.startswith("[NON") or l.startswith("REJET") or l.startswith("OK :"):
             print("      " + l[:130])
-    return b.returncode == 0
+    if b.returncode != 0:
+        return False
+
+    # RIEN DE CE QUE CE PILOTE PRODUIT NE PART EN LIGNE. Consigne explicite de
+    # l'utilisateur, 2026-09-12 : *le projet de montage automatique est en
+    # beta, tu ne sors rien*. Seules les videos terminees et validees a la main
+    # sortent. L'entree est donc mise en attente de validation des qu'elle a
+    # passe la barriere : `programmer_avance` ne depose que du `pending`, un
+    # `on_hold` reste sur place.
+    import json as _json
+    file = _json.loads(FILE.read_text(encoding="utf-8"))
+    for e in file:
+        if e.get("id") == ident:
+            e["status"] = "on_hold"
+            e["error"] = ("montage automatique (beta) : a valider a la main avant "
+                          "toute sortie, consigne du 2026-09-12")
+    FILE.write_text(_json.dumps(file, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("      mise en attente de validation : elle ne sortira pas seule")
+    return True
 
 
 def main():
