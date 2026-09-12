@@ -374,7 +374,7 @@
     "id": "67-lasagnes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/67-lasagnes.mp4",
     "caption": "Mon mari m'avait dit que des lasagnes maison, ça prenait toute une journée 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -395,7 +395,8 @@
     "scheduledFor": "2026-09-13T19:00:00",
     "scheduledForUtc": "2026-09-13T17:00:00Z",
     "note": "postId mort : le post Zernio n'existe plus, a redeposer.",
-    "maj": "2026-09-12T13:04:09Z"
+    "maj": "2026-09-12T13:04:09Z",
+    "postId": "6aa54de3afaf7e4e20dddfbb"
   },
   {
     "id": "68-nouillessautees",
