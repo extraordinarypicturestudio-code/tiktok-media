@@ -39,6 +39,9 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import detecter_texte_incruste as DET  # noqa: E402
+
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 LK = RACINE / "channels" / "love_kitchen"
 FILE = RACINE / "queue-lovekitchen.json"
@@ -87,10 +90,19 @@ def monter(conf, sortie, voix_secours=False):
     # quand meme le Gemini, qui le bat au classement. Chercher "edge-tts"
     # n'importe ou aurait jete de bons rendus sans le dire.
     retenue = [l for l in j.splitlines() if "voix retenue" in l]
-    if retenue and "edge-tts" in retenue[-1] and not voix_secours:
-        print("      REJET : voix retenue edge-tts, ce n'est pas celle de la chaine")
-        sortie.unlink(missing_ok=True)
-        return False, j
+    if not voix_secours:
+        if not retenue:
+            # Un controle qui n'a PAS PU tourner n'autorise pas la sortie : si
+            # le montage change le libelle de cette ligne, on s'arrete plutot
+            # que de laisser passer une voix inconnue.
+            print("      REJET : impossible de savoir quelle voix a ete retenue")
+            sortie.unlink(missing_ok=True)
+            return False, j
+        if "Gemini" not in retenue[-1]:
+            print("      REJET : voix retenue %s - la chaine est sur Gemini Sulafat"
+                  % retenue[-1].split(":")[-1].strip()[:40])
+            sortie.unlink(missing_ok=True)
+            return False, j
     return True, j
 
 
@@ -103,6 +115,22 @@ def finaliser(ident, video, legende, conf):
         print("      souffle de fond : traite")
     else:
         print("      souffle de fond : echec, on garde le rendu brut")
+
+    # Texte incruste par la source. Absent de la premiere version de ce pilote
+    # alors qu'il etait dans la chaine manuelle : c'est le controle ne des six
+    # mentions d'ingredients en anglais parties en ligne le 2026-09-10, que
+    # l'utilisateur avait vues et qu'aucun controle ne voyait. Il tourne AVANT
+    # l'outro, comme tous les controles d'image - notre outro porte du texte.
+    try:
+        passages, _ = DET.analyser(video, DET.SEUIL, False)
+    except Exception as ex:
+        print("      REFUS : detection de texte impossible (%s)" % str(ex)[:50])
+        return False
+    if passages:
+        print("      REFUS : %d passage(s) de texte incruste par la source"
+              % len(passages))
+        return False
+    print("      texte incruste : aucun")
 
     c = python([str(RACINE / "pipeline" / "controle_publication.py"),
                 "--profil", "lovekitchen", str(video)])

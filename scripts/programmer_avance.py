@@ -325,7 +325,27 @@ def deposer(v, cid, quand_paris):
         },
     }
     r = pn.zernio_call("POST", "/posts", payload)
-    return (r.get("post") or r).get("_id"), cover != pn.VIGNETTE_DEFAUT_MS
+    pid = (r.get("post") or r).get("_id")
+
+    # UNE PROGRAMMATION N'EST ACQUISE QU'APRES RELECTURE DU POST. Zernio peut
+    # accepter la requete PUIS marquer le post `failed`, avec
+    # `publishAttempts: 0` et AUCUN message d'erreur : la video ne sort jamais
+    # et rien ne le signale. Constate deux fois le 2026-08-26 - trois videos
+    # mindshift brulees le matin, la premiere video d'argile le soir, reperee
+    # seulement parce que l'utilisateur a demande "tout est ok ?".
+    #
+    # Ce controle existait dans les programmateurs appeles a la main, mais PAS
+    # dans `programmer_avance`, qui est pourtant le seul qui tourne sans
+    # personne devant. Ajoute le 2026-09-12.
+    if pid:
+        try:
+            relu = pn.zernio_call("GET", "/posts/" + pid) or {}
+            etat = (relu.get("post") or relu).get("status")
+        except Exception as e:
+            raise RuntimeError("depot non relisible (%s)" % str(e)[:60])
+        if etat not in ("scheduled", "pending", "queued"):
+            raise RuntimeError("Zernio a accepte puis marque le post '%s'" % etat)
+    return pid, cover != pn.VIGNETTE_DEFAUT_MS
 
 
 def main():
