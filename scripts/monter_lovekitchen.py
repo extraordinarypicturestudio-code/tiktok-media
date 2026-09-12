@@ -69,7 +69,7 @@ def python(args):
                           text=True, encoding="utf-8", errors="replace")
 
 
-def monter(conf, sortie):
+def monter(conf, sortie, voix_secours=False):
     """Rend la video. Retourne (exploitable, journal complet)."""
     r = python([str(LK / "montage_lovekitchen.py"),
                 "--intro-ref", "auto",
@@ -87,7 +87,7 @@ def monter(conf, sortie):
     # quand meme le Gemini, qui le bat au classement. Chercher "edge-tts"
     # n'importe ou aurait jete de bons rendus sans le dire.
     retenue = [l for l in j.splitlines() if "voix retenue" in l]
-    if retenue and "edge-tts" in retenue[-1]:
+    if retenue and "edge-tts" in retenue[-1] and not voix_secours:
         print("      REJET : voix retenue edge-tts, ce n'est pas celle de la chaine")
         sortie.unlink(missing_ok=True)
         return False, j
@@ -150,6 +150,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max", type=int, default=3,
                     help="videos par execution (quota Gemini : ~10 tirages/jour)")
+    ap.add_argument("--voix-secours", action="store_true",
+                    help="accepter une voix de secours (edge-tts) quand le quota "
+                         "Gemini est epuise. JAMAIS par defaut : la chaine a une "
+                         "identite sonore, et une autre voix s'entend. A n'utiliser "
+                         "que pour montrer un rendu, pas pour publier.")
     a = ap.parse_args()
 
     conf = json.loads((LK / "sources.json").read_text(encoding="utf-8"))["videos"]
@@ -175,7 +180,7 @@ def main():
             print("      passe : aucune legende en file")
             continue
         sortie = LK / "exemples" / ("v_%s.mp4" % ident.replace("-", "_"))
-        ok, journal = monter(conf[ident], sortie)
+        ok, journal = monter(conf[ident], sortie, a.voix_secours)
         bas = journal.lower()
         # Trois arrets francs, appris en testant ce pilote le 2026-09-12 : il a
         # enchaine les SEPT videos en croyant a sept echecs de rendu, alors que
@@ -190,7 +195,7 @@ def main():
             print("      %s absente de l'environnement : rien a tenter."
                   % manque.group(1))
             return 1
-        if "indisponible" in bas and "gemini" in bas:
+        if "indisponible" in bas and "gemini" in bas and not a.voix_secours:
             print("      quota Gemini epuise : on s'arrete la, sans sonder.")
             break
         if "essai" not in bas:
