@@ -89,15 +89,18 @@ ECART_MIN = 40
 # redistribues : moins de creneaux, c'est moins de tentatives, donc moins de
 # pression sur le quota de publication partage.
 HORAIRE = [
-    ("01:10", "recipecrave"),
     ("02:00", "argile"),
     ("08:00", "mindshift"),
+    # recipe_crave passe de QUATRE sorties a UNE le 2026-09-12 au soir. Elle
+    # n'avait plus que 2 videos en reserve pour 126 publiees : a quatre par
+    # jour elle tenait douze heures, puis la chaine se taisait pendant toute
+    # l'absence de l'utilisateur. Sept videos et un creneau tiennent six jours.
+    # Remonter la cadence quand le stock revient, pas avant.
     ("12:00", "recipecrave"),
     ("12:50", "toprank"),
     ("13:40", "mindshift"),
     ("15:00", "mindshift"),
     ("17:50", "argile"),
-    ("19:50", "recipecrave"),
     ("20:40", "toprank"),
     # love_kitchen : UNE seule sortie, a 21h30, depuis le 2026-09-12 au soir.
     # Elle est passee de trois a deux creneaux le matin meme, puis a un seul
@@ -106,7 +109,6 @@ HORAIRE = [
     # tenables que trois jours.
     # Ecarts verifies : 20h40 toprank -> 50 min, puis 75 min jusqu'a 22h45.
     ("21:30", "lovekitchen"),
-    ("22:45", "recipecrave"),
 ]
 
 

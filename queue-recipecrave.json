@@ -2777,5 +2777,128 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-13T01:10:00",
     "scheduledForUtc": "2026-09-12T23:10:00Z"
+  },
+  {
+    "id": "rc_courgettes_farcies_80",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_courgettes_farcies_80.mp4",
+    "caption": "Evider les courgettes rondes et les garnir de boeuf hache avant le passage au four 🥒\n\n#courgettesfarcies #courgette #boeufhache #gratin #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "441d52ae1021e8f18710ac8a8adc774d44fb2bb668c45426f9ac4c07beebcb0b",
+      "date": "2026-09-12T17:34:33Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 46.4 Mo",
+        "audio": "volume moyen -22.8 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : wallpaper-kevinmacleod-cc-by.mp3 0.71 (2e 0.18) ; contenu sonore : Musique rythmee et bruits de cuisine de decoupe d'aliments.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de courgettes evidees et farcies de viande hachee, sauce tomate et fromage. | aliments : ['courgettes', 'boeuf hache', 'riz', 'oignon', 'herbes', 'sauce tomate', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 441d52ae1021 ; empreinte visuelle : plus proche 0.415"
+      }
+    },
+    "maj": "2026-09-12T17:38:58Z",
+    "error": "plat deja publie le 2026-09-10 (recouvrement 0.67) : Les courgettes évidées à l'emporte-pièce, farcies viande et riz, grati"
+  },
+  {
+    "id": "rc_salade_poulet_84",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_salade_poulet_84.mp4",
+    "caption": "Melanger la viande doree aux crudites et au fromage pour une salade complete 🥗\n\n#saladecomplete #poulet #cornichons #tomate #reperapide #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "7a61d6499cc297c92bf1c5e3f04889489ef3fde906c2aeffabbfdfea21361a2e",
+      "date": "2026-09-12T17:35:26Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.7s, 52.5 Mo",
+        "audio": "volume moyen -24.8 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 0.56 (2e 0.30) ; contenu sonore : Preparation culinaire avec decoupe, cuisson et musique de fond.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d'une salade complete composee de salade, tomates, cornichons, oignons, viande hachee cuite, fromage et sauce. | aliments : ['salade', 'tomate', 'cornichon', 'oignon rouge', 'viande hachee', 'fromage', 'yaourt ou creme', 'sauce'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 7a61d6499cc2 ; empreinte visuelle : plus proche 0.368"
+      }
+    },
+    "maj": "2026-09-12T17:38:58Z",
+    "error": "plat deja publie le 2026-09-09 (recouvrement 0.50) : Un chausson de viande hachée farci au fromage et à la tomate, pané et "
+  },
+  {
+    "id": "rc_brioche_nutella_79",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_brioche_nutella_79.mp4",
+    "caption": "Tresser la pate levee autour du Nutella avant de la dorer au four 🍞\n\n#brioche #nutella #chocolat #briochemaison #patisserie #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "d4c91c15484ce7630b30569484c40181730ca31c176973fa1ac7786e2e153f8a",
+      "date": "2026-09-12T17:36:48Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.0s, 45.9 Mo",
+        "audio": "volume moyen -18.5 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : carefree-kevinmacleod-cc-by.mp3 1.00 (2e 0.19) ; contenu sonore : Une douce musique de fond rythmée et légère.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation, tressage et cuisson au four de brioches fourrees au Nutella | aliments : ['lait', 'oeuf', 'farine', 'pate a brioche', 'nutella', 'noisettes'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 d4c91c15484c ; empreinte visuelle : plus proche 0.357"
+      }
+    },
+    "maj": "2026-09-12T17:38:58Z",
+    "error": "plat deja publie le en file (recouvrement 0.50) : Rouler la pate garnie de fraises puis napper le glacage encore tiede 🍓"
+  },
+  {
+    "id": "rc_entremets_chocolat_81",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_entremets_chocolat_81.mp4",
+    "caption": "Superposer biscuits et creme au chocolat, puis laisser prendre au frais 🍫\n\n#entremets #chocolat #biscuitscuillere #dessertsanscuisson #patisserie #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "393ee76ce228a65602d09a74020fbc8cf0c86eefee875246e2818619577f9835",
+      "date": "2026-09-12T17:36:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.2s, 42.0 Mo",
+        "audio": "volume moyen -17.2 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : cheery-monday-kevinmacleod-cc-by.mp3 1.00 (2e 0.39) ; contenu sonore : Cette musique entraîne la danse et donne le sourire partout.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation d un entremets avec biscuits, creme et glacage chocolat decore de pistaches. | aliments : ['biscuits cuillere', 'creme', 'chocolat', 'oeuf', 'lait', 'pistaches'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 393ee76ce228 ; empreinte visuelle : plus proche 0.408"
+      }
+    },
+    "maj": "2026-09-12T17:38:58Z",
+    "postId": "6aa58e36bfc6b195b58fb9f0",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-16T12:00:00",
+    "scheduledForUtc": "2026-09-16T10:00:00Z"
+  },
+  {
+    "id": "rc_roules_fraises_82",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_roules_fraises_82.mp4",
+    "caption": "Rouler la pate garnie de fraises puis napper le glacage encore tiede 🍓\n\n#roulesfraises #fraise #glacage #briochesucree #patisserie #recettefacile #foodtiktok #cuisinemaison #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "9a9005e32871ca27b3a87d43ebcc40190f1e1556712bbdcf98d4fd2f9b05cd6a",
+      "date": "2026-09-12T17:37:10Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 80.0s, 60.1 Mo",
+        "audio": "volume moyen -17.9 dB ; source non fournie : la bande son ne peut pas etre recoupee avec l'original ; bibliotheque : life-of-riley-kevinmacleod-cc-by.mp3 0.99 (2e 0.39) ; contenu sonore : Cette courte bande son est rythmée par de la musique.",
+        "visuel": "profil cuisine : OK",
+        "contenu": "contenu vu : Preparation et cuisson de roules a la fraise avec glacage et morceaux de fruits. | aliments : ['fraise', 'pate', 'lait', 'oeuf', 'beurre', 'sucre', 'glacage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 9a9005e32871 ; empreinte visuelle : plus proche 0.368"
+      }
+    },
+    "maj": "2026-09-12T17:38:58Z",
+    "error": "plat deja publie le 2026-09-07 (recouvrement 0.40) : Une pâte liquide, des fruits jetés dessus, et un crumble par-dessus. R"
   }
 ]

@@ -92,7 +92,21 @@ GENERIQUES = {
     "patisserie", "anniversaire", "dessert", "gouter", "diner", "repas",
     "petitdejeuner", "brunch", "aperitif", "entree", "platprincipal",
     "healthy", "comfortfood", "foodtok", "recetterapide", "platrapide",
+    # Ajoutes le 2026-09-12 : sur recipe_crave la signature est faite QUE de
+    # hashtags (la legende n'a pas de recit), donc un generique oublie entre
+    # dans TOUTES les signatures et gonfle chaque comparaison. `foodtiktok`
+    # etait present sur les cinq videos preparees ce jour-la et les faisait
+    # toutes se ressembler.
+    "foodtiktok", "reperapide", "repasrapide", "cuisinerapide", "miam",
+    "recetteminute", "foodporn", "yummy", "delicious", "trending",
 }
+
+# Mots qui ne designent pas un aliment mais qui COLLENT a un nom de plat dans
+# un hashtag compose : `#briochemaison` contenait `mais` - du mais - et le
+# faisait ressembler a toute recette de mais. On les retire du hashtag AVANT
+# de chercher les mots du lexique dedans.
+PARASITES = ("maison", "facile", "rapide", "express", "minute", "healthy",
+             "veggie", "express")
 
 # LEXIQUE DES PLATS. Le corps d'une legende contient surtout du recit ; y
 # prendre "tout mot de plus de trois lettres" faisait entrer `etait`,
@@ -150,11 +164,14 @@ def _decomposer(hashtag):
     2026-09-10, 53-pouletfrit sortait a 0,25 contre le poulet frit du 23/08
     qu'il rejoue mot pour mot.
     """
-    trouves = {m for m in LEXIQUE if len(m) > 3 and m in hashtag}
+    net = hashtag
+    for p in PARASITES:
+        net = net.replace(p, "")
+    trouves = {m for m in LEXIQUE if len(m) > 3 and m in net}
     # On retire les mots contenus dans un autre mot trouve (pomme dans pommes)
     trouves = {m for m in trouves
                if not any(m != a and m in a for a in trouves)}
-    return {_singulier(m) for m in trouves} or {hashtag}
+    return {_singulier(m) for m in trouves} or ({hashtag} if net else set())
 
 
 def signature_plat(legende):
