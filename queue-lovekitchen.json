@@ -640,26 +640,22 @@
     "id": "74-brochettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
     "caption": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "bd3a5ea06458761f2df27ef90bb7bf03a4451e5cc50e03d5951d7f98d398836c",
-      "date": "2026-09-11T14:33:49Z",
+      "sha256": "4de959b974d42f3ddf23d16d9e44143ba14302874fc29d6d0826ff0e05fc5303",
+      "date": "2026-09-12T08:04:12Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 72.0s, 56.4 Mo",
-        "audio": "volume moyen -18.2 dB ; ressemblance avec la source 0.21 ; contenu sonore : Une femme parle de brochettes, de barbecue et de pommes.",
+        "specs": "1080x1920, 30 fps, 72.0s, 56.6 Mo",
+        "audio": "volume moyen -18.2 dB ; ressemblance avec la source 0.25 ; contenu sonore : Une femme parle de brochettes pour le barbecue.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : une personne prepare des pommes de terre et des brochettes de poulet en cuisine | aliments : ['pommes de terre', 'oignon', 'poulet', 'marinade', 'pain'] | preparation : True",
+        "contenu": "contenu vu : Une personne prépare des pommes de terre et des brochettes de poulet en cuisine. | aliments : ['pommes de terre', 'poulet', 'oignon', 'crème', 'épices', 'tortilla'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 bd3a5ea06458 ; empreinte visuelle : plus proche 0.357"
+        "doublon": "sha256 4de959b974d4 ; empreinte visuelle : plus proche 0.357"
       }
-    },
-    "postId": "6aa412f639b8b76299485387",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-15T23:30:00",
-    "scheduledForUtc": "2026-09-15T21:30:00Z"
+    }
   }
 ]
