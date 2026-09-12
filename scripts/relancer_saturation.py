@@ -89,7 +89,31 @@ REGISTRE = ICI / "relances_saturation.json"
 # retentent a la meme seconde.
 PAR_CLE_MAX = 1
 
-RELANCES_MAX = 12       # ~8h d'essais avant de basculer en brouillon
+# MESURE DU 2026-09-12, et elle renverse la strategie de relance.
+#
+# Test A/B : le meme jour, a la meme minute, sur la meme plateforme Zernio,
+# une video love_kitchen et une video recipe_crave ont ete envoyees.
+#   recipe_crave  -> publiee     a 10:07:49
+#   love_kitchen  -> REFUSEE     a 10:07:18
+# Ce n'est donc ni l'heure, ni une saturation generale de TikTok, ni le quota
+# de l'application Zernio : les deux auraient echoue. C'est le COMPTE.
+#
+# Le post en echec le dit :
+#   errorCategory  quota_exhausted
+#   errorSource    platform          <- TikTok, pas Zernio
+#
+# Or love_kitchen97 n'avait RIEN publie dans les 24 h. Ce qu'il avait, ce sont
+# des TENTATIVES : 19h, 21h02, 21h04, 23h30, plusieurs relances nocturnes,
+# 10h03. Le plafond TikTok se compte par createur sur 24 h glissantes, et tout
+# indique que les tentatives ratees y comptent aussi. Nos relances mangeaient
+# donc le quota qu'elles cherchaient a utiliser - une spirale que recipe_crave
+# ne connait pas, puisqu'il echoue presque jamais (0,01 relance/publication
+# contre 0,47).
+#
+# D'ou : on insiste BEAUCOUP moins, et beaucoup plus tard.
+#   avant : 12 relances espacees de 40 min (~8 h d'acharnement)
+#   apres :  3 relances espacees de 4 h
+RELANCES_MAX = 3        # au-dela, on attend le lendemain plutot que d'insister
 AGE_MAX_H = 36.0        # au-dela : abandon
 
 # 40 minutes, et non 20, depuis le 2026-09-06. Les sorties sont desormais
@@ -100,7 +124,7 @@ AGE_MAX_H = 36.0        # au-dela : abandon
 # rattrape : elle reproduisait exactement la rafale qu'on cherche a supprimer.
 # A +40 min elle tombe au MILIEU de l'intervalle, a 40 minutes de l'essai
 # precedent comme du creneau suivant.
-DELAI_MIN = 40          # minutes avant la nouvelle tentative
+DELAI_MIN = 240         # 4 h : le plafond par createur se libere lentement
 
 MOTIF = "at capacity"   # signature du refus de saturation
 

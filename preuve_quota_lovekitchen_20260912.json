@@ -1,0 +1,75 @@
+{
+ "recycling": {
+  "enabled": false,
+  "gapFreq": "month",
+  "recycleCount": 0,
+  "contentVariations": [],
+  "contentVariationIndex": 0
+ },
+ "_id": "6aa507bd5a938394eaf7e0ce",
+ "userId": {
+  "name": "Roman",
+  "id": "6a6efd84178c9bbef8a6e60d"
+ },
+ "title": "",
+ "content": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
+ "mediaItems": [
+  {
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
+   "_id": "6aa507bd5a938394eaf7e0cf"
+  }
+ ],
+ "platforms": [
+  {
+   "platform": "tiktok",
+   "accountId": {
+    "_id": "6a759c66d0fe733d1af3c4bf",
+    "profileId": "6a6efdae4f043c96a27bde35",
+    "platform": "tiktok",
+    "displayName": "Love_Kitchen",
+    "isActive": true,
+    "profilePicture": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/250daa10e8e29817ab2bdedbdb64c8ab~tplv-tiktokx-cropcenter:168:168.jpeg?dr=10397&refresh_token=87766fd8&x-expires=1789358400&x-signature=cpNBKiojnqXXS6rJiVMvxQnXWZs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=no1a",
+    "username": "love_kitchen97"
+   },
+   "profileId": "6a6efdae4f043c96a27bde35",
+   "customMedia": [],
+   "scheduledFor": "2026-09-12T08:06:17.000Z",
+   "platformSpecificData": {
+    "tiktokSettings": {
+     "privacy_level": "PUBLIC_TO_EVERYONE",
+     "allow_comment": true,
+     "allow_duet": true,
+     "allow_stitch": true,
+     "content_preview_confirmed": true,
+     "express_consent_given": true
+    }
+   },
+   "status": "failed",
+   "publishAttempts": 1,
+   "contentHash": "24e70481b16572ea7afd9cd1d80812ac",
+   "_id": "6aa507bd5a938394eaf7e0d0",
+   "errorCategory": "quota_exhausted",
+   "errorMessage": "TikTok direct posting is at capacity right now. Use tiktokSettings.draft: true to deliver via Creator Inbox, or try again in a few hours as capacity frees up.",
+   "errorSource": "platform"
+  }
+ ],
+ "scheduledFor": "2026-09-12T08:06:17.000Z",
+ "timezone": "Europe/Paris",
+ "status": "failed",
+ "tags": [],
+ "hashtags": [],
+ "mentions": [],
+ "visibility": "public",
+ "crosspostingEnabled": true,
+ "metadata": {
+  "usageCounted": true,
+  "usageRefunded": true
+ },
+ "publishAttempts": 0,
+ "createdAt": "2026-09-12T08:05:17.549Z",
+ "updatedAt": "2026-09-12T08:07:08.770Z",
+ "__v": 0,
+ "publishingClaimedAt": "2026-09-12T08:06:21.568Z",
+ "lastEnqueuedAt": "2026-09-12T08:07:07.411Z"
+}
