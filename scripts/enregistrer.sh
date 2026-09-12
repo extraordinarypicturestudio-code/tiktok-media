@@ -71,6 +71,13 @@ fi
 git config user.name  "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+# --- 2 bis. Dater les changements de statut ----------------------------------
+# `fusionner_file.py` arbitre un conflit par la FRAICHEUR quand les deux cotes
+# portent un `maj`. Trente-six endroits ecrivent un statut dans le depot : les
+# modifier un par un serait refaire l'erreur des quatorze blocs git recopies.
+# On date donc ici, au seul endroit ou tout passe, en comparant a HEAD.
+python3 scripts/horodater_file.py "${CHEMINS[@]}" || true
+
 # --- 3. Indexer --------------------------------------------------------------
 if ! git add -A -- "${CHEMINS[@]}"; then
   echo "::error::enregistrer : git add a echoue sur ${CHEMINS[*]}"

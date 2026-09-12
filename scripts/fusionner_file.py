@@ -57,6 +57,24 @@ def rang(entree):
     return RANG.get(entree.get("status"), 20)
 
 
+def horodatage(entree):
+    """Quand cette entree a-t-elle ete decidee pour la derniere fois ?
+
+    Ajoute le 2026-09-12. Le classement par etat seul a annule DEUX FOIS dans
+    la meme journee une correction deliberee : une video revoicee et remise en
+    file (`scheduled`) a perdu contre sa vieille mise en attente (`on_hold`),
+    et un statut `published` errone a survecu a sa correction. Le rang mesure
+    l'avancement, jamais la fraicheur - or entre deux etats contradictoires,
+    c'est la DECISION LA PLUS RECENTE qui a raison, pas la plus avancee.
+
+    Seul un champ `maj` explicite compte : il n'est ecrit que par qui change
+    volontairement un statut. Une entree qui n'en porte pas retombe sur
+    l'ancienne regle, donc le temoin du 2026-09-09 (56-onepotpates, passee
+    `published` a la main et remise `pending` par un workflow) reste protege.
+    """
+    return str(entree.get("maj") or "")
+
+
 def fusionner(notre, leur):
     """Liste fusionnee, dans l'ordre de `notre` puis les ajouts de `leur`."""
     par_id = {}
@@ -78,8 +96,20 @@ def fusionner(notre, leur):
         if cle not in par_id:
             par_id[cle] = v
             ordre.append(cle)
-        elif rang(v) > rang(par_id[cle]):
-            par_id[cle] = v
+        else:
+            nous, eux = par_id[cle], v
+            hn, he = horodatage(nous), horodatage(eux)
+            if hn and he:
+                # Les deux cotes ont date leur decision : la plus recente gagne,
+                # la notre a egalite.
+                if he > hn:
+                    par_id[cle] = eux
+            elif he:
+                par_id[cle] = eux      # eux ont date, pas nous
+            elif hn:
+                pass                   # nous avons date, pas eux
+            elif rang(eux) > rang(nous):
+                par_id[cle] = eux      # ni l'un ni l'autre : l'etat le plus avance
 
     return [par_id[c] for c in ordre]
 
