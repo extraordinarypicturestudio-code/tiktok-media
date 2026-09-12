@@ -60,12 +60,15 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      # Versions epinglees dans requirements.txt - qui sert AUSSI a
+      # `cache: pip` ci-dessus : sans un requirements.txt ou un
+      # pyproject.toml, setup-python echoue et fait tomber le job.
       # numpy et Pillow servent aux controles d'image et d'empreinte ; librosa
       # mesure l'INTONATION, le seul controle qui ait attrape la voix qui
       # s'aplatit (le niveau, lui, est egalise par speechnorm et ne montre
       # rien). soundfile est sa dependance de lecture.
       - name: Installer les dependances Python
-        run: pip install --quiet numpy Pillow librosa soundfile
+        run: pip install --quiet -r requirements.txt
 
       - name: Monter les videos en attente
         env:

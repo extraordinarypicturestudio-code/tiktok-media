@@ -1,0 +1,22 @@
+# Dependances Python des workflows de MONTAGE (monter-lovekitchen.yml).
+#
+# Les workflows de PUBLICATION n'en ont aucune : ils n'utilisent que la
+# bibliotheque standard et ffmpeg. Ce fichier sert au montage, et il sert
+# aussi a `actions/setup-python` : sans lui, `cache: pip` echoue sur
+# "No file matched to [**/requirements.txt or **/pyproject.toml]" et fait
+# tomber le job avant meme d'installer quoi que ce soit (2026-09-12).
+#
+# Les versions sont EPINGLEES : un montage qui change de resultat parce
+# qu'une dependance a bouge dans la nuit serait invisible - la video sort,
+# elle est simplement moins bonne.
+
+# Controles d'image et d'empreinte perceptuelle.
+numpy==2.1.3
+Pillow==11.0.0
+
+# Mesure de l'INTONATION (ecart-type de la frequence fondamentale, en
+# demi-tons, premier tiers contre dernier tiers). C'est le seul controle qui
+# ait attrape la voix qui s'aplatit : le niveau, lui, est egalise par
+# speechnorm et n'a jamais rien montre.
+librosa==0.10.2.post1
+soundfile==0.12.1
