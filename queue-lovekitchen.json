@@ -640,7 +640,7 @@
     "id": "74-brochettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/74-brochettes.mp4",
     "caption": "Mon mari m'avait dit qu'il ne mangeait de brochettes qu'au barbecue 🍢🔥\n\n#brochettes #brochettesdepoulet #marinade #pommesdeterreaufour #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -656,6 +656,8 @@
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 4de959b974d4 ; empreinte visuelle : plus proche 0.357"
       }
-    }
+    },
+    "publishedAt": "2026-09-12T08:19:27Z",
+    "note": "publiee le 2026-09-12 a 10h18 avec la NOUVELLE connexion Zernio du compte. L ancienne renvoyait quota_exhausted dix minutes plus tot sur la meme video."
   }
 ]
