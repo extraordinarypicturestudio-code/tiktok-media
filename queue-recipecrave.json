@@ -2732,7 +2732,7 @@
     "id": "rc_orzotto_boeuf_78",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_orzotto_boeuf_78.mp4",
     "caption": "Incorporer les pâtes perlées directement dans la poêle pour un plat crémeux 🍳\r\n\r\n#orzotto #pates #tomate #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "pending",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2749,7 +2749,8 @@
         "doublon": "sha256 fb5cbca8ef2c ; empreinte visuelle : plus proche 0.395"
       }
     },
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "plat deja publie le 2026-09-11 (recouvrement 0.50) : Faites sauter des crevettes epicees avec des legumes frais et des pate"
   },
   {
     "id": "rc_pates_poulet_champignons_74",
