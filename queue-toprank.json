@@ -503,5 +503,109 @@
     "vignette_auto": true,
     "postId": "6aa3150057b5257dd4c76d96",
     "publishedAt": "2026-09-10T21:17:40.820Z"
+  },
+  {
+    "id": "tr_20260913_1250",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260913_1250.mp4",
+    "caption": "Nobody saw that coming 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "808d82c36ccb9477e134d88d5c52fef242622b4a80a5ab83b021bdcb628071dd",
+      "date": "2026-09-12T17:54:17Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.5s, 37.1 Mo",
+        "audio": "volume moyen -17.9 dB ; contenu sonore : Un extrait sonore avec de la musique et des bruits.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes et d'accidents divers impliquant des sportifs, des voitures et des objets. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 808d82c36ccb ; empreinte visuelle : plus proche 0.302"
+      }
+    },
+    "postId": "6aa591eedfc51fb0148ad04c",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-12T20:40:00",
+    "scheduledForUtc": "2026-09-12T18:40:00Z"
+  },
+  {
+    "id": "tr_20260913_2040",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260913_2040.mp4",
+    "caption": "He was so confident right before this 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f9852c651d1a2b9e920e9323d447a200bece1c2053a4cf9c42e4870a3747e46d",
+      "date": "2026-09-12T17:54:26Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 62.7s, 26.2 Mo",
+        "audio": "volume moyen -20.1 dB ; contenu sonore : Cette musique joyeuse pourrait accompagner une animation de dessin animé.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes, ratages et moments comiques divers filmés par des caméras. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f9852c651d1a ; empreinte visuelle : plus proche 0.410"
+      }
+    },
+    "postId": "6aa591fddfc51fb0148ad640",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T12:50:00",
+    "scheduledForUtc": "2026-09-13T10:50:00Z"
+  },
+  {
+    "id": "tr_20260914_1250",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260914_1250.mp4",
+    "caption": "It lasted about two seconds 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "cd4d9a62fb21e0a8fccdadfd83ba60c4759826ca910b82106b3f2cffddac7d3d",
+      "date": "2026-09-12T17:54:36Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 60.7s, 30.9 Mo",
+        "audio": "volume moyen -20.2 dB ; contenu sonore : Cette vidéo montre une cuisine avec de la musique entraînante.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes et ratages divers de personnes dans des situations comiques. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 cd4d9a62fb21 ; empreinte visuelle : plus proche 0.405"
+      }
+    },
+    "postId": "6aa5920be0d9530459c7b862",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-13T20:40:00",
+    "scheduledForUtc": "2026-09-13T18:40:00Z"
+  },
+  {
+    "id": "tr_20260914_2040",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260914_2040.mp4",
+    "caption": "That was not the plan 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "36c37e2d2c987927abe9d3550a49b7165f2c0d6f37f106d1ddce0eb2c4a2808e",
+      "date": "2026-09-12T17:54:46Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.0s, 27.0 Mo",
+        "audio": "volume moyen -22.8 dB ; contenu sonore : Musique entraîneuse et animée avec un rythme joyeux et pétillant.",
+        "visuel": "profil sport : OK",
+        "contenu": "contenu vu : Compilation de chutes, ratages et moments comiques imprévus. | aliments : [] | preparation : False",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 36c37e2d2c98 ; empreinte visuelle : plus proche 0.421"
+      }
+    },
+    "postId": "6aa59218645b9ed035a5ea80",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-14T12:50:00",
+    "scheduledForUtc": "2026-09-14T10:50:00Z"
   }
 ]
