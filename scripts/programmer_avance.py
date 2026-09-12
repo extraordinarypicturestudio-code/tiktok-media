@@ -97,14 +97,15 @@ HORAIRE = [
     ("13:40", "mindshift"),
     ("15:00", "mindshift"),
     ("17:50", "argile"),
-    ("19:00", "lovekitchen"),
     ("19:50", "recipecrave"),
     ("20:40", "toprank"),
-    # love_kitchen passe de TROIS a DEUX sorties le 2026-09-12, a la demande de
-    # l'utilisateur : 19h00 et 22h00. recipe_crave quitte 22h20 pour 22h45,
-    # sinon les deux comptes tomberaient a 20 minutes d'ecart - sous le seuil
-    # qui protege des rafales (mesure du 2026-09-06).
-    ("22:00", "lovekitchen"),
+    # love_kitchen : UNE seule sortie, a 21h30, depuis le 2026-09-12 au soir.
+    # Elle est passee de trois a deux creneaux le matin meme, puis a un seul
+    # le soir, sur consigne de l'utilisateur. Le stock le permettait d'autant
+    # moins que le vivier de sources est sec : deux sorties par jour n'etaient
+    # tenables que trois jours.
+    # Ecarts verifies : 20h40 toprank -> 50 min, puis 75 min jusqu'a 22h45.
+    ("21:30", "lovekitchen"),
     ("22:45", "recipecrave"),
 ]
 
@@ -124,7 +125,7 @@ def verifier_horaire():
 # nombre et de l'heure des sorties, chaine par chaine.
 # (nom, fichier de file, pseudo TikTok, numero de cle Zernio, actif)
 CHAINES = [
-    ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 2),
+    ("lovekitchen", "queue-lovekitchen.json", "love_kitchen97", 2, 1),
     # Bande son REMPLACEE le 2026-09-09 : les 8 videos portaient le son
     # d'origine de la source (ressemblance 1,00), profil des quatre tombees a
     # 3-25 vues. Elles portent maintenant une piste Kevin MacLeod seule -
@@ -241,10 +242,16 @@ def eligible(v, ecrire, chaine=None, pseudo=None, numero=None):
     # deux jours de suite les 30 et 31/08 sans que personne ne le voie.
     if chaine and pseudo and numero:
         try:
-            publiees = cr.legendes_publiees(pseudo, cle_zernio(numero))
+            # `legendes_publiees` rend SA LISTE DE CACHE, pas une copie : un
+            # `+=` la modifierait en place, et la legende de chaque video
+            # serait injectee dans le cache pour la suivante. Constate le
+            # 2026-09-12 : cinq videos ecartees d'affilee pour "plat deja
+            # publie" a 1,00 - chacune contre elle-meme, entree au tour
+            # d'avant. On concatene donc dans une liste neuve.
+            publiees = list(cr.legendes_publiees(pseudo, cle_zernio(numero)))
             # ... ET les videos deja en file : un plat "pas encore publie"
             # peut tres bien etre deja programme pour ce soir.
-            publiees += cr.legendes_en_file(
+            publiees = publiees + cr.legendes_en_file(
                 "queue-%s.json" % chaine, v.get("id"))
             motif = cr.verdict(v, publiees, chaine)
         except Exception as e:

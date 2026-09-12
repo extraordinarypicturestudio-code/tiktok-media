@@ -167,9 +167,9 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa51b386d59a37a0b2479a5",
-    "scheduledFor": "2026-09-12T22:00:00",
-    "scheduledForUtc": "2026-09-12T20:00:00Z"
+    "postId": "6aa559dc38570dc290b5d9e0",
+    "scheduledFor": "2026-09-12T21:30:00",
+    "scheduledForUtc": "2026-09-12T19:30:00Z"
   },
   {
     "id": "51-roulesfraise",
@@ -315,9 +315,9 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa50dcbc5fd8dda8c11e983",
-    "scheduledFor": "2026-09-12T19:00:00",
-    "scheduledForUtc": "2026-09-12T17:00:00Z"
+    "postId": "6aa55a4b2710e37e0c23e9cb",
+    "scheduledFor": "2026-09-13T21:30:00",
+    "scheduledForUtc": "2026-09-13T19:30:00Z"
   },
   {
     "id": "65-saumonlaque",
@@ -341,9 +341,9 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa51b4ab341b54912f6899f",
-    "scheduledFor": "2026-09-13T22:00:00",
-    "scheduledForUtc": "2026-09-13T20:00:00Z"
+    "postId": "6aa55a597f67d0f440e48525",
+    "scheduledFor": "2026-09-14T21:30:00",
+    "scheduledForUtc": "2026-09-14T19:30:00Z"
   },
   {
     "id": "66-poivronsfarcis",
@@ -392,11 +392,11 @@
       }
     },
     "vignette_auto": true,
-    "scheduledFor": "2026-09-13T19:00:00",
-    "scheduledForUtc": "2026-09-13T17:00:00Z",
     "note": "postId mort : le post Zernio n'existe plus, a redeposer.",
     "maj": "2026-09-12T13:04:09Z",
-    "postId": "6aa54de3afaf7e4e20dddfbb"
+    "postId": "6aa55a667f67d0f440e488d8",
+    "scheduledFor": "2026-09-15T21:30:00",
+    "scheduledForUtc": "2026-09-15T19:30:00Z"
   },
   {
     "id": "68-nouillessautees",
@@ -420,9 +420,9 @@
       }
     },
     "vignette_auto": true,
-    "postId": "6aa51b5a6d59a37a0b248611",
-    "scheduledFor": "2026-09-14T22:00:00",
-    "scheduledForUtc": "2026-09-14T20:00:00Z"
+    "postId": "6aa55a742710e37e0c23f9b3",
+    "scheduledFor": "2026-09-16T21:30:00",
+    "scheduledForUtc": "2026-09-16T19:30:00Z"
   },
   {
     "id": "69-gnocchis",
@@ -647,29 +647,27 @@
   {
     "id": "72-roulespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
-    "caption": "Mon mari m'avait dit qu'un blanc de poulet, ça ne pouvait pas être fondant 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
+    "caption": "Il rentrait d'un rendez-vous raté et ne voulait parler à personne 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
     "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "7505a141f2819b51579c904b129fba0e9d1cc45584064d45f0c5af4ba9cd302a",
-      "date": "2026-09-11T14:31:16Z",
+      "sha256": "d8cfaa94eb4348224c6650c97823bd2cfe394a5c80cfc3d2752d0159ebea45c6",
+      "date": "2026-09-12T13:58:51Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 74.1s, 55.0 Mo",
-        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme explique la recette de cuisine de son poulet.",
+        "specs": "1080x1920, 30 fps, 64.6s, 50.3 Mo",
+        "audio": "volume moyen -18.2 dB ; contenu sonore : Une femme parle de sa recette de galettes de poulet.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation culinaire montrant la realisation de roules de poulet farcis au fromage, epinards et tomates | aliments : ['poulet', 'fromage', 'tomates', 'epinards', 'oeuf'] | preparation : True",
+        "contenu": "contenu vu : Préparation de roulés de poulet farcis au fromage, tomates et épinards, cuits au four et panés. | aliments : ['poulet haché', 'fromage', 'tomate', 'épinards', 'chapelure'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 7505a141f281 ; empreinte visuelle : plus proche 0.411"
+        "doublon": "sha256 d8cfaa94eb43 ; empreinte visuelle : plus proche 0.404"
       }
     },
+    "postId": "6aa55aa2fb6f64da3ab0c573",
     "vignette_auto": true,
-    "postId": "6aa51f3bf8573991895f732c",
-    "scheduledFor": "2026-09-14T19:00:00",
-    "scheduledForUtc": "2026-09-14T17:00:00.000Z",
-    "note": "Revoicee le 2026-09-12 : -24% d'intonation, 33% de respiration.",
-    "maj": "2026-09-12T13:04:09Z"
+    "scheduledFor": "2026-09-17T21:30:00",
+    "scheduledForUtc": "2026-09-17T19:30:00Z"
   }
 ]
