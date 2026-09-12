@@ -1974,5 +1974,21 @@
     "file": "clips/rc_pates_crevettes_75.mp4",
     "status": "published",
     "publishedAt": "2026-09-11T23:11:27.341Z"
+  },
+  {
+    "hash": "4c355e151d50c96e2c4df54fd903507c",
+    "id": "74-brochettes",
+    "channel": "love_kitchen97",
+    "file": "clips-lovekitchen/74-brochettes.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-12T08:18:36.211Z"
+  },
+  {
+    "hash": "8a1728e0edba7754f46badd552a94ddb",
+    "id": "rc_boeuf_legumes_sauce_76",
+    "channel": "recipe_crave",
+    "file": "clips/rc_boeuf_legumes_sauce_76.mp4",
+    "status": "published",
+    "publishedAt": "2026-09-12T08:07:38.417Z"
   }
 ]

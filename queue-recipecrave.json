@@ -2681,7 +2681,7 @@
     "id": "rc_boeuf_legumes_sauce_76",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_boeuf_legumes_sauce_76.mp4",
     "caption": "Saisir la viande parfaitement avant de napper le tout de sauce onctueuse 🍳\r\n\r\n#boeuf #recette #cuisine #recette #cuisine #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2700,8 +2700,7 @@
     },
     "postId": "6aa12f719843c9b46acf543b",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-12T12:00:00",
-    "scheduledForUtc": "2026-09-12T10:00:00Z"
+    "publishedAt": "2026-09-12T08:07:38.417Z"
   },
   {
     "id": "rc_saumon_cremeux_tomates_77",
