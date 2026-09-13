@@ -535,7 +535,7 @@
     "id": "tr_20260913_2040",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260913_2040.mp4",
     "caption": "He was so confident right before this 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -553,7 +553,10 @@
       }
     },
     "vignette_auto": true,
-    "maj": "2026-09-13T11:43:15Z"
+    "maj": "2026-09-13T12:43:39Z",
+    "postId": "6aa68c5151d6afe10fed7646",
+    "scheduledForUtc": "2026-09-13T15:43:13.000Z",
+    "scheduledFor": "2026-09-13T17:43:13"
   },
   {
     "id": "tr_20260914_1250",
