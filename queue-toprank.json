@@ -562,7 +562,7 @@
     "id": "tr_20260914_1250",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260914_1250.mp4",
     "caption": "It lasted about two seconds 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -580,10 +580,9 @@
       }
     },
     "vignette_auto": true,
-    "maj": "2026-09-13T23:42:21Z",
+    "maj": "2026-09-14T03:16:01Z",
     "postId": "6aa7296432e84654fe66a25b",
-    "scheduledForUtc": "2026-09-14T02:53:24.000Z",
-    "scheduledFor": "2026-09-14T04:53:24"
+    "publishedAt": "2026-09-14T02:56:03.956Z"
   },
   {
     "id": "tr_20260914_2040",
