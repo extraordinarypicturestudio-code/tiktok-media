@@ -397,7 +397,7 @@
     "id": "65-saumonlaque",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/65-saumonlaque.mp4",
     "caption": "Quatre jours de déplacement, aucune faim en arrivant. Il a fini son assiette 🐟🍯\n\n#saumonlaque #saumon #miel #asperges #rizblanc #cuisinemaison #storytime #couplegoals #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -416,9 +416,8 @@
     },
     "vignette_auto": true,
     "postId": "6aa55a597f67d0f440e48525",
-    "scheduledForUtc": "2026-09-14T19:30:00.000Z",
-    "scheduledFor": "2026-09-14T21:30:00",
-    "maj": "2026-09-12T16:15:02Z"
+    "maj": "2026-09-14T19:41:21Z",
+    "publishedAt": "2026-09-14T19:32:07.224Z"
   },
   {
     "id": "66-poivronsfarcis",
