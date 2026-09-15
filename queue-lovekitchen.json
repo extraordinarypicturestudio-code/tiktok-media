@@ -448,7 +448,7 @@
     "id": "67-lasagnes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/67-lasagnes.mp4",
     "caption": "Rentré du foot trempé et de mauvaise humeur, un dimanche soir 🍝🧀\n\n#lasagnes #bolognaise #bechamel #mozzarella #basilic #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -467,9 +467,8 @@
     },
     "postId": "6aa579ffa5a8716ead264d02",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-15T21:30:00",
-    "scheduledForUtc": "2026-09-15T19:30:00Z",
-    "maj": "2026-09-12T16:15:02Z"
+    "maj": "2026-09-15T19:38:07Z",
+    "publishedAt": "2026-09-15T19:31:22.675Z"
   },
   {
     "id": "68-nouillessautees",
