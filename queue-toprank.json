@@ -508,7 +508,7 @@
     "id": "tr_20260913_1250",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-toprank/tr_20260913_1250.mp4",
     "caption": "Nobody saw that coming 💀\n\n#fail #fails #funny #fyp #foryou #caughtoncamera #comedy #wentwrong",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -526,10 +526,9 @@
       }
     },
     "vignette_auto": true,
-    "maj": "2026-09-12T19:34:27Z",
+    "maj": "2026-09-15T18:55:21Z",
     "postId": "6aa59d77f17884e6b8d92d8f",
-    "scheduledForUtc": "2026-09-15T18:40:00.000Z",
-    "scheduledFor": "2026-09-15T20:40:00"
+    "publishedAt": "2026-09-15T18:41:27.474Z"
   },
   {
     "id": "tr_20260913_2040",
