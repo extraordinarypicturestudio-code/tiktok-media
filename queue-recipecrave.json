@@ -2854,7 +2854,7 @@
     "id": "rc_entremets_chocolat_81",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips/rc_entremets_chocolat_81.mp4",
     "caption": "Superposer biscuits et creme au chocolat, puis laisser prendre au frais 🍫\n\n#entremets #chocolat #biscuitscuillere #dessertsanscuisson #patisserie #recettefacile #foodtiktok #cuisinemaison #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -2871,11 +2871,10 @@
         "doublon": "sha256 393ee76ce228 ; empreinte visuelle : plus proche 0.408"
       }
     },
-    "maj": "2026-09-12T17:38:58Z",
+    "maj": "2026-09-16T10:19:55Z",
     "postId": "6aa58e36bfc6b195b58fb9f0",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-16T12:00:00",
-    "scheduledForUtc": "2026-09-16T10:00:00Z"
+    "publishedAt": "2026-09-16T10:02:17.349Z"
   },
   {
     "id": "rc_roules_fraises_82",
