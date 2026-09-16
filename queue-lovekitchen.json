@@ -474,7 +474,7 @@
     "id": "68-nouillessautees",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/68-nouillessautees.mp4",
     "caption": "Deux réunions jusqu'à vingt heures. Il a mangé debout, directement dans la poêle 🥢🔥\n\n#nouillessautees #wok #brocoli #saucesoja #legumessautes #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -493,9 +493,8 @@
     },
     "vignette_auto": true,
     "postId": "6aa55a742710e37e0c23f9b3",
-    "scheduledForUtc": "2026-09-16T19:30:00.000Z",
-    "scheduledFor": "2026-09-16T21:30:00",
-    "maj": "2026-09-12T16:15:02Z"
+    "maj": "2026-09-16T19:48:16Z",
+    "publishedAt": "2026-09-16T19:31:24.383Z"
   },
   {
     "id": "69-gnocchis",
