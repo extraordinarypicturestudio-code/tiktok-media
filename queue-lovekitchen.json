@@ -597,7 +597,7 @@
     "id": "72-roulespoulet",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/72-roulespoulet.mp4",
     "caption": "Il rentrait d'un rendez-vous raté et ne voulait parler à personne 🧀🍗\n\n#roulesdepoulet #cordonbleu #fromagefondu #epinards #pane #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -615,9 +615,8 @@
       }
     },
     "postId": "6aa55aa2fb6f64da3ab0c573",
-    "scheduledFor": "2026-09-17T21:30:00",
-    "scheduledForUtc": "2026-09-17T19:30:00.000Z",
-    "maj": "2026-09-12T16:08:33Z"
+    "maj": "2026-09-17T19:49:06Z",
+    "publishedAt": "2026-09-17T19:44:22.946Z"
   },
   {
     "id": "73-bananecacao",
