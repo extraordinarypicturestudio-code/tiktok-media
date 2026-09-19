@@ -187,8 +187,11 @@ def finaliser(ident, video, legende, conf):
                 "--source", str(LK / conf["source"]), str(avec)])
     for l in ((b.stdout or "") + (b.stderr or "")).splitlines():
         l = l.strip()
-        if l.startswith("[NON") or l.startswith("REJET") or l.startswith("OK :"):
-            print("      " + l[:130])
+        # La ligne "->" porte le MOTIF du refus. Sans elle on ne lisait que
+        # "[NON] audio" - et analyse_audio manquant au depot est reste
+        # invisible (2026-09-19).
+        if l.startswith(("[NON", "->", "REJET", "OK :")):
+            print("      " + l[:160])
     if b.returncode != 0:
         return False
 
@@ -264,7 +267,13 @@ def main():
             print("      %s absente de l'environnement : rien a tenter."
                   % manque.group(1))
             return 1
-        if "indisponible" in bas and "gemini" in bas and not a.voix_secours:
+        # Le quota n'arrete le lot que si le RENDU a echoue. Un tirage peut
+        # tomber sur un 429 alors que le montage a deja retenu un bon tirage
+        # Gemini : le 2026-09-19, 85-patesboeuf etait rendue et conforme, et le
+        # pilote s'est arrete AVANT de la finaliser. On finalise d'abord, on
+        # s'arrete ensuite.
+        quota_epuise = "indisponible" in bas and "gemini" in bas
+        if quota_epuise and not ok and not a.voix_secours:
             print("      quota Gemini epuise : on s'arrete la, sans sonder.")
             break
         if "essai" not in bas:
@@ -274,6 +283,9 @@ def main():
             continue
         if finaliser(ident, sortie, legende, conf[ident]):
             faits += 1
+        if quota_epuise and not a.voix_secours:
+            print("      quota Gemini epuise apres ce rendu : on s'arrete la.")
+            break
     print("\n%d video(s) remise(s) en file." % faits)
     return 0
 

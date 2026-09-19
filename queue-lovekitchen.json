@@ -666,5 +666,145 @@
     "postId": "6aa50a2f33aec759967543c9",
     "vignette_auto": true,
     "publishedAt": "2026-09-12T08:18:36.211Z"
+  },
+  {
+    "id": "84-cookieglace",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
+    "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "37ad894f6f4e5c922da2793063cdbad517721c62767b1dca2766eebf610cfa42",
+      "date": "2026-09-19T11:19:27Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 71.0s, 44.6 Mo",
+        "audio": "volume moyen -18.7 dB ; ressemblance avec la source 0.28 ; contenu sonore : Récit narratif sur fond de cuisine et de secrets de préparation.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation de cookies aux pépites de chocolat servis avec de la glace vanille | aliments : ['beurre', 'sucre roux', 'œufs', 'vanille', 'farine', 'pépites de chocolat', 'glace à la vanille', 'cookies'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 37ad894f6f4e ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-19T11:29:38Z",
+    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "postId": "6aae722106df6d9452c3b13e",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-19T21:30:00",
+    "scheduledForUtc": "2026-09-19T19:30:00Z"
+  },
+  {
+    "id": "83-bakedziti",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
+    "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c66d9ec245f309d6195f7df344b59c42c97f0784f5e1624615f88109ac6ff8ff",
+      "date": "2026-09-19T11:16:12Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.4s, 48.7 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une personne raconte une anecdote en parlant de cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d un plat de pates gratinees au four avec viande hachee et sauce tomate. | aliments : ['pates', 'viande hachee', 'sauce tomate', 'fromage', 'creme', 'oignons', 'poivrons'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c66d9ec245f3 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-19T11:29:38Z",
+    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "postId": "6aae7231b3fbec6b4e7a82e9",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-20T21:30:00",
+    "scheduledForUtc": "2026-09-20T19:30:00Z"
+  },
+  {
+    "id": "81-soupebrocoli",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
+    "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "165d411e7d2e930017583a6d12753fd99ea8533dceeb7e08b21b9a6f8fa6f93b",
+      "date": "2026-09-19T11:11:51Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.4s, 46.7 Mo",
+        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle d'une recette de cuisine avec du brocoli.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation d'une soupe de brocoli au fromage avec des croûtons de pain, accompagnée d'une anecdote de couple. | aliments : ['brocoli', 'fromage', 'oignon', 'bouillon', 'lait', 'pain', 'croûtons'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 165d411e7d2e ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-19T11:29:38Z",
+    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "postId": "6aae723fddfb2c2d368bb404",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-21T21:30:00",
+    "scheduledForUtc": "2026-09-21T19:30:00Z"
+  },
+  {
+    "id": "85-patesboeuf",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
+    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "303d1beb5cdbd9d659fba34102dfe2351449293e9d56f10b10a68d731ef3e4f3",
+      "date": "2026-09-19T11:29:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 71.5s, 48.4 Mo",
+        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de la cuisson de la viande.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation de rigatonis au bœuf cajun avec une sauce crémeuse et du parmesan. | aliments : ['bœuf', 'rigatoni', 'crème', 'parmesan', 'épices', 'persil'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 303d1beb5cdb ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-19T11:29:38Z",
+    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "postId": "6aae724d43db46648aee5d34",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-22T21:30:00",
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
+  },
+  {
+    "id": "80-soupetomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
+    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "bd279eb9b6fbad3832231e618a95ab2e3c96683854570dd2d3dc9ee7a52ee0c9",
+      "date": "2026-09-19T11:24:05Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.3s, 40.6 Mo",
+        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme raconte une anecdote culinaire concernant son mari.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe de tomates roties et d'un grilled cheese par une femme dans sa cuisine. | aliments : ['tomates', 'oignons', 'ail', 'huile', 'epices', 'bouillon', 'creme', 'pain', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 bd279eb9b6fb ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-19T11:29:38Z",
+    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "postId": "6aae725b1c4bb1bed012f25c",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-23T21:30:00",
+    "scheduledForUtc": "2026-09-23T19:30:00Z"
   }
 ]
