@@ -454,6 +454,60 @@ def _ligne_mot(i, mot, debut, fin):
     return f"Dialogue: 0,{ass_time(debut)},{ass_time(max(fin, debut + 0.08))},{style},,0,0,0,,{POP}{texte}\n"
 
 
+def _cle_mot(m):
+    import unicodedata
+    m = unicodedata.normalize("NFKD", m.lower())
+    return "".join(c for c in m if c.isalnum() and not unicodedata.combining(c))
+
+
+def recaler_sur_script(mots, texte):
+    """Sous-titres : le TEXTE du script, les TIMINGS de Whisper.
+
+    Ajoute le 2026-09-19. Les sous-titres affichaient ce que Whisper avait
+    CRU entendre : "PEINES" pour penne, "DORT" pour dore, "ont mis diner"
+    pour venaient diner - des fautes grossieres, a l'ecran, en capitales,
+    alors que le texte exact est connu : c'est le script, que la voix vient
+    de lire mot pour mot (retranscription a 98-99 % sur six videos).
+
+    On aligne les deux sequences mot a mot. Les mots reconnus gardent leur
+    timing ; un passage mal entendu recoit les mots du script, repartis sur
+    la duree que Whisper y a mesuree ; un mot du script que Whisper n'a pas
+    rendu est glisse dans le blanc entre ses voisins. Les mots que Whisper a
+    inventes disparaissent.
+    """
+    import difflib
+    ecrits = [w for w in re.findall(r"[\w'’-]+", texte) if _cle_mot(w)]
+    if not mots or not ecrits:
+        return mots
+    entendus = [m for m in mots if _cle_mot(m.get("word", ""))]
+    a = [_cle_mot(w) for w in ecrits]
+    b = [_cle_mot(m["word"]) for m in entendus]
+    sortie = []
+
+    def repartir(groupe, debut, fin):
+        poids = [max(1, len(w)) for w in groupe]
+        total = float(sum(poids))
+        t = debut
+        for w, p in zip(groupe, poids):
+            d = (fin - debut) * p / total
+            sortie.append({"word": w, "start": t, "end": t + d})
+            t += d
+
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if tag == "equal":
+            for k in range(i2 - i1):
+                m = entendus[j1 + k]
+                sortie.append({"word": ecrits[i1 + k], "start": m["start"], "end": m["end"]})
+        elif tag == "replace":
+            repartir(ecrits[i1:i2], entendus[j1]["start"], entendus[j2 - 1]["end"])
+        elif tag == "delete":
+            debut = sortie[-1]["end"] if sortie else 0.0
+            fin = entendus[j1]["start"] if j1 < len(entendus) else debut + 0.35 * (i2 - i1)
+            repartir(ecrits[i1:i2], debut, max(fin, debut + 0.2 * (i2 - i1)))
+        # "insert" : mots inventes par Whisper, on les laisse tomber
+    return sortie
+
+
 def ass_depuis_mots(mots, titre=None):
     ass = ASS_HEADER
     if titre:
@@ -670,6 +724,9 @@ def main():
     p.add_argument("--sortie", required=True)
     p.add_argument("--moteur", choices=("gemini", "voicebox"), default="gemini",
                    help="voicebox : clone local, aucun quota (voir voicebox_tts)")
+    p.add_argument("--voix-telle-quelle", action="store_true",
+                   help="avec --voix-source : ne PAS recaler la voix (elle vient "
+                        "d'une video deja finie et validee, deja recalee une fois)")
     p.add_argument("--voix-source",
                    help="reutiliser la bande son d'un rendu existant (mp4/mp3) "
                         "au lieu d'appeler le TTS. Sert a corriger l'IMAGE d'une "
@@ -718,7 +775,14 @@ def main():
             # Une voix reutilisee doit passer le MEME recalage que les voix
             # fraiches : sans ca elle sortait de la fenetre 60-70 s sans que
             # rien ne la rattrape (constate le 2026-08-23, 70.01 s).
-            if not (DUREE_VIDEO_MIN <= D + duree_outro() <= DUREE_VIDEO_MAX):
+            # SAUF si la voix vient d'une video DEJA FINIE et validee : elle a
+            # deja ete recalee au premier rendu. La recaler encore l'accelerait
+            # une deuxieme fois - constate le 2026-09-19 en refaisant les
+            # sous-titres de 84-cookieglace : 68 s -> 62 s, soit la voix "qui
+            # parle trop vite" que l'utilisateur avait deja reprochee.
+            if a.voix_telle_quelle:
+                print("   voix gardee telle quelle (deja recalee au premier rendu)")
+            elif not (DUREE_VIDEO_MIN <= D + duree_outro() <= DUREE_VIDEO_MAX):
                 facteur = max(0.90, min(1.12, d_voix / DUREE_VOIX_VISEE))
                 recalee = travail / "voix_recalee.mp3"
                 ff(["-y", "-i", str(voix), "-filter:a", f"atempo={facteur:.4f}",
@@ -869,8 +933,9 @@ def _monter(a, travail, voix, d_voix, D, texte):
             cle_groq = _cle("gemini.env", "GROQ_API_KEY")
             mots = whisper_mots(voix, cle_groq)
             if mots:
+                mots = recaler_sur_script(mots, texte)
                 ass_txt = ass_depuis_mots(mots, a.titre)
-                print(f"3) sous-titres OK synchro Whisper ({len(mots)} mots)")
+                print(f"3) sous-titres OK : texte du script, synchro Whisper ({len(mots)} mots)")
         except Exception as e:
             print(f"   Whisper KO : {e}")
         if ass_txt is None:
