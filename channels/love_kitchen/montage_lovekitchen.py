@@ -1077,9 +1077,21 @@ def _monter(a, travail, voix, d_voix, D, texte):
     print(f"4) son : {vm:.1f} dB moyen" if vm is not None else "4) son : mesure impossible")
     d_finale = duree(sortie)
     print(f"4) termine -> {sortie} ({d_finale:.1f}s)")
-    if not (DUREE_VIDEO_MIN <= d_finale + duree_outro() <= DUREE_VIDEO_MAX):
-        print(f"   ATTENTION : {d_finale + duree_outro():.1f}s avec l'outro, hors de la fenetre "
-              f"{DUREE_VIDEO_MIN:.0f}-{DUREE_VIDEO_MAX:.0f}s demandee ({d_finale:.1f}s)")
+    totale = d_finale + duree_outro()
+    # BLOQUANT depuis le 2026-09-19. Ce n'etait qu'un avertissement, et le code
+    # de sortie 0 faisait passer le rendu pour un succes. Un tirage trainant
+    # (consigne "voix basse") est sorti a 87,5 s : une voix qui se traine,
+    # exactement ce que l'utilisateur ne veut pas. Tolerance jusqu'a 75 s :
+    # les videos validees font 66 a 72 s outro comprise. Sous 60 s, la video
+    # perd les recompenses createur.
+    if not (DUREE_VIDEO_MIN <= totale <= DUREE_VIDEO_MAX + 5.0):
+        print(f"4) DUREE HORS FENETRE : {totale:.1f}s avec l'outro "
+              f"(attendu {DUREE_VIDEO_MIN:.0f}-{DUREE_VIDEO_MAX + 5:.0f}s). "
+              f"Voix trop lente ou trop rapide : relancer le rendu.")
+        sys.exit(6)
+    if totale > DUREE_VIDEO_MAX:
+        print(f"   ({totale:.1f}s avec l'outro, au-dessus de la cible "
+              f"{DUREE_VIDEO_MAX:.0f}s mais dans la tolerance)")
 
 
 if __name__ == "__main__":
