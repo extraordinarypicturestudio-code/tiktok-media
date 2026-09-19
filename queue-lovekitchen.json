@@ -806,5 +806,29 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-23T21:30:00",
     "scheduledForUtc": "2026-09-23T19:30:00Z"
+  },
+  {
+    "id": "82-bananapudding",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
+    "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3361dd9444dab28633eeba8524bed25261b75231ec9ba0b445aa49d6066453f1",
+      "date": "2026-09-19T12:10:53Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.3s, 35.2 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme explique la recette d'un gâteau aux bananes.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un gateau aux bananes avec creme et chantilly dans un plat. | aliments : ['gateau', 'poudre', 'oeufs', 'beurre', 'pouding', 'lait', 'creme', 'chantilly', 'banane'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3361dd9444da ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
+    "maj": "2026-09-19T12:12:11Z"
   }
 ]
