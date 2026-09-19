@@ -801,7 +801,7 @@
     "id": "82-bananapudding",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
     "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -818,9 +818,11 @@
         "doublon": "sha256 f44e88accada ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T16:43:15Z",
-    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
+    "maj": "2026-09-19T18:51:46Z",
+    "note": "Choisie par l'utilisateur pour le 19/09 21h30 (ancien son, accepte 'plus ou moins').",
     "vignette_auto": true,
-    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
+    "postId": "6aaed9c649b6d84c1d01c158",
+    "scheduledFor": "2026-09-19T21:30:00",
+    "scheduledForUtc": "2026-09-19T19:30:00Z"
   }
 ]
