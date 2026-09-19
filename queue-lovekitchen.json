@@ -676,24 +676,24 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "37ad894f6f4e5c922da2793063cdbad517721c62767b1dca2766eebf610cfa42",
-      "date": "2026-09-19T11:19:27Z",
+      "sha256": "3a833bc0da5234a20bce6d959a13f3dd543ea65629fe70fbcc8514cee8d97698",
+      "date": "2026-09-19T12:27:15Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 71.0s, 44.6 Mo",
-        "audio": "volume moyen -18.7 dB ; ressemblance avec la source 0.28 ; contenu sonore : Récit narratif sur fond de cuisine et de secrets de préparation.",
+        "specs": "1080x1920, 30 fps, 71.4s, 44.7 Mo",
+        "audio": "volume moyen -18.7 dB ; ressemblance avec la source 0.29 ; contenu sonore : Une femme raconte une anecdote personnelle avec une voix douce.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de cookies aux pépites de chocolat servis avec de la glace vanille | aliments : ['beurre', 'sucre roux', 'œufs', 'vanille', 'farine', 'pépites de chocolat', 'glace à la vanille', 'cookies'] | preparation : True",
+        "contenu": "contenu vu : Préparation de cookies aux pépites de chocolat servis avec de la glace à la vanille | aliments : ['beurre', 'sucre', 'oeuf', 'farine', 'chocolat', 'cookie', 'glace vanille'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 37ad894f6f4e ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 3a833bc0da52 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T11:29:38Z",
-    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "postId": "6aae819381f379cd1765e586",
     "vignette_auto": true,
     "scheduledFor": "2026-09-19T21:30:00",
-    "scheduledForUtc": "2026-09-19T19:30:00.000Z"
+    "scheduledForUtc": "2026-09-19T19:30:00Z"
   },
   {
     "id": "83-bakedziti",
@@ -704,24 +704,24 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "c66d9ec245f309d6195f7df344b59c42c97f0784f5e1624615f88109ac6ff8ff",
-      "date": "2026-09-19T11:16:12Z",
+      "sha256": "270ab6b398a9614e9af6bc78fcacc1e42284840099921b1e03ec3f28c5e016e4",
+      "date": "2026-09-19T12:28:46Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 68.4s, 48.7 Mo",
-        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une personne raconte une anecdote en parlant de cuisine.",
+        "specs": "1080x1920, 30 fps, 69.0s, 48.9 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.21 ; contenu sonore : Récit d'une recette de cuisine avec une sauce tomate et viande.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d un plat de pates gratinees au four avec viande hachee et sauce tomate. | aliments : ['pates', 'viande hachee', 'sauce tomate', 'fromage', 'creme', 'oignons', 'poivrons'] | preparation : True",
+        "contenu": "contenu vu : Preparation d un plat de pates gratinees type baked ziti avec viande hachee, sauce tomate et fromage. | aliments : ['pates', 'viande hachee', 'poivrons', 'sauce tomate', 'creme', 'fromage'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 c66d9ec245f3 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 270ab6b398a9 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T11:29:38Z",
-    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "postId": "6aae81a1a2489923db763e0a",
     "vignette_auto": true,
     "scheduledFor": "2026-09-20T21:30:00",
-    "scheduledForUtc": "2026-09-20T19:30:00.000Z"
+    "scheduledForUtc": "2026-09-20T19:30:00Z"
   },
   {
     "id": "81-soupebrocoli",
@@ -732,24 +732,24 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "165d411e7d2e930017583a6d12753fd99ea8533dceeb7e08b21b9a6f8fa6f93b",
-      "date": "2026-09-19T11:11:51Z",
+      "sha256": "ac655d637cbe57309a6f947c35dd8a015583a938562324591899c44abc6aff2e",
+      "date": "2026-09-19T12:30:14Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 69.4s, 46.7 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle d'une recette de cuisine avec du brocoli.",
+        "specs": "1080x1920, 30 fps, 69.8s, 47.0 Mo",
+        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une voix de femme raconte une histoire avec des brocolis.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation d'une soupe de brocoli au fromage avec des croûtons de pain, accompagnée d'une anecdote de couple. | aliments : ['brocoli', 'fromage', 'oignon', 'bouillon', 'lait', 'pain', 'croûtons'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'une soupe de brocolis au fromage avec des croutons. | aliments : ['brocoli', 'oignon', 'fromage', 'lait', 'bouillon', 'croutons'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 165d411e7d2e ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 ac655d637cbe ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T11:29:38Z",
-    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "postId": "6aae81aeaacd5f768cdae8e0",
     "vignette_auto": true,
     "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00.000Z"
+    "scheduledForUtc": "2026-09-21T19:30:00Z"
   },
   {
     "id": "85-patesboeuf",
@@ -760,24 +760,24 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "303d1beb5cdbd9d659fba34102dfe2351449293e9d56f10b10a68d731ef3e4f3",
-      "date": "2026-09-19T11:29:18Z",
+      "sha256": "8b524e0fc800aa30f7951db82004a7d5e9540473883b20594dc41ac94bc99320",
+      "date": "2026-09-19T12:31:43Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 71.5s, 48.4 Mo",
-        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de la cuisson de la viande.",
+        "specs": "1080x1920, 30 fps, 72.0s, 48.3 Mo",
+        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de la preparation de boeuf au restaurant",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de rigatonis au bœuf cajun avec une sauce crémeuse et du parmesan. | aliments : ['bœuf', 'rigatoni', 'crème', 'parmesan', 'épices', 'persil'] | preparation : True",
+        "contenu": "contenu vu : Preparation de rigatoni au boeuf avec une sauce cremeuse et du parmesan. | aliments : ['boeuf', 'rigatoni', 'creme', 'parmesan', 'epices', 'beurre'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 303d1beb5cdb ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 8b524e0fc800 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T11:29:38Z",
-    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "postId": "6aae81beaacd5f768cdaecc5",
     "vignette_auto": true,
     "scheduledFor": "2026-09-22T21:30:00",
-    "scheduledForUtc": "2026-09-22T19:30:00.000Z"
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
   },
   {
     "id": "80-soupetomate",
@@ -788,47 +788,51 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "bd279eb9b6fbad3832231e618a95ab2e3c96683854570dd2d3dc9ee7a52ee0c9",
-      "date": "2026-09-19T11:24:05Z",
+      "sha256": "40f1f32faaa9f6162fc9d859d5817fdb3064d7d2e99532b39eef3df37cc2c5b6",
+      "date": "2026-09-19T12:33:07Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 66.3s, 40.6 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme raconte une anecdote culinaire concernant son mari.",
+        "specs": "1080x1920, 30 fps, 66.9s, 40.6 Mo",
+        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme raconte une anecdote culinaire en préparant un repas.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de tomates roties et d'un grilled cheese par une femme dans sa cuisine. | aliments : ['tomates', 'oignons', 'ail', 'huile', 'epices', 'bouillon', 'creme', 'pain', 'fromage'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'une soupe de tomates roties accompagnee d'un grilled cheese. | aliments : ['tomates', 'oignons', 'ail', \"huile d'olive\", 'bouillon', 'creme', 'sucre', 'fromage', 'pain', 'soupe'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 bd279eb9b6fb ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 40f1f32faaa9 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T11:29:38Z",
-    "note": "Validee a la main apres audit complet le 2026-09-19 (voix Gemini, tous controles).",
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "postId": "6aae81d781f379cd1765e7df",
     "vignette_auto": true,
     "scheduledFor": "2026-09-23T21:30:00",
-    "scheduledForUtc": "2026-09-23T19:30:00.000Z"
+    "scheduledForUtc": "2026-09-23T19:30:00Z"
   },
   {
     "id": "82-bananapudding",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
     "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "3361dd9444dab28633eeba8524bed25261b75231ec9ba0b445aa49d6066453f1",
-      "date": "2026-09-19T12:10:53Z",
+      "sha256": "f44e88accadaf64a209018bef3bddaa0ec4337aa5d11d5f739759f2d92e0caad",
+      "date": "2026-09-19T12:34:20Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 68.3s, 35.2 Mo",
-        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme explique la recette d'un gâteau aux bananes.",
+        "specs": "1080x1920, 30 fps, 68.8s, 35.7 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de la preparation d un gateau au",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gateau aux bananes avec creme et chantilly dans un plat. | aliments : ['gateau', 'poudre', 'oeufs', 'beurre', 'pouding', 'lait', 'creme', 'chantilly', 'banane'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un gateau avec creme et biscuits, accompagnee d'une anecdote de belle-mere. | aliments : ['farine', 'oeufs', 'lait', 'creme', 'gateau', 'biscuits'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 3361dd9444da ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 f44e88accada ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
-    "maj": "2026-09-19T12:12:11Z"
+    "maj": "2026-09-19T12:35:33Z",
+    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
+    "postId": "6aae81eeb8ea7339f1224df7",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-24T21:30:00",
+    "scheduledForUtc": "2026-09-24T19:30:00Z"
   }
 ]
