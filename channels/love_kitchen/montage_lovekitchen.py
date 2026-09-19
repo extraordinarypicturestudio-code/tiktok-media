@@ -249,7 +249,15 @@ def intonation(fichier, debut=0.0):
         if len(seg) < 20:
             return -100.0          # plus de voix exploitable : elle s'est eteinte
         ecarts.append(float(np.std(12 * np.log2(seg / np.median(seg)))))
-    return 100.0 * (ecarts[1] / max(0.01, ecarts[0]) - 1.0)
+    # Un premier tiers PLAT (ecart-type < 0,5 demi-ton) n'est pas un debut
+    # calme : c'est une voix monotone, ou chuchotee au point que la hauteur ne
+    # se mesure plus. Diviser par ce presque-zero donnait des valeurs absurdes
+    # - "+2510 %" le 2026-09-19, sur un tirage monotone a 97 s, que le seuil
+    # (<= -25 %) a laisse passer comme excellent. On le rend comme une voix
+    # eteinte, ce qu'il est.
+    if ecarts[0] < 0.5:
+        return -100.0
+    return 100.0 * (ecarts[1] / ecarts[0] - 1.0)
 
 
 def respiration(fichier, seuil="-32dB", mini=0.25):
@@ -334,21 +342,33 @@ def gemini_tts(texte, dest, travail):
     # paragraphes, jamais au milieu d'un groupe de sens.
     paragraphes = [" ".join(p.split()) for p in texte.split("\n\n") if p.strip()]
     texte_lu = "\n\n".join(paragraphes)
-    style = ("Lis ce texte a voix haute, en francais, comme une femme qui raconte "
-             "a une amie un souvenir qui l'a marquee. Voix naturelle, chaleureuse, "
-             "un peu intime, avec une intonation VIVANTE qui monte et descend avec "
-             "le sens - jamais recitee, jamais monotone. Parle a un rythme naturel. "
-             "Respire comme une vraie personne : une courte pause a la fin des "
-             "phrases, une pause un peu plus longue entre les paragraphes, et "
-             "jamais de coupure au milieu d'une phrase. Garde de l'energie "
-             "jusqu'a la derniere phrase, qui est une question complice : "
+    # Deuxieme reglage le meme soir. La consigne "intonation VIVANTE qui monte
+    # et descend, garde de l'energie" a produit une lecture JOUEE : voix trop
+    # aigue, fausse, "cringe" (utilisateur, 2026-09-19). Une confidence ne se
+    # joue pas : on demande l'inverse - grave, posee, retenue, presque basse.
+    # Troisieme reglage, le meme soir encore : "voix basse, grave, voilee"
+    # a produit l'exces inverse - un tirage de 97 s, trainant, monotone
+    # (-70 % d'intonation). Entre la presentatrice et le chuchotement, ce que
+    # l'utilisateur veut est une conversation : ton NORMAL, sans jeu.
+    style = ("Lis ce texte en francais comme une femme d'une trentaine d'annees "
+             "qui raconte un souvenir a une amie, en conversation normale. Voix "
+             "naturelle, chaleureuse, plutot dans le medium-grave, sans forcer. "
+             "Pas de ton de presentatrice ni d'enthousiasme, pas d'emphase, pas de "
+             "voix aigue ou chantante - mais pas de chuchotement non plus. Elle "
+             "parle simplement, avec les inflexions normales de quelqu'un qui "
+             "raconte. Debit naturel, ni presse ni trainant. Petites pauses en fin "
+             "de phrase, un peu plus longues entre les paragraphes. La derniere "
+             "question se dit simplement, avec un sourire dans la voix : "
              + texte_lu)
     corps = json.dumps({
         "contents": [{"parts": [{"text": style}]}],
         "generationConfig": {"responseModalities": ["AUDIO"],
                               "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEM_VOICE}}}},
     }).encode("utf-8")
-    for modele in ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]:
+    # gemini-2.5-pro-preview-tts ajoute le 2026-09-19 : modele TTS haut de
+    # gamme, lecture plus naturelle, et QUOTA SEPARE des deux flash.
+    for modele in ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview",
+                   "gemini-2.5-flash-preview-tts"]:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/{modele}"
                f":generateContent?key={cle}")
         try:
