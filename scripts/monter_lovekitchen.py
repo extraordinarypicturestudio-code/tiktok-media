@@ -155,7 +155,13 @@ def finaliser(ident, video, legende, conf):
                 "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
                 str(avec)])
     if r.returncode != 0:
-        print("      REFUS : collage de l'outro impossible")
+        # DIRE POURQUOI. Pendant six jours ce message est tombe chaque matin
+        # sur des rendus parfaitement bons, sans jamais nommer la cause :
+        # `outros/outro_lovekitchen.mp4` n'avait jamais ete ajoutee au depot.
+        # Un refus qui ne dit pas son motif coute une semaine.
+        lignes = (r.stderr or "").strip().splitlines()
+        print("      REFUS : collage de l'outro impossible%s"
+              % (" -> " + lignes[-1][:120] if lignes else ""))
         return False
     # Un rendu se verifie par DECODAGE COMPLET, jamais par la duree annoncee.
     if ffmpeg(["-i", str(avec), "-f", "null", "-"]).stderr.strip():
