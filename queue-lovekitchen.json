@@ -671,7 +671,7 @@
     "id": "84-cookieglace",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
     "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -688,18 +688,16 @@
         "doublon": "sha256 3a833bc0da52 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae819381f379cd1765e586",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-19T21:30:00",
-    "scheduledForUtc": "2026-09-19T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
     "id": "83-bakedziti",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
     "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -716,18 +714,16 @@
         "doublon": "sha256 270ab6b398a9 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae81a1a2489923db763e0a",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-20T21:30:00",
-    "scheduledForUtc": "2026-09-20T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
     "id": "81-soupebrocoli",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
     "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -744,18 +740,16 @@
         "doublon": "sha256 ac655d637cbe ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae81aeaacd5f768cdae8e0",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -772,18 +766,16 @@
         "doublon": "sha256 8b524e0fc800 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae81beaacd5f768cdaecc5",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-22T21:30:00",
-    "scheduledForUtc": "2026-09-22T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -800,18 +792,16 @@
         "doublon": "sha256 40f1f32faaa9 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae81d781f379cd1765e7df",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-23T21:30:00",
-    "scheduledForUtc": "2026-09-23T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
     "id": "82-bananapudding",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
     "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -828,11 +818,9 @@
         "doublon": "sha256 f44e88accada ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T12:35:33Z",
+    "maj": "2026-09-19T16:43:15Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "postId": "6aae81eeb8ea7339f1224df7",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-24T21:30:00",
-    "scheduledForUtc": "2026-09-24T19:30:00Z"
+    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   }
 ]
