@@ -169,6 +169,18 @@ def finaliser(ident, video, legende, conf):
         return False
     print("      outro + integrite : OK")
 
+    # Une video REVOICEE a deja une entree en file, avec l'empreinte de son
+    # ANCIEN fichier : la barriere refuse un identifiant deja present, et une
+    # entree gardee perdrait contre la nouvelle a la fusion (2026-09-11). On
+    # la retire juste avant de repasser la barriere, qui la recree avec le bon
+    # tampon.
+    import json as _j
+    _f = _j.loads(FILE.read_text(encoding="utf-8"))
+    _g = [e for e in _f if not (e.get("id") == ident
+                                and e.get("status") in ("on_hold", "pending"))]
+    if len(_g) != len(_f):
+        FILE.write_text(_j.dumps(_g, ensure_ascii=False, indent=2), encoding="utf-8")
+
     b = python([str(RACINE / "pipeline" / "mettre_en_file.py"),
                 "--chaine", "lovekitchen", "--id", ident,
                 "--legende", legende,
@@ -213,8 +225,12 @@ def main():
     file = json.loads(FILE.read_text(encoding="utf-8"))
     par_id = {e.get("id"): e for e in file}
 
+    # Candidates : les videos a REFAIRE (en file, en attente) et les videos
+    # NEUVES que sources.json connait mais que la file n'a jamais vues - sans
+    # ce second cas, un plat neuf ne pouvait jamais entrer (2026-09-19).
     candidats = [i for i in conf
-                 if par_id.get(i, {}).get("status") in ("on_hold", "pending")]
+                 if i not in par_id
+                 or par_id[i].get("status") in ("on_hold", "pending")]
     if not candidats:
         print("rien a remonter.")
         return 0
@@ -227,7 +243,8 @@ def main():
         if faits >= a.max:
             break
         print("===== %s" % ident)
-        legende = par_id[ident].get("caption") or ""
+        legende = ((par_id.get(ident) or {}).get("caption")
+                   or conf[ident].get("legende") or "")
         if not legende:
             print("      passe : aucune legende en file")
             continue

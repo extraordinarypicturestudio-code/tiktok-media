@@ -5,6 +5,41 @@
     "Ecrit le 2026-09-12. Les chemins sont relatifs a channels/love_kitchen/."
   ],
   "videos": {
+    "80-soupetomate": {
+      "script": "scripts/80_soupetomate.txt",
+      "source": "sources/mk_7679504470245395743.mp4",
+      "legende": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi"
+    },
+    "81-soupebrocoli": {
+      "script": "scripts/81_soupebrocoli.txt",
+      "source": "sources/mk_7676988833543638303.mp4",
+      "legende": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi"
+    },
+    "82-bananapudding": {
+      "script": "scripts/82_bananapudding.txt",
+      "source": "sources/mk_7668711322787302687.mp4",
+      "legende": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi"
+    },
+    "83-bakedziti": {
+      "script": "scripts/83_bakedziti.txt",
+      "source": "sources/mk_7667029514974694687.mp4",
+      "legende": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi"
+    },
+    "84-cookieglace": {
+      "script": "scripts/84_cookieglace.txt",
+      "source": "sources/mk_7679453452191288606.mp4",
+      "legende": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi"
+    },
+    "85-patesboeuf": {
+      "script": "scripts/85_patesboeuf.txt",
+      "source": "sources/mk_7662893897223327007.mp4",
+      "legende": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi"
+    },
+    "86-macaroni": {
+      "script": "scripts/86_macaroni.txt",
+      "source": "sources/mk_7661810193646341407.mp4",
+      "legende": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi"
+    },
     "60-patescrevettes": {
       "script": "scripts/60_patescrevettes.txt",
       "source": "sources/tg_7679541487436057888.mp4",
