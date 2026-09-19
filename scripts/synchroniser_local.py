@@ -43,6 +43,11 @@ SUIVIS = {
     "pipeline/generer_outros.py": "generer_outros.py",
     "channels/love_kitchen/montage_lovekitchen.py":
         "channels/love_kitchen/montage_lovekitchen.py",
+    # Importe par la barriere pour juger la bande son. Absent du depot
+    # jusqu'au 2026-09-19 : TOUTE video passee par la barriere du depot etait
+    # refusee sur "No module named 'analyse_audio'".
+    "channels/recipe_crave/analyse_audio.py":
+        "channels/recipe_crave/analyse_audio.py",
 }
 
 for _s in (sys.stdout, sys.stderr):
