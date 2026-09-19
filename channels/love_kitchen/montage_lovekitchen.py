@@ -168,9 +168,34 @@ SEUIL_DERIVE_DB = 6.0
 #   speechnorm ferme (e=25, r=0.002) ........... -2.2 dB   <- retenu
 #   dynaudnorm seul (f=250:g=15) ............... -2.9 dB
 #   les deux enchaines .......................... -2.2 dB  (dynaudnorm n'apporte rien)
+# CHAINE REFAITE LE 2026-09-19, apres ecoute de l'utilisateur : *le son est
+# degueulasse, bruits parasites au debut et tout au long, la voix sonne trop
+# IA*. Le spectrogramme de 84-cookieglace le montrait sans ambiguite :
+#   - 0,75 s de bruit et une raie a ~1 kHz AVANT la premiere parole : le
+#     souffle de tete du tirage, amplifie par speechnorm ;
+#   - chaque pause en SILENCE NUMERIQUE, et des coupures DANS les phrases : la
+#     porte anti-souffle ajoutee le 2026-09-12 pour masquer ce que speechnorm
+#     faisait remonter.
+# speechnorm e=25 multiplie les passages faibles jusqu'a 25 fois : il remontait
+# les respirations, le souffle et les artefacts du TTS. On a soigne le symptome
+# (la porte) au lieu de la cause, et la porte a hache la voix.
+#
+# A la place :
+#   - silenceremove en tete : on coupe le souffle AVANT la premiere parole ;
+#   - highpass 70 Hz : les grondements, pas la voix ;
+#   - dynaudnorm a fenetre LONGUE (400 ms x 31, ~12 s de lissage) : il rattrape
+#     la voix qui baisse en fin de tirage - le defaut que speechnorm soignait -
+#     mais trop lentement pour pomper entre deux mots ;
+#   - une compression douce (2,5:1) pour l'homogeneite ;
+#   - loudnorm -14 LUFS, la sonie de TikTok.
+# Pas de porte, pas de debruiteur : un silence de piece vaut mieux qu'un
+# silence numerique qui s'ouvre et se ferme.
 CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
-               "speechnorm=e=25:r=0.002:l=1:p=0.95,"
-               "loudnorm=I=-14:TP=-1.5:LRA=7")
+               "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,"
+               "highpass=f=70,"
+               "dynaudnorm=f=400:g=31:p=0.9:m=3,"
+               "acompressor=threshold=-20dB:ratio=2.5:attack=15:release=250:makeup=1.5,"
+               "loudnorm=I=-14:TP=-1.5:LRA=9")
 
 
 # RESPIRATION — ajoutee le 2026-09-09, apres un retour de l'utilisateur :
@@ -300,13 +325,24 @@ def gemini_tts(texte, dest, travail):
     # s'arretent ENTRE les phrases. 29_gateaujiggly : 205 mots, 63,6 s, 32 % de
     # silence, soit 4,7 mots par seconde de parole reelle. La consigne doit
     # donc demander le silence sans toucher au debit.
-    style = ("Lis ce texte a voix haute comme une confidence, en francais, voix "
-              "de femme naturelle et chaleureuse. A l'interieur d'une phrase, "
-              "parle a ton rythme normal, sans trainer sur les mots. Mais marque "
-              "UNE VRAIE PAUSE d'une seconde a chaque retour a la ligne, et "
-              "reprends ton souffle entre deux phrases. Ton complice, jamais "
-              "theatral. Comme si tu racontais une anecdote vecue a une amie : "
-              + texte)
+    # Refait le 2026-09-19 : "la voix sonne trop IA, pas repartie". La
+    # consigne imposait UNE PAUSE D'UNE SECONDE A CHAQUE RETOUR A LA LIGNE, et
+    # les scripts sont ecrits en lignes courtes : pres de trente arrets
+    # identiques par video, le rythme d'une machine. La voix recoit maintenant
+    # des PARAGRAPHES (les retours a la ligne simples sont fondus) et respire
+    # comme une personne : court entre les phrases, plus long entre les
+    # paragraphes, jamais au milieu d'un groupe de sens.
+    paragraphes = [" ".join(p.split()) for p in texte.split("\n\n") if p.strip()]
+    texte_lu = "\n\n".join(paragraphes)
+    style = ("Lis ce texte a voix haute, en francais, comme une femme qui raconte "
+             "a une amie un souvenir qui l'a marquee. Voix naturelle, chaleureuse, "
+             "un peu intime, avec une intonation VIVANTE qui monte et descend avec "
+             "le sens - jamais recitee, jamais monotone. Parle a un rythme naturel. "
+             "Respire comme une vraie personne : une courte pause a la fin des "
+             "phrases, une pause un peu plus longue entre les paragraphes, et "
+             "jamais de coupure au milieu d'une phrase. Garde de l'energie "
+             "jusqu'a la derniere phrase, qui est une question complice : "
+             + texte_lu)
     corps = json.dumps({
         "contents": [{"parts": [{"text": style}]}],
         "generationConfig": {"responseModalities": ["AUDIO"],

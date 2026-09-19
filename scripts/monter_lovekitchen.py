@@ -49,8 +49,15 @@ FILE = RACINE / "queue-lovekitchen.json"
 # Le souffle de fond vient de `speechnorm`, qui remonte le bruit ENTRE les
 # mots. Porte + debruiteur, mesures du 2026-09-12 : plancher -51,9 -> -62,6 dB,
 # pic de voix et intonation inchanges.
-SOUFFLE = ("agate=threshold=0.0079:ratio=6:attack=5:release=150:knee=4,"
-           "afftdn=nr=10:nf=-50")
+#
+# RETIRE LE 2026-09-19. Cette porte + debruiteur hachait la voix : silence
+# numerique a chaque pause, coupures au milieu des phrases - ce que
+# l'utilisateur a entendu comme "des bruits parasites tout au long" et "une
+# voix qui sonne IA". Elle soignait un symptome : le souffle que speechnorm
+# faisait remonter. La cause est corrigee dans CHAINE_VOIX du montage, cette
+# etape n'a plus rien a faire. Laissee neutre plutot que supprimee, pour que la
+# raison reste lisible ici.
+SOUFFLE = "anull"
 
 INTERESSANT = re.compile(
     r"essai|retenue|intonation|respiration|constance|APLATIT|RESPIRE"
