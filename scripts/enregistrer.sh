@@ -68,8 +68,14 @@ if [ "${#CHEMINS[@]}" -eq 0 ]; then
 fi
 
 # --- 2. Identite -------------------------------------------------------------
-git config user.name  "github-actions[bot]"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+# L'identite du robot SEULEMENT sur GitHub Actions. En local, elle faisait signer
+# "github-actions[bot]" des commits faits a la main : le 2026-09-19, les cinq
+# videos montees sur le PC apparaissaient comme produites par le montage
+# automatique, et il a fallu lire les messages pour savoir qui avait fait quoi.
+if [ -n "${GITHUB_ACTIONS:-}" ]; then
+  git config user.name  "github-actions[bot]"
+  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+fi
 
 # --- 2 bis. Dater les changements de statut ----------------------------------
 # `fusionner_file.py` arbitre un conflit par la FRAICHEUR quand les deux cotes
