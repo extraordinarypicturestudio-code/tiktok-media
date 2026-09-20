@@ -25,10 +25,11 @@
       "fichier": "cuisine_robe_bleue.mp4",
       "debut": 0.0,
       "fin": 5.5,
-      "description": "femme en robe bleue debout dans la cuisine, devant la gaziniere",
+      "description": "femme en robe de chambre a motif bleu et rouge, debout devant la gaziniere, plan large de toute la cuisine",
       "verifie_le": "2026-08-21",
-      "note": "VERIFIE image par image (fps=2) : femme visible jusqu'a 5.5s, le NETTOYEUR VAPEUR apparait des 6.0s. Une premiere version de ce manifeste annoncait 7.5s (extrapolee d'un echantillonnage a 4s) et laissait 1.5s de vapeur dans l'intro.",
-      "personne": "A_brune_robe_bleue"
+      "note": "VERIFIE image par image (fps=2) : femme visible jusqu'a 5.5s, le NETTOYEUR VAPEUR apparait des 6.0s. Une premiere version de ce manifeste annoncait 7.5s (extrapolee d'un echantillonnage a 4s) et laissait 1.5s de vapeur dans l'intro. | 2026-09-20 : fichier source identifie (ssstik.io_1787304998969.mp4). Une re-decoupe de cette meme fenetre a ete prise pour une intro inedite parce que la fiche ne nommait pas la source ; doublon supprime. C'est l'intro des trois records (756 K, 256 K, 145 K).",
+      "personne": "A_brune_robe_bleue",
+      "fichier_source": "ssstik.io_1787304998969.mp4"
     }
   ],
   "_note_criteres": [
@@ -159,20 +160,6 @@
     "(12 a 33 Mo chacune) n'ont pas a monter dans le depot. Seules les trois",
     "intros EN CUISINE tournent (mesure des vues), les autres restent locales."
   ],
-  "candidats": [
-    {
-      "ref": "cuisine_robe_imprimee",
-      "fichier": "cuisine_robe_imprimee.mp4",
-      "source": "ssstik.io_1787304998969.mp4",
-      "debut": 0.0,
-      "fin": 5.6,
-      "description": "femme en robe de chambre imprimee bleu/rouge, debout devant la gaziniere, plan large de toute la cuisine",
-      "verifie_le": "2026-09-20",
-      "note": "VERIFIE fps=2 sur 0-12s puis fps=4 sur 4.5-7s : la femme tient jusqu'a 5.75s, le NETTOYEUR VAPEUR apparait a 6.0s. Balaye jusqu'a 37.8s : plus aucun plan de femme. Cadrage LARGE, pas centre sur une partie du corps - le critere du 2026-09-20 passe. Aucun logo dans la fenetre (la boite 'BREAD' est generique).",
-      "personne": "D_blonde_robe_imprimee",
-      "en_attente": "decollete tres ouvert. Le cadrage respecte la regle, le contenu est plus expose que tout ce qui est deja sorti, et la chaine a deja recu un signalement TikTok le 2026-08-30. Attend un oui de l'utilisateur avant d'entrer dans ROTATION_INTROS."
-    }
-  ],
   "_note_catalogue": [
     "Au 2026-09-20 les 12 fichiers de 'Kirste videos' ont TOUS ete examines :",
     "1 retenu (cuisine_robe_bleue), 1 en attente (cuisine_robe_imprimee),",
@@ -180,6 +167,6 @@
     "1 interdit de reutilisation, 1 fichier supprime, 7 refuses.",
     "Les 5 fichiers 'RAW - *' de Videos/Montage/Cuisine sont de l'ASMR de",
     "cuisine (mains masculines, decoupe en exterieur) : aucune femme, pas des",
-    "intros. Le vivier est epuise - toute nouvelle intro demande du materiel neuf."
+    "Le vivier est epuise : le seul plan de femme exploitable du catalogue est DEJA cuisine_robe_bleue. Toute nouvelle intro demande du materiel neuf."
   ]
 }

@@ -775,34 +775,6 @@
     "scheduledForUtc": "2026-09-20T19:30:00Z"
   },
   {
-    "id": "80-soupetomate",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
-    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "35f3902a487d706e84807c74e7457cc4c05edb80eb265d9c87d1ce5d8e8bb471",
-      "date": "2026-09-20T10:06:55Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 71.9s, 44.2 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de son mari qui aime la soupe",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de tomates roties accompagnee d'un sandwich grilled cheese | aliments : ['tomates', 'oignons', 'ail', 'bouillon', 'creme', 'pain', 'fromage'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 35f3902a487d ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T10:21:40Z",
-    "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
-    "postId": "6aafb3b7c1e9500383f9b1b9",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00Z"
-  },
-  {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
@@ -826,5 +798,29 @@
     "maj": "2026-09-20T13:33:35Z",
     "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
     "vignette_auto": true
+  },
+  {
+    "id": "80-soupetomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
+    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "d4d2f7249f141862486f649b3448e9216799e99b356b9a7b5cb7e8dc22cfd60e",
+      "date": "2026-09-20T15:40:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.3s, 44.3 Mo",
+        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme raconte une anecdote concernant la cuisine de son mari.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe de tomates rôties avec un grilled cheese par une femme dans sa cuisine. | aliments : ['tomates', 'oignons', 'ail', 'herbes', 'bouillon', 'crème', 'pain', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 d4d2f7249f14 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T15:45:36Z",
+    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour CHANGER L'INTRO seulement : elle ouvrait sur sophie_cuisine_micro, retiree le matin meme (cadrage fessier). La VOIX est celle que l'utilisateur a validee a l'oreille le 2026-09-20, extraite du rendu precedent et reinjectee telle quelle - aucun appel Gemini, aucune voix de secours. Audit complet rejoue sur le fichier final : tous les controles passent."
   }
 ]
