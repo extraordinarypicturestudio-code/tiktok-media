@@ -810,7 +810,7 @@
     "id": "84-cookieglace",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
     "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -828,6 +828,10 @@
       }
     },
     "maj": "2026-09-20T16:40:05Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres. Mesure avant -> apres : pause 0,47 -> 0,32 s (gagnante 0,28), pauses longues 16 -> 1 (gagnante 3), silence 29,3 -> 21,5 % (gagnante 18,2), amorce -14,3 -> -35,4 dB (gagnante -48,6). Duree 61,7 s, au-dessus des 60 s Creator Rewards."
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres. Mesure avant -> apres : pause 0,47 -> 0,32 s (gagnante 0,28), pauses longues 16 -> 1 (gagnante 3), silence 29,3 -> 21,5 % (gagnante 18,2), amorce -14,3 -> -35,4 dB (gagnante -48,6). Duree 61,7 s, au-dessus des 60 s Creator Rewards.",
+    "postId": "6ab00c88b45875fb2301fc71",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-20T21:30:00",
+    "scheduledForUtc": "2026-09-20T19:30:00Z"
   }
 ]
