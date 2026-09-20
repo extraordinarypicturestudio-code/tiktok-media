@@ -1077,7 +1077,43 @@ def _monter(a, travail, voix, d_voix, D, texte):
                     print("   Debut attendu : " + " ".join(_ecrit[:12]))
                     print("   Le modele a lu la consigne. Relancer le rendu.")
                     sys.exit(7)
-                print(f"3) la voix dit bien le script ({_r*100:.0f} %)")
+
+                # LE RATIO GLOBAL NE SUFFIT PAS. Le 2026-09-20, 85-patesboeuf
+                # a ete programmee pour une sortie en ayant PASSE ce controle :
+                # elle dit "Chaque fin de mot se prononce, les liaisons se font,
+                # aucun parler relache ni familier, aucun accent de banlieue,
+                # aucune syllabe avalee" avant la premiere phrase du script.
+                # 6,4 s de consigne sur 70 s de voix laissent le ratio a 0,93.
+                # C'est l'utilisateur qui l'a entendu, pas nous.
+                #
+                # On cherche donc la consigne ELLE-MEME dans ce qui est dit :
+                # on connait son texte exact, il suffit de le chercher. Cinq
+                # mots consecutifs de la consigne dans la transcription et le
+                # rendu est refuse, ou qu'ils se trouvent.
+                _consigne = _cles_mots(style)
+                _vus = set(zip(_dit, _dit[1:], _dit[2:], _dit[3:], _dit[4:]))
+                _fuite = next((g for g in zip(_consigne, _consigne[1:], _consigne[2:],
+                                              _consigne[3:], _consigne[4:]) if g in _vus),
+                              None)
+                if _fuite:
+                    print("3) LA VOIX LIT LA CONSIGNE : \"%s\" se retrouve dans ce "
+                          "qui est dit." % " ".join(_fuite))
+                    print("   Debut entendu : " + " ".join(_dit[:16]))
+                    print("   Relancer le rendu.")
+                    sys.exit(7)
+
+                # Et on regarde le DEBUT separement : c'est la que la consigne
+                # se glisse, et c'est la seconde qui decide si le spectateur
+                # reste. Les 10 premiers mots dits doivent etre ceux du script.
+                _t10 = _dl.SequenceMatcher(None, _ecrit[:10], _dit[:10]).ratio()
+                if _t10 < 0.6:
+                    print("3) LE DEBUT N'EST PAS CELUI DU SCRIPT : %.0f %% sur les "
+                          "10 premiers mots." % (_t10*100))
+                    print("   Debut entendu : " + " ".join(_dit[:12]))
+                    print("   Debut attendu : " + " ".join(_ecrit[:12]))
+                    sys.exit(7)
+                print(f"3) la voix dit bien le script ({_r*100:.0f} %, debut "
+                      f"{_t10*100:.0f} %, aucune consigne lue)")
                 mots = recaler_sur_script(mots, texte)
                 ass_txt = ass_depuis_mots(mots, a.titre)
                 print(f"3) sous-titres OK : texte du script, synchro Whisper ({len(mots)} mots)")

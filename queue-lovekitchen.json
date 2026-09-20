@@ -723,34 +723,6 @@
     "scheduledForUtc": "2026-09-20T19:30:00Z"
   },
   {
-    "id": "80-soupetomate",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
-    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "d1ae643e2eff2b3696f2528381fb816f2c7f8c412b6221a8bc9cdf6387aa8137",
-      "date": "2026-09-20T16:42:18Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 61.7s, 38.0 Mo",
-        "audio": "volume moyen -17.7 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote culinaire avec fond musical.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation d'une soupe de tomates rôties accompagnée de grilled cheese | aliments : ['tomates', 'oignons', 'ail', 'crème', 'pain', 'fromage', 'soupe'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 d1ae643e2eff ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T16:56:07Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,85 -> 0,36 s, 21 blancs resserres, respiration 22 %, duree 61,7 s. Audit complet rejoue, tous les controles passent.",
-    "postId": "6ab0104581b38a5b33a0161c",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00Z"
-  },
-  {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
@@ -759,78 +731,90 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "f575f62f6f13f3f4c4b30615ff23e7aa5df6416c721c8ed9a5c36f57add5d06e",
-      "date": "2026-09-20T16:48:13Z",
+      "sha256": "05b033faef58c033ea1a82ffbec4a21673d71cdaf80fadacb96ae592a433375a",
+      "date": "2026-09-20T18:23:29Z",
       "outil": "verification_publication.py",
       "preuves": {
         "specs": "1080x1920, 30 fps, 61.1s, 42.7 Mo",
-        "audio": "volume moyen -17.5 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de la cuisine et de son mari.",
+        "audio": "volume moyen -18.1 dB ; ressemblance avec la source 0.13 ; contenu sonore : Une femme parle de sa recette de boeuf et de cuisine.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de pâtes rigatoni au bœuf cajun et sauce crémeuse avec des épices. | aliments : ['bœuf', 'pâtes rigatoni', 'crème', 'parmesan', 'épices', 'huile'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un plat de rigatoni au boeuf avec une sauce creee et epicee. | aliments : ['boeuf', 'pates', 'rigatoni', 'creme', 'epices', 'parmesan', 'persil'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 f575f62f6f13 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 05b033faef58 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T18:18:54Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,97 -> 0,28 s, 18 blancs resserres, respiration 18 %, duree 61,1 s. Audit complet rejoue, tous les controles passent.",
-    "postId": null,
-    "vignette_auto": true,
-    "error": "LA VOIX LIT LES CONSIGNES DU PROMPT A VOIX HAUTE. Les 4,5 premieres secondes disent : 'Chaque fin de mot se prononce, les liaisons se font. Aucun parler relache ni familier. Aucun accent de banlieue, aucune syllabe avalee.' Signale par l'utilisateur le 2026-09-20. NE PAS PROGRAMMER avant correction."
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
+  },
+  {
+    "id": "80-soupetomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
+    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "689fc9a9b8c856608ed1afe611a273427f6836c778f0291cf2280a76ee630001",
+      "date": "2026-09-20T18:31:34Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.1s, 37.8 Mo",
+        "audio": "volume moyen -17.5 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de cuisine et raconte une anecdote personnelle.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe de tomates roties avec du pain grille au fromage | aliments : ['tomates', 'oignons', 'ail', 'pain', 'fromage', 'creme'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 689fc9a9b8c8 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T18:40:13Z",
+    "note": "Passe le controle visuel complet. Voix recadencee sur 56-onepotpates (348 767 vues) et SPECTRE DU DEBUT cale sur elle : l'utilisateur signalait un bruit de fond dans les 2 premieres secondes, mesure comme un exces de 6-11 kHz a l'attaque. Amorce portee a 380 ms. pause 0,31 s, 0 pause longue, souffle de debut -0,4 -> -2,5 dB, 61,1 s."
   },
   {
     "id": "81-soupebrocoli",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
     "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "c9a63a4dfbe071f38fdc36cb99130167202a90a6cafdf024a335db71c0ee8deb",
-      "date": "2026-09-20T17:03:19Z",
+      "sha256": "21892f4d1c365209e6cce941b68fb0b936720ae4779e621f7836869784c7c696",
+      "date": "2026-09-20T18:32:57Z",
       "outil": "verification_publication.py",
       "preuves": {
         "specs": "1080x1920, 30 fps, 65.2s, 44.3 Mo",
-        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de brocoli et de sa recette de cuisine.",
+        "audio": "volume moyen -17.9 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme raconte une anecdote culinaire au sujet de brocolis.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe au brocoli et au fromage avec des croutons. | aliments : ['brocoli', 'beurre', 'huile', 'bouillon', 'lait', 'fromage', 'pain', 'epices'] | preparation : True",
+        "contenu": "contenu vu : Préparation d'une soupe au brocoli et au cheddar avec des croûtons. | aliments : ['brocoli', 'beurre', 'bouillon', 'lait', 'fromage cheddar', 'pain', 'épices'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 c9a63a4dfbe0 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 21892f4d1c36 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T17:08:48Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues), meme voix Gemini Sulafat. pause 0,55 -> 0,36 s, pauses longues 21 -> 1, respiration 21 %, duree 65,2 s. Cadence alignee sur la gagnante.",
-    "postId": "6ab013405a7f94a72db28231",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-22T21:30:00",
-    "scheduledForUtc": "2026-09-22T19:30:00Z"
+    "maj": "2026-09-20T18:40:13Z",
+    "note": "Passe le controle visuel complet. Voix recadencee sur 56-onepotpates (348 767 vues) et SPECTRE DU DEBUT cale sur elle : l'utilisateur signalait un bruit de fond dans les 2 premieres secondes, mesure comme un exces de 6-11 kHz a l'attaque. Amorce portee a 380 ms. pause 0,39 s, 0 pause longue, souffle -1,0 -> -2,5 dB et grave -2,8 dB, 65,2 s."
   },
   {
     "id": "83-bakedziti",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
     "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "3e7c72e8d1b8be8f8cd8831528ef1251a95f0c32eccba4afbe82731bdf5db1e2",
-      "date": "2026-09-20T17:04:39Z",
+      "sha256": "3792c89c7db26436e2ffa0b611f56c265aefccf82f623779b9908a64a6e7037f",
+      "date": "2026-09-20T18:35:34Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 65.6s, 47.0 Mo",
-        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.25 ; contenu sonore : Une femme parle de cuisine et d'une sauce tomate.",
+        "specs": "1080x1920, 30 fps, 65.6s, 47.2 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.25 ; contenu sonore : Une femme parle de cuisine et d'une recette de pâtes.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un plat de pates gratinees type baked ziti avec viande hachee, sauce tomate et fromage. | aliments : ['pates', 'viande hachee', 'poivrons', 'sauce tomate', 'creme', 'fromage'] | preparation : True",
+        "contenu": "contenu vu : Préparation de pâtes au four gratinées avec sauce tomate, viande hachée, ricotta et fromage. | aliments : ['pâtes', 'viande hachée', 'tomate', 'oignons', 'poivrons', 'ricotta', 'crème', 'fromage râpé'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 3e7c72e8d1b8 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 3792c89c7db2 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T17:08:48Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues), meme voix Gemini Sulafat. pause 0,62 -> 0,45 s, pauses longues 21 -> 15, respiration 20 %, duree 65,6 s. AMELIORATION PARTIELLE : cette voix a trop de blancs longs pour etre resserree davantage sans passer sous les 60 s. A refaire avec une voix neuve des que le quota Gemini revient.",
-    "postId": "6ab0134d8c8c28f3995314f1",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-23T21:30:00",
-    "scheduledForUtc": "2026-09-23T19:30:00Z"
+    "maj": "2026-09-20T18:40:13Z",
+    "note": "Passe le controle visuel complet. Voix recadencee sur 56-onepotpates (348 767 vues) et SPECTRE DU DEBUT cale sur elle : l'utilisateur signalait un bruit de fond dans les 2 premieres secondes, mesure comme un exces de 6-11 kHz a l'attaque. Amorce portee a 380 ms. pause 0,44 s, 14 pauses longues : la moins bien des trois, ses blancs ne se resserrent pas davantage sans passer sous 60 s. Grondement du debut corrige (-4 dB sous 55 Hz). 65,6 s."
   }
 ]
