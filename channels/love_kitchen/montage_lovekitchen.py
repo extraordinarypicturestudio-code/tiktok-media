@@ -340,6 +340,19 @@ def derive_voix(fichier, fen=6.0):
 
 
 # ----------------------------------------------------------------- voix
+MODELES_TTS = ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview",
+               "gemini-2.5-flash-preview-tts"]
+VOIX_REFERENCE = ICI / "voix_reference.json"
+
+
+def voix_epinglee():
+    """Ce que voix_reference.json dit du modele a employer."""
+    try:
+        return json.loads(VOIX_REFERENCE.read_text(encoding="utf-8"))["modele_tts"]
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
 def gemini_tts(texte, dest, travail):
     cle = _cle("gemini.env", "GEMINI_API_KEY")
     # DEUX reglages successifs le 2026-09-09, et le premier etait faux.
@@ -403,8 +416,22 @@ def gemini_tts(texte, dest, travail):
     }).encode("utf-8")
     # gemini-2.5-pro-preview-tts ajoute le 2026-09-19 : modele TTS haut de
     # gamme, lecture plus naturelle, et QUOTA SEPARE des deux flash.
-    for modele in ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview",
-                   "gemini-2.5-flash-preview-tts"]:
+    # QUEL MODELE. La cascade existait pour survivre a un quota epuise ; elle
+    # a fini par changer la VOIX sans le dire - trois modeles, un seul nom de
+    # voix, des rendus differents (2026-09-20 : l'utilisateur entend deux voix
+    # entre deux videos, distance de timbre 53 la ou deux tirages du meme
+    # modele sont a 20). Le fichier voix_reference.json decide maintenant :
+    # un modele epingle est le seul essaye, et sans cascade autorisee on
+    # s'arrete plutot que de produire une autre voix. Mieux vaut une video de
+    # moins qu'une voix que le public ne reconnait pas.
+    _mt = voix_epinglee()
+    if _mt.get("epingle"):
+        _modeles = [_mt["epingle"]]
+        if _mt.get("cascade_autorisee"):
+            _modeles += [m for m in MODELES_TTS if m != _mt["epingle"]]
+    else:
+        _modeles = list(MODELES_TTS)
+    for modele in _modeles:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/{modele}"
                f":generateContent?key={cle}")
         try:
@@ -840,6 +867,11 @@ def main():
     p.add_argument("--script", required=True, help="fichier texte du script")
     p.add_argument("--titre", default="")
     p.add_argument("--sortie", required=True)
+    # Echappement DELIBERE, jamais par defaut : il sert a sortir une video
+    # quand le modele conforme est indisponible et qu'il vaut mieux une voix
+    # approchante que pas de video du tout. A n'utiliser qu'en le disant.
+    p.add_argument("--voix-hors-norme", action="store_true",
+                   help="ne pas verifier l'empreinte de voix (a justifier)")
     p.add_argument("--moteur", choices=("gemini", "voicebox"), default="gemini",
                    help="voicebox : clone local, aucun quota (voir voicebox_tts)")
     p.add_argument("--voix-telle-quelle", action="store_true",
@@ -1217,6 +1249,37 @@ def _monter(a, travail, voix, d_voix, D, texte):
     if totale > DUREE_VIDEO_MAX:
         print(f"   ({totale:.1f}s avec l'outro, au-dessus de la cible "
               f"{DUREE_VIDEO_MAX:.0f}s mais dans la tolerance)")
+
+    # 5) EST-CE BIEN LA VOIX DE LA CHAINE ? Dernier controle, et le seul qui
+    # regarde l'IDENTITE plutot que la qualite. Les autres verifient qu'une
+    # voix est propre, constante, qui respire ; aucun ne verifiait que c'est
+    # LA MEME que la semaine derniere. Resultat mesure le 2026-09-20 sur les
+    # 17 videos publiees disponibles : hauteur de 143 a 191 Hz, clarte de
+    # 2166 a 3351 Hz, et UN SEUL tirage dans la tolerance. Le public entend
+    # une personne differente d'un soir a l'autre.
+    if not a.voix_hors_norme:
+        try:
+            import empreinte_voix as EV
+            emp = EV.mesurer(sortie)
+            conforme, ecarts = EV.comparer(emp)
+            print("5) empreinte : " + EV._resume(emp))
+            if not conforme:
+                print("5) CE N'EST PAS LA VOIX DE LA CHAINE :")
+                for x in ecarts:
+                    print("   " + x)
+                print("   reference : " + EV._resume(EV._reference()["empreinte"]))
+                print("   Refaire le rendu, ou epingler le bon modele dans "
+                      "voix_reference.json. Ne pas elargir la tolerance.")
+                sys.exit(8)
+            print("5) voix conforme a la reference de la chaine")
+        except SystemExit:
+            raise
+        except Exception as e:
+            # Un controle qui ne tourne pas n'autorise pas la sortie.
+            print(f"5) EMPREINTE NON MESURABLE : {str(e)[:90]}")
+            sys.exit(8)
+    else:
+        print("5) empreinte NON verifiee (--voix-hors-norme)")
 
 
 if __name__ == "__main__":

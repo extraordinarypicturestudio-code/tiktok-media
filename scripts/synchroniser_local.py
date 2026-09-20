@@ -43,6 +43,13 @@ SUIVIS = {
     "pipeline/generer_outros.py": "generer_outros.py",
     "channels/love_kitchen/montage_lovekitchen.py":
         "channels/love_kitchen/montage_lovekitchen.py",
+    # L'identite sonore de la chaine et l'outil qui la mesure. Le montage les
+    # charge a chaque rendu : absents du depot, le controle d'empreinte ne
+    # tourne pas sur GitHub et la voix peut repartir a la derive.
+    "channels/love_kitchen/empreinte_voix.py":
+        "channels/love_kitchen/empreinte_voix.py",
+    "channels/love_kitchen/voix_reference.json":
+        "channels/love_kitchen/voix_reference.json",
     # Importe par la barriere pour juger la bande son. Absent du depot
     # jusqu'au 2026-09-19 : TOUTE video passee par la barriere du depot etait
     # refusee sur "No module named 'analyse_audio'".

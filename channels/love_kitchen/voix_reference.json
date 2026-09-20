@@ -1,0 +1,82 @@
+{
+  "_doc": [
+    "L'IDENTITE SONORE DE @love_kitchen97, chiffree et opposable.",
+    "",
+    "Pourquoi ce fichier existe : le 2026-09-20 l'utilisateur entend deux voix",
+    "differentes entre deux videos sorties a un jour d'ecart. La mesure lui",
+    "donne raison, et elle montre pire : sur les 17 videos publiees mesurables,",
+    "la hauteur va de 143 a 191 Hz et la clarte de 2166 a 3351 Hz. La voix",
+    "derive depuis le debut de la chaine. UN SEUL des 17 tirages respecte la",
+    "tolerance ci-dessous - celui qui sert de reference.",
+    "",
+    "Cause : la cascade TTS a trois modeles et bascule silencieusement des",
+    "qu'un quota tombe. Le nom de voix reste Sulafat, le rendu non.",
+    "",
+    "La reference est 56-onepotpates : 348 767 vues et 11,0 s de visionnage,",
+    "la meilleure de la chaine parmi celles dont le fichier est disponible.",
+    "Elle a aussi la melodie la plus ample (5,86 demi-tons) et la clarte la",
+    "plus haute (3222 Hz) du lot ; les videos a 16-19 K sont a 3,80-5,02 et",
+    "2166-2774. Ce n'est pas un choix d'oreille, c'est celui des chiffres.",
+    "",
+    "COMMENT S'EN SERVIR",
+    "  python channels/love_kitchen/empreinte_voix.py comparer <video.mp4>",
+    "Le montage l'appelle tout seul et refuse un rendu hors tolerance.",
+    "",
+    "NE PAS elargir une tolerance pour faire passer un rendu. La tolerance dit",
+    "ce que le public doit reconnaitre ; si un rendu ne passe pas, c'est le",
+    "rendu qu'il faut refaire - ou le modele qu'il faut changer."
+  ],
+  "reference": {
+    "video": "56-onepotpates",
+    "vues": 348767,
+    "duree_vue_s": 11.0,
+    "mesuree_le": "2026-09-20"
+  },
+  "modele_tts": {
+    "epingle": null,
+    "_doc": [
+      "Le modele qui doit produire la voix. TANT QUE C'EST null, la cascade",
+      "de montage_lovekitchen.py s'applique et la voix peut changer d'un jour",
+      "a l'autre - c'est exactement le defaut a corriger.",
+      "",
+      "A determiner au retour du quota Gemini : faire dire le meme passage",
+      "par gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview et",
+      "gemini-2.5-flash-preview-tts, mesurer l'empreinte de chacun, epingler",
+      "celui qui tombe dans la tolerance. Le modele qui a produit la",
+      "reference n'est pas connu : il n'etait trace nulle part avant le",
+      "2026-09-20."
+    ],
+    "voix": "Sulafat",
+    "cascade_autorisee": false
+  },
+  "empreinte": {
+    "hauteur_Hz": 166.0,
+    "melodie_demitons": 5.86,
+    "centre_spectral_Hz": 3222.0,
+    "couleur_dB": [
+      7.76,
+      14.54,
+      5.49,
+      3.39,
+      -1.53,
+      -4.19,
+      -4.79,
+      -16.13
+    ],
+    "niveau_dB": -22.6,
+    "plancher_dB": -63.5
+  },
+  "tolerances": {
+    "hauteur_Hz": 10.0,
+    "melodie_demitons": 1.0,
+    "centre_spectral_Hz": 450.0,
+    "couleur_dB": 3.0,
+    "_doc": [
+      "Calibrees sur le corpus des 17 videos publiees : a +-8 Hz / +-350 Hz",
+      "un seul tirage passe, a +-14 Hz / +-600 Hz trois passent. On garde le",
+      "reglage intermediaire. +-10 Hz vaut environ un demi-ton, qui s'entend",
+      "mais ne fait pas une autre personne ; +-3 dB par bande est le seuil",
+      "ou une difference de timbre devient audible."
+    ]
+  }
+}
