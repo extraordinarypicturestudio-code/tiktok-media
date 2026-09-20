@@ -82,7 +82,10 @@ fi
 # portent un `maj`. Trente-six endroits ecrivent un statut dans le depot : les
 # modifier un par un serait refaire l'erreur des quatorze blocs git recopies.
 # On date donc ici, au seul endroit ou tout passe, en comparant a HEAD.
-python3 scripts/horodater_file.py "${CHEMINS[@]}" || true
+# `python3` n'existe pas sous Windows (le raccourci ouvre le Microsoft
+# Store) : en local, l'horodatage etait donc silencieusement saute.
+PY=python3; command -v python3 >/dev/null 2>&1 || PY=python
+"$PY" scripts/horodater_file.py "${CHEMINS[@]}" || true
 
 # --- 3. Indexer --------------------------------------------------------------
 if ! git add -A -- "${CHEMINS[@]}"; then
