@@ -782,7 +782,7 @@
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -800,13 +800,17 @@
       }
     },
     "maj": "2026-09-20T16:56:07Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,85 -> 0,36 s, 21 blancs resserres, respiration 22 %, duree 61,7 s. Audit complet rejoue, tous les controles passent."
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,85 -> 0,36 s, 21 blancs resserres, respiration 22 %, duree 61,7 s. Audit complet rejoue, tous les controles passent.",
+    "postId": "6ab0104581b38a5b33a0161c",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-21T21:30:00",
+    "scheduledForUtc": "2026-09-21T19:30:00Z"
   },
   {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -824,6 +828,10 @@
       }
     },
     "maj": "2026-09-20T16:56:07Z",
-    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,97 -> 0,28 s, 18 blancs resserres, respiration 18 %, duree 61,1 s. Audit complet rejoue, tous les controles passent."
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,97 -> 0,28 s, 18 blancs resserres, respiration 18 %, duree 61,1 s. Audit complet rejoue, tous les controles passent.",
+    "postId": "6ab01052f047b03b9243ed17",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-24T21:30:00",
+    "scheduledForUtc": "2026-09-24T19:30:00Z"
   }
 ]
