@@ -286,10 +286,24 @@ def respiration(fichier, seuil="-32dB", mini=0.25):
     return total / d * 100.0
 
 
-# Mesure sur les videos FINIES : temoins 28 a 32 %, la video jugee mauvaise
-# 15 %. Le seuil est pose a 20 %, ce qui garde les trois recentes acceptables
-# (21, 24, 25 %) et arrete celle qui ne respire pas.
-SEUIL_RESPIRATION_PC = 20.0
+# Mesure sur les videos FINIES. Premiere calibration (aout) : temoins juges A
+# L'OREILLE a 28-32 %, video jugee mauvaise a 15 %, seuil pose a 20 %.
+#
+# RECALE LE 2026-09-20 SUR LES VUES REELLES, pas sur un jugement d'oreille.
+# Zernio donne le temps de visionnage, qui est ce qui fait les vues :
+#   56-onepotpates  348 767 vues, 11,0 s vues -> 18,2 % de silence
+#   42-tortillas     18 927 vues,  2,1 s vues -> 23,5 %
+#   74-brochettes    15 893 vues,  2,3 s vues -> 28,9 %
+#   66-poivrons      16 344 vues,  1,8 s vues -> 26,6 %
+# Autrement dit la plage 28-32 % prise pour reference en aout est celle qui
+# NE MARCHE PAS, et le seuil a 20 % interdisait de s'approcher de ce qui
+# marche : la meilleure video de la chaine aurait ete refusee par ce controle.
+#
+# Le seuil descend a 17 % : sous les 18,2 % prouves bons, au-dessus des 15 %
+# de la video jugee mauvaise, qui reste le seul plancher etabli. Ce qui compte
+# n'est d'ailleurs pas le total de silence mais sa REPARTITION - la gagnante a
+# 3 pauses de plus de 0,55 s, les perdantes en ont 16 a 21.
+SEUIL_RESPIRATION_PC = 17.0
 # Meme mesure, sur le tirage BRUT, pour le classement des tirages. Voir le
 # commentaire au point de classement pour la correspondance brut -> fini.
 SEUIL_RESPIRATION_BRUT_PC = 25.0

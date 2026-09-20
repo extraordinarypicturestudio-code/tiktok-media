@@ -45,10 +45,16 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "scripts"))
 sys.path.insert(0, str(RACINE / "channels" / "love_kitchen"))
 
+# Ces seuils DOIVENT etre ceux du montage, sinon l'audit accuse ce que la
+# barriere a laisse passer - ou l'inverse. Le 2026-09-20, le seuil de
+# respiration est descendu a 17 % dans montage_lovekitchen.py (recale sur les
+# vues reelles) et cette copie est restee a 20 % : l'audit a signale une
+# anomalie sur 85-patesboeuf que le montage venait d'accepter. Un seuil ne se
+# recopie pas, il se lit a sa source.
 SEUILS = {
     "duree_min": 60.0,      # Creator Rewards
     "derive": -2.5,         # dB, video finie
-    "respiration": 20.0,    # % de silence, video finie
+    "respiration": None,    # lu dans montage_lovekitchen (SEUIL_RESPIRATION_PC)
     "intonation": -25.0,    # % de variation de hauteur, debut -> fin
     "plancher": -55.0,      # dB, bruit de fond entre les mots
     "repetition": 0.30,
@@ -104,6 +110,7 @@ def main():
     a = ap.parse_args()
 
     import montage_lovekitchen as M
+    SEUILS["respiration"] = M.SEUIL_RESPIRATION_PC
     import detecter_texte_incruste as DET
     import controle_repetition as CR
 

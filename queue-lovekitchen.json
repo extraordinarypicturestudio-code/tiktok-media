@@ -695,34 +695,6 @@
     "publishedAt": "2026-09-19T19:31:29.803Z"
   },
   {
-    "id": "80-soupetomate",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
-    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "d4d2f7249f141862486f649b3448e9216799e99b356b9a7b5cb7e8dc22cfd60e",
-      "date": "2026-09-20T15:40:59Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 72.3s, 44.3 Mo",
-        "audio": "volume moyen -18.5 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme raconte une anecdote concernant la cuisine de son mari.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de tomates rôties avec un grilled cheese par une femme dans sa cuisine. | aliments : ['tomates', 'oignons', 'ail', 'herbes', 'bouillon', 'crème', 'pain', 'fromage'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 d4d2f7249f14 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T15:45:36Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour CHANGER L'INTRO seulement : elle ouvrait sur sophie_cuisine_micro, retiree le matin meme (cadrage fessier). La VOIX est celle que l'utilisateur a validee a l'oreille le 2026-09-20, extraite du rendu precedent et reinjectee telle quelle - aucun appel Gemini, aucune voix de secours. Audit complet rejoue sur le fichier final : tous les controles passent.",
-    "postId": "6ab000d52e21461f561b6082",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00Z"
-  },
-  {
     "id": "81-soupebrocoli",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
     "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
@@ -779,34 +751,6 @@
     "scheduledForUtc": "2026-09-23T19:30:00Z"
   },
   {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "a27f0716bdaddd9308965a92478f822fa59db11cbbabded2fbfcdd1d47dc8764",
-      "date": "2026-09-20T15:56:02Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 73.2s, 48.5 Mo",
-        "audio": "volume moyen -18.2 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une personne parle de cuisine avec un ton calme et posé.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un plat de rigatoni au boeuf cajun avec sauce crmeuse et parmesan. | aliments : ['boeuf', 'rigatoni', 'epices', 'creme', 'parmesan', 'persil', 'beurre'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 a27f0716bdad ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
-    "postId": "6ab003565bdfa7ef5fd330fe",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-24T21:30:00",
-    "scheduledForUtc": "2026-09-24T19:30:00Z"
-  },
-  {
     "id": "84-cookieglace",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
     "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
@@ -833,5 +777,53 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-20T21:30:00",
     "scheduledForUtc": "2026-09-20T19:30:00Z"
+  },
+  {
+    "id": "80-soupetomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
+    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "d1ae643e2eff2b3696f2528381fb816f2c7f8c412b6221a8bc9cdf6387aa8137",
+      "date": "2026-09-20T16:42:18Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.7s, 38.0 Mo",
+        "audio": "volume moyen -17.7 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme raconte une anecdote culinaire avec fond musical.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation d'une soupe de tomates rôties accompagnée de grilled cheese | aliments : ['tomates', 'oignons', 'ail', 'crème', 'pain', 'fromage', 'soupe'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 d1ae643e2eff ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T16:56:07Z",
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,85 -> 0,36 s, 21 blancs resserres, respiration 22 %, duree 61,7 s. Audit complet rejoue, tous les controles passent."
+  },
+  {
+    "id": "85-patesboeuf",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
+    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "f575f62f6f13f3f4c4b30615ff23e7aa5df6416c721c8ed9a5c36f57add5d06e",
+      "date": "2026-09-20T16:48:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.1s, 42.7 Mo",
+        "audio": "volume moyen -17.5 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de la cuisine et de son mari.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation de pâtes rigatoni au bœuf cajun et sauce crémeuse avec des épices. | aliments : ['bœuf', 'pâtes rigatoni', 'crème', 'parmesan', 'épices', 'huile'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 f575f62f6f13 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T16:56:07Z",
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,97 -> 0,28 s, 18 blancs resserres, respiration 18 %, duree 61,1 s. Audit complet rejoue, tous les controles passent."
   }
 ]
