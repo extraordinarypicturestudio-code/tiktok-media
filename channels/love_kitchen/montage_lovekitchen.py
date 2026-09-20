@@ -699,15 +699,30 @@ def historique_intros():
 
 
 def choisir_intro():
-    """Prochaine intro : on suit la rotation, jamais deux fois la meme d'affilee."""
+    """Prochaine intro : la moins recemment utilisee, jamais celle d'avant.
+
+    L'ancienne version avancait d'un cran a chaque montage (`len(h) % N`).
+    Elle tenait "jamais deux fois d'affilee", mais pas "toutes avant d'en
+    reprendre une" : un rendu refuse, un re-rendu, une entree d'historique en
+    double, et le compteur se decale sans que rien ne le rattrape. Le
+    2026-09-20 l'historique montrait cuisine_robe_bleue reprise sur 81 alors
+    que deux autres intros attendaient leur tour.
+
+    On classe donc par DERNIER USAGE REEL, ce que l'historique dit vraiment :
+    une intro jamais utilisee passe avant tout, et la derniere sortie passe en
+    dernier. Avec une seule intro dans la rotation la fonction la rend, faute
+    de mieux - c'est l'etat du vivier, pas un defaut de la rotation.
+    """
     h = historique_intros()
+    dernier_usage = {}
+    for rang, entree in enumerate(h):
+        dernier_usage[entree.get("intro")] = rang
     derniere = h[-1]["intro"] if h else None
-    rang = len(h) % len(ROTATION_INTROS)
-    for k in range(len(ROTATION_INTROS)):
-        choix = ROTATION_INTROS[(rang + k) % len(ROTATION_INTROS)]
-        if choix != derniere:
-            return choix
-    return ROTATION_INTROS[0]
+
+    candidats = [r for r in ROTATION_INTROS if r != derniere] or list(ROTATION_INTROS)
+    # -1 pour une intro jamais vue : elle passe devant toutes les autres.
+    candidats.sort(key=lambda r: (dernier_usage.get(r, -1), ROTATION_INTROS.index(r)))
+    return candidats[0]
 
 
 def noter_intro(ref, sortie):

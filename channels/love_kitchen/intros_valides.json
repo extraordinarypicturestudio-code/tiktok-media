@@ -121,6 +121,36 @@
       "note": "VERIFIE fps=2 : femme en cuisine jusqu'a 6.5s, SALLE DE BAIN des 7.0s, puis machine a laver et lessive OMO.",
       "personne": "C_blonde_cuisine_bois",
       "motif_retrait": "RETIREE le 2026-08-30 : signalement TikTok sur la video du 30/08 12h. La fenetre 0.0-6.5s ne montre PAS 'une femme en debardeur blanc au plan de travail' comme le disait cette fiche, mais une femme EN SOUS-VETEMENTS filmee de dos, le cadre centre sur le fessier, pendant les 6,5 secondes entieres. La fiche avait ete ecrite sans regarder la fenetre : la note 'VERIFIE fps=2' portait sur le moment ou la scene bascule en salle de bain (7.0s), pas sur ce que montre la partie gardee. Verifier ce que la fenetre MONTRE, pas seulement ou elle s'arrete."
+    },
+    {
+      "fichier": "sophie_7629114511261240606.mp4",
+      "motif": "femme en beige de dos devant le four, cadre centre sur le fessier 0-5.5s (meme personne et meme cuisine que sophie_cuisine_micro), puis aspirateur et salle de bain",
+      "examine_le": "2026-09-20"
+    },
+    {
+      "fichier": "sophie_7633604968594935070.mp4",
+      "motif": "femme assise face a l'ocean, cadre centre sur le fessier 0-4.5s - pas une cuisine - puis seau de serpillere et lavage d'ecran TV",
+      "examine_le": "2026-09-20"
+    },
+    {
+      "fichier": "sophie_7636555967148100895.mp4",
+      "motif": "meme plan que sophie_7629 (beige, fessier, four) 0-6s, puis evier et gants roses. Balaye jusqu'a 72s : que du menage",
+      "examine_le": "2026-09-20"
+    },
+    {
+      "fichier": "sophie_7638085633294044447.mp4",
+      "motif": "femme en sous-vetements sur un canape, cadre centre sur le fessier 0-6s, puis seau et lavage d'ecran TV",
+      "examine_le": "2026-09-20"
+    },
+    {
+      "fichier": "ssstik.io_1787305127318.mp4",
+      "motif": "femme en legging de dos devant un lavabo, cadre centre sur le fessier 0-5.5s, salle de bain, puis lavage de sol",
+      "examine_le": "2026-09-20"
+    },
+    {
+      "fichier": "ssstik.io_1787305466674.mp4",
+      "motif": "femme en short a une table, cadre centre sur le fessier 0-6.5s, puis WC, machine a laver et bidon OMO (logo lisible)",
+      "examine_le": "2026-09-20"
     }
   ],
   "_note_depot": [
@@ -128,5 +158,28 @@
     "le montage tourne sur GitHub Actions, PC eteint, et les sources entieres",
     "(12 a 33 Mo chacune) n'ont pas a monter dans le depot. Seules les trois",
     "intros EN CUISINE tournent (mesure des vues), les autres restent locales."
+  ],
+  "candidats": [
+    {
+      "ref": "cuisine_robe_imprimee",
+      "fichier": "cuisine_robe_imprimee.mp4",
+      "source": "ssstik.io_1787304998969.mp4",
+      "debut": 0.0,
+      "fin": 5.6,
+      "description": "femme en robe de chambre imprimee bleu/rouge, debout devant la gaziniere, plan large de toute la cuisine",
+      "verifie_le": "2026-09-20",
+      "note": "VERIFIE fps=2 sur 0-12s puis fps=4 sur 4.5-7s : la femme tient jusqu'a 5.75s, le NETTOYEUR VAPEUR apparait a 6.0s. Balaye jusqu'a 37.8s : plus aucun plan de femme. Cadrage LARGE, pas centre sur une partie du corps - le critere du 2026-09-20 passe. Aucun logo dans la fenetre (la boite 'BREAD' est generique).",
+      "personne": "D_blonde_robe_imprimee",
+      "en_attente": "decollete tres ouvert. Le cadrage respecte la regle, le contenu est plus expose que tout ce qui est deja sorti, et la chaine a deja recu un signalement TikTok le 2026-08-30. Attend un oui de l'utilisateur avant d'entrer dans ROTATION_INTROS."
+    }
+  ],
+  "_note_catalogue": [
+    "Au 2026-09-20 les 12 fichiers de 'Kirste videos' ont TOUS ete examines :",
+    "1 retenu (cuisine_robe_bleue), 1 en attente (cuisine_robe_imprimee),",
+    "2 retires pour cadrage fessier, 1 retire apres signalement TikTok,",
+    "1 interdit de reutilisation, 1 fichier supprime, 7 refuses.",
+    "Les 5 fichiers 'RAW - *' de Videos/Montage/Cuisine sont de l'ASMR de",
+    "cuisine (mains masculines, decoupe en exterieur) : aucune femme, pas des",
+    "intros. Le vivier est epuise - toute nouvelle intro demande du materiel neuf."
   ]
 }
