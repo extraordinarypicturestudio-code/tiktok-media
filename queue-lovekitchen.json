@@ -754,7 +754,7 @@
     "id": "81-soupebrocoli",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
     "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -772,13 +772,17 @@
       }
     },
     "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent."
+    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
+    "postId": "6ab0033a5bdfa7ef5fd32d91",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-22T21:30:00",
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
   },
   {
     "id": "83-bakedziti",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
     "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -796,13 +800,17 @@
       }
     },
     "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent."
+    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
+    "postId": "6ab003485bdfa7ef5fd32f65",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-23T21:30:00",
+    "scheduledForUtc": "2026-09-23T19:30:00Z"
   },
   {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -820,6 +828,10 @@
       }
     },
     "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent."
+    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
+    "postId": "6ab003565bdfa7ef5fd330fe",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-24T21:30:00",
+    "scheduledForUtc": "2026-09-24T19:30:00Z"
   }
 ]
