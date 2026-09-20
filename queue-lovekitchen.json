@@ -688,10 +688,10 @@
         "doublon": "sha256 270ab6b398a9 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T16:43:15Z",
+    "maj": "2026-09-20T15:47:12Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "vignette_auto": true,
-    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
+    "error": "ouvre sur une intro RETIREE le 2026-09-20 (sophie_cuisine_micro / sophie_cuisine_four, cadrage centre sur le fessier). Verifie sur la premiere image du clip, pas sur l'historique de rotation. A REMONTER avec cuisine_robe_bleue avant tout depot."
   },
   {
     "id": "81-soupebrocoli",
@@ -714,10 +714,10 @@
         "doublon": "sha256 ac655d637cbe ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-19T16:43:15Z",
+    "maj": "2026-09-20T15:47:12Z",
     "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
     "vignette_auto": true,
-    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
+    "error": "ouvre sur une intro RETIREE le 2026-09-20 (sophie_cuisine_micro / sophie_cuisine_four, cadrage centre sur le fessier). Verifie sur la premiere image du clip, pas sur l'historique de rotation. A REMONTER avec cuisine_robe_bleue avant tout depot."
   },
   {
     "id": "82-bananapudding",
@@ -778,7 +778,7 @@
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -795,9 +795,10 @@
         "doublon": "sha256 db1e356d9309 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T13:33:35Z",
+    "maj": "2026-09-20T15:47:12Z",
     "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
-    "vignette_auto": true
+    "vignette_auto": true,
+    "error": "ouvre sur une intro RETIREE le 2026-09-20 (sophie_cuisine_micro / sophie_cuisine_four, cadrage centre sur le fessier). Verifie sur la premiere image du clip, pas sur l'historique de rotation. A REMONTER avec cuisine_robe_bleue avant tout depot."
   },
   {
     "id": "80-soupetomate",
