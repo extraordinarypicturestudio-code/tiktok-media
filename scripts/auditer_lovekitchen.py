@@ -165,11 +165,25 @@ def main():
         if err:
             ecarts.append("fichier corrompu")
 
-        # --- voix, sur la video FINIE
+        # --- voix, sur la video finie MAIS SANS L'OUTRO.
+        # L'outro est muette par construction : laissee dans la mesure, elle
+        # tombe dans le dernier tiers et fait passer une voix a -1,3 dB pour
+        # une voix a -3,2 dB. Mesurer le bon signal, pas le fichier entier
+        # (constate le 2026-09-20 sur 84-cookieglace, refusee a tort).
+        voix_seule = f
         try:
-            dv = M.derive_voix(str(f))
-            rp = M.respiration(str(f))
-            it = M.intonation(str(f))
+            import tempfile
+            _d = duree(f) - 2.6
+            _o = pathlib.Path(tempfile.mkdtemp()) / "voix.mp4"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f),
+                            "-t", "%.2f" % _d, "-c", "copy", str(_o)], check=True)
+            voix_seule = _o
+        except Exception:
+            pass
+        try:
+            dv = M.derive_voix(str(voix_seule))
+            rp = M.respiration(str(voix_seule))
+            it = M.intonation(str(voix_seule))
             print("  voix         derive %+.1f dB | respiration %.0f %% | "
                   "intonation %+.0f %%" % (dv, rp, it))
             if dv < SEUILS["derive"]:

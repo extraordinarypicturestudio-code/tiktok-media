@@ -195,6 +195,15 @@ CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
                "highpass=f=70,"
                "dynaudnorm=f=400:g=31:p=0.9:m=3,"
                "acompressor=threshold=-20dB:ratio=2.5:attack=15:release=250:makeup=1.5,"
+               # -3 dB a 1,6 kHz : c'est la bande qui rend Sulafat "trop aigue"
+               # et dure a l'oreille. Reglage obtenu en comparant le spectre de
+               # la voix a celui de 06_fraises, la video a 252 432 vues dont
+               # l'utilisateur aimait la voix : elle y a 6,9 dB de MOINS dans
+               # cette bande. Avec cette cloche, l'ecart moyen sur dix bandes
+               # tombe de 1,7 a 1,37 dB et la bande dure colle a +0,2 dB.
+               # Ni decalage de hauteur (il dedouble la voix) ni filtre plus
+               # large (il assombrit les aigus sous le temoin).
+               "equalizer=f=1600:width_type=o:w=1.4:g=-3,"
                "loudnorm=I=-14:TP=-1.5:LRA=9")
 
 
@@ -351,14 +360,17 @@ def gemini_tts(texte, dest, travail):
     # (-70 % d'intonation). Entre la presentatrice et le chuchotement, ce que
     # l'utilisateur veut est une conversation : ton NORMAL, sans jeu.
     style = ("Lis ce texte en francais comme une femme d'une trentaine d'annees "
-             "qui raconte un souvenir a une amie, en conversation normale. Voix "
-             "naturelle, chaleureuse, plutot dans le medium-grave, sans forcer. "
-             "Pas de ton de presentatrice ni d'enthousiasme, pas d'emphase, pas de "
-             "voix aigue ou chantante - mais pas de chuchotement non plus. Elle "
-             "parle simplement, avec les inflexions normales de quelqu'un qui "
-             "raconte. Debit naturel, ni presse ni trainant. Petites pauses en fin "
-             "de phrase, un peu plus longues entre les paragraphes. La derniere "
-             "question se dit simplement, avec un sourire dans la voix : "
+             "qui raconte un souvenir a une amie. On doit croire une vraie "
+             "personne, pas une lecture. Voix naturelle et chaleureuse, dans le "
+             "medium, sans forcer. Intonation NATURELLE ET MESUREE : elle suit le "
+             "sens, elle ne le surjoue pas - pas de ton de presentatrice, pas de "
+             "voix chantante, pas d'emphase sur chaque mot, mais pas de "
+             "chuchotement ni de voix plate non plus. Garde la MEME energie du "
+             "debut a la fin, sans t'animer au debut puis retomber. Debit "
+             "regulier, ni presse ni trainant. De vraies respirations : une "
+             "courte pause en fin de phrase, un peu plus longue entre les "
+             "paragraphes, jamais au milieu d'une phrase. La derniere question "
+             "se dit simplement, avec un sourire dans la voix : "
              + texte_lu)
     corps = json.dumps({
         "contents": [{"parts": [{"text": style}]}],
