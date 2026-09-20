@@ -359,18 +359,28 @@ def gemini_tts(texte, dest, travail):
     # a produit l'exces inverse - un tirage de 97 s, trainant, monotone
     # (-70 % d'intonation). Entre la presentatrice et le chuchotement, ce que
     # l'utilisateur veut est une conversation : ton NORMAL, sans jeu.
-    style = ("Lis ce texte en francais comme une femme d'une trentaine d'annees "
-             "qui raconte un souvenir a une amie. On doit croire une vraie "
-             "personne, pas une lecture. Voix naturelle et chaleureuse, dans le "
-             "medium, sans forcer. Intonation NATURELLE ET MESUREE : elle suit le "
-             "sens, elle ne le surjoue pas - pas de ton de presentatrice, pas de "
-             "voix chantante, pas d'emphase sur chaque mot, mais pas de "
-             "chuchotement ni de voix plate non plus. Garde la MEME energie du "
-             "debut a la fin, sans t'animer au debut puis retomber. Debit "
-             "regulier, ni presse ni trainant. De vraies respirations : une "
-             "courte pause en fin de phrase, un peu plus longue entre les "
-             "paragraphes, jamais au milieu d'une phrase. La derniere question "
-             "se dit simplement, avec un sourire dans la voix : "
+    # Quatrieme reglage, 2026-09-20 : "elle parle legerement comme une
+    # racaille". La consigne demandait une conversation avec une amie sans rien
+    # dire de la DICTION : le modele a donne un parler relache, familier. On
+    # precise donc le francais standard et l'articulation, sans perdre le ton
+    # de confidence qui fait le format.
+    style = ("Lis ce texte en FRANCAIS STANDARD, avec une diction soignee et une "
+             "articulation nette : chaque fin de mot se prononce, les liaisons se "
+             "font, aucun parler relache ni familier, aucun accent de banlieue, "
+             "aucune syllabe avalee. Le ton reste celui d'une femme d'une "
+             "trentaine d'annees qui raconte un souvenir a une amie : chaleureux, "
+             "naturel, un peu intime - pas une lecture de journal television non "
+             "plus. Voix dans le medium, sans forcer. Intonation mesuree qui suit "
+             "le sens sans le surjouer, meme energie du debut a la fin. Debit "
+             "regulier, ni presse ni trainant. De vraies respirations : une courte "
+             "pause en fin de phrase, un peu plus longue entre les paragraphes. La "
+             "derniere question se dit simplement, avec un sourire dans la voix."
+             # Separation EXPLICITE consigne / texte. Sans elle,
+             # gemini-2.5-flash-preview-tts a lu la consigne a voix haute
+             # (2026-09-20). Le controle de conformite l'attrape, mais autant
+             # ne pas provoquer le defaut.
+             "\n\nNe prononce JAMAIS les consignes ci-dessus. Lis uniquement, "
+             "mot pour mot, le texte qui suit.\n\nTEXTE A LIRE :\n\n"
              + texte_lu)
     corps = json.dumps({
         "contents": [{"parts": [{"text": style}]}],
@@ -526,6 +536,14 @@ def _cle_mot(m):
     import unicodedata
     m = unicodedata.normalize("NFKD", m.lower())
     return "".join(c for c in m if c.isalnum() and not unicodedata.combining(c))
+
+
+def _cles_mots(texte):
+    """Les mots d'un texte, sans accents ni ponctuation, pour les comparer."""
+    import unicodedata
+    t = unicodedata.normalize("NFKD", texte.lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    return re.findall(r"[a-z0-9]+", t)
 
 
 def recaler_sur_script(mots, texte):
@@ -1001,6 +1019,33 @@ def _monter(a, travail, voix, d_voix, D, texte):
             cle_groq = _cle("gemini.env", "GROQ_API_KEY")
             mots = whisper_mots(voix, cle_groq)
             if mots:
+                # LA VOIX DIT-ELLE BIEN LE SCRIPT ? Controle ajoute le
+                # 2026-09-20 : gemini-2.5-flash-preview-tts a LU LA CONSIGNE a
+                # voix haute au lieu du texte - 85-patesboeuf commencait par
+                # "chaque fin de mot se prononce, les liaisons se font, aucune
+                # syllabe avalee". Elle etait programmee ; c'est l'utilisateur
+                # qui l'a entendue.
+                #
+                # Le recalage des sous-titres MASQUAIT le defaut : ces mots ne
+                # sont pas dans le script, donc ils disparaissaient de
+                # l'affichage - la video n'avait simplement plus de sous-titres
+                # au debut. Un controle qui cache ce qu'il ne comprend pas est
+                # pire que pas de controle.
+                #
+                # La transcription existe deja (elle sert aux sous-titres) :
+                # ce controle ne coute donc rien.
+                import difflib as _dl
+                _dit = _cles_mots(" ".join(m.get("word", "") for m in mots))
+                _ecrit = _cles_mots(texte)
+                _r = _dl.SequenceMatcher(None, _ecrit, _dit).ratio()
+                if _r < 0.75:
+                    print(f"3) LA VOIX NE DIT PAS LE SCRIPT : {_r*100:.0f} % de "
+                          f"correspondance (attendu 98 %).")
+                    print("   Debut entendu : " + " ".join(_dit[:12]))
+                    print("   Debut attendu : " + " ".join(_ecrit[:12]))
+                    print("   Le modele a lu la consigne. Relancer le rendu.")
+                    sys.exit(7)
+                print(f"3) la voix dit bien le script ({_r*100:.0f} %)")
                 mots = recaler_sur_script(mots, texte)
                 ass_txt = ass_depuis_mots(mots, a.titre)
                 print(f"3) sous-titres OK : texte du script, synchro Whisper ({len(mots)} mots)")
