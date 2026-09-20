@@ -682,9 +682,12 @@ def segment_corps(source, dest, t_debut, t_duree_cible):
 #
 # Seules les intros EN CUISINE entrent dans la rotation : hors cuisine, la
 # mesure d'aout donnait 265 a 1 388 vues contre 4 153 a 249 655.
-ROTATION_INTROS = ["cuisine_robe_bleue", "sophie_cuisine_micro",
-                   "cuisine_robe_bleue", "sophie_cuisine_micro",
-                   "sophie_cuisine_four"]
+# Les deux intros "sophie" ont ete RETIREES le 2026-09-20 : cadrage centre
+# sur le fessier pendant toute la fenetre. Elles avaient ete gardees en aout
+# sur le seul critere "voit-on une femme". La rotation tombe donc a UNE
+# intro - celle des trois records (756 K, 256 K, 145 K) - en attendant de
+# nouvelles fenetres validees a l'oeil.
+ROTATION_INTROS = ["cuisine_robe_bleue"]
 HISTORIQUE_INTROS = ICI / "intros_historique.json"
 
 

@@ -29,26 +29,6 @@
       "verifie_le": "2026-08-21",
       "note": "VERIFIE image par image (fps=2) : femme visible jusqu'a 5.5s, le NETTOYEUR VAPEUR apparait des 6.0s. Une premiere version de ce manifeste annoncait 7.5s (extrapolee d'un echantillonnage a 4s) et laissait 1.5s de vapeur dans l'intro.",
       "personne": "A_brune_robe_bleue"
-    },
-    {
-      "ref": "sophie_cuisine_micro",
-      "fichier": "sophie_cuisine_micro.mp4",
-      "debut": 0.0,
-      "fin": 5.5,
-      "description": "femme en beige devant la gaziniere, cuisine claire et micro-ondes encastre",
-      "verifie_le": "2026-08-21",
-      "note": "VERIFIE fps=2 : femme jusqu'a 5.5s, EVIER + GANTS ROSES (menage) des 6.0s. 720x1280, sera remis a l'echelle.",
-      "personne": "F_beige_cuisine_creme"
-    },
-    {
-      "ref": "sophie_cuisine_four",
-      "fichier": "sophie_cuisine_four.mp4",
-      "debut": 0.0,
-      "fin": 5.0,
-      "description": "femme en beige penchee vers le four, meme cuisine claire",
-      "verifie_le": "2026-08-21",
-      "note": "VERIFIE fps=4 : femme jusqu'a 5.0s, ASPIRATEUR des 5.25s. Meme cuisine et meme tenue que sophie_cuisine_micro : ne PAS enchainer les deux.",
-      "personne": "F_beige_cuisine_creme"
     }
   ],
   "_note_criteres": [
@@ -89,6 +69,30 @@
       "note": "VERIFIE fps=2 : femme en cuisine jusqu'a 8.0s, LAVABO/SALLE DE BAIN des 8.5s. Seule fenetre qui tient les 7s pleines. C'est aussi la seule ou elle cuisine VRAIMENT (elle coupe des tomates) : a privilegier.",
       "personne": "B_blonde_cuisine_blanche",
       "motif_retrait": "fichier absent du dossier source au 2026-08-25 (supprime par l'utilisateur)"
+    },
+    {
+      "ref": "sophie_cuisine_micro",
+      "fichier": "sophie_cuisine_micro.mp4",
+      "debut": 0.0,
+      "fin": 5.5,
+      "description": "femme en beige devant la gaziniere, cuisine claire et micro-ondes encastre",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=2 : femme jusqu'a 5.5s, EVIER + GANTS ROSES (menage) des 6.0s. 720x1280, sera remis a l'echelle.",
+      "personne": "F_beige_cuisine_creme",
+      "retire_le": "2026-09-20",
+      "raison_retrait": "cadrage centre sur le fessier pendant toute la fenetre. Garde en aout sur le seul critere 'voit-on une femme' ; l'utilisateur l'a entendu et vu sur 85-patesboeuf et a demande le retrait."
+    },
+    {
+      "ref": "sophie_cuisine_four",
+      "fichier": "sophie_cuisine_four.mp4",
+      "debut": 0.0,
+      "fin": 5.0,
+      "description": "femme en beige penchee vers le four, meme cuisine claire",
+      "verifie_le": "2026-08-21",
+      "note": "VERIFIE fps=4 : femme jusqu'a 5.0s, ASPIRATEUR des 5.25s. Meme cuisine et meme tenue que sophie_cuisine_micro : ne PAS enchainer les deux.",
+      "personne": "F_beige_cuisine_creme",
+      "retire_le": "2026-09-20",
+      "raison_retrait": "cadrage centre sur le fessier pendant toute la fenetre. Garde en aout sur le seul critere 'voit-on une femme' ; l'utilisateur l'a entendu et vu sur 85-patesboeuf et a demande le retrait."
     }
   ],
   "refusees": [
