@@ -58,6 +58,8 @@ FILE = RACINE / "queue-lovekitchen.json"
 # etape n'a plus rien a faire. Laissee neutre plutot que supprimee, pour que la
 # raison reste lisible ici.
 SOUFFLE = "anull"
+# id -> modele TTS qui a produit la voix, rempli par le controle de voix
+MODELE_RETENU = {}
 
 INTERESSANT = re.compile(
     r"essai|retenue|intonation|respiration|constance|APLATIT|RESPIRE"
@@ -110,6 +112,20 @@ def monter(conf, sortie, voix_secours=False):
                   % retenue[-1].split(":")[-1].strip()[:40])
             sortie.unlink(missing_ok=True)
             return False, j
+
+    # QUEL MODELE a produit cette voix. La cascade en a trois (pro, flash-3.1,
+    # flash-2.5) et bascule silencieusement quand un quota tombe. Le nom de
+    # voix reste "Sulafat" mais le rendu change : le 2026-09-20 l'utilisateur
+    # entend deux voix differentes entre deux videos, et la mesure lui donne
+    # raison - centre spectral 2472 Hz contre 1793, distance de timbre 53 la
+    # ou deux tirages du meme modele sont a 20. Le modele n'etait ecrit nulle
+    # part : impossible de savoir apres coup lequel avait fait quoi. Il est
+    # desormais trace, pour qu'on puisse au moins constater.
+    if retenue:
+        m = re.search(r"\(([^)]*tts[^)]*)\)", retenue[-1])
+        if m:
+            MODELE_RETENU[pathlib.Path(sortie).stem] = m.group(1)
+            print("      moteur de voix : %s" % m.group(1))
     return True, j
 
 
