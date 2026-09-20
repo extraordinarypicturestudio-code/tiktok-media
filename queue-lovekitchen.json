@@ -720,58 +720,6 @@
     "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
   },
   {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "8b524e0fc800aa30f7951db82004a7d5e9540473883b20594dc41ac94bc99320",
-      "date": "2026-09-19T12:31:43Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 72.0s, 48.3 Mo",
-        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de la preparation de boeuf au restaurant",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation de rigatoni au boeuf avec une sauce cremeuse et du parmesan. | aliments : ['boeuf', 'rigatoni', 'creme', 'parmesan', 'epices', 'beurre'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 8b524e0fc800 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-19T16:43:15Z",
-    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "vignette_auto": true,
-    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
-  },
-  {
-    "id": "80-soupetomate",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
-    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "40f1f32faaa9f6162fc9d859d5817fdb3064d7d2e99532b39eef3df37cc2c5b6",
-      "date": "2026-09-19T12:33:07Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 66.9s, 40.6 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme raconte une anecdote culinaire en préparant un repas.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de tomates roties accompagnee d'un grilled cheese. | aliments : ['tomates', 'oignons', 'ail', \"huile d'olive\", 'bouillon', 'creme', 'sucre', 'fromage', 'pain', 'soupe'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 40f1f32faaa9 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-19T16:43:15Z",
-    "note": "Sous-titres refaits sur le script le 2026-09-19 ; audit complet valide.",
-    "vignette_auto": true,
-    "error": "son a refaire : parasite au debut, voix hachee par la porte anti-souffle, pauses mecaniques - juge par l'utilisateur le 2026-09-19. A revoicer."
-  },
-  {
     "id": "82-bananapudding",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
     "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
@@ -825,5 +773,61 @@
     "vignette_auto": false,
     "scheduledFor": "2026-09-20T21:30:00",
     "scheduledForUtc": "2026-09-20T19:30:00Z"
+  },
+  {
+    "id": "80-soupetomate",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
+    "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "35f3902a487d706e84807c74e7457cc4c05edb80eb265d9c87d1ce5d8e8bb471",
+      "date": "2026-09-20T10:06:55Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 71.9s, 44.2 Mo",
+        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de son mari qui aime la soupe",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe de tomates roties accompagnee d'un sandwich grilled cheese | aliments : ['tomates', 'oignons', 'ail', 'bouillon', 'creme', 'pain', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 35f3902a487d ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T10:21:40Z",
+    "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
+    "postId": "6aafb3b7c1e9500383f9b1b9",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-21T21:30:00",
+    "scheduledForUtc": "2026-09-21T19:30:00Z"
+  },
+  {
+    "id": "85-patesboeuf",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
+    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "db1e356d9309c5597f454a46f545f3349ee88fd2b1a3f8598fc952499be1aca0",
+      "date": "2026-09-20T10:17:32Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 72.6s, 48.7 Mo",
+        "audio": "volume moyen -17.9 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme explique la recette de cuisine de son mari.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un plat de rigatoni au boeuf avec une sauce cremeuse et du parmesan. | aliments : ['rigatoni', 'boeuf', 'epices', 'creme', 'parmesan'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 db1e356d9309 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T10:21:40Z",
+    "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
+    "postId": "6aafb3c55e65f8f4979a2d0f",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-22T21:30:00",
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
   }
 ]
