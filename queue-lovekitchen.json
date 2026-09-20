@@ -695,62 +695,6 @@
     "publishedAt": "2026-09-19T19:31:29.803Z"
   },
   {
-    "id": "81-soupebrocoli",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
-    "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "fc9e929019595143beb355fa69f7666579d31aaf2408be5107b71b8e5980caaf",
-      "date": "2026-09-20T15:53:06Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 70.3s, 46.8 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une personne parle d'une recette avec du brocoli et du beurre.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de brocoli et fromage avec des croutons, accompagnee d'une histoire de couple. | aliments : ['brocoli', 'beurre', 'oignon', 'farine', 'bouillon', 'lait', 'fromage', 'pain', 'croutons'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 fc9e92901959 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
-    "postId": "6ab0033a5bdfa7ef5fd32d91",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-22T21:30:00",
-    "scheduledForUtc": "2026-09-22T19:30:00Z"
-  },
-  {
-    "id": "83-bakedziti",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
-    "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "f714763ee47ec9f66ef9ef33dba36070a3db94ab224c3d699ad8a55b05aa8e83",
-      "date": "2026-09-20T15:54:42Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 69.4s, 49.0 Mo",
-        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une personne raconte une anecdote culinaire avec des gratin de pates",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de pâtes gratinées à la sauce tomate et viande hachée, type baked ziti. | aliments : ['pâtes', 'viande hachée', 'poivrons', 'oignons', 'sauce tomate', 'crème', 'fromage râpé', 'herbes'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 f714763ee47e ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T16:00:15Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour changer l'intro : elle ouvrait sur sophie_cuisine_micro/four, retirees le matin meme. Voix d'origine (Gemini, validee a l'oreille le 2026-09-20) extraite du rendu precedent et reinjectee telle quelle, aucun appel TTS. Premiere image reverifiee a l'oeil : cuisine_robe_bleue. Audit complet rejoue sur le fichier final, tous les controles passent.",
-    "postId": "6ab003485bdfa7ef5fd32f65",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-23T21:30:00",
-    "scheduledForUtc": "2026-09-23T19:30:00Z"
-  },
-  {
     "id": "84-cookieglace",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
     "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
@@ -833,5 +777,53 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-24T21:30:00",
     "scheduledForUtc": "2026-09-24T19:30:00Z"
+  },
+  {
+    "id": "81-soupebrocoli",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
+    "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c9a63a4dfbe071f38fdc36cb99130167202a90a6cafdf024a335db71c0ee8deb",
+      "date": "2026-09-20T17:03:19Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.2s, 44.3 Mo",
+        "audio": "volume moyen -18.0 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de brocoli et de sa recette de cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe au brocoli et au fromage avec des croutons. | aliments : ['brocoli', 'beurre', 'huile', 'bouillon', 'lait', 'fromage', 'pain', 'epices'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c9a63a4dfbe0 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T17:08:48Z",
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues), meme voix Gemini Sulafat. pause 0,55 -> 0,36 s, pauses longues 21 -> 1, respiration 21 %, duree 65,2 s. Cadence alignee sur la gagnante."
+  },
+  {
+    "id": "83-bakedziti",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
+    "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3e7c72e8d1b8be8f8cd8831528ef1251a95f0c32eccba4afbe82731bdf5db1e2",
+      "date": "2026-09-20T17:04:39Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.6s, 47.0 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.25 ; contenu sonore : Une femme parle de cuisine et d'une sauce tomate.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un plat de pates gratinees type baked ziti avec viande hachee, sauce tomate et fromage. | aliments : ['pates', 'viande hachee', 'poivrons', 'sauce tomate', 'creme', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3e7c72e8d1b8 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T17:08:48Z",
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues), meme voix Gemini Sulafat. pause 0,62 -> 0,45 s, pauses longues 21 -> 15, respiration 20 %, duree 65,6 s. AMELIORATION PARTIELLE : cette voix a trop de blancs longs pour etre resserree davantage sans passer sous les 60 s. A refaire avec une voix neuve des que le quota Gemini revient."
   }
 ]
