@@ -754,7 +754,7 @@
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "on_hold",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -771,12 +771,11 @@
         "doublon": "sha256 f575f62f6f13 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T16:56:07Z",
+    "maj": "2026-09-20T18:18:54Z",
     "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres et l'amorce mise en fondu. pause 0,97 -> 0,28 s, 18 blancs resserres, respiration 18 %, duree 61,1 s. Audit complet rejoue, tous les controles passent.",
-    "postId": "6ab01052f047b03b9243ed17",
+    "postId": null,
     "vignette_auto": true,
-    "scheduledFor": "2026-09-24T21:30:00",
-    "scheduledForUtc": "2026-09-24T19:30:00Z"
+    "error": "LA VOIX LIT LES CONSIGNES DU PROMPT A VOIX HAUTE. Les 4,5 premieres secondes disent : 'Chaque fin de mot se prononce, les liaisons se font. Aucun parler relache ni familier. Aucun accent de banlieue, aucune syllabe avalee.' Signale par l'utilisateur le 2026-09-20. NE PAS PROGRAMMER avant correction."
   },
   {
     "id": "81-soupebrocoli",
