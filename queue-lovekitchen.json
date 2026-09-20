@@ -804,7 +804,7 @@
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -822,6 +822,10 @@
       }
     },
     "maj": "2026-09-20T15:45:36Z",
-    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour CHANGER L'INTRO seulement : elle ouvrait sur sophie_cuisine_micro, retiree le matin meme (cadrage fessier). La VOIX est celle que l'utilisateur a validee a l'oreille le 2026-09-20, extraite du rendu precedent et reinjectee telle quelle - aucun appel Gemini, aucune voix de secours. Audit complet rejoue sur le fichier final : tous les controles passent."
+    "note": "Passe le controle visuel complet. Remontee le 2026-09-20 pour CHANGER L'INTRO seulement : elle ouvrait sur sophie_cuisine_micro, retiree le matin meme (cadrage fessier). La VOIX est celle que l'utilisateur a validee a l'oreille le 2026-09-20, extraite du rendu precedent et reinjectee telle quelle - aucun appel Gemini, aucune voix de secours. Audit complet rejoue sur le fichier final : tous les controles passent.",
+    "postId": "6ab000d52e21461f561b6082",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-21T21:30:00",
+    "scheduledForUtc": "2026-09-21T19:30:00Z"
   }
 ]
