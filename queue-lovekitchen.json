@@ -695,34 +695,6 @@
     "publishedAt": "2026-09-19T19:31:29.803Z"
   },
   {
-    "id": "84-cookieglace",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
-    "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "eda6adab6d310615c022b30a60466507a6c51ccf7202a8d1561f2324285f7461",
-      "date": "2026-09-20T10:02:21Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 67.0s, 42.8 Mo",
-        "audio": "volume moyen -18.3 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de cuisine avec une musique de fond",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation de cookies au beurre noisette et pepites de chocolat servis avec de la glace a la vanille. | aliments : ['cookie', 'beurre', 'sucre', 'oeuf', 'chocolat', 'farine', 'glace vanille'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 eda6adab6d31 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T10:02:30Z",
-    "note": "Voix validee a l'oreille par l'utilisateur le 2026-09-20 (diction soignee, EQ 1,6 kHz).",
-    "postId": "6aafaf3a5bb1942f34af1129",
-    "vignette_auto": false,
-    "scheduledFor": "2026-09-20T21:30:00",
-    "scheduledForUtc": "2026-09-20T19:30:00Z"
-  },
-  {
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
@@ -833,5 +805,29 @@
     "vignette_auto": true,
     "scheduledFor": "2026-09-24T21:30:00",
     "scheduledForUtc": "2026-09-24T19:30:00Z"
+  },
+  {
+    "id": "84-cookieglace",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/84-cookieglace.mp4",
+    "caption": "Il m'avait juré qu'il n'avait plus faim. Il a pris le plus gros 🍪🍨\n\n#cookie #beurrenoisette #pepitesdechocolat #glacevanille #cuisinemaison #storytime #pourtoi",
+    "status": "pending",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "e1a737156a7464a890fb79f9a101685d79bc35c92ca9b2ee8a8941deb4d38fa3",
+      "date": "2026-09-20T16:39:22Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 61.7s, 40.3 Mo",
+        "audio": "volume moyen -17.8 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de cuisine et raconte une histoire.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation de cookies aux pépites de chocolat servis avec de la glace à la vanille. | aliments : ['beurre', 'sucre', 'oeuf', 'vanille', 'farine', 'bicarbonate', 'pépites de chocolat', 'cookies', 'glace vanille'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 e1a737156a74 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "maj": "2026-09-20T16:40:05Z",
+    "note": "Passe le controle visuel complet. Voix RECADENCEE le 2026-09-20 sur 56-onepotpates (348 767 vues, 11 s vues) : meme voix Gemini Sulafat, seuls les blancs sont resserres. Mesure avant -> apres : pause 0,47 -> 0,32 s (gagnante 0,28), pauses longues 16 -> 1 (gagnante 3), silence 29,3 -> 21,5 % (gagnante 18,2), amorce -14,3 -> -35,4 dB (gagnante -48,6). Duree 61,7 s, au-dessus des 60 s Creator Rewards."
   }
 ]
