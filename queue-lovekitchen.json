@@ -806,7 +806,7 @@
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
+    "status": "pending",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -823,9 +823,8 @@
         "doublon": "sha256 db1e356d9309 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T12:43:33Z",
+    "maj": "2026-09-20T13:33:35Z",
     "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
-    "vignette_auto": true,
-    "error": "la voix lit la CONSIGNE au lieu du script : 'chaque fin de mot se prononce, les liaisons se font...' - tirage gemini-2.5-flash. A refaire."
+    "vignette_auto": true
   }
 ]
