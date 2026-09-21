@@ -807,7 +807,7 @@
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -824,11 +824,10 @@
         "doublon": "sha256 689fc9a9b8c8 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T18:40:13Z",
+    "maj": "2026-09-21T19:58:51Z",
     "note": "Passe le controle visuel complet. Voix recadencee sur 56-onepotpates (348 767 vues) et SPECTRE DU DEBUT cale sur elle : l'utilisateur signalait un bruit de fond dans les 2 premieres secondes, mesure comme un exces de 6-11 kHz a l'attaque. Amorce portee a 380 ms. pause 0,31 s, 0 pause longue, souffle de debut -0,4 -> -2,5 dB, 61,1 s.",
     "postId": "6ab028bfcfd38fd63b7ea8d4",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-21T21:30:00",
-    "scheduledForUtc": "2026-09-21T19:30:00Z"
+    "publishedAt": "2026-09-21T19:31:31.696Z"
   }
 ]
