@@ -340,6 +340,38 @@ def derive_voix(fichier, fen=6.0):
 
 
 # ----------------------------------------------------------------- voix
+# LA CONSIGNE DE LECTURE, seule. Elle etait construite A L'INTERIEUR de
+# gemini_tts(), collee au texte a lire. Le controle "la voix lit-elle la
+# consigne ?" ajoute dans _monter() la cherchait sous le nom `style` - qui
+# n'existe pas dans _monter(). NameError, avalee par le `except` qui entoure
+# les sous-titres : le controle ne tournait pas, ET les sous-titres
+# retombaient sur des timings ESTIMES au lieu d'etre cales sur la voix.
+# 80, 81 et 83 ont ete rendues ainsi le 2026-09-20 ; la derive se voit a
+# l'image ("DES" affiche quand la voix dit "J'avais"). Constate le 2026-09-21.
+#
+# Et il fallait bien la consigne SEULE : `style` se termine par le texte du
+# script. Cherche tel quel, il aurait retrouve des phrases du script dans la
+# voix et refuse TOUS les rendus.
+CONSIGNE_VOIX = ("Lis ce texte en FRANCAIS STANDARD, avec une diction soignee et une "
+             "articulation nette : chaque fin de mot se prononce, les liaisons se "
+             "font, aucun parler relache ni familier, aucun accent de banlieue, "
+             "aucune syllabe avalee. Le ton reste celui d'une femme d'une "
+             "trentaine d'annees qui raconte un souvenir a une amie : chaleureux, "
+             "naturel, un peu intime - pas une lecture de journal television non "
+             "plus. Voix dans le medium, sans forcer. Intonation mesuree qui suit "
+             "le sens sans le surjouer, meme energie du debut a la fin. Debit "
+             "regulier, ni presse ni trainant. De vraies respirations : une courte "
+             "pause en fin de phrase, un peu plus longue entre les paragraphes. La "
+             "derniere question se dit simplement, avec un sourire dans la voix.")
+SEPARATEUR_CONSIGNE = ("\n\nNe prononce JAMAIS les consignes ci-dessus. Lis uniquement, "
+                       "mot pour mot, le texte qui suit.\n\nTEXTE A LIRE :\n\n")
+
+
+def consigne_style(texte=None):
+    """La consigne telle qu'envoyee, sans le texte : ce qu'on ne doit PAS entendre."""
+    return CONSIGNE_VOIX + SEPARATEUR_CONSIGNE
+
+
 MODELES_TTS = ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview",
                "gemini-2.5-flash-preview-tts"]
 VOIX_REFERENCE = ICI / "voix_reference.json"
@@ -391,24 +423,7 @@ def gemini_tts(texte, dest, travail):
     # dire de la DICTION : le modele a donne un parler relache, familier. On
     # precise donc le francais standard et l'articulation, sans perdre le ton
     # de confidence qui fait le format.
-    style = ("Lis ce texte en FRANCAIS STANDARD, avec une diction soignee et une "
-             "articulation nette : chaque fin de mot se prononce, les liaisons se "
-             "font, aucun parler relache ni familier, aucun accent de banlieue, "
-             "aucune syllabe avalee. Le ton reste celui d'une femme d'une "
-             "trentaine d'annees qui raconte un souvenir a une amie : chaleureux, "
-             "naturel, un peu intime - pas une lecture de journal television non "
-             "plus. Voix dans le medium, sans forcer. Intonation mesuree qui suit "
-             "le sens sans le surjouer, meme energie du debut a la fin. Debit "
-             "regulier, ni presse ni trainant. De vraies respirations : une courte "
-             "pause en fin de phrase, un peu plus longue entre les paragraphes. La "
-             "derniere question se dit simplement, avec un sourire dans la voix."
-             # Separation EXPLICITE consigne / texte. Sans elle,
-             # gemini-2.5-flash-preview-tts a lu la consigne a voix haute
-             # (2026-09-20). Le controle de conformite l'attrape, mais autant
-             # ne pas provoquer le defaut.
-             "\n\nNe prononce JAMAIS les consignes ci-dessus. Lis uniquement, "
-             "mot pour mot, le texte qui suit.\n\nTEXTE A LIRE :\n\n"
-             + texte_lu)
+    style = CONSIGNE_VOIX + SEPARATEUR_CONSIGNE + texte_lu
     corps = json.dumps({
         "contents": [{"parts": [{"text": style}]}],
         "generationConfig": {"responseModalities": ["AUDIO"],
@@ -1078,6 +1093,25 @@ def _monter(a, travail, voix, d_voix, D, texte):
             str(base)], cwd=travail)
 
         # 3) sous-titres
+        #
+        # CALAGE. CHAINE_VOIX commence par un `silenceremove` qui coupe le blanc
+        # de tete - mais il s'applique au MIXAGE FINAL, alors que Whisper
+        # transcrit la voix AVANT. Tout blanc de tete decale donc le son par
+        # rapport aux sous-titres : mesure le 2026-09-21 sur 80-soupetomate,
+        # la voix donnee au montage parle a 0,319 s, le son de la video finie
+        # a 0,099 s. L'image garde 0,22 s de retard, soit UN MOT : affiche
+        # "MARI" quand la voix dit "m'avait". Les voix Gemini commencent
+        # souvent par un blanc : le defaut n'est probablement pas neuf.
+        #
+        # On coupe donc ce blanc UNE FOIS, avant tout : Whisper et le mixage
+        # recoivent le meme fichier. Le silenceremove de CHAINE_VOIX ne trouve
+        # plus rien a couper ensuite (il est idempotent) et reste en place
+        # pour les autres usages de la chaine.
+        voix_calee = travail / "voix_calee.wav"
+        ff(["-y", "-i", str(voix), "-af",
+            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05",
+            str(voix_calee)], cwd=travail)
+        voix = voix_calee
         ass_txt = None
         try:
             cle_groq = _cle("gemini.env", "GROQ_API_KEY")
@@ -1122,7 +1156,7 @@ def _monter(a, travail, voix, d_voix, D, texte):
                 # on connait son texte exact, il suffit de le chercher. Cinq
                 # mots consecutifs de la consigne dans la transcription et le
                 # rendu est refuse, ou qu'ils se trouvent.
-                _consigne = _cles_mots(style)
+                _consigne = _cles_mots(consigne_style())
                 _vus = set(zip(_dit, _dit[1:], _dit[2:], _dit[3:], _dit[4:]))
                 _fuite = next((g for g in zip(_consigne, _consigne[1:], _consigne[2:],
                                               _consigne[3:], _consigne[4:]) if g in _vus),

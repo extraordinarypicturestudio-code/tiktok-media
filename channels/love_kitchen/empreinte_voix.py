@@ -81,10 +81,14 @@ def _charger(f, sans_outro=True):
     return y, np
 
 
-def mesurer(f):
-    """Empreinte d'un fichier. Tout en flottants, tout comparable."""
+def mesurer(f, sans_outro=True):
+    """Empreinte d'un fichier. Tout en flottants, tout comparable.
+
+    `sans_outro=False` pour une piste de voix seule (essai de modele) : elle
+    n'a pas d'outro, et en couper 2,6 s amputerait la derniere phrase.
+    """
     import librosa
-    y, np = _charger(f)
+    y, np = _charger(f, sans_outro)
 
     Sx = np.abs(librosa.stft(y, n_fft=4096, hop_length=1024))
     fr = librosa.fft_frequencies(sr=SR, n_fft=4096)
@@ -151,6 +155,22 @@ def comparer(empreinte, ref=None):
                       % tol["couleur_dB"])
 
     return (not ecarts), ecarts
+
+
+def distance(empreinte, ref=None):
+    """Un seul nombre : l'ecart total, EN TOLERANCES.
+
+    Chaque mesure est divisee par sa tolerance : 1,0 = pile a la limite. La
+    distance est la pire de toutes (un seul critere hors tolerance suffit a
+    changer la voix), et la moyenne sert a departager deux conformes.
+    """
+    r = ref or _reference()
+    cible, tol = r["empreinte"], r["tolerances"]
+    parts = [abs(empreinte[k] - cible[k]) / tol[k]
+             for k in ("hauteur_Hz", "melodie_demitons", "centre_spectral_Hz")]
+    parts += [abs(a - b) / tol["couleur_dB"]
+              for a, b in zip(empreinte["couleur_dB"], cible["couleur_dB"])]
+    return max(parts), sum(parts) / len(parts)
 
 
 def _resume(e):
