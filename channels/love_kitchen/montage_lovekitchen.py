@@ -1060,13 +1060,43 @@ def main():
             # respiration : un ecart de duree se rattrape a l'atempo, une voix
             # qui devient monotone ne se rattrape par rien. Voir intonation().
             monotone = inton <= SEUIL_INTONATION_PC
-            score = (deterministe, faible, monotone, essouffle, ecart)  # False < True : bon tirage gagne
+            # L'IDENTITE passe avant tout le reste. Le 2026-09-22, avec le
+            # modele pourtant epingle, deux tirages sont sortis a 167,7 et
+            # 187,6 Hz - vingt hertz, une autre personne a l'oreille. Epingler
+            # le modele ne suffit donc pas : chaque TIRAGE varie. Le classement
+            # choisissait sur la duree et la respiration, jamais sur la voix
+            # elle-meme ; le rendu etait ensuite refuse en bout de chaine
+            # (code 8), trois requetes brulees pour rien. On mesure donc
+            # l'empreinte de chaque tirage, sur la voix passee par la chaine de
+            # mixage (le signal que juge le controle final).
+            etranger, dist_id = False, 0.0
+            if not deterministe:
+                try:
+                    import empreinte_voix as EV
+                    _m = travail / f"empreinte_{essai}.wav"
+                    ff(["-y", "-i", str(candidate), "-af", CHAINE_VOIX_MIX, str(_m)])
+                    _e = EV.mesurer(_m, sans_outro=False)
+                    _ok, _ec = EV.comparer(_e)
+                    etranger, dist_id = (not _ok), EV.distance(_e)[0]
+                    print(f"   identite : hauteur {_e['hauteur_Hz']:.1f} Hz, "
+                          f"melodie {_e['melodie_demitons']:.2f}, distance {dist_id:.2f}"
+                          f"{'' if _ok else ' — PAS LA VOIX DE LA CHAINE'}")
+                except Exception as _x:
+                    print(f"   identite non mesurable : {str(_x)[:70]}")
+                    etranger, dist_id = True, 9.9
+            score = (deterministe, etranger, faible, monotone, essouffle,
+                     round(dist_id, 1), ecart)  # False < True : bon tirage gagne
             if meilleur_ecart is None or score < meilleur_ecart:
                 meilleure, meilleur_ecart, comment = candidate, score, c
             # Arret anticipe : un tirage bon sur TOUS les criteres de voix, et
             # rattrapable a l'atempo (borne x1,12, soit ~8 s sur 70 s), suffit.
             # Avec trois tirages, c'est ce qui evite de bruler le quota.
-            if (not deterministe and ecart <= 8.0 and not faible
+            # 16 s et non plus 8 : depuis le 2026-09-22 les blancs sont
+            # resserres APRES le tirage (resserrer_pauses), ce qui retire 8 a
+            # 10 s a une prise du modele epingle (73,8 -> 65,2 s mesure). Avec
+            # 8 s, aucune prise ne s'arretait jamais : trois requetes par video
+            # au lieu d'une, sur un quota de dix par jour.
+            if (not deterministe and not etranger and ecart <= 16.0 and not faible
                     and not essouffle and not monotone):
                 break
             if deterministe:
