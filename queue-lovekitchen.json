@@ -806,7 +806,7 @@
     "id": "81-soupebrocoli",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
     "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "pending",
+    "status": "scheduled",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -825,6 +825,10 @@
     },
     "voix_hors_norme": "2026-09-22 : voix d'avant l'epinglage, repassee par la chaine calee. Hauteur 165,6 Hz (ref 166,0), clarte et 8 bandes de couleur conformes ; seule la melodie depasse (4,73 contre 5,86, tolerance 1,0). Bruit avant le premier mot coupe (330 ms). Remplace la version programmee, pire sur tous les criteres (clarte -1376 Hz, sous-titres en retard, grondement +11,5 dB).",
     "maj": "2026-09-22T10:01:40Z",
-    "note": "Passe le controle visuel complet. Refaite le 2026-09-22 par le pipeline du depot : bruit avant le premier mot coupe (330 ms), amorce, timbre cale par la chaine fixe, blancs resserres, sous-titres cales (10/10 a l'image). Identite : seule la melodie depasse (1,1 contre 1,0), voir voix_hors_norme."
+    "note": "Passe le controle visuel complet. Refaite le 2026-09-22 par le pipeline du depot : bruit avant le premier mot coupe (330 ms), amorce, timbre cale par la chaine fixe, blancs resserres, sous-titres cales (10/10 a l'image). Identite : seule la melodie depasse (1,1 contre 1,0), voir voix_hors_norme.",
+    "postId": "6ab252158515ec9fe5bb28c7",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-22T21:30:00",
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
   }
 ]
