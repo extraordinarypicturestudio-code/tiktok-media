@@ -33,21 +33,65 @@
     "mesuree_le": "2026-09-20"
   },
   "modele_tts": {
-    "epingle": null,
+    "epingle": "gemini-3.1-flash-tts-preview",
     "_doc": [
-      "Le modele qui doit produire la voix. TANT QUE C'EST null, la cascade",
-      "de montage_lovekitchen.py s'applique et la voix peut changer d'un jour",
-      "a l'autre - c'est exactement le defaut a corriger.",
+      "EPINGLE le 2026-09-22 par choisir_modele_voix.py : le script de la video de",
+      "reference (56_onepotpates.txt, 187 mots) dit par chaque modele, meme consigne.",
       "",
-      "A determiner au retour du quota Gemini : faire dire le meme passage",
-      "par gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview et",
-      "gemini-2.5-flash-preview-tts, mesurer l'empreinte de chacun, epingler",
-      "celui qui tombe dans la tolerance. Le modele qui a produit la",
-      "reference n'est pas connu : il n'etait trace nulle part avant le",
-      "2026-09-20."
+      "  gemini-2.5-pro-preview-tts    quota epuise (HTTP 429) - non mesure",
+      "  gemini-3.1-flash-tts-preview  hauteur 167,7 Hz, melodie 5,96, clarte 3028 Hz",
+      "                                -> pire critere 2,57 avant correction de chaine",
+      "  gemini-2.5-flash-preview-tts  hauteur 168,8 Hz, melodie 5,28, clarte 2593 Hz",
+      "                                -> pire critere 2,71, clarte hors tolerance",
+      "",
+      "flash-3.1 colle a la reference sur les trois marqueurs d'identite (hauteur,",
+      "melodie, clarte). Son seul ecart - le bas-medium - est commun aux deux modeles,",
+      "donc il vient de la chaine : corrige par une egalisation FIXE dans CHAINE_VOIX.",
+      "Apres correction : pire critere 0,79, CONFORME.",
+      "",
+      "cascade_autorisee = false : si ce modele est indisponible, le montage S'ARRETE",
+      "au lieu de produire une autre voix. Une video de moins vaut mieux qu'une voix",
+      "que le public ne reconnait pas.",
+      "",
+      "gemini-2.5-pro-preview-tts n'a pas pu etre mesure (quota). Le rejouer un jour",
+      "ou il est disponible : s'il fait mieux que 0,79, il merite l'epingle."
     ],
     "voix": "Sulafat",
-    "cascade_autorisee": false
+    "cascade_autorisee": false,
+    "epingle_le": "2026-09-22",
+    "mesure_a_l_epinglage": {
+      "avant_correction": {
+        "hauteur_Hz": 167.7,
+        "melodie_demitons": 5.96,
+        "centre_spectral_Hz": 3028.0,
+        "couleur_dB": [
+          5.3,
+          21.3,
+          13.2,
+          4.2,
+          -3.8,
+          -4.8,
+          -3.7,
+          -17.2
+        ]
+      },
+      "apres_correction": {
+        "hauteur_Hz": 166.3,
+        "melodie_demitons": 5.98,
+        "centre_spectral_Hz": 3524.0,
+        "couleur_dB": [
+          6.0,
+          16.9,
+          7.6,
+          3.1,
+          -2.8,
+          -3.6,
+          -3.4,
+          -17.2
+        ]
+      },
+      "distance_pire_apres": 0.79
+    }
   },
   "empreinte": {
     "hauteur_Hz": 166.0,

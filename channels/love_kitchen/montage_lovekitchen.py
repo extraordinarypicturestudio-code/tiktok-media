@@ -204,6 +204,20 @@ CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
                # Ni decalage de hauteur (il dedouble la voix) ni filtre plus
                # large (il assombrit les aigus sous le temoin).
                "equalizer=f=1600:width_type=o:w=1.4:g=-3,"
+               # LE TIMBRE DE LA CHAINE, cale le 2026-09-22. Le script de la
+               # video de reference (348 767 vues) dit par le modele epingle
+               # colle a la reference en hauteur (167,7 contre 166,0 Hz),
+               # melodie (5,96 contre 5,86) et clarte - mais porte +6,7 et
+               # +7,7 dB dans le bas-medium (160-640 Hz). Le second modele a
+               # EXACTEMENT le meme ecart : il vient donc de cette chaine, pas
+               # du modele. Correction FIXE, la meme pour toutes les videos -
+               # ce que l'utilisateur demande ("calibre de la meme maniere").
+               # Cherchee sur 54 combinaisons : pire critere 2,58 -> 0,79,
+               # tout dans la tolerance de voix_reference.json.
+               # Ne PAS la remplacer par un reglage par video : essaye le
+               # 2026-09-20, ca eloigne les timbres les uns des autres.
+               "equalizer=f=360:width_type=o:w=2.0:g=-9,"
+               "lowshelf=f=120:g=2:width_type=q:width=0.7,"
                "loudnorm=I=-14:TP=-1.5:LRA=9")
 
 # LA CHAINE DU MIXAGE FINAL : la meme, sans le silenceremove de tete.
@@ -1074,6 +1088,16 @@ def main():
             print("   La chaine perd sa voix habituelle - quota Gemini epuise.")
             print("   Ne pas publier tel quel : reprendre quand le quota est revenu.")
 
+        # Les blancs d'abord, la vitesse ensuite : resserrer les pauses rend la
+        # cadence de la reference sans presser la parole ; l'atempo ci-dessous
+        # ne rattrape plus que ce qui reste.
+        avant = d_voix
+        voix, pause_ret, d_voix, resp_ret = resserrer_pauses(voix, travail)
+        D = d_voix + 0.6
+        print(f"1) blancs resserres : {avant:.1f}s -> {d_voix:.1f}s, pause visee "
+              f"{pause_ret:.2f}s (reference 0,28), respiration {resp_ret:.0f}% "
+              f"(seuil {SEUIL_RESPIRATION_PC:.0f}%)")
+
         if not (DUREE_VIDEO_MIN <= D + duree_outro() <= DUREE_VIDEO_MAX):
             facteur = max(0.90, min(1.12, d_voix / DUREE_VOIX_VISEE))
             voix_recalee = travail / "voix_recalee.mp3"
@@ -1090,6 +1114,76 @@ def main():
                       f"ajuster la longueur du script plutot que de forcer l'atempo.")
 
         _monter(a, travail, voix, d_voix, D, texte)
+
+
+# ------------------------------------------------------- cadence de la voix
+# CE QUI SEPARE LA VIDEO QUI MARCHE DES AUTRES N'EST PAS LE DEBIT, C'EST LE
+# BLANC. Mesure du 2026-09-20 sur les chiffres Zernio reels :
+#   56-onepotpates  348 767 vues, 11 s vues : pause moyenne 0,28 s, 3 pauses
+#                   de plus de 0,55 s, 18 % de silence
+#   quatre videos a 16-19 K, 2 s vues        : 0,43-0,55 s, 5 a 19 pauses longues
+# Et le 2026-09-22, sur le script de la reference dit par le modele epingle :
+# meme DEBIT de parole que la reference (4,07 contre 3,94 mots/s hors pauses),
+# mais des pauses deux fois plus longues (0,58 s, 12 longues) - la consigne
+# de lecture les demande ("de vraies respirations"). La voix "qui s'arrete
+# apres chaque ligne", c'est ca.
+#
+# On ne touche donc NI au debit NI au timbre : on raccourcit les blancs. Le
+# milieu de chaque pause est retire (couper dans un silence ne s'entend pas,
+# couper a la jonction avec la parole, si) ; les trois plus longues gardent
+# une vraie respiration.
+PAUSE_VISEE_S = 0.30            # la reference est a 0,26-0,28
+PAUSE_SEUIL_S = 0.38            # en dessous, on ne touche pas
+PAUSES_LONGUES_GARDEES = 3      # la reference en a 3
+PAUSE_LONGUE_S = 0.50
+VOIX_MIN_S = 57.8               # 57,8 + 0,6 + 2,6 d'outro = 61 s > 60 (Creator Rewards)
+
+
+def resserrer_pauses(voix, travail):
+    """Voix aux blancs resserres. Retourne (chemin, pause retenue, duree, respiration).
+
+    La respiration est mesuree sur la voix PASSEE PAR LA CHAINE DE MIXAGE, pas
+    sur la voix brute : c'est le signal que juge le controle bloquant. Viser un
+    taux mesure sur la voix brute a fait refuser trois rendus le 2026-09-20 -
+    la chaine remonte les passages calmes et l'ecart atteint 8 points.
+    """
+    import numpy as np, librosa, soundfile as sf  # noqa: E401
+    y, sr = librosa.load(str(voix), sr=44100)
+    rms = librosa.feature.rms(y=y, frame_length=2048, hop_length=512)[0]
+    rdb = 20*np.log10(np.maximum(rms, 1e-10))
+    parle = rdb > np.percentile(rdb, 95) - 22
+    segs, deb, est = [], 0, parle[0]
+    for i, v in enumerate(parle):
+        if v != est:
+            segs.append((deb*512, i*512, bool(est))); deb, est = i, v
+    segs.append((deb*512, len(y), bool(est)))
+    pauses = [(a, b) for a, b, pr in segs if not pr and (b-a)/sr > PAUSE_SEUIL_S]
+    longues = set(sorted(pauses, key=lambda ab: ab[0]-ab[1])[:PAUSES_LONGUES_GARDEES])
+
+    def assembler(cible):
+        morceaux = []
+        for a, b, pr in segs:
+            bloc = y[a:b]
+            if pr or (b-a)/sr <= PAUSE_SEUIL_S:
+                morceaux.append(bloc); continue
+            n = min(int((PAUSE_LONGUE_S if (a, b) in longues else cible)*sr), b-a)
+            m = n//2
+            morceaux.append(np.concatenate([bloc[:m], bloc[len(bloc)-(n-m):]]))
+        return np.concatenate(morceaux)
+
+    sortie = travail / "voix_resserree.wav"
+    essai_mix = travail / "voix_resserree_mix.wav"
+    cible, dur, resp = PAUSE_VISEE_S, len(y)/sr, 0.0
+    for _ in range(10):
+        z = assembler(cible)
+        sf.write(str(sortie), z, sr)
+        dur = len(z)/sr
+        ff(["-y", "-i", str(sortie), "-af", CHAINE_VOIX_MIX, str(essai_mix)])
+        resp = respiration(essai_mix)
+        if dur >= VOIX_MIN_S and resp >= SEUIL_RESPIRATION_PC + 1.5:
+            break
+        cible += 0.04          # trop court ou trop serre : on redonne du blanc
+    return sortie, cible, dur, resp
 
 
 def _monter(a, travail, voix, d_voix, D, texte):
