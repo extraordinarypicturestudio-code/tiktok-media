@@ -18,6 +18,7 @@ validees a l'oeil dans intros_valides.json (voir charger_intro).
 
 import argparse
 import json
+import shutil
 import mimetypes
 import os
 import pathlib
@@ -407,6 +408,9 @@ def consigne_style(texte=None):
 MODELES_TTS = ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview",
                "gemini-2.5-flash-preview-tts"]
 VOIX_REFERENCE = ICI / "voix_reference.json"
+# Reserve des prises TTS, hors depot (voir .gitignore) : une requete
+# payee en quota ne se jette plus avec le dossier de travail.
+PRISES = ICI / ".prises"
 
 
 def voix_epinglee():
@@ -979,7 +983,14 @@ def main():
             # parle trop vite" que l'utilisateur avait deja reprochee.
             if a.voix_telle_quelle:
                 print("   voix gardee telle quelle (deja recalee au premier rendu)")
-            elif not (DUREE_VIDEO_MIN <= D + duree_outro() <= DUREE_VIDEO_MAX):
+            else:
+                # Meme regle que pour une voix fraiche : les blancs d'abord.
+                avant = d_voix
+                voix, pause_ret, d_voix, resp_ret = resserrer_pauses(voix, travail)
+                D = d_voix + 0.6
+                print(f"1) blancs resserres : {avant:.1f}s -> {d_voix:.1f}s, pause visee "
+                      f"{pause_ret:.2f}s (reference 0,28), respiration {resp_ret:.0f}%")
+            if not a.voix_telle_quelle and not (DUREE_VIDEO_MIN <= D + duree_outro() <= DUREE_VIDEO_MAX):
                 facteur = max(0.90, min(1.12, d_voix / DUREE_VOIX_VISEE))
                 recalee = travail / "voix_recalee.mp3"
                 ff(["-y", "-i", str(voix), "-filter:a", f"atempo={facteur:.4f}",
@@ -1006,14 +1017,37 @@ def main():
         # tous les criteres) garde la depense moyenne autour de 1,8 requete.
         ESSAIS_MAX = 4 if a.moteur == "voicebox" else 3
         meilleure, meilleur_ecart, comment = None, None, None
-        for essai in range(ESSAIS_MAX):
+        # LES PRISES SE GARDENT. Elles vivaient dans le dossier de travail,
+        # efface a la fin du montage : un rendu refuse en bout de chaine
+        # emportait ses trois prises avec lui. Le 2026-09-22, six requetes sur
+        # les dix du jour ont ete perdues ainsi sur 81-soupebrocoli. Chaque
+        # prise est desormais rangee par (modele, consigne, texte) et un
+        # montage suivant la reprend AVANT de refaire une requete.
+        import hashlib as _hl
+        _mt = voix_epinglee()
+        _cle_prise = _hl.sha1(("%s|%s|%s" % (_mt.get("epingle"), consigne_style(),
+                                             texte)).encode("utf-8")).hexdigest()[:12]
+        cache_prises = PRISES / f"{pathlib.Path(a.script).stem}_{_cle_prise}"
+        cache_prises.mkdir(parents=True, exist_ok=True)
+        deja = sorted(cache_prises.glob("prise_*.mp3"))
+        if deja and a.moteur != "voicebox":
+            print(f"   {len(deja)} prise(s) deja en reserve pour ce texte : reprises "
+                  f"avant toute nouvelle requete")
+        for essai in range(ESSAIS_MAX + len(deja)):
             candidate = travail / f"voix_{essai}.mp3"
             deterministe = False
             try:
-                if a.moteur == "voicebox":
+                if essai < len(deja) and a.moteur != "voicebox":
+                    shutil.copy(deja[essai], candidate)
+                    c = f"Gemini {GEM_VOICE} ({_mt.get('epingle')}) [prise en reserve]"
+                elif essai - len(deja) >= ESSAIS_MAX:
+                    break
+                elif a.moteur == "voicebox":
                     c = voicebox_tts(texte, candidate, travail)
                 else:
                     c = gemini_tts(texte, candidate, travail)
+                    _n = len(list(cache_prises.glob("prise_*.mp3")))
+                    shutil.copy(candidate, cache_prises / f"prise_{_n:02d}.mp3")
             except Exception as e:
                 print(f"   {a.moteur} KO : {e}")
                 c = edge_tts(texte, candidate, travail)
@@ -1251,14 +1285,37 @@ def _monter(a, travail, voix, d_voix, D, texte):
         # pour les autres usages de la chaine.
         voix_calee = travail / "voix_calee.wav"
         ff(["-y", "-i", str(voix), "-af",
-            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,"
-            f"adelay={int(AMORCE_SILENCE_S*1000)}:all=1",
+            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05",
             str(voix_calee)], cwd=travail)
         voix = voix_calee
         ass_txt = None
         try:
             cle_groq = _cle("gemini.env", "GROQ_API_KEY")
             mots = whisper_mots(voix, cle_groq)
+
+            # RIEN AVANT LE PREMIER MOT. Le 2026-09-22, une prise portait
+            # 380 ms de bruit avant "Il" : niveau -23 dB, et un grondement a
+            # +27 / +32 dB sous 120 Hz - le "boum" sourd que l'utilisateur
+            # entendait au debut. Le silenceremove ne coupe que ce qui est sous
+            # -45 dB : ce bruit-la passait. Whisper sait ou commence le premier
+            # mot ; tout ce qui precede est coupe, quelle que soit sa nature,
+            # puis l'amorce propre est posee et les sous-titres decales d'autant.
+            coupe = 0.0
+            if mots and mots[0].get("start", 0) > 0.08:
+                coupe = max(0.0, mots[0]["start"] - 0.03)
+            voix_nette = travail / "voix_nette.wav"
+            ff(["-y", "-i", str(voix), "-af",
+                f"atrim=start={coupe:.3f},asetpts=PTS-STARTPTS,"
+                f"adelay={int(AMORCE_SILENCE_S*1000)}:all=1",
+                str(voix_nette)], cwd=travail)
+            voix = voix_nette
+            decalage = AMORCE_SILENCE_S - coupe
+            for m in mots or []:
+                m["start"] = max(0.0, m.get("start", 0) + decalage)
+                m["end"] = max(0.0, m.get("end", 0) + decalage)
+            if coupe:
+                print(f"3) {coupe*1000:.0f} ms de bruit coupes avant le premier mot "
+                      f"({mots[0]['word'].strip()!r})")
             if mots:
                 # LA VOIX DIT-ELLE BIEN LE SCRIPT ? Controle ajoute le
                 # 2026-09-20 : gemini-2.5-flash-preview-tts a LU LA CONSIGNE a
@@ -1328,6 +1385,13 @@ def _monter(a, travail, voix, d_voix, D, texte):
                 print(f"3) sous-titres OK : texte du script, synchro Whisper ({len(mots)} mots)")
         except Exception as e:
             print(f"   Whisper KO : {e}")
+        if voix == voix_calee:
+            # Whisper n'a pas tourne : pas de premier mot connu, on pose
+            # seulement l'amorce pour garder un debut identique aux autres.
+            voix_nette = travail / "voix_nette.wav"
+            ff(["-y", "-i", str(voix), "-af", f"adelay={int(AMORCE_SILENCE_S*1000)}:all=1",
+                str(voix_nette)], cwd=travail)
+            voix = voix_nette
         if ass_txt is None:
             ass_txt = ass_estime(texte, d_voix, a.titre)
             print("3) sous-titres OK (timings estimes)")

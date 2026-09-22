@@ -17,3 +17,6 @@ channels/love_kitchen/exemples/
 # Rapports d execution locaux, regeneres a chaque run
 echec-publication.txt
 healthcheck-anomalies.txt
+
+# Reserve des prises TTS (quota), locale
+channels/love_kitchen/.prises/

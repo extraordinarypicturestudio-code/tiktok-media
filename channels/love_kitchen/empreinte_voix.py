@@ -143,11 +143,28 @@ def mesurer(f, sans_outro=True):
 DEBUT_S = 2.0
 DEBUT_TOL = {"attaque_dB": -30.0,      # plafond absolu, 100 premieres ms
              "sifflement_dB": 3.0,     # ecart max a la reference, 6-11 kHz
-             "grondement_dB": 3.5}     # ecart max a la reference, 0-120 Hz
+             # Pic 0-120 Hz, ecart max a la reference. 6 dB et non 3,5 :
+             # calibre le 2026-09-22 sur 22 clips. Le "boum" connu (380 ms
+             # avant le premier mot) est a +16,2 dB ; les ouvertures sur
+             # consonne grave ("m", "b") vont de +3,8 a +5,8. A 3,5 dB, la
+             # moitie du corpus etait refusee pour des consonnes.
+             "grondement_dB": 6.0}
 
 
 def mesurer_debut(f):
-    """Attaque, sifflement et grondement des 2 premieres secondes."""
+    """Attaque, sifflement de FOND et grondement des 2 premieres secondes.
+
+    Le sifflement se mesure DANS LES CREUX entre les mots, pas sur la moyenne
+    de tout : le 2026-09-22 la premiere version a refuse 81-soupebrocoli pour
+    un "sifflement +6,7 dB" qui n'etait que les S de "disait" et "c'etait"
+    (la reference ouvre sur "Mon mari m'avait", presque sans sifflantes). Dans
+    les creux, la video etait au contraire 8 dB PLUS PROPRE que la reference.
+    L'utilisateur parle de BRUIT DE FOND : c'est entre les mots qu'il vit.
+
+    Le grondement, lui, se mesure au PIC (fenetres de 100 ms) : c'est un choc
+    court, le "boum" de 380 ms avant le premier mot (+27 a +32 dB sous
+    120 Hz) - une moyenne le noyait.
+    """
     import numpy as np, librosa  # noqa: E401
     import tempfile
     w = pathlib.Path(tempfile.mkdtemp()) / "d.wav"
@@ -156,14 +173,36 @@ def mesurer_debut(f):
     y, _ = librosa.load(str(w), sr=SR)
     tete = y[:int(0.10*SR)]
     attaque = 20*np.log10(max(float(np.sqrt(np.mean(tete**2))), 1e-10))
-    Sx = np.abs(librosa.stft(y, n_fft=2048, hop_length=512))
-    fr = librosa.fft_frequencies(sr=SR, n_fft=2048)
-    def bande(a, b):
-        m = (fr >= a) & (fr < b)
-        return 20*np.log10(max(float(Sx[m].mean()), 1e-10))
+    Sx = np.abs(librosa.stft(y, n_fft=1024, hop_length=256))
+    fr = librosa.fft_frequencies(sr=SR, n_fft=1024)
+    tot = 20*np.log10(np.maximum(Sx.mean(axis=0), 1e-10))
+    vivant = tot > -120                    # hors silence numerique de l'amorce
+    if vivant.sum() < 10:
+        vivant = np.ones_like(vivant, dtype=bool)
+    parole = vivant & (tot > np.percentile(tot[vivant], 90) - 20)
+    creux = vivant & ~parole
+    hf = 20*np.log10(np.maximum(Sx[(fr >= 6000) & (fr < 11000)].mean(axis=0), 1e-10))
+    lf = 20*np.log10(np.maximum(Sx[(fr >= 0) & (fr < 120)].mean(axis=0), 1e-10))
+    # sans creux (parole continue sur 2 s), le fond ne se mesure pas : on
+    # prend les 10 % de trames les plus calmes, qui en tiennent lieu
+    if creux.sum() < 5:
+        creux = vivant & (tot <= np.percentile(tot[vivant], 10))
+    # LE GRONDEMENT EST UN PIC, il se mesure au MAXIMUM par fenetres de
+    # 100 ms. La moyenne des decibels le diluait : le temoin defectueux (un
+    # "boum" de 380 ms a +27/+32 dB avant le premier mot) passait a -1,6 dB,
+    # sous la reference. Meme erreur que le ratio global qui ne voyait pas
+    # 6 s de consigne lue : un controle moyen ne voit pas un defaut court.
+    pics = []
+    for k in range(int(len(y) / (0.1*SR))):
+        seg = y[int(k*0.1*SR):int((k+1)*0.1*SR)]
+        if float(np.max(np.abs(seg))) < 1e-6:
+            continue                        # silence numerique de l'amorce
+        spec = np.abs(np.fft.rfft(seg*np.hanning(len(seg))))
+        frq = np.fft.rfftfreq(len(seg), 1/SR)
+        pics.append(20*np.log10(max(float(spec[(frq >= 20) & (frq < 120)].mean()), 1e-10)))
     return {"attaque_dB": round(attaque, 1),
-            "sifflement_dB": round(bande(6000, 11000), 1),
-            "grondement_dB": round(bande(0, 120), 1)}
+            "sifflement_dB": round(float(np.mean(hf[creux])), 1),
+            "grondement_dB": round(max(pics) if pics else -120.0, 1)}
 
 
 def controler_debut(f, ref=None):
@@ -176,7 +215,7 @@ def controler_debut(f, ref=None):
         ecarts.append("attaque a %.1f dB sur les 100 premieres ms (plafond %.0f)"
                       % (m["attaque_dB"], DEBUT_TOL["attaque_dB"]))
     if cible:
-        for cle, nom in (("sifflement_dB", "sifflement 6-11 kHz"),
+        for cle, nom in (("sifflement_dB", "sifflement de fond 6-11 kHz"),
                          ("grondement_dB", "grondement 0-120 Hz")):
             d = m[cle] - cible[cle]
             if d > DEBUT_TOL[cle]:
