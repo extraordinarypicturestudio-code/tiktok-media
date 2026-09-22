@@ -78,5 +78,18 @@
       "mais ne fait pas une autre personne ; +-3 dB par bande est le seuil",
       "ou une difference de timbre devient audible."
     ]
+  },
+  "debut": {
+    "attaque_dB": -49.1,
+    "sifflement_dB": -5.2,
+    "grondement_dB": 4.4,
+    "_doc": [
+      "Les 2 premieres secondes de la reference, a 44,1 kHz. Voir empreinte_voix.py",
+      "(DEBUT_TOL) : attaque sous -30 dB, sifflement 6-11 kHz et grondement 0-120 Hz",
+      "au plus a +3 / +3,5 dB de la reference.",
+      "Calibre le 2026-09-22 sur les 20 clips disponibles : 18 propres, 2 signales",
+      "(50 et 62, sifflement +3,4 et +3,8 dB) - au niveau des deux videos",
+      "defectueuses corrigees le 2026-09-20 (-0,4 et -1,0 dB contre -5,2 ici)."
+    ]
   }
 }

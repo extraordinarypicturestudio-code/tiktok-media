@@ -127,6 +127,64 @@ def mesurer(f, sans_outro=True):
     }
 
 
+# ------------------------------------------------------------ debut propre
+# "Il y a un bruit de fond bizarre dans les 2 premieres secondes" (utilisateur,
+# 2026-09-20). Trois defauts distincts, tous mesures ce jour-la :
+#   - ATTAQUE : la voix partait a pleine puissance des la 1re milliseconde
+#     (-14 a -23 dB sur 100 ms ; la reference ouvre a -49 dB) ;
+#   - SIFFLEMENT : la bande 6-11 kHz montait de -76 a -4 dB en 300 ms, jusqu'a
+#     +13 dB, la ou la reference reste vers -20 ;
+#   - GRONDEMENT : 0-120 Hz a +3,5 dB au-dessus de la reference sur une video.
+# DEUX PIEGES de mesure payes ce jour-la, et que ces reglages evitent :
+#   - a 22 kHz la bande 6-11 kHz colle a Nyquist et le filtre anti-repliement
+#     la deforme : on mesure a 44,1 kHz ;
+#   - sur la piste ENTIERE l'ecart se dilue sous 1 dB : on mesure la ou
+#     l'utilisateur ecoute, les 2 premieres secondes.
+DEBUT_S = 2.0
+DEBUT_TOL = {"attaque_dB": -30.0,      # plafond absolu, 100 premieres ms
+             "sifflement_dB": 3.0,     # ecart max a la reference, 6-11 kHz
+             "grondement_dB": 3.5}     # ecart max a la reference, 0-120 Hz
+
+
+def mesurer_debut(f):
+    """Attaque, sifflement et grondement des 2 premieres secondes."""
+    import numpy as np, librosa  # noqa: E401
+    import tempfile
+    w = pathlib.Path(tempfile.mkdtemp()) / "d.wav"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f), "-t", str(DEBUT_S),
+                    "-vn", "-ac", "1", "-ar", str(SR), str(w)], check=True)
+    y, _ = librosa.load(str(w), sr=SR)
+    tete = y[:int(0.10*SR)]
+    attaque = 20*np.log10(max(float(np.sqrt(np.mean(tete**2))), 1e-10))
+    Sx = np.abs(librosa.stft(y, n_fft=2048, hop_length=512))
+    fr = librosa.fft_frequencies(sr=SR, n_fft=2048)
+    def bande(a, b):
+        m = (fr >= a) & (fr < b)
+        return 20*np.log10(max(float(Sx[m].mean()), 1e-10))
+    return {"attaque_dB": round(attaque, 1),
+            "sifflement_dB": round(bande(6000, 11000), 1),
+            "grondement_dB": round(bande(0, 120), 1)}
+
+
+def controler_debut(f, ref=None):
+    """(propre, ecarts). Compare les 2 premieres secondes a la reference."""
+    r = ref or _reference()
+    cible = r.get("debut")
+    m = mesurer_debut(f)
+    ecarts = []
+    if m["attaque_dB"] > DEBUT_TOL["attaque_dB"]:
+        ecarts.append("attaque a %.1f dB sur les 100 premieres ms (plafond %.0f)"
+                      % (m["attaque_dB"], DEBUT_TOL["attaque_dB"]))
+    if cible:
+        for cle, nom in (("sifflement_dB", "sifflement 6-11 kHz"),
+                         ("grondement_dB", "grondement 0-120 Hz")):
+            d = m[cle] - cible[cle]
+            if d > DEBUT_TOL[cle]:
+                ecarts.append("%s %+.1f dB au-dessus de la reference (tolerance %.1f)"
+                              % (nom, d, DEBUT_TOL[cle]))
+    return (not ecarts), ecarts, m
+
+
 def _reference(chemin=None):
     return json.loads(pathlib.Path(chemin or REFERENCE).read_text(encoding="utf-8"))
 

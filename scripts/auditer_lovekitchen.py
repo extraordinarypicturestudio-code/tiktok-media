@@ -27,6 +27,8 @@ CE QU'IL MESURE
   repetition   le plat est-il deja publie, ou deja programme
   registre     tutoiement final et temps sensuels du script
   intro        laquelle, pour voir si la rotation tourne vraiment
+  identite     l'empreinte de la voix contre voix_reference.json
+  debut        attaque, sifflement et grondement des 2 premieres secondes
 
 Usage :
     python3 scripts/auditer_lovekitchen.py            # les videos programmees
@@ -202,6 +204,26 @@ def main():
         except Exception as ex:
             print("  voix         MESURE IMPOSSIBLE : %s" % str(ex)[:60])
             ecarts.append("voix non mesurable")
+
+        # --- identite de la voix et debut propre : les deux controles du
+        # 2026-09-21/22, lus dans empreinte_voix.py comme le fait le montage.
+        try:
+            import empreinte_voix as EV
+            emp = EV.mesurer(f)
+            conforme, ec_id = EV.comparer(emp)
+            print("  identite     %s" % ("conforme a la reference" if conforme
+                                         else "HORS REFERENCE : " + " ; ".join(ec_id)[:110]))
+            if not conforme:
+                ecarts.append("voix differente de la reference de la chaine")
+            propre, ec_deb, md = EV.controler_debut(f)
+            print("  debut        attaque %.1f dB, sifflement %.1f dB, grondement %.1f dB%s"
+                  % (md["attaque_dB"], md["sifflement_dB"], md["grondement_dB"],
+                     "" if propre else " -> " + " ; ".join(ec_deb)[:80]))
+            if not propre:
+                ecarts.append("bruit dans les 2 premieres secondes")
+        except Exception as ex:
+            print("  identite     MESURE IMPOSSIBLE : %s" % str(ex)[:60])
+            ecarts.append("identite / debut non mesurables")
 
         pl = plancher_bruit(f)
         if pl is None:

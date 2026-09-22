@@ -50,6 +50,8 @@ SUIVIS = {
         "channels/love_kitchen/empreinte_voix.py",
     "channels/love_kitchen/voix_reference.json":
         "channels/love_kitchen/voix_reference.json",
+    "channels/love_kitchen/choisir_modele_voix.py":
+        "channels/love_kitchen/choisir_modele_voix.py",
     # Importe par la barriere pour juger la bande son. Absent du depot
     # jusqu'au 2026-09-19 : TOUTE video passee par la barriere du depot etait
     # refusee sur "No module named 'analyse_audio'".

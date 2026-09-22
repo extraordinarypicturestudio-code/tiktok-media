@@ -206,6 +206,24 @@ CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
                "equalizer=f=1600:width_type=o:w=1.4:g=-3,"
                "loudnorm=I=-14:TP=-1.5:LRA=9")
 
+# LA CHAINE DU MIXAGE FINAL : la meme, sans le silenceremove de tete.
+# Depuis le 2026-09-21 le blanc de tete est coupe AVANT Whisper (sinon les
+# sous-titres gardaient 0,22 s de retard). Laisse dans le mixage, ce filtre
+# avalerait l'amorce ci-dessous - essaye le 2026-09-20 : un fondu pose en amont
+# avait disparu du rendu, qui repartait a -15 dB des la premiere milliseconde.
+CHAINE_VOIX_MIX = CHAINE_VOIX.replace(
+    "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,", "")
+
+# L'AMORCE, identique pour toutes les videos. L'utilisateur entendait "un
+# bruit bizarre dans les 2 premieres secondes". Mesure (44,1 kHz, tranches de
+# 100 ms) : la voix attaquait a pleine puissance des la premiere milliseconde,
+# et la bande 6-11 kHz passait de -76 a -4 dB en 300 ms (jusqu'a +13 dB) - un
+# sifflement a l'attaque. La video de reference (348 767 vues) ouvre, elle, a
+# -49 dB et monte sur 300 ms. On reproduit ce debut : un court silence, puis
+# une montee douce qui englobe l'attaque de la premiere syllabe.
+AMORCE_SILENCE_S = 0.15
+AMORCE_FONDU = "afade=t=in:st=0.08:d=0.22:curve=qua"
+
 
 # RESPIRATION — ajoutee le 2026-09-09, apres un retour de l'utilisateur :
 # "la voix parle trop vite et elle reprend le souffle comme une IA".
@@ -1109,7 +1127,8 @@ def _monter(a, travail, voix, d_voix, D, texte):
         # pour les autres usages de la chaine.
         voix_calee = travail / "voix_calee.wav"
         ff(["-y", "-i", str(voix), "-af",
-            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05",
+            "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,"
+            f"adelay={int(AMORCE_SILENCE_S*1000)}:all=1",
             str(voix_calee)], cwd=travail)
         voix = voix_calee
         ass_txt = None
@@ -1196,7 +1215,7 @@ def _monter(a, travail, voix, d_voix, D, texte):
         sortie = pathlib.Path(a.sortie).resolve()
         ff(["-y", "-i", str(base), "-i", str(voix),
             "-vf", vf,
-            "-filter_complex", "[1:a]" + CHAINE_VOIX + "[aout]",
+            "-filter_complex", "[1:a]" + CHAINE_VOIX_MIX + "," + AMORCE_FONDU + "[aout]",
             "-map", "0:v:0", "-map", "[aout]", "-t", f"{D:.3f}",
             "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
@@ -1314,6 +1333,26 @@ def _monter(a, travail, voix, d_voix, D, texte):
             sys.exit(8)
     else:
         print("5) empreinte NON verifiee (--voix-hors-norme)")
+
+    # 5 bis) LE DEBUT - TOUJOURS, meme avec --voix-hors-norme : un bruit a
+    # l'attaque n'a rien a voir avec l'identite de la voix. Controle a part,
+    # pas une moyenne : un sifflement de 300 ms se dilue a moins d'un decibel
+    # sur la piste entiere, alors que c'est la qu'on l'entend - et la que le
+    # spectateur decide de rester (2026-09-20). Echec de mesure = refus.
+    try:
+        import empreinte_voix as EV
+        propre, defauts, md = EV.controler_debut(sortie)
+    except Exception as e:
+        print(f"5) DEBUT NON MESURABLE : {str(e)[:90]}")
+        sys.exit(9)
+    print("5) debut : attaque %.1f dB | sifflement %.1f dB | grondement %.1f dB"
+          % (md["attaque_dB"], md["sifflement_dB"], md["grondement_dB"]))
+    if not propre:
+        print("5) BRUIT DANS LES 2 PREMIERES SECONDES :")
+        for x in defauts:
+            print("   " + x)
+        sys.exit(9)
+    print("5) debut propre")
 
 
 if __name__ == "__main__":
