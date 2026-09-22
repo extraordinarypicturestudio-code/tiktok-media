@@ -107,9 +107,19 @@ def monter(conf, sortie, voix_secours=False):
             print("      REJET : impossible de savoir quelle voix a ete retenue")
             sortie.unlink(missing_ok=True)
             return False, j
-        if "Gemini" not in retenue[-1]:
-            print("      REJET : voix retenue %s - la chaine est sur Gemini Sulafat"
-                  % retenue[-1].split(":")[-1].strip()[:40])
+        # La voix attendue est celle que declare voix_reference.json. Depuis le
+        # 2026-09-22 ce peut etre le CLONE Voicebox de Sulafat (demande de
+        # l'utilisateur) : lui seul, ou Gemini, selon ce qui est declare. Tout
+        # le reste - edge-tts surtout, une autre voix - reste refuse.
+        try:
+            _ref = json.loads((LK / "voix_reference.json").read_text(encoding="utf-8"))
+            _moteur = (_ref.get("modele_tts") or {}).get("moteur") or "gemini"
+        except (OSError, ValueError):
+            _moteur = "gemini"
+        _attendu = "Voicebox Sulafat" if _moteur == "voicebox" else "Gemini"
+        if _attendu not in retenue[-1]:
+            print("      REJET : voix retenue %s - la chaine est sur %s"
+                  % (retenue[-1].split(":")[-1].strip()[:40], _attendu))
             sortie.unlink(missing_ok=True)
             return False, j
 

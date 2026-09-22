@@ -52,6 +52,10 @@ SUIVIS = {
         "channels/love_kitchen/voix_reference.json",
     "channels/love_kitchen/choisir_modele_voix.py":
         "channels/love_kitchen/choisir_modele_voix.py",
+    # Le client du clone Voicebox (serveur LOCAL, 127.0.0.1:17493). Sans lui
+    # dans le depot, le montage ne trouvait pas le moteur clone.
+    "channels/love_kitchen/voicebox_sulafat.py":
+        "channels/love_kitchen/voicebox_sulafat.py",
     # Importe par la barriere pour juger la bande son. Absent du depot
     # jusqu'au 2026-09-19 : TOUTE video passee par la barriere du depot etait
     # refusee sur "No module named 'analyse_audio'".

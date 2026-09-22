@@ -20,3 +20,4 @@ healthcheck-anomalies.txt
 
 # Reserve des prises TTS (quota), locale
 channels/love_kitchen/.prises/
+channels/love_kitchen/.voicebox_profil.json

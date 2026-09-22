@@ -205,21 +205,41 @@ CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
                # Ni decalage de hauteur (il dedouble la voix) ni filtre plus
                # large (il assombrit les aigus sous le temoin).
                "equalizer=f=1600:width_type=o:w=1.4:g=-3,"
-               # LE TIMBRE DE LA CHAINE, cale le 2026-09-22. Le script de la
-               # video de reference (348 767 vues) dit par le modele epingle
-               # colle a la reference en hauteur (167,7 contre 166,0 Hz),
-               # melodie (5,96 contre 5,86) et clarte - mais porte +6,7 et
-               # +7,7 dB dans le bas-medium (160-640 Hz). Le second modele a
-               # EXACTEMENT le meme ecart : il vient donc de cette chaine, pas
-               # du modele. Correction FIXE, la meme pour toutes les videos -
-               # ce que l'utilisateur demande ("calibre de la meme maniere").
-               # Cherchee sur 54 combinaisons : pire critere 2,58 -> 0,79,
-               # tout dans la tolerance de voix_reference.json.
-               # Ne PAS la remplacer par un reglage par video : essaye le
-               # 2026-09-20, ca eloigne les timbres les uns des autres.
-               "equalizer=f=360:width_type=o:w=2.0:g=-9,"
-               "lowshelf=f=120:g=2:width_type=q:width=0.7,"
                "loudnorm=I=-14:TP=-1.5:LRA=9")
+
+# LE TIMBRE DE LA CHAINE : une correction FIXE PAR MOTEUR, la meme pour toutes
+# les videos d'un moteur - ce que l'utilisateur demande ("calibre de la meme
+# maniere"). Chacune a ete cherchee en faisant dire a ce moteur un script de la
+# chaine, puis en mesurant l'empreinte contre la video de reference (348 767
+# vues, voix_reference.json).
+#
+#   gemini   (flash-3.1, 2026-09-22) : +6,7 et +7,7 dB dans le bas-medium, le
+#            meme ecart que le second modele Gemini - il venait de la chaine.
+#            54 combinaisons : pire critere 2,58 -> 0,79, CONFORME.
+#   voicebox (clone Qwen3-TTS 1.7B, 2026-09-22) : bas-medium trop plein, et des
+#            aigus au-dessus de 8 kHz a -24 dB contre -16 (le clone est feutre).
+#            Timbre CONFORME, ecart moyen 0,39.
+#
+# Ne PAS la remplacer par un reglage par video : essaye le 2026-09-20, ca
+# eloigne les timbres les uns des autres.
+EQ_MOTEUR = {
+    "gemini": ("equalizer=f=360:width_type=o:w=2.0:g=-9,"
+               "lowshelf=f=120:g=2:width_type=q:width=0.7,"),
+    "voicebox": ("equalizer=f=360:width_type=o:w=2.0:g=-9,"
+                 "equalizer=f=6500:width_type=o:w=0.8:g=-6,"
+                 "highshelf=f=9500:g=10:width_type=q:width=0.7,"),
+}
+CHAINE_VOIX_BASE = CHAINE_VOIX
+
+
+def regler_chaine(moteur):
+    """Pose la correction du moteur dans CHAINE_VOIX et CHAINE_VOIX_MIX."""
+    global CHAINE_VOIX, CHAINE_VOIX_MIX
+    CHAINE_VOIX = CHAINE_VOIX_BASE.replace(
+        "loudnorm=", EQ_MOTEUR.get(moteur, "") + "loudnorm=", 1)
+    CHAINE_VOIX_MIX = CHAINE_VOIX.replace(
+        "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,", "")
+
 
 # LA CHAINE DU MIXAGE FINAL : la meme, sans le silenceremove de tete.
 # Depuis le 2026-09-21 le blanc de tete est coupe AVANT Whisper (sinon les
@@ -228,6 +248,16 @@ CHAINE_VOIX = ("aformat=fltp:44100:stereo,"
 # avait disparu du rendu, qui repartait a -15 dB des la premiere milliseconde.
 CHAINE_VOIX_MIX = CHAINE_VOIX.replace(
     "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,", "")
+# Reglee au chargement sur le moteur declare dans voix_reference.json, puis de
+# nouveau dans main() si --moteur en impose un autre. (voix_epinglee est
+# definie plus bas : on lit le fichier directement ici.)
+try:
+    _moteur_decl = (json.loads((pathlib.Path(__file__).resolve().parent /
+                                "voix_reference.json").read_text(encoding="utf-8"))
+                    .get("modele_tts") or {}).get("moteur") or "gemini"
+except (OSError, ValueError):
+    _moteur_decl = "gemini"
+regler_chaine(_moteur_decl)
 
 # L'AMORCE, identique pour toutes les videos. L'utilisateur entendait "un
 # bruit bizarre dans les 2 premieres secondes". Mesure (44,1 kHz, tranches de
@@ -332,14 +362,24 @@ def respiration(fichier, seuil="-32dB", mini=0.25):
 # NE MARCHE PAS, et le seuil a 20 % interdisait de s'approcher de ce qui
 # marche : la meilleure video de la chaine aurait ete refusee par ce controle.
 #
-# Le seuil descend a 17 % : sous les 18,2 % prouves bons, au-dessus des 15 %
-# de la video jugee mauvaise, qui reste le seul plancher etabli. Ce qui compte
-# n'est d'ailleurs pas le total de silence mais sa REPARTITION - la gagnante a
-# 3 pauses de plus de 0,55 s, les perdantes en ont 16 a 21.
-SEUIL_RESPIRATION_PC = 17.0
+# Le seuil etait descendu a 17 % le 2026-09-20 : "sous les 18,2 % prouves
+# bons". ERREUR DE SIGNAL, constatee le 2026-09-22 : ces 18,2 % venaient de MA
+# mesure (energie, seuil a -22 dB sous les pointes), pas de respiration()
+# ci-dessus (silencedetect a -32 dB, pauses de 0,25 s et plus) - celle que ce
+# seuil juge. Mesuree par respiration(), la video de reference (348 767 vues,
+# 11 s de visionnage) est a 9 %. Le seuil a 17 % la refusait donc encore.
+# Meme faute que le 2026-09-12 (memoire "un seuil vaut pour son signal").
+#
+# 7 % : sous la reference (9 %), au-dessus d'une lecture vraiment sans souffle.
+# Ce qui compte n'est de toute facon pas le total de silence mais sa
+# REPARTITION - la gagnante a 3 pauses de plus de 0,55 s, les perdantes 16 a 21.
+SEUIL_RESPIRATION_PC = 7.0
 # Meme mesure, sur le tirage BRUT, pour le classement des tirages. Voir le
 # commentaire au point de classement pour la correspondance brut -> fini.
-SEUIL_RESPIRATION_BRUT_PC = 25.0
+# Recale avec le seuil final le 2026-09-22 : le tirage brut perd 2 a 5
+# points une fois fini (paires 14->9, 23->19, 26->22...). 11 % en brut
+# tient les 7 % bloquants sur la video finie.
+SEUIL_RESPIRATION_BRUT_PC = 11.0
 # Perte d'intonation maximale entre premier et dernier tiers. Les trois videos
 # qui ont le plus marche : -4, +34, -17 %. Les voix que l'utilisateur a jugees
 # plates : -31 a -54 %. Voir intonation().
@@ -510,27 +550,47 @@ def voicebox_tts(texte, dest, travail):
     """Voix Sulafat CLONEE, servie par le Voicebox local (Qwen3-TTS).
 
     Sans quota et sans reseau, contrairement a Gemini qui plafonne a 10
-    tirages par jour et par modele - c'est cette limite qui bornait la
-    production de la chaine a quatre ou cinq videos par jour.
+    tirages par jour et par modele. Le 2026-09-22 cette limite a bloque la
+    production : sept prises Gemini du modele epingle, AUCUNE dans la
+    tolerance d'identite (hauteur de 165 a 192 Hz d'une prise a l'autre), et
+    le quota epuise a midi. L'utilisateur a demande de passer au clone.
 
     Ce qui est clone est une voix de SYNTHESE deja utilisee par la chaine, pas
     une personne : la regle du projet interdit le clonage d'une personne
-    identifiable, elle ne s'y oppose pas. Le profil vit dans
-    `.voicebox_profil.json`, cree par `voicebox_sulafat.py --installer`.
+    identifiable, elle ne s'y oppose pas.
 
-    Reglage retenu apres deux essais mesures le 2026-09-09, sur la
-    respiration (part de silence, temoin Gemini 27 %) :
-        0.6B, reference de 16 s .... 13 %   refuse par l'utilisateur
-        1.7B, reference de 29 s .... 22 %   retenu
+    Le profil est lu dans voix_reference.json (modele_tts.voicebox_profil) : un
+    clone de la video la plus regardee, 56-onepotpates (348 767 vues, 11 s de
+    visionnage), sur un echantillon de 25,5 s coupe en fin de phrase. Sans
+    consigne de jeu : le clone reprend l'intonation de l'echantillon, ce que
+    l'utilisateur demande ("garde l'intonation de celle-ci").
+
+    Le texte est donne en PARAGRAPHES, comme a Gemini : les scripts sont ecrits
+    en lignes courtes, et un moteur qui marque une pause a chaque retour a la
+    ligne donne le rythme de machine reproche le 2026-09-19.
+
+    Voicebox est LOCAL : ce montage ne tourne que sur le PC, pas sur GitHub.
     """
     import importlib.util
-    spec = importlib.util.spec_from_file_location("vb", ICI / "voicebox_sulafat.py")
+    vb_chemin = ICI / "voicebox_sulafat.py"
+    if not vb_chemin.exists():
+        raise RuntimeError("voicebox_sulafat.py absent : le clone ne tourne que sur le PC")
+    spec = importlib.util.spec_from_file_location("vb", vb_chemin)
     vb = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(vb)
+    try:
+        vb.appel("GET", "/health", timeout=8)
+    except Exception as e:
+        raise RuntimeError(f"Voicebox local injoignable ({str(e)[:60]}) : lancer "
+                           f"voicebox-server --port 17493")
+    mt = voix_epinglee()
+    pid = mt.get("voicebox_profil")
+    taille = mt.get("voicebox_taille", "1.7B")
+    paragraphes = [" ".join(p.split()) for p in texte.split("\n\n") if p.strip()]
     wav = travail / (dest.stem + ".wav")
-    vb.dire(texte, str(wav), "1.7B")
+    vb.dire("\n\n".join(paragraphes), str(wav), taille, pid=pid)
     ff(["-y", "-i", str(wav), "-ar", "44100", "-b:a", "160k", str(dest)])
-    return "Voicebox Sulafat (Qwen3-TTS 1.7B, local)"
+    return f"Voicebox Sulafat clone 348K (Qwen3-TTS {taille}, local)"
 
 
 def edge_tts(texte, dest, travail):
@@ -923,7 +983,10 @@ def main():
     # approchante que pas de video du tout. A n'utiliser qu'en le disant.
     p.add_argument("--voix-hors-norme", action="store_true",
                    help="ne pas verifier l'empreinte de voix (a justifier)")
-    p.add_argument("--moteur", choices=("gemini", "voicebox"), default="gemini",
+    # Le moteur par defaut est celui que declare voix_reference.json : c'est
+    # la que vit l'identite sonore de la chaine, pas dans une option.
+    p.add_argument("--moteur", choices=("gemini", "voicebox"),
+                   default=(voix_epinglee().get("moteur") or "gemini"),
                    help="voicebox : clone local, aucun quota (voir voicebox_tts)")
     p.add_argument("--voix-telle-quelle", action="store_true",
                    help="avec --voix-source : ne PAS recaler la voix (elle vient "
@@ -934,6 +997,7 @@ def main():
                         "video sans redepenser du quota Gemini (10 req/jour/modele) "
                         "et sans risquer de changer de voix.")
     a = p.parse_args()
+    regler_chaine(a.moteur)
     if a.intro_ref == "auto":
         a.intro_ref = choisir_intro()
         # On note le choix TOUT DE SUITE, pas a la fin. Sinon un rendu refuse
