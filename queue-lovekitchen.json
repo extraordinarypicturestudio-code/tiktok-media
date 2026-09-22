@@ -696,6 +696,35 @@
     "scheduledForUtc": "2026-09-23T19:30:00Z"
   },
   {
+    "id": "81-soupebrocoli",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
+    "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
+    "status": "scheduled",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "90199cbbde6dfccf7796ebb76297b97e3d40ebee1ee22ff6c900130613a28b67",
+      "date": "2026-09-22T09:57:01Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 65.7s, 44.4 Mo",
+        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une femme parle de brocoli et de régime dans sa cuisine.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'une soupe de brocoli au cheddar avec des croutons, illustree par une anecdote de couple. | aliments : ['brocoli', 'beurre', 'farine', 'bouillon', 'lait', 'cheddar', 'croutons', 'pain'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 90199cbbde6d ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "voix_hors_norme": "2026-09-22 : voix d'avant l'epinglage, repassee par la chaine calee. Hauteur 165,6 Hz (ref 166,0), clarte et 8 bandes de couleur conformes ; seule la melodie depasse (4,73 contre 5,86, tolerance 1,0). Bruit avant le premier mot coupe (330 ms). Remplace la version programmee, pire sur tous les criteres (clarte -1376 Hz, sous-titres en retard, grondement +11,5 dB).",
+    "maj": "2026-09-22T10:01:40Z",
+    "note": "Passe le controle visuel complet. Refaite le 2026-09-22 par le pipeline du depot : bruit avant le premier mot coupe (330 ms), amorce, timbre cale par la chaine fixe, blancs resserres, sous-titres cales (10/10 a l'image). Identite : seule la melodie depasse (1,1 contre 1,0), voir voix_hors_norme.",
+    "postId": "6ab252158515ec9fe5bb28c7",
+    "vignette_auto": true,
+    "scheduledFor": "2026-09-22T21:30:00",
+    "scheduledForUtc": "2026-09-22T19:30:00Z"
+  },
+  {
     "id": "82-bananapudding",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/82-bananapudding.mp4",
     "caption": "Un gâteau en préparation, ça ne trompe personne. Ma belle-mère en a repris deux fois 🍌🍰\n\n#bananapudding #gateaubanane #pokecake #chantilly #cuisinemaison #storytime #pourtoi",
@@ -801,34 +830,5 @@
     "postId": "6ab028bfcfd38fd63b7ea8d4",
     "vignette_auto": true,
     "publishedAt": "2026-09-21T19:31:31.696Z"
-  },
-  {
-    "id": "81-soupebrocoli",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/81-soupebrocoli.mp4",
-    "caption": "Pour lui le brocoli, c'était pour les gens au régime. Jusqu'à ce bol 🥦🧀\n\n#soupebrocoli #brocolirotis #croutons #oignonfondant #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "90199cbbde6dfccf7796ebb76297b97e3d40ebee1ee22ff6c900130613a28b67",
-      "date": "2026-09-22T09:57:01Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 65.7s, 44.4 Mo",
-        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une femme parle de brocoli et de régime dans sa cuisine.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'une soupe de brocoli au cheddar avec des croutons, illustree par une anecdote de couple. | aliments : ['brocoli', 'beurre', 'farine', 'bouillon', 'lait', 'cheddar', 'croutons', 'pain'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 90199cbbde6d ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "voix_hors_norme": "2026-09-22 : voix d'avant l'epinglage, repassee par la chaine calee. Hauteur 165,6 Hz (ref 166,0), clarte et 8 bandes de couleur conformes ; seule la melodie depasse (4,73 contre 5,86, tolerance 1,0). Bruit avant le premier mot coupe (330 ms). Remplace la version programmee, pire sur tous les criteres (clarte -1376 Hz, sous-titres en retard, grondement +11,5 dB).",
-    "maj": "2026-09-22T10:01:40Z",
-    "note": "Passe le controle visuel complet. Refaite le 2026-09-22 par le pipeline du depot : bruit avant le premier mot coupe (330 ms), amorce, timbre cale par la chaine fixe, blancs resserres, sous-titres cales (10/10 a l'image). Identite : seule la melodie depasse (1,1 contre 1,0), voir voix_hors_norme.",
-    "postId": "6ab252158515ec9fe5bb28c7",
-    "vignette_auto": true,
-    "scheduledFor": "2026-09-22T21:30:00",
-    "scheduledForUtc": "2026-09-22T19:30:00Z"
   }
 ]
