@@ -671,7 +671,7 @@
     "id": "83-bakedziti",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/83-bakedziti.mp4",
     "caption": "Ses frères venaient dîner, il était tendu depuis le matin 🍝🔥\n\n#bakedziti #penne #ricotta #bolognaise #cuisinemaison #storytime #pourtoi",
-    "status": "scheduled",
+    "status": "published",
     "controle_visuel": true,
     "attempts": 0,
     "verification": {
@@ -688,12 +688,11 @@
         "doublon": "sha256 3792c89c7db2 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "maj": "2026-09-20T18:40:13Z",
+    "maj": "2026-09-23T19:54:30Z",
     "note": "Passe le controle visuel complet. Voix recadencee sur 56-onepotpates (348 767 vues) et SPECTRE DU DEBUT cale sur elle : l'utilisateur signalait un bruit de fond dans les 2 premieres secondes, mesure comme un exces de 6-11 kHz a l'attaque. Amorce portee a 380 ms. pause 0,44 s, 14 pauses longues : la moins bien des trois, ses blancs ne se resserrent pas davantage sans passer sous 60 s. Grondement du debut corrige (-4 dB sous 55 Hz). 65,6 s.",
     "postId": "6ab028d9cfd38fd63b7eacf1",
     "vignette_auto": true,
-    "scheduledFor": "2026-09-23T21:30:00",
-    "scheduledForUtc": "2026-09-23T19:30:00Z"
+    "publishedAt": "2026-09-23T19:31:54.736Z"
   },
   {
     "id": "81-soupebrocoli",
