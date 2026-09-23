@@ -829,5 +829,29 @@
     "postId": "6ab028bfcfd38fd63b7ea8d4",
     "vignette_auto": true,
     "publishedAt": "2026-09-21T19:31:31.696Z"
+  },
+  {
+    "id": "86-macaroni",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
+    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "79c6a477629fcf322d9baaea866c0fefc591a1516b7c685aac405dc04a131c9a",
+      "date": "2026-09-23T13:09:20Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 63.7s, 43.6 Mo",
+        "audio": "volume moyen -19.0 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de sa recette de mac and cheese",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un mac and cheese gratine dans une cuisine. | aliments : ['macaroni', 'fromage', 'beurre', 'epices', 'creme'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 79c6a477629f ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
+    "maj": "2026-09-23T13:26:49Z"
   }
 ]
