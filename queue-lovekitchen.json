@@ -777,32 +777,6 @@
     "publishedAt": "2026-09-20T19:31:27.208Z"
   },
   {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "db1e356d9309c5597f454a46f545f3349ee88fd2b1a3f8598fc952499be1aca0",
-      "date": "2026-09-20T10:17:32Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 72.6s, 48.7 Mo",
-        "audio": "volume moyen -17.9 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme explique la recette de cuisine de son mari.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un plat de rigatoni au boeuf avec une sauce cremeuse et du parmesan. | aliments : ['rigatoni', 'boeuf', 'epices', 'creme', 'parmesan'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 db1e356d9309 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "maj": "2026-09-20T15:47:12Z",
-    "note": "Refaite le 2026-09-20 avec la voix validee (diction soignee, EQ 1,6 kHz).",
-    "vignette_auto": true,
-    "error": "ouvre sur une intro RETIREE le 2026-09-20 (sophie_cuisine_micro / sophie_cuisine_four, cadrage centre sur le fessier). Verifie sur la premiere image du clip, pas sur l'historique de rotation. A REMONTER avec cuisine_robe_bleue avant tout depot."
-  },
-  {
     "id": "80-soupetomate",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/80-soupetomate.mp4",
     "caption": "Trempé, épuisé, il ne voulait parler à personne. Puis il a trempé son pain dans le bol 🍅🧀\n\n#soupedetomate #tomatesroties #grilledcheese #veloutedetomate #cuisinemaison #storytime #pourtoi",
