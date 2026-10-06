@@ -804,29 +804,6 @@
     "publishedAt": "2026-09-21T19:31:31.696Z"
   },
   {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "8a1432c0b29bb76121f32eb28510570e568bbf839f7b3c997e8498d9d844779d",
-      "date": "2026-10-03T12:51:05Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 68.2s, 46.1 Mo",
-        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de la commande de pâtes au bœuf.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation de rigatoni au boeuf cajun avec sauce ccremeuse et parmesan | aliments : ['boeuf', 'rigatoni', 'epices', 'creme', 'parmesan', 'ail'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 8a1432c0b29b ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "86-macaroni",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
     "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
