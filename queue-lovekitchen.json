@@ -812,16 +812,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "8dd630b2c6118a51ddd3888344aa701609fb2a7f9e4e9157c391c72d216492ad",
-      "date": "2026-10-03T12:57:55Z",
+      "sha256": "9be5237f1f8dc9fec3b12b9b26d0edac79da4cad8a94880e8b23758247be5ee7",
+      "date": "2026-10-10T14:08:32Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 66.2s, 45.1 Mo",
-        "audio": "volume moyen -19.8 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une femme parle de sa recette de macaronis au four.",
+        "specs": "1080x1920, 30 fps, 65.5s, 44.5 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de sa recette de macaronis dans la cuisine.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une barquette en aluminium | aliments : ['macaroni', 'beurre', 'epices', 'fromage', 'creme'] | preparation : True",
+        "contenu": "contenu vu : Preparation d un gratin de macaroni au fromage avec ajout de beurre, epices, creme et cheddar. | aliments : ['macaroni', 'beurre', 'epices', 'paprika', 'creme', 'cheddar'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 8dd630b2c611 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 9be5237f1f8d ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
