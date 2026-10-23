@@ -812,16 +812,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "b5b19b4efdd6670561a21af249a9ed0ee0a1d2565aacd27ca5ef1bd9a8caccee",
-      "date": "2026-10-21T13:19:55Z",
+      "sha256": "283f9614c50ebcd81a6c9445726696d91eef9ec6b38b95fd18906b8ca11cee08",
+      "date": "2026-10-23T12:57:55Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 69.3s, 46.7 Mo",
-        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une femme parle de sa recette de mac and cheese.",
+        "specs": "1080x1920, 30 fps, 68.2s, 46.3 Mo",
+        "audio": "volume moyen -19.6 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une personne parle de sa recette de mac and cheese.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine. | aliments : ['macaroni', 'fromage', 'beurre', 'lait', 'epices'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un mac and cheese avec cuisson des pates et ajout de fromage et creme. | aliments : ['macaroni', 'fromage', 'beurre', 'paprika', 'creme'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 b5b19b4efdd6 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 283f9614c50e ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
