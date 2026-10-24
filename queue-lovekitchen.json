@@ -812,16 +812,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "283f9614c50ebcd81a6c9445726696d91eef9ec6b38b95fd18906b8ca11cee08",
-      "date": "2026-10-23T12:57:55Z",
+      "sha256": "b681573257fe3ba725c92563fbd0939c0d3231628f5bcce79be3ecd40f2fbea8",
+      "date": "2026-10-24T12:22:45Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 68.2s, 46.3 Mo",
-        "audio": "volume moyen -19.6 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une personne parle de sa recette de mac and cheese.",
+        "specs": "1080x1920, 30 fps, 63.9s, 43.7 Mo",
+        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une personne parle de sa recette de mac and cheese.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un mac and cheese avec cuisson des pates et ajout de fromage et creme. | aliments : ['macaroni', 'fromage', 'beurre', 'paprika', 'creme'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un mac and cheese dans sa cuisine avec ajout de pates, epices, creme et beaucoup de fromage. | aliments : ['macaroni', 'beurre', 'epices', 'creme', 'fromage'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 283f9614c50e ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 b681573257fe ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
