@@ -804,29 +804,6 @@
     "publishedAt": "2026-09-21T19:31:31.696Z"
   },
   {
-    "id": "86-macaroni",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
-    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "f6f6c9bda2c1868b9e7702faae6ad639c3931504f0459f3efb3dc98144efe010",
-      "date": "2026-10-26T15:10:30Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 65.2s, 44.5 Mo",
-        "audio": "volume moyen -20.0 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une personne parle de cuisine avec une voix chaleureuse.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un mac and cheese gratine dans un plat en aluminium | aliments : ['pates', 'macaroni', 'fromage', 'cheddar', 'beurre', 'creme'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 f6f6c9bda2c1 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
@@ -835,19 +812,41 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "55cca0c128b7d57fc49e48611cdb6358536d90403325a2663b51e64dc9504177",
-      "date": "2026-10-27T13:38:35Z",
+      "sha256": "2df2553b80718ec62d1493e3ac167d87e7b9116f0fbab82f09e14aba9dd5e112",
+      "date": "2026-10-28T14:32:17Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 63.3s, 43.7 Mo",
-        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.14 ; contenu sonore : Une femme raconte une anecdote culinaire au sujet de pâtes",
+        "specs": "1080x1920, 30 fps, 65.9s, 45.0 Mo",
+        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de sa recette de bœuf au restaurant.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de pâtes rigatoni au bœuf cajun avec une sauce crémeuse et du parmesan. | aliments : ['bœuf', 'pâtes rigatoni', 'crème', 'parmesan', 'épices cajun', 'ail'] | preparation : True",
+        "contenu": "contenu vu : Preparation de rigatonis au boeuf cajun avec une sauce cremeuse et du parmesan. | aliments : ['boeuf', 'rigatoni', 'creme', 'epices cajun', 'parmesan'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 55cca0c128b7 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 2df2553b8071 ; empreinte visuelle : plus proche 1.000"
       }
     },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
-    "maj": "2026-10-27T13:49:56Z"
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
+  },
+  {
+    "id": "86-macaroni",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
+    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "98106334d285498ae5764b13090de12546703da8a1f61afa4baa0d2d9c6d9daf",
+      "date": "2026-10-28T14:40:13Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.3s, 43.9 Mo",
+        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de mac and cheese avec une voix calme.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine. | aliments : ['macaroni', 'beurre', 'epices', 'creme', 'fromage'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 98106334d285 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
   }
 ]
