@@ -294,32 +294,6 @@
     "publishedAt": "2026-09-11T08:12:09.292Z"
   },
   {
-    "id": "60-patescrevettes",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
-    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "00d52a601d2bf775ba4e6673620e83ea3d2cd9f67d506226a2d7da40b2f0f380",
-      "date": "2026-09-10T11:10:18Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 70.3s, 52.4 Mo",
-        "audio": "volume moyen -19.3 dB ; ressemblance avec la source 0.15 ; contenu sonore : Une femme parle de crevettes et de mauvaises humeurs.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Une femme cuisine des pates aux crevettes, tomates cerises et courgettes en racontant une histoire. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'persil', 'basilic', 'beurre'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 00d52a601d2b ; empreinte visuelle : plus proche 0.415"
-      }
-    },
-    "publishedAt": "2026-09-11T18:58:54Z",
-    "note": "publiee A LA MAIN le 2026-09-11. Refusee a 19h puis relancee a 21h29, une minute avant 62 : depot supprime.",
-    "error": "marquee published a tort : c'est 71-tacos qui est sortie le 2026-09-11. Refusee par le controle d'intonation (-33%), a revoicer.",
-    "maj": "2026-09-12T13:04:09Z"
-  },
-  {
     "id": "62-poissonbeurrecitron",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/62-poissonbeurrecitron.mp4",
     "caption": "Mon mari m'avait dit que le poisson, ça n'avait jamais rempli personne 🐟🍋\n\n#poisson #beurrecitron #haricotsverts #lentilles #tomatescerises #cuisinemaison #storytime #pourtoi",
@@ -812,16 +786,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "2df2553b80718ec62d1493e3ac167d87e7b9116f0fbab82f09e14aba9dd5e112",
-      "date": "2026-10-28T14:32:17Z",
+      "sha256": "8e65e68311bfd15b46a7e105cd505f0e7c1c73a15105ddfb3e9c242c485e6776",
+      "date": "2026-11-01T14:35:08Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 65.9s, 45.0 Mo",
-        "audio": "volume moyen -18.4 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de sa recette de bœuf au restaurant.",
+        "specs": "1080x1920, 30 fps, 66.8s, 45.3 Mo",
+        "audio": "volume moyen -19.4 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de sa recette de bœuf aux pâtes.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation de rigatonis au boeuf cajun avec une sauce cremeuse et du parmesan. | aliments : ['boeuf', 'rigatoni', 'creme', 'epices cajun', 'parmesan'] | preparation : True",
+        "contenu": "contenu vu : Préparation de rigatoni au bœuf cajun avec sauce crémeuse et parmesan. | aliments : ['bœuf', 'rigatoni', 'crème', 'parmesan', 'épices'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 2df2553b8071 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 8e65e68311bf ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
@@ -835,16 +809,39 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "98106334d285498ae5764b13090de12546703da8a1f61afa4baa0d2d9c6d9daf",
-      "date": "2026-10-28T14:40:13Z",
+      "sha256": "798a755760ae1a3f792748c046ccf0c4c55f00c38b476ac1a04ddf7391d57124",
+      "date": "2026-11-01T14:41:28Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 64.3s, 43.9 Mo",
-        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de mac and cheese avec une voix calme.",
+        "specs": "1080x1920, 30 fps, 64.7s, 44.1 Mo",
+        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de macaronis au four et de cuisine.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine. | aliments : ['macaroni', 'beurre', 'epices', 'creme', 'fromage'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage avec ajout d'epices et de creme | aliments : ['macaroni', 'beurre', 'epices', 'paprika', 'creme', 'fromage cheddar'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 98106334d285 ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 798a755760ae ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
+  },
+  {
+    "id": "60-patescrevettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
+    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "a87abf521ff9885220a40d7147264614ad104086bdd0b72a9f0bd4b9b2dc3707",
+      "date": "2026-11-01T14:47:59Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 69.2s, 51.6 Mo",
+        "audio": "volume moyen -18.7 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme raconte une anecdote concernant son mari et des crevettes.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Préparation de pâtes aux crevettes, tomates cerises et courgettes dans une cuisine. | aliments : ['crevettes', 'tomates cerises', 'courgettes', 'pâtes', 'citron', 'persil', 'beurre'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 a87abf521ff9 ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
