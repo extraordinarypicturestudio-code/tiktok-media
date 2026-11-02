@@ -801,29 +801,6 @@
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
   },
   {
-    "id": "86-macaroni",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
-    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "798a755760ae1a3f792748c046ccf0c4c55f00c38b476ac1a04ddf7391d57124",
-      "date": "2026-11-01T14:41:28Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 64.7s, 44.1 Mo",
-        "audio": "volume moyen -19.2 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de macaronis au four et de cuisine.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage avec ajout d'epices et de creme | aliments : ['macaroni', 'beurre', 'epices', 'paprika', 'creme', 'fromage cheddar'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 798a755760ae ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "60-patescrevettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
     "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
@@ -842,6 +819,29 @@
         "contenu": "contenu vu : Préparation de pâtes aux crevettes, tomates cerises et courgettes dans une cuisine. | aliments : ['crevettes', 'tomates cerises', 'courgettes', 'pâtes', 'citron', 'persil', 'beurre'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 a87abf521ff9 ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
+  },
+  {
+    "id": "86-macaroni",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
+    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "c382992c966a4ee8dc05568285316c161074b8d10f6780999d96af0cfbab092a",
+      "date": "2026-11-02T17:38:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 64.0s, 43.7 Mo",
+        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de sa recette de mac and cheese.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine. | aliments : ['macaroni', 'beurre', 'fromage', 'lait', 'epices', 'paprika'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 c382992c966a ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
