@@ -1,21 +1,6 @@
 [
  {
   "intro": "cuisine_robe_bleue",
-  "video": "v_69_gnocchis",
-  "date": "2026-09-18 12:44"
- },
- {
-  "intro": "sophie_cuisine_micro",
-  "video": "v_70_pouletaigredoux",
-  "date": "2026-09-18 12:49"
- },
- {
-  "intro": "sophie_cuisine_four",
-  "video": "v_73_bananecacao",
-  "date": "2026-09-18 12:52"
- },
- {
-  "intro": "cuisine_robe_bleue",
   "video": "v_60_patescrevettes",
   "date": "2026-09-19 12:35"
  },
@@ -998,5 +983,20 @@
   "intro": "cuisine_robe_bleue",
   "video": "v_61_esterhazy",
   "date": "2026-11-03 15:43"
+ },
+ {
+  "intro": "cuisine_robe_bleue",
+  "video": "v_85_patesboeuf",
+  "date": "2026-11-04 15:43"
+ },
+ {
+  "intro": "cuisine_robe_bleue",
+  "video": "v_86_macaroni",
+  "date": "2026-11-04 15:48"
+ },
+ {
+  "intro": "cuisine_robe_bleue",
+  "video": "v_60_patescrevettes",
+  "date": "2026-11-04 15:54"
  }
 ]
