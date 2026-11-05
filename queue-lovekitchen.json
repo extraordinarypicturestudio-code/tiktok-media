@@ -778,29 +778,6 @@
     "publishedAt": "2026-09-21T19:31:31.696Z"
   },
   {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "8e65e68311bfd15b46a7e105cd505f0e7c1c73a15105ddfb3e9c242c485e6776",
-      "date": "2026-11-01T14:35:08Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 66.8s, 45.3 Mo",
-        "audio": "volume moyen -19.4 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de sa recette de bœuf aux pâtes.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de rigatoni au bœuf cajun avec sauce crémeuse et parmesan. | aliments : ['bœuf', 'rigatoni', 'crème', 'parmesan', 'épices'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 8e65e68311bf ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "60-patescrevettes",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
     "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
