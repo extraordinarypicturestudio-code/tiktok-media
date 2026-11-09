@@ -778,29 +778,6 @@
     "publishedAt": "2026-09-21T19:31:31.696Z"
   },
   {
-    "id": "60-patescrevettes",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
-    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "a87abf521ff9885220a40d7147264614ad104086bdd0b72a9f0bd4b9b2dc3707",
-      "date": "2026-11-01T14:47:59Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 69.2s, 51.6 Mo",
-        "audio": "volume moyen -18.7 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme raconte une anecdote concernant son mari et des crevettes.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de pâtes aux crevettes, tomates cerises et courgettes dans une cuisine. | aliments : ['crevettes', 'tomates cerises', 'courgettes', 'pâtes', 'citron', 'persil', 'beurre'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 a87abf521ff9 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "86-macaroni",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
     "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
@@ -846,5 +823,28 @@
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
     "maj": "2026-11-07T14:28:36Z"
+  },
+  {
+    "id": "60-patescrevettes",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/60-patescrevettes.mp4",
+    "caption": "Mon mari m'avait dit que les crevettes, c'était bon pour les vacances 🍤🍋\n\n#crevettes #patesauxcrevettes #tomatescerises #citronvert #dinerrapide #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "3b58437c487cce6745f9e3f266d226e6920252b26979f0bdbd01e19c5297b2c7",
+      "date": "2026-11-09T18:02:07Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 68.4s, 51.3 Mo",
+        "audio": "volume moyen -18.9 dB ; ressemblance avec la source 0.19 ; contenu sonore : Une femme parle de cuisine et de crevettes en vacances.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation de pates aux crevettes, tomates cerises, courgettes et citron dans une cuisine. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'persil', 'ail'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 3b58437c487c ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
   }
 ]
