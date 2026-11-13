@@ -778,29 +778,6 @@
     "publishedAt": "2026-09-21T19:31:31.696Z"
   },
   {
-    "id": "86-macaroni",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
-    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "c382992c966a4ee8dc05568285316c161074b8d10f6780999d96af0cfbab092a",
-      "date": "2026-11-02T17:38:07Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 64.0s, 43.7 Mo",
-        "audio": "volume moyen -18.8 dB ; ressemblance avec la source 0.20 ; contenu sonore : Une femme parle de sa recette de mac and cheese.",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine. | aliments : ['macaroni', 'beurre', 'fromage', 'lait', 'epices', 'paprika'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 c382992c966a ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
     "id": "85-patesboeuf",
     "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
     "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
@@ -843,6 +820,29 @@
         "contenu": "contenu vu : Preparation de pates aux crevettes, tomates cerises, courgettes et citron dans une cuisine. | aliments : ['crevettes', 'pates', 'tomates cerises', 'courgettes', 'citron', 'persil', 'ail'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
         "doublon": "sha256 3b58437c487c ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
+  },
+  {
+    "id": "86-macaroni",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/86-macaroni.mp4",
+    "caption": "Tout le monde a sa recette. La mienne, il s'en moquait gentiment 🧀🔥\n\n#macandcheese #macaroni #cheddargratine #comfortfoodmaison #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1c381afcb54a3a0521e26be95e539ec1e9e266fe1e6ff105e4ddc37a3480ce5d",
+      "date": "2026-11-13T15:49:24Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 66.1s, 45.2 Mo",
+        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.18 ; contenu sonore : recette macaroni chou-fleur frigo plat chaud cuisine",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation de mac and cheese avec cuisson des pates, ajout de beurre, epices, creme et beaucoup de fromage rape avant gratinage. | aliments : ['macaroni', 'beurre', 'epices', 'fromage', 'creme'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1c381afcb54a ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
