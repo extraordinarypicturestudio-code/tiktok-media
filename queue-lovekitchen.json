@@ -833,16 +833,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "1c381afcb54a3a0521e26be95e539ec1e9e266fe1e6ff105e4ddc37a3480ce5d",
-      "date": "2026-11-13T15:49:24Z",
+      "sha256": "b082d02de3e38c03ecb20cd9ec93712bd66154728f7e5b6a4b32f222fee152e2",
+      "date": "2026-11-16T17:30:35Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 66.1s, 45.2 Mo",
-        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.18 ; contenu sonore : recette macaroni chou-fleur frigo plat chaud cuisine",
+        "specs": "1080x1920, 30 fps, 67.5s, 45.5 Mo",
+        "audio": "volume moyen -19.7 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une personne parle d'une recette de cuisine sans aucun bruit.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation de mac and cheese avec cuisson des pates, ajout de beurre, epices, creme et beaucoup de fromage rape avant gratinage. | aliments : ['macaroni', 'beurre', 'epices', 'fromage', 'creme'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage avec une femme dans sa cuisine | aliments : ['macaroni', 'fromage cheddar', 'beurre', 'lait', 'epices'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 1c381afcb54a ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 b082d02de3e3 ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
