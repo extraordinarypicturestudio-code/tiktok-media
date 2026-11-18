@@ -809,39 +809,16 @@
     "attempts": 0,
     "verification": {
       "verdict": "OK",
-      "sha256": "b082d02de3e38c03ecb20cd9ec93712bd66154728f7e5b6a4b32f222fee152e2",
-      "date": "2026-11-16T17:30:35Z",
+      "sha256": "9aa7520736558680b3c6012d271faf8598ec122d34b12ac98604bf96e4533d3a",
+      "date": "2026-11-18T16:58:43Z",
       "outil": "verification_publication.py",
       "preuves": {
-        "specs": "1080x1920, 30 fps, 67.5s, 45.5 Mo",
-        "audio": "volume moyen -19.7 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une personne parle d'une recette de cuisine sans aucun bruit.",
+        "specs": "1080x1920, 30 fps, 63.7s, 43.7 Mo",
+        "audio": "volume moyen -18.9 dB ; ressemblance avec la source 0.16 ; contenu sonore : Une femme parle de macaronis au four avec beaucoup d'enthousiasme.",
         "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage avec une femme dans sa cuisine | aliments : ['macaroni', 'fromage cheddar', 'beurre', 'lait', 'epices'] | preparation : True",
+        "contenu": "contenu vu : Preparation d'un gratin de macaroni au fromage dans une cuisine avec une femme au debut. | aliments : ['macaroni', 'fromage', 'beurre', 'paprika', 'lait'] | preparation : True",
         "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 b082d02de3e3 ; empreinte visuelle : plus proche 1.000"
-      }
-    },
-    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
-  },
-  {
-    "id": "85-patesboeuf",
-    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
-    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
-    "status": "on_hold",
-    "controle_visuel": true,
-    "attempts": 0,
-    "verification": {
-      "verdict": "OK",
-      "sha256": "4569b1fc8c9a745b0ee0c27a5710820a65088f20c837ae0ce39f7da87e3b3ae1",
-      "date": "2026-11-17T17:09:00Z",
-      "outil": "verification_publication.py",
-      "preuves": {
-        "specs": "1080x1920, 30 fps, 69.3s, 46.7 Mo",
-        "audio": "volume moyen -19.6 dB ; ressemblance avec la source 0.17 ; contenu sonore : Une femme parle de sa commande de steak au restaurant",
-        "visuel": "profil lovekitchen : OK",
-        "contenu": "contenu vu : Préparation de rigatoni au bœuf cajun, sauce crémeuse et parmesan dans une poêle. | aliments : ['viande de bœuf', 'pâtes rigatoni', 'épices cajun', 'crème', 'parmesan'] | preparation : True",
-        "outro": "ecart d'empreinte avec l'outro 0/64",
-        "doublon": "sha256 4569b1fc8c9a ; empreinte visuelle : plus proche 1.000"
+        "doublon": "sha256 9aa752073655 ; empreinte visuelle : plus proche 1.000"
       }
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12"
