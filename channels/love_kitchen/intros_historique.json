@@ -1,11 +1,6 @@
 [
  {
   "intro": "cuisine_robe_bleue",
-  "video": "v_61_esterhazy",
-  "date": "2026-10-09 14:50"
- },
- {
-  "intro": "cuisine_robe_bleue",
   "video": "v_62_poissonbeurrecitron",
   "date": "2026-10-09 14:55"
  },
@@ -998,5 +993,10 @@
   "intro": "cuisine_robe_bleue",
   "video": "v_62_poissonbeurrecitron",
   "date": "2026-11-24 19:24"
+ },
+ {
+  "intro": "cuisine_robe_bleue",
+  "video": "v_85_patesboeuf",
+  "date": "2026-11-25 18:12"
  }
 ]
