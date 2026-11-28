@@ -823,5 +823,29 @@
     },
     "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
     "maj": "2026-11-24T19:24:09Z"
+  },
+  {
+    "id": "85-patesboeuf",
+    "url": "https://raw.githubusercontent.com/extraordinarypicturestudio-code/tiktok-media/main/clips-lovekitchen/85-patesboeuf.mp4",
+    "caption": "Il dit que personne ne les réussit à la maison. Il a goûté directement dans la poêle 🥩🍝\n\n#rigatoni #boeufcajun #saucecremeuse #parmesan #cuisinemaison #storytime #pourtoi",
+    "status": "on_hold",
+    "controle_visuel": true,
+    "attempts": 0,
+    "verification": {
+      "verdict": "OK",
+      "sha256": "1313a564a63b0cdba543c0aa81b891ed268a537f23486b43aa85919f46bb2050",
+      "date": "2026-11-28T16:29:03Z",
+      "outil": "verification_publication.py",
+      "preuves": {
+        "specs": "1080x1920, 30 fps, 67.6s, 45.8 Mo",
+        "audio": "volume moyen -19.1 dB ; ressemblance avec la source 0.18 ; contenu sonore : Une femme parle de la preparation d un plat de boeuf.",
+        "visuel": "profil lovekitchen : OK",
+        "contenu": "contenu vu : Preparation de rigatoni au boeuf cajun et sauce cremeuse parmesan par une femme. | aliments : ['boeuf', 'rigatoni', 'epices cajun', 'creme', 'parmesan', 'huile'] | preparation : True",
+        "outro": "ecart d'empreinte avec l'outro 0/64",
+        "doublon": "sha256 1313a564a63b ; empreinte visuelle : plus proche 1.000"
+      }
+    },
+    "error": "montage automatique (beta) : a valider a la main avant toute sortie, consigne du 2026-09-12",
+    "maj": "2026-11-28T16:44:00Z"
   }
 ]
